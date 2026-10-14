@@ -5,6 +5,7 @@
   python3 tools/english/build_guide_pdf.py store/english/midterm-guide-humanities-original.pdf store/english/midterm-guide-humanities-ready.pdf
 """
 import argparse, html, re, sys, tempfile, pathlib
+import base64, io
 import pymupdf, segno
 from playwright.sync_api import sync_playwright
 
@@ -24,8 +25,16 @@ a { color:inherit; text-decoration:none; }
 FONTS = '<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Lexend:wght@400;500;600;700&display=block" rel="stylesheet">'
 
 
+def qr_img(url, px):
+    """باركود كصورة PNG حادة (المربعات واضحة وتنقرأ بالكاميرا)."""
+    buf = io.BytesIO()
+    segno.make(url, error="m").save(buf, kind="png", scale=20, border=2, dark="#1f2f57")
+    return (f'<img alt="QR" src="data:image/png;base64,{base64.b64encode(buf.getvalue()).decode()}" '
+            f'style="width:{px}px;height:{px}px;display:block;margin:0 auto 4px;image-rendering:pixelated">')
+
+
 def ad_page():
-    qr = segno.make(STORE, error="m").svg_inline(scale=6, dark="#1f2f57", border=0)
+    qr = qr_img(STORE, 140)
     items = ["موقع للتدريب شامل كل الأقسام", "تدريب على القطع", "تدريب على الاستماع",
              "تدريب على الفوكاب", "تدريب على القواعد", "شرح كامل القواعد"]
     lis = "".join(f'<li><span class="tick">✓</span>{t}</li>' for t in items)
@@ -71,7 +80,7 @@ li {{ font-size:21px; font-weight:700; color:var(--navy); display:flex; align-it
 
 
 def ad2():
-    qr = segno.make(STORE, error="m").svg_inline(scale=4, dark="#1f2f57", border=0)
+    qr = qr_img(STORE, 104)
     tiles = [("القواعد", "Grammar"), ("الكلمات", "Vocabulary"), ("القطع", "Reading"), ("الاستماع", "Listening")]
     t = "".join(f'<div class="tile"><b>{a}</b><span>{b}</span></div>' for a, b in tiles)
     return f"""<div class="ad2"><span class="kick">خلّصت الكلمات؟</span>
@@ -106,7 +115,7 @@ def vocab_pages():
 .c:nth-child(even) {{ background:var(--cream); }}
 .top {{ display:flex; align-items:center; gap:7px; direction:ltr; }}
 .n {{ flex:none; min-width:22px; height:20px; border-radius:6px; background:var(--rose-soft); color:var(--rose); font:600 11px 'Lexend'; display:grid; place-items:center; padding:0 3px; }}
-.w {{ font-size:15px; font-weight:700; color:var(--navy); }}
+.w {{ font-size:15px; font-weight:700; color:var(--navy); white-space:nowrap; }}
 .pos {{ font-size:9px; font-weight:500; color:var(--muted); border:1px solid #e1dccf; border-radius:5px; padding:0 4px; white-space:nowrap; }}
 .m {{ margin-left:auto; direction:rtl; font-size:14px; font-weight:800; color:var(--rose); }}
 .s {{ font-size:11.5px; color:var(--ink); margin-top:2px; line-height:1.4; text-align:left; }}
