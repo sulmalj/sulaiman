@@ -7,6 +7,7 @@ const Q=k=>`Q${s(k)}`;
 // [x0,y0,x1,y1,fontPt,html,dir,align]
 const pages={
  1:[
+  [300,140,488,163,14,A('ملازم عدل'),'rtl'],
   [37,618,116,640,12,A('<b>خطأ</b>'),'rtl','center'],
   [37,641,116,663,12,A('<b>صح</b>'),'rtl','center'],
   [37,663,116,686,12,A('<b>خطأ</b>'),'rtl','center'],
@@ -34,10 +35,10 @@ const pages={
  for(const [n,items] of Object.entries(pages)){
   const divs=items.map(([x0,y0,x1,y1,f,h,d,al])=>`<div class="l" dir="${d||'ltr'}" style="left:${x0}pt;top:${y0}pt;width:${x1-x0}pt;height:${y1-y0}pt;font-size:${f}pt;justify-content:${al=='center'?'center':'flex-start'}"><span class="in">${h}</span></div>`).join('');
   const html=`<html><head><style>
-@font-face{font-family:ar;src:url(file://${G}/cairo.ttf)}
+@font-face{font-family:ar;src:url(file://${G}/cairo-bold.ttf)}
 @page{size:595.32pt 841.92pt;margin:0}
 html,body{margin:0;background:transparent}
-.l{position:absolute;display:flex;align-items:center;color:#1e40af;font-family:'DejaVu Sans',sans-serif;overflow:visible}
+.l{position:absolute;display:flex;align-items:center;color:#0b2a9c;font-family:'DejaVu Sans',sans-serif;font-weight:bold;overflow:visible}
 .in{white-space:nowrap}
 .a{font-family:ar}
 .a .b{display:inline-block;line-height:1.05;padding:0.5pt 3pt 1.5pt}
