@@ -9,7 +9,7 @@ import json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-NAME = os.path.basename(HERE)   # english (الميد) أو english-final (الفاينل): نفس السكربت، كل مجلد يبني موقعه
+NAME = os.path.basename(HERE)   # english (الميد) أو english-tracks (جميع المسارات باستثناء الإنساني): نفس السكربت، كل مجلد يبني موقعه
 SITE = os.path.join(ROOT, 'sites', NAME)
 
 

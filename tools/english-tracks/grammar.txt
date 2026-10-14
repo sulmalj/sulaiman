@@ -1,7 +1,7 @@
-# أسئلة القواعد (الفاينل) — قواعد ملزمة الفاينل (store/english-final/grammar-malzama.pdf) + القواعد الزيادة اللي طلبها المستخدم (Verbs + infinitives، a / an)
+# أسئلة القواعد (إنجليزي جميع المسارات باستثناء الإنساني — جزئية الميد) — قواعد ملزمة المستخدم (store/english-tracks/grammar-malzama.pdf) + القواعد الزيادة اللي طلبها المستخدم (Verbs + infinitives، a / an)
 # الصيغة:  ## اسم القاعدة   ثم:  السؤال || الصحيح | خطأ | خطأ | خطأ || الشرح
-# في كل قاعدة: تدريبات الملزمة + نماذج اختبار الفاينل (store/english-final/exam-samples/samples.txt) + أسئلة بنفس مستوى النماذج.
-# Simple present و Have / Has نفس أسئلة الميد (نفس القاعدة ونفس المستوى) + نموذج الفاينل.
+# في كل قاعدة: تدريبات الملزمة + نماذج اختبار المستخدم (store/english-tracks/exam-samples/samples.txt) + أسئلة بنفس مستوى النماذج.
+# Simple present و Have / Has نفس أسئلة الميد (نفس القاعدة ونفس المستوى) + نموذج موقع جميع المسارات.
 
 ## Simple present
 Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not || Sulaiman and Fahad = شخصين (They) ← مع They نستخدم are.

@@ -1,4 +1,4 @@
-# مصدر مقاطع الاستماع لموقع الفاينل (مقاطع جديدة غير مقاطع الميد)
+# مصدر مقاطع الاستماع لموقع جميع المسارات (الميد) (مقاطع جديدة غير مقاطع الميد)
 # الصيغة:
 #   ## رقم | العنوان | dialogue أو monologue
 #   @ الاسم=الصوت الاسم=الصوت        (أصوات Kokoro)
@@ -6,7 +6,7 @@
 #   ?? السؤال
 #   * الإجابة الصحيحة
 #   - خيار خطأ   (ثلاث خيارات خطأ)
-# البناء: python3 tools/english-final/build_listening.py --model kokoro.onnx --voices voices.bin
+# البناء: python3 tools/english-tracks/build_listening.py --model kokoro.onnx --voices voices.bin
 
 ## 1 | Booking a Dentist Appointment | dialogue
 @ Receptionist=af_bella Faisal=am_michael
