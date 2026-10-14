@@ -2270,5 +2270,85 @@ window.VOCAB = [
 "relaxing",
 "comfortable"
 ]
+},
+{
+"w": "Idea",
+"q": "I don't know what to do for my art project. Can you give me some .....?",
+"o": [
+"ideas",
+"fields",
+"hobbies",
+"uniforms"
+]
+},
+{
+"w": "Wear",
+"q": "In the summer, when the weather gets hot, I ..... only cotton shirts.",
+"o": [
+"wear",
+"watch",
+"meet",
+"grow"
+]
+},
+{
+"w": "Celebrate",
+"q": "You finally got the promotion that you worked so hard for. How do you want to .....?",
+"o": [
+"celebrate",
+"promise",
+"transform",
+"express"
+]
+},
+{
+"w": "Feed",
+"q": "That's a lot of food! It can easily ..... twenty people.",
+"o": [
+"feed",
+"interest",
+"affect",
+"measure"
+]
+},
+{
+"w": "Nature",
+"q": "I enjoy going to the park because it has beautiful flowers and trees. I love being in ......",
+"o": [
+"nature",
+"tradition",
+"scene",
+"memory"
+]
+},
+{
+"w": "Collect",
+"q": "My sister ..... shoes. She has 15 pairs of them.",
+"o": [
+"collects",
+"invites",
+"operates",
+"prepares"
+]
+},
+{
+"w": "Contagious",
+"q": "His hard work was ...... It was amazing how much we all accomplished after he was hired.",
+"o": [
+"contagious",
+"worrying",
+"troubled",
+"apologetic"
+]
+},
+{
+"w": "Difficulty",
+"q": "He has ..... reading. It takes him a long time to read just a few words.",
+"o": [
+"difficulty",
+"dishonesty",
+"confidence",
+"combination"
+]
 }
 ];

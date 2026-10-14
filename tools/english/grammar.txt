@@ -1,0 +1,233 @@
+# أسئلة القواعد — مقسمة حسب قواعد ملزمة المستخدم (store/english/grammar-malzama.pdf)
+# الصيغة:  ## اسم القاعدة   ثم:  السؤال || الصحيح | خطأ | خطأ | خطأ
+# في كل قاعدة: تدريبات الملزمة + نماذج المستخدم (صور التليجرام) + أسئلة إضافية
+
+## Simple present: Verb be (am / is / are)
+Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not
+He ..... really intelligent. || is | am | are | am not
+The books ..... red and white. || are | is | am | am not
+Sara and Noof ..... friends. || are | is | am | am not
+Badr and I ..... best friends. || are | is | am | am not
+The university ..... a good place. || is | am | are | am not
+Where ..... the station? || is | am | are | am not
+How old ..... your brother? || is | am | are | am not
+These books ..... very hard to understand. || are | is | am | am not
+Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | aren't | am
+Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is
+I ..... a student at King Saud University. || am | is | are | be
+My parents ..... at home now. || are | is | am | be
+..... you from Jeddah? Yes, I am. || Are | Is | Am | Do
+..... your sister a doctor? No, she isn't. || Is | Are | Am | Does
+..... I late for the class? || Am | Is | Are | Do
+Is Ahmed in class? No, he ...... || isn't | aren't | doesn't | don't
+Are they your friends? Yes, they ...... || are | is | do | am
+Where ..... you from? I'm from Saudi Arabia. || are | is | do | does
+What ..... your name? || is | are | do | am
+Who ..... those men? || are | is | am | does
+How ..... your parents? They're fine, thank you. || are | is | does | am
+I ..... not hungry. I had a big breakfast. || am | is | are | do
+We ..... in the library. We're at the café. || aren't | isn't | don't | am not
+It ..... cold today. It's very hot! || isn't | aren't | doesn't | don't
+My brother ..... tall. He's only 150 cm. || isn't | aren't | doesn't | am not
+Riyadh ..... the capital of Saudi Arabia. || is | are | am | be
+My friends and I ..... very busy this week. || are | is | am | be
+Nora ..... shy. She talks to everyone. || isn't | aren't | doesn't | don't
+The children ..... in the garden. || are | is | am | be
+..... the museum open on Fridays? || Is | Are | Does | Do
+This bag ..... very expensive. || is | are | am | be
+..... we in the right room for the English class? || Are | Is | Am | Do
+You ..... my best friend. || are | is | am | be
+My phone ..... on the table. || is | are | am | be
+..... it your first day at the university? || Is | Are | Does | Am
+They ..... teachers. They are students. || aren't | isn't | don't | doesn't
+Where is my book? ..... on your desk. || It's | Its | It'is | Its'
+..... from Egypt. They're from Sudan. || They aren't | They isn't | They don't | They not
+Khalid and Omar ..... brothers. || are | is | am | be
+
+## Simple present: do / does + verbs
+Children usually ..... watching cartoons. || like | likes | likeing | does like
+In many countries, people ..... until they are sixty-five. || work | works | working | are work
+Betty is not very kind. She ..... help old people. || does not | do not | is not | are not
+She usually ..... a lot of time to choose her clothes. || spends | spending | spend | is spends
+I always ..... my teacher's website to study English. || visit | is visit | visits | visiting
+Please ..... put your things on the teacher's table. || don't | doesn't | isn't | aren't
+..... you always wear the same uniform every day? || Do | Does | Is | Are
+Some teachers ..... much homework. || give | gives | giveing | are give
+..... your parents let you go to bed late? || Do | Does | Is | Are
+How many books ..... you read in a year? || do | does | are | is
+..... your school have a big library? No, it ...... || Does / doesn't | Do / don't | Does / don't | Don't / Does
+He ..... much in class, but he gets A+ for the essays he writes. || doesn't talk | doesn't | not talk | don't talk
+A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau. || Where do you want | Where do you wanting | Where does you wanting | Where does you want
+I ..... an Uber taxi at 7:00 every morning to be at work on time. || book | books | booking | is book
+My father ..... to work by car every day. || goes | go | gos | going
+She ..... her homework after dinner. || does | do | dos | doing
+My brother ..... to fix his car himself. || tries | trys | try | trying
+He ..... TV every evening. || watches | watch | watchs | watching
+My mother ..... English at a primary school. || teaches | teach | teachs | teaching
+Ali ..... in a big hospital. He is a nurse. || works | work | working | is work
+I ..... coffee. I only drink tea. || don't drink | doesn't drink | don't drinks | not drink
+Sara ..... meat. She is a vegetarian. || doesn't eat | don't eat | doesn't eats | not eat
+We ..... on Fridays. || don't work | doesn't work | don't works | not work
+My cat ..... milk. || doesn't like | don't like | doesn't likes | not like
+..... he like tennis? Yes, he does. || Does | Do | Is | Are
+..... they live near the university? No, they don't. || Do | Does | Are | Is
+Does your sister play the piano? Yes, she ...... || does | do | is | plays
+Do you speak French? No, I ...... || don't | doesn't | am not | isn't
+Where ..... he live? || does | do | is | are
+What time ..... you usually get up? || do | does | are | is
+What ..... your father do? He's an engineer. || does | do | is | are
+How ..... your brother go to school? By bus. || does | do | is | are
+When ..... the class start? || does | do | is | are
+Who ..... you live with? || do | does | are | is
+The bus ..... at 7:30 every morning. || leaves | leave | leaving | is leave
+My friends ..... football every Saturday. || play | plays | playing | is play
+The baby ..... a lot at night. || cries | crys | cry | crying
+Noura ..... her grandmother every weekend. || visits | visit | visiting | is visit
+My parents ..... in a small village. || live | lives | living | is live
+He ..... his teeth twice a day. || brushes | brush | brushs | brushing
+
+## Adjectives + Adverbs (a / an)
+It's ..... class. || a pretty interesting | pretty interesting | pretty a interesting | an pretty interesting
+They are ...... || beautiful classes | a beautiful classes | an beautiful classes | classes beautiful
+I have ...... || smart students | a smart students | an smart students | smarts students
+It is ...... || a very safe school | very safe school | very a safe school | an very safe school
+This is ...... || an extremely quiet classroom | a extremely quiet classroom | extremely quiet classroom | extremely an quiet classroom
+The ...... || building is really beautiful | building is a really beautiful | is building really beautiful | really building is beautiful
+That is ..... idea! I've heard it's not safe to go there after dark. || a really bad | an extremely | a very | a bad really
+My teacher is kind and ...... If I don't understand my math lesson, she explains it to me again. || helpful | a helpful | a helpfuls | helpfuls
+Riyadh is ...... || a very big city | very big city | a city very big | an very big city
+My brother has ...... || an old car | a old car | old a car | car old
+She is ...... || an intelligent student | a intelligent student | intelligent a student | student intelligent
+The food here is ...... || really delicious | a really delicious | delicious really | really a delicious
+We live in ...... || a quite small house | a small quite house | quite small a house | an quite small house
+This is ..... book. I couldn't stop reading it. || an extremely interesting | a extremely interesting | extremely interesting | an interesting extremely
+The rooms in this hotel are ...... || very clean | a very clean | very cleans | cleans very
+He is ...... || a pretty funny man | pretty funny man | a funny pretty man | an pretty funny man
+It was ...... || an easy test | a easy test | easy a test | test easy
+They are ...... || very friendly people | a very friendly people | very friendlys people | friendly very people
+My grandmother has ...... || an orange cat | a orange cat | orange a cat | an cat orange
+The weather today is ...... || extremely hot | an extremely hot | hot extremely | a extremely hot
+Our campus is ...... || really modern | a really modern | modern really | really a modern
+This is ..... question. Nobody can answer it. || a very difficult | an very difficult | very difficult | a difficult very
+I want to buy ...... || a cheap phone | an cheap phone | cheap a phone | phone cheap
+Fahad is ...... || an honest man | a honest man | honest a man | man honest
+These shoes are ...... || quite comfortable | a quite comfortable | comfortable quite | quite a comfortable
+It's ..... day for a picnic. || a really nice | a nice really | really a nice | an really nice
+She has ...... || a very messy room | very messy room | a messy very room | an very messy room
+He is ...... || a university student | an university student | university a student | student university
+I ate ..... for breakfast. || an apple | a apple | apple an | an apples
+Saudi Arabia is ...... || a very beautiful country | very beautiful country | a beautiful very country | an very beautiful country
+My new classmates are ...... || pretty friendly | a pretty friendly | friendly pretty | pretty a friendly
+This exercise is ...... || really easy | a really easy | easy really | an really easy
+That movie was ...... || extremely boring | an extremely boring | boring extremely | a extremely boring
+Look! It's ...... || an elephant | a elephant | elephant | an elephants
+She bought ..... dress for the party. || a really expensive | an really expensive | really a expensive | a expensive really
+
+## Have / Has
+He ..... a shower in the morning. || doesn't have | doesn't has | don't have | don't has
+We ..... have time to play games. || don't | doesn't | are | is
+Noof ..... a car. || doesn't have | doesn't has | don't has | don't have
+..... you have a house? || Do | Does | Has | Are
+Ahmed and Adnan ..... a big house. || have | has | are | is
+What does he .....? || have | is | has | are
+Let's go to Riyadh Park. They ..... many different shops, restaurants, and movie theaters. || have | having | has | has had
+I ..... two brothers and one sister. || have | has | am | is
+My father ..... a new car. || has | have | is | are
+She ..... long black hair. || has | have | is | haves
+We ..... a big garden behind our house. || have | has | are | is
+The university ..... a large library. || has | have | are | having
+Our teacher ..... a lot of books. || has | have | is | haves
+You ..... a beautiful voice. || have | has | are | is
+My cat ..... green eyes. || has | have | is | are
+They ..... an English exam tomorrow. || have | has | are | is
+Sara ..... a laptop. She uses her brother's. || doesn't have | doesn't has | don't have | hasn't have
+I ..... any money with me today. || don't have | doesn't have | don't has | haven't have
+My parents ..... a car. They take the bus. || don't have | doesn't have | don't has | doesn't has
+The hotel ..... a swimming pool. || doesn't have | don't have | doesn't has | don't has
+..... your brother have a job? || Does | Do | Has | Is
+..... they have a big house? || Do | Does | Has | Are
+Does she have a phone? Yes, she ...... || does | has | have | is
+Do you have a pen? No, I ...... || don't | doesn't | isn't | am not
+What ..... you have in your bag? || do | does | have | are
+What does your sister .....? She has a new camera. || have | has | haves | having
+How many children ..... they have? || do | does | have | are
+Does your school ..... a gym? || have | has | haves | having
+What do you have? We ..... a house near the beach. || have | has | are | is
+What does she have? She ..... a computer. || has | have | is | haves
+My brother and I ..... the same teacher. || have | has | is | are
+It ..... four legs. It's a horse. || has | have | is | haves
+Do you ..... a car? || have | has | having | haves
+Khalid ..... a lot of friends at school. || has | have | is | are
+
+## Subject and Object pronouns
+Jim drives ..... to work. || her | we | he | she
+Look at .....! || me | she | they | he
+The books are heavy. I can't carry ...... || them | he | they | him
+Your friends are waiting for ...... || us | they | him | he
+If you don't want to watch TV, please turn ..... off. || it | she | he | we
+I want to help ...... || you | she | he | we
+I enjoy playing computer games. ..... is a fun activity to do in my free time. || It | Those | They | These
+A: Did you bring the face masks with you? B: I'm sorry, I forgot ..... at home. || them | us | him | her
+My sister is very kind. ..... always helps me. || She | Her | Hers | They
+My sister is very kind. She always helps ...... || me | I | my | mine
+Ahmed is my friend. I play football with ..... every Friday. || him | he | his | they
+..... are students at King Saud University. || We | Us | Our | Him
+Sara and I are classmates. ..... study together. || We | Us | They | Them
+This is my teacher. I like ..... very much. || her | she | hers | they
+Where are my keys? I can't find ...... || them | they | it | him
+My parents are coming. I'm waiting for ...... || them | they | their | us
+..... is my brother. His name is Fahad. || He | Him | His | She
+My grandmother lives with us. We love ..... a lot. || her | she | hers | they
+The phone is ringing. Can you answer .....? || it | he | them | its
+Please call ..... tonight. My number is 0551234567. || me | I | my | mine
+..... is a big city. It has many tall buildings. || It | They | Its | Them
+Noura is sick, so I am going to visit ...... || her | she | hers | him
+The children are in the garden. Can you see .....? || them | they | their | it
+Can you come with ..... to the market? We need help. || us | we | our | they
+Khalid gave ..... a nice gift for my birthday. || me | I | my | he
+..... are my friends, Ali and Omar. || They | Them | Their | We
+My brother and I go to school together. Our father drives ...... || us | we | our | them
+I don't know that man. Who is .....? || he | him | his | she
+This cake is for ...... Happy birthday, Mona! || you | your | yours | she
+Mr. Saleh is a good teacher. All the students listen to ...... || him | he | his | they
+I love my cat. ..... sleeps on my bed every night. || It | They | Them | He'is
+Please sit with ...... I want to talk to you. || me | I | my | mine
+Lama and Huda are sisters. ..... live in Jeddah. || They | Them | She | Their
+I have a new car. I drive ..... every day. || it | its | them | he
+
+## Verbs + gerunds or infinitives
+I hope ..... the exam at the end of the course. || to pass | pass | pass to | passing
+I avoid ..... in fast food restaurants whenever possible. || eating | to eat | eat to | eat
+I dislike ..... in a hurry. || drinking | to drink | drink | drinks
+I hate ..... early every day. || to get up | get up | to geting up | to gets up
+She tried ..... her hair red, but it didn't suit her at all. || to dye | to dyes | dye | to dyeing
+I need ..... a stamp on this letter. || to put | to puting | put | to puts
+She avoids ..... too much meat. || eating | to eat | eat | eats
+You need ..... hard for the exam. || to study | study | studying | to studying
+I enjoy ..... with my friends on weekends. || going out | to go out | go out | goes out
+My father stopped ..... five years ago. It's better for his health. || smoking | to smoke | smoke | smokes
+I want ..... a doctor in the future. || to become | become | becoming | to becoming
+We hope ..... you again soon. || to see | see | seeing | to seeing
+He tries ..... to the gym three times a week. || to go | go | going | to going
+My brother dislikes ..... the dishes. || washing | to wash | wash | washes
+They need ..... a bigger apartment. || to find | find | finding | to finding
+She enjoys ..... books in the evening. || reading | to read | read | reads
+Please stop ..... so much noise. I'm trying to study. || making | to make | make | makes
+I like ..... in the sea in summer. || swimming | swim | swims | to swimming
+I can't stand ..... after work. I'm always too tired. || to cook | cook | cooks | to cooking
+My mother loves ..... new dishes. || to try | try | tries | to trying
+He hates ..... in traffic every morning. || waiting | wait | waits | to waiting
+Sara wants ..... French next year. || to learn | learn | learning | to learning
+Students should avoid ..... up late before an exam. || staying | to stay | stay | stays
+We enjoy ..... time at the beach. || spending | to spend | spend | spends
+I need ..... my room. It's very messy. || to clean | clean | cleaning | to cleaning
+Khalid stopped ..... video games because he wanted more time to study. || playing | to play | play | plays
+I hope ..... to Japan one day. || to travel | travel | traveling | to traveling
+My little sister doesn't like ..... vegetables. || eating | eat | eats | to eating
+They want ..... a party for their father's birthday. || to have | have | having | to having
+She ..... to finish her homework before dinner. || tries | try | trying | to try
+He ..... playing tennis with his friends. || enjoys | enjoy | to enjoy | enjoying
+My friend avoids ..... coffee at night. || drinking | to drink | drink | drinks
+I love ..... music while I study. || listening to | listen to | listens to | to listening to
+Do you need ..... a break? || to take | take | taking | to taking
+I ..... to a dentist. I have a lot of pain in my teeth. || should go | should to go | should going | should to going
