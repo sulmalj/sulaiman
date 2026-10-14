@@ -1,8 +1,12 @@
 """يبني ملف دليل الميد للإنجليزي:
 صفحة إعلان + صفحات الملف الأصلي (بدون Source/Units وبدون قائمة الكلمات، ومع حل النماذج) + بطاقات الكلمات + إعلان ثاني.
 
-الاستخدام (ملف المسار الإنساني):
-  python3 tools/english/build_guide_pdf.py store/english/midterm-guide-humanities-original.pdf store/english/midterm-guide-humanities-ready.pdf
+الاستخدام:
+  المسار الإنساني:
+    python3 tools/english/build_guide_pdf.py store/english/midterm-guide-humanities-original.pdf store/english/midterm-guide-humanities-ready.pdf
+  المسار الطبي:
+    python3 tools/english/build_guide_pdf.py store/english/midterm-guide-engl108-original.pdf store/english/midterm-guide-engl108-ready.pdf \
+      --vocab tools/english/vocab_cards_medical.txt --track "المسار الطبي (Medical)"
 """
 import argparse, html, re, sys, tempfile, pathlib
 import base64, io
@@ -92,9 +96,9 @@ def ad2():
 <a class="tg2" href="{TELEGRAM}">قناتنا لمعرفة كل جديد: <span>t.me/mlazmadl</span></a></div>"""
 
 
-def vocab_pages():
+def vocab_pages(vocab_file):
     rows = []
-    for line in (HERE / "vocab_cards.txt").read_text(encoding="utf-8").splitlines():
+    for line in pathlib.Path(vocab_file).read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         w, pos, ar, s, s_ar = [x.strip() for x in line.split(" | ")]
@@ -214,17 +218,26 @@ def hide_source_units(page):
     assert len(hits) == 1
     top = hits[0].y0 - 0.6  # خط الحد فوق عنوان Source يبقى
     nxt = [r for t, r in lines_of(page) if t == "Grammar"][0]
-    # المنطقة من تحت خط Source لين الخط اللي فوق قسم Grammar (الصف الفاضي يبقى فاصل)
-    area = pymupdf.Rect(20.5, top, page.rect.width - 20.5, nxt.y0 - 9.6)
+    # المنطقة من تحت خط Source لين الخط الأفقي اللي فوق قسم Grammar
+    hl = [d["rect"].y0 for d in page.get_drawings()
+          if d["rect"].height < 1.5 and d["rect"].width > 400 and top < d["rect"].y0 < nxt.y0]
+    dr = [d["rect"] for d in page.get_drawings()]
+    hx = [r for r in dr if r.height < 1.5 and r.width > 400]
+    x0, x1 = min(r.x0 for r in hx), max(r.x1 for r in hx)  # عرض الجدول نفسه
+    vx = [(r.x0 + r.x1) / 2 for r in dr if r.width < 1.5 and r.height > 5]
+    bl = min(vx, key=lambda x: abs(x - x0))  # مكان الحد اليسار الأصلي بالضبط
+    br = min(vx, key=lambda x: abs(x - x1))
+    area = pymupdf.Rect(x0 - 0.5, top, x1 + 0.5, max(hl) - 0.4)
     page.add_redact_annot(area, fill=(1, 1, 1))
     page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE,
                           graphics=pymupdf.PDF_REDACT_LINE_ART_REMOVE_IF_COVERED)
     # نرجّع حدود الجدول اليمين واليسار في المكان الفاضي
-    for x in (20.7, 576.5):
+    # نرجّع حدود الجدول الخارجية (أطراف الخطوط الأفقية)
+    for x in (bl, br):
         page.draw_line((x, area.y0 - 0.3), (x, area.y1 + 0.3), color=(0, 0, 0), width=0.6)
 
 
-def hide_course_code(page):
+def hide_course_code(page, track):
     """يشيل رمز المقرر (ENGL 102 / 103B) ويرجّع سطر المسار في النص (طلب المستخدم)."""
     hits = [r for t, r in lines_of(page) if t.startswith("ENGL")]
     assert len(hits) == 1
@@ -233,7 +246,7 @@ def hide_course_code(page):
     page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE, graphics=pymupdf.PDF_REDACT_LINE_ART_NONE)
     box = pymupdf.Rect(20.7, r.y0 - 1.5, 576.5, r.y1 + 3)
     page.insert_htmlbox(box, '<p dir="rtl" style="text-align:center;margin:0;font-family:sans-serif;'
-                             'font-weight:bold;font-size:9px">المسار الانساني (Humanities)</p>')
+                             'font-weight:bold;font-size:9px">' + html.escape(track) + '</p>')
 
 
 def hide_page_numbers(doc):
@@ -249,9 +262,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("src", help="ملف المسار الإنساني الأصلي")
     ap.add_argument("out")
+    ap.add_argument("--vocab", default=str(HERE / "vocab_cards.txt"), help="ملف بطاقات الكلمات الخاص بالمسار")
+    ap.add_argument("--track", default="المسار الانساني (Humanities)", help="سطر المسار اللي يبقى في الغلاف")
     a = ap.parse_args()
     tmp = pathlib.Path(tempfile.mkdtemp())
-    vdoc, n = vocab_pages()
+    vdoc, n = vocab_pages(a.vocab)
     with sync_playwright() as p:
         b = p.chromium.launch(executable_path="/opt/pw-browsers/chromium")
         pg = b.new_page()
@@ -265,7 +280,7 @@ def main():
 
     src = pymupdf.open(a.src)
     hide_source_units(src[0])
-    hide_course_code(src[0])
+    hide_course_code(src[0], a.track)
     mark_answers(src)
     src.delete_pages([1, 2])  # صفحتين قائمة الكلمات الأصلية — بدالها بطاقات الكلمات
     hide_page_numbers(src)

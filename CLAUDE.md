@@ -108,6 +108,13 @@
 - معاينة للمستخدم (Artifact): https://claude.ai/artifact/RDVLjq3SbV5nBSoESGQchB
 - (2026-10-14) مراجعة كاملة: الـ227 كلمة موجودة بترتيب الملف، ما فيه بطاقة تفيض، الحلول مطابقة لنموذج المستخدم، الروابط: t.me/mlazmadl و mtgradl.com و tiny.cc/fuhozz (رابط Quizlet الأصلي باقي ويشتغل بالضغط). **الباركود لازم يكون صورة PNG** (`qr_img`) — نسخة SVG ما كانت تنقرأ. الترجمات فصحى (بدون عامية).
 
+## مشروع: دليل الميد — المسار الطبي (ENGL 108 / 109B, Medical) — جاهز (2026-10-14)
+- الأصلي: `store/english/midterm-guide-engl108-original.pdf` (Q Skills 2 R/W + L/S، English for Medicine). الناتج: `store/english/midterm-guide-engl108-ready.pdf` (13 صفحة).
+- البناء: `python3 tools/english/build_guide_pdf.py store/english/midterm-guide-engl108-original.pdf store/english/midterm-guide-engl108-ready.pdf --vocab tools/english/vocab_cards_medical.txt --track "المسار الطبي (Medical)"`.
+- الكلمات: 166 بطاقة بترتيب قائمة الملف (`tools/english/vocab_cards_medical.txt`). research و average مكررين في قائمتهم بنوعين → بطاقتين بمعنيين (يبحث/بحث، المتوسط/متوسط).
+- نماذج الأسئلة (قواعد/قراءة/استماع/كلمات) مطابقة حرفياً لملف المسار الإنساني (تمت المقارنة آلياً) → نفس الحلول. رابط Quizlet فيه tiny.cc/iuhozz (باركوده يودي لمجموعة «science midterm» — من ملف القسم نفسه).
+- نفس القالب: إعلانين، تغطية Source/Units ورمز المقرر، تذييل القناة، شيل قائمة الكلمات الأصلية وأرقام الصفحات.
+
 ## قرارات وملاحظات مهمة
 - (2026-10-14) **محاكي عدل — العملي (تقن 102 مهارات الحاسب الآلي، جزئية الميد):** موقع صفحة واحدة منشور على Netlify (الرابط اللي أرسله المستخدم: malazmadl.netlify.app). نسخة الكود محفوظة في `store/tech102/adl-sim/index.html` (ملف HTML واحد فيه كل CSS/JS). يحاكي شاشة Windows 11 و Word 2021، وأسئلته من الكتاب مقسّمة: الفصل الأول (Windows: الملفات والمجلدات، الضغط/WinRAR/OneDrive/البريد) والفصل الثاني (Word: التنسيق، تصميم وتخطيط المستند وحمايته). فيه وضعين «تعلّم» (مسار خطوات ودائرة برتقالية على مكان الضغط) و«اختبر نفسك» (بدون تلميحات، من 3 نجوم)، واختبار ميد تجريبي (20 سؤال عشوائي في 30 دقيقة)، ومراجعة الأخطاء. التقدم يُحفظ في localStorage بالمفتاح `adl-sim-v2`. خاص بمشتركي «ملازم عدل · العملي».
 - (أضف هنا مع التاريخ)
