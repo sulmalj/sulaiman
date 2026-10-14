@@ -1,6 +1,6 @@
 # بطاقات الكلمات (227 كلمة — بترتيب قائمة ملف المسار الإنساني store/english/midterm-guide-humanities-original.pdf)
 # الصيغة: الكلمة | نوعها (من الملف) | المعنى | جملة إنجليزية (الكلمة بين **) | ترجمة الجملة
-Clothes | Noun | ملابس | I need to buy new **clothes** for the winter. | أحتاج أشتري ملابس جديدة للشتاء.
+Clothes | Noun | ملابس | I need to buy new **clothes** for the winter. | أحتاج إلى شراء ملابس جديدة للشتاء.
 Describe | Verb | يَصِف | Can you **describe** your best friend? | هل تستطيع أن تصف صديقك المفضل؟
 Friendly | Adjective | ودود | My neighbor is very **friendly**; he always says hello. | جاري ودود جداً، ويُلقي التحية دائماً.
 Funny | Adjective | مُضحِك | My brother tells **funny** stories. | أخي يحكي قصصاً مضحكة.
@@ -26,7 +26,7 @@ Listen to | Verb Phrase | يستمع إلى | I **listen to** the news in the ca
 Live in | Verb Phrase | يسكن في | They **live in** Riyadh. | هم يسكنون في الرياض.
 Play | Verb | يلعب | The children **play** in the park. | الأطفال يلعبون في الحديقة.
 Read | Verb | يقرأ | I **read** a book before I sleep. | أقرأ كتاباً قبل أن أنام.
-Ride | Verb | يركب | He **rides** his bike to school. | يذهب إلى المدرسة بدراجته.
+Ride | Verb | يركب | He **rides** his bike to school. | يركب دراجته إلى المدرسة.
 Take | Verb | يأخذ | **Take** your umbrella; it's raining. | خذ مظلتك، فالجو ممطر.
 Watch | Verb | يشاهد | We **watch** a movie every Friday. | نشاهد فيلماً كل جمعة.
 Belong to | Verb Phrase | ينتمي إلى / ملك لـ | This bag **belongs to** my sister. | هذه الحقيبة ملك لأختي.
@@ -50,9 +50,9 @@ Field | Noun | حقل | The farmer works in the **field**. | المزارع يع
 Flood | Noun | فيضان | The heavy rain caused a **flood**. | المطر الغزير سبّب فيضاناً.
 Friend | Noun | صديق | Khalid is my best **friend**. | خالد صديقي المفضل.
 Help | Noun | مساعدة | Thank you for your **help**. | شكراً على مساعدتك.
-Intelligence | Noun | ذكاء | Reading can improve your **intelligence**. | القراءة ممكن تنمّي ذكاءك.
+Intelligence | Noun | ذكاء | Reading can improve your **intelligence**. | يمكن للقراءة أن تنمّي ذكاءك.
 Pick up | Verb Phrase | يلتقط / يأخذ (أحداً بالسيارة) | Can you **pick up** the kids from school? | هل تستطيع أن تأخذ الأطفال من المدرسة؟
-Student | Noun | طالب | Every **student** has a computer. | كل طالب عنده كمبيوتر.
+Student | Noun | طالب | Every **student** has a computer. | كل طالب لديه حاسوب.
 Studious | Adjective | مجتهد (في الدراسة) | She is **studious**; she studies every day. | هي مجتهدة، تذاكر كل يوم.
 Study | Verb | يدرس / يذاكر | I **study** in the library. | أذاكر في المكتبة.
 Teach | Verb | يُعلِّم / يُدرِّس | My mother **teaches** English. | أمي تدرّس اللغة الإنجليزية.
@@ -73,7 +73,7 @@ Guess | Verb | يُخمِّن | Can you **guess** my age? | هل تستطيع أ
 Have a snack | Collocation (Verb & Noun) | يأكل وجبة خفيفة | Let's **have a snack** before class. | لنتناول وجبة خفيفة قبل المحاضرة.
 Have an idea | Collocation (Verb & Noun) | لديه فكرة | I **have an idea** for the project. | لديّ فكرة للمشروع.
 Have coffee | Collocation (Verb & Noun) | يشرب القهوة | We **have coffee** together every morning. | نشرب القهوة معاً كل صباح.
-Have fun | Collocation (Verb & Noun) | يستمتع / ينبسط | We **had fun** at the party. | استمتعنا في الحفلة.
+Have fun | Collocation (Verb & Noun) | يستمتع / يقضي وقتاً ممتعاً | We **had fun** at the party. | استمتعنا في الحفلة.
 Idea | Noun | فكرة | That's a great **idea**! | هذه فكرة رائعة!
 Invite | Verb | يدعو / يعزم | I want to **invite** you to my wedding. | أريد أن أدعوك إلى حفل زواجي.
 Make friends | Collocation (Verb & Noun) | يُكوِّن صداقات | It is easy to **make friends** at university. | من السهل تكوين صداقات في الجامعة.
@@ -89,9 +89,9 @@ Crowded | Adjective | مُزدَحِم | The mall is very **crowded** on weekend
 Do aerobics | Collocation (Verb & Noun) | يمارس التمارين الهوائية | My sister **does aerobics** at the gym. | أختي تمارس التمارين الهوائية في النادي.
 Do crosswords | Collocation (Verb & Noun) | يحل الكلمات المتقاطعة | My grandfather **does crosswords** every morning. | جدي يحل الكلمات المتقاطعة كل صباح.
 Do gymnastics | Collocation (Verb & Noun) | يمارس الجمباز | She **does gymnastics** three times a week. | هي تمارس الجمباز ثلاث مرات في الأسبوع.
-Do judo | Collocation (Verb & Noun) | يمارس الجودو | My son **does judo** after school. | ولدي يمارس الجودو بعد المدرسة.
+Do judo | Collocation (Verb & Noun) | يمارس الجودو | My son **does judo** after school. | ابني يمارس الجودو بعد المدرسة.
 Do nothing | Collocation (Verb & Noun) | لا يفعل شيئاً | On Fridays, I like to **do nothing** and rest. | يوم الجمعة أحب ألا أفعل شيئاً وأن أرتاح.
-Go hiking | Collocation (Verb & Noun) | يذهب للمشي في الطبيعة (هايكنج) | We **go hiking** in the mountains of Abha. | نذهب للمشي في جبال أبها.
+Go hiking | Collocation (Verb & Noun) | يمشي في الطبيعة (هايكنج) | We **go hiking** in the mountains of Abha. | نذهب للمشي في جبال أبها.
 Go jogging | Collocation (Verb & Noun) | يذهب للهرولة (الجري الخفيف) | He **goes jogging** every morning. | يذهب للهرولة كل صباح.
 Go shopping | Collocation (Verb & Noun) | يتسوَّق | We **go shopping** every Thursday. | نتسوق كل خميس.
 Go skiing | Collocation (Verb & Noun) | يتزلَّج على الثلج | They **go skiing** in Switzerland. | يتزلجون على الثلج في سويسرا.
@@ -99,22 +99,22 @@ Go swimming | Collocation (Verb & Noun) | يذهب للسباحة | I **go swimm
 Modern | Adjective | حديث / عصري | They live in a **modern** apartment. | يسكنون في شقة حديثة.
 Outdoors | Adverb | في الهواء الطلق / خارج المنزل | Children should play **outdoors**. | يجب أن يلعب الأطفال في الهواء الطلق.
 Play baseball | Collocation (Verb & Noun) | يلعب البيسبول | Americans love to **play baseball**. | يحب الأمريكيون لعب البيسبول.
-Play scrabble | Collocation (Verb & Noun) | يلعب سكرابل (لعبة تكوين كلمات) | We **play scrabble** to learn new words. | نلعب سكرابل لنتعلم كلمات جديدة.
+Play scrabble | Collocation (Verb & Noun) | يلعب سكرابل (لعبة كلمات) | We **play scrabble** to learn new words. | نلعب سكرابل لنتعلم كلمات جديدة.
 Play soccer | Collocation (Verb & Noun) | يلعب كرة القدم | The boys **play soccer** after school. | يلعب الأولاد كرة القدم بعد المدرسة.
 Play tennis | Collocation (Verb & Noun) | يلعب التنس | She **plays tennis** with her father. | تلعب التنس مع والدها.
 Play video games | Collocation (Verb & Noun) | يلعب ألعاب الفيديو | My brother **plays video games** all night. | يلعب أخي ألعاب الفيديو طوال الليل.
 Provide | Verb | يُوفِّر / يُقدِّم | The hotel **provides** free breakfast. | الفندق يقدّم فطوراً مجانياً.
-Relaxing | Adjective | مُريح / يبعث على الاسترخاء | A hot shower is very **relaxing**. | الاستحمام بالماء الدافئ مريح جداً.
+Relaxing | Adjective | مُريح / يبعث على الاسترخاء | A hot shower is very **relaxing**. | الاستحمام بالماء الساخن مريح جداً.
 Scene | Noun | مشهد / منظر | This is my favorite **scene** in the movie. | هذا مشهدي المفضل في الفيلم.
 Tradition | Noun | تقليد / عادة متوارثة | Drinking Arabic coffee is a Saudi **tradition**. | شرب القهوة العربية تقليد سعودي.
 Bright | Adjective | مُشرِق / مُضيء | My room is **bright** and sunny. | غرفتي مضيئة ومشمسة.
 Building | Noun | مبنى | Our office is in a tall **building**. | مكتبنا في مبنى عالٍ.
-Comfortable | Adjective | مُريح | This sofa is very **comfortable**. | هذا الكنب مريح جداً.
+Comfortable | Adjective | مُريح | This sofa is very **comfortable**. | هذه الأريكة مريحة جداً.
 Contest | Noun | مسابقة | She won the reading **contest**. | فازت في مسابقة القراءة.
 Design | Noun | تصميم | I like the **design** of this house. | يعجبني تصميم هذا البيت.
 Drawer | Noun | دُرْج | My keys are in the desk **drawer**. | مفاتيحي في درج المكتب.
-Electricity | Noun | كهرباء | The **electricity** went off last night. | انقطعت الكهرباء أمس بالليل.
-Environment | Noun | البيئة | We must protect the **environment**. | لازم نحمي البيئة.
+Electricity | Noun | كهرباء | The **electricity** went off last night. | انقطعت الكهرباء الليلة الماضية.
+Environment | Noun | البيئة | We must protect the **environment**. | يجب أن نحمي البيئة.
 Teacher | Noun | معلم | Our **teacher** is very kind. | معلمنا لطيف جداً.
 Unusual | Adjective | غير عادي / غريب | It is **unusual** to see snow in Jeddah. | من غير العادي رؤية الثلج في جدة.
 Above | Preposition | فوق / أعلى | The clock is **above** the door. | الساعة فوق الباب.
@@ -122,7 +122,7 @@ Badly | Adverb | بشكل سيئ | He did **badly** on the test. | كان أدا
 Below | Preposition | تحت / أسفل | Write your name **below** the title. | اكتب اسمك تحت العنوان.
 Boring | Adjective | مُمِل | The movie was long and **boring**. | كان الفيلم طويلاً ومملاً.
 Campus | Noun | الحرم الجامعي | The library is in the middle of the **campus**. | المكتبة في وسط الحرم الجامعي.
-Cheap | Adjective | رخيص | This phone is very **cheap**. | هذا الجوال رخيص جداً.
+Cheap | Adjective | رخيص | This phone is very **cheap**. | هذا الهاتف رخيص جداً.
 Clean | Adjective | نظيف | Please keep your room **clean**. | من فضلك حافظ على نظافة غرفتك.
 Community | Noun | المجتمع | We help people in our **community**. | نساعد الناس في مجتمعنا.
 Complicated | Adjective | مُعقَّد | The instructions are too **complicated**. | التعليمات معقدة جداً.
@@ -157,20 +157,20 @@ Celebrate | Verb | يحتفل | We **celebrate** Eid with our family. | نحتف
 Cheese | Noun | جُبن | I like **cheese** sandwiches. | أحب سندويشات الجبن.
 Chicken | Noun | دجاج | We cooked **chicken** and rice. | طبخنا دجاجاً ورزاً.
 Dairy | Noun | منتجات الألبان | Milk and cheese are **dairy** products. | الحليب والجبن من منتجات الألبان.
-Delicious | Adjective | لذيذ | My mother's food is **delicious**. | أكل أمي لذيذ.
+Delicious | Adjective | لذيذ | My mother's food is **delicious**. | طعام أمي لذيذ.
 Event | Noun | حدث / فعالية | The university has a big **event** tonight. | لدى الجامعة فعالية كبيرة الليلة.
 Fresh | Adjective | طازج | I buy **fresh** bread every morning. | أشتري خبزاً طازجاً كل صباح.
 Fruit | Noun | فاكهة | Eat more **fruit** to stay healthy. | كُل فاكهة أكثر لتبقى بصحة جيدة.
 Grapes | Noun | عِنَب | These **grapes** are very sweet. | هذا العنب حلو جداً.
 Grow | Verb | يزرع / ينمو | My father **grows** tomatoes in the garden. | أبي يزرع طماطم في الحديقة.
-Lobster | Noun | كَرْكَند (استاكوزا) | **Lobster** is an expensive seafood. | الاستاكوزا من المأكولات البحرية الغالية.
+Lobster | Noun | كَرْكَند (استاكوزا) | **Lobster** is expensive seafood. | الاستاكوزا من المأكولات البحرية الغالية.
 Meat | Noun | لحم | He doesn't eat **meat**. | هو لا يأكل اللحم.
 Milk | Noun | حليب | I drink a glass of **milk** at night. | أشرب كأس حليب في الليل.
 Onions | Noun | بصل | Cut the **onions** into small pieces. | قطّع البصل قطعاً صغيرة.
 Popular | Adjective | مشهور / محبوب | Soccer is very **popular** in Saudi Arabia. | كرة القدم مشهورة جداً في السعودية.
 Potatoes | Noun | بطاطس | My kids love fried **potatoes**. | أطفالي يحبون البطاطس المقلية.
 Prepare | Verb | يُحضِّر / يُجهِّز | I **prepare** breakfast for my family. | أحضّر الفطور لعائلتي.
-Seafood | Noun | مأكولات بحرية | Jeddah has great **seafood** restaurants. | جدة فيها مطاعم مأكولات بحرية رائعة.
+Seafood | Noun | مأكولات بحرية | Jeddah has great **seafood** restaurants. | في جدة مطاعم مأكولات بحرية رائعة.
 Shrimp | Noun | رُبيان (جمبري) | I ordered **shrimp** with rice. | طلبت روبياناً مع رز.
 Vegetables | Noun | خضروات | **Vegetables** are good for your body. | الخضروات مفيدة لجسمك.
 Avoid | Verb | يتجنَّب | Try to **avoid** sugar and fast food. | حاول أن تتجنب السكر والوجبات السريعة.
@@ -186,7 +186,7 @@ View | Noun | إطلالة / منظر | The hotel room has a beautiful sea **vie
 Affordable | Adjective | بسعر مناسب / في المتناول | This apartment is **affordable** for students. | هذه الشقة بسعر مناسب للطلاب.
 Condition | Noun | حالة | The car is old, but it is in good **condition**. | السيارة قديمة لكن حالتها جيدة.
 Demand | Noun | طَلَب | There is a high **demand** for nurses. | يوجد طلب كبير على الممرضين.
-Entertainment | Noun | ترفيه | The city has many **entertainment** places. | المدينة فيها أماكن ترفيه كثيرة.
+Entertainment | Noun | ترفيه | The city has many **entertainment** places. | في المدينة أماكن ترفيه كثيرة.
 Housing | Noun | سكن / إسكان | Student **housing** is close to the campus. | سكن الطلاب قريب من الحرم الجامعي.
 Increase | Verb | يزيد / يرتفع | Prices **increase** every year. | الأسعار ترتفع كل سنة.
 Landlord | Noun | مالك العقار (المؤجِّر) | We pay the rent to the **landlord**. | ندفع الإيجار لمالك العقار.
@@ -203,7 +203,7 @@ Become | Verb | يُصبِح | He wants to **become** a doctor. | يريد أن 
 Behavior | Noun | سلوك / تصرُّف | The teacher was happy with his **behavior**. | كان المعلم سعيداً بسلوكه.
 Break | Verb | يكسر / يتخلَّص من (عادة) | It is hard to **break** a bad habit. | من الصعب التخلّص من عادة سيئة.
 Expert | Noun | خبير | He is an **expert** in computers. | هو خبير في الكمبيوتر.
-Give up | Phrasal Verb | يتوقَّف عن / يستسلم | My father **gave up** smoking last year. | أبي ترك التدخين السنة الماضية.
+Give up | Phrasal Verb | يتوقَّف عن / يستسلم | My father **gave up** smoking last year. | أقلع أبي عن التدخين السنة الماضية.
 Goal | Noun | هدف | My **goal** is to finish university. | هدفي أن أُنهي الجامعة.
 Instead of | Preposition | بدلاً من | Drink water **instead of** soda. | اشرب الماء بدلاً من المشروبات الغازية.
 Lose weight | Phrasal Verb | يخسر وزناً / ينحف | I want to **lose weight** before summer. | أريد أن أخسر وزني قبل الصيف.
@@ -222,7 +222,7 @@ Exercise | Verb | يتمرَّن / يمارس الرياضة | I **exercise** fo
 Healthy | Adjective | صِحِّي | Fruit is a **healthy** snack. | الفاكهة وجبة خفيفة صحية.
 Lonely | Adjective | وحيد / يشعر بالوحدة | She felt **lonely** in the new city. | شعرت بالوحدة في المدينة الجديدة.
 Manage | Verb | يُدير / يتحكَّم في | It is important to **manage** your time. | من المهم أن تدير وقتك.
-Pill | Noun | حَبَّة دواء | Take one **pill** after each meal. | خذ حبة وحدة بعد كل وجبة.
+Pill | Noun | حَبَّة دواء | Take one **pill** after each meal. | خذ حبة واحدة بعد كل وجبة.
 Produce | Verb | يُنتِج | Saudi Arabia **produces** a lot of oil. | تُنتج السعودية الكثير من النفط.
 Reduce | Verb | يُقلِّل | Walking can **reduce** stress. | المشي يمكن أن يقلل التوتر.
 Run-down | Adjective | مُرهَق / مُنهَك | I feel **run-down** because I don't sleep enough. | أشعر بالإرهاق لأنني لا أنام بما يكفي.
