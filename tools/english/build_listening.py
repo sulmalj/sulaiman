@@ -10,8 +10,9 @@
 import argparse, hashlib, json, os, re, subprocess, sys, tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-SRC = os.path.join(ROOT, 'tools', 'english', 'listening.txt')
-SITE = os.path.join(ROOT, 'sites', 'english')
+NAME = os.path.basename(os.path.dirname(os.path.abspath(__file__)))   # english أو english-final
+SRC = os.path.join(ROOT, 'tools', NAME, 'listening.txt')
+SITE = os.path.join(ROOT, 'sites', NAME)
 AUDIO = os.path.join(SITE, 'audio')
 SPEED = 1.1          # سرعة الكلام (طلب المستخدم: أسرع شوي)
 TURN_GAP = 0.55      # سكتة بين المتحدثين
