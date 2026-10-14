@@ -205,7 +205,7 @@ Mazin's hands always start sweating ..... nervous, so he puts them in his pocket
 Sara did not go to school ..... she was sick. || because | so | but | when || الترتيب: نتيجة (ما راحت) + because + سبب (مريضة).
 She was sick, ..... she did not go to school. || so | because | but | when || الترتيب: سبب (مريضة) + so + نتيجة (ما راحت).
 I studied very hard, ..... I failed the exam. || but | so | because | when || but بين جملتين متضادتين (ذاكر ← رسب)، وقبلها فاصلة.
-..... I run, I get tired. || When | Because | So | But || When + سبب، ثم الجملة الثانية. ولما تكون when في البداية نحط فاصلة.
+..... I run, I get tired. || When | And | So | But || When + سبب، ثم الجملة الثانية. ولما تكون when في البداية نحط فاصلة.
 I get tired ..... I run. || when | so | but | because of || when في الوسط بدون فاصلة: النتيجة + when + السبب.
 It was raining, ..... we stayed at home. || so | because | but | when || سبب (مطر) + so + نتيجة (جلسنا في البيت).
 We stayed at home ..... it was raining. || because | so | but | and so || نتيجة (جلسنا) + because + سبب (المطر).
@@ -224,7 +224,7 @@ I have an exam tomorrow, ..... I'm going to bed early. || so | because | but | w
 The food was delicious, ..... it was very expensive. || but | so | because | when || لذيذ لكن غالي (تضاد) ← but.
 My mother is happy ..... we visit her. || when we | when us | when our | when do we || when + Subject (we) + Verb ← when we visit.
 I didn't call you ..... phone was broken. || because my | because me | because I | because mine || بعد because جملة كاملة: my phone was broken ← because my.
-She was tired, ..... she finished her homework. || but | so | because | when || تعبانة ومع ذلك خلصت الواجب (تضاد) ← but.
+She was very tired, ..... she didn't go to bed until she finished her homework. || but | so | because | when || تعبانة لكنها ما نامت لين خلصت الواجب (تضاد) ← but.
 They were late ..... missed the bus. || because they | because them | because their | because theirs || because + Subject (they) + Verb ← because they missed.
 ..... it is hot, I turn on the air conditioner. || When | But | So | Because of || When + السبب، ثم النتيجة، ومع when في البداية فاصلة.
 The test was easy, ..... everyone passed. || so | but | because | when || سبب (سهل) + so + نتيجة (الكل نجح).
@@ -248,16 +248,16 @@ A: ..... you have any brothers? B: Yes, I have two. || Do | Does | Are | Has || 
 My father ..... a lot of free time. He works from early morning until late at night. || doesn't have | don't have | doesn't has | hasn't have || My father = He ← النفي doesn't have (في النفي دائماً have).
 Our neighbours ..... three cats and a big dog. || have | has | having | are have || Our neighbours جمع (They) ← have.
 A: What does Ahmed have in his hand? B: He ..... a cup of coffee. || has | have | is | haves || He ← في الإثبات has.
-I'm sorry, I ..... a pen. Can I borrow yours? || don't have | doesn't have | don't has | haven't || I ← النفي don't have.
+I'm sorry, I ..... a pen. Can I borrow yours? || don't have | doesn't have | don't has | hasn't || I ← النفي don't have.
 This hotel is great. It ..... a big swimming pool and a gym. || has | have | is | having || The hotel = It ← has.
 A: ..... your school have a library? B: Yes, it does. It's very big. || Does | Do | Has | Is || your school = It ← Does + it + have، والجواب Yes, it does.
 My friends and I ..... an important exam tomorrow, so we're studying tonight. || have | has | are | having || My friends and I = We ← have.
 Fahad can't call you. He ..... a phone right now. It's broken. || doesn't have | don't have | doesn't has | not have || Fahad = He ← doesn't have.
-A: Do your parents have a car? B: No, they ...... They take the metro. || don't | doesn't | haven't | aren't || Do your parents…? ← الجواب No, they don't.
+A: Do your parents have a car? B: No, they ...... They take the metro. || don't | doesn't | hasn't | aren't || Do your parents…? ← الجواب No, they don't.
 Let's go to the new café on Olaya Street. It ..... great coffee and delicious cakes. || has | have | having | has had || The café = It ← has.
 A: What ..... you have for breakfast? B: I usually have eggs and bread. || do | does | are | have || you ← What do you have…?
 Riyadh ..... many big parks and malls. || has | have | is | having || Riyadh = It ← has.
-My little brother ..... long hair. It's very short. || doesn't have | don't have | doesn't has | hasn't || My little brother = He ← النفي doesn't have.
+My little brother ..... long hair. It's very short. || doesn't have | don't have | doesn't has | not has || My little brother = He ← النفي doesn't have.
 A: Does Sara have a laptop? B: Yes, she ...... She uses it for her studies. || does | has | have | is || Does she…? ← الجواب Yes, she does.
 We ..... a big family. I have five brothers and three sisters. || have | has | are | is || We ← have.
 A: How many classes ..... you have today? B: I have four. || do | does | are | have || you ← How many classes do you have?
@@ -282,7 +282,7 @@ My brother wants ..... a new car next year. || to buy | buy | buying | buys || �
 We need ..... to the supermarket. There's no milk at home. || to go | go | going | goes || بعد need يجي to + الفعل الأساسي: need to go.
 Sara likes ..... books in her free time. || to read | read | reads | to reading || بعد like يجي to + الفعل الأساسي: likes to read.
 A: What do you want ..... after university? B: I want to work in a bank. || to do | do | doing | does || بعد want يجي to + الفعل الأساسي: want to do.
-I need ..... help with my homework. It's very difficult. || some | to some | some to | to help some || بعد need يجي اسم: need some help.
+I need ..... help with my homework. It's very difficult. || some | to some | some to | any to || بعد need يجي اسم: need some help.
 They want ..... a big house with a garden. || to have | have | having | has || بعد want يجي to + الفعل الأساسي: want to have.
 I don't like ..... early on weekends. || to wake up | wake up | wakes up | to waking up || بعد like (حتى في النفي) يجي to + الفعل الأساسي.
 He ..... to study abroad next year. || wants | want | wanting | to want || He ← الفعل الأول ينضاف له s: wants، وبعده to study.

@@ -1943,7 +1943,7 @@ window.GRAMMAR = [
 "q": "..... I run, I get tired.",
 "o": [
 "When",
-"Because",
+"And",
 "So",
 "But"
 ],
@@ -2130,14 +2130,14 @@ window.GRAMMAR = [
 "e": "بعد because جملة كاملة: my phone was broken ← because my."
 },
 {
-"q": "She was tired, ..... she finished her homework.",
+"q": "She was very tired, ..... she didn't go to bed until she finished her homework.",
 "o": [
 "but",
 "so",
 "because",
 "when"
 ],
-"e": "تعبانة ومع ذلك خلصت الواجب (تضاد) ← but."
+"e": "تعبانة لكنها ما نامت لين خلصت الواجب (تضاد) ← but."
 },
 {
 "q": "They were late ..... missed the bus.",
@@ -2360,7 +2360,7 @@ window.GRAMMAR = [
 "don't have",
 "doesn't have",
 "don't has",
-"haven't"
+"hasn't"
 ],
 "e": "I ← النفي don't have."
 },
@@ -2409,7 +2409,7 @@ window.GRAMMAR = [
 "o": [
 "don't",
 "doesn't",
-"haven't",
+"hasn't",
 "aren't"
 ],
 "e": "Do your parents…? ← الجواب No, they don't."
@@ -2450,7 +2450,7 @@ window.GRAMMAR = [
 "doesn't have",
 "don't have",
 "doesn't has",
-"hasn't"
+"not has"
 ],
 "e": "My little brother = He ← النفي doesn't have."
 },
@@ -2685,7 +2685,7 @@ window.GRAMMAR = [
 "some",
 "to some",
 "some to",
-"to help some"
+"any to"
 ],
 "e": "بعد need يجي اسم: need some help."
 },

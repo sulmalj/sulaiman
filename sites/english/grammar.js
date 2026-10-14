@@ -1090,7 +1090,7 @@ window.GRAMMAR = [
 "don't have",
 "doesn't have",
 "don't has",
-"haven't"
+"hasn't"
 ],
 "e": "I ← النفي don't have."
 },
@@ -1139,7 +1139,7 @@ window.GRAMMAR = [
 "o": [
 "don't",
 "doesn't",
-"haven't",
+"hasn't",
 "aren't"
 ],
 "e": "Do your parents…? ← الجواب No, they don't."
@@ -1180,7 +1180,7 @@ window.GRAMMAR = [
 "doesn't have",
 "don't have",
 "doesn't has",
-"hasn't"
+"not has"
 ],
 "e": "My little brother = He ← النفي doesn't have."
 },
@@ -2150,7 +2150,7 @@ window.GRAMMAR = [
 "e": "الخلف (the back of the building) ← behind."
 },
 {
-"q": "Be careful! There's a cat ..... your car.",
+"q": "Be careful! There's a cat ..... your car. Look down before you drive.",
 "o": [
 "under",
 "over",
@@ -2335,7 +2335,7 @@ window.GRAMMAR = [
 "in",
 "over",
 "above",
-"at"
+"under"
 ],
 "e": "in = داخل الكراج."
 },
@@ -2404,7 +2404,7 @@ window.GRAMMAR = [
 "o": [
 "on",
 "under",
-"in",
+"above",
 "over"
 ],
 "e": "on the corner = على الزاوية."
