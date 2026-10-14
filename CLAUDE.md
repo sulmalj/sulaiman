@@ -92,7 +92,7 @@
 - التصميم: المستخدم طلب تغيير التصميم الأول (الأزرق النيلي + البرتقالي) — التصميم الجديد عنابي/بنفسجي غامق + كهرماني، وخطوط Lalezar للعناوين و Tajawal للعربي و Lexend للإنجليزي.
 - معاينة خاصة للمستخدم (Artifact): https://claude.ai/artifact/NqrK26c2VcAagFYcXseF6E (نسخة من `sites/english` بعد تحويلها لصيغة الـArtifact).
 
-## مشروع: ملف دليل الميد للإنجليزي (المسار الإنساني) — جاهز (2026-10-14)
+## مشروع: ملف دليل الميد للإنجليزي (المسار الإنساني) — نهائي ومعتمد للنشر (2026-10-14)
 - **الملف المعتمد** (ENGL 102 / 103B Humanities، Q Skills 1، 7 صفحات): `store/english/midterm-guide-humanities-original.pdf`. الناتج: `store/english/midterm-guide-humanities-ready.pdf`. البناء: `python3 tools/english/build_guide_pdf.py store/english/midterm-guide-humanities-original.pdf store/english/midterm-guide-humanities-ready.pdf`.
 - الملف النموذج الأول (مسار ثاني، ENG 101 / Q Skills Intro) محفوظ كمرجع فقط: `store/english/reference/sample-midterm-guide-annotated.pdf` (+ ناتجه القديم `store/english/midterm-guide-sample-path-ready.pdf`). المستخدم أكد: كل الشغل على ملف المسار الإنساني.
 - شكل الناتج (قرارات المستخدم):
