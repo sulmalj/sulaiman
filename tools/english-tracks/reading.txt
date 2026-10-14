@@ -339,7 +339,7 @@
 4. Experts believe these problems will become smaller in the future. Batteries are getting cheaper and better every year, and many cities are building new charging stations. Some experts _predict_ that in twenty years, most new cars will be electric.
 ?? What do electric cars use instead of petrol?
 * batteries charged with electricity
-- gas
+- diesel
 - solar panels only
 - water
 !! الفقرة 1: «electric cars use batteries that are charged with electricity».
@@ -1021,7 +1021,7 @@
 - chemicals
 - cats and dogs
 !! «older people who live alone. A pet gives them a reason to wake up» ← them = كبار السن اللي ساكنين لحالهم.
-?? How often do dog owners often walk their dogs?
+?? How often do dog owners usually walk their dogs?
 * two or three times a day
 - once a week
 - once a month

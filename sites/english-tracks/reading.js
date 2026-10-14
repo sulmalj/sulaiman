@@ -573,7 +573,7 @@ window.READING = [
 "q": "What do electric cars use instead of petrol?",
 "o": [
 "batteries charged with electricity",
-"gas",
+"diesel",
 "solar panels only",
 "water"
 ],
@@ -1730,7 +1730,7 @@ window.READING = [
 "e": "«older people who live alone. A pet gives them a reason to wake up» ← them = كبار السن اللي ساكنين لحالهم."
 },
 {
-"q": "How often do dog owners often walk their dogs?",
+"q": "How often do dog owners usually walk their dogs?",
 "o": [
 "two or three times a day",
 "once a week",
