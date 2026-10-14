@@ -96,29 +96,29 @@ Fresh || I buy ..... bread from the bakery every morning. || fresh | dirty | noi
 Grow || My grandfather ..... tomatoes and onions in his garden. || grows | invites | avoids | celebrates
 Popular || This restaurant is very ....., there are always a lot of people waiting for a table. || popular | unusual | lonely | private
 Prepare || My mother usually ..... dinner at seven o'clock. || prepares | invites | collects | celebrates
-Apples || Red and green ..... are my favourite fruit. || apples | onions | potatoes | beans
-Bananas || Monkeys love eating long, yellow ...... || bananas | onions | potatoes | shrimp
-Beans || Green ..... are long, thin vegetables. || beans | bananas | grapes | apples
-Beef || ..... is meat that comes from cows. || Beef | Chicken | Shrimp | Lobster
-Cheese || ..... is made from milk, and we put it on pizza. || Cheese | Beef | Onions | Bananas
-Chicken || ..... is a kind of bird, and we eat its meat and eggs. || Chicken | Beef | Cheese | Lobster
-Dairy || Milk, cheese and yogurt are ..... products. || dairy | seafood | vegetables | fruit
-Fruit || Apples, oranges and grapes are kinds of ...... || fruit | vegetables | dairy | seafood
-Grapes || ..... are small, round fruits that grow in bunches. || Grapes | Potatoes | Onions | Beans
-Lobster || A ..... is a large sea animal with big claws. It is very expensive to eat. || lobster | chicken | beef | cheese
-Meat || Vegetarians don't eat ...... || meat | vegetables | fruit | beans
-Milk || Babies drink ..... every day. || milk | beef | onions | shrimp
-Onions || Cutting ..... always makes me cry. || onions | apples | bananas | grapes
-Potatoes || French fries are made from ...... || potatoes | grapes | apples | bananas
-Seafood || Fish, shrimp and lobster are kinds of ...... || seafood | dairy | fruit | vegetables
-Shrimp || ..... are small sea animals. They turn pink when you cook them. || Shrimp | Beef | Onions | Grapes
-Vegetables || Carrots, onions and potatoes are ...... || vegetables | fruit | dairy | seafood
+Apples || My mother bought a big bag of red ..... from the market. She wants to make an apple pie. || apples | onions | potatoes | beans
+Bananas || I always eat two ..... before I go to the gym. They give me a lot of energy. || bananas | onions | potatoes | shrimp
+Beans || For dinner, we had rice with green ..... and grilled chicken. || beans | bananas | grapes | apples
+Beef || I don't eat chicken or fish, but I love a big ..... burger from that restaurant. || beef | grapes | onions | bananas
+Cheese || Can I have a pizza with extra .....? I love it when it melts. || cheese | beef | onions | bananas
+Chicken || My grandmother makes the best kabsa with rice and ...... || chicken | grapes | cheese | bananas
+Dairy || My brother can't drink milk or eat cheese. He has a problem with ..... products. || dairy | seafood | vegetables | fruit
+Fruit || For dessert, the restaurant serves fresh ..... like apples, oranges and grapes. || fruit | vegetables | dairy | seafood
+Grapes || There are green and purple ..... in the fruit bowl. Take some! || grapes | potatoes | onions | beans
+Lobster || We went to an expensive seafood restaurant, and my father ordered a big ...... || lobster | chicken | cheese | onion
+Meat || My sister is a vegetarian, so she never eats ...... || meat | vegetables | fruit | beans
+Milk || My little brother drinks a glass of ..... every night before bed. || milk | beef | onions | shrimp
+Onions || I can't stop crying! I'm cutting ..... for the salad. || onions | apples | bananas | grapes
+Potatoes || Can you buy some ..... from the supermarket? I want to make French fries. || potatoes | grapes | apples | bananas
+Seafood || We live near the sea, so we eat a lot of ....., like fish and shrimp. || seafood | dairy | fruit | vegetables
+Shrimp || My favourite seafood is ...... I love it grilled with lemon. || shrimp | beef | onions | grapes
+Vegetables || The doctor told me to eat more ....., like carrots, onions and potatoes. || vegetables | fruit | dairy | seafood
 Avoid || You should ..... eating too much sugar if you want to be healthy. || avoid | enjoy | celebrate | increase
 Flavor || This ice cream has a strawberry ...... || flavor | memory | scene | tradition
 Ingredient || Flour is the main ..... in bread. || ingredient | memory | event | landlord
 Memory || I have a good ....., I never forget people's names. || memory | flavor | scene | tradition
 Nutritious || Fruit and vegetables are very ....., they are full of vitamins. || nutritious | unhealthy | dangerous | boring
-Organic || ..... food is grown without chemicals. || Organic | Crowded | Noisy | Modern
+Organic || These tomatoes are more expensive because they are ....., the farmer doesn't use any chemicals. || organic | crowded | noisy | modern
 Vegetarian || My sister is a ....., she doesn't eat meat or fish. || vegetarian | landlord | roommate | professor
 Nondairy || He can't drink milk, so he buys ..... products. || nondairy | sugar-free | salt-free | unhealthy
 Nonfat || I'm on a diet, so I drink ..... milk with zero percent fat. || nonfat | nondairy | salt-free | unhealthy
@@ -164,13 +164,13 @@ Go hiking || We went ..... in the mountains and walked for six hours. || hiking 
 Go skiing || In winter, we go ..... on the snowy mountains. || skiing | swimming | jogging | shopping
 Go swimming || It's very hot today. Let's go ..... in the pool. || swimming | skiing | hiking | shopping
 Go jogging || Every morning, I go ..... in the park for thirty minutes to stay fit. || jogging | skiing | shopping | sightseeing
-Play baseball || In America, many people play ....., a game with a bat and a small ball. || baseball | scrabble | soccer | video games
-Play scrabble || We often play ....., a board game where you make words with letters. || scrabble | baseball | soccer | tennis
-Play soccer || My brother plays ..... with his friends. He is the goalkeeper. || soccer | scrabble | tennis | video games
-Play tennis || She plays ..... with a racket. She hits the ball over the net. || tennis | soccer | baseball | scrabble
-Play video games || He plays ..... on his computer all night. || video games | tennis | soccer | baseball
+Play baseball || In America, my cousin plays ..... with his friends. He hits the ball with a bat. || baseball | scrabble | soccer | video games
+Play scrabble || My grandmother is good at words. She always wins when we play ..... on Friday nights. || scrabble | baseball | soccer | tennis
+Play soccer || My brother plays ..... for the school team. He is the goalkeeper. || soccer | scrabble | tennis | video games
+Play tennis || She bought a new racket because she plays ..... three times a week. || tennis | soccer | baseball | scrabble
+Play video games || He stays up late every night because he plays ..... on his computer. || video games | tennis | soccer | baseball
 Bright || This room is very ....., it has big windows and lots of sunlight. || bright | noisy | crowded | run-down
-Building || The Kingdom Tower is a very tall ..... in Riyadh. || building | drawer | field | flood
+Building || The Kingdom Tower is a very tall ..... in Riyadh. It has ninety-nine floors. || building | drawer | field | flood
 Comfortable || This sofa is very ....., I could sit on it all day. || comfortable | noisy | dangerous | complicated
 Contest || She won first prize in the singing ...... || contest | drawer | shortage | landlord
 Design || I like the ..... of this house. It looks very modern. || design | shortage | stress | pill
@@ -179,7 +179,7 @@ Electricity || We couldn't use the lights or the TV because there was no ...... 
 Environment || We should stop throwing plastic in the sea to protect the ...... || environment | electricity | entertainment | rent
 Extremely || It was ..... hot yesterday, fifty degrees! || extremely | badly | maybe | well
 Share || My brother and I ..... a bedroom. We each have a bed in it. || share | spend | cost | provide
-Space || Astronauts travel to ..... in a rocket. || space | field | farm | campus
+Space || My son wants to be an astronaut. He dreams of travelling to ..... one day. || space | field | farm | campus
 Spend Time || I like to ..... time with my family on weekends. || spend | cost | guess | provide
 View || From our hotel room, we had a beautiful ..... of the sea. || view | shortage | rent | diet
 Own || They bought a house last year, so now they ..... it. || own | cost | provide | invite

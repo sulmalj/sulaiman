@@ -963,7 +963,7 @@ window.VOCAB = [
 },
 {
 "w": "Apples",
-"q": "Red and green ..... are my favourite fruit.",
+"q": "My mother bought a big bag of red ..... from the market. She wants to make an apple pie.",
 "o": [
 "apples",
 "onions",
@@ -973,7 +973,7 @@ window.VOCAB = [
 },
 {
 "w": "Bananas",
-"q": "Monkeys love eating long, yellow ......",
+"q": "I always eat two ..... before I go to the gym. They give me a lot of energy.",
 "o": [
 "bananas",
 "onions",
@@ -983,7 +983,7 @@ window.VOCAB = [
 },
 {
 "w": "Beans",
-"q": "Green ..... are long, thin vegetables.",
+"q": "For dinner, we had rice with green ..... and grilled chicken.",
 "o": [
 "beans",
 "bananas",
@@ -993,37 +993,37 @@ window.VOCAB = [
 },
 {
 "w": "Beef",
-"q": "..... is meat that comes from cows.",
+"q": "I don't eat chicken or fish, but I love a big ..... burger from that restaurant.",
 "o": [
-"Beef",
-"Chicken",
-"Shrimp",
-"Lobster"
+"beef",
+"grapes",
+"onions",
+"bananas"
 ]
 },
 {
 "w": "Cheese",
-"q": "..... is made from milk, and we put it on pizza.",
+"q": "Can I have a pizza with extra .....? I love it when it melts.",
 "o": [
-"Cheese",
-"Beef",
-"Onions",
-"Bananas"
+"cheese",
+"beef",
+"onions",
+"bananas"
 ]
 },
 {
 "w": "Chicken",
-"q": "..... is a kind of bird, and we eat its meat and eggs.",
+"q": "My grandmother makes the best kabsa with rice and ......",
 "o": [
-"Chicken",
-"Beef",
-"Cheese",
-"Lobster"
+"chicken",
+"grapes",
+"cheese",
+"bananas"
 ]
 },
 {
 "w": "Dairy",
-"q": "Milk, cheese and yogurt are ..... products.",
+"q": "My brother can't drink milk or eat cheese. He has a problem with ..... products.",
 "o": [
 "dairy",
 "seafood",
@@ -1033,7 +1033,7 @@ window.VOCAB = [
 },
 {
 "w": "Fruit",
-"q": "Apples, oranges and grapes are kinds of ......",
+"q": "For dessert, the restaurant serves fresh ..... like apples, oranges and grapes.",
 "o": [
 "fruit",
 "vegetables",
@@ -1043,27 +1043,27 @@ window.VOCAB = [
 },
 {
 "w": "Grapes",
-"q": "..... are small, round fruits that grow in bunches.",
+"q": "There are green and purple ..... in the fruit bowl. Take some!",
 "o": [
-"Grapes",
-"Potatoes",
-"Onions",
-"Beans"
+"grapes",
+"potatoes",
+"onions",
+"beans"
 ]
 },
 {
 "w": "Lobster",
-"q": "A ..... is a large sea animal with big claws. It is very expensive to eat.",
+"q": "We went to an expensive seafood restaurant, and my father ordered a big ......",
 "o": [
 "lobster",
 "chicken",
-"beef",
-"cheese"
+"cheese",
+"onion"
 ]
 },
 {
 "w": "Meat",
-"q": "Vegetarians don't eat ......",
+"q": "My sister is a vegetarian, so she never eats ......",
 "o": [
 "meat",
 "vegetables",
@@ -1073,7 +1073,7 @@ window.VOCAB = [
 },
 {
 "w": "Milk",
-"q": "Babies drink ..... every day.",
+"q": "My little brother drinks a glass of ..... every night before bed.",
 "o": [
 "milk",
 "beef",
@@ -1083,7 +1083,7 @@ window.VOCAB = [
 },
 {
 "w": "Onions",
-"q": "Cutting ..... always makes me cry.",
+"q": "I can't stop crying! I'm cutting ..... for the salad.",
 "o": [
 "onions",
 "apples",
@@ -1093,7 +1093,7 @@ window.VOCAB = [
 },
 {
 "w": "Potatoes",
-"q": "French fries are made from ......",
+"q": "Can you buy some ..... from the supermarket? I want to make French fries.",
 "o": [
 "potatoes",
 "grapes",
@@ -1103,7 +1103,7 @@ window.VOCAB = [
 },
 {
 "w": "Seafood",
-"q": "Fish, shrimp and lobster are kinds of ......",
+"q": "We live near the sea, so we eat a lot of ....., like fish and shrimp.",
 "o": [
 "seafood",
 "dairy",
@@ -1113,17 +1113,17 @@ window.VOCAB = [
 },
 {
 "w": "Shrimp",
-"q": "..... are small sea animals. They turn pink when you cook them.",
+"q": "My favourite seafood is ...... I love it grilled with lemon.",
 "o": [
-"Shrimp",
-"Beef",
-"Onions",
-"Grapes"
+"shrimp",
+"beef",
+"onions",
+"grapes"
 ]
 },
 {
 "w": "Vegetables",
-"q": "Carrots, onions and potatoes are ......",
+"q": "The doctor told me to eat more ....., like carrots, onions and potatoes.",
 "o": [
 "vegetables",
 "fruit",
@@ -1183,12 +1183,12 @@ window.VOCAB = [
 },
 {
 "w": "Organic",
-"q": "..... food is grown without chemicals.",
+"q": "These tomatoes are more expensive because they are ....., the farmer doesn't use any chemicals.",
 "o": [
-"Organic",
-"Crowded",
-"Noisy",
-"Modern"
+"organic",
+"crowded",
+"noisy",
+"modern"
 ]
 },
 {
@@ -1643,7 +1643,7 @@ window.VOCAB = [
 },
 {
 "w": "Play baseball",
-"q": "In America, many people play ....., a game with a bat and a small ball.",
+"q": "In America, my cousin plays ..... with his friends. He hits the ball with a bat.",
 "o": [
 "baseball",
 "scrabble",
@@ -1653,7 +1653,7 @@ window.VOCAB = [
 },
 {
 "w": "Play scrabble",
-"q": "We often play ....., a board game where you make words with letters.",
+"q": "My grandmother is good at words. She always wins when we play ..... on Friday nights.",
 "o": [
 "scrabble",
 "baseball",
@@ -1663,7 +1663,7 @@ window.VOCAB = [
 },
 {
 "w": "Play soccer",
-"q": "My brother plays ..... with his friends. He is the goalkeeper.",
+"q": "My brother plays ..... for the school team. He is the goalkeeper.",
 "o": [
 "soccer",
 "scrabble",
@@ -1673,7 +1673,7 @@ window.VOCAB = [
 },
 {
 "w": "Play tennis",
-"q": "She plays ..... with a racket. She hits the ball over the net.",
+"q": "She bought a new racket because she plays ..... three times a week.",
 "o": [
 "tennis",
 "soccer",
@@ -1683,7 +1683,7 @@ window.VOCAB = [
 },
 {
 "w": "Play video games",
-"q": "He plays ..... on his computer all night.",
+"q": "He stays up late every night because he plays ..... on his computer.",
 "o": [
 "video games",
 "tennis",
@@ -1703,7 +1703,7 @@ window.VOCAB = [
 },
 {
 "w": "Building",
-"q": "The Kingdom Tower is a very tall ..... in Riyadh.",
+"q": "The Kingdom Tower is a very tall ..... in Riyadh. It has ninety-nine floors.",
 "o": [
 "building",
 "drawer",
@@ -1793,7 +1793,7 @@ window.VOCAB = [
 },
 {
 "w": "Space",
-"q": "Astronauts travel to ..... in a rocket.",
+"q": "My son wants to be an astronaut. He dreams of travelling to ..... one day.",
 "o": [
 "space",
 "field",

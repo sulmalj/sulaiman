@@ -115,296 +115,6 @@ window.GRAMMAR = [
 "e": "She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's)."
 },
 {
-"q": "I ..... a student at King Saud University.",
-"o": [
-"am",
-"is",
-"are",
-"be"
-],
-"e": "I ← مع I نستخدم am فقط."
-},
-{
-"q": "My parents ..... at home now.",
-"o": [
-"are",
-"is",
-"am",
-"be"
-],
-"e": "My parents جمع (They) ← نستخدم are."
-},
-{
-"q": "..... you from Jeddah? Yes, I am.",
-"o": [
-"Are",
-"Is",
-"Am",
-"Do"
-],
-"e": "سؤال Yes/No بفعل be: Verb be + Subject ← مع you نستخدم Are (والجواب Yes, I am)."
-},
-{
-"q": "..... your sister a doctor? No, she isn't.",
-"o": [
-"Is",
-"Are",
-"Am",
-"Does"
-],
-"e": "your sister = She ← سؤال Yes/No: Is + she… (والجواب No, she isn't)."
-},
-{
-"q": "..... I late for the class?",
-"o": [
-"Am",
-"Is",
-"Are",
-"Do"
-],
-"e": "I ← مع I نستخدم Am: Am I …?"
-},
-{
-"q": "Is Ahmed in class? No, he ......",
-"o": [
-"isn't",
-"aren't",
-"doesn't",
-"don't"
-],
-"e": "الجواب المختصر بنفس فعل السؤال: Is he…? ← No, he isn't."
-},
-{
-"q": "Are they your friends? Yes, they ......",
-"o": [
-"are",
-"is",
-"do",
-"am"
-],
-"e": "Are they…? ← الجواب Yes, they are."
-},
-{
-"q": "Where ..... you from? I'm from Saudi Arabia.",
-"o": [
-"are",
-"is",
-"do",
-"does"
-],
-"e": "WH + Verb be + Subject ← مع you نستخدم are: Where are you from?"
-},
-{
-"q": "What ..... your name?",
-"o": [
-"is",
-"are",
-"do",
-"am"
-],
-"e": "your name مفرد ← What is…?"
-},
-{
-"q": "Who ..... those men?",
-"o": [
-"are",
-"is",
-"am",
-"does"
-],
-"e": "those men جمع ← Who are…?"
-},
-{
-"q": "How ..... your parents? They're fine, thank you.",
-"o": [
-"are",
-"is",
-"does",
-"am"
-],
-"e": "your parents جمع (They) ← How are…?"
-},
-{
-"q": "I ..... not hungry. I had a big breakfast.",
-"o": [
-"am",
-"is",
-"are",
-"do"
-],
-"e": "النفي: Subject + Verb be + not ← مع I نستخدم am not."
-},
-{
-"q": "We ..... in the library. We're at the café.",
-"o": [
-"aren't",
-"isn't",
-"don't",
-"am not"
-],
-"e": "We ← النفي are not = aren't (والجملة الثانية توضّح إنهم مو في المكتبة)."
-},
-{
-"q": "It ..... cold today. It's very hot!",
-"o": [
-"isn't",
-"aren't",
-"doesn't",
-"don't"
-],
-"e": "It ← النفي is not = isn't (لأنه حار مو بارد)."
-},
-{
-"q": "My brother ..... tall. He's only 150 cm.",
-"o": [
-"isn't",
-"aren't",
-"doesn't",
-"am not"
-],
-"e": "My brother = He ← النفي isn't (لأن طوله 150 بس)."
-},
-{
-"q": "Riyadh ..... the capital of Saudi Arabia.",
-"o": [
-"is",
-"are",
-"am",
-"be"
-],
-"e": "Riyadh مفرد (It) ← نستخدم is."
-},
-{
-"q": "My friends and I ..... very busy this week.",
-"o": [
-"are",
-"is",
-"am",
-"be"
-],
-"e": "My friends and I = We ← نستخدم are."
-},
-{
-"q": "Nora ..... shy. She talks to everyone.",
-"o": [
-"isn't",
-"aren't",
-"doesn't",
-"don't"
-],
-"e": "Nora = She ← النفي isn't (لأنها تكلّم الكل، يعني مو خجولة). وdoesn't ما تجي مع صفة."
-},
-{
-"q": "The children ..... in the garden.",
-"o": [
-"are",
-"is",
-"am",
-"be"
-],
-"e": "The children جمع (They) ← نستخدم are."
-},
-{
-"q": "..... the museum open on Fridays?",
-"o": [
-"Is",
-"Are",
-"Does",
-"Do"
-],
-"e": "the museum مفرد (It) + صفة open ← السؤال بـ Is وليس Does."
-},
-{
-"q": "This bag ..... very expensive.",
-"o": [
-"is",
-"are",
-"am",
-"be"
-],
-"e": "This bag مفرد (It) ← نستخدم is."
-},
-{
-"q": "..... we in the right room for the English class?",
-"o": [
-"Are",
-"Is",
-"Am",
-"Do"
-],
-"e": "We ← سؤال Yes/No: Are we…?"
-},
-{
-"q": "You ..... my best friend.",
-"o": [
-"are",
-"is",
-"am",
-"be"
-],
-"e": "You ← مع You نستخدم are."
-},
-{
-"q": "My phone ..... on the table.",
-"o": [
-"is",
-"are",
-"am",
-"be"
-],
-"e": "My phone مفرد (It) ← نستخدم is."
-},
-{
-"q": "..... it your first day at the university?",
-"o": [
-"Is",
-"Are",
-"Does",
-"Am"
-],
-"e": "it ← سؤال Yes/No: Is it…?"
-},
-{
-"q": "They ..... teachers. They are students.",
-"o": [
-"aren't",
-"isn't",
-"don't",
-"doesn't"
-],
-"e": "They ← النفي are not = aren't (لأنهم طلاب مو معلمين)."
-},
-{
-"q": "Where is my book? ..... on your desk.",
-"o": [
-"It's",
-"Its",
-"It'is",
-"Its'"
-],
-"e": "It's = It is (الكتاب في مكان). أما Its بدون فاصلة فمعناها (ملكه)."
-},
-{
-"q": "..... from Egypt. They're from Sudan.",
-"o": [
-"They aren't",
-"They isn't",
-"They don't",
-"They not"
-],
-"e": "They ← النفي They aren't = They are not (لأنهم من السودان مو مصر)."
-},
-{
-"q": "Khalid and Omar ..... brothers.",
-"o": [
-"are",
-"is",
-"am",
-"be"
-],
-"e": "Khalid and Omar = They ← نستخدم are."
-},
-{
 "q": "Children usually ..... watching cartoons.",
 "o": [
 "like",
@@ -545,264 +255,354 @@ window.GRAMMAR = [
 "e": "I ← الفعل بدون s: book."
 },
 {
-"q": "My father ..... to work by car every day.",
+"q": "My brother ..... a doctor. He works at King Faisal Hospital in Riyadh.",
 "o": [
-"goes",
-"go",
-"gos",
-"going"
+"is",
+"are",
+"am",
+"be"
 ],
-"e": "He ← الفعل المنتهي بـ o نضيف له es: go ← goes."
+"e": "My brother = He ← مع He نستخدم is."
 },
 {
-"q": "She ..... her homework after dinner.",
+"q": "Look at those men over there. ..... my uncles from Jeddah.",
 "o": [
-"does",
-"do",
-"dos",
-"doing"
+"They're",
+"They'are",
+"Theyre'",
+"They-are"
 ],
-"e": "She ← do ينتهي بـ o فنضيف es: does."
+"e": "They're اختصار They are، والفاصلة العلوية مكان حرف a المحذوف."
 },
 {
-"q": "My brother ..... to fix his car himself.",
+"q": "A: ..... your parents at home now? B: No, they're at the mall.",
 "o": [
-"tries",
-"trys",
-"try",
-"trying"
+"Are",
+"Is",
+"Do",
+"Does"
 ],
-"e": "He ← قبل y حرف غير متحرك (r) فنحذف y ونضيف ies: try ← tries."
+"e": "your parents جمع (They) ← سؤال Yes/No بفعل be: Are + they."
 },
 {
-"q": "He ..... TV every evening.",
+"q": "Ahmed and I ..... in the same class. We sit next to each other every day.",
 "o": [
-"watches",
-"watch",
-"watchs",
-"watching"
+"are",
+"is",
+"am",
+"aren't"
 ],
-"e": "He ← الفعل المنتهي بـ ch نضيف له es: watch ← watches."
+"e": "Ahmed and I = We ← نستخدم are (والجملة الثانية تأكد إنهم مع بعض)."
 },
 {
-"q": "My mother ..... English at a primary school.",
+"q": "I'm sorry, but I ..... hungry. I had a big lunch an hour ago.",
 "o": [
-"teaches",
-"teach",
-"teachs",
-"teaching"
+"am not",
+"isn't",
+"not am",
+"don't"
 ],
-"e": "She ← الفعل المنتهي بـ ch نضيف له es: teach ← teaches."
+"e": "I ← النفي am not (اللي أكل قبل ساعة مو جوعان)."
 },
 {
-"q": "Ali ..... in a big hospital. He is a nurse.",
+"q": "My sister ..... coffee. She only drinks tea in the morning.",
 "o": [
-"works",
-"work",
-"working",
-"is work"
-],
-"e": "Ali = He ← نضيف s للفعل: works."
-},
-{
-"q": "I ..... coffee. I only drink tea.",
-"o": [
-"don't drink",
 "doesn't drink",
-"don't drinks",
+"don't drink",
+"doesn't drinks",
 "not drink"
 ],
-"e": "I ← النفي don't + الفعل الأساسي drink."
+"e": "My sister = She ← doesn't + الفعل الأساسي drink (بدون s)."
 },
 {
-"q": "Sara ..... meat. She is a vegetarian.",
-"o": [
-"doesn't eat",
-"don't eat",
-"doesn't eats",
-"not eat"
-],
-"e": "Sara = She ← النفي doesn't + الفعل الأساسي eat (بدون s)."
-},
-{
-"q": "We ..... on Fridays.",
-"o": [
-"don't work",
-"doesn't work",
-"don't works",
-"not work"
-],
-"e": "We ← النفي don't + الفعل الأساسي work."
-},
-{
-"q": "My cat ..... milk.",
-"o": [
-"doesn't like",
-"don't like",
-"doesn't likes",
-"not like"
-],
-"e": "My cat = It ← النفي doesn't + الفعل الأساسي like."
-},
-{
-"q": "..... he like tennis? Yes, he does.",
+"q": "A: ..... your brother play football? B: Yes, he plays every Friday with his friends.",
 "o": [
 "Does",
 "Do",
 "Is",
 "Are"
 ],
-"e": "he ← سؤال Yes/No: Does + he + الفعل الأساسي، والجواب Yes, he does."
+"e": "your brother = He ← سؤال Yes/No: Does + he + verb."
 },
 {
-"q": "..... they live near the university? No, they don't.",
+"q": "Nora ..... to the gym three times a week, so she is very fit.",
 "o": [
-"Do",
-"Does",
-"Are",
-"Is"
+"goes",
+"go",
+"gos",
+"going"
 ],
-"e": "they ← Do + they + verb، والجواب No, they don't."
+"e": "Nora = She ← go ينتهي بـ o فنضيف es: goes."
 },
 {
-"q": "Does your sister play the piano? Yes, she ......",
+"q": "A: Where ..... your cousins live? B: They live in a small village near Abha.",
 "o": [
-"does",
 "do",
-"is",
-"plays"
+"does",
+"are",
+"is"
 ],
-"e": "Does she…? ← الجواب المختصر Yes, she does."
+"e": "your cousins جمع (They) ← WH + do + Subject + verb."
 },
 {
-"q": "Do you speak French? No, I ......",
+"q": "My father ..... the newspaper every morning before he goes to work.",
 "o": [
-"don't",
+"reads",
+"read",
+"reading",
+"is read"
+],
+"e": "My father = He ← نضيف s للفعل: reads."
+},
+{
+"q": "It's a beautiful day! The sun ..... and the sky is blue.",
+"o": [
+"shines",
+"shine",
+"shining",
+"is shine"
+],
+"e": "The sun = It ← نضيف s للفعل: shines."
+},
+{
+"q": "These cookies ..... delicious. Can I have another one?",
+"o": [
+"are",
+"is",
+"am",
+"be"
+],
+"e": "These cookies جمع (They) ← نستخدم are."
+},
+{
+"q": "A: Is your new teacher strict? B: No, he ...... He's really friendly.",
+"o": [
+"isn't",
 "doesn't",
-"am not",
-"isn't"
+"aren't",
+"don't"
 ],
-"e": "Do you…? ← الجواب المختصر No, I don't."
+"e": "سؤال بـ Is ← الجواب No, he isn't (مع صفة نستخدم be مو does)."
 },
 {
-"q": "Where ..... he live?",
+"q": "We ..... TV in the evening. We prefer to read books or play games.",
+"o": [
+"don't watch",
+"doesn't watch",
+"don't watches",
+"not watch"
+],
+"e": "We ← النفي don't + الفعل الأساسي watch."
+},
+{
+"q": "A: What time ..... the bank open? B: At 9:30 in the morning.",
 "o": [
 "does",
 "do",
 "is",
 "are"
 ],
-"e": "he ← WH + does + Subject: Where does he live?"
+"e": "the bank = It ← WH + does + Subject + verb (open هنا فعل)."
 },
 {
-"q": "What time ..... you usually get up?",
-"o": [
-"do",
-"does",
-"are",
-"is"
-],
-"e": "you ← WH + do + Subject: What time do you get up?"
-},
-{
-"q": "What ..... your father do? He's an engineer.",
-"o": [
-"does",
-"do",
-"is",
-"are"
-],
-"e": "your father = He ← What does he do? (سؤال عن الوظيفة)."
-},
-{
-"q": "How ..... your brother go to school? By bus.",
-"o": [
-"does",
-"do",
-"is",
-"are"
-],
-"e": "your brother = He ← How does he go…?"
-},
-{
-"q": "When ..... the class start?",
-"o": [
-"does",
-"do",
-"is",
-"are"
-],
-"e": "the class = It ← When does it start?"
-},
-{
-"q": "Who ..... you live with?",
-"o": [
-"do",
-"does",
-"are",
-"is"
-],
-"e": "you ← Who do you live with?"
-},
-{
-"q": "The bus ..... at 7:30 every morning.",
-"o": [
-"leaves",
-"leave",
-"leaving",
-"is leave"
-],
-"e": "The bus = It ← نضيف s للفعل: leaves."
-},
-{
-"q": "My friends ..... football every Saturday.",
-"o": [
-"play",
-"plays",
-"playing",
-"is play"
-],
-"e": "My friends جمع (They) ← الفعل بدون s: play."
-},
-{
-"q": "The baby ..... a lot at night.",
+"q": "My little brother ..... when he can't find his toys.",
 "o": [
 "cries",
 "crys",
 "cry",
 "crying"
 ],
-"e": "The baby = It ← قبل y حرف غير متحرك فنحذف y ونضيف ies: cries."
+"e": "He ← قبل y حرف غير متحرك (r) فنحذف y ونضيف ies: cries."
 },
 {
-"q": "Noura ..... her grandmother every weekend.",
+"q": "Sami ..... his car every weekend. It's always clean.",
 "o": [
-"visits",
+"washes",
+"washs",
+"wash",
+"washing"
+],
+"e": "Sami = He ← الفعل المنتهي بـ sh نضيف له es: washes."
+},
+{
+"q": "A: ..... you a new student here? B: Yes, I am. I started yesterday.",
+"o": [
+"Are",
+"Is",
+"Do",
+"Am"
+],
+"e": "you ← سؤال Yes/No بفعل be: Are you…? والجواب Yes, I am."
+},
+{
+"q": "The museum ..... on Fridays, so we can visit it on Saturday.",
+"o": [
+"doesn't open",
+"don't open",
+"doesn't opens",
+"not opens"
+],
+"e": "The museum = It ← النفي doesn't + الفعل الأساسي open."
+},
+{
+"q": "My friends ..... very busy this week because they have three exams.",
+"o": [
+"are",
+"is",
+"am",
+"be"
+],
+"e": "My friends جمع (They) ← نستخدم are."
+},
+{
+"q": "A: How ..... you usually go to the university? B: I take the metro.",
+"o": [
+"do",
+"does",
+"are",
+"is"
+],
+"e": "you ← WH + do + Subject + verb: How do you go…?"
+},
+{
+"q": "Khalid ..... fast food. He says it's unhealthy.",
+"o": [
+"doesn't like",
+"don't like",
+"doesn't likes",
+"isn't like"
+],
+"e": "Khalid = He ← doesn't + الفعل الأساسي like."
+},
+{
+"q": "The children ..... in the garden. Let's go and play with them.",
+"o": [
+"are",
+"is",
+"am",
+"does"
+],
+"e": "The children جمع (They) ← نستخدم are."
+},
+{
+"q": "A: Where ..... the nearest pharmacy? B: It's next to the bank.",
+"o": [
+"is",
+"are",
+"does",
+"do"
+],
+"e": "the nearest pharmacy مفرد ← WH + is + Subject."
+},
+{
+"q": "My mother ..... dinner for the whole family every evening.",
+"o": [
+"cooks",
+"cook",
+"cooking",
+"is cook"
+],
+"e": "My mother = She ← نضيف s للفعل: cooks."
+},
+{
+"q": "I ..... my grandparents every Friday. They live near our house.",
+"o": [
 "visit",
+"visits",
 "visiting",
-"is visit"
+"am visit"
 ],
-"e": "Noura = She ← نضيف s للفعل: visits."
+"e": "I ← الفعل بدون s: visit."
 },
 {
-"q": "My parents ..... in a small village.",
+"q": "A: Do you like spicy food? B: No, I ...... It's too hot for me.",
 "o": [
-"live",
-"lives",
-"living",
-"is live"
+"don't",
+"doesn't",
+"am not",
+"isn't"
 ],
-"e": "My parents جمع (They) ← الفعل بدون s: live."
+"e": "Do you…? ← الجواب No, I don't."
 },
 {
-"q": "He ..... his teeth twice a day.",
+"q": "Lama ..... a lot of time on her phone. Her mother is not happy about it.",
 "o": [
-"brushes",
-"brush",
-"brushs",
-"brushing"
+"spends",
+"spend",
+"spending",
+"is spend"
 ],
-"e": "He ← الفعل المنتهي بـ sh نضيف له es: brush ← brushes."
+"e": "Lama = She ← نضيف s للفعل: spends."
+},
+{
+"q": "The shops in the mall ..... at 10 p.m. every night.",
+"o": [
+"close",
+"closes",
+"closing",
+"is close"
+],
+"e": "The shops جمع (They) ← الفعل بدون s: close."
+},
+{
+"q": "A: What ..... your sister do? B: She's a nurse at a big hospital.",
+"o": [
+"does",
+"do",
+"is",
+"are"
+],
+"e": "your sister = She ← What does she do? (سؤال عن الوظيفة)."
+},
+{
+"q": "Fahad ..... his homework before dinner, so he has free time in the evening.",
+"o": [
+"does",
+"do",
+"dos",
+"doing"
+],
+"e": "Fahad = He ← do ينتهي بـ o فنضيف es: does."
+},
+{
+"q": "My grandfather ..... seventy years old, but he still walks every morning.",
+"o": [
+"is",
+"are",
+"has",
+"does"
+],
+"e": "العمر في الإنجليزي بفعل be ← He is seventy years old."
+},
+{
+"q": "A: ..... your friends speak English? B: Yes, they do. They speak it very well.",
+"o": [
+"Do",
+"Does",
+"Are",
+"Is"
+],
+"e": "your friends جمع (They) ← Do + they + verb، والجواب Yes, they do."
+},
+{
+"q": "My phone ..... very old. I want to buy a new one.",
+"o": [
+"is",
+"are",
+"am",
+"be"
+],
+"e": "My phone = It ← نستخدم is."
+},
+{
+"q": "The baby ..... a lot at night, so her parents are always tired.",
+"o": [
+"doesn't sleep",
+"don't sleep",
+"doesn't sleeps",
+"isn't sleep"
+],
+"e": "The baby = She ← doesn't + الفعل الأساسي sleep."
 }
 ]
 },
@@ -890,274 +690,274 @@ window.GRAMMAR = [
 "e": "بعد Verb be صفة بدون اسم ← ما نحط a: kind and helpful. والصفة ما تنجمع."
 },
 {
-"q": "Riyadh is ......",
-"o": [
-"a very big city",
-"very big city",
-"a city very big",
-"an very big city"
-],
-"e": "city اسم مفرد ← a very big city (a لأن very يبدأ بحرف ساكن)."
-},
-{
-"q": "My brother has ......",
-"o": [
-"an old car",
-"a old car",
-"old a car",
-"car old"
-],
-"e": "old تبدأ بحرف علة (o) ← an old car."
-},
-{
-"q": "She is ......",
-"o": [
-"an intelligent student",
-"a intelligent student",
-"intelligent a student",
-"student intelligent"
-],
-"e": "intelligent تبدأ بحرف علة (i) ← an intelligent student."
-},
-{
-"q": "The food here is ......",
-"o": [
-"really delicious",
-"a really delicious",
-"delicious really",
-"really a delicious"
-],
-"e": "بعد Verb be صفة بدون اسم ← بدون a: really delicious."
-},
-{
-"q": "We live in ......",
-"o": [
-"a quite small house",
-"a small quite house",
-"quite small a house",
-"an quite small house"
-],
-"e": "house اسم مفرد ← a + quite + small + house (الظرف قبل الصفة)."
-},
-{
-"q": "This is ..... book. I couldn't stop reading it.",
-"o": [
-"an extremely interesting",
-"a extremely interesting",
-"extremely interesting",
-"an interesting extremely"
-],
-"e": "book اسم مفرد وأول كلمة extremely حرف علة ← an extremely interesting book."
-},
-{
-"q": "The rooms in this hotel are ......",
-"o": [
-"very clean",
-"a very clean",
-"very cleans",
-"cleans very"
-],
-"e": "بعد Verb be صفة بدون اسم ← بدون a، والصفة ما تنجمع: very clean."
-},
-{
-"q": "He is ......",
-"o": [
-"a pretty funny man",
-"pretty funny man",
-"a funny pretty man",
-"an pretty funny man"
-],
-"e": "man اسم مفرد ← a + pretty + funny + man."
-},
-{
-"q": "It was ......",
-"o": [
-"an easy test",
-"a easy test",
-"easy a test",
-"test easy"
-],
-"e": "easy تبدأ بحرف علة (e) ← an easy test."
-},
-{
-"q": "They are ......",
-"o": [
-"very friendly people",
-"a very friendly people",
-"very friendlys people",
-"friendly very people"
-],
-"e": "people جمع ← بدون a، والصفة ما تنجمع: very friendly people."
-},
-{
-"q": "My grandmother has ......",
-"o": [
-"an orange cat",
-"a orange cat",
-"orange a cat",
-"an cat orange"
-],
-"e": "orange تبدأ بحرف علة (o) ← an orange cat."
-},
-{
-"q": "The weather today is ......",
-"o": [
-"extremely hot",
-"an extremely hot",
-"hot extremely",
-"a extremely hot"
-],
-"e": "صفة بعد Verb be بدون اسم ← بدون a: extremely hot."
-},
-{
-"q": "Our campus is ......",
-"o": [
-"really modern",
-"a really modern",
-"modern really",
-"really a modern"
-],
-"e": "صفة بعد Verb be بدون اسم ← بدون a: really modern."
-},
-{
-"q": "This is ..... question. Nobody can answer it.",
-"o": [
-"a very difficult",
-"an very difficult",
-"very difficult",
-"a difficult very"
-],
-"e": "question مفرد وأول كلمة very حرف ساكن ← a very difficult question."
-},
-{
-"q": "I want to buy ......",
-"o": [
-"a cheap phone",
-"an cheap phone",
-"cheap a phone",
-"phone cheap"
-],
-"e": "cheap يبدأ بحرف ساكن ← a cheap phone."
-},
-{
-"q": "Fahad is ......",
-"o": [
-"an honest man",
-"a honest man",
-"honest a man",
-"man honest"
-],
-"e": "honest نطقها يبدأ بصوت حرف علة (الـ h ما تنطق) ← an honest man."
-},
-{
-"q": "These shoes are ......",
-"o": [
-"quite comfortable",
-"a quite comfortable",
-"comfortable quite",
-"quite a comfortable"
-],
-"e": "صفة بعد Verb be بدون اسم ← بدون a: quite comfortable."
-},
-{
-"q": "It's ..... day for a picnic.",
+"q": "We stayed at ..... hotel. The rooms were big and the staff were very kind.",
 "o": [
 "a really nice",
 "a nice really",
 "really a nice",
 "an really nice"
 ],
-"e": "day مفرد ← a + really + nice + day."
+"e": "hotel مفرد ← a + Adverb + Adjective + Noun، وأول كلمة really حرف ساكن ← a really nice."
 },
 {
-"q": "She has ......",
+"q": "I can't wear these shoes. They are ......",
 "o": [
-"a very messy room",
-"very messy room",
-"a messy very room",
-"an very messy room"
+"extremely uncomfortable",
+"an extremely uncomfortable",
+"uncomfortables extremely",
+"a extremely uncomfortable"
 ],
-"e": "room مفرد ← a very messy room."
+"e": "بعد Verb be صفة بدون اسم ← بدون a / an: extremely uncomfortable."
 },
 {
-"q": "He is ......",
+"q": "Don't go to that restaurant. It's ..... place, and the food is terrible.",
 "o": [
-"a university student",
-"an university student",
-"university a student",
-"student university"
+"a very dirty",
+"an very dirty",
+"a dirty very",
+"very a dirty"
 ],
-"e": "university نطقها يبدأ بصوت (يو) مو حرف علة ← a university student."
+"e": "place مفرد ← a + very + dirty + place."
 },
 {
-"q": "I ate ..... for breakfast.",
+"q": "My new phone is ...... It takes great photos and the battery lasts two days.",
 "o": [
-"an apple",
-"a apple",
-"apple an",
-"an apples"
+"really good",
+"a really good",
+"good really",
+"a really goods"
 ],
-"e": "apple تبدأ بحرف علة (a) ← an apple."
+"e": "بعد Verb be صفة بدون اسم ← بدون a: really good."
 },
 {
-"q": "Saudi Arabia is ......",
+"q": "Khalid is ...... He always helps his classmates with their homework.",
 "o": [
-"a very beautiful country",
-"very beautiful country",
-"a beautiful very country",
-"an very beautiful country"
+"a very kind boy",
+"very kind boy",
+"a boy very kind",
+"an very kind boy"
 ],
-"e": "country مفرد ← a very beautiful country."
+"e": "boy اسم مفرد ← a + very + kind + boy."
 },
 {
-"q": "My new classmates are ......",
+"q": "We watched ..... movie last night. I couldn't stop laughing!",
 "o": [
-"pretty friendly",
-"a pretty friendly",
-"friendly pretty",
-"pretty a friendly"
+"an extremely funny",
+"a extremely funny",
+"extremely funny",
+"a funny extremely"
 ],
-"e": "صفة بعد Verb be بدون اسم ← بدون a: pretty friendly."
+"e": "extremely تبدأ بحرف علة (e) ← an extremely funny movie."
 },
 {
-"q": "This exercise is ......",
+"q": "The new mall is ...... You can find everything there.",
 "o": [
-"really easy",
-"a really easy",
-"easy really",
-"an really easy"
+"pretty big",
+"a pretty big",
+"big pretty",
+"a big pretty"
 ],
-"e": "صفة بعد Verb be بدون اسم ← بدون a: really easy."
+"e": "بعد Verb be صفة بدون اسم ← بدون a: pretty big."
 },
 {
-"q": "That movie was ......",
+"q": "Riyadh has ..... buildings. Some of them have more than fifty floors.",
 "o": [
-"extremely boring",
-"an extremely boring",
-"boring extremely",
-"a extremely boring"
+"very tall",
+"a very tall",
+"very talls",
+"talls very"
 ],
-"e": "صفة بعد Verb be بدون اسم ← بدون a: extremely boring."
+"e": "buildings جمع ← بدون a، والصفة ما تنجمع: very tall buildings."
 },
 {
-"q": "Look! It's ......",
+"q": "Sara is ..... student. She always gets full marks.",
 "o": [
-"an elephant",
-"a elephant",
-"elephant",
-"an elephants"
+"an excellent",
+"a excellent",
+"excellent",
+"a excellents"
 ],
-"e": "Elephant تبدأ بحرف علة (e) ← an elephant (مثال الملزمة)."
+"e": "excellent تبدأ بحرف علة (e) ← an excellent student."
 },
 {
-"q": "She bought ..... dress for the party.",
+"q": "Be careful! The streets are ..... after the rain.",
 "o": [
-"a really expensive",
-"an really expensive",
-"really a expensive",
-"a expensive really"
+"really dangerous",
+"a really dangerous",
+"dangerous really",
+"really a dangerous"
 ],
-"e": "dress مفرد وأول كلمة really حرف ساكن ← a really expensive dress."
+"e": "بعد Verb be صفة بدون اسم ← بدون a: really dangerous."
+},
+{
+"q": "My grandfather lives in ..... village near the mountains.",
+"o": [
+"a quiet",
+"an quiet",
+"quiet",
+"a quiets"
+],
+"e": "village مفرد يبدأ قبله صفة بحرف ساكن (q) ← a quiet village."
+},
+{
+"q": "That was ..... exam! Nobody finished it on time.",
+"o": [
+"an extremely difficult",
+"a extremely difficult",
+"extremely difficult",
+"an difficult extremely"
+],
+"e": "exam مفرد وأول كلمة extremely حرف علة ← an extremely difficult exam."
+},
+{
+"q": "These oranges are ...... Where did you buy them?",
+"o": [
+"very sweet",
+"a very sweet",
+"very sweets",
+"sweets very"
+],
+"e": "بعد Verb be صفة بدون اسم ← بدون a، والصفة ما تنجمع: very sweet."
+},
+{
+"q": "I need ..... umbrella. It's raining outside.",
+"o": [
+"an",
+"a",
+"the an",
+"a an"
+],
+"e": "umbrella تبدأ بحرف علة (u) ← an umbrella."
+},
+{
+"q": "Our teacher gave us ..... assignment, so we finished it in ten minutes.",
+"o": [
+"a pretty easy",
+"an pretty easy",
+"pretty easy",
+"a easy pretty"
+],
+"e": "assignment مفرد وأول كلمة pretty حرف ساكن ← a pretty easy assignment."
+},
+{
+"q": "My brother is ...... He wakes up at 5 a.m. every day to study.",
+"o": [
+"very hardworking",
+"a very hardworking",
+"hardworking very",
+"an very hardworking"
+],
+"e": "بعد Verb be صفة بدون اسم ← بدون a: very hardworking."
+},
+{
+"q": "Let's go to the beach. It's ..... day!",
+"o": [
+"a really beautiful",
+"a beautiful really",
+"really a beautiful",
+"an really beautiful"
+],
+"e": "day مفرد ← a + really + beautiful + day."
+},
+{
+"q": "She bought ..... bag. It cost more than 3000 riyals!",
+"o": [
+"an extremely expensive",
+"a extremely expensive",
+"extremely expensive",
+"an expensive extremely"
+],
+"e": "bag مفرد وأول كلمة extremely حرف علة ← an extremely expensive bag."
+},
+{
+"q": "My neighbours are ...... They always invite us for dinner.",
+"o": [
+"very friendly",
+"a very friendly",
+"very friendlys",
+"friendly very"
+],
+"e": "بعد Verb be صفة بدون اسم ← بدون a، والصفة ما تنجمع: very friendly."
+},
+{
+"q": "I have ..... question about the homework. Can you help me?",
+"o": [
+"a quick",
+"an quick",
+"quick",
+"a quicks"
+],
+"e": "question مفرد والصفة quick تبدأ بحرف ساكن ← a quick question."
+},
+{
+"q": "The weather in Abha is ..... in summer. Many people go there on holiday.",
+"o": [
+"quite cool",
+"a quite cool",
+"cool quite",
+"quite a cool"
+],
+"e": "بعد Verb be صفة بدون اسم ← بدون a: quite cool."
+},
+{
+"q": "He drives ..... car. It's more than twenty years old!",
+"o": [
+"an old",
+"a old",
+"old",
+"an olds"
+],
+"e": "old تبدأ بحرف علة (o) ← an old car."
+},
+{
+"q": "Those are ..... shoes. Where did you get them?",
+"o": [
+"really nice",
+"a really nice",
+"nices really",
+"really nices"
+],
+"e": "shoes جمع ← بدون a، والصفة ما تنجمع: really nice shoes."
+},
+{
+"q": "Our English class is ..... class. Everyone enjoys it.",
+"o": [
+"a very interesting",
+"an very interesting",
+"very interesting",
+"a interesting very"
+],
+"e": "class مفرد وأول كلمة very حرف ساكن ← a very interesting class."
+},
+{
+"q": "My father is ..... man. He never tells lies.",
+"o": [
+"an honest",
+"a honest",
+"honest",
+"an honests"
+],
+"e": "honest الـ h ما تنطق، فالنطق يبدأ بصوت حرف علة ← an honest man."
+},
+{
+"q": "The library is ..... during exams. There are no empty seats.",
+"o": [
+"extremely crowded",
+"an extremely crowded",
+"crowded extremely",
+"a extremely crowded"
+],
+"e": "بعد Verb be صفة بدون اسم ← بدون a: extremely crowded."
+},
+{
+"q": "King Saud University is ..... university in Saudi Arabia.",
+"o": [
+"a very famous",
+"an very famous",
+"very famous",
+"a famous very"
+],
+"e": "university مفرد وأول كلمة very حرف ساكن ← a very famous university."
 }
 ]
 },
@@ -1235,157 +1035,157 @@ window.GRAMMAR = [
 "e": "They ← have."
 },
 {
-"q": "I ..... two brothers and one sister.",
-"o": [
-"have",
-"has",
-"am",
-"is"
-],
-"e": "I ← have."
-},
-{
-"q": "My father ..... a new car.",
-"o": [
-"has",
-"have",
-"is",
-"are"
-],
-"e": "My father = He ← has."
-},
-{
-"q": "She ..... long black hair.",
+"q": "My sister ..... a new car. It's white and very fast.",
 "o": [
 "has",
 "have",
 "is",
 "haves"
 ],
-"e": "She ← has."
+"e": "My sister = She ← has."
 },
 {
-"q": "We ..... a big garden behind our house.",
+"q": "A: ..... you have any brothers? B: Yes, I have two.",
 "o": [
-"have",
-"has",
-"are",
-"is"
+"Do",
+"Does",
+"Are",
+"Has"
 ],
-"e": "We ← have."
+"e": "you ← السؤال Do + you + have."
 },
 {
-"q": "The university ..... a large library.",
-"o": [
-"has",
-"have",
-"are",
-"having"
-],
-"e": "The university = It ← has."
-},
-{
-"q": "Our teacher ..... a lot of books.",
-"o": [
-"has",
-"have",
-"is",
-"haves"
-],
-"e": "Our teacher = He / She ← has."
-},
-{
-"q": "You ..... a beautiful voice.",
-"o": [
-"have",
-"has",
-"are",
-"is"
-],
-"e": "You ← have."
-},
-{
-"q": "My cat ..... green eyes.",
-"o": [
-"has",
-"have",
-"is",
-"are"
-],
-"e": "My cat = It ← has."
-},
-{
-"q": "They ..... an English exam tomorrow.",
-"o": [
-"have",
-"has",
-"are",
-"is"
-],
-"e": "They ← have."
-},
-{
-"q": "Sara ..... a laptop. She uses her brother's.",
+"q": "My father ..... a lot of free time. He works from early morning until late at night.",
 "o": [
 "doesn't have",
-"doesn't has",
 "don't have",
+"doesn't has",
 "hasn't have"
 ],
-"e": "Sara = She ← النفي doesn't have."
+"e": "My father = He ← النفي doesn't have (في النفي دائماً have)."
 },
 {
-"q": "I ..... any money with me today.",
+"q": "Our neighbours ..... three cats and a big dog.",
+"o": [
+"have",
+"has",
+"having",
+"are have"
+],
+"e": "Our neighbours جمع (They) ← have."
+},
+{
+"q": "A: What does Ahmed have in his hand? B: He ..... a cup of coffee.",
+"o": [
+"has",
+"have",
+"is",
+"haves"
+],
+"e": "He ← في الإثبات has."
+},
+{
+"q": "I'm sorry, I ..... a pen. Can I borrow yours?",
 "o": [
 "don't have",
 "doesn't have",
 "don't has",
-"haven't have"
+"haven't"
 ],
 "e": "I ← النفي don't have."
 },
 {
-"q": "My parents ..... a car. They take the bus.",
+"q": "This hotel is great. It ..... a big swimming pool and a gym.",
 "o": [
-"don't have",
-"doesn't have",
-"don't has",
-"doesn't has"
+"has",
+"have",
+"is",
+"having"
 ],
-"e": "My parents = They ← النفي don't have."
+"e": "The hotel = It ← has."
 },
 {
-"q": "The hotel ..... a swimming pool.",
-"o": [
-"doesn't have",
-"don't have",
-"doesn't has",
-"don't has"
-],
-"e": "The hotel = It ← النفي doesn't have."
-},
-{
-"q": "..... your brother have a job?",
+"q": "A: ..... your school have a library? B: Yes, it does. It's very big.",
 "o": [
 "Does",
 "Do",
 "Has",
 "Is"
 ],
-"e": "your brother = He ← Does + he + have."
+"e": "your school = It ← Does + it + have، والجواب Yes, it does."
 },
 {
-"q": "..... they have a big house?",
+"q": "My friends and I ..... an important exam tomorrow, so we're studying tonight.",
 "o": [
-"Do",
-"Does",
-"Has",
-"Are"
+"have",
+"has",
+"are",
+"having"
 ],
-"e": "they ← Do + they + have."
+"e": "My friends and I = We ← have."
 },
 {
-"q": "Does she have a phone? Yes, she ......",
+"q": "Fahad can't call you. He ..... a phone right now. It's broken.",
+"o": [
+"doesn't have",
+"don't have",
+"doesn't has",
+"not have"
+],
+"e": "Fahad = He ← doesn't have."
+},
+{
+"q": "A: Do your parents have a car? B: No, they ...... They take the metro.",
+"o": [
+"don't",
+"doesn't",
+"haven't",
+"aren't"
+],
+"e": "Do your parents…? ← الجواب No, they don't."
+},
+{
+"q": "Let's go to the new café on Olaya Street. It ..... great coffee and delicious cakes.",
+"o": [
+"has",
+"have",
+"having",
+"has had"
+],
+"e": "The café = It ← has."
+},
+{
+"q": "A: What ..... you have for breakfast? B: I usually have eggs and bread.",
+"o": [
+"do",
+"does",
+"are",
+"have"
+],
+"e": "you ← What do you have…?"
+},
+{
+"q": "Riyadh ..... many big parks and malls.",
+"o": [
+"has",
+"have",
+"is",
+"having"
+],
+"e": "Riyadh = It ← has."
+},
+{
+"q": "My little brother ..... long hair. It's very short.",
+"o": [
+"doesn't have",
+"don't have",
+"doesn't has",
+"hasn't"
+],
+"e": "My little brother = He ← النفي doesn't have."
+},
+{
+"q": "A: Does Sara have a laptop? B: Yes, she ...... She uses it for her studies.",
 "o": [
 "does",
 "has",
@@ -1395,57 +1195,7 @@ window.GRAMMAR = [
 "e": "Does she…? ← الجواب Yes, she does."
 },
 {
-"q": "Do you have a pen? No, I ......",
-"o": [
-"don't",
-"doesn't",
-"isn't",
-"am not"
-],
-"e": "Do you…? ← الجواب No, I don't."
-},
-{
-"q": "What ..... you have in your bag?",
-"o": [
-"do",
-"does",
-"have",
-"are"
-],
-"e": "you ← What do you have?"
-},
-{
-"q": "What does your sister .....? She has a new camera.",
-"o": [
-"have",
-"has",
-"haves",
-"having"
-],
-"e": "بعد does نستخدم have: What does your sister have?"
-},
-{
-"q": "How many children ..... they have?",
-"o": [
-"do",
-"does",
-"have",
-"are"
-],
-"e": "they ← How many children do they have?"
-},
-{
-"q": "Does your school ..... a gym?",
-"o": [
-"have",
-"has",
-"haves",
-"having"
-],
-"e": "بعد does نستخدم have: Does your school have…?"
-},
-{
-"q": "What do you have? We ..... a house near the beach.",
+"q": "We ..... a big family. I have five brothers and three sisters.",
 "o": [
 "have",
 "has",
@@ -1455,54 +1205,104 @@ window.GRAMMAR = [
 "e": "We ← have."
 },
 {
-"q": "What does she have? She ..... a computer.",
+"q": "A: How many classes ..... you have today? B: I have four.",
 "o": [
-"has",
-"have",
-"is",
-"haves"
+"do",
+"does",
+"are",
+"have"
 ],
-"e": "She ← في الإثبات has."
+"e": "you ← How many classes do you have?"
 },
 {
-"q": "My brother and I ..... the same teacher.",
-"o": [
-"have",
-"has",
-"is",
-"are"
-],
-"e": "My brother and I = We ← have."
-},
-{
-"q": "It ..... four legs. It's a horse.",
-"o": [
-"has",
-"have",
-"is",
-"haves"
-],
-"e": "It ← has."
-},
-{
-"q": "Do you ..... a car?",
+"q": "The students ..... a break at 10 o'clock every day.",
 "o": [
 "have",
 "has",
 "having",
-"haves"
+"are have"
 ],
-"e": "بعد Do نستخدم have."
+"e": "The students جمع (They) ← have."
 },
 {
-"q": "Khalid ..... a lot of friends at school.",
+"q": "A: What does your brother .....? B: He has a new bike.",
+"o": [
+"have",
+"has",
+"haves",
+"having"
+],
+"e": "بعد does نستخدم have: What does your brother have?"
+},
+{
+"q": "My grandmother ..... a beautiful garden with many flowers.",
 "o": [
 "has",
 "have",
 "is",
-"are"
+"haves"
 ],
-"e": "Khalid = He ← has."
+"e": "My grandmother = She ← has."
+},
+{
+"q": "I can't go out tonight. I ..... a lot of homework.",
+"o": [
+"have",
+"has",
+"am",
+"having"
+],
+"e": "I ← have."
+},
+{
+"q": "A: Does your apartment ..... a balcony? B: No, it doesn't.",
+"o": [
+"have",
+"has",
+"haves",
+"having"
+],
+"e": "بعد Does نستخدم have."
+},
+{
+"q": "Noura and Huda ..... the same teacher, so they study together.",
+"o": [
+"have",
+"has",
+"is",
+"having"
+],
+"e": "Noura and Huda = They ← have."
+},
+{
+"q": "That restaurant is not good. It ..... any healthy food.",
+"o": [
+"doesn't have",
+"don't have",
+"doesn't has",
+"not has"
+],
+"e": "The restaurant = It ← النفي doesn't have."
+},
+{
+"q": "A: Do you have a car? B: Yes, I ...... It's a small red car.",
+"o": [
+"do",
+"have",
+"does",
+"am"
+],
+"e": "Do you…? ← الجواب Yes, I do."
+},
+{
+"q": "My uncle ..... a big farm with cows and sheep.",
+"o": [
+"has",
+"have",
+"is",
+"haves"
+],
+"e": "My uncle = He ← has."
 }
 ]
 },
@@ -1590,264 +1390,274 @@ window.GRAMMAR = [
 "e": "face masks جمع، وبعد الفعل forgot نحط ضمير مفعول ← them."
 },
 {
-"q": "My sister is very kind. ..... always helps me.",
-"o": [
-"She",
-"Her",
-"Hers",
-"They"
-],
-"e": "الجملة تحتاج فاعل (Subject) قبل الفعل helps ← She."
-},
-{
-"q": "My sister is very kind. She always helps ......",
-"o": [
-"me",
-"I",
-"my",
-"mine"
-],
-"e": "بعد الفعل helps نحط ضمير مفعول ← me."
-},
-{
-"q": "Ahmed is my friend. I play football with ..... every Friday.",
+"q": "My brother is very busy. I don't see ..... very often.",
 "o": [
 "him",
 "he",
 "his",
-"they"
+"them"
 ],
-"e": "Ahmed = he، وبعد حرف الجر with نحط ضمير مفعول ← him."
+"e": "My brother = he، وبعد الفعل see نحط ضمير مفعول ← him."
 },
 {
-"q": "..... are students at King Saud University.",
+"q": "A: Where are my glasses? B: I saw ..... on the kitchen table.",
 "o": [
-"We",
-"Us",
-"Our",
-"Him"
+"them",
+"it",
+"they",
+"her"
 ],
-"e": "الجملة تحتاج فاعل قبل are ← We."
+"e": "glasses جمع، وبعد الفعل saw نحط ضمير مفعول ← them."
 },
 {
-"q": "Sara and I are classmates. ..... study together.",
+"q": "Sara is my best friend. ..... always helps me with my homework.",
 "o": [
-"We",
-"Us",
-"They",
-"Them"
+"She",
+"Her",
+"Hers",
+"It"
 ],
-"e": "Sara and I = We، والفاعل قبل الفعل study ← We."
+"e": "الجملة تحتاج فاعل (Subject) قبل الفعل helps ← She."
 },
 {
-"q": "This is my teacher. I like ..... very much.",
+"q": "I love this song. Can you play ..... again?",
 "o": [
-"her",
-"she",
-"hers",
-"they"
+"it",
+"them",
+"its",
+"she"
 ],
-"e": "my teacher (امرأة)، وبعد الفعل like نحط ضمير مفعول ← her."
+"e": "this song مفرد غير عاقل، وبعد play ← it."
 },
 {
-"q": "Where are my keys? I can't find ......",
+"q": "Our grandparents live in Taif. We visit ..... every summer.",
 "o": [
 "them",
 "they",
-"it",
-"him"
+"us",
+"their"
 ],
-"e": "my keys جمع، وبعد find نحط ضمير مفعول ← them."
+"e": "Our grandparents = they، وبعد visit ضمير مفعول ← them."
 },
 {
-"q": "My parents are coming. I'm waiting for ......",
-"o": [
-"them",
-"they",
-"their",
-"us"
-],
-"e": "My parents = they، وبعد حرف الجر for ← them."
-},
-{
-"q": "..... is my brother. His name is Fahad.",
-"o": [
-"He",
-"Him",
-"His",
-"She"
-],
-"e": "الفاعل قبل is، والأخ ذكر ← He."
-},
-{
-"q": "My grandmother lives with us. We love ..... a lot.",
-"o": [
-"her",
-"she",
-"hers",
-"they"
-],
-"e": "My grandmother = she، وبعد الفعل love ← her."
-},
-{
-"q": "The phone is ringing. Can you answer .....?",
-"o": [
-"it",
-"he",
-"them",
-"its"
-],
-"e": "The phone = it ← answer it."
-},
-{
-"q": "Please call ..... tonight. My number is 0551234567.",
+"q": "A: Is this pen yours? B: No, it doesn't belong to ......",
 "o": [
 "me",
 "I",
 "my",
 "mine"
 ],
-"e": "بعد الفعل call نحط ضمير مفعول، والمقصود المتكلم ← me."
+"e": "بعد حرف الجر to نحط ضمير مفعول ← me."
 },
 {
-"q": "..... is a big city. It has many tall buildings.",
-"o": [
-"It",
-"They",
-"Its",
-"Them"
-],
-"e": "الفاعل لمدينة (مفرد غير عاقل) ← It."
-},
-{
-"q": "Noura is sick, so I am going to visit ......",
-"o": [
-"her",
-"she",
-"hers",
-"him"
-],
-"e": "Noura = she، وبعد visit ← her."
-},
-{
-"q": "The children are in the garden. Can you see .....?",
-"o": [
-"them",
-"they",
-"their",
-"it"
-],
-"e": "The children = they، وبعد see ← them."
-},
-{
-"q": "Can you come with ..... to the market? We need help.",
-"o": [
-"us",
-"we",
-"our",
-"they"
-],
-"e": "بعد حرف الجر with نحط ضمير مفعول، والمقصود (نحن) ← us."
-},
-{
-"q": "Khalid gave ..... a nice gift for my birthday.",
-"o": [
-"me",
-"I",
-"my",
-"he"
-],
-"e": "بعد الفعل gave ضمير مفعول للمتكلم ← me."
-},
-{
-"q": "..... are my friends, Ali and Omar.",
-"o": [
-"They",
-"Them",
-"Their",
-"We"
-],
-"e": "الفاعل قبل are، والمقصود Ali and Omar ← They."
-},
-{
-"q": "My brother and I go to school together. Our father drives ......",
+"q": "My friends and I play football on Fridays. Sometimes our coach plays with ......",
 "o": [
 "us",
 "we",
 "our",
 "them"
 ],
-"e": "My brother and I = we، وبعد drives ضمير مفعول ← us."
+"e": "My friends and I = we، وبعد حرف الجر with ← us."
 },
 {
-"q": "I don't know that man. Who is .....?",
+"q": "Mr. Ali is our new teacher. ..... is from Egypt.",
 "o": [
-"he",
-"him",
-"his",
-"she"
+"He",
+"Him",
+"His",
+"They"
 ],
-"e": "بعد Verb be (is) نستخدم ضمير الفاعل ← he."
+"e": "الفاعل قبل is، والمعلم رجل ← He."
 },
 {
-"q": "This cake is for ...... Happy birthday, Mona!",
+"q": "The baby is crying. Can you give ..... some milk?",
 "o": [
-"you",
-"your",
-"yours",
-"she"
-],
-"e": "بعد حرف الجر for نحط ضمير مفعول ← you."
-},
-{
-"q": "Mr. Saleh is a good teacher. All the students listen to ......",
-"o": [
-"him",
-"he",
-"his",
+"her",
+"she",
+"hers",
 "they"
 ],
-"e": "Mr. Saleh = he، وبعد حرف الجر to ← him."
+"e": "The baby (بنت)، وبعد الفعل give ضمير مفعول ← her."
 },
 {
-"q": "I love my cat. ..... sleeps on my bed every night.",
+"q": "I bought a new car last week. ..... is very fast.",
 "o": [
 "It",
+"He",
 "They",
-"Them",
-"He'is"
+"Its"
 ],
-"e": "الحيوان مفرد = It، والفاعل قبل sleeps ← It."
+"e": "a new car مفرد غير عاقل، والفاعل قبل is ← It."
 },
 {
-"q": "Please sit with ...... I want to talk to you.",
+"q": "A: Do you know Khalid and Omar? B: Yes, I study with ..... at the university.",
+"o": [
+"them",
+"they",
+"him",
+"us"
+],
+"e": "Khalid and Omar = they، وبعد حرف الجر with ← them."
+},
+{
+"q": "My mother cooks dinner every day, and I always help ......",
+"o": [
+"her",
+"she",
+"him",
+"hers"
+],
+"e": "My mother = she، وبعد الفعل help ← her."
+},
+{
+"q": "The teacher asked ..... a difficult question, but I knew the answer.",
 "o": [
 "me",
 "I",
 "my",
 "mine"
 ],
-"e": "بعد حرف الجر with ضمير مفعول للمتكلم ← me."
+"e": "بعد الفعل asked ضمير مفعول، والمتكلم هو اللي جاوب ← me."
 },
 {
-"q": "Lama and Huda are sisters. ..... live in Jeddah.",
+"q": "..... are my cousins, Lama and Reem. They live next door.",
 "o": [
 "They",
 "Them",
-"She",
-"Their"
+"Their",
+"She"
 ],
-"e": "Lama and Huda = They، والفاعل قبل live ← They."
+"e": "الفاعل قبل are، والمقصود Lama and Reem ← They."
 },
 {
-"q": "I have a new car. I drive ..... every day.",
+"q": "These cookies are delicious! Did you make ..... yourself?",
+"o": [
+"them",
+"it",
+"they",
+"its"
+],
+"e": "These cookies جمع، وبعد make ← them."
+},
+{
+"q": "A: Where is Fahad? B: I don't know. I can't see ......",
+"o": [
+"him",
+"he",
+"his",
+"it"
+],
+"e": "Fahad = he، وبعد see ← him."
+},
+{
+"q": "Huda and I are sisters. ..... share a bedroom.",
+"o": [
+"We",
+"Us",
+"They",
+"Our"
+],
+"e": "Huda and I = We، والفاعل قبل share ← We."
+},
+{
+"q": "The keys are not in my bag. Did you take .....?",
+"o": [
+"them",
+"it",
+"they",
+"him"
+],
+"e": "The keys جمع، وبعد take ← them."
+},
+{
+"q": "My father bought ..... a new laptop for university. Now I can study at home.",
+"o": [
+"me",
+"I",
+"my",
+"mine"
+],
+"e": "بعد الفعل bought ضمير مفعول للمتكلم ← me."
+},
+{
+"q": "A: What do you think of the new mall? B: I love ...... It has great shops.",
 "o": [
 "it",
-"its",
 "them",
+"its",
 "he"
 ],
-"e": "a new car = it، وبعد drive ← it."
+"e": "the new mall مفرد غير عاقل، وبعد love ← it."
+},
+{
+"q": "The children are noisy. Please tell ..... to be quiet.",
+"o": [
+"them",
+"they",
+"their",
+"him"
+],
+"e": "The children = they، وبعد tell ← them."
+},
+{
+"q": "Noura called me yesterday, but I didn't answer ......",
+"o": [
+"her",
+"she",
+"hers",
+"him"
+],
+"e": "Noura = she، وبعد answer ← her."
+},
+{
+"q": "A: Is this your bag? B: Yes, thank you! I was looking for ......",
+"o": [
+"it",
+"them",
+"its",
+"her"
+],
+"e": "your bag مفرد غير عاقل، وبعد حرف الجر for ← it."
+},
+{
+"q": "Ahmed is very funny. Everybody likes ......",
+"o": [
+"him",
+"he",
+"his",
+"them"
+],
+"e": "Ahmed = he، وبعد likes ← him."
+},
+{
+"q": "..... is a beautiful city. Many tourists visit it every year.",
+"o": [
+"It",
+"They",
+"Its",
+"He"
+],
+"e": "المدينة مفرد غير عاقل، والفاعل قبل is ← It."
+},
+{
+"q": "Please wait for ..... at the bus stop. We'll be there in five minutes.",
+"o": [
+"us",
+"we",
+"our",
+"them"
+],
+"e": "بعد حرف الجر for، والمقصود (نحن) لأنه قال We'll be there ← us."
+},
+{
+"q": "My parents are coming tonight. I want to cook dinner for ......",
+"o": [
+"them",
+"they",
+"their",
+"him"
+],
+"e": "My parents = they، وبعد حرف الجر for ← them."
 }
 ]
 },
@@ -1915,187 +1725,117 @@ window.GRAMMAR = [
 "e": "بعد need نحط to + الفعل الأساسي: need to put."
 },
 {
-"q": "She avoids ..... too much meat.",
+"q": "I ..... to a dentist. I have a lot of pain in my teeth.",
+"o": [
+"should go",
+"should to go",
+"should going",
+"should to going"
+],
+"e": "بعد should يجي الفعل الأساسي مباشرة بدون to وبدون ing: should go."
+},
+{
+"q": "I want ..... my grandmother this weekend. She lives in Abha.",
+"o": [
+"to visit",
+"visit",
+"visiting",
+"to visiting"
+],
+"e": "بعد want نحط to + الفعل الأساسي: want to visit."
+},
+{
+"q": "My brother enjoys ..... football with his friends every Friday.",
+"o": [
+"playing",
+"to play",
+"play",
+"plays"
+],
+"e": "بعد enjoy نضيف ing للفعل: enjoys playing."
+},
+{
+"q": "You need ..... more water. It's very hot today.",
+"o": [
+"to drink",
+"drink",
+"drinking",
+"to drinking"
+],
+"e": "بعد need نحط to + الفعل: need to drink."
+},
+{
+"q": "The doctor told my father to avoid ..... too much sugar.",
 "o": [
 "eating",
 "to eat",
 "eat",
 "eats"
 ],
-"e": "بعد avoid نضيف ing: avoids eating."
+"e": "بعد avoid نضيف ing: avoid eating."
 },
 {
-"q": "You need ..... hard for the exam.",
-"o": [
-"to study",
-"study",
-"studying",
-"to studying"
-],
-"e": "بعد need نحط to + الفعل: need to study."
-},
-{
-"q": "I enjoy ..... with my friends on weekends.",
-"o": [
-"going out",
-"to go out",
-"go out",
-"goes out"
-],
-"e": "بعد enjoy نضيف ing: enjoy going out."
-},
-{
-"q": "My father stopped ..... five years ago. It's better for his health.",
-"o": [
-"smoking",
-"to smoke",
-"smoke",
-"smokes"
-],
-"e": "بعد stop نضيف ing: stopped smoking."
-},
-{
-"q": "I want ..... a doctor in the future.",
-"o": [
-"to become",
-"become",
-"becoming",
-"to becoming"
-],
-"e": "بعد want نحط to + الفعل: want to become."
-},
-{
-"q": "We hope ..... you again soon.",
-"o": [
-"to see",
-"see",
-"seeing",
-"to seeing"
-],
-"e": "بعد hope نحط to + الفعل: hope to see."
-},
-{
-"q": "He tries ..... to the gym three times a week.",
-"o": [
-"to go",
-"go",
-"going",
-"to going"
-],
-"e": "بعد try نحط to + الفعل: tries to go."
-},
-{
-"q": "My brother dislikes ..... the dishes.",
-"o": [
-"washing",
-"to wash",
-"wash",
-"washes"
-],
-"e": "بعد dislike نضيف ing: dislikes washing."
-},
-{
-"q": "They need ..... a bigger apartment.",
+"q": "I hope ..... a good job after I graduate.",
 "o": [
 "to find",
 "find",
 "finding",
 "to finding"
 ],
-"e": "بعد need نحط to + الفعل: need to find."
+"e": "بعد hope نحط to + الفعل: hope to find."
 },
 {
-"q": "She enjoys ..... books in the evening.",
+"q": "Please stop ..... so loudly. The baby is sleeping.",
 "o": [
-"reading",
-"to read",
-"read",
-"reads"
+"talking",
+"to talk",
+"talk",
+"talks"
 ],
-"e": "بعد enjoy نضيف ing: enjoys reading."
+"e": "بعد stop نضيف ing: stop talking."
 },
 {
-"q": "Please stop ..... so much noise. I'm trying to study.",
+"q": "She tries ..... healthy food, but sometimes she eats pizza.",
 "o": [
-"making",
-"to make",
-"make",
-"makes"
+"to eat",
+"eat",
+"eating",
+"to eating"
 ],
-"e": "بعد stop نضيف ing: stop making."
+"e": "بعد try نحط to + الفعل: tries to eat."
 },
 {
-"q": "I like ..... in the sea in summer.",
-"o": [
-"swimming",
-"swim",
-"swims",
-"to swimming"
-],
-"e": "بعد like يجي to أو ing ← swimming (الخيارات الثانية غلط)."
-},
-{
-"q": "I can't stand ..... after work. I'm always too tired.",
-"o": [
-"to cook",
-"cook",
-"cooks",
-"to cooking"
-],
-"e": "بعد can't stand يجي to أو ing ← to cook (مثال الملزمة)."
-},
-{
-"q": "My mother loves ..... new dishes.",
-"o": [
-"to try",
-"try",
-"tries",
-"to trying"
-],
-"e": "بعد love يجي to أو ing ← to try."
-},
-{
-"q": "He hates ..... in traffic every morning.",
+"q": "I dislike ..... in traffic. It makes me very angry.",
 "o": [
 "waiting",
+"to wait",
 "wait",
-"waits",
-"to waiting"
+"waits"
 ],
-"e": "بعد hate يجي to أو ing ← waiting."
+"e": "بعد dislike نضيف ing: dislike waiting."
 },
 {
-"q": "Sara wants ..... French next year.",
+"q": "My sister loves ..... cakes for her friends.",
 "o": [
-"to learn",
-"learn",
-"learning",
-"to learning"
+"to bake",
+"bake",
+"bakes",
+"to baking"
 ],
-"e": "بعد want نحط to + الفعل: wants to learn."
+"e": "بعد love يجي to أو ing ← to bake (الخيارات الثانية غلط)."
 },
 {
-"q": "Students should avoid ..... up late before an exam.",
+"q": "Khalid can't stand ..... early in the morning. He's always tired.",
 "o": [
-"staying",
-"to stay",
-"stay",
-"stays"
+"waking up",
+"wake up",
+"wakes up",
+"to waking up"
 ],
-"e": "بعد avoid نضيف ing: avoid staying."
+"e": "بعد can't stand يجي to أو ing ← waking up (الخيارات الثانية غلط)."
 },
 {
-"q": "We enjoy ..... time at the beach.",
-"o": [
-"spending",
-"to spend",
-"spend",
-"spends"
-],
-"e": "بعد enjoy نضيف ing: enjoy spending."
-},
-{
-"q": "I need ..... my room. It's very messy.",
+"q": "We need ..... the house before the guests arrive.",
 "o": [
 "to clean",
 "clean",
@@ -2105,37 +1845,17 @@ window.GRAMMAR = [
 "e": "بعد need نحط to + الفعل: need to clean."
 },
 {
-"q": "Khalid stopped ..... video games because he wanted more time to study.",
+"q": "I enjoy ..... books in the library. It's very quiet there.",
 "o": [
-"playing",
-"to play",
-"play",
-"plays"
+"reading",
+"to read",
+"read",
+"reads"
 ],
-"e": "بعد stop نضيف ing: stopped playing."
+"e": "بعد enjoy نضيف ing: enjoy reading."
 },
 {
-"q": "I hope ..... to Japan one day.",
-"o": [
-"to travel",
-"travel",
-"traveling",
-"to traveling"
-],
-"e": "بعد hope نحط to + الفعل: hope to travel."
-},
-{
-"q": "My little sister doesn't like ..... vegetables.",
-"o": [
-"eating",
-"eat",
-"eats",
-"to eating"
-],
-"e": "بعد like يجي to أو ing ← eating."
-},
-{
-"q": "They want ..... a party for their father's birthday.",
+"q": "They want ..... a big party for their son's graduation.",
 "o": [
 "to have",
 "have",
@@ -2145,64 +1865,154 @@ window.GRAMMAR = [
 "e": "بعد want نحط to + الفعل: want to have."
 },
 {
-"q": "She ..... to finish her homework before dinner.",
-"o": [
-"tries",
-"try",
-"trying",
-"to try"
-],
-"e": "She ← الفعل الأول ينضاف له s، وtry قبل y حرف غير متحرك ← tries (وبعده to finish)."
-},
-{
-"q": "He ..... playing tennis with his friends.",
-"o": [
-"enjoys",
-"enjoy",
-"to enjoy",
-"enjoying"
-],
-"e": "He ← الفعل الأول ينضاف له s: enjoys، وبعده playing."
-},
-{
-"q": "My friend avoids ..... coffee at night.",
+"q": "My father stopped ..... coffee at night because he couldn't sleep.",
 "o": [
 "drinking",
 "to drink",
 "drink",
 "drinks"
 ],
-"e": "بعد avoid نضيف ing: avoids drinking."
+"e": "بعد stop نضيف ing: stopped drinking."
 },
 {
-"q": "I love ..... music while I study.",
+"q": "Sara hates ..... the dishes. She always asks her brother to do it.",
 "o": [
-"listening to",
-"listen to",
-"listens to",
-"to listening to"
+"washing",
+"wash",
+"washes",
+"to washing"
 ],
-"e": "بعد love يجي to أو ing ← listening to."
+"e": "بعد hate يجي to أو ing ← washing (الخيارات الثانية غلط)."
 },
 {
-"q": "Do you need ..... a break?",
+"q": "I hope ..... you at the party tomorrow.",
 "o": [
-"to take",
-"take",
-"taking",
-"to taking"
+"to see",
+"see",
+"seeing",
+"to seeing"
 ],
-"e": "بعد need نحط to + الفعل: need to take."
+"e": "بعد hope نحط to + الفعل: hope to see."
 },
 {
-"q": "I ..... to a dentist. I have a lot of pain in my teeth.",
+"q": "Students should avoid ..... their phones during the exam.",
 "o": [
-"should go",
-"should to go",
-"should going",
-"should to going"
+"using",
+"to use",
+"use",
+"uses"
 ],
-"e": "بعد should يجي الفعل الأساسي مباشرة بدون to وبدون ing: should go."
+"e": "بعد avoid نضيف ing: avoid using."
+},
+{
+"q": "He ..... to finish his project before Sunday.",
+"o": [
+"needs",
+"need",
+"needing",
+"to need"
+],
+"e": "He ← الفعل الأول ينضاف له s: needs، وبعده to finish."
+},
+{
+"q": "My mother ..... watching cooking shows on TV.",
+"o": [
+"enjoys",
+"enjoy",
+"enjoying",
+"to enjoy"
+],
+"e": "She ← الفعل الأول ينضاف له s: enjoys، وبعده watching."
+},
+{
+"q": "I like ..... with my family in the evening.",
+"o": [
+"walking",
+"walk",
+"walks",
+"to walking"
+],
+"e": "بعد like يجي to أو ing ← walking (الخيارات الثانية غلط)."
+},
+{
+"q": "Do you want ..... with us to the beach?",
+"o": [
+"to come",
+"come",
+"coming",
+"to coming"
+],
+"e": "بعد want نحط to + الفعل: want to come."
+},
+{
+"q": "Omar tried ..... the box, but it was too heavy.",
+"o": [
+"to carry",
+"carry",
+"carrying",
+"to carrying"
+],
+"e": "بعد try نحط to + الفعل: tried to carry."
+},
+{
+"q": "My little brother dislikes ..... to bed early.",
+"o": [
+"going",
+"to go",
+"go",
+"goes"
+],
+"e": "بعد dislike نضيف ing: dislikes going."
+},
+{
+"q": "I love ..... in the sea in summer.",
+"o": [
+"swimming",
+"swim",
+"swims",
+"to swimming"
+],
+"e": "بعد love يجي to أو ing ← swimming (الخيارات الثانية غلط)."
+},
+{
+"q": "You need ..... your passport to travel.",
+"o": [
+"to bring",
+"bring",
+"bringing",
+"to bringing"
+],
+"e": "بعد need نحط to + الفعل: need to bring."
+},
+{
+"q": "Please stop ..... video games and do your homework!",
+"o": [
+"playing",
+"to play",
+"play",
+"plays"
+],
+"e": "بعد stop نضيف ing: stop playing."
+},
+{
+"q": "She hopes ..... medicine at King Saud University.",
+"o": [
+"to study",
+"study",
+"studying",
+"to studying"
+],
+"e": "بعد hope نحط to + الفعل: hopes to study."
+},
+{
+"q": "I can't stand ..... to loud music when I'm studying.",
+"o": [
+"to listen",
+"listen",
+"listens",
+"to listening"
+],
+"e": "بعد can't stand يجي to أو ing ← to listen (الخيارات الثانية غلط)."
 }
 ]
 },
@@ -2290,7 +2100,7 @@ window.GRAMMAR = [
 "e": "in front of = قدام: the fan is in front of the bookshelf."
 },
 {
-"q": "Excuse me, where is the bank? It's ..... the pharmacy. They are side by side.",
+"q": "A: Excuse me, where is the pharmacy? B: It's ..... the bank. They are side by side.",
 "o": [
 "next to",
 "under",
@@ -2300,27 +2110,47 @@ window.GRAMMAR = [
 "e": "side by side = جنب بعض ← next to."
 },
 {
-"q": "I'm waiting for you ..... the bus stop.",
+"q": "A: Where is the bus stop? B: It's ..... the hospital. You can see it when you come out of the main door.",
+"o": [
+"in front of",
+"behind",
+"under",
+"over"
+],
+"e": "تشوفه أول ما تطلع من الباب الرئيسي ← in front of (قدام)."
+},
+{
+"q": "I'm waiting for you ..... the traffic lights. Hurry up!",
 "o": [
 "at",
 "in",
 "under",
 "over"
 ],
-"e": "at للمكان المحدد: at the bus stop."
+"e": "at للمكان المحدد اللي الشخص واقف عنده: at the traffic lights."
 },
 {
-"q": "The traffic lights are ..... the road. The cars stop under them.",
+"q": "There's a small café ..... the corner of the street.",
 "o": [
-"over",
-"under",
+"on",
 "in",
-"behind"
+"under",
+"over"
 ],
-"e": "over = فوق بدون ما يلمس، والسيارات تقف تحتها ← over the road."
+"e": "on the corner = على زاوية الشارع."
 },
 {
-"q": "There is a cat sleeping ..... the car. Be careful when you drive!",
+"q": "The car park is ..... the mall. Walk to the back of the building to find it.",
+"o": [
+"behind",
+"in front of",
+"over",
+"in"
+],
+"e": "الخلف (the back of the building) ← behind."
+},
+{
+"q": "Be careful! There's a cat ..... your car.",
 "o": [
 "under",
 "over",
@@ -2330,7 +2160,7 @@ window.GRAMMAR = [
 "e": "under = تحت السيارة."
 },
 {
-"q": "The children are playing football ..... the street.",
+"q": "The children are playing football ..... the street. It's dangerous!",
 "o": [
 "in",
 "over",
@@ -2340,27 +2170,7 @@ window.GRAMMAR = [
 "e": "in للمكان اللي الشخص داخله: in the street."
 },
 {
-"q": "Park your car ..... the restaurant, not in front of it. There is a big car park back there.",
-"o": [
-"behind",
-"in front of",
-"over",
-"in"
-],
-"e": "behind = ورا المطعم (back there)."
-},
-{
-"q": "Wait for me ..... the corner of the street.",
-"o": [
-"on",
-"under",
-"over",
-"behind"
-],
-"e": "on the corner = على زاوية الشارع."
-},
-{
-"q": "The bakery is ..... the right of the bank.",
+"q": "A: Where is the bakery? B: It's ..... the right of the supermarket.",
 "o": [
 "on",
 "in",
@@ -2370,64 +2180,154 @@ window.GRAMMAR = [
 "e": "on the right of = على يمين."
 },
 {
-"q": "The police car is ..... the school gate, so the students can see it when they come out.",
-"o": [
-"in front of",
-"behind",
-"under",
-"over"
-],
-"e": "in front of = قدام البوابة عشان يشوفونها."
-},
-{
-"q": "The bridge is ..... the river.",
+"q": "The bridge is ..... the highway. Cars drive under it.",
 "o": [
 "over",
 "under",
 "in",
-"at"
+"behind"
 ],
-"e": "over = فوق النهر."
+"e": "السيارات تمشي تحته، فالجسر فوق ← over."
 },
 {
-"q": "The man is standing ..... the traffic lights. He wants to cross the street.",
+"q": "The man is standing ..... the bus stop. He is waiting for the bus.",
 "o": [
 "at",
 "in",
 "under",
 "over"
 ],
-"e": "at للمكان المحدد: at the traffic lights."
+"e": "at للمكان المحدد: at the bus stop."
 },
 {
-"q": "The bus stop is ..... the hospital. It's right beside it.",
-"o": [
-"next to",
-"under",
-"above",
-"in"
-],
-"e": "next to / beside = جنب."
-},
-{
-"q": "The sign above the shop says \"Pharmacy\". The sign is ..... the door.",
+"q": "The sign \"Pharmacy\" is ..... the door of the shop.",
 "o": [
 "above",
 "under",
 "in",
 "behind"
 ],
-"e": "above = فوق الباب."
+"e": "above = فوق الباب بدون ما يلمسه."
 },
 {
-"q": "Look at the street: the mosque is in the middle, the bank is on the left, and the café is on the ..... of the mosque.",
+"q": "A: Where did you park? B: I parked ..... the hotel entrance.",
+"o": [
+"in front of",
+"under",
+"above",
+"in"
+],
+"e": "in front of = قدام مدخل الفندق."
+},
+{
+"q": "Look at the street map: the school is on the left, the mosque is in the middle, and the park is on the ..... of the mosque.",
 "o": [
 "right",
 "front",
 "back",
 "next"
 ],
-"e": "البنك على اليسار، فالمقهى على اليمين ← on the right of."
+"e": "المدرسة يسار والمسجد في الوسط، فالحديقة على اليمين ← on the right of."
+},
+{
+"q": "There are many restaurants ..... Tahlia Street.",
+"o": [
+"on",
+"under",
+"above",
+"over"
+],
+"e": "on مع أسماء الشوارع: on Tahlia Street."
+},
+{
+"q": "The streetlights are ..... the road. They light it at night.",
+"o": [
+"over",
+"under",
+"in",
+"at"
+],
+"e": "over = فوق الطريق بدون ما تلمسه."
+},
+{
+"q": "A: Where is the gas station? B: It's ..... the left of the mall.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+],
+"e": "on the left of = على يسار."
+},
+{
+"q": "The taxi is ..... the bus. The bus can't see the road ahead.",
+"o": [
+"in front of",
+"behind",
+"under",
+"on"
+],
+"e": "التاكسي قدام الباص، فالباص ما يشوف الطريق ← in front of."
+},
+{
+"q": "My office is ..... the third floor of that building.",
+"o": [
+"on",
+"in",
+"under",
+"over"
+],
+"e": "on مع الأدوار: on the third floor."
+},
+{
+"q": "Turn left at the traffic lights. The bank is ..... your right.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+],
+"e": "on your right = على يمينك."
+},
+{
+"q": "The boy is hiding ..... the car. His friends can't find him.",
+"o": [
+"behind",
+"in front of",
+"on",
+"over"
+],
+"e": "behind = ورا السيارة عشان ما يشوفونه."
+},
+{
+"q": "A: Where is the hospital? B: It's ..... the end of this street.",
+"o": [
+"at",
+"on",
+"under",
+"over"
+],
+"e": "at the end of the street = في نهاية الشارع."
+},
+{
+"q": "The bank is on the left of the café, so the café is on the ..... of the bank.",
+"o": [
+"right",
+"left",
+"front",
+"behind"
+],
+"e": "إذا البنك يسار المقهى، فالمقهى يمين البنك ← right."
+},
+{
+"q": "There is a big tree ..... our house. It gives shade to the front door.",
+"o": [
+"in front of",
+"behind",
+"under",
+"over"
+],
+"e": "يظلل الباب الأمامي، فالشجرة قدام البيت ← in front of."
 },
 {
 "q": "My car is ..... the garage.",
@@ -2440,174 +2340,84 @@ window.GRAMMAR = [
 "e": "in = داخل الكراج."
 },
 {
-"q": "There is a big tree ..... my house, so I can't see it from the street. It's in the back garden.",
-"o": [
-"behind",
-"in front of",
-"over",
-"on"
-],
-"e": "behind = ورا البيت (في الحديقة الخلفية)."
-},
-{
-"q": "A: Where is the supermarket? B: It's ..... the gas station. You can see it beside the station.",
-"o": [
-"next to",
-"under",
-"over",
-"in"
-],
-"e": "beside = next to ← جنب محطة البنزين."
-},
-{
-"q": "The taxi is waiting ..... the hotel entrance.",
-"o": [
-"in front of",
-"under",
-"above",
-"in"
-],
-"e": "in front of = قدام مدخل الفندق."
-},
-{
-"q": "There are many shops ..... King Fahd Road.",
-"o": [
-"on",
-"under",
-"above",
-"over"
-],
-"e": "on مع أسماء الشوارع: on King Fahd Road."
-},
-{
-"q": "The streetlight is ..... the parked car.",
-"o": [
-"over",
-"under",
-"in",
-"at"
-],
-"e": "over = فوق السيارة بدون ما يلمسها."
-},
-{
-"q": "The bike is ..... the wall.",
+"q": "A: Where is your bike? B: It's ..... the wall, beside the door.",
 "o": [
 "next to",
 "over",
 "in",
 "above"
 ],
-"e": "next to = جنب الجدار."
+"e": "beside = next to ← جنب الجدار."
 },
 {
-"q": "The mall is ..... the left of the hospital.",
+"q": "The police officer is standing ..... the middle of the road.",
 "o": [
-"on",
 "in",
+"on",
 "at",
 "under"
 ],
-"e": "on the left of = على يسار."
+"e": "in the middle of = في وسط."
 },
 {
-"q": "The keys are ..... my pocket.",
+"q": "A: I can't find my phone! B: Look down. It's ..... the car seat.",
 "o": [
-"in",
-"on",
+"under",
 "over",
-"under"
+"above",
+"in"
 ],
-"e": "in = داخل الجيب."
+"e": "Look down (طالع تحت) ← under = تحت الكرسي."
 },
 {
-"q": "The bus is ..... the car. The car can't see the road ahead.",
-"o": [
-"in front of",
-"behind",
-"under",
-"over"
-],
-"e": "الباص قدام السيارة، فالسيارة ما تشوف الطريق ← in front of."
-},
-{
-"q": "The restaurant is ..... the ground floor of the building.",
-"o": [
-"on",
-"in",
-"under",
-"over"
-],
-"e": "on مع الأدوار: on the ground floor."
-},
-{
-"q": "Turn right at the traffic lights. The museum is ..... your left.",
-"o": [
-"on",
-"in",
-"at",
-"under"
-],
-"e": "on your left = على يسارك."
-},
-{
-"q": "The boy is hiding ..... the car. His friends can't see him from the street.",
-"o": [
-"behind",
-"in front of",
-"on",
-"over"
-],
-"e": "behind = ورا السيارة، عشان ما يشوفونه."
-},
-{
-"q": "The newspaper is ..... the table.",
-"o": [
-"on",
-"in",
-"under",
-"over"
-],
-"e": "on = على سطح الطاولة."
-},
-{
-"q": "There's a coffee shop ..... the end of the street.",
+"q": "The children are waiting ..... the school gate for their parents.",
 "o": [
 "at",
+"in",
+"under",
+"over"
+],
+"e": "at للمكان المحدد: at the school gate."
+},
+{
+"q": "The shop's name is written ..... the window.",
+"o": [
+"on",
+"under",
+"behind",
+"over"
+],
+"e": "on = على سطح الشيء (مكتوب على الزجاج)."
+},
+{
+"q": "A: Where are the shopping bags? B: They're ..... the car, on the back seat.",
+"o": [
+"in",
 "on",
 "under",
 "over"
 ],
-"e": "at the end of the street = في نهاية الشارع."
+"e": "in = داخل السيارة."
 },
 {
-"q": "The bank is on the left of the bakery, so the bakery is on the ..... of the bank.",
+"q": "The traffic lights are ..... the corner, next to the bank.",
 "o": [
-"right",
-"left",
-"front",
+"on",
+"under",
+"in",
+"over"
+],
+"e": "on the corner = على الزاوية."
+},
+{
+"q": "The new restaurant is ..... the mall. It's on the second floor.",
+"o": [
+"in",
+"under",
+"over",
 "behind"
 ],
-"e": "البنك على يسار المخبز، فالمخبز على يمين البنك ← on the right of."
-},
-{
-"q": "The man is sitting ..... the bench in the park.",
-"o": [
-"on",
-"in",
-"under",
-"over"
-],
-"e": "on = على الكرسي (bench)."
-},
-{
-"q": "The car is ..... the bus. The bus can't see the road ahead.",
-"o": [
-"in front of",
-"behind",
-"under",
-"on"
-],
-"e": "السيارة قدام الباص، فالباص ما يشوف الطريق ← in front of."
+"e": "in = داخل المول."
 }
 ]
 }
