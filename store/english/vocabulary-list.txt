@@ -1,0 +1,228 @@
+# قائمة الكلمات (من ملف المستخدم vocabulary-list.pdf) — الكلمة | المعنى (العربي مستخرج آلياً وقد يكون فيه تشوه بالحروف)
+Clothes | ‫مالبس‬
+Describe | ‫وصف‬
+Friendly | ‫ودود‬
+Funny | ‫مضحك‬
+Helpful | ‫مساعد‬
+Intelligent | ‫ذكي‬
+Meet | ‫يلتقي‬
+Overweight | ‫زائد الوزن‬
+Thin | ‫رقيق‬
+Wear | ‫يرتدي‬
+Messy | ‫فوضوي‬
+Neat | ‫مرتب‬
+Serious | ‫جاد‬
+Short | ‫قصير‬
+Shy | ‫خجول‬
+Tall | ‫طويل‬
+Be good at | ‫يجيد‬
+Be interested in | ‫مهتم بـ‬
+Be on | ‫يكون على‬
+Get together with | ‫يجتمع مع‬
+Go | ‫يذهب‬
+Go to | ‫يذهب إلى‬
+Listen to | ‫يستمع إلى‬
+Live in | ‫يعيش في‬
+Play | ‫يلعب‬
+Read | ‫يقرأ‬
+Ride | ‫يركب‬
+Take | ‫يأخذ‬
+Watch | ‫يشاهد‬
+Belong to | ‫ينتمي إلى‬
+Club | ‫نادي‬
+Collect | ‫جمع‬
+Good at | ‫جيد‬
+Hobbies | ‫هوايات‬
+Interested in | ‫مهتم بـ‬
+Team | ‫فريق‬
+Famous | ‫مشهور‬
+Farm | ‫مزرعه‬
+Feed | ‫يطعم‬
+Field | ‫حقل‬
+Flood | ‫فيضان‬
+Pick up | ‫يلتقط‬
+Unusual | ‫غير عادي‬
+Academic | ‫أكاديمي‬
+Academy | ‫أكاديمية‬
+Attend | ‫يحضر‬
+Difficult | ‫صعب‬
+Difficulty | ‫صعوبة‬
+Enjoy | ‫يستمتع‬
+Enjoyable | ‫ممتع‬
+Friend | ‫صديق‬
+Help | ‫يساعد‬
+Intelligence | ‫ذكاء‬
+Student | ‫طالب‬
+Studious | ‫مجتهد‬
+Study | ‫يدرس‬
+Teach | ‫يعلم‬
+Teachable | ‫قابل للتعليم‬
+Teacher | ‫معلم‬
+Campus | ‫الحرم الجامعي‬
+Community | ‫المجتمع‬
+Download | ‫تحميل‬
+Foreign Language | ‫اللغه األجنبية‬
+Skill | ‫مهارة‬
+Professor | ‫أستاذ‬
+Special | ‫خاص‬
+Above | ‫أعاله‬
+Below | ‫أسفل‬
+Boring | ‫ممل‬
+Cheap | ‫رخيص‬
+Clean | ‫نظيف‬
+Complicated | ‫معقد‬
+Dangerous | ‫خطر‬
+Dirty | ‫متسخ‬
+Easy | ‫سهل‬
+Expensive | ‫باهظ‬
+Fail | ‫يفشل‬
+Hard | ‫صعب‬
+Interesting | ‫مثير لألهتمام‬
+Negative | ‫سلبي‬
+Off | ‫إيقاف‬
+On | ‫على‬
+Online | ‫عبر اإلنترنت‬
+Safe | ‫آمن‬
+Simple | ‫بسيط‬
+Strength | ‫قوة‬
+Succeed | ‫ينجح‬
+Weakness | ‫ضعف‬
+Well | ‫بشكل جيد‬
+Celebrate | ‫يحتفل‬
+Delicious | ‫لذيذ‬
+Event | ‫حدث‬
+Fresh | ‫طازج‬
+Grow | ‫ينمو‬
+Popular | ‫مشهور‬
+Prepare | ‫يعد‬
+Apples | ‫تفاح‬
+Bananas | ‫موز‬
+Beans | ‫فاصوليا‬
+Beef | ‫لحم بقر‬
+Cheese | ‫جبن‬
+Chicken | ‫دجاج‬
+Dairy | ‫منتجات األلبان‬
+Fruit | ‫فاكهة‬
+Grapes | ‫عنب‬
+Lobster | ‫سرطان البحر‬
+Meat | ‫لحم‬
+Milk | ‫حليب‬
+Onions | ‫بصل‬
+Potatoes | ‫بطاطس‬
+Seafood | ‫مأكوالت بحرية‬
+Shrimp | ‫روبيان‬
+Vegetables | ‫خضروات‬
+Avoid | ‫تجنب‬
+Flavor | ‫نكهة‬
+Ingredient | ‫مكون‬
+Memory | ‫ذاكرة‬
+Nutritious | ‫مغذي‬
+Organic | ‫عضوي‬
+Vegetarian | ‫نباتي‬
+Nondairy | ‫خالي االلبان‬
+Nonfat | ‫خالي من الدهون‬
+Salt-free | ‫خالي من الملح‬
+Sugar-free | ‫خالي من السكر‬
+Unfriendly | ‫غير ودود‬
+Unhealthy | ‫غير صحي‬
+Unsafe | ‫غير آمن‬
+Cost | ‫تكلفة‬
+Guess | ‫تخمين‬
+Idea | ‫فكرة‬
+Invite | ‫يدعو‬
+Nature | ‫طبيعة‬
+Program | ‫برنامج‬
+Positive | ‫ايجابي‬
+Sightseeing | ‫مشاهدة المعالم السياحية‬
+Spend | ‫ينفق‬
+Give a ride | ‫يعطي جولة‬
+Have a snack | ‫تناول وجبة خفيفة‬
+Have an idea | ‫لدية فكرة‬
+Have coffee | ‫تناول القهوة‬
+Have fun | ‫استمتع‬
+Make friends | ‫تكوين صداقات‬
+Make plans | ‫وضع خطط‬
+Take a vacation | ‫أخذ إجازة‬
+Take a walk | ‫أخذ نزهة‬
+Tell a joke | ‫أروي نكتة‬
+Crowded | ‫مزدحم‬
+Modern | ‫حديث‬
+Outdoors | ‫في الهواء الطلق‬
+Badly | ‫بشكل سيء‬
+Provide | ‫توفير‬
+Relaxing | ‫مريح‬
+Scene | ‫منظر‬
+Tradition | ‫تقليد‬
+Do aerobic | ‫ممارسة التمارين الهوائية‬
+Do crosswords | ‫حل األلغاز‬
+Do gymnastics | ‫ممارسة الجمباز‬
+Do judo | ‫ممارسة الجودو‬
+Do nothing | ‫ال أفعل شيئا‬
+Go shopping | ‫التسوق‬
+Go hiking | ‫الذهاب في رحالت المشي‬
+Go skiing | ‫التزحلق‬
+Go swimming | ‫السباحة‬
+Go jogging | ‫الركض‬
+Play baseball | ‫لعب البيسبول‬
+Play scrabble | ‫لعب سكرابل‬
+Play soccer | ‫لعب كرة القدم‬
+Play tennis | ‫لعب التنس‬
+Play video games | ‫لعب ألعاب الفيديو‬
+Bright | ‫مشرق‬
+Building | ‫مبنى‬
+Comfortable | ‫مريح‬
+Contest | ‫مسابقة‬
+Design | ‫تصميم‬
+Drawer | ‫درج‬
+Electricity | ‫كهرباء‬
+Environment | ‫بيئة‬
+Extremely | ‫بشكل شديد‬
+Share | ‫يشارك‬
+Space | ‫فضاء‬
+Spend Time | ‫قضاء بعض الوقت‬
+View | ‫منظر‬
+Own | ‫ملك‬
+Affordable | ‫ميسور التكلفة‬
+Condition | ‫حالة‬
+Demand | ‫طلب‬
+Entertainment | ‫ترفية‬
+Housing | ‫سكن‬
+Increase | ‫زيادة‬
+Landlord | ‫المالك‬
+Location | ‫موقع‬
+Noisy | ‫صاخب‬
+Private | ‫خاص‬
+Problem | ‫مشكلة‬
+Public transportation | ‫وسائل النقل العام‬
+Rent | ‫إيجار‬
+Roommate | ‫رفيق السكن‬
+Shortage | ‫نقص‬
+Be addicted to | ‫يدمن على‬
+Become | ‫يصبح‬
+Behavior | ‫سلوك‬
+Break | ‫كسر‬
+Expert | ‫خبير‬
+Give up | ‫يتخلى عن‬
+Goal | ‫هدف‬
+Instead of | ‫بدال من‬
+Lose weight | ‫فقدان الوزن‬
+Maybe | ‫ربما‬
+Plan | ‫يخطط‬
+Pay Attention | ‫انتبه‬
+Stay Up | ‫البقاء مستيقظا‬
+Stress | ‫ضغط‬
+Unfortunately | ‫لألسف‬
+Turn Off | ‫إيقاف‬
+Control | ‫التحكم‬
+Depends on | ‫يعتمد على‬
+Diet | ‫النظام الغذائي‬
+Energy | ‫الطاقة‬
+Exercise | ‫تمرين‬
+Healthy | ‫صحي‬
+Lonely | ‫وحيد‬
+Manage | ‫إدارة‬
+Pill | ‫حبة‬
+Produce | ‫إنتاج‬
+Vitamin | ‫فيتامين‬
+Reduce | ‫يقلل‬
+Run-down | ‫انقلب‬

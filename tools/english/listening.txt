@@ -1,0 +1,1639 @@
+# مصدر مقاطع الاستماع لموقع الإنجليزي
+# الصيغة:
+#   ## رقم | العنوان | dialogue أو monologue
+#   @ الاسم=الصوت الاسم=الصوت        (أصوات Kokoro)
+#   الاسم: الكلام                    (كل سطر = جملة/مقطع لمتحدث)
+#   ?? السؤال
+#   * الإجابة الصحيحة
+#   - خيار خطأ   (ثلاث خيارات خطأ)
+# البناء: python3 tools/english/build_listening.py
+
+## 1 | Booking a Hotel Room | dialogue
+@ Receptionist=af_heart Guest=am_michael
+Receptionist: Good morning, Sunrise Hotel. My name is Lisa. How can I help you?
+Guest: Hello. I'd like to book a room for next week, please.
+Receptionist: Of course. What dates are you looking for?
+Guest: I'll arrive on Monday the twelfth and leave on Thursday the fifteenth. So that's three nights.
+Receptionist: Three nights. And is it just for you, or will someone be with you?
+Guest: It's for me and my wife. We'd like a double room, please. And if possible, a room with a view of the sea.
+Receptionist: Let me check. Yes, we have a double room with a sea view on the fourth floor. It's ninety-five dollars a night.
+Guest: That sounds good. Does the price include breakfast?
+Receptionist: Yes, breakfast is included. It's served in the restaurant from six thirty to ten o'clock.
+Guest: Great. Is there parking at the hotel? We're coming by car.
+Receptionist: Yes, we have a car park behind the hotel. It costs five dollars a day.
+Guest: OK, no problem. Oh, and is there a swimming pool?
+Receptionist: There's no pool, I'm afraid, but there's a small gym on the ground floor, and the beach is only two minutes away.
+Guest: That's fine. We'll probably spend most of our time at the beach anyway.
+Receptionist: Perfect. Can I have your name, please?
+Guest: Yes, it's David Miller. That's M, I, double L, E, R.
+Receptionist: Thank you, Mr. Miller. And a phone number?
+Guest: It's oh seven seven, four five two, nine one eight.
+Receptionist: Thank you. Your room is booked. Check-in is from two p.m. We'll see you on Monday!
+?? How many nights will the guest stay at the hotel?
+* Three
+- Two
+- Four
+- Fifteen
+?? What kind of room does the guest want?
+* A double room with a sea view
+- A single room with a sea view
+- A double room with a garden view
+- A family room near the gym
+?? How much is the room per night?
+* Ninety-five dollars
+- Ninety dollars
+- Fifty-nine dollars
+- Five dollars
+?? Which floor is the room on?
+* The fourth floor
+- The ground floor
+- The second floor
+- The fifth floor
+?? What time does breakfast finish?
+* At ten o'clock
+- At six thirty
+- At two p.m.
+- At nine o'clock
+?? How much does parking cost?
+* Five dollars a day
+- It is free
+- Ten dollars a day
+- Five dollars a night for two cars
+?? What does the hotel NOT have?
+* A swimming pool
+- A gym
+- A car park
+- A restaurant
+?? How far is the beach from the hotel?
+* Two minutes
+- Five minutes
+- Ten minutes
+- Twenty minutes
+?? What is the guest's family name?
+* Miller
+- Millar
+- Mills
+- Miler
+?? When can the guest check in?
+* From two p.m.
+- From ten a.m.
+- From six thirty a.m.
+- From twelve noon
+
+## 2 | A Visit to the City Museum | monologue
+@ Guide=am_fenrir
+Guide: Good morning, everyone, and welcome to the City Museum. My name is Tom, and I'll be your guide today. Our tour will take about one and a half hours, so I hope you're wearing comfortable shoes!
+Guide: The museum was opened in eighteen ninety, and it has three floors. We'll start here on the ground floor, where you can see our history collection. There are old coins, maps and clothes from the last five hundred years.
+Guide: After that, we'll go up to the first floor. This is the most popular part of the museum, because it's where we keep the dinosaur skeleton. Children love it, and to be honest, so do adults!
+Guide: On the second floor, there's the art gallery. It has more than two hundred paintings, most of them by local artists.
+Guide: Now, a few rules before we start. Please don't touch the objects, and don't eat or drink inside the rooms. You can take photos, but please don't use a flash, because it can damage the paintings.
+Guide: If you get hungry, the café is next to the main entrance. It's open until five o'clock. And the gift shop is on the first floor, just opposite the lift.
+Guide: Finally, at the end of the tour, at about twelve thirty, there will be a short film about the history of our city. It's in the small cinema on the ground floor, and it lasts twenty minutes.
+Guide: OK, if you have any questions, just ask me. Now, please follow me.
+?? What is the guide's name?
+* Tom
+- Tim
+- Tony
+- Ted
+?? How long will the tour take?
+* One and a half hours
+- Half an hour
+- One hour
+- Two hours
+?? When was the museum opened?
+* In 1890
+- In 1980
+- In 1819
+- In 1500
+?? How many floors does the museum have?
+* Three
+- Two
+- Four
+- Five
+?? Where is the dinosaur skeleton?
+* On the first floor
+- On the ground floor
+- On the second floor
+- In the small cinema
+?? How many paintings are there in the art gallery?
+* More than two hundred
+- Less than one hundred
+- Exactly five hundred
+- About fifty
+?? Why can't visitors use a flash?
+* It can damage the paintings.
+- It disturbs other visitors.
+- It is not allowed on the ground floor only.
+- The rooms are too dark.
+?? Where is the café?
+* Next to the main entrance
+- Opposite the lift
+- On the second floor
+- Next to the small cinema
+?? Where is the gift shop?
+* On the first floor, opposite the lift
+- On the ground floor, next to the café
+- On the second floor, next to the gallery
+- Outside the main entrance
+?? How long is the film at the end of the tour?
+* Twenty minutes
+- Twelve minutes
+- Thirty minutes
+- One hour
+
+## 3 | At the Doctor's | dialogue
+@ Doctor=af_bella Patient=am_puck
+Doctor: Good afternoon. Please sit down. What seems to be the problem?
+Patient: Good afternoon, doctor. I haven't been feeling well for about four days. I've got a bad headache and a sore throat.
+Doctor: I see. Do you have a temperature?
+Patient: Yes, I checked this morning. It was thirty-eight degrees.
+Doctor: And are you sleeping well?
+Patient: Not really. I keep coughing at night, so I only sleep for about three or four hours.
+Doctor: Let me have a look at your throat. Say "ah". Hmm, it's quite red. I think you have a throat infection. It's very common at this time of year.
+Patient: Is it serious?
+Doctor: No, don't worry. I'm going to give you some medicine. Take one tablet three times a day, after meals. Take them for seven days, even if you feel better before that.
+Patient: OK. Can I go to work tomorrow?
+Doctor: I'd stay at home for two days. You need to rest. And drink a lot of water, or warm drinks like tea with honey.
+Patient: Should I stop playing football? I usually play on Saturdays.
+Doctor: Yes, no sport this week, please. You can start again next week if you feel well.
+Patient: Alright. Thank you, doctor.
+Doctor: You're welcome. If you don't feel better in a week, come back and see me again.
+?? How long has the patient been feeling ill?
+* About four days
+- About two days
+- About a week
+- Since this morning
+?? What problems does the patient have?
+* A headache and a sore throat
+- A stomach ache and a cough
+- A backache and a headache
+- An earache and a sore throat
+?? What was the patient's temperature this morning?
+* Thirty-eight degrees
+- Thirty-seven degrees
+- Thirty-nine degrees
+- Forty degrees
+?? Why can't the patient sleep well?
+* He keeps coughing at night.
+- He has a bad stomach ache.
+- He works late every night.
+- His room is too hot.
+?? What does the doctor think the problem is?
+* A throat infection
+- A broken nose
+- A food allergy
+- A serious illness
+?? How often should the patient take the tablets?
+* Three times a day
+- Once a day
+- Twice a day
+- Four times a day
+?? When should he take the tablets?
+* After meals
+- Before meals
+- Before bed only
+- When he wakes up only
+?? For how long should he take the medicine?
+* Seven days
+- Three days
+- Two days
+- Fourteen days
+?? How many days should the patient stay at home?
+* Two days
+- One day
+- Four days
+- Seven days
+?? When does the patient usually play football?
+* On Saturdays
+- On Sundays
+- Every evening
+- On Fridays
+
+## 4 | A Message About the Weekend Trip | monologue
+@ Sara=af_sarah
+Sara: Hi Emma, it's Sara. I'm calling about our trip to the mountains this weekend. I tried to call you twice, but your phone was off, so I'm leaving a message.
+Sara: There are a few changes to the plan. First, we're not leaving on Friday evening any more. Ahmed has to work late on Friday, so we're leaving on Saturday morning instead. We'll meet at the train station at seven fifteen. The train leaves at seven forty, so please don't be late!
+Sara: Second, the weather forecast says it's going to be cold and rainy on Saturday, so bring a warm jacket and good walking boots. Sunday should be sunny, though.
+Sara: We're staying at a small guest house near the lake, not at the hotel we talked about. It's cheaper, only forty dollars each for the two nights, and breakfast is included. You can pay me when you see me.
+Sara: There will be five of us now. My cousin Nora is coming too, so that's you, me, Ahmed, Khalid and Nora.
+Sara: Oh, and one more thing. Could you bring your camera? Mine is broken. I'll bring the sandwiches and drinks for the train.
+Sara: OK, call me back when you get this message. My number is the same as before. Bye!
+?? Why is Sara leaving a message?
+* Emma's phone was off.
+- Emma asked her to.
+- Sara's phone is broken.
+- Emma is on the train.
+?? Why did they change the day of the trip?
+* Ahmed has to work late on Friday.
+- The train on Friday is full.
+- The weather is bad on Friday.
+- Nora can't come on Friday.
+?? What time does the train leave?
+* At seven forty
+- At seven fifteen
+- At seven fourteen
+- At seven fifty
+?? Where will they meet?
+* At the train station
+- At Sara's house
+- At the guest house
+- Near the lake
+?? What will the weather be like on Saturday?
+* Cold and rainy
+- Sunny and warm
+- Hot and dry
+- Windy but sunny
+?? Where will they stay?
+* At a small guest house near the lake
+- At a big hotel in the mountains
+- At Nora's house
+- In a tent near the lake
+?? How much will each person pay for the accommodation?
+* Forty dollars for two nights
+- Forty dollars a night
+- Fourteen dollars for two nights
+- Fifty dollars for two nights
+?? How many people are going on the trip?
+* Five
+- Four
+- Three
+- Six
+?? Who is Nora?
+* Sara's cousin
+- Sara's sister
+- Ahmed's wife
+- Emma's friend from work
+?? What does Sara ask Emma to bring?
+* Her camera
+- Sandwiches and drinks
+- A tent
+- Sara's jacket
+
+## 5 | Planning a Birthday Party | dialogue
+@ Mona=af_heart Faisal=am_michael
+Mona: Faisal, it's Dad's birthday on the twentieth. He'll be sixty! I think we should have a surprise party for him.
+Faisal: That's a great idea, Mona. Where should we have it? Our flat is too small.
+Mona: What about the Italian restaurant near the park? Dad loves the food there.
+Faisal: Hmm, it's nice, but it's expensive. Why don't we have it at Uncle Sami's house? He has a big garden.
+Mona: Good idea. I'll call him tonight. How many people should we invite?
+Faisal: Let's see. The family is about fifteen people, and then Dad's friends from work. Maybe twenty-five in total?
+Mona: Twenty-five sounds right. What about food? I can make my chicken and rice.
+Faisal: Perfect. And I'll order the cake from the bakery on King Street. A chocolate cake, because that's Dad's favourite.
+Mona: Don't forget to write "Happy sixtieth birthday" on it.
+Faisal: I won't. What time should the party start?
+Mona: Dad usually finishes work at five. Mum can bring him to Uncle Sami's at seven, and everyone should arrive at half past six, so we're all ready.
+Faisal: Good. And what should we buy him as a present?
+Mona: He always says his watch is too old. Let's all pay together and buy him a new watch.
+Faisal: Great. I'll send a message to everyone tonight. But remember, it's a secret. Don't tell Dad!
+?? Why are they planning a party?
+* It is their father's sixtieth birthday.
+- Their father is leaving his job.
+- It is their mother's birthday.
+- Their uncle has a new house.
+?? Why don't they have the party in their flat?
+* It is too small.
+- It is too far.
+- It is being painted.
+- Their neighbours would complain.
+?? Why doesn't Faisal want the Italian restaurant?
+* It is expensive.
+- The food is not good.
+- It is too far from the park.
+- It is closed on the twentieth.
+?? Where will the party be?
+* At Uncle Sami's house
+- At the Italian restaurant
+- In the park
+- At their father's office
+?? How many people will they invite in total?
+* About twenty-five
+- About fifteen
+- About sixty
+- About twenty
+?? What will Mona cook?
+* Chicken and rice
+- Fish and rice
+- An Italian dish
+- A chocolate cake
+?? What kind of cake will Faisal order?
+* A chocolate cake
+- A fruit cake
+- A lemon cake
+- A cheesecake
+?? What time should the guests arrive?
+* At half past six
+- At five o'clock
+- At seven o'clock
+- At half past seven
+?? Who will bring their father to the party?
+* Their mother
+- Uncle Sami
+- Mona
+- Faisal
+?? What present will they buy?
+* A new watch
+- A new phone
+- A book
+- A jacket
+
+## 6 | Welcome to University | monologue
+@ Speaker=af_nicole
+Speaker: Good morning, new students, and welcome to Green Valley University. My name is Doctor Hannah Clark, and I'm the head of the Student Services Office. I know this is your first day, so I'd like to give you some important information.
+Speaker: First, your student ID card. You can collect it from the Student Services Office in Building C, on the ground floor. Please bring your passport or national ID and one photo. The office is open from eight a.m. to three p.m., Sunday to Thursday.
+Speaker: Your ID card is very important. You need it to enter the library, to borrow books, and to use the sports centre. If you lose it, a new card costs ten dollars.
+Speaker: Classes start next Sunday. You can find your timetable on the university website. If you have any problems with your timetable, please speak to your academic advisor.
+Speaker: The library is in Building A. It's open every day from seven in the morning until eleven at night, so you can study there late in the evening. Students can borrow up to six books at a time for two weeks.
+Speaker: For lunch, there are two restaurants on campus. The main restaurant is next to the library, and there's a smaller café in the sports centre.
+Speaker: Finally, on Wednesday afternoon there will be a campus tour for all new students. It starts at two o'clock in front of the main gate. It's a great chance to meet other students and learn where everything is.
+Speaker: Thank you for listening, and I hope you enjoy your time here.
+?? Who is the speaker?
+* The head of the Student Services Office
+- A new student
+- The head of the library
+- A sports teacher
+?? Where can students collect their ID cards?
+* In Building C, on the ground floor
+- In Building A, next to the library
+- At the main gate
+- In the sports centre
+?? What do students need to bring to get their ID card?
+* A passport or national ID and one photo
+- Two photos and ten dollars
+- Their timetable and a photo
+- A letter from their advisor
+?? What is the ID card NOT needed for, according to the speaker?
+* Eating at the restaurant
+- Entering the library
+- Borrowing books
+- Using the sports centre
+?? How much does a new card cost if you lose yours?
+* Ten dollars
+- Two dollars
+- Six dollars
+- It is free
+?? When do classes start?
+* Next Sunday
+- Next Wednesday
+- Tomorrow
+- Next Thursday
+?? What time does the library close?
+* At eleven at night
+- At three p.m.
+- At seven in the evening
+- At midnight
+?? How many books can a student borrow at a time?
+* Six
+- Two
+- Ten
+- Four
+?? Where is the main restaurant?
+* Next to the library
+- In the sports centre
+- In Building C
+- In front of the main gate
+?? When does the campus tour start?
+* On Wednesday at two o'clock
+- On Sunday at two o'clock
+- On Wednesday at ten o'clock
+- On Thursday at three o'clock
+
+## 7 | Looking for a New Flat | dialogue
+@ Amal=af_heart Majed=am_michael
+Amal: So, Majed, how was your day? Did you find a flat?
+Majed: Not yet. I saw four flats today, but I didn't like any of them very much.
+Amal: Four? That's a lot! Tell me about them.
+Majed: Well, the first one was in the city centre. It was modern and very nice, but it was too expensive. Nine hundred dollars a month.
+Amal: Wow, that is expensive. What about the second one?
+Majed: The second one was cheaper, only five hundred a month. But it was on the sixth floor and there was no lift. I can't carry my things up six floors every day!
+Amal: No, of course not. And the third?
+Majed: The third one was near the university, which is great for me, because I could walk there in ten minutes. The rent was six hundred and fifty. But it was really small, and the kitchen was old and dirty.
+Amal: Hmm. And the last one?
+Majed: The last one was actually a small house, not a flat. It had two bedrooms and a garden. It was seven hundred dollars a month. I liked it, but it's far from the university. It takes forty minutes by bus.
+Amal: Well, you could buy a bicycle. Or maybe you could share the house with a friend. With two bedrooms, you'd only pay three hundred and fifty each.
+Majed: That's a great idea! My friend Yousef is looking for a place too. I'll call him tonight.
+Amal: Good. And if he says yes, you should call the owner quickly, before someone else takes it.
+?? How many places did Majed see today?
+* Four
+- Three
+- Two
+- Six
+?? Why didn't Majed choose the first flat?
+* It was too expensive.
+- It was too small.
+- It was too far from the university.
+- It had no lift.
+?? How much was the first flat per month?
+* Nine hundred dollars
+- Five hundred dollars
+- Seven hundred dollars
+- Six hundred and fifty dollars
+?? What was the problem with the second flat?
+* It was on the sixth floor and had no lift.
+- The kitchen was old and dirty.
+- It was far from the city centre.
+- It had only one bedroom.
+?? What was good about the third flat?
+* It was near the university.
+- It had a big kitchen.
+- It had a garden.
+- It was the cheapest.
+?? How long would it take Majed to walk from the third flat to the university?
+* Ten minutes
+- Forty minutes
+- Five minutes
+- Twenty minutes
+?? What was different about the last place?
+* It was a house with a garden.
+- It was in the city centre.
+- It was on the top floor.
+- It had three bedrooms.
+?? How does Majed get from the house to the university?
+* It takes forty minutes by bus.
+- It takes ten minutes on foot.
+- It takes twenty minutes by car.
+- It takes forty minutes by bicycle.
+?? What does Amal suggest?
+* Sharing the house with a friend
+- Buying a car
+- Taking the flat in the city centre
+- Living with his family
+?? How much would each person pay if Majed shares the house?
+* Three hundred and fifty dollars
+- Seven hundred dollars
+- Four hundred dollars
+- Three hundred dollars
+
+## 8 | The Weather Forecast | monologue
+@ Presenter=am_puck
+Presenter: Good evening, and here is the weather forecast for the next three days.
+Presenter: Tomorrow, Monday, will start cloudy in the north, with some light rain in the morning. In the afternoon the rain will stop, and the sun will come out. Temperatures will be around eighteen degrees. In the south, it will be sunny all day, with a high of twenty-six degrees, so it's a good day for the beach.
+Presenter: On Tuesday, strong winds are coming from the west. Winds will be very strong near the coast, so if you are planning to go sailing or fishing, I think you should stay at home. It will also be cooler everywhere, with temperatures between twelve and fifteen degrees.
+Presenter: Wednesday will be the worst day of the week. There will be heavy rain all over the country, and there may be storms in the evening. Drivers should be careful, because the roads will be wet, and some roads near the rivers may be closed. Please take an umbrella if you go out.
+Presenter: The good news is that the weekend looks much better. From Thursday, it will be warm and dry again, with lots of sunshine.
+Presenter: That's all from me. I'm Peter Jones, and I'll be back with more weather at nine o'clock. Good night.
+?? How many days does the forecast cover in detail?
+* Three
+- Two
+- Five
+- Seven
+?? What will the weather be like on Monday morning in the north?
+* Cloudy with some light rain
+- Sunny and hot
+- Windy and cold
+- Stormy with heavy rain
+?? What will the temperature be in the north on Monday?
+* Around eighteen degrees
+- Around twenty-six degrees
+- Around twelve degrees
+- Around fifteen degrees
+?? Where will it be sunny all day on Monday?
+* In the south
+- In the north
+- In the west
+- Near the coast
+?? What is coming on Tuesday?
+* Strong winds from the west
+- Heavy snow from the north
+- Hot air from the south
+- Storms from the east
+?? What does the presenter advise people to avoid on Tuesday?
+* Going sailing or fishing
+- Driving near rivers
+- Going to the beach in the south
+- Going out without an umbrella
+?? Which will be the worst day of the week?
+* Wednesday
+- Monday
+- Tuesday
+- Thursday
+?? Why should drivers be careful on Wednesday?
+* The roads will be wet.
+- There will be a lot of snow.
+- There will be strong sunshine.
+- There will be fog in the morning.
+?? What will the weather be like from Thursday?
+* Warm and dry
+- Cold and rainy
+- Windy and cool
+- Cloudy with storms
+?? When will the presenter be back?
+* At nine o'clock
+- At seven o'clock
+- Tomorrow morning
+- At ten o'clock
+
+## 9 | Ordering Food at a Restaurant | dialogue
+@ Waiter=am_fenrir Customer=af_bella
+Waiter: Good evening. Are you ready to order?
+Customer: Almost. Can I ask a few questions first? What's the soup of the day?
+Waiter: Today it's tomato soup. It comes with fresh bread.
+Customer: Lovely. I'll have that to start. And for the main course, is the grilled fish fresh?
+Waiter: Yes, it came this morning. It's served with rice and a green salad.
+Customer: Hmm, I'm not very hungry, so maybe something lighter. What's in the chicken salad?
+Waiter: It has grilled chicken, lettuce, tomatoes, cheese and nuts.
+Customer: Oh, I can't eat nuts. I'm allergic to them. Can you make it without nuts?
+Waiter: Of course, no problem. I'll tell the chef.
+Customer: Thank you. Then I'll have the chicken salad without nuts, please.
+Waiter: And what would you like to drink?
+Customer: An orange juice, please. And a bottle of water.
+Waiter: Small or large bottle?
+Customer: Large, please. My friend is coming in ten minutes. She's going to order when she arrives.
+Waiter: That's fine. Would you like to see the dessert menu later?
+Customer: Yes, please. I heard your chocolate cake is famous.
+Waiter: It is! It's our most popular dessert. But we only have three pieces left tonight, so I can save one for you, if you like.
+Customer: Yes, please. Save two. One for me and one for my friend.
+Waiter: Certainly. So that's one tomato soup, one chicken salad without nuts, an orange juice, a large water, and two pieces of chocolate cake for later.
+Customer: Perfect. Thank you.
+?? What is the soup of the day?
+* Tomato soup
+- Chicken soup
+- Fish soup
+- Vegetable soup
+?? What comes with the soup?
+* Fresh bread
+- Rice
+- A green salad
+- Cheese
+?? What is the grilled fish served with?
+* Rice and a green salad
+- Bread and soup
+- Chips and salad
+- Rice and vegetables
+?? Why doesn't the customer order the fish?
+* She isn't very hungry.
+- She doesn't like fish.
+- The fish isn't fresh.
+- It is too expensive.
+?? Why does the customer ask for no nuts?
+* She is allergic to nuts.
+- She doesn't like the taste.
+- Her friend can't eat them.
+- The doctor told her to lose weight.
+?? What does the customer order to drink?
+* An orange juice and a large bottle of water
+- An apple juice and a small bottle of water
+- Only a large bottle of water
+- Two orange juices
+?? When will her friend arrive?
+* In ten minutes
+- In five minutes
+- In twenty minutes
+- She is not coming tonight
+?? What is the restaurant's most popular dessert?
+* Chocolate cake
+- Ice cream
+- Fruit salad
+- Cheesecake
+?? How many pieces of cake were left?
+* Three
+- Two
+- One
+- Ten
+?? How many pieces of cake does the customer ask the waiter to save?
+* Two
+- One
+- Three
+- None
+
+## 10 | My Daily Routine | monologue
+@ Ali=am_michael
+Ali: Hi, my name is Ali. I'm twenty-three years old, and I work as a nurse at a big hospital in the city. People often ask me about my day, because my job is quite different from an office job.
+Ali: I work in shifts. This month I'm working the morning shift, so I get up very early, at five o'clock. I have a quick shower and a cup of coffee, but I don't eat breakfast at home, because I'm never hungry so early.
+Ali: I leave the house at a quarter to six and take the metro to work. The journey takes about twenty-five minutes. I like the metro because it's fast and I can read on the way.
+Ali: My shift starts at half past six. First, the night nurses tell us about the patients. Then I check on my patients, give them their medicine and help the doctors. It's a busy job, and I walk a lot. Sometimes I walk more than fifteen kilometres in one day!
+Ali: At about ten, I have a short break, and I eat breakfast in the hospital café. Usually, I have eggs and some fruit.
+Ali: My shift finishes at half past two. When I get home, I'm usually very tired, so I have lunch and then a short sleep for an hour. In the evening, I go to the gym three times a week, or I meet my friends.
+Ali: I go to bed early, at about ten o'clock. It's not an easy routine, but I love my job, because I help people every day.
+?? What is Ali's job?
+* He is a nurse.
+- He is a doctor.
+- He is a metro driver.
+- He works in an office.
+?? How old is Ali?
+* Twenty-three
+- Thirty-three
+- Twenty-five
+- Thirty
+?? What time does Ali get up this month?
+* At five o'clock
+- At a quarter to six
+- At half past six
+- At six o'clock
+?? Why doesn't Ali eat breakfast at home?
+* He is never hungry so early.
+- He doesn't have time.
+- There is no food at home.
+- His doctor told him not to.
+?? How does Ali go to work?
+* By metro
+- By bus
+- On foot
+- By car
+?? How long does the journey to work take?
+* About twenty-five minutes
+- About fifteen minutes
+- About forty-five minutes
+- About an hour
+?? What time does his shift start?
+* At half past six
+- At five o'clock
+- At a quarter to six
+- At seven o'clock
+?? What does Ali usually eat for breakfast?
+* Eggs and some fruit
+- Bread and cheese
+- Only coffee
+- Rice and chicken
+?? What does Ali do after lunch?
+* He sleeps for an hour.
+- He goes to the gym.
+- He goes back to the hospital.
+- He reads on the metro.
+?? How often does Ali go to the gym?
+* Three times a week
+- Every day
+- Twice a week
+- Once a week
+
+## 11 | A Job Interview | dialogue
+@ Manager=af_sarah Khalid=am_puck
+Manager: Good morning, Khalid. Thank you for coming. Please have a seat.
+Khalid: Good morning. Thank you for inviting me.
+Manager: So, you're applying for the job of shop assistant in our bookshop. Can you tell me a little about yourself?
+Khalid: Of course. I'm twenty years old, and I'm a second-year student at the university. I'm studying English literature, so I love books.
+Manager: That's great. Have you worked in a shop before?
+Khalid: Yes. Last summer I worked in a clothes shop for three months. I helped customers, used the cash machine, and put new clothes on the shelves.
+Manager: Good. This job is part-time, about twenty hours a week. Which days can you work?
+Khalid: I have classes every morning, but I'm free in the afternoons. I can also work all day on Saturdays.
+Manager: That's perfect, because Saturday is our busiest day. Our shifts in the afternoon are from three to eight.
+Khalid: That's fine for me. How much is the pay, if I may ask?
+Manager: It's twelve dollars an hour. And all our staff get a twenty percent discount on books.
+Khalid: Oh, that's very good. I'll probably spend all my money here!
+Manager: Ha! Many of our staff do. Do you have any questions for me?
+Khalid: Yes. When would the job start?
+Manager: At the beginning of next month. We'll call all the people we interviewed by Thursday to tell them our decision.
+Khalid: Thank you very much. I really hope to hear from you.
+Manager: Thank you, Khalid. It was nice to meet you.
+?? What job is Khalid applying for?
+* Shop assistant in a bookshop
+- Shop assistant in a clothes shop
+- English teacher
+- Librarian at the university
+?? What is Khalid studying?
+* English literature
+- Business
+- History
+- Computer science
+?? How long did Khalid work in the clothes shop?
+* Three months
+- Three years
+- One month
+- Two summers
+?? How many hours a week is the job?
+* About twenty
+- About twelve
+- About forty
+- About eight
+?? When is Khalid NOT free to work?
+* In the mornings
+- In the afternoons
+- On Saturdays
+- In the evenings
+?? Why is the manager happy that Khalid can work on Saturdays?
+* Saturday is the busiest day.
+- The shop is closed on Fridays.
+- Other staff don't work on Saturdays.
+- The pay is higher on Saturdays.
+?? What are the afternoon shift hours?
+* From three to eight
+- From two to eight
+- From three to nine
+- From twelve to five
+?? How much is the pay?
+* Twelve dollars an hour
+- Twenty dollars an hour
+- Ten dollars an hour
+- Twelve dollars a day
+?? What discount do staff get on books?
+* Twenty percent
+- Ten percent
+- Twelve percent
+- Fifty percent
+?? When will the manager tell people her decision?
+* By Thursday
+- At the beginning of next month
+- Tomorrow morning
+- On Saturday
+
+## 12 | Announcements at the Airport | monologue
+@ Announcer=bf_emma
+Announcer: Good afternoon, ladies and gentlemen. Here are some important announcements.
+Announcer: Passengers on flight A R two one six to London. Your flight is now boarding at gate fourteen. Please have your passport and boarding pass ready. Passengers with small children and passengers who need help will board first.
+Announcer: Passengers on flight A R three oh five to Cairo, we're sorry to tell you that your flight is delayed because of bad weather. The new departure time is six forty-five this evening. Please wait in the main hall. Free drinks and snacks are available at the café near gate nine. Just show your boarding pass.
+Announcer: Passengers travelling to Dubai on flight A R one one eight, please note there is a gate change. Your flight will now leave from gate twenty-two, not gate twelve. Gate twenty-two is at the end of the building, about ten minutes' walk from here, so please go there now.
+Announcer: This is a message for Mr. Hassan Ali, travelling to Istanbul. Mr. Hassan Ali, please come to the information desk on the first floor. We have found your wallet.
+Announcer: And finally, a reminder to all passengers. Please do not leave your bags alone at any time. Any bags left alone will be removed and may be destroyed.
+Announcer: Thank you, and have a pleasant flight.
+?? Where is flight two one six going?
+* London
+- Cairo
+- Dubai
+- Istanbul
+?? Which gate is the London flight boarding from?
+* Gate fourteen
+- Gate nine
+- Gate twelve
+- Gate twenty-two
+?? Who will board the London flight first?
+* Passengers with small children and those who need help
+- Passengers with a lot of bags
+- Passengers sitting at the back
+- Passengers in business class
+?? Why is the Cairo flight delayed?
+* Because of bad weather
+- Because of a problem with the plane
+- Because some passengers are late
+- Because the crew is not ready
+?? What is the new departure time for the Cairo flight?
+* Six forty-five this evening
+- Six fifteen this evening
+- Seven forty-five this evening
+- Four forty-five this afternoon
+?? What can Cairo passengers get at the café near gate nine?
+* Free drinks and snacks
+- A free meal
+- A new boarding pass
+- Information about hotels
+?? What has changed for the Dubai flight?
+* The gate
+- The departure time
+- The plane
+- The day
+?? How long does it take to walk to gate twenty-two?
+* About ten minutes
+- About two minutes
+- About twenty minutes
+- About twenty-two minutes
+?? Why should Mr. Hassan Ali go to the information desk?
+* His wallet has been found.
+- His flight has been cancelled.
+- He forgot his passport.
+- His bag has been removed.
+?? What will happen to bags that are left alone?
+* They will be removed and may be destroyed.
+- They will be sent to London.
+- They will be kept at the information desk.
+- They will be put on the next flight.
+
+## 13 | Shopping for Clothes | dialogue
+@ Assistant=af_heart Rayan=am_michael
+Assistant: Hi there. Can I help you?
+Rayan: Yes, please. I'm looking for a jacket. I'm going to Canada next month, and it's very cold there in winter.
+Assistant: Then you need a warm one. Our winter jackets are over here. What colour do you like?
+Rayan: I usually wear dark colours. Do you have this one in black?
+Assistant: Let me check. Sorry, we don't have it in black. We have it in dark blue, grey and green.
+Rayan: Dark blue is fine. Can I try it on? I'm usually a medium.
+Assistant: Sure. The changing rooms are at the back, next to the shoes.
+Rayan: Hmm, the medium is a bit small. The arms are too short. Do you have a large?
+Assistant: Here you are. How's that?
+Rayan: Much better. It's really comfortable. How much is it?
+Assistant: It's normally one hundred and twenty dollars, but this week there's a twenty-five percent discount on all jackets, so it's ninety dollars.
+Rayan: That's a good price. I'll take it. Do you sell gloves too?
+Assistant: Yes, gloves and hats are next to the cash desk. These leather gloves are fifteen dollars.
+Rayan: OK, I'll take a pair of gloves too. Can I pay by card?
+Assistant: Of course. And keep your receipt. If there's a problem, you can bring things back within thirty days.
+Rayan: Great. Thanks for your help.
+?? Why does Rayan need a jacket?
+* He is going to Canada, where it is very cold.
+- His old jacket is broken.
+- He is going to a wedding.
+- He needs it for work.
+?? What colour did Rayan want first?
+* Black
+- Dark blue
+- Grey
+- Green
+?? Which colour does he choose?
+* Dark blue
+- Black
+- Grey
+- Green
+?? Where are the changing rooms?
+* At the back, next to the shoes
+- Next to the cash desk
+- Near the front door
+- Upstairs, next to the hats
+?? What was the problem with the medium jacket?
+* The arms were too short.
+- It was too big.
+- The colour was wrong.
+- It was not warm enough.
+?? What size does Rayan buy?
+* Large
+- Medium
+- Small
+- Extra large
+?? What is the normal price of the jacket?
+* One hundred and twenty dollars
+- Ninety dollars
+- One hundred and twenty-five dollars
+- Twenty-five dollars
+?? How much does Rayan pay for the jacket?
+* Ninety dollars
+- One hundred and twenty dollars
+- Seventy-five dollars
+- Fifteen dollars
+?? What else does Rayan buy?
+* A pair of leather gloves
+- A hat
+- A pair of shoes
+- A scarf
+?? How long does Rayan have to bring things back?
+* Thirty days
+- Thirteen days
+- Seven days
+- Two weeks
+
+## 14 | Advert for a Sports Centre | monologue
+@ Voice=am_fenrir
+Voice: Do you want to get fit, feel healthier, and have fun at the same time? Then come to Active Life, the new sports centre on Park Road!
+Voice: Active Life opened just two months ago, and it already has more than one thousand members. Why? Because we have everything you need. There's a large gym with the newest machines, an indoor swimming pool, two tennis courts, and a football pitch.
+Voice: We also have more than thirty classes every week, from yoga and boxing to swimming lessons for children. All our trainers are professional, and they will help you make your own plan.
+Voice: We're open seven days a week, from six in the morning until midnight, so you can come before work, after work, or even late at night.
+Voice: And now, the best part. Our normal membership costs forty dollars a month. But if you join this month, you'll pay only thirty dollars a month for the whole first year! Students pay even less, just twenty-five dollars a month, with a student card.
+Voice: And when you join, you'll get a free sports bag and a free bottle.
+Voice: Not sure yet? No problem. Come and try us for one week, completely free. Just visit our reception, or call us on five five five, two three four, five.
+Voice: Active Life. Get active, stay active!
+?? Where is the sports centre?
+* On Park Road
+- On Active Road
+- In the city park
+- Next to the university
+?? When did the sports centre open?
+* Two months ago
+- Two years ago
+- Last week
+- One year ago
+?? How many members does it already have?
+* More than one thousand
+- More than one hundred
+- About thirty
+- About two thousand
+?? Which of these does the centre have?
+* An indoor swimming pool
+- A basketball court
+- A running track outside
+- A cinema
+?? How many classes are there every week?
+* More than thirty
+- About ten
+- Exactly seven
+- More than one hundred
+?? What are the opening hours?
+* From six in the morning until midnight
+- From seven in the morning until ten at night
+- Twenty-four hours a day
+- From six in the morning until eleven at night
+?? How much is the normal membership?
+* Forty dollars a month
+- Thirty dollars a month
+- Twenty-five dollars a month
+- Fourteen dollars a month
+?? How much will a student with a student card pay?
+* Twenty-five dollars a month
+- Thirty dollars a month
+- Forty dollars a month
+- Nothing for the first month
+?? What do new members get for free?
+* A sports bag and a bottle
+- A tennis racket
+- A month of classes
+- A T-shirt and a towel
+?? How long is the free trial?
+* One week
+- One month
+- One day
+- Two weeks
+
+## 15 | A Group Project | dialogue
+@ Huda=af_bella Noor=af_heart
+Huda: Noor, have you started thinking about our project for the environment class?
+Noor: A little. We have to give a presentation about a problem in our city, right?
+Huda: Yes, and it has to be ten minutes long. The presentation is on the eighteenth, so we have about two weeks.
+Noor: OK. What topic should we choose? I was thinking about plastic bags.
+Huda: That's a good topic, but I think three other groups have already chosen it. What about air pollution from cars? The traffic in our city is terrible.
+Noor: Good idea. There's a lot of information about it online, and we can take some photos of the traffic ourselves.
+Huda: Exactly. So, how should we divide the work? There are four of us: you, me, Reem and Lama.
+Noor: Well, I'm good at design, so I can make the slides.
+Huda: Great. I'll find the information and the numbers. Reem is very good at speaking, so she can start the presentation. And Lama can interview some people in the street and ask about the traffic.
+Noor: Perfect. When should we meet to put everything together?
+Huda: How about next Tuesday after class? We could meet in the library, in one of the study rooms.
+Noor: Tuesday's fine, but I have a class until four. Can we meet at half past four?
+Huda: Sure. I'll book a room for half past four. I'll send a message to Reem and Lama now.
+Noor: Thanks, Huda. I think this is going to be a really interesting project.
+?? Which class is the project for?
+* The environment class
+- The history class
+- The design class
+- The English class
+?? How long must the presentation be?
+* Ten minutes
+- Two minutes
+- Fifteen minutes
+- Eighteen minutes
+?? When is the presentation?
+* On the eighteenth
+- On the eighth
+- Next Tuesday
+- In two months
+?? Why don't they choose plastic bags?
+* Other groups have already chosen it.
+- There is not enough information about it.
+- The teacher doesn't like it.
+- It is not a problem in their city.
+?? What topic do they choose?
+* Air pollution from cars
+- Plastic bags
+- Water pollution
+- Noise in the city
+?? How many students are in the group?
+* Four
+- Two
+- Three
+- Five
+?? What will Noor do?
+* Make the slides
+- Find the information
+- Start the presentation
+- Interview people in the street
+?? Who will interview people in the street?
+* Lama
+- Reem
+- Huda
+- Noor
+?? Where will they meet?
+* In a study room in the library
+- In the classroom
+- In a café
+- At Huda's house
+?? What time will they meet on Tuesday?
+* At half past four
+- At four o'clock
+- At half past three
+- At five o'clock
+
+## 16 | My Hometown | monologue
+@ Speaker=am_michael
+Speaker: Hello, everyone. Today I want to tell you about my hometown. It's a small town called Al Waha, which means "the oasis" in English. It's about two hundred kilometres from the capital, and it's famous for its palm trees and dates.
+Speaker: About thirty thousand people live in Al Waha. It's not a big place, but it's very friendly. Everyone knows everyone, and people always help their neighbours.
+Speaker: In the centre of the town there's an old market. It's more than one hundred years old, and you can buy fresh fruit, spices and traditional clothes there. My favourite shop is a small sweet shop. The owner has worked there for forty years!
+Speaker: The town also has two schools, a small hospital and a new library, which opened last year. When I was a child, there was no library, so I'm really happy about that.
+Speaker: The best time to visit Al Waha is in winter, from November to February. The weather is cool and sunny. In summer, it's too hot, more than forty-five degrees!
+Speaker: Every year in March, there's a date festival. Farmers from all over the area come to sell their dates, and there's music, food and games for children. Thousands of visitors come, so the town becomes very crowded.
+Speaker: I live in the capital now, because I study at the university, but I go home every month to see my family. I miss the quiet streets and the beautiful sunsets. If you ever have the chance, please visit Al Waha!
+?? What does the name of the town mean?
+* The oasis
+- The palm tree
+- The market
+- The desert
+?? How far is the town from the capital?
+* About two hundred kilometres
+- About twenty kilometres
+- About two thousand kilometres
+- About thirty kilometres
+?? What is the town famous for?
+* Palm trees and dates
+- Its big hospital
+- Its modern buildings
+- Its beaches
+?? How many people live in the town?
+* About thirty thousand
+- About three thousand
+- About thirteen thousand
+- About three hundred thousand
+?? How old is the market?
+* More than one hundred years old
+- About forty years old
+- Less than ten years old
+- About two hundred years old
+?? How long has the owner of the sweet shop worked there?
+* Forty years
+- Fourteen years
+- Four years
+- One hundred years
+?? What opened in the town last year?
+* A new library
+- A new school
+- A small hospital
+- A sweet shop
+?? When is the best time to visit the town?
+* From November to February
+- From March to May
+- In summer
+- From June to August
+?? What happens every year in March?
+* A date festival
+- A music competition
+- A football match
+- The market closes
+?? Why does the speaker live in the capital now?
+* He studies at the university there.
+- His family moved there.
+- He works in a hospital there.
+- His hometown is too hot.
+
+## 17 | A Lost Bag at the Train Station | dialogue
+@ Officer=am_fenrir Woman=af_sarah
+Officer: Good morning, Lost Property Office. How can I help?
+Woman: Good morning. I think I left my bag on the train yesterday.
+Officer: I'm sorry to hear that. Which train were you on?
+Woman: The four fifteen train from Riverside to Central Station. I got off at Central at about five o'clock, and I only noticed that my bag was missing when I got home.
+Officer: OK. Can you describe the bag, please?
+Woman: Yes. It's a brown leather bag, quite small, with a long strap. It's not new.
+Officer: And what was inside it?
+Woman: My purse, with about sixty dollars, my glasses, a blue notebook, and my house keys. Luckily, my phone was in my pocket.
+Officer: Let me look on the computer. Hmm, we've had three bags from that train. One is a black backpack, one is a large red bag, and one is a small brown bag.
+Woman: That sounds like mine!
+Officer: Does your bag have anything on the outside, like a name or a key ring?
+Woman: Yes, there's a small silver key ring in the shape of a star.
+Officer: Yes, it's here. It's your bag. Do you want to come and collect it?
+Woman: Yes, please. When are you open?
+Officer: We're open from nine to six, Monday to Saturday. You'll need to bring some ID, for example your driving licence.
+Woman: My driving licence was in the bag! Can I bring my passport instead?
+Officer: Yes, a passport is fine. There's also a small charge of three dollars.
+Woman: No problem. I'll come this afternoon. Thank you so much!
+?? When did the woman lose her bag?
+* Yesterday
+- This morning
+- Last week
+- Two days ago
+?? Where was the train going?
+* To Central Station
+- To Riverside
+- To the airport
+- To the city centre
+?? When did she notice the bag was missing?
+* When she got home
+- When she got off the train
+- When she was on the train
+- This morning
+?? What does the bag look like?
+* Small, brown and made of leather
+- Large, red and made of leather
+- A black backpack
+- Small, blue and new
+?? How much money was in her purse?
+* About sixty dollars
+- About sixteen dollars
+- About six dollars
+- About thirty dollars
+?? What was NOT in the bag?
+* Her phone
+- Her glasses
+- Her house keys
+- A blue notebook
+?? How many bags were found on that train?
+* Three
+- Two
+- Four
+- One
+?? What is on the outside of her bag?
+* A silver key ring in the shape of a star
+- Her name in big letters
+- A gold key ring in the shape of a heart
+- A blue strap
+?? What ID will she bring?
+* Her passport
+- Her driving licence
+- Her student card
+- Her bank card
+?? How much does she have to pay?
+* Three dollars
+- Thirty dollars
+- Six dollars
+- Nothing
+
+## 18 | Library Rules | monologue
+@ Librarian=af_nicole
+Librarian: Hello, and welcome to the Central Library. My name is Mrs. Parker, and I'm one of the librarians here. Before you start using the library, I'd like to explain how it works.
+Librarian: The library has four floors. On the ground floor, there's the information desk, the computers and the newspapers. The first floor is for science and medicine books. The second floor has books about history, art and languages. The top floor is the silent study area. On that floor, you mustn't talk at all, not even quietly, and you must turn off the sound on your phone.
+Librarian: With your library card, you can borrow up to five books for three weeks. If you need a book for longer, you can renew it online, or at the information desk. If you return a book late, you have to pay fifty cents a day. Please be careful with the books. If you lose or damage one, you will have to pay for a new one.
+Librarian: You can use the computers for free, but only for two hours a day. Printing costs ten cents a page.
+Librarian: Food is not allowed anywhere in the library, but you can bring water in a bottle. There's a small café outside, next to the car park.
+Librarian: The library is open from eight a.m. to nine p.m. during the week, and from ten a.m. to four p.m. on weekends.
+Librarian: If you need help finding a book, just ask any of us. That's what we're here for. Enjoy your visit!
+?? What is the librarian's name?
+* Mrs. Parker
+- Mrs. Porter
+- Mrs. Palmer
+- Mrs. Carter
+?? Where are the computers?
+* On the ground floor
+- On the first floor
+- On the second floor
+- On the top floor
+?? What is on the second floor?
+* Books about history, art and languages
+- Science and medicine books
+- The silent study area
+- The newspapers
+?? What must you do on the top floor?
+* Not talk at all and turn off the sound on your phone
+- Talk quietly
+- Show your library card
+- Pay to use the study area
+?? How many books can you borrow at one time?
+* Up to five
+- Up to three
+- Up to two
+- Up to ten
+?? For how long can you borrow books?
+* Three weeks
+- Two weeks
+- Five weeks
+- One month
+?? How much do you pay for each day a book is late?
+* Fifty cents
+- Fifteen cents
+- Ten cents
+- Five dollars
+?? How long can you use the computers each day?
+* Two hours
+- One hour
+- Three hours
+- As long as you like
+?? What can you bring into the library?
+* Water in a bottle
+- Sandwiches
+- Coffee
+- Snacks
+?? When does the library close on weekends?
+* At four p.m.
+- At nine p.m.
+- At ten a.m.
+- At eight p.m.
+
+## 19 | Booking Cinema Tickets | dialogue
+@ Clerk=am_puck Sami=am_michael
+Clerk: Hello, Star Cinema. How can I help you?
+Sami: Hi. I'd like to book some tickets for the new film, The Last Island, please.
+Clerk: Sure. Which day would you like to come?
+Sami: This Friday, please.
+Clerk: On Friday, the film is showing at four thirty, seven fifteen and ten o'clock.
+Sami: Seven fifteen is best, I think. How long is the film?
+Clerk: It's quite long. Two hours and forty minutes.
+Sami: Wow. OK, that's fine. Can I book four tickets, please? Two adults and two children.
+Clerk: How old are the children?
+Sami: My son is eight, and my daughter is twelve.
+Clerk: OK. Children under thirteen pay the child price. Adult tickets are eleven dollars, and child tickets are seven dollars. So that's thirty-six dollars in total.
+Sami: That's fine. Can we sit together, near the back?
+Clerk: Let me see. Yes, I have four seats together in row K. That's the second row from the back.
+Sami: Perfect. Is there anywhere to park?
+Clerk: Yes, there's a car park under the cinema. It's free for three hours if you show your cinema ticket.
+Sami: Oh good, but the film is nearly three hours long, so we'll need a little more time.
+Clerk: After three hours, it's two dollars for each extra hour.
+Sami: No problem. Can I pay now by card?
+Clerk: Yes. And please arrive fifteen minutes early to collect your tickets from the machine in the entrance.
+Sami: Great, thank you.
+?? What is the name of the film?
+* The Last Island
+- The Lost Island
+- The Last Star
+- The Star Island
+?? Which day does Sami want to go?
+* Friday
+- Thursday
+- Saturday
+- Sunday
+?? Which show time does Sami choose?
+* Seven fifteen
+- Four thirty
+- Ten o'clock
+- Seven fifty
+?? How long is the film?
+* Two hours and forty minutes
+- Two hours and fourteen minutes
+- One hour and forty minutes
+- Three hours and forty minutes
+?? How many tickets does Sami book?
+* Four
+- Two
+- Three
+- Five
+?? How old is Sami's daughter?
+* Twelve
+- Eight
+- Thirteen
+- Eleven
+?? How much does Sami pay in total?
+* Thirty-six dollars
+- Forty-four dollars
+- Twenty-eight dollars
+- Thirty-two dollars
+?? Where will they sit?
+* In row K, near the back
+- In row K, at the front
+- In the first row
+- In the middle of the cinema
+?? How long is parking free with a cinema ticket?
+* Three hours
+- Two hours
+- Four hours
+- It is never free
+?? How early should they arrive?
+* Fifteen minutes early
+- Fifty minutes early
+- Thirty minutes early
+- Five minutes early
+
+## 20 | How to Make a Simple Omelette | monologue
+@ Chef=af_heart
+Chef: Hello, and welcome back to Easy Cooking. I'm Chef Maria, and today I'm going to show you how to make a simple, healthy omelette. It's a perfect breakfast, and it only takes about ten minutes.
+Chef: For one person, you need three eggs, a little milk, one small onion, one tomato, some cheese, salt and pepper, and a little oil. You can also add mushrooms or green peppers if you like, but today I'm keeping it simple.
+Chef: First, cut the onion and the tomato into small pieces. Then break the eggs into a bowl. Add two spoons of milk and a little salt and pepper, and mix everything well with a fork for about one minute.
+Chef: Next, put a little oil in a pan and heat it on a medium heat. Don't make it too hot, or the omelette will burn. Cook the onion for about two minutes, until it's soft.
+Chef: Now pour the eggs into the pan. Wait for about thirty seconds, then add the tomato and the cheese on top.
+Chef: After about three minutes, when the bottom is golden, fold the omelette in half. Cook it for one more minute, and then put it on a plate.
+Chef: And that's it! Serve it hot, with some bread or a green salad. My tip for you today is to use fresh eggs. They really make a difference.
+Chef: Next week, I'll show you how to make chicken soup. See you then!
+?? What is the chef's name?
+* Maria
+- Mona
+- Mary
+- Martha
+?? How long does it take to make the omelette?
+* About ten minutes
+- About three minutes
+- About twenty minutes
+- About thirty minutes
+?? How many eggs do you need for one person?
+* Three
+- Two
+- Four
+- One
+?? Which of these does the chef NOT use today?
+* Mushrooms
+- Onion
+- Tomato
+- Cheese
+?? How many spoons of milk do you add?
+* Two
+- One
+- Three
+- Four
+?? Why shouldn't the pan be too hot?
+* The omelette will burn.
+- The eggs will not cook.
+- The oil will be wasted.
+- The cheese will not melt.
+?? How long do you cook the onion?
+* About two minutes
+- About thirty seconds
+- About one minute
+- About five minutes
+?? When do you fold the omelette in half?
+* When the bottom is golden
+- As soon as you pour the eggs
+- After you add the onion
+- When the cheese is cold
+?? What is the chef's tip?
+* Use fresh eggs.
+- Add a lot of salt.
+- Use a big pan.
+- Cook it on a high heat.
+?? What will the chef make next week?
+* Chicken soup
+- A cheese omelette
+- A green salad
+- Fresh bread
+
+## 21 | Talking About the Holidays | dialogue
+@ Lina=af_bella Omar=am_puck
+Lina: Hi Omar! Welcome back. How was your holiday?
+Omar: Hi Lina! It was amazing, thanks. We went to Malaysia for two weeks.
+Lina: Malaysia! Lucky you. Where did you go?
+Omar: We spent the first week in Kuala Lumpur, the capital. We visited the famous Petronas Towers and went shopping in the big malls. Then we flew to Langkawi, an island, for the second week.
+Lina: What was the weather like?
+Omar: Very hot and humid. It rained almost every afternoon, but only for about an hour. Then the sun came out again.
+Lina: What was your favourite part?
+Omar: Definitely the island. We stayed in a hotel right on the beach. Every morning, I went swimming in the sea. And one day we took a boat trip and saw lots of colourful fish.
+Lina: That sounds wonderful. What about the food?
+Omar: Oh, the food was delicious, and very cheap. My favourite was a dish called nasi lemak. It's rice cooked in coconut milk. I ate it nearly every day!
+Lina: Did anything go wrong?
+Omar: Well, on the first day, the airline lost my suitcase! I had to wear the same clothes for two days until they found it.
+Lina: Oh no! That's terrible.
+Omar: It's OK, it was funny in the end. What about you, Lina? Did you go anywhere?
+Lina: No, I just stayed at home and studied for my exams. But next year, I want to go somewhere like that too.
+Omar: You should! I'll show you my photos at lunch.
+?? Where did Omar go on holiday?
+* Malaysia
+- Indonesia
+- Thailand
+- Singapore
+?? How long was his holiday?
+* Two weeks
+- One week
+- Ten days
+- Three weeks
+?? What did Omar do in Kuala Lumpur?
+* He visited the Petronas Towers and went shopping.
+- He swam in the sea every morning.
+- He took a boat trip.
+- He stayed in a hotel on the beach.
+?? How did they travel to Langkawi?
+* By plane
+- By boat
+- By train
+- By car
+?? What was the weather like?
+* Hot and humid, with rain most afternoons
+- Cold and windy
+- Sunny every day without rain
+- Rainy all day, every day
+?? What was Omar's favourite part of the holiday?
+* The island
+- The capital
+- The shopping malls
+- The flight
+?? What did Omar do every morning on the island?
+* He went swimming in the sea.
+- He went shopping.
+- He went on a boat trip.
+- He studied for his exams.
+?? What is nasi lemak?
+* Rice cooked in coconut milk
+- A kind of fish
+- A coconut drink
+- Chicken with vegetables
+?? What went wrong on the first day?
+* The airline lost his suitcase.
+- He missed his flight.
+- He got sick.
+- His hotel was closed.
+?? What did Lina do during the holiday?
+* She stayed at home and studied.
+- She went to Malaysia too.
+- She worked in a shop.
+- She visited her family in another city.
+
+## 22 | Tips for a Healthy Life | monologue
+@ Speaker=am_michael
+Speaker: Good evening, everyone. My name is Doctor Adel Hamad, and tonight I want to give you five simple tips for a healthier life. You don't need to go to the gym every day or stop eating everything you love. Small changes can make a big difference.
+Speaker: Tip number one: drink more water. Most adults need about two litres a day. Many people feel tired in the afternoon only because they don't drink enough water. Try to carry a bottle with you everywhere.
+Speaker: Tip number two: move your body. You don't need to run a marathon. Just walk for thirty minutes a day. You can walk to work, take the stairs instead of the lift, or go for a walk with your family after dinner.
+Speaker: Tip number three: eat more fruit and vegetables. Try to eat five portions every day, and eat less sugar and fast food. A good idea is to have fruit as a snack instead of chocolate or crisps.
+Speaker: Tip number four: sleep well. Adults need between seven and nine hours of sleep every night. Turn off your phone at least one hour before you go to bed, because the light from the screen makes it harder to sleep.
+Speaker: And tip number five: reduce stress. Spend time with friends, read a book, or do something you enjoy every day. Even ten minutes of quiet time can help.
+Speaker: Remember, you don't have to change everything at once. Start with one tip this week, and add another one next week. Thank you.
+?? How many tips does the doctor give?
+* Five
+- Four
+- Six
+- Three
+?? How much water do most adults need a day?
+* About two litres
+- About one litre
+- About five litres
+- About half a litre
+?? Why do many people feel tired in the afternoon, according to the doctor?
+* They don't drink enough water.
+- They eat too much sugar.
+- They don't sleep at all.
+- They walk too much.
+?? How long should you walk every day?
+* Thirty minutes
+- Thirteen minutes
+- One hour
+- Ten minutes
+?? How many portions of fruit and vegetables should you eat every day?
+* Five
+- Two
+- Seven
+- Three
+?? What does the doctor suggest as a snack?
+* Fruit
+- Chocolate
+- Crisps
+- Fast food
+?? How many hours of sleep do adults need?
+* Between seven and nine
+- Between five and seven
+- Exactly ten
+- Between six and eight
+?? When should you turn off your phone?
+* At least one hour before bed
+- As soon as you get home
+- At least ten minutes before bed
+- After dinner every day
+?? How much quiet time can help to reduce stress?
+* Even ten minutes
+- At least one hour
+- Two hours
+- Thirty minutes
+?? What is the doctor's final advice?
+* Start with one tip and add another one next week.
+- Change everything at once.
+- Go to the gym every day.
+- Stop eating everything you love.
+
+## 23 | Renting a Car | dialogue
+@ Agent=af_sarah Customer=am_fenrir
+Agent: Good morning, City Car Rental. How can I help you?
+Customer: Hi. I'd like to rent a car for the weekend, please.
+Agent: Certainly. When would you like to pick it up?
+Customer: On Friday morning, at about nine. And I'll bring it back on Sunday evening.
+Agent: OK, so that's three days. What kind of car do you need?
+Customer: Something big. I'm going on a trip with my family. There are six of us, and we'll have a lot of bags.
+Agent: Then I'd suggest a seven-seat car. We have a family car for sixty-five dollars a day.
+Customer: Hmm, that's a bit expensive. Do you have anything cheaper?
+Agent: We have a smaller car for forty dollars a day, but it only has five seats.
+Customer: No, that won't work. I'll take the seven-seat car.
+Agent: Good choice. The price includes insurance, but not petrol. You get the car with a full tank, and you should bring it back full too.
+Customer: OK. Is there a limit on how far I can drive?
+Agent: No, you can drive as far as you like. Will anyone else drive the car?
+Customer: Yes, my brother might drive too.
+Agent: That's fine, but it costs an extra five dollars a day, and he needs to bring his driving licence.
+Customer: No problem. Do you have child seats? My daughter is three.
+Agent: Yes, a child seat is free. I'll add one for you.
+Customer: Great. Where do I pick up the car?
+Agent: At our office on Station Road, opposite the bank. Please bring your driving licence and a credit card.
+?? How long does the customer want the car for?
+* Three days
+- Two days
+- One week
+- Seven days
+?? What time will he pick up the car on Friday?
+* At about nine in the morning
+- At about nine in the evening
+- At about seven in the morning
+- At noon
+?? Why does he need a big car?
+* There are six people and a lot of bags.
+- He wants to drive very far.
+- He is moving house.
+- He has a big dog.
+?? How much is the family car per day?
+* Sixty-five dollars
+- Forty dollars
+- Fifty-six dollars
+- Seventy-five dollars
+?? Why doesn't he choose the cheaper car?
+* It only has five seats.
+- It has no insurance.
+- It is very old.
+- It has no space for a child seat.
+?? What does the price include?
+* Insurance
+- Petrol
+- A second driver
+- A full tank at the end
+?? How far can he drive?
+* As far as he likes
+- Only one hundred kilometres a day
+- Only in the city
+- Five hundred kilometres in total
+?? How much extra does a second driver cost?
+* Five dollars a day
+- Fifteen dollars a day
+- Five dollars in total
+- Nothing
+?? How old is his daughter?
+* Three
+- Six
+- Seven
+- Five
+?? Where is the office?
+* On Station Road, opposite the bank
+- On Bank Road, opposite the station
+- Next to the airport
+- On Station Road, next to the bank
+
+## 24 | My Family | monologue
+@ Speaker=af_aoede
+Speaker: Hello. My name is Reem, and I'd like to tell you about my family. There are seven people in my family: my parents, my grandmother, my two brothers, my sister and me.
+Speaker: My father is fifty-two. He's an engineer, and he works for a big company that builds bridges. He's very serious at work, but at home he's really funny. He always tells jokes at dinner.
+Speaker: My mother is a teacher at a primary school. She teaches maths to young children. She's very patient and kind, and all her students love her.
+Speaker: My grandmother lives with us. She's eighty years old, but she's still very active. Every morning she takes a walk in the garden, and she's the best cook in the family.
+Speaker: My older brother, Fahad, is twenty-six. He's married and lives in another city with his wife and their baby son. They visit us once a month. My other brother, Saud, is seventeen. He's in his last year of high school, and he loves football. He plays for the school team.
+Speaker: My sister, Dana, is the youngest. She's only ten. She's quite shy with new people, but with us she never stops talking!
+Speaker: And me? I'm twenty, and I'm studying medicine at the university. I want to be a children's doctor.
+Speaker: On Fridays, the whole family has lunch together at our house. It's my favourite day of the week.
+?? How many people are there in Reem's family?
+* Seven
+- Six
+- Five
+- Eight
+?? What is Reem's father's job?
+* An engineer
+- A teacher
+- A doctor
+- A cook
+?? What is her father like at home?
+* Funny
+- Serious
+- Shy
+- Quiet
+?? What does Reem's mother teach?
+* Maths
+- English
+- Science
+- Art
+?? How old is her grandmother?
+* Eighty
+- Eighteen
+- Seventy
+- Ninety
+?? What does her grandmother do every morning?
+* She takes a walk in the garden.
+- She cooks breakfast for everyone.
+- She goes to the market.
+- She reads the newspaper.
+?? How often does Fahad visit the family?
+* Once a month
+- Every Friday
+- Once a year
+- Twice a month
+?? Which sport does Saud love?
+* Football
+- Basketball
+- Tennis
+- Swimming
+?? What is Dana like with new people?
+* Shy
+- Funny
+- Talkative
+- Serious
+?? What does Reem want to be in the future?
+* A children's doctor
+- A maths teacher
+- An engineer
+- A football player
+
+## 25 | Choosing an English Course | dialogue
+@ Adviser=af_nicole Student=am_michael
+Adviser: Good afternoon. Welcome to the Bright Future Language School. How can I help you?
+Student: Hi. I'd like some information about your English courses, please.
+Adviser: Of course. First, what's your level? Have you studied English before?
+Student: Yes, I studied it at school, but I'm not very good at speaking. I think my level is about intermediate.
+Adviser: OK. Before you start, you'll need to do a short level test. It's free, and it takes forty-five minutes.
+Student: Fine. What kinds of courses do you have?
+Adviser: We have three main courses. The general English course is in the morning, from nine to twelve, five days a week. The evening course is two hours, three evenings a week, Sunday, Tuesday and Thursday. And we have a weekend course on Saturdays only.
+Student: I work during the day, so the evening course is best for me. How much does it cost?
+Adviser: The evening course is eight weeks long, and it costs three hundred and twenty dollars. That includes the books.
+Student: How many students are there in each class?
+Adviser: No more than twelve, so you'll have lots of time to practise speaking.
+Student: That's great, because speaking is what I need most. Are the teachers native speakers?
+Adviser: Most of them are, and all of them have teaching certificates.
+Student: When does the next course start?
+Adviser: The next evening course starts on the third of next month. But be quick, there are only four places left.
+Student: Then I'd like to book the level test today, please.
+?? What is the name of the school?
+* Bright Future Language School
+- Bright Star Language School
+- Future English School
+- Bright Language Centre
+?? What is the student not very good at?
+* Speaking
+- Writing
+- Reading
+- Listening
+?? How long does the level test take?
+* Forty-five minutes
+- Fifty-four minutes
+- Fifteen minutes
+- Two hours
+?? How much does the level test cost?
+* It is free.
+- Forty-five dollars
+- Twelve dollars
+- It is included in the books.
+?? When is the general English course?
+* In the morning, from nine to twelve
+- In the evening, for two hours
+- On Saturdays only
+- In the afternoon, from one to four
+?? Why does the student choose the evening course?
+* He works during the day.
+- It is the cheapest course.
+- He studies at university in the morning.
+- It has native speaker teachers.
+?? How long is the evening course?
+* Eight weeks
+- Twelve weeks
+- Three weeks
+- Four weeks
+?? How much does the evening course cost?
+* Three hundred and twenty dollars
+- Three hundred dollars
+- Two hundred and thirty dollars
+- Three hundred and twelve dollars
+?? What is the maximum number of students in a class?
+* Twelve
+- Twenty
+- Eight
+- Fifteen
+?? How many places are left on the next evening course?
+* Four
+- Three
+- Twelve
+- Fourteen
