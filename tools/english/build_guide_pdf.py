@@ -1,8 +1,8 @@
 """يبني ملف دليل الميد للإنجليزي:
-صفحة إعلان جديدة + صفحات الملف الأصلي (من الثانية لين آخر صفحة أسئلة) + صفحات الكلمات المصممة.
+صفحة إعلان + صفحات الملف الأصلي (بدون Source/Units وبدون قائمة الكلمات، ومع حل النماذج) + بطاقات الكلمات + إعلان ثاني.
 
-الاستخدام:
-  python3 tools/english/build_guide_pdf.py الملف_الأصلي.pdf الناتج.pdf --keep 2-6
+الاستخدام (ملف المسار الإنساني):
+  python3 tools/english/build_guide_pdf.py store/english/midterm-guide-humanities-original.pdf store/english/midterm-guide-humanities-ready.pdf
 """
 import argparse, html, re, sys, tempfile, pathlib
 import pymupdf, segno
@@ -88,10 +88,10 @@ def vocab_pages():
     for line in (HERE / "vocab_cards.txt").read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
-        w, ar, s, s_ar = [x.strip() for x in line.split(" | ")]
-        rows.append((w, ar, s, s_ar))
+        w, pos, ar, s, s_ar = [x.strip() for x in line.split(" | ")]
+        rows.append((w, pos, ar, s, s_ar))
     cards = []
-    for i, (w, ar, s, s_ar) in enumerate(rows, 1):
+    for i, (w, pos, ar, s, s_ar) in enumerate(rows, 1):
         s = re.sub(r"\*\*(.+?)\*\*", r"<mark>\1</mark>", html.escape(s))
         cards.append(f"""<div class="c"><div class="top"><span class="n">{i}</span>
 <span class="w en">{html.escape(w)}</span><span class="m">{html.escape(ar)}</span></div>
@@ -107,6 +107,7 @@ def vocab_pages():
 .top {{ display:flex; align-items:center; gap:7px; direction:ltr; }}
 .n {{ flex:none; min-width:22px; height:20px; border-radius:6px; background:var(--rose-soft); color:var(--rose); font:600 11px 'Lexend'; display:grid; place-items:center; padding:0 3px; }}
 .w {{ font-size:15px; font-weight:700; color:var(--navy); }}
+.pos {{ font-size:9px; font-weight:500; color:var(--muted); border:1px solid #e1dccf; border-radius:5px; padding:0 4px; white-space:nowrap; }}
 .m {{ margin-left:auto; direction:rtl; font-size:14px; font-weight:800; color:var(--rose); }}
 .s {{ font-size:11.5px; color:var(--ink); margin-top:2px; line-height:1.4; text-align:left; }}
 mark {{ background:#fde7b8; color:var(--navy); font-weight:600; border-radius:3px; padding:0 2px; }}
@@ -144,12 +145,90 @@ def render(page, html_text, out):
     page.pdf(path=str(out), format="A4", print_background=True, prefer_css_page_size=True)
 
 
+# إجابات النماذج: (رقم الصفحة في الملف الأصلي، بداية نص السؤال، نص الخيار الصحيح)
+ANSWERS = [
+    (4, "1. She usually", "drinks"), (4, "2. Where does he", "live"), (4, "3. A:", "Are they"),
+    (4, "4. A: When", "are you going to submit"), (4, "5. It", "is important to be"),
+    (4, "6. You", "shouldn't eat"), (4, "7. He", "is going to"), (4, "8. Please", "don't shout"),
+    (4, "9. My friend", "bought"), (4, "10. I", "didn't know"),
+    (5, "1. What happened", "Banana smoothies were first made."),
+    (5, "2. How many calories", "100 calories in a medium banana"),
+    (5, "3. Which of the following", "They can cause stomach ulcers."),
+    (5, "4. Banana smoothies should NOT", "sugar"),
+    (5, "5. In paragraph 1", "work properly"), (5, "6. In paragraph 4", "helpful"),
+    (5, "7. What does the underlined", "wonderful fruit"),
+    (5, "8. Which of these titles", "Have a Banana Smoothie"),
+    (6, "1.The man is calling", "to make a reservation"), (6, "2.The hotel is located", "Jeddah"),
+    (6, "3.How long", "Three nights"), (6, "4.When will the man", "January 13th"),
+    (6, "5.Why is the man", "He is meeting friends."),
+    (7, "1. I don", "fit"), (7, "2. I want", "an international"), (7, "3. She", "pleasant"),
+    (7, "4. My watch", "repair"), (7, "5. Someone", "a manager"), (7, "6. Special clothes", "uniform"),
+    (7, "7. The library", "crowded"), (7, "8. Look at the sky", "cloudy"),
+    (7, "9. An area of land", "an island"), (7, "10. Fatima", "retired"),
+]
+RED = (0.86, 0.12, 0.12)
+
+
+def lines_of(page):
+    """أسطر الصفحة: [(نص السطر، مستطيله)] — كل كتلة نصية تتقسم أسطر."""
+    out = []
+    for b in page.get_text("dict")["blocks"]:
+        for l in b.get("lines", []):
+            t = "".join(sp["text"] for sp in l["spans"]).strip().replace("\u2019", "'")
+            if t:
+                out.append((t, pymupdf.Rect(l["bbox"])))
+    return out
+
+
+def mark_answers(doc):
+    for pno, q, ans in ANSWERS:
+        page = doc[pno - 1]
+        L = lines_of(page)
+        qs = [r for t, r in L if t.startswith(q)]
+        assert len(qs) == 1, (pno, q, len(qs))
+        qr = qs[0]
+        col0, col1 = (qr.x0 - 2, qr.x0 + 370)
+        # الخيار: سطر نصه = الإجابة، تحت السؤال وفي نفس العمود، وأقرب واحد
+        c = [r for t, r in L if t == ans and col0 <= r.x0 <= col1 and qr.y0 < r.y0 < qr.y1 + 95]
+        assert c, (pno, q, ans)
+        r = min(c, key=lambda r: r.y0)
+        letter = [lr for t, lr in L if t in "ABCD" and len(t) == 1 and abs((lr.y0 + lr.y1) / 2 - (r.y0 + r.y1) / 2) < 3
+                  and col0 - 5 <= lr.x0 < r.x0]
+        x0 = min([lr.x0 for lr in letter] + [r.x0])
+        box = pymupdf.Rect(x0 - 4, r.y0 - 1.5, r.x1 + 4, r.y1 + 1.5)
+        page.draw_rect(box, color=RED, width=1.6)
+
+
+def hide_source_units(page):
+    """يشيل صفوف Source/Units (العنوان + الصفين) ويخلي الجدول مقفل نظيف."""
+    hits = [r for t, r in lines_of(page) if t.startswith("Source")]
+    assert len(hits) == 1
+    top = hits[0].y0 - 0.6  # خط الحد فوق عنوان Source يبقى
+    nxt = [r for t, r in lines_of(page) if t == "Grammar"][0]
+    # المنطقة من تحت خط Source لين الخط اللي فوق قسم Grammar (الصف الفاضي يبقى فاصل)
+    area = pymupdf.Rect(20.5, top, page.rect.width - 20.5, nxt.y0 - 9.6)
+    page.add_redact_annot(area, fill=(1, 1, 1))
+    page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE,
+                          graphics=pymupdf.PDF_REDACT_LINE_ART_REMOVE_IF_COVERED)
+    # نرجّع حدود الجدول اليمين واليسار في المكان الفاضي
+    for x in (20.7, 576.5):
+        page.draw_line((x, area.y0 - 0.3), (x, area.y1 + 0.3), color=(0, 0, 0), width=0.6)
+
+
+def hide_page_numbers(doc):
+    """أرقام صفحات الملف الأصلي تتلخبط بعد حذف صفحتين القائمة، فنشيلها."""
+    for page in doc:
+        for t, r in lines_of(page):
+            if t.isdigit() and r.y0 > page.rect.height - 60:
+                page.add_redact_annot(r + (-2, -1, 2, 1), fill=(1, 1, 1))
+        page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE, graphics=pymupdf.PDF_REDACT_LINE_ART_NONE)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("src"); ap.add_argument("out")
-    ap.add_argument("--keep", default="2-6", help="صفحات الملف الأصلي اللي تنحفظ (ترقيم من 1)")
+    ap.add_argument("src", help="ملف المسار الإنساني الأصلي")
+    ap.add_argument("out")
     a = ap.parse_args()
-    k1, k2 = map(int, a.keep.split("-"))
     tmp = pathlib.Path(tempfile.mkdtemp())
     vdoc, n = vocab_pages()
     with sync_playwright() as p:
@@ -162,17 +241,24 @@ def main():
         bb = pg.locator("#f").bounding_box()
         pg.pdf(path=str(tmp / "foot.pdf"), width=f"{bb['width']+1}px", height=f"{bb['height']+1}px", print_background=True, page_ranges="1")
         b.close()
+
+    src = pymupdf.open(a.src)
+    hide_source_units(src[0])
+    mark_answers(src)
+    src.delete_pages([1, 2])  # صفحتين قائمة الكلمات الأصلية — بدالها بطاقات الكلمات
+    hide_page_numbers(src)
+
     out = pymupdf.open()
     out.insert_pdf(pymupdf.open(tmp / "ad.pdf"))
-    out.insert_pdf(pymupdf.open(a.src), from_page=k1 - 1, to_page=k2 - 1)
-    v0 = out.page_count
+    s0 = out.page_count
+    out.insert_pdf(src)
     out.insert_pdf(pymupdf.open(tmp / "vocab.pdf"))
     foot = pymupdf.open(tmp / "foot.pdf")
     fr = foot[0].rect
-    for i in range(v0, out.page_count):
+    for i in range(s0, out.page_count):
         pg = out[i]
-        r = pymupdf.Rect((pg.rect.width - fr.width) / 2, pg.rect.height - fr.height - 14,
-                         (pg.rect.width + fr.width) / 2, pg.rect.height - 14)
+        r = pymupdf.Rect((pg.rect.width - fr.width) / 2, pg.rect.height - fr.height - 6,
+                         (pg.rect.width + fr.width) / 2, pg.rect.height - 6)
         pg.show_pdf_page(r, foot, 0)
         pg.insert_link({"kind": pymupdf.LINK_URI, "from": r, "uri": TELEGRAM})
     out.save(a.out, garbage=3, deflate=True)
