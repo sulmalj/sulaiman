@@ -48,7 +48,7 @@ Academy || He trains at a football ..... for young players. || academy | flood |
 Attend || All students must ..... the lecture. The teacher will check who is absent. || attend | feed | collect | grow
 Difficult || The exam was very ....., most students couldn't finish it. || difficult | easy | simple | enjoyable
 Difficulty || He has ..... reading small letters, so he needs glasses. || difficulty | strength | memory | energy
-Enjoy || I really ..... spending time with my friends at the beach. || enjoy | avoid | fail | reduce
+Enjoy || I really ..... spending time with my friends at the beach. It's so much fun! || enjoy | avoid | fail | reduce
 Enjoyable || The trip was very ....., we had a great time. || enjoyable | boring | dangerous | complicated
 Friend || Ahmed is my best ....., we have known each other since we were children. || friend | landlord | professor | expert
 Help || Can you ..... me carry these heavy boxes? || help | fail | grow | avoid

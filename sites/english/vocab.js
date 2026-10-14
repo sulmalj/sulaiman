@@ -483,7 +483,7 @@ window.VOCAB = [
 },
 {
 "w": "Enjoy",
-"q": "I really ..... spending time with my friends at the beach.",
+"q": "I really ..... spending time with my friends at the beach. It's so much fun!",
 "o": [
 "enjoy",
 "avoid",
