@@ -51,15 +51,18 @@ def vocab():
 
 
 def grammar():
-    """grammar.txt:  ## اسم القاعدة   ثم أسطر:  السؤال || صحيح | خطأ | خطأ | خطأ"""
+    """grammar.txt:  ## اسم القاعدة   ثم أسطر:  السؤال || صحيح | خطأ | خطأ | خطأ || الشرح"""
     r = rows('grammar.txt')
     out = []
     for n, l in r or []:
         if l.startswith('## '):
             out.append({'rule': l[3:].strip(), 'qs': []})
         else:
-            q, o = [x.strip() for x in l.split(' || ')]
-            out[-1]['qs'].append({'q': q, 'o': opts(o, f'grammar.txt:{n}')})
+            parts = [x.strip() for x in l.split(' || ')]
+            if len(parts) != 3 or not parts[2]:
+                sys.exit(f'grammar.txt:{n}: لازم: السؤال || الخيارات || الشرح')
+            q, o, e = parts
+            out[-1]['qs'].append({'q': q, 'o': opts(o, f'grammar.txt:{n}'), 'e': e})
     write('grammar.js', 'GRAMMAR', out, 'أسئلة القواعد (Grammar) مقسمة حسب القاعدة')
 
 

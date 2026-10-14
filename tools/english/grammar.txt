@@ -1,274 +1,274 @@
 # أسئلة القواعد — مقسمة حسب قواعد ملزمة المستخدم (store/english/grammar-malzama.pdf)
-# الصيغة:  ## اسم القاعدة   ثم:  السؤال || الصحيح | خطأ | خطأ | خطأ
+# الصيغة:  ## اسم القاعدة   ثم:  السؤال || الصحيح | خطأ | خطأ | خطأ || الشرح (يطلع للطالب بعد ما يجاوب، صح أو غلط)
 # في كل قاعدة: تدريبات الملزمة + نماذج المستخدم (صور التليجرام) + أسئلة إضافية
 
 ## Simple present
-Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not
-He ..... really intelligent. || is | am | are | am not
-The books ..... red and white. || are | is | am | am not
-Sara and Noof ..... friends. || are | is | am | am not
-Badr and I ..... best friends. || are | is | am | am not
-The university ..... a good place. || is | am | are | am not
-Where ..... the station? || is | am | are | am not
-How old ..... your brother? || is | am | are | am not
-These books ..... very hard to understand. || are | is | am | am not
-Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | aren't | am
-Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is
-I ..... a student at King Saud University. || am | is | are | be
-My parents ..... at home now. || are | is | am | be
-..... you from Jeddah? Yes, I am. || Are | Is | Am | Do
-..... your sister a doctor? No, she isn't. || Is | Are | Am | Does
-..... I late for the class? || Am | Is | Are | Do
-Is Ahmed in class? No, he ...... || isn't | aren't | doesn't | don't
-Are they your friends? Yes, they ...... || are | is | do | am
-Where ..... you from? I'm from Saudi Arabia. || are | is | do | does
-What ..... your name? || is | are | do | am
-Who ..... those men? || are | is | am | does
-How ..... your parents? They're fine, thank you. || are | is | does | am
-I ..... not hungry. I had a big breakfast. || am | is | are | do
-We ..... in the library. We're at the café. || aren't | isn't | don't | am not
-It ..... cold today. It's very hot! || isn't | aren't | doesn't | don't
-My brother ..... tall. He's only 150 cm. || isn't | aren't | doesn't | am not
-Riyadh ..... the capital of Saudi Arabia. || is | are | am | be
-My friends and I ..... very busy this week. || are | is | am | be
-Nora ..... shy. She talks to everyone. || isn't | aren't | doesn't | don't
-The children ..... in the garden. || are | is | am | be
-..... the museum open on Fridays? || Is | Are | Does | Do
-This bag ..... very expensive. || is | are | am | be
-..... we in the right room for the English class? || Are | Is | Am | Do
-You ..... my best friend. || are | is | am | be
-My phone ..... on the table. || is | are | am | be
-..... it your first day at the university? || Is | Are | Does | Am
-They ..... teachers. They are students. || aren't | isn't | don't | doesn't
-Where is my book? ..... on your desk. || It's | Its | It'is | Its'
-..... from Egypt. They're from Sudan. || They aren't | They isn't | They don't | They not
-Khalid and Omar ..... brothers. || are | is | am | be
+Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not || Sulaiman and Fahad = شخصين (They) ← مع They نستخدم are.
+He ..... really intelligent. || is | am | are | am not || He ← مع He / She / It نستخدم is.
+The books ..... red and white. || are | is | am | am not || The books جمع (They) ← نستخدم are.
+Sara and Noof ..... friends. || are | is | am | am not || Sara and Noof = شخصين (They) ← نستخدم are.
+Badr and I ..... best friends. || are | is | am | am not || Badr and I = We ← مع We نستخدم are.
+The university ..... a good place. || is | am | are | am not || The university مفرد (It) ← نستخدم is.
+Where ..... the station? || is | am | are | am not || the station مفرد (It) ← في سؤال WH: WH + is + Subject.
+How old ..... your brother? || is | am | are | am not || your brother مفرد (He) ← How old + is + Subject.
+These books ..... very hard to understand. || are | is | am | am not || These books جمع (They) ← نستخدم are.
+Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | aren't | am || Saleh مفرد (He) ← نستخدم is.
+Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is || She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's).
+I ..... a student at King Saud University. || am | is | are | be || I ← مع I نستخدم am فقط.
+My parents ..... at home now. || are | is | am | be || My parents جمع (They) ← نستخدم are.
+..... you from Jeddah? Yes, I am. || Are | Is | Am | Do || سؤال Yes/No بفعل be: Verb be + Subject ← مع you نستخدم Are (والجواب Yes, I am).
+..... your sister a doctor? No, she isn't. || Is | Are | Am | Does || your sister = She ← سؤال Yes/No: Is + she… (والجواب No, she isn't).
+..... I late for the class? || Am | Is | Are | Do || I ← مع I نستخدم Am: Am I …?
+Is Ahmed in class? No, he ...... || isn't | aren't | doesn't | don't || الجواب المختصر بنفس فعل السؤال: Is he…? ← No, he isn't.
+Are they your friends? Yes, they ...... || are | is | do | am || Are they…? ← الجواب Yes, they are.
+Where ..... you from? I'm from Saudi Arabia. || are | is | do | does || WH + Verb be + Subject ← مع you نستخدم are: Where are you from?
+What ..... your name? || is | are | do | am || your name مفرد ← What is…?
+Who ..... those men? || are | is | am | does || those men جمع ← Who are…?
+How ..... your parents? They're fine, thank you. || are | is | does | am || your parents جمع (They) ← How are…?
+I ..... not hungry. I had a big breakfast. || am | is | are | do || النفي: Subject + Verb be + not ← مع I نستخدم am not.
+We ..... in the library. We're at the café. || aren't | isn't | don't | am not || We ← النفي are not = aren't (والجملة الثانية توضّح إنهم مو في المكتبة).
+It ..... cold today. It's very hot! || isn't | aren't | doesn't | don't || It ← النفي is not = isn't (لأنه حار مو بارد).
+My brother ..... tall. He's only 150 cm. || isn't | aren't | doesn't | am not || My brother = He ← النفي isn't (لأن طوله 150 بس).
+Riyadh ..... the capital of Saudi Arabia. || is | are | am | be || Riyadh مفرد (It) ← نستخدم is.
+My friends and I ..... very busy this week. || are | is | am | be || My friends and I = We ← نستخدم are.
+Nora ..... shy. She talks to everyone. || isn't | aren't | doesn't | don't || Nora = She ← النفي isn't (لأنها تكلّم الكل، يعني مو خجولة). وdoesn't ما تجي مع صفة.
+The children ..... in the garden. || are | is | am | be || The children جمع (They) ← نستخدم are.
+..... the museum open on Fridays? || Is | Are | Does | Do || the museum مفرد (It) + صفة open ← السؤال بـ Is وليس Does.
+This bag ..... very expensive. || is | are | am | be || This bag مفرد (It) ← نستخدم is.
+..... we in the right room for the English class? || Are | Is | Am | Do || We ← سؤال Yes/No: Are we…?
+You ..... my best friend. || are | is | am | be || You ← مع You نستخدم are.
+My phone ..... on the table. || is | are | am | be || My phone مفرد (It) ← نستخدم is.
+..... it your first day at the university? || Is | Are | Does | Am || it ← سؤال Yes/No: Is it…?
+They ..... teachers. They are students. || aren't | isn't | don't | doesn't || They ← النفي are not = aren't (لأنهم طلاب مو معلمين).
+Where is my book? ..... on your desk. || It's | Its | It'is | Its' || It's = It is (الكتاب في مكان). أما Its بدون فاصلة فمعناها (ملكه).
+..... from Egypt. They're from Sudan. || They aren't | They isn't | They don't | They not || They ← النفي They aren't = They are not (لأنهم من السودان مو مصر).
+Khalid and Omar ..... brothers. || are | is | am | be || Khalid and Omar = They ← نستخدم are.
 
-Children usually ..... watching cartoons. || like | likes | likeing | does like
-In many countries, people ..... until they are sixty-five. || work | works | working | are work
-Betty is not very kind. She ..... help old people. || does not | do not | is not | are not
-She usually ..... a lot of time to choose her clothes. || spends | spending | spend | is spends
-I always ..... my teacher's website to study English. || visit | is visit | visits | visiting
-Please ..... put your things on the teacher's table. || don't | doesn't | isn't | aren't
-..... you always wear the same uniform every day? || Do | Does | Is | Are
-Some teachers ..... much homework. || give | gives | giveing | are give
-..... your parents let you go to bed late? || Do | Does | Is | Are
-How many books ..... you read in a year? || do | does | are | is
-..... your school have a big library? No, it ...... || Does / doesn't | Do / don't | Does / don't | Don't / Does
-He ..... much in class, but he gets A+ for the essays he writes. || doesn't talk | doesn't | not talk | don't talk
-A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau. || Where do you want | Where do you wanting | Where does you wanting | Where does you want
-I ..... an Uber taxi at 7:00 every morning to be at work on time. || book | books | booking | is book
-My father ..... to work by car every day. || goes | go | gos | going
-She ..... her homework after dinner. || does | do | dos | doing
-My brother ..... to fix his car himself. || tries | trys | try | trying
-He ..... TV every evening. || watches | watch | watchs | watching
-My mother ..... English at a primary school. || teaches | teach | teachs | teaching
-Ali ..... in a big hospital. He is a nurse. || works | work | working | is work
-I ..... coffee. I only drink tea. || don't drink | doesn't drink | don't drinks | not drink
-Sara ..... meat. She is a vegetarian. || doesn't eat | don't eat | doesn't eats | not eat
-We ..... on Fridays. || don't work | doesn't work | don't works | not work
-My cat ..... milk. || doesn't like | don't like | doesn't likes | not like
-..... he like tennis? Yes, he does. || Does | Do | Is | Are
-..... they live near the university? No, they don't. || Do | Does | Are | Is
-Does your sister play the piano? Yes, she ...... || does | do | is | plays
-Do you speak French? No, I ...... || don't | doesn't | am not | isn't
-Where ..... he live? || does | do | is | are
-What time ..... you usually get up? || do | does | are | is
-What ..... your father do? He's an engineer. || does | do | is | are
-How ..... your brother go to school? By bus. || does | do | is | are
-When ..... the class start? || does | do | is | are
-Who ..... you live with? || do | does | are | is
-The bus ..... at 7:30 every morning. || leaves | leave | leaving | is leave
-My friends ..... football every Saturday. || play | plays | playing | is play
-The baby ..... a lot at night. || cries | crys | cry | crying
-Noura ..... her grandmother every weekend. || visits | visit | visiting | is visit
-My parents ..... in a small village. || live | lives | living | is live
-He ..... his teeth twice a day. || brushes | brush | brushs | brushing
+Children usually ..... watching cartoons. || like | likes | likeing | does like || Children جمع (They) ← الفعل يبقى بدون s: like.
+In many countries, people ..... until they are sixty-five. || work | works | working | are work || people جمع (They) ← الفعل بدون s: work.
+Betty is not very kind. She ..... help old people. || does not | do not | is not | are not || She ← النفي: doesn't / does not + الفعل الأساسي (help).
+She usually ..... a lot of time to choose her clothes. || spends | spending | spend | is spends || She ← في الإثبات نضيف s للفعل: spends.
+I always ..... my teacher's website to study English. || visit | is visit | visits | visiting || I ← الفعل بدون s: visit.
+Please ..... put your things on the teacher's table. || don't | doesn't | isn't | aren't || الأمر بالنفي: Don't + الفعل الأساسي (Please don't put…).
+..... you always wear the same uniform every day? || Do | Does | Is | Are || you ← سؤال Yes/No: Do + Subject + verb.
+Some teachers ..... much homework. || give | gives | giveing | are give || Some teachers جمع (They) ← الفعل بدون s: give.
+..... your parents let you go to bed late? || Do | Does | Is | Are || your parents جمع (They) ← Do + Subject + verb.
+How many books ..... you read in a year? || do | does | are | is || you ← WH + do + Subject: How many books do you read?
+..... your school have a big library? No, it ...... || Does / doesn't | Do / don't | Does / don't | Don't / Does || your school مفرد (It) ← Does في السؤال، والجواب No, it doesn't.
+He ..... much in class, but he gets A+ for the essays he writes. || doesn't talk | doesn't | not talk | don't talk || He ← النفي doesn't + الفعل الأساسي talk (بدون s).
+A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau. || Where do you want | Where do you wanting | Where does you wanting | Where does you want || you ← WH + do + Subject + الفعل الأساسي: Where do you want…?
+I ..... an Uber taxi at 7:00 every morning to be at work on time. || book | books | booking | is book || I ← الفعل بدون s: book.
+My father ..... to work by car every day. || goes | go | gos | going || He ← الفعل المنتهي بـ o نضيف له es: go ← goes.
+She ..... her homework after dinner. || does | do | dos | doing || She ← do ينتهي بـ o فنضيف es: does.
+My brother ..... to fix his car himself. || tries | trys | try | trying || He ← قبل y حرف غير متحرك (r) فنحذف y ونضيف ies: try ← tries.
+He ..... TV every evening. || watches | watch | watchs | watching || He ← الفعل المنتهي بـ ch نضيف له es: watch ← watches.
+My mother ..... English at a primary school. || teaches | teach | teachs | teaching || She ← الفعل المنتهي بـ ch نضيف له es: teach ← teaches.
+Ali ..... in a big hospital. He is a nurse. || works | work | working | is work || Ali = He ← نضيف s للفعل: works.
+I ..... coffee. I only drink tea. || don't drink | doesn't drink | don't drinks | not drink || I ← النفي don't + الفعل الأساسي drink.
+Sara ..... meat. She is a vegetarian. || doesn't eat | don't eat | doesn't eats | not eat || Sara = She ← النفي doesn't + الفعل الأساسي eat (بدون s).
+We ..... on Fridays. || don't work | doesn't work | don't works | not work || We ← النفي don't + الفعل الأساسي work.
+My cat ..... milk. || doesn't like | don't like | doesn't likes | not like || My cat = It ← النفي doesn't + الفعل الأساسي like.
+..... he like tennis? Yes, he does. || Does | Do | Is | Are || he ← سؤال Yes/No: Does + he + الفعل الأساسي، والجواب Yes, he does.
+..... they live near the university? No, they don't. || Do | Does | Are | Is || they ← Do + they + verb، والجواب No, they don't.
+Does your sister play the piano? Yes, she ...... || does | do | is | plays || Does she…? ← الجواب المختصر Yes, she does.
+Do you speak French? No, I ...... || don't | doesn't | am not | isn't || Do you…? ← الجواب المختصر No, I don't.
+Where ..... he live? || does | do | is | are || he ← WH + does + Subject: Where does he live?
+What time ..... you usually get up? || do | does | are | is || you ← WH + do + Subject: What time do you get up?
+What ..... your father do? He's an engineer. || does | do | is | are || your father = He ← What does he do? (سؤال عن الوظيفة).
+How ..... your brother go to school? By bus. || does | do | is | are || your brother = He ← How does he go…?
+When ..... the class start? || does | do | is | are || the class = It ← When does it start?
+Who ..... you live with? || do | does | are | is || you ← Who do you live with?
+The bus ..... at 7:30 every morning. || leaves | leave | leaving | is leave || The bus = It ← نضيف s للفعل: leaves.
+My friends ..... football every Saturday. || play | plays | playing | is play || My friends جمع (They) ← الفعل بدون s: play.
+The baby ..... a lot at night. || cries | crys | cry | crying || The baby = It ← قبل y حرف غير متحرك فنحذف y ونضيف ies: cries.
+Noura ..... her grandmother every weekend. || visits | visit | visiting | is visit || Noura = She ← نضيف s للفعل: visits.
+My parents ..... in a small village. || live | lives | living | is live || My parents جمع (They) ← الفعل بدون s: live.
+He ..... his teeth twice a day. || brushes | brush | brushs | brushing || He ← الفعل المنتهي بـ sh نضيف له es: brush ← brushes.
 
 ## Adjectives + Adverbs (a / an)
-It's ..... class. || a pretty interesting | pretty interesting | pretty a interesting | an pretty interesting
-They are ...... || beautiful classes | a beautiful classes | an beautiful classes | classes beautiful
-I have ...... || smart students | a smart students | an smart students | smarts students
-It is ...... || a very safe school | very safe school | very a safe school | an very safe school
-This is ...... || an extremely quiet classroom | a extremely quiet classroom | extremely quiet classroom | extremely an quiet classroom
-The ...... || building is really beautiful | building is a really beautiful | is building really beautiful | really building is beautiful
-That is ..... idea! I've heard it's not safe to go there after dark. || a really bad | an extremely | a very | a bad really
-My teacher is kind and ...... If I don't understand my math lesson, she explains it to me again. || helpful | a helpful | a helpfuls | helpfuls
-Riyadh is ...... || a very big city | very big city | a city very big | an very big city
-My brother has ...... || an old car | a old car | old a car | car old
-She is ...... || an intelligent student | a intelligent student | intelligent a student | student intelligent
-The food here is ...... || really delicious | a really delicious | delicious really | really a delicious
-We live in ...... || a quite small house | a small quite house | quite small a house | an quite small house
-This is ..... book. I couldn't stop reading it. || an extremely interesting | a extremely interesting | extremely interesting | an interesting extremely
-The rooms in this hotel are ...... || very clean | a very clean | very cleans | cleans very
-He is ...... || a pretty funny man | pretty funny man | a funny pretty man | an pretty funny man
-It was ...... || an easy test | a easy test | easy a test | test easy
-They are ...... || very friendly people | a very friendly people | very friendlys people | friendly very people
-My grandmother has ...... || an orange cat | a orange cat | orange a cat | an cat orange
-The weather today is ...... || extremely hot | an extremely hot | hot extremely | a extremely hot
-Our campus is ...... || really modern | a really modern | modern really | really a modern
-This is ..... question. Nobody can answer it. || a very difficult | an very difficult | very difficult | a difficult very
-I want to buy ...... || a cheap phone | an cheap phone | cheap a phone | phone cheap
-Fahad is ...... || an honest man | a honest man | honest a man | man honest
-These shoes are ...... || quite comfortable | a quite comfortable | comfortable quite | quite a comfortable
-It's ..... day for a picnic. || a really nice | a nice really | really a nice | an really nice
-She has ...... || a very messy room | very messy room | a messy very room | an very messy room
-He is ...... || a university student | an university student | university a student | student university
-I ate ..... for breakfast. || an apple | a apple | apple an | an apples
-Saudi Arabia is ...... || a very beautiful country | very beautiful country | a beautiful very country | an very beautiful country
-My new classmates are ...... || pretty friendly | a pretty friendly | friendly pretty | pretty a friendly
-This exercise is ...... || really easy | a really easy | easy really | an really easy
-That movie was ...... || extremely boring | an extremely boring | boring extremely | a extremely boring
-Look! It's ...... || an elephant | a elephant | elephant | an elephants
-She bought ..... dress for the party. || a really expensive | an really expensive | really a expensive | a expensive really
+It's ..... class. || a pretty interesting | pretty interesting | pretty a interesting | an pretty interesting || اسم مفرد (class) يبدأ بحرف ساكن ← a + Adverb + Adjective + Noun: a pretty interesting class.
+They are ...... || beautiful classes | a beautiful classes | an beautiful classes | classes beautiful || classes جمع ← ما نحط a / an، والصفة قبل الاسم: beautiful classes.
+I have ...... || smart students | a smart students | an smart students | smarts students || students جمع ← بدون a / an، والصفة ما تنجمع: smart students.
+It is ...... || a very safe school | very safe school | very a safe school | an very safe school || school اسم مفرد ← a + very + safe + school.
+This is ...... || an extremely quiet classroom | a extremely quiet classroom | extremely quiet classroom | extremely an quiet classroom || تبدأ بـ extremely (حرف علة e) ← an extremely quiet classroom.
+The ...... || building is really beautiful | building is a really beautiful | is building really beautiful | really building is beautiful || Subject + Verb be + Adverb + Adjective: The building is really beautiful (بدون a لأنه ما فيه اسم بعد الصفة).
+That is ..... idea! I've heard it's not safe to go there after dark. || a really bad | an extremely | a very | a bad really || اسم مفرد (idea) ← a + Adverb + Adjective + Noun، وأول كلمة really حرف ساكن ← a really bad.
+My teacher is kind and ...... If I don't understand my math lesson, she explains it to me again. || helpful | a helpful | a helpfuls | helpfuls || بعد Verb be صفة بدون اسم ← ما نحط a: kind and helpful. والصفة ما تنجمع.
+Riyadh is ...... || a very big city | very big city | a city very big | an very big city || city اسم مفرد ← a very big city (a لأن very يبدأ بحرف ساكن).
+My brother has ...... || an old car | a old car | old a car | car old || old تبدأ بحرف علة (o) ← an old car.
+She is ...... || an intelligent student | a intelligent student | intelligent a student | student intelligent || intelligent تبدأ بحرف علة (i) ← an intelligent student.
+The food here is ...... || really delicious | a really delicious | delicious really | really a delicious || بعد Verb be صفة بدون اسم ← بدون a: really delicious.
+We live in ...... || a quite small house | a small quite house | quite small a house | an quite small house || house اسم مفرد ← a + quite + small + house (الظرف قبل الصفة).
+This is ..... book. I couldn't stop reading it. || an extremely interesting | a extremely interesting | extremely interesting | an interesting extremely || book اسم مفرد وأول كلمة extremely حرف علة ← an extremely interesting book.
+The rooms in this hotel are ...... || very clean | a very clean | very cleans | cleans very || بعد Verb be صفة بدون اسم ← بدون a، والصفة ما تنجمع: very clean.
+He is ...... || a pretty funny man | pretty funny man | a funny pretty man | an pretty funny man || man اسم مفرد ← a + pretty + funny + man.
+It was ...... || an easy test | a easy test | easy a test | test easy || easy تبدأ بحرف علة (e) ← an easy test.
+They are ...... || very friendly people | a very friendly people | very friendlys people | friendly very people || people جمع ← بدون a، والصفة ما تنجمع: very friendly people.
+My grandmother has ...... || an orange cat | a orange cat | orange a cat | an cat orange || orange تبدأ بحرف علة (o) ← an orange cat.
+The weather today is ...... || extremely hot | an extremely hot | hot extremely | a extremely hot || صفة بعد Verb be بدون اسم ← بدون a: extremely hot.
+Our campus is ...... || really modern | a really modern | modern really | really a modern || صفة بعد Verb be بدون اسم ← بدون a: really modern.
+This is ..... question. Nobody can answer it. || a very difficult | an very difficult | very difficult | a difficult very || question مفرد وأول كلمة very حرف ساكن ← a very difficult question.
+I want to buy ...... || a cheap phone | an cheap phone | cheap a phone | phone cheap || cheap يبدأ بحرف ساكن ← a cheap phone.
+Fahad is ...... || an honest man | a honest man | honest a man | man honest || honest نطقها يبدأ بصوت حرف علة (الـ h ما تنطق) ← an honest man.
+These shoes are ...... || quite comfortable | a quite comfortable | comfortable quite | quite a comfortable || صفة بعد Verb be بدون اسم ← بدون a: quite comfortable.
+It's ..... day for a picnic. || a really nice | a nice really | really a nice | an really nice || day مفرد ← a + really + nice + day.
+She has ...... || a very messy room | very messy room | a messy very room | an very messy room || room مفرد ← a very messy room.
+He is ...... || a university student | an university student | university a student | student university || university نطقها يبدأ بصوت (يو) مو حرف علة ← a university student.
+I ate ..... for breakfast. || an apple | a apple | apple an | an apples || apple تبدأ بحرف علة (a) ← an apple.
+Saudi Arabia is ...... || a very beautiful country | very beautiful country | a beautiful very country | an very beautiful country || country مفرد ← a very beautiful country.
+My new classmates are ...... || pretty friendly | a pretty friendly | friendly pretty | pretty a friendly || صفة بعد Verb be بدون اسم ← بدون a: pretty friendly.
+This exercise is ...... || really easy | a really easy | easy really | an really easy || صفة بعد Verb be بدون اسم ← بدون a: really easy.
+That movie was ...... || extremely boring | an extremely boring | boring extremely | a extremely boring || صفة بعد Verb be بدون اسم ← بدون a: extremely boring.
+Look! It's ...... || an elephant | a elephant | elephant | an elephants || Elephant تبدأ بحرف علة (e) ← an elephant (مثال الملزمة).
+She bought ..... dress for the party. || a really expensive | an really expensive | really a expensive | a expensive really || dress مفرد وأول كلمة really حرف ساكن ← a really expensive dress.
 
 ## Have / Has
-He ..... a shower in the morning. || doesn't have | doesn't has | don't have | don't has
-We ..... have time to play games. || don't | doesn't | are | is
-Noof ..... a car. || doesn't have | doesn't has | don't has | don't have
-..... you have a house? || Do | Does | Has | Are
-Ahmed and Adnan ..... a big house. || have | has | are | is
-What does he .....? || have | is | has | are
-Let's go to Riyadh Park. They ..... many different shops, restaurants, and movie theaters. || have | having | has | has had
-I ..... two brothers and one sister. || have | has | am | is
-My father ..... a new car. || has | have | is | are
-She ..... long black hair. || has | have | is | haves
-We ..... a big garden behind our house. || have | has | are | is
-The university ..... a large library. || has | have | are | having
-Our teacher ..... a lot of books. || has | have | is | haves
-You ..... a beautiful voice. || have | has | are | is
-My cat ..... green eyes. || has | have | is | are
-They ..... an English exam tomorrow. || have | has | are | is
-Sara ..... a laptop. She uses her brother's. || doesn't have | doesn't has | don't have | hasn't have
-I ..... any money with me today. || don't have | doesn't have | don't has | haven't have
-My parents ..... a car. They take the bus. || don't have | doesn't have | don't has | doesn't has
-The hotel ..... a swimming pool. || doesn't have | don't have | doesn't has | don't has
-..... your brother have a job? || Does | Do | Has | Is
-..... they have a big house? || Do | Does | Has | Are
-Does she have a phone? Yes, she ...... || does | has | have | is
-Do you have a pen? No, I ...... || don't | doesn't | isn't | am not
-What ..... you have in your bag? || do | does | have | are
-What does your sister .....? She has a new camera. || have | has | haves | having
-How many children ..... they have? || do | does | have | are
-Does your school ..... a gym? || have | has | haves | having
-What do you have? We ..... a house near the beach. || have | has | are | is
-What does she have? She ..... a computer. || has | have | is | haves
-My brother and I ..... the same teacher. || have | has | is | are
-It ..... four legs. It's a horse. || has | have | is | haves
-Do you ..... a car? || have | has | having | haves
-Khalid ..... a lot of friends at school. || has | have | is | are
+He ..... a shower in the morning. || doesn't have | doesn't has | don't have | don't has || He ← في النفي نستخدم have دائماً: doesn't have.
+We ..... have time to play games. || don't | doesn't | are | is || We ← النفي don't + have.
+Noof ..... a car. || doesn't have | doesn't has | don't has | don't have || Noof = She ← doesn't + have (في النفي ما نقول has).
+..... you have a house? || Do | Does | Has | Are || you ← السؤال Do + you + have.
+Ahmed and Adnan ..... a big house. || have | has | are | is || Ahmed and Adnan = They ← have.
+What does he .....? || have | is | has | are || في السؤال بعد does نستخدم have: What does he have?
+Let's go to Riyadh Park. They ..... many different shops, restaurants, and movie theaters. || have | having | has | has had || They ← have.
+I ..... two brothers and one sister. || have | has | am | is || I ← have.
+My father ..... a new car. || has | have | is | are || My father = He ← has.
+She ..... long black hair. || has | have | is | haves || She ← has.
+We ..... a big garden behind our house. || have | has | are | is || We ← have.
+The university ..... a large library. || has | have | are | having || The university = It ← has.
+Our teacher ..... a lot of books. || has | have | is | haves || Our teacher = He / She ← has.
+You ..... a beautiful voice. || have | has | are | is || You ← have.
+My cat ..... green eyes. || has | have | is | are || My cat = It ← has.
+They ..... an English exam tomorrow. || have | has | are | is || They ← have.
+Sara ..... a laptop. She uses her brother's. || doesn't have | doesn't has | don't have | hasn't have || Sara = She ← النفي doesn't have.
+I ..... any money with me today. || don't have | doesn't have | don't has | haven't have || I ← النفي don't have.
+My parents ..... a car. They take the bus. || don't have | doesn't have | don't has | doesn't has || My parents = They ← النفي don't have.
+The hotel ..... a swimming pool. || doesn't have | don't have | doesn't has | don't has || The hotel = It ← النفي doesn't have.
+..... your brother have a job? || Does | Do | Has | Is || your brother = He ← Does + he + have.
+..... they have a big house? || Do | Does | Has | Are || they ← Do + they + have.
+Does she have a phone? Yes, she ...... || does | has | have | is || Does she…? ← الجواب Yes, she does.
+Do you have a pen? No, I ...... || don't | doesn't | isn't | am not || Do you…? ← الجواب No, I don't.
+What ..... you have in your bag? || do | does | have | are || you ← What do you have?
+What does your sister .....? She has a new camera. || have | has | haves | having || بعد does نستخدم have: What does your sister have?
+How many children ..... they have? || do | does | have | are || they ← How many children do they have?
+Does your school ..... a gym? || have | has | haves | having || بعد does نستخدم have: Does your school have…?
+What do you have? We ..... a house near the beach. || have | has | are | is || We ← have.
+What does she have? She ..... a computer. || has | have | is | haves || She ← في الإثبات has.
+My brother and I ..... the same teacher. || have | has | is | are || My brother and I = We ← have.
+It ..... four legs. It's a horse. || has | have | is | haves || It ← has.
+Do you ..... a car? || have | has | having | haves || بعد Do نستخدم have.
+Khalid ..... a lot of friends at school. || has | have | is | are || Khalid = He ← has.
 
 ## Subject and Object pronouns
-Jim drives ..... to work. || her | we | he | she
-Look at .....! || me | she | they | he
-The books are heavy. I can't carry ...... || them | he | they | him
-Your friends are waiting for ...... || us | they | him | he
-If you don't want to watch TV, please turn ..... off. || it | she | he | we
-I want to help ...... || you | she | he | we
-I enjoy playing computer games. ..... is a fun activity to do in my free time. || It | Those | They | These
-A: Did you bring the face masks with you? B: I'm sorry, I forgot ..... at home. || them | us | him | her
-My sister is very kind. ..... always helps me. || She | Her | Hers | They
-My sister is very kind. She always helps ...... || me | I | my | mine
-Ahmed is my friend. I play football with ..... every Friday. || him | he | his | they
-..... are students at King Saud University. || We | Us | Our | Him
-Sara and I are classmates. ..... study together. || We | Us | They | Them
-This is my teacher. I like ..... very much. || her | she | hers | they
-Where are my keys? I can't find ...... || them | they | it | him
-My parents are coming. I'm waiting for ...... || them | they | their | us
-..... is my brother. His name is Fahad. || He | Him | His | She
-My grandmother lives with us. We love ..... a lot. || her | she | hers | they
-The phone is ringing. Can you answer .....? || it | he | them | its
-Please call ..... tonight. My number is 0551234567. || me | I | my | mine
-..... is a big city. It has many tall buildings. || It | They | Its | Them
-Noura is sick, so I am going to visit ...... || her | she | hers | him
-The children are in the garden. Can you see .....? || them | they | their | it
-Can you come with ..... to the market? We need help. || us | we | our | they
-Khalid gave ..... a nice gift for my birthday. || me | I | my | he
-..... are my friends, Ali and Omar. || They | Them | Their | We
-My brother and I go to school together. Our father drives ...... || us | we | our | them
-I don't know that man. Who is .....? || he | him | his | she
-This cake is for ...... Happy birthday, Mona! || you | your | yours | she
-Mr. Saleh is a good teacher. All the students listen to ...... || him | he | his | they
-I love my cat. ..... sleeps on my bed every night. || It | They | Them | He'is
-Please sit with ...... I want to talk to you. || me | I | my | mine
-Lama and Huda are sisters. ..... live in Jeddah. || They | Them | She | Their
-I have a new car. I drive ..... every day. || it | its | them | he
+Jim drives ..... to work. || her | we | he | she || بعد الفعل (drives) نحط ضمير مفعول (Object) ← her.
+Look at .....! || me | she | they | he || بعد حرف الجر at نحط ضمير مفعول ← me.
+The books are heavy. I can't carry ...... || them | he | they | him || The books = They، وبعد الفعل carry نحط ضمير المفعول ← them.
+Your friends are waiting for ...... || us | they | him | he || بعد حرف الجر for نحط ضمير مفعول ← us.
+If you don't want to watch TV, please turn ..... off. || it | she | he | we || TV = it، وit نفسها في الفاعل والمفعول ← turn it off.
+I want to help ...... || you | she | he | we || بعد الفعل help نحط ضمير مفعول ← you.
+I enjoy playing computer games. ..... is a fun activity to do in my free time. || It | Those | They | These || playing computer games نشاط واحد (مفرد) ← It is (والفعل is يدل على المفرد).
+A: Did you bring the face masks with you? B: I'm sorry, I forgot ..... at home. || them | us | him | her || face masks جمع، وبعد الفعل forgot نحط ضمير مفعول ← them.
+My sister is very kind. ..... always helps me. || She | Her | Hers | They || الجملة تحتاج فاعل (Subject) قبل الفعل helps ← She.
+My sister is very kind. She always helps ...... || me | I | my | mine || بعد الفعل helps نحط ضمير مفعول ← me.
+Ahmed is my friend. I play football with ..... every Friday. || him | he | his | they || Ahmed = he، وبعد حرف الجر with نحط ضمير مفعول ← him.
+..... are students at King Saud University. || We | Us | Our | Him || الجملة تحتاج فاعل قبل are ← We.
+Sara and I are classmates. ..... study together. || We | Us | They | Them || Sara and I = We، والفاعل قبل الفعل study ← We.
+This is my teacher. I like ..... very much. || her | she | hers | they || my teacher (امرأة)، وبعد الفعل like نحط ضمير مفعول ← her.
+Where are my keys? I can't find ...... || them | they | it | him || my keys جمع، وبعد find نحط ضمير مفعول ← them.
+My parents are coming. I'm waiting for ...... || them | they | their | us || My parents = they، وبعد حرف الجر for ← them.
+..... is my brother. His name is Fahad. || He | Him | His | She || الفاعل قبل is، والأخ ذكر ← He.
+My grandmother lives with us. We love ..... a lot. || her | she | hers | they || My grandmother = she، وبعد الفعل love ← her.
+The phone is ringing. Can you answer .....? || it | he | them | its || The phone = it ← answer it.
+Please call ..... tonight. My number is 0551234567. || me | I | my | mine || بعد الفعل call نحط ضمير مفعول، والمقصود المتكلم ← me.
+..... is a big city. It has many tall buildings. || It | They | Its | Them || الفاعل لمدينة (مفرد غير عاقل) ← It.
+Noura is sick, so I am going to visit ...... || her | she | hers | him || Noura = she، وبعد visit ← her.
+The children are in the garden. Can you see .....? || them | they | their | it || The children = they، وبعد see ← them.
+Can you come with ..... to the market? We need help. || us | we | our | they || بعد حرف الجر with نحط ضمير مفعول، والمقصود (نحن) ← us.
+Khalid gave ..... a nice gift for my birthday. || me | I | my | he || بعد الفعل gave ضمير مفعول للمتكلم ← me.
+..... are my friends, Ali and Omar. || They | Them | Their | We || الفاعل قبل are، والمقصود Ali and Omar ← They.
+My brother and I go to school together. Our father drives ...... || us | we | our | them || My brother and I = we، وبعد drives ضمير مفعول ← us.
+I don't know that man. Who is .....? || he | him | his | she || بعد Verb be (is) نستخدم ضمير الفاعل ← he.
+This cake is for ...... Happy birthday, Mona! || you | your | yours | she || بعد حرف الجر for نحط ضمير مفعول ← you.
+Mr. Saleh is a good teacher. All the students listen to ...... || him | he | his | they || Mr. Saleh = he، وبعد حرف الجر to ← him.
+I love my cat. ..... sleeps on my bed every night. || It | They | Them | He'is || الحيوان مفرد = It، والفاعل قبل sleeps ← It.
+Please sit with ...... I want to talk to you. || me | I | my | mine || بعد حرف الجر with ضمير مفعول للمتكلم ← me.
+Lama and Huda are sisters. ..... live in Jeddah. || They | Them | She | Their || Lama and Huda = They، والفاعل قبل live ← They.
+I have a new car. I drive ..... every day. || it | its | them | he || a new car = it، وبعد drive ← it.
 
 ## Verbs + gerunds or infinitives
-I hope ..... the exam at the end of the course. || to pass | pass | pass to | passing
-I avoid ..... in fast food restaurants whenever possible. || eating | to eat | eat to | eat
-I dislike ..... in a hurry. || drinking | to drink | drink | drinks
-I hate ..... early every day. || to get up | get up | to geting up | to gets up
-She tried ..... her hair red, but it didn't suit her at all. || to dye | to dyes | dye | to dyeing
-I need ..... a stamp on this letter. || to put | to puting | put | to puts
-She avoids ..... too much meat. || eating | to eat | eat | eats
-You need ..... hard for the exam. || to study | study | studying | to studying
-I enjoy ..... with my friends on weekends. || going out | to go out | go out | goes out
-My father stopped ..... five years ago. It's better for his health. || smoking | to smoke | smoke | smokes
-I want ..... a doctor in the future. || to become | become | becoming | to becoming
-We hope ..... you again soon. || to see | see | seeing | to seeing
-He tries ..... to the gym three times a week. || to go | go | going | to going
-My brother dislikes ..... the dishes. || washing | to wash | wash | washes
-They need ..... a bigger apartment. || to find | find | finding | to finding
-She enjoys ..... books in the evening. || reading | to read | read | reads
-Please stop ..... so much noise. I'm trying to study. || making | to make | make | makes
-I like ..... in the sea in summer. || swimming | swim | swims | to swimming
-I can't stand ..... after work. I'm always too tired. || to cook | cook | cooks | to cooking
-My mother loves ..... new dishes. || to try | try | tries | to trying
-He hates ..... in traffic every morning. || waiting | wait | waits | to waiting
-Sara wants ..... French next year. || to learn | learn | learning | to learning
-Students should avoid ..... up late before an exam. || staying | to stay | stay | stays
-We enjoy ..... time at the beach. || spending | to spend | spend | spends
-I need ..... my room. It's very messy. || to clean | clean | cleaning | to cleaning
-Khalid stopped ..... video games because he wanted more time to study. || playing | to play | play | plays
-I hope ..... to Japan one day. || to travel | travel | traveling | to traveling
-My little sister doesn't like ..... vegetables. || eating | eat | eats | to eating
-They want ..... a party for their father's birthday. || to have | have | having | to having
-She ..... to finish her homework before dinner. || tries | try | trying | to try
-He ..... playing tennis with his friends. || enjoys | enjoy | to enjoy | enjoying
-My friend avoids ..... coffee at night. || drinking | to drink | drink | drinks
-I love ..... music while I study. || listening to | listen to | listens to | to listening to
-Do you need ..... a break? || to take | take | taking | to taking
-I ..... to a dentist. I have a lot of pain in my teeth. || should go | should to go | should going | should to going
+I hope ..... the exam at the end of the course. || to pass | pass | pass to | passing || بعد hope نحط to + الفعل: hope to pass.
+I avoid ..... in fast food restaurants whenever possible. || eating | to eat | eat to | eat || بعد avoid نضيف ing للفعل: avoid eating.
+I dislike ..... in a hurry. || drinking | to drink | drink | drinks || بعد dislike نضيف ing للفعل: dislike drinking.
+I hate ..... early every day. || to get up | get up | to geting up | to gets up || بعد hate يجي to + الفعل أو الفعل + ing ← to get up (الخيارات الثانية غلط).
+She tried ..... her hair red, but it didn't suit her at all. || to dye | to dyes | dye | to dyeing || بعد try نحط to + الفعل الأساسي: tried to dye.
+I need ..... a stamp on this letter. || to put | to puting | put | to puts || بعد need نحط to + الفعل الأساسي: need to put.
+She avoids ..... too much meat. || eating | to eat | eat | eats || بعد avoid نضيف ing: avoids eating.
+You need ..... hard for the exam. || to study | study | studying | to studying || بعد need نحط to + الفعل: need to study.
+I enjoy ..... with my friends on weekends. || going out | to go out | go out | goes out || بعد enjoy نضيف ing: enjoy going out.
+My father stopped ..... five years ago. It's better for his health. || smoking | to smoke | smoke | smokes || بعد stop نضيف ing: stopped smoking.
+I want ..... a doctor in the future. || to become | become | becoming | to becoming || بعد want نحط to + الفعل: want to become.
+We hope ..... you again soon. || to see | see | seeing | to seeing || بعد hope نحط to + الفعل: hope to see.
+He tries ..... to the gym three times a week. || to go | go | going | to going || بعد try نحط to + الفعل: tries to go.
+My brother dislikes ..... the dishes. || washing | to wash | wash | washes || بعد dislike نضيف ing: dislikes washing.
+They need ..... a bigger apartment. || to find | find | finding | to finding || بعد need نحط to + الفعل: need to find.
+She enjoys ..... books in the evening. || reading | to read | read | reads || بعد enjoy نضيف ing: enjoys reading.
+Please stop ..... so much noise. I'm trying to study. || making | to make | make | makes || بعد stop نضيف ing: stop making.
+I like ..... in the sea in summer. || swimming | swim | swims | to swimming || بعد like يجي to أو ing ← swimming (الخيارات الثانية غلط).
+I can't stand ..... after work. I'm always too tired. || to cook | cook | cooks | to cooking || بعد can't stand يجي to أو ing ← to cook (مثال الملزمة).
+My mother loves ..... new dishes. || to try | try | tries | to trying || بعد love يجي to أو ing ← to try.
+He hates ..... in traffic every morning. || waiting | wait | waits | to waiting || بعد hate يجي to أو ing ← waiting.
+Sara wants ..... French next year. || to learn | learn | learning | to learning || بعد want نحط to + الفعل: wants to learn.
+Students should avoid ..... up late before an exam. || staying | to stay | stay | stays || بعد avoid نضيف ing: avoid staying.
+We enjoy ..... time at the beach. || spending | to spend | spend | spends || بعد enjoy نضيف ing: enjoy spending.
+I need ..... my room. It's very messy. || to clean | clean | cleaning | to cleaning || بعد need نحط to + الفعل: need to clean.
+Khalid stopped ..... video games because he wanted more time to study. || playing | to play | play | plays || بعد stop نضيف ing: stopped playing.
+I hope ..... to Japan one day. || to travel | travel | traveling | to traveling || بعد hope نحط to + الفعل: hope to travel.
+My little sister doesn't like ..... vegetables. || eating | eat | eats | to eating || بعد like يجي to أو ing ← eating.
+They want ..... a party for their father's birthday. || to have | have | having | to having || بعد want نحط to + الفعل: want to have.
+She ..... to finish her homework before dinner. || tries | try | trying | to try || She ← الفعل الأول ينضاف له s، وtry قبل y حرف غير متحرك ← tries (وبعده to finish).
+He ..... playing tennis with his friends. || enjoys | enjoy | to enjoy | enjoying || He ← الفعل الأول ينضاف له s: enjoys، وبعده playing.
+My friend avoids ..... coffee at night. || drinking | to drink | drink | drinks || بعد avoid نضيف ing: avoids drinking.
+I love ..... music while I study. || listening to | listen to | listens to | to listening to || بعد love يجي to أو ing ← listening to.
+Do you need ..... a break? || to take | take | taking | to taking || بعد need نحط to + الفعل: need to take.
+I ..... to a dentist. I have a lot of pain in my teeth. || should go | should to go | should going | should to going || بعد should يجي الفعل الأساسي مباشرة بدون to وبدون ing: should go.
 
 ## Prepositions of location
-The student is sitting ..... his desk. || at | on | under | behind
-The ruler is ..... the desk drawer. || in | on | over | at
-The light is ..... the desk. || above | under | in | at
-The backpack is ..... the table. It's on the floor. || under | above | over | in
-The poster is ..... the wall. || on | in | under | behind
-The trash can is ..... the desk. || next to | in | over | at
-The bookshelf is ..... the fan. || behind | on | in | over
-The fan is ..... the bookshelf. || in front of | in | on | under
-Excuse me, where is the bank? It's ..... the pharmacy. They are side by side. || next to | under | in | over
-I'm waiting for you ..... the bus stop. || at | in | under | over
-The traffic lights are ..... the road. The cars stop under them. || over | under | in | behind
-There is a cat sleeping ..... the car. Be careful when you drive! || under | over | above | in
-The children are playing football ..... the street. || in | over | under | above
-Park your car ..... the restaurant, not in front of it. There is a big car park back there. || behind | in front of | over | in
-Wait for me ..... the corner of the street. || on | under | over | behind
-The bakery is ..... the right of the bank. || on | in | at | under
-The police car is ..... the school gate, so the students can see it when they come out. || in front of | behind | under | over
-The bridge is ..... the river. || over | under | in | at
-The man is standing ..... the traffic lights. He wants to cross the street. || at | in | under | over
-The bus stop is ..... the hospital. It's right beside it. || next to | under | above | in
-The sign above the shop says "Pharmacy". The sign is ..... the door. || above | under | in | behind
-Look at the street: the mosque is in the middle, the bank is on the left, and the café is on the ..... of the mosque. || right | front | back | next
-My car is ..... the garage. || in | over | above | at
-There is a big tree ..... my house, so I can't see it from the street. It's in the back garden. || behind | in front of | over | on
-A: Where is the supermarket? B: It's ..... the gas station. You can see it beside the station. || next to | under | over | in
-The taxi is waiting ..... the hotel entrance. || in front of | under | above | in
-There are many shops ..... King Fahd Road. || on | under | above | over
-The streetlight is ..... the parked car. || over | under | in | at
-The bike is ..... the wall. || next to | over | in | above
-The mall is ..... the left of the hospital. || on | in | at | under
-The keys are ..... my pocket. || in | on | over | under
-The bus is ..... the car. The car can't see the road ahead. || in front of | behind | under | over
-The restaurant is ..... the ground floor of the building. || on | in | under | over
-Turn right at the traffic lights. The museum is ..... your left. || on | in | at | under
-The boy is hiding ..... the car. His friends can't see him from the street. || behind | in front of | on | over
-The newspaper is ..... the table. || on | in | under | over
-There's a coffee shop ..... the end of the street. || at | on | under | over
-The bank is on the left of the bakery, so the bakery is on the ..... of the bank. || right | left | front | behind
-The man is sitting ..... the bench in the park. || on | in | under | over
-The car is ..... the bus. The bus can't see the road ahead. || in front of | behind | under | on
+The student is sitting ..... his desk. || at | on | under | behind || at للمكان المحدد اللي يكون الشخص عنده: sitting at his desk.
+The ruler is ..... the desk drawer. || in | on | over | at || in = داخل: in the desk drawer.
+The light is ..... the desk. || above | under | in | at || over / above = فوق بدون ما يلمس: the light is above the desk.
+The backpack is ..... the table. It's on the floor. || under | above | over | in || under = تحت: under the table.
+The poster is ..... the wall. || on | in | under | behind || on = على سطح الشيء (يلمسه): on the wall.
+The trash can is ..... the desk. || next to | in | over | at || next to / beside = جنب: next to the desk.
+The bookshelf is ..... the fan. || behind | on | in | over || behind = ورا: the bookshelf is behind the fan.
+The fan is ..... the bookshelf. || in front of | in | on | under || in front of = قدام: the fan is in front of the bookshelf.
+Excuse me, where is the bank? It's ..... the pharmacy. They are side by side. || next to | under | in | over || side by side = جنب بعض ← next to.
+I'm waiting for you ..... the bus stop. || at | in | under | over || at للمكان المحدد: at the bus stop.
+The traffic lights are ..... the road. The cars stop under them. || over | under | in | behind || over = فوق بدون ما يلمس، والسيارات تقف تحتها ← over the road.
+There is a cat sleeping ..... the car. Be careful when you drive! || under | over | above | in || under = تحت السيارة.
+The children are playing football ..... the street. || in | over | under | above || in للمكان اللي الشخص داخله: in the street.
+Park your car ..... the restaurant, not in front of it. There is a big car park back there. || behind | in front of | over | in || behind = ورا المطعم (back there).
+Wait for me ..... the corner of the street. || on | under | over | behind || on the corner = على زاوية الشارع.
+The bakery is ..... the right of the bank. || on | in | at | under || on the right of = على يمين.
+The police car is ..... the school gate, so the students can see it when they come out. || in front of | behind | under | over || in front of = قدام البوابة عشان يشوفونها.
+The bridge is ..... the river. || over | under | in | at || over = فوق النهر.
+The man is standing ..... the traffic lights. He wants to cross the street. || at | in | under | over || at للمكان المحدد: at the traffic lights.
+The bus stop is ..... the hospital. It's right beside it. || next to | under | above | in || next to / beside = جنب.
+The sign above the shop says "Pharmacy". The sign is ..... the door. || above | under | in | behind || above = فوق الباب.
+Look at the street: the mosque is in the middle, the bank is on the left, and the café is on the ..... of the mosque. || right | front | back | next || البنك على اليسار، فالمقهى على اليمين ← on the right of.
+My car is ..... the garage. || in | over | above | at || in = داخل الكراج.
+There is a big tree ..... my house, so I can't see it from the street. It's in the back garden. || behind | in front of | over | on || behind = ورا البيت (في الحديقة الخلفية).
+A: Where is the supermarket? B: It's ..... the gas station. You can see it beside the station. || next to | under | over | in || beside = next to ← جنب محطة البنزين.
+The taxi is waiting ..... the hotel entrance. || in front of | under | above | in || in front of = قدام مدخل الفندق.
+There are many shops ..... King Fahd Road. || on | under | above | over || on مع أسماء الشوارع: on King Fahd Road.
+The streetlight is ..... the parked car. || over | under | in | at || over = فوق السيارة بدون ما يلمسها.
+The bike is ..... the wall. || next to | over | in | above || next to = جنب الجدار.
+The mall is ..... the left of the hospital. || on | in | at | under || on the left of = على يسار.
+The keys are ..... my pocket. || in | on | over | under || in = داخل الجيب.
+The bus is ..... the car. The car can't see the road ahead. || in front of | behind | under | over || الباص قدام السيارة، فالسيارة ما تشوف الطريق ← in front of.
+The restaurant is ..... the ground floor of the building. || on | in | under | over || on مع الأدوار: on the ground floor.
+Turn right at the traffic lights. The museum is ..... your left. || on | in | at | under || on your left = على يسارك.
+The boy is hiding ..... the car. His friends can't see him from the street. || behind | in front of | on | over || behind = ورا السيارة، عشان ما يشوفونه.
+The newspaper is ..... the table. || on | in | under | over || on = على سطح الطاولة.
+There's a coffee shop ..... the end of the street. || at | on | under | over || at the end of the street = في نهاية الشارع.
+The bank is on the left of the bakery, so the bakery is on the ..... of the bank. || right | left | front | behind || البنك على يسار المخبز، فالمخبز على يمين البنك ← on the right of.
+The man is sitting ..... the bench in the park. || on | in | under | over || on = على الكرسي (bench).
+The car is ..... the bus. The bus can't see the road ahead. || in front of | behind | under | on || السيارة قدام الباص، فالباص ما يشوف الطريق ← in front of.
