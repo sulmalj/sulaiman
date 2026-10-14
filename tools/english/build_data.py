@@ -67,7 +67,7 @@ def grammar():
 
 
 def reading():
-    """reading.txt:  ## رقم | العنوان   ثم النص (فقرات)   ثم  ?? سؤال  * صحيح  - خطأ ×3"""
+    """reading.txt:  ## رقم | العنوان   ثم النص (فقرات)   ثم  ?? سؤال  * صحيح  - خطأ ×3  !! الشرح"""
     r = rows('reading.txt')
     out, q = [], None
     for n, l in r or []:
@@ -78,6 +78,8 @@ def reading():
             q = {'q': l[3:].strip(), 'o': []}; out[-1]['qs'].append(q)
         elif l.startswith('* ') or l.startswith('- '):
             q['o'].append(l[2:].strip())
+        elif l.startswith('!! '):
+            q['e'] = l[3:].strip()
         else:
             out[-1]['text'].append(l.strip())
     import re
@@ -86,6 +88,8 @@ def reading():
             sys.exit(f'القطعة {p["n"]}: عدد الأسئلة {len(p["qs"])} (لازم 10)')
         for qq in p['qs']:
             opts(' | '.join(qq['o']), f'reading.txt القطعة {p["n"]}')
+            if not qq.get('e'):
+                sys.exit(f'القطعة {p["n"]}: السؤال «{qq["q"]}» بدون شرح (!!)')
             m = re.search(r'underlined words? "([^"]+)" in paragraph (\d)', qq['q'])
             if m:   # الكلمة اللي تحتها خط لازم تكون معلّمة _كذا_ في نفس الفقرة
                 para = next((t for t in p['text'] if t.startswith(m.group(2) + '.')), '')

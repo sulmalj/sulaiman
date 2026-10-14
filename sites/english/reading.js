@@ -17,7 +17,8 @@ window.READING = [
 "funny idea",
 "boring idea",
 "great idea"
-]
+],
+"e": "الفقرة 3 آخر جملة: «Simple ideas like this can make a big difference» ← الكاتب يعتبر فكرة النكت فكرة بسيطة (simple idea)."
 },
 {
 "q": "People laugh the most when they're ______.",
@@ -26,7 +27,8 @@ window.READING = [
 "in stressful situations",
 "watching funny videos",
 "not in pain or at school"
-]
+],
+"e": "الفقرة 2: «people laugh the most when they're around other people»."
 },
 {
 "q": "Laughter helps people ______ their pain.",
@@ -35,7 +37,8 @@ window.READING = [
 "remember",
 "explain",
 "learn about"
-]
+],
+"e": "الفقرة 1: «Laughter also helps people forget about their pain»."
 },
 {
 "q": "Why does the writer think professors and teachers should try to make students laugh?",
@@ -44,7 +47,8 @@ window.READING = [
 "Students never complete their homework quickly.",
 "Professors rarely make great efforts.",
 "Classes are usually boring."
-]
+],
+"e": "الفقرة 3: الطلاب ضحكوا و«They also remembered the lessons more» ← يتذكرون الدروس أكثر."
 },
 {
 "q": "What does the underlined word \"facilitates\" in paragraph 1 mean?",
@@ -53,7 +57,8 @@ window.READING = [
 "remembers",
 "stops",
 "slows down"
-]
+],
+"e": "facilitates learning = يسهّل التعلّم ويساعد عليه ← helps."
 },
 {
 "q": "What does the underlined word \"prescribe\" in paragraph 2 mean?",
@@ -62,7 +67,8 @@ window.READING = [
 "take",
 "watch",
 "use"
-]
+],
+"e": "«doctors prescribe drugs to patients» = الدكتور يعطي (يصرف) الدواء للمريض ← give."
 },
 {
 "q": "What does the underlined word \"They\" in paragraph 2 refer to?",
@@ -71,7 +77,8 @@ window.READING = [
 "videos",
 "hospitals",
 "patients"
-]
+],
+"e": "الجملة قبلها: «hospitals can tell visitors how helpful laughter is. They should try…» ← They = الزوار (visitors)."
 },
 {
 "q": "What does the underlined word \"They\" in paragraph 3 refer to?",
@@ -80,7 +87,8 @@ window.READING = [
 "The professors",
 "The jokes",
 "The lessons"
-]
+],
+"e": "الجملة قبلها: «his students still laughed. They also remembered…» ← They = الطلاب."
 },
 {
 "q": "What is the best title for the passage?",
@@ -89,7 +97,8 @@ window.READING = [
 "Patients and laughter",
 "Students and laughter",
 "The main reasons of laughter"
-]
+],
+"e": "الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر."
 },
 {
 "q": "What did the accounting professor do every five or ten minutes?",
@@ -98,7 +107,8 @@ window.READING = [
 "He gave the students a short test.",
 "He showed the students a funny video.",
 "He let the students play games."
-]
+],
+"e": "الفقرة 3: «he told the students a joke every five or ten minutes»."
 }
 ]
 },
@@ -118,7 +128,8 @@ window.READING = [
 "An hour or two",
 "10 to 20 minutes",
 "More than two hours"
-]
+],
+"e": "الفقرة 2: «In most countries, workers need 30 to 60 minutes to get to work»."
 },
 {
 "q": "Workers who take online meditation classes ______.",
@@ -127,7 +138,8 @@ window.READING = [
 "can't send emails after a certain time",
 "go to the office every day",
 "need more time to get to work"
-]
+],
+"e": "الفقرة 3: «Workers can do something quiet together that helps them improve their attention»."
 },
 {
 "q": "In paragraph 2, why does the writer mention not needing to provide places for workers to relax?",
@@ -136,7 +148,8 @@ window.READING = [
 "To show that workers don't like game rooms",
 "To explain why workers feel stressed",
 "To show that offices are not safe"
-]
+],
+"e": "الفقرة 2 تتكلم عن توفير المال: «For employers, it saves money… They also don't need to… provide places like game rooms» ← المثال يوضّح كيف يوفّر صاحب العمل."
 },
 {
 "q": "What do the underlined words \"heading to\" in paragraph 1 mean?",
@@ -145,7 +158,8 @@ window.READING = [
 "coming back from",
 "looking at",
 "thinking about"
-]
+],
+"e": "«before heading to work» = قبل ما يروح للعمل ← going to."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 1 refer to?",
@@ -154,7 +168,8 @@ window.READING = [
 "the park",
 "the coffee",
 "the laptop"
-]
+],
+"e": "«I'd leave work and not think about it until the next day» ← it ترجع على work."
 },
 {
 "q": "What do the underlined words \"spring for\" in paragraph 2 mean?",
@@ -163,7 +178,8 @@ window.READING = [
 "look for",
 "ask for",
 "wait for"
-]
+],
+"e": "«spring for things like office parties» = يدفع تكاليف الحفلات ← pay for."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -172,7 +188,8 @@ window.READING = [
 "businesses",
 "classes",
 "emails"
-]
+],
+"e": "«Workers can do something quiet together that helps them…» ← them = العمّال (workers)."
 },
 {
 "q": "Why does Alex find working from home stressful?",
@@ -181,7 +198,8 @@ window.READING = [
 "He doesn't like his laptop.",
 "He needs an hour to get to work.",
 "His home is too noisy."
-]
+],
+"e": "الفقرة 1: Alex يقول «It's like the workday never ends… I answer emails and texts at all hours»."
 },
 {
 "q": "What does Alex do before he starts work?",
@@ -190,7 +208,8 @@ window.READING = [
 "He drives to his office.",
 "He answers emails in the park.",
 "He goes to a meditation class."
-]
+],
+"e": "الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park»."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -199,7 +218,8 @@ window.READING = [
 "Working from home is perfect for all workers.",
 "Offices are always better than working from home.",
 "Employers should pay for more office parties."
-]
+],
+"e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems»."
 }
 ]
 },
@@ -220,7 +240,8 @@ window.READING = [
 "successful",
 "interesting",
 "relaxing"
-]
+],
+"e": "الفقرة 1: «The stress of modern jobs can make it challenging for employees to focus»."
 },
 {
 "q": "Some employees don't like meditation classes because the classes ______.",
@@ -229,7 +250,8 @@ window.READING = [
 "use time and resources",
 "take place during lunch",
 "make them miss work"
-]
+],
+"e": "الفقرة 2: «meditation doesn't support them at all and adds to their stress»."
 },
 {
 "q": "The writer says that carefully planned solutions feel like ______ for employees.",
@@ -238,7 +260,8 @@ window.READING = [
 "more time",
 "more useful",
 "more fun"
-]
+],
+"e": "الفقرة 3: «Carefully planned solutions can feel like more work for employees»."
 },
 {
 "q": "The writer gives an example to show how ______.",
@@ -247,7 +270,8 @@ window.READING = [
 "planning a party can be better than building a game room",
 "building a game room can be better than trying cakes",
 "planning a party can be better than trying cakes"
-]
+],
+"e": "الفقرة 4: بدل بناء غرفة ألعاب (building a game room)، المدير يقول «Let's all go do it right now!» ويروحون يجربون الكيك ← تجربة الكيك أحسن من بناء غرفة ألعاب."
 },
 {
 "q": "Which idea for reducing stress does the writer NOT mention?",
@@ -256,7 +280,8 @@ window.READING = [
 "buying plants",
 "buying lunches",
 "buying gifts"
-]
+],
+"e": "الفقرة 2 ذكرت plants و lunches، والفقرة 4 ذكرت gifts. أما الكتب (books) ما انذكرت."
 },
 {
 "q": "What do the underlined words \"give a boost\" in paragraph 2 mean?",
@@ -265,7 +290,8 @@ window.READING = [
 "stress",
 "entertain",
 "stop"
-]
+],
+"e": "«they don't give a boost to everyone» = ما تساعد الكل ← help."
 },
 {
 "q": "What does the underlined word \"spontaneously\" in paragraph 3 mean?",
@@ -274,7 +300,8 @@ window.READING = [
 "without helping",
 "with careful thinking",
 "with a lot of work"
-]
+],
+"e": "الفقرة 3: الحلول «spontaneously» عكس «Carefully planned»، يعني تصير فجأة «in the moment» ← without planning."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 2 refer to?",
@@ -283,7 +310,8 @@ window.READING = [
 "the employees",
 "the meditation classes",
 "the game rooms"
-]
+],
+"e": "«thinking about the problems in their lives, and it's hard to stop thinking about them» ← them = المشاكل."
 },
 {
 "q": "What happens when employees get sick often or quit?",
@@ -292,7 +320,8 @@ window.READING = [
 "Employers must build more game rooms.",
 "Employees must take more meditation classes.",
 "Employees must work longer hours."
-]
+],
+"e": "الفقرة 1: «employers must use time and resources to find and train new employees»."
 },
 {
 "q": "What is the best title for the passage?",
@@ -301,7 +330,8 @@ window.READING = [
 "How to plan a perfect office party",
 "Why meditation is the best solution",
 "Building game rooms at work"
-]
+],
+"e": "القطعة كلها عن حلول ضغط العمل، وأحسنها اللي تصير بدون تخطيط (spontaneously)."
 }
 ]
 },
@@ -322,7 +352,8 @@ window.READING = [
 "famous",
 "crowded",
 "angry"
-]
+],
+"e": "الفقرة 1: «For the first few weeks, they may feel lonely»."
 },
 {
 "q": "Students who make friends early ______.",
@@ -331,7 +362,8 @@ window.READING = [
 "don't need to join clubs",
 "always move to a new city",
 "study less than other students"
-]
+],
+"e": "الفقرة 1: «students who make friends early are happier and get better grades»."
 },
 {
 "q": "Why is it easy to start a conversation in a club?",
@@ -340,7 +372,8 @@ window.READING = [
 "Clubs are always quiet.",
 "Teachers help students talk.",
 "People in clubs are never shy."
-]
+],
+"e": "الفقرة 2: «you meet people who are interested in the same things as you, so it is easy to start a conversation»."
 },
 {
 "q": "Which club does the writer NOT mention?",
@@ -349,7 +382,8 @@ window.READING = [
 "sports",
 "art",
 "photography"
-]
+],
+"e": "الفقرة 2 ذكرت «sports, art, photography»، والطبخ (cooking) ما انذكر."
 },
 {
 "q": "What does the underlined word \"lonely\" in paragraph 1 mean?",
@@ -358,7 +392,8 @@ window.READING = [
 "happy with many friends",
 "very tired",
 "very busy"
-]
+],
+"e": "lonely = تحس إنك وحيد وحزين لأن ما عندك أحد. والجملة عن طلاب تركوا أصحابهم."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -367,7 +402,8 @@ window.READING = [
 "new people",
 "clubs",
 "classmates"
-]
+],
+"e": "«Some students are shy, and talking to new people is hard for them» ← them = الطلاب الخجولين."
 },
 {
 "q": "What does the underlined word \"gradually\" in paragraph 3 mean?",
@@ -376,7 +412,8 @@ window.READING = [
 "suddenly",
 "never",
 "quickly"
-]
+],
+"e": "«can gradually become real friendships» = شوي شوي ← slowly, step by step."
 },
 {
 "q": "What small step does the writer suggest for shy students?",
@@ -385,7 +422,8 @@ window.READING = [
 "Joining three clubs at the same time",
 "Moving to a new city",
 "Talking to the professor every day"
-]
+],
+"e": "الفقرة 3: «they can say hello to the person sitting next to them in class»."
 },
 {
 "q": "The writer says that real friendships ______.",
@@ -394,7 +432,8 @@ window.READING = [
 "happen in one day",
 "start only in clubs",
 "are not important"
-]
+],
+"e": "الفقرة 4: «Real friendships don't happen in one day… be patient»."
 },
 {
 "q": "What is the best title for the passage?",
@@ -403,7 +442,8 @@ window.READING = [
 "Why university is difficult",
 "The best clubs at university",
 "How to get better grades"
-]
+],
+"e": "القطعة كلها عن طرق تكوين صداقات في الجامعة."
 }
 ]
 },
@@ -424,7 +464,8 @@ window.READING = [
 "It is always very cheap.",
 "It makes people rich.",
 "It is easy to sell items."
-]
+],
+"e": "الفقرة 1: «anyone can do it, at any age»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 1 refer to?",
@@ -433,7 +474,8 @@ window.READING = [
 "the world",
 "a bottle",
 "a toy"
-]
+],
+"e": "«Collecting is one of the most popular hobbies because anyone can do it» ← it = collecting."
 },
 {
 "q": "According to the passage, how can collecting coins help people?",
@@ -442,7 +484,8 @@ window.READING = [
 "They become famous.",
 "They forget about their friends.",
 "They travel to England."
-]
+],
+"e": "الفقرة 2: «A person who collects coins… learns a lot about the history of different countries»."
 },
 {
 "q": "Collectors often meet at clubs and events to ______.",
@@ -451,7 +494,8 @@ window.READING = [
 "learn how to cook",
 "play sports together",
 "write about history"
-]
+],
+"e": "الفقرة 2: «collectors often meet at clubs and events to buy, sell, and share their items»."
 },
 {
 "q": "What does the underlined word \"events\" in paragraph 2 mean?",
@@ -460,7 +504,8 @@ window.READING = [
 "old coins",
 "small shops",
 "problems"
-]
+],
+"e": "events = مناسبات وفعاليات منظّمة يجتمع فيها الناس."
 },
 {
 "q": "How many keys does the woman in the United States have?",
@@ -469,7 +514,8 @@ window.READING = [
 "More than 8,000",
 "About 300",
 "Exactly 1,000"
-]
+],
+"e": "الفقرة 3: «she has over 3,000 of them». أما 8,000 فهي البطّات حق الرجل."
 },
 {
 "q": "What does the man in England collect?",
@@ -478,7 +524,8 @@ window.READING = [
 "keys",
 "stamps",
 "paintings"
-]
+],
+"e": "الفقرة 3: «One man in England has more than 8,000 rubber ducks»."
 },
 {
 "q": "Collecting can become a problem when people ______.",
@@ -487,7 +534,8 @@ window.READING = [
 "meet other collectors",
 "learn about history",
 "organize their collection"
-]
+],
+"e": "الفقرة 4: «collecting can become a problem if people spend too much money on it»."
 },
 {
 "q": "What does the underlined word \"set\" in paragraph 4 mean?",
@@ -496,7 +544,8 @@ window.READING = [
 "break",
 "forget",
 "spend"
-]
+],
+"e": "«set a budget» = يحدد ميزانية ← decide on."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -505,7 +554,8 @@ window.READING = [
 "Collecting is a waste of money.",
 "Only rich people can collect things.",
 "Rubber ducks are the most valuable items to collect."
-]
+],
+"e": "القطعة تذكر فوائد الجمع، وفي الأخير تنبّه على صرف الفلوس."
 }
 ]
 },
@@ -526,7 +576,8 @@ window.READING = [
 "problems",
 "costs",
 "mistakes"
-]
+],
+"e": "benefits = فوائد ← good results."
 },
 {
 "q": "Why do many companies want employees who speak another language?",
@@ -535,7 +586,8 @@ window.READING = [
 "To teach other employees",
 "To travel less",
 "To write books"
-]
+],
+"e": "الفقرة 2: «companies want employees who can communicate with customers from other countries»."
 },
 {
 "q": "According to studies, people who speak two languages ______.",
@@ -544,7 +596,8 @@ window.READING = [
 "are always rich",
 "don't need to study",
 "forget things easily"
-]
+],
+"e": "الفقرة 2: «people who speak two languages have better memories»."
 },
 {
 "q": "How does a new language help you when you travel?",
@@ -553,7 +606,8 @@ window.READING = [
 "You can travel for free.",
 "You don't need a passport.",
 "You can find a job in the airport."
-]
+],
+"e": "الفقرة 2: «you can talk to local people, read signs, and order food without help»."
 },
 {
 "q": "Experts say that the most important thing in learning a language is ______.",
@@ -562,7 +616,8 @@ window.READING = [
 "money",
 "talent",
 "age"
-]
+],
+"e": "الفقرة 3: «Experts say that practice is the most important thing»."
 },
 {
 "q": "How long should you use the language every day, according to the writer?",
@@ -571,7 +626,8 @@ window.READING = [
 "At least three hours",
 "Exactly one hour",
 "Fifty minutes"
-]
+],
+"e": "الفقرة 3: «use the language every day, even for just fifteen minutes»."
 },
 {
 "q": "What is a language partner?",
@@ -580,7 +636,8 @@ window.READING = [
 "A teacher who works at a school",
 "A person who travels with you",
 "An app that teaches languages"
-]
+],
+"e": "الفقرة 3: «someone who speaks the language well and wants to learn your language»."
 },
 {
 "q": "What does the underlined word \"they\" in paragraph 4 refer to?",
@@ -589,7 +646,8 @@ window.READING = [
 "people",
 "languages",
 "partners"
-]
+],
+"e": "«Mistakes are a normal part of learning, and they help you improve» ← they = الأخطاء."
 },
 {
 "q": "Which way of learning does the writer NOT mention?",
@@ -598,7 +656,8 @@ window.READING = [
 "watching movies",
 "listening to songs",
 "using apps"
-]
+],
+"e": "الفقرة 3 ذكرت movies و songs و apps، والجرايد (newspapers) ما انذكرت."
 },
 {
 "q": "What is the writer's advice about mistakes?",
@@ -607,7 +666,8 @@ window.READING = [
 "Try never to make them.",
 "Stop learning if you make many mistakes.",
 "Only make mistakes with your teacher."
-]
+],
+"e": "الفقرة 4: «don't be afraid of making mistakes… Mistakes are a normal part of learning»."
 }
 ]
 },
@@ -628,7 +688,8 @@ window.READING = [
 "Meet their classmates face to face",
 "Live near the campus",
 "Go to the library every day"
-]
+],
+"e": "الفقرة 1: «They can watch lectures, do tests, and talk to their teachers from home»."
 },
 {
 "q": "What does the underlined word \"convenient\" in paragraph 2 mean?",
@@ -637,7 +698,8 @@ window.READING = [
 "expensive",
 "difficult",
 "boring"
-]
+],
+"e": "convenient = مريح ومناسب، لأن الطالب يدرس بأي وقت وأي مكان."
 },
 {
 "q": "Why are online classes often cheaper?",
@@ -646,7 +708,8 @@ window.READING = [
 "Teachers work for free.",
 "Students don't need computers.",
 "The classes are shorter."
-]
+],
+"e": "الفقرة 2: «students don't need to pay for transportation or housing near the campus»."
 },
 {
 "q": "Who may feel more comfortable asking questions online?",
@@ -655,7 +718,8 @@ window.READING = [
 "Teachers",
 "Parents",
 "Organized students"
-]
+],
+"e": "الفقرة 2: «students who are shy may feel more comfortable asking questions online»."
 },
 {
 "q": "Which distraction does the writer NOT mention?",
@@ -664,7 +728,8 @@ window.READING = [
 "phones",
 "the TV",
 "family members"
-]
+],
+"e": "الفقرة 3 ذكرت «their phones, the TV, or family members»، والجيران (neighbours) ما انذكروا."
 },
 {
 "q": "What do students miss in online classes?",
@@ -673,7 +738,8 @@ window.READING = [
 "The chance to study at any time",
 "The chance to save money",
 "The chance to watch lectures"
-]
+],
+"e": "الفقرة 3: «Students also miss the chance to meet classmates face to face»."
 },
 {
 "q": "What do the underlined words \"depends on\" in paragraph 4 mean?",
@@ -682,7 +748,8 @@ window.READING = [
 "is better than",
 "is far from",
 "is the same as"
-]
+],
+"e": "«The answer depends on the student» = الجواب يتحدد حسب الطالب ← is decided by."
 },
 {
 "q": "Which students often do well online?",
@@ -691,7 +758,8 @@ window.READING = [
 "Students who need more support",
 "Students who like to meet friends",
 "Students who live near the campus"
-]
+],
+"e": "الفقرة 4: «Students who are organized and can manage their time well often do well online»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 4 refer to?",
@@ -700,7 +768,8 @@ window.READING = [
 "universities",
 "classes",
 "teachers"
-]
+],
+"e": "«so students can choose what works best for them» ← them = الطلاب."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -709,7 +778,8 @@ window.READING = [
 "Online classes are always better than classrooms.",
 "Classrooms will disappear in the future.",
 "Students should never study online."
-]
+],
+"e": "القطعة تذكر مميزات وعيوب الدراسة أونلاين، وتقول الأفضل يعتمد على الطالب."
 }
 ]
 },
@@ -730,7 +800,8 @@ window.READING = [
 "It is very healthy.",
 "It has many vitamins.",
 "It is only sold to children."
-]
+],
+"e": "الفقرة 1: «It is cheap, quick, and easy to find»."
 },
 {
 "q": "What makes fast food taste delicious?",
@@ -739,7 +810,8 @@ window.READING = [
 "fresh vegetables",
 "vitamins",
 "water"
-]
+],
+"e": "الفقرة 2: «a lot of salt, sugar, and fat. These things make the food taste delicious»."
 },
 {
 "q": "What does the underlined word \"overweight\" in paragraph 2 mean?",
@@ -748,7 +820,8 @@ window.READING = [
 "very thin",
 "very tall",
 "very strong"
-]
+],
+"e": "overweight = وزنه زايد عن الطبيعي ← heavier than is healthy."
 },
 {
 "q": "What does the underlined word \"nutritious\" in paragraph 2 mean?",
@@ -757,7 +830,8 @@ window.READING = [
 "delicious",
 "expensive",
 "fast"
-]
+],
+"e": "nutritious = مغذّي ومفيد للجسم. والجملة تقول إن الأكل السريع ما فيه فيتامينات كثيرة."
 },
 {
 "q": "Which reason for eating fast food does the writer NOT mention?",
@@ -766,7 +840,8 @@ window.READING = [
 "People don't have time to cook.",
 "Fast food can be cheaper.",
 "Fast food companies have many ads."
-]
+],
+"e": "الفقرة 3 ذكرت الوقت والسعر والإعلانات، وما ذكرت إن الناس ما يعرفون يطبخون."
 },
 {
 "q": "Fast food companies spend a lot of money on ads, especially for ______.",
@@ -775,7 +850,8 @@ window.READING = [
 "doctors",
 "old people",
 "students"
-]
+],
+"e": "الفقرة 3: «Fast food companies spend a lot of money on ads, especially ads for children»."
 },
 {
 "q": "How often does the writer suggest eating fast food?",
@@ -784,7 +860,8 @@ window.READING = [
 "Every day",
 "Never",
 "Three times a week"
-]
+],
+"e": "الفقرة 4: «try to eat it only once a week»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 4 refer to?",
@@ -793,7 +870,8 @@ window.READING = [
 "the good news",
 "a week",
 "soda"
-]
+],
+"e": "«You don't need to stop eating fast food completely. Instead, try to eat it» ← it = fast food."
 },
 {
 "q": "Which is a healthier option, according to the writer?",
@@ -802,7 +880,8 @@ window.READING = [
 "Soda instead of water",
 "Fries instead of salad",
 "Pizza instead of burgers"
-]
+],
+"e": "الفقرة 4: «grilled chicken instead of fried chicken, and water instead of soda»."
 },
 {
 "q": "What is the best title for the passage?",
@@ -811,7 +890,8 @@ window.READING = [
 "How to make a burger at home",
 "The history of fast food",
 "Why children love ads"
-]
+],
+"e": "القطعة تشرح مشاكل الأكل السريع، وفي الأخير حلول بسيطة."
 }
 ]
 },
@@ -832,7 +912,8 @@ window.READING = [
 "Food that is sold only in small shops",
 "Food that has a lot of sugar",
 "Food that comes from other countries"
-]
+],
+"e": "الفقرة 1: «grown or produced without chemicals»."
 },
 {
 "q": "Organic farmers don't use chemical sprays to ______.",
@@ -841,7 +922,8 @@ window.READING = [
 "grow bigger fruit",
 "feed their animals",
 "clean the water"
-]
+],
+"e": "الفقرة 1: «don't use chemical sprays to kill insects»."
 },
 {
 "q": "According to some studies, organic fruit and vegetables have ______.",
@@ -850,7 +932,8 @@ window.READING = [
 "much more sugar",
 "fewer vitamins",
 "a lot of chemicals"
-]
+],
+"e": "الفقرة 2: «organic fruit and vegetables have slightly more vitamins»."
 },
 {
 "q": "Why is organic farming better for the environment?",
@@ -859,7 +942,8 @@ window.READING = [
 "It uses more chemicals.",
 "It produces more food.",
 "It needs fewer workers."
-]
+],
+"e": "الفقرة 2: «the soil, the water, and the animals… stay cleaner and safer»."
 },
 {
 "q": "What does the underlined word \"safer\" in paragraph 2 mean?",
@@ -868,7 +952,8 @@ window.READING = [
 "more expensive",
 "more crowded",
 "more dangerous"
-]
+],
+"e": "safer = أكثر أماناً، يعني محمية من الخطر."
 },
 {
 "q": "How much more can organic food cost than normal food?",
@@ -877,7 +962,8 @@ window.READING = [
 "2 to 10 percent more",
 "200 percent more",
 "The same price"
-]
+],
+"e": "الفقرة 3: «Organic food can cost 20 to 100 percent more»."
 },
 {
 "q": "Which is a reason why organic food is expensive?",
@@ -886,7 +972,8 @@ window.READING = [
 "It is always imported.",
 "It has more chemicals.",
 "Supermarkets don't like it."
-]
+],
+"e": "الفقرة 3: «organic farming needs more workers and more time»."
 },
 {
 "q": "What does the underlined word \"supply\" in paragraph 3 mean?",
@@ -895,7 +982,8 @@ window.READING = [
 "the price",
 "the taste",
 "the farmers"
-]
+],
+"e": "supply = الكمية المتوفرة. والمزارع العضوية تنتج أقل، فالكمية أقل."
 },
 {
 "q": "According to some experts, what is more important than choosing organic food?",
@@ -904,7 +992,8 @@ window.READING = [
 "Buying food from big supermarkets",
 "Eating only meat and dairy",
 "Spending more money on food"
-]
+],
+"e": "الفقرة 4: «eating a lot of fruit and vegetables is more important than choosing organic ones»."
 },
 {
 "q": "What do experts suggest for people with a small budget?",
@@ -913,7 +1002,8 @@ window.READING = [
 "Never buy organic food.",
 "Buy only organic meat.",
 "Stop eating vegetables."
-]
+],
+"e": "الفقرة 4: «buying organic only for the fruit and vegetables that you eat most often»."
 }
 ]
 },
@@ -934,7 +1024,8 @@ window.READING = [
 "One",
 "Three",
 "Four"
-]
+],
+"e": "الفقرة 1: «There are two Eids every year»."
 },
 {
 "q": "When does Eid al-Fitr come?",
@@ -943,7 +1034,8 @@ window.READING = [
 "During the time of Hajj",
 "At the beginning of the year",
 "In the summer only"
-]
+],
+"e": "الفقرة 1: «Eid al-Fitr, which comes after the month of Ramadan»."
 },
 {
 "q": "How does Eid start in Saudi Arabia?",
@@ -952,7 +1044,8 @@ window.READING = [
 "With fireworks at night",
 "With a big lunch",
 "With a trip to the mall"
-]
+],
+"e": "الفقرة 2: «Eid starts early in the morning with the Eid prayer»."
 },
 {
 "q": "Why are children very excited on Eid?",
@@ -961,7 +1054,8 @@ window.READING = [
 "They don't have to wear new clothes.",
 "They go to school.",
 "They cook traditional dishes."
-]
+],
+"e": "الفقرة 2: «adults give them money or small gifts called \"Eidiya\"»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 2 refer to?",
@@ -970,7 +1064,8 @@ window.READING = [
 "adults",
 "families",
 "clothes"
-]
+],
+"e": "«Children are very excited, because adults give them…» ← them = الأطفال."
 },
 {
 "q": "Which food does the writer NOT mention?",
@@ -979,7 +1074,8 @@ window.READING = [
 "kabsa",
 "dates",
 "sweets"
-]
+],
+"e": "الفقرة 3 ذكرت kabsa و dates و sweets، والسمك (fish) ما انذكر."
 },
 {
 "q": "What does the underlined word \"tradition\" in paragraph 3 mean?",
@@ -988,7 +1084,8 @@ window.READING = [
 "a new idea",
 "a kind of food",
 "a problem"
-]
+],
+"e": "tradition = عادة يسويها الناس من زمان."
 },
 {
 "q": "What does the underlined word \"crowded\" in paragraph 4 mean?",
@@ -997,7 +1094,8 @@ window.READING = [
 "empty",
 "closed",
 "quiet"
-]
+],
+"e": "crowded = مزدحم ومليان ناس."
 },
 {
 "q": "Which event do cities organize during Eid, according to the passage?",
@@ -1006,7 +1104,8 @@ window.READING = [
 "football matches",
 "car races",
 "exams"
-]
+],
+"e": "الفقرة 4: «events during Eid, like fireworks, festivals, and shows for children»."
 },
 {
 "q": "What is the best thing about Eid for most people, according to the writer?",
@@ -1015,7 +1114,8 @@ window.READING = [
 "Getting new clothes",
 "Going to the mall",
 "Eating sweets"
-]
+],
+"e": "آخر جملة: «the best thing about Eid is spending time with the people they love»."
 }
 ]
 },
@@ -1036,7 +1136,8 @@ window.READING = [
 "It is boring.",
 "It is dangerous.",
 "It is easy."
-]
+],
+"e": "الفقرة 1: «they think it is too expensive»."
 },
 {
 "q": "When are flights and hotels usually more expensive?",
@@ -1045,7 +1146,8 @@ window.READING = [
 "In the winter only",
 "On weekdays",
 "Early in the morning"
-]
+],
+"e": "الفقرة 2: «Flights and hotels are usually more expensive during holidays and in the summer»."
 },
 {
 "q": "Why should you book your tickets early?",
@@ -1054,7 +1156,8 @@ window.READING = [
 "Airlines give free meals.",
 "You can choose a bigger hotel.",
 "Tickets are only sold early."
-]
+],
+"e": "الفقرة 2: «prices often increase close to the travel date»."
 },
 {
 "q": "What does the underlined word \"increase\" in paragraph 2 mean?",
@@ -1063,7 +1166,8 @@ window.READING = [
 "go down",
 "stay the same",
 "disappear"
-]
+],
+"e": "increase = يزيد ويرتفع ← go up."
 },
 {
 "q": "According to paragraph 3, why is renting an apartment a good idea?",
@@ -1072,7 +1176,8 @@ window.READING = [
 "It is always near the airport.",
 "It has a swimming pool.",
 "It includes free tours."
-]
+],
+"e": "الفقرة 3: «Apartments often have a kitchen, so you can prepare some of your meals»."
 },
 {
 "q": "Which free activity does the writer NOT mention?",
@@ -1081,7 +1186,8 @@ window.READING = [
 "visiting museums",
 "walking in parks",
 "visiting markets"
-]
+],
+"e": "الفقرة 4 ذكرت museums و parks و markets، والبحر (beach) ما انذكر."
 },
 {
 "q": "How do you pay for a walking tour?",
@@ -1090,7 +1196,8 @@ window.READING = [
 "You pay a fixed price before you start.",
 "You don't pay anything.",
 "You pay the hotel."
-]
+],
+"e": "الفقرة 4: «you only pay what you want at the end»."
 },
 {
 "q": "What do the underlined words \"public transportation\" in paragraph 4 mean?",
@@ -1099,7 +1206,8 @@ window.READING = [
 "private cars",
 "taxis",
 "planes"
-]
+],
+"e": "public transportation = المواصلات العامة، والكاتب يقول «Buses and trains»."
 },
 {
 "q": "What does the underlined word \"they\" in paragraph 4 refer to?",
@@ -1108,7 +1216,8 @@ window.READING = [
 "local guides",
 "taxis",
 "markets"
-]
+],
+"e": "«Buses and trains are cheap, and they help you see the city» ← they = الباصات والقطارات."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -1117,7 +1226,8 @@ window.READING = [
 "Travelling is only for rich people.",
 "Hotels are better than apartments.",
 "You should always travel in the summer."
-]
+],
+"e": "الفقرة 1: «You just need to make good plans before you go»."
 }
 ]
 },
@@ -1138,7 +1248,8 @@ window.READING = [
 "50 percent",
 "19 percent",
 "9 percent"
-]
+],
+"e": "الفقرة 1: «spends about 90 percent of their time inside buildings»."
 },
 {
 "q": "How did people feel after walking in a park for 90 minutes?",
@@ -1147,7 +1258,8 @@ window.READING = [
 "More tired",
 "More stressed",
 "Hungrier"
-]
+],
+"e": "الفقرة 2: «felt calmer and more positive»."
 },
 {
 "q": "Why do we usually move more when we are outside?",
@@ -1156,7 +1268,8 @@ window.READING = [
 "We sleep more.",
 "We watch more screens.",
 "We eat more food."
-]
+],
+"e": "الفقرة 2: «We walk, run, ride bikes, or play sports»."
 },
 {
 "q": "What does sunlight help our bodies make?",
@@ -1165,7 +1278,8 @@ window.READING = [
 "vitamin C",
 "sugar",
 "water"
-]
+],
+"e": "الفقرة 2: «Sunlight also helps our bodies make vitamin D»."
 },
 {
 "q": "What does the underlined word \"concentrate\" in paragraph 3 mean?",
@@ -1174,7 +1288,8 @@ window.READING = [
 "sleep",
 "play",
 "forget"
-]
+],
+"e": "concentrate = يركّز ← focus."
 },
 {
 "q": "What are \"forest classes\"?",
@@ -1183,7 +1298,8 @@ window.READING = [
 "Classes about how to plant trees",
 "Classes for adults in the mountains",
 "Online classes about nature"
-]
+],
+"e": "الفقرة 3: «where children learn outside for part of the day»."
 },
 {
 "q": "Where do some schools have \"forest classes\"?",
@@ -1192,7 +1308,8 @@ window.READING = [
 "In Asia",
 "In Africa",
 "In America"
-]
+],
+"e": "الفقرة 3: «Some schools in Europe now have \"forest classes,\"»."
 },
 {
 "q": "How much time in nature do experts suggest each week?",
@@ -1201,7 +1318,8 @@ window.READING = [
 "At least ninety minutes a day",
 "Ten hours",
 "Thirty minutes"
-]
+],
+"e": "الفقرة 4: «spending at least two hours a week in nature»."
 },
 {
 "q": "What does the underlined word \"habits\" in paragraph 4 mean?",
@@ -1210,7 +1328,8 @@ window.READING = [
 "problems",
 "plants",
 "trips"
-]
+],
+"e": "habits = عادات تسويها بشكل منتظم."
 },
 {
 "q": "What is the best title for the passage?",
@@ -1219,7 +1338,8 @@ window.READING = [
 "How to build a garden",
 "The best parks in Europe",
 "Why offices are bad"
-]
+],
+"e": "القطعة كلها عن فوائد الطبيعة وأهمية قضاء وقت فيها."
 }
 ]
 },
@@ -1240,7 +1360,8 @@ window.READING = [
 "Finding a job",
 "Making friends",
 "Learning a language"
-]
+],
+"e": "الفقرة 1: «Finding a place to live is one of the first challenges they face»."
 },
 {
 "q": "What does the underlined word \"shortage\" in paragraph 1 mean?",
@@ -1249,7 +1370,8 @@ window.READING = [
 "too much of something",
 "a high price",
 "a small room"
-]
+],
+"e": "shortage = نقص، يعني ما فيه سكن كافي للطلاب."
 },
 {
 "q": "According to paragraph 2, why can landlords ask for more money?",
@@ -1258,7 +1380,8 @@ window.READING = [
 "Students are rich.",
 "Apartments are very big.",
 "Universities pay the rent."
-]
+],
+"e": "الفقرة 2: «When many students want to live near the campus, landlords can ask for more money»."
 },
 {
 "q": "What happens to students who live far from the university?",
@@ -1267,7 +1390,8 @@ window.READING = [
 "They don't need to pay rent.",
 "They live with their professors.",
 "They study online."
-]
+],
+"e": "الفقرة 2: «spend a lot of time on public transportation every day»."
 },
 {
 "q": "How do roommates save money?",
@@ -1276,7 +1400,8 @@ window.READING = [
 "They don't pay for electricity.",
 "They live in dormitories.",
 "They work for the landlord."
-]
+],
+"e": "الفقرة 3: «they can divide the rent and the bills»."
 },
 {
 "q": "Some students live with a family in exchange for ______.",
@@ -1285,7 +1410,8 @@ window.READING = [
 "free food",
 "English lessons",
 "a car"
-]
+],
+"e": "الفقرة 3: «in exchange for help with housework or taking care of children»."
 },
 {
 "q": "Dormitories are usually ______ than private apartments.",
@@ -1294,7 +1420,8 @@ window.READING = [
 "bigger",
 "noisier",
 "farther"
-]
+],
+"e": "الفقرة 3: «dormitories, which are usually cheaper than private apartments»."
 },
 {
 "q": "Why is a cheap apartment not always a good choice?",
@@ -1303,7 +1430,8 @@ window.READING = [
 "It is always dirty.",
 "It has no landlord.",
 "It is too big."
-]
+],
+"e": "الفقرة 4: «A cheap apartment is not a good choice if it takes two hours to get to class»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 4 refer to?",
@@ -1312,7 +1440,8 @@ window.READING = [
 "the location",
 "the class",
 "the contract"
-]
+],
+"e": "«check that it is clean, safe, and not too noisy» ← it = الشقة."
 },
 {
 "q": "Which extra cost does the writer mention?",
@@ -1321,7 +1450,8 @@ window.READING = [
 "food",
 "books",
 "transportation"
-]
+],
+"e": "الفقرة 4: «extra costs, like electricity and internet»."
 }
 ]
 },
@@ -1342,7 +1472,8 @@ window.READING = [
 "It is quiet, and it is clean.",
 "It is safe, and it is free.",
 "You don't need to cook or clean."
-]
+],
+"e": "الفقرة 1: «It can save money, and it can be fun to live with a friend»."
 },
 {
 "q": "What happens when one roommate never washes the dishes?",
@@ -1351,7 +1482,8 @@ window.READING = [
 "The landlord will be happy.",
 "They will save money.",
 "The messy roommate will move out."
-]
+],
+"e": "الفقرة 2: «the neat roommate will soon feel angry»."
 },
 {
 "q": "What is another common problem, besides cleaning?",
@@ -1360,7 +1492,8 @@ window.READING = [
 "food",
 "the internet",
 "transportation"
-]
+],
+"e": "الفقرة 2: «Noise is another problem»."
 },
 {
 "q": "When should roommates talk about their rules?",
@@ -1369,7 +1502,8 @@ window.READING = [
 "After they finish university",
 "Only when there is a problem",
 "At the end of every month"
-]
+],
+"e": "الفقرة 3: «roommates should talk about their rules before they move in together»."
 },
 {
 "q": "What does the underlined word \"schedule\" in paragraph 3 mean?",
@@ -1378,7 +1512,8 @@ window.READING = [
 "a type of cleaning product",
 "a small room",
 "a bill"
-]
+],
+"e": "schedule = جدول يوضّح مين ينظّف في أي يوم."
 },
 {
 "q": "What example of quiet hours does the writer give?",
@@ -1387,7 +1522,8 @@ window.READING = [
 "After 9 p.m. every day",
 "Before 7 a.m. on weekends",
 "During lunch time"
-]
+],
+"e": "الفقرة 3: «quiet hours, such as after 11 p.m. on weekdays»."
 },
 {
 "q": "According to the writer, what is the key to a happy home?",
@@ -1396,7 +1532,8 @@ window.READING = [
 "A big apartment",
 "Expensive furniture",
 "Living alone"
-]
+],
+"e": "الفقرة 4: «Good communication is the key to a happy home»."
 },
 {
 "q": "What does the underlined word \"politely\" in paragraph 4 mean?",
@@ -1405,7 +1542,8 @@ window.READING = [
 "in an angry way",
 "very quickly",
 "very loudly"
-]
+],
+"e": "politely = بأدب واحترام، وهو عكس «getting angry» اللي في نفس الجملة."
 },
 {
 "q": "Which topic does the writer NOT suggest roommates discuss?",
@@ -1414,7 +1552,8 @@ window.READING = [
 "cleaning",
 "quiet hours",
 "sharing costs"
-]
+],
+"e": "الفقرة 3 ذكرت التنظيف والهدوء والمصاريف، واختيار الجامعة ما انذكر."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -1423,7 +1562,8 @@ window.READING = [
 "Students should never live with roommates.",
 "Neat people and messy people can't live together.",
 "Roommates should not share costs."
-]
+],
+"e": "القطعة كلها عن كيف يتجنب الساكنين مع بعض المشاكل، بالقوانين والتفاهم."
 }
 ]
 },
@@ -1444,7 +1584,8 @@ window.READING = [
 "eating too much junk food",
 "staying up too late",
 "spending hours on phones"
-]
+],
+"e": "الفقرة 1 ذكرت junk food و stay up late و phones، وقضم الأظافر (biting nails) ما انذكر."
 },
 {
 "q": "What does the underlined word \"strategies\" in paragraph 1 mean?",
@@ -1453,7 +1594,8 @@ window.READING = [
 "problems",
 "habits",
 "friends"
-]
+],
+"e": "strategies = خطط وطرق."
 },
 {
 "q": "What is a \"trigger\"?",
@@ -1462,7 +1604,8 @@ window.READING = [
 "A good habit",
 "A kind of food",
 "A type of phone"
-]
+],
+"e": "الفقرة 2: «a \"trigger\", something that makes you start the behavior»."
 },
 {
 "q": "According to paragraph 2, what do some people do when they feel stressed?",
@@ -1471,7 +1614,8 @@ window.READING = [
 "They read a book.",
 "They go to bed early.",
 "They call a friend."
-]
+],
+"e": "الفقرة 2: «some people eat sweets when they feel stressed»."
 },
 {
 "q": "Experts say that replacing a bad habit with a good one ______.",
@@ -1480,7 +1624,8 @@ window.READING = [
 "never works",
 "is too difficult",
 "takes only one day"
-]
+],
+"e": "الفقرة 3: «this works better than just trying to stop»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 3 refer to?",
@@ -1489,7 +1634,8 @@ window.READING = [
 "the TV",
 "the bed",
 "the book"
-]
+],
+"e": "«If you always check your phone in bed, put it in another room» ← it = الجوال."
 },
 {
 "q": "How long does it take, on average, to form a new habit?",
@@ -1498,7 +1644,8 @@ window.READING = [
 "6 days",
 "16 days",
 "6 months"
-]
+],
+"e": "الفقرة 4: «it takes an average of 66 days to form a new habit»."
 },
 {
 "q": "What should you do if you fail one day?",
@@ -1507,7 +1654,8 @@ window.READING = [
 "Stop trying.",
 "Choose a new habit.",
 "Ask a doctor."
-]
+],
+"e": "الفقرة 4: «If you fail one day, don't give up. Just start again the next day»."
 },
 {
 "q": "What does the underlined word \"motivated\" in paragraph 4 mean?",
@@ -1516,7 +1664,8 @@ window.READING = [
 "tired and bored",
 "angry and stressed",
 "lonely and sad"
-]
+],
+"e": "motivated = عندك دافع وحماس تكمّل."
 },
 {
 "q": "What is the best title for the passage?",
@@ -1525,7 +1674,8 @@ window.READING = [
 "Why phones are dangerous",
 "The best healthy snacks",
 "How to sleep better"
-]
+],
+"e": "القطعة كلها عن طرق التخلص من العادات السيئة."
 }
 ]
 },
@@ -1546,7 +1696,8 @@ window.READING = [
 "experts",
 "friends",
 "videos"
-]
+],
+"e": "«many people now feel that they can't live without them» ← them = الجوالات."
 },
 {
 "q": "How often does the average person check their phone, according to the survey?",
@@ -1555,7 +1706,8 @@ window.READING = [
 "About 69 times a day",
 "About 10 times a day",
 "About 96 times a week"
-]
+],
+"e": "الفقرة 2: «checks their phone about 96 times a day»."
 },
 {
 "q": "Which problem of using phones too much does the writer NOT mention?",
@@ -1564,7 +1716,8 @@ window.READING = [
 "It makes it hard to sleep.",
 "It hurts our eyes.",
 "It makes us feel more stressed."
-]
+],
+"e": "الفقرة 2 ذكرت النوم والعيون والتوتر، وزيادة الوزن ما انذكرت."
 },
 {
 "q": "Why can phones affect our relationships?",
@@ -1573,7 +1726,8 @@ window.READING = [
 "Our friends don't have phones.",
 "Phones are too expensive.",
 "We call our friends too often."
-]
+],
+"e": "الفقرة 2: «we spend less time talking to the people around us»."
 },
 {
 "q": "What is one simple idea to use phones less?",
@@ -1582,7 +1736,8 @@ window.READING = [
 "Buy a new phone.",
 "Play more games.",
 "Check the news more often."
-]
+],
+"e": "الفقرة 3: «turn off notifications for apps that are not important»."
 },
 {
 "q": "When does the writer suggest having \"phone-free\" times?",
@@ -1591,7 +1746,8 @@ window.READING = [
 "Only at work",
 "At night only",
 "During exams"
-]
+],
+"e": "الفقرة 3: «during meals or the first hour after waking up»."
 },
 {
 "q": "What does the underlined word \"total\" in paragraph 3 mean?",
@@ -1600,7 +1756,8 @@ window.READING = [
 "the phone",
 "the app",
 "the problem"
-]
+],
+"e": "total = المجموع الكامل لعدد الساعات."
 },
 {
 "q": "How do people often feel when they see how many hours they spend on their phones?",
@@ -1609,7 +1766,8 @@ window.READING = [
 "happy",
 "bored",
 "proud"
-]
+],
+"e": "الفقرة 3: «When they see the total, they are often surprised»."
 },
 {
 "q": "What does the underlined word \"control\" in paragraph 4 mean?",
@@ -1618,7 +1776,8 @@ window.READING = [
 "break",
 "increase",
 "forget"
-]
+],
+"e": "control = يتحكم ويحدد استخدامه ← manage or limit."
 },
 {
 "q": "What is the writer's opinion about phones?",
@@ -1627,7 +1786,8 @@ window.READING = [
 "Phones are dangerous and we should stop using them.",
 "Phones are only useful for games.",
 "Everyone should have two phones."
-]
+],
+"e": "الفقرة 4: «Phones are not bad in themselves. The problem is how we use them»."
 }
 ]
 },
@@ -1648,7 +1808,8 @@ window.READING = [
 "Because they are not tired",
 "Because their parents tell them to",
 "To exercise"
-]
+],
+"e": "الفقرة 1: «stay up late to study, watch videos, or chat with friends»."
 },
 {
 "q": "How many hours of sleep do teenagers need?",
@@ -1657,7 +1818,8 @@ window.READING = [
 "About five to six hours",
 "Between seven and nine hours",
 "More than twelve hours"
-]
+],
+"e": "الفقرة 2: «teenagers need even more, about eight to ten hours»."
 },
 {
 "q": "According to studies, most teenagers sleep ______ on school nights.",
@@ -1666,7 +1828,8 @@ window.READING = [
 "more than ten hours",
 "exactly eight hours",
 "about nine hours"
-]
+],
+"e": "الفقرة 2: «most teenagers sleep less than seven hours on school nights»."
 },
 {
 "q": "What does the underlined word \"run-down\" in paragraph 2 mean?",
@@ -1675,7 +1838,8 @@ window.READING = [
 "happy and full of energy",
 "angry",
 "very busy"
-]
+],
+"e": "run-down = تعبان وصحته مو زينة. وفي الجملة «they feel tired and run-down»."
 },
 {
 "q": "Which effect of not sleeping enough does the writer NOT mention?",
@@ -1684,7 +1848,8 @@ window.READING = [
 "feeling tired",
 "problems paying attention",
 "weaker memory"
-]
+],
+"e": "الفقرة 2 ذكرت التعب وضعف التركيز وضعف الذاكرة، وزيادة الوزن ما انذكرت."
 },
 {
 "q": "What does our brain do while we sleep?",
@@ -1693,7 +1858,8 @@ window.READING = [
 "It stops working completely.",
 "It forgets everything we learned.",
 "It makes us hungry."
-]
+],
+"e": "الفقرة 3: «our brain organizes the information we learned… and stores it in our memory»."
 },
 {
 "q": "In the study, students who slept eight hours ______.",
@@ -1702,7 +1868,8 @@ window.READING = [
 "remembered 13 percent less information",
 "did not remember anything",
 "studied all night"
-]
+],
+"e": "الفقرة 3: «students who slept eight hours remembered 30 percent more information»."
 },
 {
 "q": "What do experts suggest about bedtime?",
@@ -1711,7 +1878,8 @@ window.READING = [
 "Go to bed late on weekends.",
 "Sleep only in the afternoon.",
 "Go to bed at a different time every night."
-]
+],
+"e": "الفقرة 4: «going to bed at the same time every night, even on weekends»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 4 refer to?",
@@ -1720,7 +1888,8 @@ window.READING = [
 "coffee and energy drinks",
 "weekends",
 "experts"
-]
+],
+"e": "«turn off your phone and other screens… because the light from them» ← them = الجوال والشاشات."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -1729,7 +1898,8 @@ window.READING = [
 "Students should study all night before exams.",
 "Coffee helps students sleep better.",
 "Teenagers sleep too much."
-]
+],
+"e": "القطعة كلها عن أهمية النوم للصحة والتعلّم."
 }
 ]
 },
@@ -1750,7 +1920,8 @@ window.READING = [
 "They don't like sports.",
 "Gyms are too far.",
 "They have no shoes."
-]
+],
+"e": "الفقرة 1: «Many people say they are too tired to exercise»."
 },
 {
 "q": "According to the writer, what can regular exercise give you?",
@@ -1759,7 +1930,8 @@ window.READING = [
 "more stress",
 "less oxygen",
 "a weaker heart"
-]
+],
+"e": "الفقرة 1: «regular exercise can actually give you more energy»."
 },
 {
 "q": "What happens to your heart when you exercise?",
@@ -1768,7 +1940,8 @@ window.READING = [
 "It becomes weaker.",
 "It stops for a moment.",
 "Nothing happens."
-]
+],
+"e": "الفقرة 2: «your heart becomes stronger»."
 },
 {
 "q": "In the study, how did people feel after six weeks of light exercise?",
@@ -1777,7 +1950,8 @@ window.READING = [
 "20 percent more tired",
 "6 percent happier",
 "The same as before"
-]
+],
+"e": "الفقرة 2: «felt 20 percent more energetic than before»."
 },
 {
 "q": "What does the underlined word \"reduce\" in paragraph 2 mean?",
@@ -1786,7 +1960,8 @@ window.READING = [
 "make more",
 "produce",
 "cause"
-]
+],
+"e": "reduce stress = يقلّل التوتر ← make less."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -1795,7 +1970,8 @@ window.READING = [
 "gyms",
 "push-ups and sit-ups",
 "household activities"
-]
+],
+"e": "«Walking, running, and cycling are free, and you can do them» ← them = المشي والجري وركوب الدراجة."
 },
 {
 "q": "Which activity does the writer say counts as exercise?",
@@ -1804,7 +1980,8 @@ window.READING = [
 "watching TV",
 "reading a book",
 "playing video games"
-]
+],
+"e": "الفقرة 3: «household activities, like cleaning or working in the garden, count as exercise»."
 },
 {
 "q": "How many minutes of exercise do experts recommend every week?",
@@ -1813,7 +1990,8 @@ window.READING = [
 "At least 50 minutes",
 "At least 300 minutes",
 "At least 15 minutes"
-]
+],
+"e": "الفقرة 4: «at least 150 minutes of exercise every week»."
 },
 {
 "q": "What do the underlined words \"stick with\" in paragraph 4 mean?",
@@ -1822,7 +2000,8 @@ window.READING = [
 "stop doing",
 "forget about",
 "look for"
-]
+],
+"e": "stick with it = تستمر عليه ← continue doing."
 },
 {
 "q": "What is the writer's advice for people who think 30 minutes a day is a lot?",
@@ -1831,7 +2010,8 @@ window.READING = [
 "Exercise for two hours once a week.",
 "Don't exercise at all.",
 "Go to an expensive gym."
-]
+],
+"e": "الفقرة 4: «start with ten minutes a day and slowly increase the time»."
 }
 ]
 },
@@ -1852,7 +2032,8 @@ window.READING = [
 "sleep and dream",
 "become heavier",
 "stop eating"
-]
+],
+"e": "الفقرة 1: «They help our bodies grow, fight illness, and produce energy»."
 },
 {
 "q": "What does the underlined word \"supplements\" in paragraph 1 mean?",
@@ -1861,7 +2042,8 @@ window.READING = [
 "kinds of fruit",
 "doctors",
 "illnesses"
-]
+],
+"e": "supplements = مكمّلات، يعني شي تاخذه زيادة على أكلك (حبوب الفيتامين)."
 },
 {
 "q": "What do many doctors say about vitamins?",
@@ -1870,7 +2052,8 @@ window.READING = [
 "Everyone needs to take vitamin pills.",
 "Fruit doesn't have vitamins.",
 "Vitamins are not important."
-]
+],
+"e": "الفقرة 2: «most healthy people can get all the vitamins they need from food»."
 },
 {
 "q": "Which food has a lot of vitamin C?",
@@ -1879,7 +2062,8 @@ window.READING = [
 "carrots",
 "milk",
 "eggs"
-]
+],
+"e": "الفقرة 2: «oranges have a lot of vitamin C»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 2 refer to?",
@@ -1888,7 +2072,8 @@ window.READING = [
 "a balanced diet",
 "milk",
 "vitamin D"
-]
+],
+"e": "«A balanced diet… usually gives the body everything it needs» ← it = الجسم."
 },
 {
 "q": "Which group of people does the writer NOT mention as needing extra vitamins?",
@@ -1897,7 +2082,8 @@ window.READING = [
 "pregnant women",
 "older people",
 "people who don't get much sunlight"
-]
+],
+"e": "الفقرة 3 ذكرت الحوامل وكبار السن واللي ما يتعرضون للشمس والنباتيين. أما المراهقين الرياضيين فما انذكروا."
 },
 {
 "q": "Why may vegetarians need vitamin B12?",
@@ -1906,7 +2092,8 @@ window.READING = [
 "It is found only in fruit.",
 "They don't drink water.",
 "They don't get sunlight."
-]
+],
+"e": "الفقرة 3: «it is found mostly in meat, fish, and dairy products»."
 },
 {
 "q": "How can a doctor decide which vitamins a person needs?",
@@ -1915,7 +2102,8 @@ window.READING = [
 "By looking at their food",
 "By asking their friends",
 "By checking their weight"
-]
+],
+"e": "الفقرة 3: «a doctor can do a blood test»."
 },
 {
 "q": "What does the underlined word \"replace\" in paragraph 4 mean?",
@@ -1924,7 +2112,8 @@ window.READING = [
 "add to",
 "make better",
 "cook"
-]
+],
+"e": "«pills should not replace healthy food» = ما تاخذ مكان الأكل الصحي."
 },
 {
 "q": "Why can taking too many vitamin pills be dangerous?",
@@ -1933,7 +2122,8 @@ window.READING = [
 "Vitamin pills are very expensive.",
 "Vitamin pills have a lot of sugar.",
 "Vitamin pills make you hungry."
-]
+],
+"e": "الفقرة 4: «Some vitamins… stay in the body, and too much of them can cause health problems»."
 }
 ]
 },
@@ -1954,7 +2144,8 @@ window.READING = [
 "They don't like other people.",
 "They are always busy.",
 "They live in big cities."
-]
+],
+"e": "الفقرة 1: «their children often move away, their friends may pass away, and they may stop working»."
 },
 {
 "q": "In some countries, how many people over the age of 65 feel lonely?",
@@ -1963,7 +2154,8 @@ window.READING = [
 "One in five",
 "Two in three",
 "One in ten"
-]
+],
+"e": "الفقرة 1: «one in three people over the age of 65 feels lonely»."
 },
 {
 "q": "Doctors say loneliness can be as harmful as ______.",
@@ -1972,7 +2164,8 @@ window.READING = [
 "eating fast food every day",
 "sleeping 15 hours a day",
 "drinking too much coffee"
-]
+],
+"e": "الفقرة 2: «as harmful to our health as smoking 15 cigarettes a day»."
 },
 {
 "q": "Which health problem of loneliness does the writer NOT mention?",
@@ -1981,7 +2174,8 @@ window.READING = [
 "heart problems",
 "sleeping badly",
 "losing memory"
-]
+],
+"e": "الفقرة 2 ذكرت القلب والنوم والذاكرة، والنظر (eyesight) ما انذكر."
 },
 {
 "q": "What do young volunteers do in some cities?",
@@ -1990,7 +2184,8 @@ window.READING = [
 "They build new houses for older people.",
 "They give older people money.",
 "They teach older people how to drive."
-]
+],
+"e": "الفقرة 3: «young volunteers visit older people every week»."
 },
 {
 "q": "What do the underlined words \"In return\" in paragraph 3 mean?",
@@ -1999,7 +2194,8 @@ window.READING = [
 "going back home",
 "arriving late",
 "saying no"
-]
+],
+"e": "In return = مقابل ذلك، يعني الطالب يسكن مجاناً وبالمقابل يساعدهم."
 },
 {
 "q": "How do students benefit from living with older people?",
@@ -2008,7 +2204,8 @@ window.READING = [
 "They get free cars.",
 "They don't have to study.",
 "They get better grades."
-]
+],
+"e": "الفقرة 3: «the students save money on rent»."
 },
 {
 "q": "Which simple thing does the writer suggest everyone can do?",
@@ -2017,7 +2214,8 @@ window.READING = [
 "Move in with an older neighbour.",
 "Buy gifts for older people every day.",
 "Give up their jobs."
-]
+],
+"e": "الفقرة 4: «teach an older person how to use video calls»."
 },
 {
 "q": "What does the underlined word \"us\" in paragraph 4 refer to?",
@@ -2026,7 +2224,8 @@ window.READING = [
 "the older neighbours",
 "the volunteers",
 "the doctors"
-]
+],
+"e": "«one day we will all be old, and we will want someone to care about us» ← us = كلنا لما نكبر."
 },
 {
 "q": "What is the main idea of the passage?",
@@ -2035,7 +2234,8 @@ window.READING = [
 "Older people prefer to live alone.",
 "Students should not live with older people.",
 "Loneliness is not harmful to health."
-]
+],
+"e": "القطعة تشرح مشكلة الوحدة عند كبار السن، وتذكر طرق للمساعدة."
 }
 ]
 },
@@ -2056,7 +2256,8 @@ window.READING = [
 "The roads were closed.",
 "There were too many trains.",
 "People stopped driving."
-]
+],
+"e": "الفقرة 1: «As the population grew, traffic became a serious problem»."
 },
 {
 "q": "How many lines does the Riyadh Metro have?",
@@ -2065,7 +2266,8 @@ window.READING = [
 "Eight",
 "Four",
 "Eighty-five"
-]
+],
+"e": "الفقرة 2: «The Riyadh Metro has six lines»."
 },
 {
 "q": "What does \"driverless\" mean, according to the passage?",
@@ -2074,7 +2276,8 @@ window.READING = [
 "The trains have two drivers.",
 "The trains don't move.",
 "Passengers drive the trains."
-]
+],
+"e": "الفقرة 2: «The trains are driverless, which means they are controlled by computers»."
 },
 {
 "q": "Which class on the trains does the writer NOT mention?",
@@ -2083,7 +2286,8 @@ window.READING = [
 "first class",
 "family class",
 "single class"
-]
+],
+"e": "الفقرة 2 ذكرت first class و family class و single class، وما فيه business class."
 },
 {
 "q": "Why is the metro better for the environment?",
@@ -2092,7 +2296,8 @@ window.READING = [
 "The trains use a lot of petrol.",
 "The stations have gardens.",
 "The metro is very fast."
-]
+],
+"e": "الفقرة 3: «fewer cars on the road means less air pollution»."
 },
 {
 "q": "Which place does the metro connect, according to the passage?",
@@ -2101,7 +2306,8 @@ window.READING = [
 "the beach",
 "the zoo",
 "the mountains"
-]
+],
+"e": "الفقرة 3: «connects important places like the airport, universities, hospitals, and shopping centres»."
 },
 {
 "q": "What does the underlined word \"destinations\" in paragraph 3 mean?",
@@ -2110,7 +2316,8 @@ window.READING = [
 "tickets",
 "trains",
 "jobs"
-]
+],
+"e": "destinations = الأماكن اللي رايحين لها."
 },
 {
 "q": "Why do many people still prefer their own cars?",
@@ -2119,7 +2326,8 @@ window.READING = [
 "The metro is too expensive.",
 "The metro has no stations.",
 "Cars are better for the environment."
-]
+],
+"e": "الفقرة 4: «Many people still prefer the comfort of their own cars, especially in the hot summer»."
 },
 {
 "q": "What is the city building to connect to the metro?",
@@ -2128,7 +2336,8 @@ window.READING = [
 "more roads",
 "more car parks",
 "more airports"
-]
+],
+"e": "الفقرة 4: «the city is building more bus lines that connect to the metro»."
 },
 {
 "q": "What does the underlined word \"change\" in paragraph 4 mean?",
@@ -2137,7 +2346,8 @@ window.READING = [
 "keep the same",
 "stop",
 "pay for"
-]
+],
+"e": "«change the way people live» = يغيّر حياة الناس، يعني يخليها مختلفة."
 }
 ]
 },
@@ -2158,7 +2368,8 @@ window.READING = [
 "Working in a company for money",
 "Studying at a university",
 "Travelling to other countries"
-]
+],
+"e": "الفقرة 1: «giving your time to help others without getting paid»."
 },
 {
 "q": "How many volunteers does Saudi Arabia hope to have every year?",
@@ -2167,7 +2378,8 @@ window.READING = [
 "One hundred thousand",
 "Ten million",
 "One thousand"
-]
+],
+"e": "الفقرة 1: «the country hopes to have one million volunteers every year»."
 },
 {
 "q": "What does the underlined word \"distribute\" in paragraph 2 mean?",
@@ -2176,7 +2388,8 @@ window.READING = [
 "cook",
 "buy",
 "throw away"
-]
+],
+"e": "distribute food = يوزّع الأكل على ناس كثير."
 },
 {
 "q": "Which volunteer activity does the writer NOT mention?",
@@ -2185,7 +2398,8 @@ window.READING = [
 "cleaning beaches and parks",
 "teaching children to read",
 "visiting patients in hospitals"
-]
+],
+"e": "الفقرة 2 ذكرت تنظيف الشواطئ وتعليم الأطفال وزيارة المرضى، وبناء البيوت ما انذكر."
 },
 {
 "q": "According to studies, how do people who volunteer feel?",
@@ -2194,7 +2408,8 @@ window.READING = [
 "more tired and lonely",
 "angry and bored",
 "the same as before"
-]
+],
+"e": "الفقرة 3: «people who volunteer feel happier and less stressed»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -2203,7 +2418,8 @@ window.READING = [
 "skills",
 "companies",
 "volunteers in hospitals"
-]
+],
+"e": "«young people learn new skills… These skills can help them» ← them = الشباب."
 },
 {
 "q": "Which skill does the writer say young people can learn from volunteering?",
@@ -2212,7 +2428,8 @@ window.READING = [
 "cooking",
 "driving",
 "swimming"
-]
+],
+"e": "الفقرة 3: «teamwork, communication, and leadership»."
 },
 {
 "q": "Why do many companies like to hire people with volunteer experience?",
@@ -2221,7 +2438,8 @@ window.READING = [
 "They work for free.",
 "They don't need training.",
 "They are always older."
-]
+],
+"e": "الفقرة 3 تقول إن التطوع يعلّم مهارات تساعد في الوظيفة، و«Many companies like to hire people who have volunteer experience»."
 },
 {
 "q": "What does the underlined word \"opportunities\" in paragraph 4 mean?",
@@ -2230,7 +2448,8 @@ window.READING = [
 "problems",
 "skills",
 "websites"
-]
+],
+"e": "opportunities = فرص."
 },
 {
 "q": "What does the writer suggest you think about first if you want to volunteer?",
@@ -2239,7 +2458,8 @@ window.READING = [
 "How much money you can get",
 "Which company you want to work for",
 "How many hours you can work every day"
-]
+],
+"e": "الفقرة 4: «First, think about what you enjoy»."
 }
 ]
 },
@@ -2260,7 +2480,8 @@ window.READING = [
 "About three million",
 "Less than one billion",
 "More than thirty billion"
-]
+],
+"e": "الفقرة 1: «More than three billion people play them»."
 },
 {
 "q": "What do many parents worry about?",
@@ -2269,7 +2490,8 @@ window.READING = [
 "Video games are too expensive.",
 "Their children don't like games.",
 "Games are only played on phones."
-]
+],
+"e": "الفقرة 1: «Many parents worry that their children spend too much time playing games»."
 },
 {
 "q": "What can action games improve?",
@@ -2278,7 +2500,8 @@ window.READING = [
 "spelling and grammar",
 "cooking skills",
 "running speed"
-]
+],
+"e": "الفقرة 2: «Action games… can improve players' attention and help them make decisions quickly»."
 },
 {
 "q": "What can puzzle and strategy games improve?",
@@ -2287,7 +2510,8 @@ window.READING = [
 "eyesight",
 "sleep",
 "physical strength"
-]
+],
+"e": "الفقرة 2: «Puzzle and strategy games can improve problem-solving skills and memory»."
 },
 {
 "q": "What does the underlined word \"develop\" in paragraph 2 mean?",
@@ -2296,7 +2520,8 @@ window.READING = [
 "forget",
 "stop",
 "buy"
-]
+],
+"e": "develop teamwork skills = يطوّر ويبني المهارات."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 3 refer to?",
@@ -2305,7 +2530,8 @@ window.READING = [
 "homework",
 "the screen",
 "exercise"
-]
+],
+"e": "«find it difficult to stop playing» ← it = إيقاف اللعب (to stop playing)."
 },
 {
 "q": "Which problem of playing too much does the writer NOT mention?",
@@ -2314,7 +2540,8 @@ window.READING = [
 "not getting enough exercise",
 "not getting enough sleep",
 "becoming addicted"
-]
+],
+"e": "الفقرة 3 ذكرت الرياضة والنوم والإدمان، وصرف الفلوس ما انذكر."
 },
 {
 "q": "How long do experts suggest children should play each day?",
@@ -2323,7 +2550,8 @@ window.READING = [
 "At least three hours",
 "Only on weekends",
 "As long as they want"
-]
+],
+"e": "الفقرة 4: «should not play for more than one or two hours a day»."
 },
 {
 "q": "What does the underlined word \"beneficial\" in paragraph 4 mean?",
@@ -2332,7 +2560,8 @@ window.READING = [
 "boring",
 "dangerous",
 "expensive"
-]
+],
+"e": "beneficial = مفيد."
 },
 {
 "q": "What is the writer's main point?",
@@ -2341,7 +2570,8 @@ window.READING = [
 "Video games are always bad for children.",
 "Children should play video games all day.",
 "Only adults should play video games."
-]
+],
+"e": "الفقرة 4: «The key is balance… When video games are played in a healthy way, they can be both fun and beneficial»."
 }
 ]
 },
@@ -2362,7 +2592,8 @@ window.READING = [
 "Only in large fields in the countryside",
 "Inside shopping malls",
 "In the sea"
-]
+],
+"e": "الفقرة 1: «growing food in unusual places, such as on the roofs of buildings»."
 },
 {
 "q": "How big is the rooftop farm in New York City?",
@@ -2371,7 +2602,8 @@ window.READING = [
 "About 600 square metres",
 "About 20,000 square metres",
 "About 60 square metres"
-]
+],
+"e": "الفقرة 2: «covers about 6,000 square metres»."
 },
 {
 "q": "How many kilograms of vegetables does the farm produce every year?",
@@ -2380,7 +2612,8 @@ window.READING = [
 "About 6,000",
 "Less than 2,000",
 "Exactly 200,000"
-]
+],
+"e": "الفقرة 2: «produces more than 20,000 kilograms of vegetables»."
 },
 {
 "q": "Which vegetable does the writer NOT mention?",
@@ -2389,7 +2622,8 @@ window.READING = [
 "tomatoes",
 "peppers",
 "lettuce"
-]
+],
+"e": "الفقرة 2 ذكرت tomatoes و peppers و lettuce، والبطاطس (potatoes) ما انذكرت."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 2 refer to?",
@@ -2398,7 +2632,8 @@ window.READING = [
 "the farm",
 "the market",
 "the building"
-]
+],
+"e": "«Because the food doesn't travel far, it is very fresh» ← it = الأكل."
 },
 {
 "q": "Why is the food from the rooftop farm very fresh?",
@@ -2407,7 +2642,8 @@ window.READING = [
 "It is kept in a fridge for a long time.",
 "It is grown with chemicals.",
 "It is sold only in winter."
-]
+],
+"e": "الفقرة 2: «Because the food doesn't travel far, it is very fresh»."
 },
 {
 "q": "Which benefit of urban farms does the writer mention?",
@@ -2416,7 +2652,8 @@ window.READING = [
 "They make buildings taller.",
 "They make rent cheaper.",
 "They stop strong winds."
-]
+],
+"e": "الفقرة 3: «They make cities greener and help keep buildings cool in summer»."
 },
 {
 "q": "Why do urban farms bring the community together?",
@@ -2425,7 +2662,8 @@ window.READING = [
 "They are very expensive.",
 "They are only for children.",
 "They sell food to restaurants."
-]
+],
+"e": "الفقرة 3: «neighbours often work on the farm as volunteers»."
 },
 {
 "q": "What does the underlined word \"difficulties\" in paragraph 4 mean?",
@@ -2434,7 +2672,8 @@ window.READING = [
 "benefits",
 "vegetables",
 "volunteers"
-]
+],
+"e": "difficulties = صعوبات ومشاكل."
 },
 {
 "q": "Which challenge of urban farming does the writer mention?",
@@ -2443,7 +2682,8 @@ window.READING = [
 "Vegetables don't grow on roofs.",
 "Nobody wants to buy the vegetables.",
 "Children are not allowed on the farms."
-]
+],
+"e": "الفقرة 4: «Rooftops must be strong enough to hold heavy soil and water»."
 }
 ]
 },
@@ -2464,7 +2704,8 @@ window.READING = [
 "About 16 percent",
 "About 6 percent",
 "About 90 percent"
-]
+],
+"e": "الفقرة 1: «about 60 percent of university students feel stressed most of the time»."
 },
 {
 "q": "Which cause of stress does the writer NOT mention?",
@@ -2473,7 +2714,8 @@ window.READING = [
 "exams",
 "deadlines",
 "living away from family"
-]
+],
+"e": "الفقرة 1 ذكرت الاختبارات والمواعيد والسكن بعيد عن الأهل، والمشاكل مع اللي ساكن معك ما انذكرت."
 },
 {
 "q": "How can a little stress be helpful?",
@@ -2482,7 +2724,8 @@ window.READING = [
 "It can cause headaches.",
 "It can help us sleep more.",
 "It can make us forget our problems."
-]
+],
+"e": "الفقرة 2: «It can make us work harder before an exam»."
 },
 {
 "q": "Which effect of too much stress does the writer mention?",
@@ -2491,7 +2734,8 @@ window.READING = [
 "better grades",
 "more energy",
 "stronger memory"
-]
+],
+"e": "الفقرة 2: «It can cause headaches, sleep problems, and lack of energy»."
 },
 {
 "q": "What does the underlined word \"manage\" in paragraph 3 mean?",
@@ -2500,7 +2744,8 @@ window.READING = [
 "increase",
 "forget",
 "cause"
-]
+],
+"e": "manage stress = يتحكّم في التوتر ويتعامل معه."
 },
 {
 "q": "Why do students feel more in control when they make a weekly plan?",
@@ -2509,7 +2754,8 @@ window.READING = [
 "They don't have any tasks.",
 "They study all night.",
 "They stop going to class."
-]
+],
+"e": "الفقرة 3: «divide big tasks into small steps, they feel more in control»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -2518,7 +2764,8 @@ window.READING = [
 "friends",
 "family members",
 "counsellors"
-]
+],
+"e": "«Sharing your problems can make them feel smaller» ← them = مشاكلك."
 },
 {
 "q": "Who does the writer suggest talking to?",
@@ -2527,7 +2774,8 @@ window.READING = [
 "only your professor",
 "people on social media",
 "nobody"
-]
+],
+"e": "الفقرة 3: «a friend, a family member, or a university counsellor»."
 },
 {
 "q": "What does the underlined word \"succeed\" in paragraph 4 mean?",
@@ -2536,7 +2784,8 @@ window.READING = [
 "fail",
 "relax",
 "stop"
-]
+],
+"e": "succeed = ينجح ويتفوق ← do well."
 },
 {
 "q": "What is the best title for the passage?",
@@ -2545,7 +2794,8 @@ window.READING = [
 "Why university is the best time of life",
 "How to get a part-time job",
 "The best hobbies for students"
-]
+],
+"e": "القطعة كلها عن طرق تعامل الطلاب مع التوتر."
 }
 ]
 }
