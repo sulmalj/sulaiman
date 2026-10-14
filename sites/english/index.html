@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light only">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الإنجليزي · موقع تدريب</title>
+<meta name="description" content="موقع تدريب مجاني لمادة الإنجليزي — قواعد (Grammar) وكلمات (Vocabulary) وقطع (Reading) واستماع (Listening)، مع تصحيح تلقائي واختبار تجريبي ومراجعة للأخطاء.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F4F6FB; --surface:#FFFFFF; --sunk:#E9EDF7; --ink:#141B33; --muted:#5A6380; --line:#D6DCEC;
+  --accent:#3247A8; --accent-ink:#FFFFFF; --accent-soft:#E2E7FA;
+  --gold:#D9622B; --gold-soft:#FDEDE4; --gold-ink:#4A1D06;
+  --good:#138A4E; --good-soft:#DFF5E8; --bad:#C8372D; --bad-soft:#FCE6E3; --tg:#1F7FBF; --tg-soft:#E2F0FA; --tg-ink:#0B3A5C;
+  --g:#3247A8; --g-soft:#E2E7FA; --v:#0F7F72; --v-soft:#DDF2EE; --r:#9A4FB0; --r-soft:#F3E6F7; --l:#D9622B; --l-soft:#FDEDE4;
+  --f-display:"Readex Pro","IBM Plex Sans Arabic",Tahoma,sans-serif;
+  --f-body:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{color-scheme:light only}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:var(--f-body);font-size:16px;line-height:1.7;-webkit-text-size-adjust:100%}
+button{font-family:inherit;font-size:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+.en{direction:ltr;text-align:left;unicode-bidi:isolate}
+
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;align-items:center;gap:10px;background:none;border:0;padding:0;color:var(--ink);text-align:start}
+.logo{width:44px;height:44px;border-radius:12px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--f-display);font-weight:700;font-size:16px;line-height:1;flex:none}
+.brand b{display:block;font-family:var(--f-display);font-size:18px;font-weight:700;line-height:1.2}
+.brand small{display:block;color:var(--muted);font-size:12.5px}
+.free-pill{background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;white-space:nowrap}
+
+.hero{padding:28px 0 8px}
+.free-banner{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--accent),#1C2A6E);color:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 10px 30px -14px color-mix(in srgb,var(--accent) 70%,transparent)}
+.free-banner .ic{font-size:34px;line-height:1;flex:none}
+.free-banner h2{margin:0;font-family:var(--f-display);font-size:clamp(19px,4.6vw,26px);line-height:1.35}
+.free-banner p{margin:2px 0 0;font-weight:600;opacity:.92}
+.hero h1{font-family:var(--f-display);font-size:clamp(24px,5.4vw,34px);line-height:1.3;margin:22px 0 6px}
+.hero h1 span{color:var(--accent)}
+.hero .lead{color:var(--muted);margin:0;max-width:62ch}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px}
+.sec-title{font-family:var(--f-display);font-size:20px;margin:30px 0 12px;display:flex;align-items:center;gap:8px}
+.prog{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:18px}
+.prog .big{font-family:var(--f-display);font-size:26px;font-weight:700}
+.prog .lbl{color:var(--muted);font-size:13.5px}
+.prog > div{flex:1;min-width:120px}
+.bar{height:8px;background:var(--sunk);border-radius:99px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
+
+.secs{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media (max-width:640px){.secs{grid-template-columns:1fr}}
+.sec{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;align-items:center;text-align:start;width:100%;color:var(--ink);font:inherit;border:1px solid var(--line);transition:border-color .15s,transform .1s}
+.sec:hover:not([disabled]){border-color:var(--c)}
+.sec:active:not([disabled]){transform:scale(.99)}
+.sec[disabled]{cursor:default}
+.sec .ic{grid-row:span 3;width:56px;height:56px;border-radius:16px;background:var(--cs);color:var(--c);display:grid;place-items:center;font-size:26px}
+.sec h3{margin:0;font-family:var(--f-display);font-size:19px;line-height:1.35}
+.sec h3 small{font-family:var(--f-body);font-size:14px;color:var(--c);font-weight:600;margin-inline-start:4px}
+.sec .meta{font-size:13.5px;color:var(--muted)}
+.sec .bar i{background:var(--c)}
+.soon{display:inline-block;background:var(--sunk);border-radius:8px;padding:0 8px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.s-g{--c:var(--g);--cs:var(--g-soft)} .s-v{--c:var(--v);--cs:var(--v-soft)} .s-r{--c:var(--r);--cs:var(--r-soft)} .s-l{--c:var(--l);--cs:var(--l-soft)}
+
+.btn{border:0;border-radius:12px;padding:10px 18px;font-weight:600;line-height:1.3;display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;transition:transform .1s,filter .15s}
+.btn:active{transform:scale(.98)}
+.btn-pri{background:var(--accent);color:var(--accent-ink)}
+.btn-pri:hover{filter:brightness(1.07)}
+.btn-sec{background:var(--sunk);color:var(--ink);border:1px solid var(--line)}
+.btn-gold{background:var(--gold);color:#fff}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.btn-sm{padding:7px 12px;font-size:14px;border-radius:10px}
+
+.duo{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media (max-width:640px){.duo{grid-template-columns:1fr}}
+.duo h3{margin:0 0 4px;font-family:var(--f-display);font-size:18px}
+.duo p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
+.warn{background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);border-radius:12px;padding:10px 12px;font-size:14px;font-weight:600;margin:0 0 12px;line-height:1.6}
+
+.ad{margin-top:18px;border-radius:20px;padding:22px;background:var(--surface);border:2px dashed color-mix(in srgb,var(--gold) 55%,transparent);display:grid;gap:10px}
+.ad .tag{justify-self:start;background:var(--gold);color:#fff;border-radius:8px;padding:2px 10px;font-size:12.5px;font-weight:700}
+.ad h3{margin:0;font-family:var(--f-display);font-size:21px;line-height:1.4}
+.ad ul{margin:0;padding-inline-start:20px;color:var(--muted)}
+.ad .btn{justify-self:start;font-size:16px;padding:12px 22px}
+.ad-by{margin:0;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;line-height:1.8}
+.ad-by b{color:var(--ink)}
+.ad-by p{margin:0 0 8px}
+.subj{display:flex;flex-wrap:wrap;gap:6px}
+.subj span{background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:13px;color:var(--ink);font-weight:600}
+.mini-ad{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;padding:9px 12px;border-radius:12px;background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);text-decoration:none;font-size:14px;line-height:1.5}
+.mini-ad:hover{border-color:var(--gold)}
+.mini-ad > span:nth-child(2){flex:1;min-width:0}
+.mini-tag{background:var(--gold);color:#fff;border-radius:6px;padding:1px 8px;font-size:12px;font-weight:700}
+.mini-go{font-weight:700;white-space:nowrap}
+.tg-ad{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;padding:9px 12px;border-radius:12px;background:var(--tg-soft);color:var(--tg-ink);border:1px solid color-mix(in srgb,var(--tg) 35%,transparent);text-decoration:none;font-size:14px;line-height:1.5}
+.tg-ad:hover{border-color:var(--tg)}
+.tg-ad > span:nth-child(2){flex:1;min-width:0}
+.tg-ic{flex:none;width:24px;height:24px;border-radius:50%;background:var(--tg);display:grid;place-items:center}
+.tg-ic svg{width:13px;height:13px;fill:var(--bg)}
+.tg-go{font-weight:700;white-space:nowrap;color:var(--tg)}
+.qcode{margin-inline-start:auto;font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;direction:ltr}
+.rep{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:2px 10px;font-size:12.5px;font-weight:600;text-decoration:none;white-space:nowrap}
+.rep:hover{border-color:var(--bad);color:var(--bad)}
+
+footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px}
+.donate{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px;padding:14px 16px;border-radius:16px;background:var(--good-soft);border:1px solid color-mix(in srgb,var(--good) 35%,transparent);color:var(--ink);text-decoration:none}
+.donate:hover{border-color:var(--good)}
+.d-ic{font-size:26px;line-height:1;flex:none}
+.d-txt{flex:1;min-width:0;display:grid;gap:2px}
+.d-txt b{font-family:var(--f-display);font-size:16.5px;color:var(--good)}
+.d-txt small{font-size:13.5px;color:var(--muted);line-height:1.6}
+.d-go{background:var(--good);color:#fff;border-radius:10px;padding:8px 14px;font-weight:700;font-size:14px;white-space:nowrap}
+@media (max-width:560px){.d-txt{flex-basis:calc(100% - 50px)}.d-go{flex-basis:100%;text-align:center}}
+.rights-mini{margin:4px 0 24px;text-align:center;font-size:12.5px;color:var(--muted);line-height:1.7}
+.rights{max-width:62ch;margin:12px auto 0;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);line-height:1.8}
+.rights b{color:var(--ink)}
+
+/* شاشات */
+.qtop{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:16px 0 10px}
+.qtop .ttl{font-family:var(--f-display);font-weight:700;font-size:17px;line-height:1.35}
+.qtop .ttl small{display:block;font-family:var(--f-body);color:var(--muted);font-weight:500;font-size:13.5px}
+.timer{font-family:var(--f-display);font-weight:700;font-size:18px;background:var(--sunk);border:1px solid var(--line);border-radius:10px;padding:4px 12px;font-variant-numeric:tabular-nums;direction:ltr}
+.timer.low{background:var(--bad-soft);color:var(--bad);border-color:color-mix(in srgb,var(--bad) 40%,transparent)}
+.qbar{height:6px;background:var(--sunk);border-radius:99px;overflow:hidden;margin-bottom:14px}
+.qbar i{display:block;height:100%;background:var(--accent);transition:width .25s}
+
+.items{display:grid;gap:10px}
+.item{display:flex;align-items:center;gap:12px;text-align:start;width:100%;color:var(--ink);font:inherit;padding:14px 16px}
+.item:hover{border-color:var(--c,var(--accent))}
+.item .no{flex:none;width:40px;height:40px;border-radius:12px;background:var(--cs,var(--accent-soft));color:var(--c,var(--accent));display:grid;place-items:center;font-family:var(--f-display);font-weight:700}
+.item .tx{flex:1;min-width:0}
+.item .tx b{display:block;font-weight:600;line-height:1.45}
+.item .tx small{color:var(--muted);font-size:13px}
+.item .st{font-size:13px;font-weight:700;white-space:nowrap;color:var(--muted)}
+.item .st.done{color:var(--good)}
+
+.qcard{padding:20px}
+.qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:13.5px;color:var(--muted)}
+.qmeta .k{background:var(--cs,var(--accent-soft));color:var(--c,var(--accent));border-radius:8px;padding:1px 10px;font-weight:600}
+.qtext{font-size:clamp(17px,4.2vw,19px);font-weight:600;line-height:1.8;margin:0 0 16px}
+.blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--muted);margin:0 2px;text-align:center;line-height:1.3}
+.blank.fill{border-color:var(--good);color:var(--good);font-weight:700;padding:0 4px}
+.opts{display:grid;gap:10px}
+.opts.two{grid-template-columns:1fr 1fr}
+@media (max-width:420px){.opts.two{grid-template-columns:1fr}}
+.opt{display:flex;align-items:center;gap:10px;width:100%;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);border-radius:14px;padding:11px 14px;line-height:1.55;transition:border-color .15s,background .15s;direction:ltr;text-align:left}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt .lt{flex:none;width:28px;height:28px;border-radius:8px;background:var(--sunk);display:grid;place-items:center;font-weight:700;font-size:14px}
+.opt.sel{border-color:var(--accent);background:var(--accent-soft)}
+.opt.sel .lt{background:var(--accent);color:var(--accent-ink)}
+.opt.ok{border-color:var(--good);background:var(--good-soft)}
+.opt.ok .lt{background:var(--good);color:#fff}
+.opt.no{border-color:var(--bad);background:var(--bad-soft)}
+.opt.no .lt{background:var(--bad);color:#fff}
+.opt[disabled]{cursor:default}
+.fb{margin-top:14px;border-radius:14px;padding:12px 14px;font-weight:600}
+.fb.ok{background:var(--good-soft);color:var(--good)}
+.fb.no{background:var(--bad-soft);color:var(--bad)}
+.fb .en{display:inline}
+.qnav{display:flex;gap:8px;justify-content:space-between;margin:16px 0 24px;flex-wrap:wrap}
+.qnav .grow{flex:1}
+
+/* القطعة / الاستماع: الأسئلة العشر في صفحة وحدة */
+.passage{padding:20px 22px;font-size:17px;line-height:1.95}
+.passage h2{margin:0 0 10px;font-family:var(--f-display);font-size:20px;line-height:1.4}
+.passage p{margin:0 0 12px}
+.passage p:last-child{margin:0}
+.gq{padding:16px 18px}
+.gq .qtext{font-size:17px;margin-bottom:12px;display:flex;gap:8px}
+.gq .qtext .n{flex:none;color:var(--muted)}
+.gq .fb{margin-top:10px;padding:9px 12px;font-size:14.5px}
+.gq .qmeta{margin:10px 0 0}
+.glist{display:grid;gap:10px;margin-top:12px}
+.sumbox{text-align:center;padding:16px;margin-top:12px}
+.sumbox b{font-family:var(--f-display);font-size:30px;color:var(--accent)}
+.listen{padding:18px}
+.listen .hd{display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.listen h2{margin:0;font-family:var(--f-display);font-size:19px;line-height:1.4;flex:1;min-width:0}
+.listen audio{width:100%;display:block}
+.listen .tip{margin:10px 0 0;color:var(--muted);font-size:13.5px}
+.kind{font-size:12.5px;font-weight:700;border-radius:8px;padding:1px 9px;background:var(--l-soft);color:var(--l)}
+.xplayer{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.xplayer .pbtn{width:52px;height:52px;border-radius:50%;border:0;background:var(--l);color:#fff;font-size:20px;display:grid;place-items:center;flex:none}
+.xplayer .pbtn[disabled]{opacity:.45;cursor:not-allowed}
+.xplayer .pb{flex:1;min-width:120px;height:8px;background:var(--sunk);border-radius:99px;overflow:hidden}
+.xplayer .pb i{display:block;height:100%;width:0;background:var(--l)}
+.xplayer .pt{font-variant-numeric:tabular-nums;direction:ltr;color:var(--muted);font-size:14px}
+.xplayer .pc{flex-basis:100%;font-size:13.5px;font-weight:600;color:var(--gold-ink)}
+details.tr{margin-top:12px}
+details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
+.tr-body{margin-top:10px;padding:14px 16px;background:var(--sunk);border-radius:12px;line-height:1.85}
+.tr-body p{margin:0 0 8px}
+.tr-body b{color:var(--l)}
+
+/* الاختبار */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.tabs button{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:10px;padding:6px 12px;font-weight:600;font-size:14px}
+.tabs button.cur{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tabs button small{opacity:.8;font-weight:500}
+
+.score{text-align:center;padding:26px 18px}
+.score .n{font-family:var(--f-display);font-size:54px;font-weight:700;line-height:1.1;color:var(--accent)}
+.score .n small{font-size:26px;color:var(--muted)}
+.score p{margin:6px 0 0;color:var(--muted)}
+.brk{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.brk span{background:var(--sunk);border-radius:10px;padding:4px 12px;font-size:14px;font-weight:600}
+.rlist{display:grid;gap:12px;margin-top:14px}
+.ritem .q{font-weight:600;margin:0 0 8px}
+.ritem .row{font-size:14.5px;margin:3px 0}
+.ritem .you{color:var(--bad)}
+.ritem .right{color:var(--good)}
+.ritem .rrow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+.ctx{margin-bottom:12px}
+.ctx summary{cursor:pointer;font-weight:700;color:var(--accent);font-size:14.5px}
+.ctx .passage{margin-top:8px;font-size:15.5px;padding:14px 16px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);display:grid;place-items:center;z-index:50;padding:16px}
+.modal .card{max-width:420px;width:100%}
+.modal h3{margin:0 0 6px;font-family:var(--f-display)}
+.modal p{margin:0 0 14px;color:var(--muted)}
+.modal .row{display:flex;gap:8px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <button class="brand" id="homeBtn" type="button" aria-label="الرئيسية">
+      <span class="logo">EN</span>
+      <span><b>الإنجليزي</b><small>قواعد · كلمات · قطعة · استماع</small></span>
+    </button>
+    <span class="free-pill">مجاني للجميع</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- الرئيسية -->
+  <section id="home">
+    <div class="hero">
+      <div class="free-banner">
+        <span class="ic" aria-hidden="true">🎓</span>
+        <div>
+          <h2>موقع تدريب مجاني لمادة الإنجليزي</h2>
+          <p>الموقع مجاني بالكامل للجميع — تدرّب براحتك</p>
+        </div>
+      </div>
+      <aside class="ad" aria-label="إعلان">
+        <span class="tag">إعلان</span>
+        <h3>📘 ملزمة الإنجليزي الشاملة من ملازم عدل</h3>
+        <ul>
+          <li>شرح القواعد والكلمات والقطع بطريقة مبسطة.</li>
+          <li>كويزات وتجميعات إضافية للمشتركين.</li>
+        </ul>
+        <a class="btn btn-gold" id="storeLink" href="https://mtgradl.com" target="_blank" rel="noopener">ادخل متجر ملازم عدل ←</a>
+        <div class="ad-by"><p>المتجر من <b>ملازم عدل</b> · عندنا أكثر من 10 مواد، منها:</p><div class="subj"><span>احص 102</span><span>تقن 102</span><span>فجب 101</span><span>مواد السلم</span><span>عرب 100</span><span>نهج 101</span><span>إنجليزي لجميع المسارات</span></div></div>
+      </aside>
+      <h1>تدرّب على <span>الإنجليزي</span> بأربعة أقسام</h1>
+      <p class="lead">كل الأسئلة اختيار من متعدد. جاوب، ويطلع لك على طول هل إجابتك صح أو غلط، والإجابة الصحيحة.</p>
+      <div class="card prog">
+        <div><div class="big" id="pAns">0</div><div class="lbl">سؤال جاوبته</div><div class="bar"><i id="pBar" style="width:0"></i></div></div>
+        <div><div class="big" id="pAcc">—</div><div class="lbl">نسبة إجاباتك الصحيحة</div></div>
+        <div><div class="big" id="pWrong">0</div><div class="lbl">سؤال في «راجع أخطاءك»</div></div>
+      </div>
+    </div>
+
+    <h2 class="sec-title">📚 الأقسام</h2>
+    <div class="secs" id="secs"></div>
+
+    <a class="donate" id="donateLink" href="https://ehsan.sa" target="_blank" rel="noopener">
+      <span class="d-ic" aria-hidden="true">🤲</span>
+      <span class="d-txt"><b>تصدّق بنيّة التوفيق في اختبارك</b><small>ساهم ولو بالقليل عبر منصة إحسان، والأجر لك ولوالديك بإذن الله.</small></span>
+      <span class="d-go">تبرّع عبر إحسان ←</span>
+    </a>
+
+    <h2 class="sec-title">🎯 جهّز نفسك للاختبار</h2>
+    <div class="duo">
+      <div class="card">
+        <h3>اختبار تجريبي</h3>
+        <p id="examInfo"></p>
+        <p class="warn">⚠️ تنبيه: لا تدخل الاختبار إلا وأنت مذاكر كل الأقسام؛ لأن الإجابات والتصحيح ما تطلع لك إلا بعد ما تخلّص الاختبار.</p>
+        <button class="btn btn-pri" id="startExam" type="button">ابدأ الاختبار ⏱</button>
+      </div>
+      <div class="card">
+        <h3>راجع أخطاءك</h3>
+        <p>كل سؤال غلطت فيه (في التدريب أو الاختبار) ينحفظ هنا. جاوبه صح ويطلع من القائمة.</p>
+        <p id="revMeta" style="margin:0 0 12px;color:var(--muted);font-size:14px"></p>
+        <button class="btn btn-sec" id="startRev" type="button">ابدأ المراجعة</button>
+      </div>
+    </div>
+
+    <footer>
+      <div>الإنجليزي — موقع تدريب مجاني من ملازم عدل</div>
+      <p class="rights"><b>حقوق المحتوى محفوظة لـ ملازم عدل.</b> لا نُحلّل نسخ محتوى الموقع أو أسئلته أو مقاطعه الصوتية أو إعادة نشرها أو استغلالها بأي شكل، لغرض تجاري أو غير تجاري، بدون إذن منّا. الموقع مجاني للطلاب للتدريب الشخصي فقط.</p>
+      <div style="margin-top:6px"><button class="btn btn-sec btn-sm" id="resetAll" type="button">مسح تقدمي</button></div>
+    </footer>
+  </section>
+
+  <!-- قائمة قسم (القواعد / مجموعات الكلمات / القطع / المقاطع) -->
+  <section id="list" hidden>
+    <div class="qtop"><div class="ttl" id="lTitle"></div><button class="btn btn-sec btn-sm" data-home type="button">→ الرئيسية</button></div>
+    <div class="items" id="lItems"></div>
+    <p class="rights-mini">© ملازم عدل · لا نُحلّل نسخ محتوى الموقع أو استغلاله لأي غرض، تجاري أو غير تجاري.</p>
+  </section>
+
+  <!-- سؤال بسؤال (القواعد / الكلمات / المراجعة) -->
+  <section id="quiz" hidden>
+    <div class="qtop"><div class="ttl" id="qTitle"></div><button class="btn btn-sec btn-sm" id="qBack" type="button">→ رجوع</button></div>
+    <div class="qbar"><i id="qBar"></i></div>
+    <a class="mini-ad" href="https://mtgradl.com" target="_blank" rel="noopener"><span class="mini-tag">إعلان</span><span>ملزمة <b>الإنجليزي</b> الشاملة + كويزات إضافية من <b>ملازم عدل</b></span><span class="mini-go">المتجر ←</span></a>
+    <div class="card qcard" id="qCard"></div>
+    <a class="tg-ad tg-link" href="https://t.me/mlazmadl" target="_blank" rel="noopener"><span class="tg-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.3 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 2.9c.9-.3 1.7.2 1.4 1.4z"/></svg></span><span>قناة <b>ملازم عدل</b> على التليجرام لمعرفة كل جديد</span><span class="tg-go">اشترك بالقناة ←</span></a>
+    <div class="qnav">
+      <button class="btn btn-sec" id="qPrev" type="button">→ السابق</button>
+      <button class="btn btn-pri" id="qNext" type="button">التالي ←</button>
+    </div>
+    <p class="rights-mini">© ملازم عدل · لا نُحلّل نسخ محتوى الموقع أو استغلاله لأي غرض، تجاري أو غير تجاري.</p>
+  </section>
+
+  <!-- قطعة أو مقطع استماع مع أسئلته العشر -->
+  <section id="group" hidden>
+    <div class="qtop"><div class="ttl" id="gTitle"></div><button class="btn btn-sec btn-sm" id="gBack" type="button">→ رجوع</button></div>
+    <a class="mini-ad" href="https://mtgradl.com" target="_blank" rel="noopener"><span class="mini-tag">إعلان</span><span>ملزمة <b>الإنجليزي</b> الشاملة + كويزات إضافية من <b>ملازم عدل</b></span><span class="mini-go">المتجر ←</span></a>
+    <div id="gHead"></div>
+    <div class="glist" id="gList"></div>
+    <div id="gFoot"></div>
+    <a class="tg-ad tg-link" href="https://t.me/mlazmadl" target="_blank" rel="noopener"><span class="tg-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.3 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5L20.5 2.9c.9-.3 1.7.2 1.4 1.4z"/></svg></span><span>قناة <b>ملازم عدل</b> على التليجرام لمعرفة كل جديد</span><span class="tg-go">اشترك بالقناة ←</span></a>
+    <div class="qnav">
+      <button class="btn btn-sec" id="gPrev" type="button">→ السابق</button>
+      <button class="btn btn-pri" id="gNext" type="button">التالي ←</button>
+    </div>
+    <p class="rights-mini">© ملازم عدل · لا نُحلّل نسخ محتوى الموقع أو استغلاله لأي غرض، تجاري أو غير تجاري.</p>
+  </section>
+
+  <!-- الاختبار التجريبي -->
+  <section id="exam" hidden>
+    <div class="qtop">
+      <div class="ttl">اختبار تجريبي<small id="eCount"></small></div>
+      <div class="timer" id="eTimer">00:00</div>
+    </div>
+    <div class="tabs" id="eTabs"></div>
+    <div id="eHead"></div>
+    <div class="glist" id="eList"></div>
+    <div class="qnav">
+      <button class="btn btn-sec" id="ePrev" type="button">→ القسم السابق</button>
+      <span class="grow"></span>
+      <button class="btn btn-sec" id="eEnd" type="button">إنهاء الاختبار</button>
+      <button class="btn btn-pri" id="eNext" type="button">القسم التالي ←</button>
+    </div>
+    <p class="rights-mini">© ملازم عدل · لا نُحلّل نسخ محتوى الموقع أو استغلاله لأي غرض، تجاري أو غير تجاري.</p>
+  </section>
+
+  <!-- نتيجة الاختبار -->
+  <section id="report" hidden>
+    <div class="qtop"><div class="ttl">نتيجة الاختبار التجريبي</div><button class="btn btn-sec btn-sm" data-home type="button">→ الرئيسية</button></div>
+    <div class="card score" id="rScore"></div>
+    <h2 class="sec-title" id="rHead"></h2>
+    <div class="rlist" id="rList"></div>
+    <div class="qnav"><button class="btn btn-pri" id="rAgain" type="button">اختبار جديد</button><button class="btn btn-sec" id="rRev" type="button">راجع أخطاءك</button></div>
+    <p class="rights-mini">© ملازم عدل · لا نُحلّل نسخ محتوى الموقع أو استغلاله لأي غرض، تجاري أو غير تجاري.</p>
+  </section>
+</main>
+
+<div class="modal" id="modal" hidden>
+  <div class="card" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <h3 id="mTitle"></h3><p id="mText"></p>
+    <div class="row"><button class="btn btn-pri" id="mYes" type="button"></button><button class="btn btn-sec" id="mNo" type="button">رجوع</button></div>
+  </div>
+</div>
+
+<script src="grammar.js"></script>
+<script src="vocab.js"></script>
+<script src="reading.js"></script>
+<script src="listening.js"></script>
+<script>
+/* ════════ الروابط ════════ */
+const STORE_URL = 'https://mtgradl.com';
+const TELEGRAM_URL = 'https://t.me/mlazmadl';
+const EHSAN_URL = 'https://ehsan.sa';
+
+/* ════════ إعدادات ════════ */
+const VOCAB_SET = 20;                                  // عدد أسئلة كل مجموعة كلمات
+const EXAM_PER = 10;                                   // أسئلة كل قسم في الاختبار التجريبي
+const EXAM_MIN = { g: 8, v: 8, r: 12, l: 12 };         // دقائق كل قسم في الاختبار
+const EXAM_PLAYS = 2;                                  // عدد مرات سماع المقطع في الاختبار
+
+const SEC = {
+  g: { ar: 'قواعد', en: 'Grammar', ic: '📐' },
+  v: { ar: 'كلمات', en: 'Vocabulary', ic: '🔤' },
+  r: { ar: 'قطعة', en: 'Reading', ic: '📖' },
+  l: { ar: 'استماع', en: 'Listening', ic: '🎧' }
+};
+const ORDER_SEC = ['g', 'v', 'r', 'l'];
+const LETTERS = ['A', 'B', 'C', 'D'];
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const hash = s => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const secName = s => `${SEC[s].ar} (${SEC[s].en})`;
+
+/* ── البيانات ── */
+const GR = window.GRAMMAR || [], VO = window.VOCAB || [], RE = window.READING || [], LI = window.LISTENING || [];
+const QS = [];
+GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, code: `G${ri + 1}-${k + 1}` })));
+VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, code: `V-${i + 1}` }));
+RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, code: `R${p.n}-${k + 1}` })));
+LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
+const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
+const ofSec = s => QS.filter(q => q.sec === s);
+const ofGrp = (s, g) => QS.filter(q => q.sec === s && q.grp === g);
+const vocabSets = Math.ceil(VO.length / VOCAB_SET);
+const grpCount = s => ({ g: GR.length, v: vocabSets, r: RE.length, l: LI.length }[s]);
+const repBtn = q => `<a class="rep" href="${TELEGRAM_URL}" target="_blank" rel="noopener" title="اكتب لنا رقم السؤال ${q.code} في القناة">⚑ بلّغ عن خطأ</a>`;
+
+/* ── الحفظ في المتصفح ── */
+const KEY = 'english-v1';
+let LS = { ans: {}, wrong: {} };
+try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); if (v && typeof v === 'object') LS = Object.assign(LS, v); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(LS)); } catch (e) {} };
+function record(q, ok) {
+  LS.ans[q.id] = ok ? 1 : 0;
+  if (ok) delete LS.wrong[q.id]; else LS.wrong[q.id] = 1;
+  save();
+}
+const weakIds = () => QS.filter(q => LS.wrong[q.id]).map(q => q.id);
+
+/* ترتيب الخيارات (ثابت خلال الزيارة) */
+const ORD = {};
+const options = q => ORD[q.id] || (ORD[q.id] = shuffle(q.o.map((txt, i) => ({ txt, ok: i === 0 }))));
+const blankify = (s, fill) => esc(s).replace(/\.{4,}/g, fill ? `<span class="blank fill">${esc(fill)}</span>` : '<span class="blank">&nbsp;</span>');
+const qHTML = (q, fill) => q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
+
+/* ── التنقل ── */
+let view = 'home';
+function show(v) {
+  view = v;
+  ['home', 'list', 'quiz', 'group', 'exam', 'report'].forEach(s => $(s).hidden = s !== v);
+  if (v !== 'group' && v !== 'exam') stopAudio();
+  window.scrollTo(0, 0);
+}
+function stopAudio() { document.querySelectorAll('audio').forEach(a => { try { a.pause(); } catch (e) {} }); }
+
+/* ── الرئيسية ── */
+function renderHome() {
+  const ids = Object.keys(LS.ans).filter(id => BY_ID[id]);
+  const right = ids.filter(id => LS.ans[id]).length;
+  $('pAns').textContent = ids.length + ' / ' + QS.length;
+  $('pBar').style.width = (QS.length ? ids.length / QS.length * 100 : 0) + '%';
+  $('pAcc').textContent = ids.length ? Math.round(right / ids.length * 100) + '%' : '—';
+  const wrong = weakIds().length;
+  $('pWrong').textContent = wrong;
+  $('revMeta').textContent = wrong ? 'عندك ' + wrong + ' سؤال تحتاج مراجعة.' : 'ما عندك أخطاء حالياً 👌';
+  $('startRev').disabled = !wrong;
+
+  const unit = { g: 'قاعدة', v: 'مجموعة', r: 'قطعة', l: 'مقطع' };
+  $('secs').innerHTML = ORDER_SEC.map(s => {
+    const list = ofSec(s), done = list.filter(q => q.id in LS.ans).length, n = grpCount(s);
+    return `<button class="card sec s-${s}" type="button" data-sec="${s}" ${list.length ? '' : 'disabled'}>
+      <span class="ic" aria-hidden="true">${SEC[s].ic}</span>
+      <h3>${SEC[s].ar}<small>(${SEC[s].en})</small></h3>
+      <span class="meta">${list.length ? `${n} ${unit[s]} · ${list.length} سؤال · جاوبت ${done}` : '<span class="soon">قريباً</span>'}</span>
+      <span class="bar"><i style="width:${list.length ? done / list.length * 100 : 0}%"></i></span>
+    </button>`;
+  }).join('');
+
+  const parts = examParts();
+  const total = parts.reduce((a, p) => a + p.ids.length, 0), mins = parts.reduce((a, p) => a + EXAM_MIN[p.s], 0);
+  $('examInfo').textContent = `${EXAM_PER} أسئلة عشوائية من كل قسم (${parts.map(p => SEC[p.s].ar).join('، ')}) — المجموع ${total} سؤال في ${mins} دقيقة. ` +
+    (LI.length ? `المقطع الصوتي في الاختبار تقدر تسمعه ${EXAM_PLAYS === 2 ? 'مرتين' : EXAM_PLAYS + ' مرات'} بس.` : '');
+  $('startExam').disabled = !total;
+}
+$('secs').addEventListener('click', e => { const b = e.target.closest('[data-sec]'); if (b && !b.disabled) openList(b.dataset.sec); });
+
+/* ── قائمة القسم ── */
+let curList = null;
+function openList(s) {
+  curList = s;
+  $('lTitle').innerHTML = `${SEC[s].ic} ${secName(s)}<small>${{ g: 'اختر القاعدة', v: 'كل مجموعة فيها ' + VOCAB_SET + ' سؤال', r: 'كل قطعة عليها 10 أسئلة', l: 'كل مقطع عليه 10 أسئلة — اسمع وجاوب' }[s]}</small>`;
+  const n = grpCount(s);
+  $('lItems').innerHTML = Array.from({ length: n }, (_, g) => {
+    const list = ofGrp(s, g), done = list.filter(q => q.id in LS.ans).length;
+    const right = list.filter(q => LS.ans[q.id]).length;
+    let title, sub;
+    if (s === 'g') { title = esc(GR[g].rule); sub = list.length + ' سؤال'; }
+    if (s === 'v') { const a = g * VOCAB_SET + 1, b = Math.min(VO.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الأسئلة ${a}–${b}`; }
+    if (s === 'r') { title = `<span class="en">${esc(RE[g].title)}</span>`; sub = `القطعة ${RE[g].n}`; }
+    if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · ${c.kind === 'dialogue' ? 'حوار بين شخصين' : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
+    const st = done === list.length ? `<span class="st done">✓ ${right}/${list.length}</span>` : done ? `<span class="st">${done}/${list.length}</span>` : '';
+    return `<button class="card item s-${s}" type="button" data-g="${g}"><span class="no">${s === 'r' || s === 'l' ? (s === 'r' ? RE[g].n : LI[g].n) : g + 1}</span><span class="tx"><b>${title}</b><small>${sub}</small></span>${st}</button>`;
+  }).join('');
+  show('list');
+}
+$('lItems').addEventListener('click', e => {
+  const b = e.target.closest('[data-g]'); if (!b) return;
+  const g = +b.dataset.g;
+  if (curList === 'r' || curList === 'l') openGroup(curList, g); else startQuiz(curList, g);
+});
+
+/* ── سؤال بسؤال ── */
+let P = null; // {kind:'set'|'review', s, g, ids, i, picked}
+function startQuiz(s, g) {
+  const ids = ofGrp(s, g).map(q => q.id);
+  const first = ids.findIndex(id => !(id in LS.ans));
+  P = { kind: 'set', s, g, ids, i: first < 0 ? 0 : first, picked: {} };
+  show('quiz'); renderQ();
+}
+function startReview() {
+  const ids = weakIds(); if (!ids.length) return;
+  P = { kind: 'review', ids, i: 0, picked: {} };
+  show('quiz'); renderQ();
+}
+function ctxHTML(q) {   // للمراجعة: يعرض القطعة أو المقطع مع السؤال
+  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"><summary>📖 اعرض القطعة: <span class="en">${esc(p.title)}</span></summary><div class="card passage en">${p.text.map(t => `<p>${esc(t)}</p>`).join('')}</div></details>`; }
+  if (q.sec === 'l') { const c = LI[q.grp]; return `<div class="ctx"><div class="qmeta"><span>🎧 المقطع ${c.n}: <span class="en">${esc(c.title)}</span></span></div><audio controls preload="none" src="${c.audio}"></audio></div>`; }
+  return '';
+}
+function renderQ() {
+  const q = BY_ID[P.ids[P.i]], opts = options(q), picked = P.picked[q.id];
+  const isRev = P.kind === 'review';
+  const where = q.sec === 'g' ? esc(GR[q.grp].rule) : q.sec === 'v' ? `المجموعة ${q.grp + 1}` : '';
+  $('qTitle').innerHTML = isRev
+    ? `راجع أخطاءك<small>${secName(q.sec)} · سؤال ${P.i + 1} من ${P.ids.length}</small>`
+    : `${secName(q.sec)}<small>${where} · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
+  $('qBar').style.width = ((P.i + 1) / P.ids.length * 100) + '%';
+  const done = picked !== undefined;
+  const right = q.o[0];
+  $('qCard').className = 'card qcard s-' + q.sec;
+  $('qCard').innerHTML = (isRev ? ctxHTML(q) : '') +
+    `<div class="qmeta"><span class="k">${SEC[q.sec].en}</span><span class="qcode">${q.code}</span>${repBtn(q)}</div>
+    <p class="qtext en">${qHTML(q, done ? right : null)}</p>
+    <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">` +
+    opts.map((o, i) => {
+      let cls = '';
+      if (done) { if (o.ok) cls = 'ok'; else if (i === picked) cls = 'no'; }
+      return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
+    }).join('') + `</div>` +
+    (done ? `<div class="fb ${opts[picked].ok ? 'ok' : 'no'}">${opts[picked].ok ? '✓ إجابة صحيحة' : `✗ إجابة خاطئة — الإجابة الصحيحة: <span class="en">${esc(right)}</span>`}</div>` : '');
+  $('qPrev').disabled = P.i === 0;
+  $('qNext').textContent = P.i === P.ids.length - 1 ? (isRev ? 'خلّصت المراجعة ✓' : 'خلّصت ✓') : 'التالي ←';
+}
+$('qCard').addEventListener('click', e => {
+  const b = e.target.closest('.opt'); if (!b || b.disabled) return;
+  const q = BY_ID[P.ids[P.i]], i = +b.dataset.i;
+  P.picked[q.id] = i; record(q, options(q)[i].ok); renderQ();
+});
+function quizBack() { if (P && P.kind === 'set') openList(P.s); else goHome(); }
+$('qPrev').onclick = () => { if (P.i > 0) { P.i--; renderQ(); window.scrollTo(0, 0); } };
+$('qNext').onclick = () => {
+  if (P.i < P.ids.length - 1) { P.i++; renderQ(); window.scrollTo(0, 0); return; }
+  if (P.kind === 'set' && P.g + 1 < grpCount(P.s)) startQuiz(P.s, P.g + 1); else quizBack();
+};
+$('qBack').onclick = quizBack;
+
+/* ── قطعة / مقطع: 10 أسئلة في صفحة وحدة مع تصحيح فوري ── */
+let G = null; // {s, g, picked}
+function openGroup(s, g) { G = { s, g, picked: {} }; show('group'); renderGroup(); }
+function headHTML(s, g, exam) {
+  if (s === 'r') { const p = RE[g]; return `<div class="card passage en"><h2>${esc(p.title)}</h2>${p.text.map(t => `<p>${esc(t)}</p>`).join('')}</div>`; }
+  const c = LI[g];
+  const player = exam
+    ? `<div class="xplayer" id="xp"><button class="pbtn" type="button" id="xpBtn" aria-label="تشغيل">▶</button><span class="pb"><i id="xpBar"></i></span><span class="pt" id="xpTime">0:00</span><span class="pc" id="xpCount"></span><audio id="xpAudio" preload="auto" src="${c.audio}"></audio></div>`
+    : `<audio controls preload="metadata" src="${c.audio}"></audio>`;
+  return `<div class="card listen s-l"><div class="hd"><span class="kind">${c.kind === 'dialogue' ? 'حوار' : 'متحدث واحد'}</span><h2 class="en">${exam ? 'Listening' : esc(c.title)}</h2></div>${player}
+    ${exam ? '' : '<p class="tip">🎧 اسمع المقطع وجاوب على الأسئلة. تقدر تعيده كم مرة تبغى.</p>'}</div>`;
+}
+function renderGroup() {
+  const { s, g } = G, list = ofGrp(s, g), item = s === 'r' ? RE[g] : LI[g];
+  $('gTitle').innerHTML = `${SEC[s].ic} ${secName(s)}<small>${s === 'r' ? 'القطعة' : 'المقطع'} ${item.n} من ${grpCount(s)}</small>`;
+  $('gHead').innerHTML = headHTML(s, g, false);
+  renderGroupQs();
+  $('gPrev').disabled = g === 0;
+  $('gNext').textContent = g === grpCount(s) - 1 ? 'خلّصت ✓' : (s === 'r' ? 'القطعة التالية ←' : 'المقطع التالي ←');
+}
+function renderGroupQs() {
+  const { s, g } = G, list = ofGrp(s, g);
+  $('gList').innerHTML = list.map((q, k) => {
+    const opts = options(q), p = G.picked[q.id], done = p !== undefined;
+    return `<div class="card gq s-${s}" data-q="${q.id}">
+      <p class="qtext en"><span class="n">${k + 1}.</span><span>${esc(q.q)}</span></p>
+      <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => {
+        let cls = ''; if (done) { if (o.ok) cls = 'ok'; else if (i === p) cls = 'no'; }
+        return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
+      }).join('')}</div>
+      ${done ? `<div class="fb ${opts[p].ok ? 'ok' : 'no'}">${opts[p].ok ? '✓ صح' : `✗ غلط — الصحيح: <span class="en">${esc(q.o[0])}</span>`}</div>` : ''}
+      <div class="qmeta"><span class="qcode">${q.code}</span>${repBtn(q)}</div>
+    </div>`;
+  }).join('');
+  const n = Object.keys(G.picked).length;
+  if (n === list.length) {
+    const right = list.filter(q => options(q)[G.picked[q.id]].ok).length;
+    const tr = s === 'l' ? `<details class="tr"><summary>📝 اعرض نص المقطع</summary><div class="tr-body en">${LI[g].lines.map(([w, t]) => `<p><b>${esc(w)}:</b> ${esc(t)}</p>`).join('')}</div></details>` : '';
+    $('gFoot').innerHTML = `<div class="card sumbox">نتيجتك: <b>${right} / ${list.length}</b>${tr}</div>`;
+  } else $('gFoot').innerHTML = '';
+}
+$('gList').addEventListener('click', e => {
+  const b = e.target.closest('.opt'); if (!b || b.disabled) return;
+  const q = BY_ID[b.closest('[data-q]').dataset.q], i = +b.dataset.i;
+  G.picked[q.id] = i; record(q, options(q)[i].ok);
+  const y = window.scrollY; renderGroupQs(); window.scrollTo(0, y);
+});
+$('gPrev').onclick = () => { if (G.g > 0) openGroup(G.s, G.g - 1); };
+$('gNext').onclick = () => { if (G.g + 1 < grpCount(G.s)) openGroup(G.s, G.g + 1); else openList(G.s); };
+$('gBack').onclick = () => openList(G.s);
+
+/* ── الاختبار التجريبي ── */
+function examParts() {
+  const parts = [];
+  ORDER_SEC.forEach(s => {
+    const all = ofSec(s); if (!all.length) return;
+    if (s === 'g' || s === 'v') parts.push({ s, ids: shuffle(all.map(q => q.id)).slice(0, EXAM_PER) });
+    else { const g = Math.floor(Math.random() * grpCount(s)); parts.push({ s, g, ids: ofGrp(s, g).map(q => q.id).slice(0, EXAM_PER) }); }
+  });
+  return parts;
+}
+let E = null, timer = null;
+function startExam() {
+  const parts = examParts(); if (!parts.length) return;
+  parts.forEach(p => p.ids.forEach(id => delete ORD[id]));
+  E = { parts, t: 0, picked: {}, plays: 0, end: Date.now() + parts.reduce((a, p) => a + EXAM_MIN[p.s], 0) * 60000 };
+  show('exam'); renderE(); tick();
+  clearInterval(timer); timer = setInterval(tick, 500);
+}
+const fmt = ms => { const s = Math.max(0, Math.ceil(ms / 1000)); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
+function tick() {
+  if (!E) return;
+  const rem = E.end - Date.now();
+  $('eTimer').textContent = fmt(rem);
+  $('eTimer').classList.toggle('low', rem < 180000);
+  if (rem <= 0) finishExam(true);
+}
+function renderE() {
+  stopAudio();
+  const p = E.parts[E.t];
+  const total = E.parts.reduce((a, x) => a + x.ids.length, 0), answered = Object.keys(E.picked).length;
+  $('eCount').textContent = `جاوبت ${answered} من ${total}`;
+  $('eTabs').innerHTML = E.parts.map((x, k) => `<button type="button" data-t="${k}" class="${k === E.t ? 'cur' : ''}">${SEC[x.s].ar} <small>${x.ids.filter(id => id in E.picked).length}/${x.ids.length}</small></button>`).join('');
+  $('eHead').innerHTML = p.s === 'r' || p.s === 'l' ? headHTML(p.s, p.g, true) : '';
+  $('eList').innerHTML = p.ids.map((id, k) => {
+    const q = BY_ID[id], opts = options(q), pk = E.picked[id];
+    return `<div class="card gq s-${q.sec}" data-q="${id}">
+      <p class="qtext en"><span class="n">${k + 1}.</span><span>${qHTML(q)}</span></p>
+      <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => `<button class="opt ${pk === i ? 'sel' : ''}" type="button" data-i="${i}"><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`).join('')}</div>
+    </div>`;
+  }).join('');
+  if (p.s === 'l') bindPlayer();
+  $('ePrev').disabled = E.t === 0;
+  $('eNext').textContent = E.t === E.parts.length - 1 ? 'إنهاء وتصحيح ✓' : 'القسم التالي ←';
+}
+function bindPlayer() {   // مشغّل الاختبار: بدون تقديم، وعدد مرات محدود
+  const a = $('xpAudio'), btn = $('xpBtn'), bar = $('xpBar'), time = $('xpTime'), cnt = $('xpCount');
+  const upd = () => {
+    const left = EXAM_PLAYS - E.plays;
+    cnt.textContent = a.paused && (a.currentTime === 0 || a.ended) ? (left > 0 ? `تقدر تسمع المقطع ${left === 2 ? 'مرتين' : 'مرة وحدة'} بعد` : 'خلّصت مرات السماع المسموحة') : `سماع ${E.plays} من ${EXAM_PLAYS}`;
+    btn.textContent = a.paused ? '▶' : '❚❚';
+    btn.disabled = a.paused && (a.currentTime === 0 || a.ended) && left <= 0;
+  };
+  btn.onclick = () => {
+    if (!a.paused) { a.pause(); return; }
+    if (a.currentTime === 0 || a.ended) { if (E.plays >= EXAM_PLAYS) return; E.plays++; a.currentTime = 0; }
+    a.play().catch(() => {});
+  };
+  a.ontimeupdate = () => { if (a.duration) bar.style.width = (a.currentTime / a.duration * 100) + '%'; time.textContent = Math.floor(a.currentTime / 60) + ':' + String(Math.floor(a.currentTime % 60)).padStart(2, '0'); };
+  a.onplay = a.onpause = upd;
+  a.onended = () => { a.currentTime = 0; bar.style.width = '0'; upd(); };
+  upd();
+}
+$('eList').addEventListener('click', e => {
+  const b = e.target.closest('.opt'); if (!b) return;
+  const id = b.closest('[data-q]').dataset.q;
+  E.picked[id] = +b.dataset.i;
+  b.parentNode.querySelectorAll('.opt').forEach(x => x.classList.toggle('sel', x === b));
+  const total = E.parts.reduce((a, x) => a + x.ids.length, 0);
+  $('eCount').textContent = `جاوبت ${Object.keys(E.picked).length} من ${total}`;
+  const p = E.parts[E.t], tb = $('eTabs').children[E.t];
+  tb.querySelector('small').textContent = `${p.ids.filter(x => x in E.picked).length}/${p.ids.length}`;
+});
+$('eTabs').addEventListener('click', e => { const b = e.target.closest('[data-t]'); if (b) { E.t = +b.dataset.t; renderE(); window.scrollTo(0, 0); } });
+$('ePrev').onclick = () => { if (E.t > 0) { E.t--; renderE(); window.scrollTo(0, 0); } };
+$('eNext').onclick = () => { if (E.t < E.parts.length - 1) { E.t++; renderE(); window.scrollTo(0, 0); } else askFinish(); };
+$('eEnd').onclick = askFinish;
+function askFinish() {
+  const total = E.parts.reduce((a, x) => a + x.ids.length, 0), left = total - Object.keys(E.picked).length;
+  confirmBox('تنهي الاختبار؟', left ? `باقي ${left} سؤال ما جاوبت عليه، وبينحسب خطأ.` : 'جاوبت على كل الأسئلة. يطلع لك التصحيح الحين.', 'إيه، أنهِ الاختبار', () => finishExam(false));
+}
+function finishExam(timeUp) {
+  if (!E) return;
+  clearInterval(timer); timer = null; stopAudio();
+  const res = [];
+  E.parts.forEach(p => p.ids.forEach(id => {
+    const q = BY_ID[id], opts = options(q), pk = E.picked[id];
+    const ok = pk !== undefined && opts[pk].ok;
+    record(q, ok); res.push({ q, ok, you: pk === undefined ? null : opts[pk].txt });
+  }));
+  const parts = E.parts; E = null;
+  const score = res.filter(r => r.ok).length, total = res.length, pct = Math.round(score / total * 100);
+  const msg = pct >= 90 ? 'ممتاز! مستواك عالي 🔥' : pct >= 75 ? 'جيد جداً، راجع أخطاءك وتكون جاهز 👍' : pct >= 50 ? 'لا بأس، تحتاج تدريب أكثر.' : 'ارجع للأقسام وتدرّب زين قبل الاختبار.';
+  $('rScore').innerHTML = `<div class="n">${score}<small> / ${total}</small></div><p>${timeUp ? '⏱ انتهى الوقت · ' : ''}${msg}</p>
+    <div class="brk">${parts.map(p => `<span>${SEC[p.s].ar}: ${res.filter(r => r.q.sec === p.s && r.ok).length}/${p.ids.length}</span>`).join('')}</div>`;
+  const wrong = res.filter(r => !r.ok);
+  $('rHead').textContent = wrong.length ? `❌ الأسئلة اللي غلطت فيها (${wrong.length})` : '🎉 ما غلطت في ولا سؤال!';
+  $('rList').innerHTML = wrong.map(r => `<div class="card ritem">
+      <div class="qmeta"><span class="k" style="background:var(--sunk)">${secName(r.q.sec)}</span></div>
+      <p class="q en">${qHTML(r.q)}</p>
+      <div class="row you">إجابتك: <b class="en">${r.you === null ? 'ما جاوبت' : esc(r.you)}</b></div>
+      <div class="row right">الإجابة الصحيحة: <b class="en">${esc(r.q.o[0])}</b></div>
+      <div class="rrow"><span class="qcode">${r.q.code}</span>${repBtn(r.q)}</div>
+    </div>`).join('');
+  $('rRev').disabled = !weakIds().length;
+  show('report');
+}
+$('rAgain').onclick = startExam;
+$('rRev').onclick = startReview;
+
+/* ── عام ── */
+function goHome() {
+  if (E) { confirmBox('تطلع من الاختبار؟', 'إذا طلعت بيضيع هذا الاختبار.', 'إيه، اطلع', () => { clearInterval(timer); E = null; renderHome(); show('home'); }); return; }
+  renderHome(); show('home');
+}
+function confirmBox(title, text, yes, fn) {
+  $('mTitle').textContent = title; $('mText').textContent = text; $('mYes').textContent = yes;
+  $('modal').hidden = false;
+  $('mYes').onclick = () => { $('modal').hidden = true; fn(); };
+  $('mNo').onclick = () => { $('modal').hidden = true; };
+}
+document.querySelectorAll('[data-home]').forEach(b => b.onclick = goHome);
+$('homeBtn').onclick = goHome;
+$('startExam').onclick = startExam;
+$('startRev').onclick = startReview;
+$('resetAll').onclick = () => confirmBox('تمسح كل تقدمك؟', 'بتنمسح إجاباتك وقائمة أخطائك من هذا الجهاز.', 'إيه، امسح', () => { LS = { ans: {}, wrong: {} }; save(); renderHome(); });
+$('storeLink').href = STORE_URL;
+document.querySelectorAll('.mini-ad').forEach(a => a.href = STORE_URL);
+document.querySelectorAll('.tg-link').forEach(a => a.href = TELEGRAM_URL);
+$('donateLink').href = EHSAN_URL;
+document.addEventListener('keydown', e => { if (e.key === 'Escape') $('modal').hidden = true; });
+
+renderHome();
+</script>
+</body>
+</html>

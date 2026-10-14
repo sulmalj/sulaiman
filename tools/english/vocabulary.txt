@@ -1,0 +1,229 @@
+# أسئلة الكلمات — سؤال لكل كلمة من store/english/vocabulary-list.txt
+# الصيغة: الكلمة (من القائمة) || الجملة وفيها ..... || الإجابة الصحيحة | خطأ | خطأ | خطأ
+Clothes || I need to buy new ..... for the winter, like a warm jacket and gloves. || clothes | ideas | fields | hobbies
+Describe || Can you ..... the man you saw? Was he tall or short? || describe | collect | feed | ride
+Friendly || Our new neighbour is very ....., she always smiles and says hello. || friendly | messy | lonely | dirty
+Funny || My uncle tells great jokes. He is so ..... that we laugh all the time. || funny | shy | serious | boring
+Helpful || The shop assistant was very ....., she showed me where everything was. || helpful | noisy | lonely | unsafe
+Intelligent || Sara is very ....., she can solve difficult math problems quickly. || intelligent | overweight | crowded | messy
+Meet || Let's ..... in front of the library at five o'clock. || meet | wear | grow | feed
+Overweight || The doctor told him that he is ..... and needs to lose ten kilos. || overweight | thin | shy | neat
+Thin || She doesn't eat much, so she is very ...... || thin | overweight | funny | noisy
+Wear || At our school, all students have to ..... a uniform. || wear | watch | meet | grow
+Messy || His room is very ....., there are clothes and books all over the floor. || messy | neat | clean | safe
+Neat || Her desk is always ....., everything is in the right place. || neat | messy | dirty | noisy
+Serious || Our teacher is very ....., he never laughs or tells jokes in class. || serious | funny | friendly | helpful
+Short || My brother is only 150 cm. He is quite ..... for his age. || short | tall | thin | famous
+Shy || Lama is very ....., she doesn't like to talk to people she doesn't know. || shy | funny | friendly | famous
+Tall || My father is 190 cm. He is very ...... || tall | short | shy | cheap
+Be good at || Omar ..... math. He always gets the highest marks in the class. || is good at | belongs to | depends on | listens to
+Be interested in || I ..... history, so I read a lot of books about the past. || am interested in | belong to | depend on | give up
+Be on || My favourite TV show ..... at nine o'clock every Friday. || is on | belongs to | depends on | gives up
+Get together with || Every weekend, I ..... my cousins and we have dinner. || get together with | give up | belong to | depend on
+Go || I usually ..... to school by bus. || go | play | read | watch
+Go to || Every summer, we ..... the beach to swim in the sea. || go to | listen to | belong to | live in
+Listen to || I like to ..... music while I study. || listen to | go to | belong to | live in
+Live in || My grandparents ..... a small village near the mountains. || live in | listen to | give up | depend on
+Play || The children ..... football in the park every afternoon. || play | read | ride | wear
+Read || I ..... the newspaper every morning with my coffee. || read | ride | play | wear
+Ride || My little brother learned to ..... a bike when he was five. || ride | read | wear | feed
+Take || Don't forget to ..... your umbrella, it's going to rain. || take | ride | watch | feed
+Watch || We ..... a movie at the cinema last night. || watched | wore | rode | grew
+Belong to || This red bag doesn't ..... me. It's my sister's. || belong to | listen to | live in | depend on
+Club || He joined the chess ..... at school, and they meet every Tuesday. || club | farm | field | flood
+Collect || My grandfather likes to ..... old coins. He has more than 500. || collect | invite | feed | describe
+Good at || Noura is ..... drawing. Her pictures are beautiful. || good at | instead of | above | below
+Hobbies || My ..... are reading and swimming. I do them in my free time. || hobbies | fields | farms | floods
+Interested in || Are you ..... art? There is a new exhibition at the museum. || interested in | instead of | belong to | above
+Team || Our school football ..... won the match 3–0. || team | farm | flood | memory
+Famous || Ronaldo is a very ..... football player. Everyone knows his name. || famous | shy | lonely | messy
+Farm || My uncle has a ..... with cows, chickens and sheep. || farm | club | team | campus
+Feed || Don't forget to ..... the cat. It hasn't eaten since the morning. || feed | ride | wear | describe
+Field || The farmer grows wheat in a large ..... behind his house. || field | club | team | drawer
+Flood || After three days of heavy rain, there was a big ..... and many houses were under water. || flood | event | contest | tradition
+Pick up || Please ..... the papers from the floor and put them on the desk. || pick up | turn off | give up | stay up
+Unusual || It is very ..... to see snow in Riyadh. It almost never happens. || unusual | popular | famous | crowded
+Academic || The university's ..... year starts in September and ends in June. || academic | delicious | organic | lonely
+Academy || He trains at a football ..... for young players. || academy | flood | drawer | memory
+Attend || All students must ..... the lecture. The teacher will check who is absent. || attend | feed | collect | grow
+Difficult || The exam was very ....., most students couldn't finish it. || difficult | easy | simple | enjoyable
+Difficulty || He has ..... reading small letters, so he needs glasses. || difficulty | strength | memory | energy
+Enjoy || I really ..... spending time with my friends at the beach. || enjoy | avoid | fail | reduce
+Enjoyable || The trip was very ....., we had a great time. || enjoyable | boring | dangerous | complicated
+Friend || Ahmed is my best ....., we have known each other since we were children. || friend | landlord | professor | expert
+Help || Can you ..... me carry these heavy boxes? || help | fail | grow | avoid
+Intelligence || Chess is a game that needs a lot of ..... and thinking. || intelligence | electricity | flood | rent
+Student || Sara is a ..... at King Saud University. She studies medicine. || student | landlord | farm | team
+Studious || Khalid is very ....., he studies for hours every day and always does his homework. || studious | lonely | messy | noisy
+Study || I need to ..... for my English exam tomorrow. || study | teach | feed | ride
+Teach || My mother is a teacher. She ..... English at a primary school. || teaches | feeds | rides | grows
+Teachable || He is very ....., he listens to advice and learns new things quickly. || teachable | dangerous | crowded | unsafe
+Teacher || Our English ..... gave us a lot of homework today. || teacher | student | landlord | roommate
+Campus || The university ..... is very big. It has twenty buildings and a large library. || campus | drawer | flood | pill
+Community || Everyone in our ..... helped to clean the streets after the storm. || community | drawer | vitamin | diet
+Download || You can ..... the app for free from the internet. || download | feed | grow | celebrate
+Foreign Language || Learning a ....., like French or Chinese, can help you find a better job. || foreign language | public transportation | dairy | tradition
+Skill || Cooking is a useful ..... that everyone should learn. || skill | flood | rent | drawer
+Professor || Dr. Ali is a ..... of history at the university. || professor | landlord | roommate | vegetarian
+Special || Today is a ..... day. It's my parents' wedding anniversary. || special | boring | dirty | cheap
+Above || The picture is hanging on the wall ..... the sofa. || above | instead of | well | unfortunately
+Below || It was ten degrees ..... zero. It was freezing! || below | above | instead of | well
+Boring || The movie was so ..... that I fell asleep. || boring | interesting | delicious | enjoyable
+Cheap || This phone is very ....., it costs only 100 riyals. || cheap | expensive | dangerous | complicated
+Clean || Wash your hands. They should be ..... before you eat. || clean | dirty | messy | noisy
+Complicated || The instructions were so ..... that nobody understood them. || complicated | simple | easy | safe
+Dangerous || Don't swim here. The sea is very ..... today because of the big waves. || dangerous | safe | cheap | neat
+Dirty || My shoes are ..... because I walked in the mud. || dirty | clean | neat | cheap
+Easy || The test was very ....., I finished it in ten minutes. || easy | difficult | hard | complicated
+Expensive || I can't buy this car. It's too ...... || expensive | cheap | affordable | simple
+Fail || If you don't study, you will ..... the exam. || fail | enjoy | celebrate | grow
+Hard || Climbing the mountain was very ....., we were tired after only one hour. || hard | easy | simple | cheap
+Interesting || This book is very ....., I couldn't stop reading it. || interesting | boring | dirty | noisy
+Negative || He always thinks that bad things will happen. He is very ...... || negative | positive | helpful | neat
+Off || Please turn ..... the lights when you leave the room. || off | on | above | below
+On || It's dark in here. Can you turn ..... the light, please? || on | off | above | below
+Online || I bought these shoes ....., and they arrived at my house two days later. || online | outdoors | below | above
+Safe || Keep your money in a ..... place, like a bank. || safe | dangerous | unsafe | noisy
+Simple || The recipe is very ....., it has only three steps. || simple | complicated | difficult | hard
+Strength || His biggest ..... is that he stays calm, but his weakness is that he is always late. || strength | weakness | stress | shortage
+Succeed || If you work hard, you will ..... in your exams. || succeed | fail | avoid | reduce
+Weakness || My biggest ..... is math. I always get low marks in it. || weakness | strength | skill | goal
+Well || She speaks English very ....., she lived in London for five years. || well | badly | maybe | instead of
+Celebrate || We will ..... my brother's graduation with a big party. || celebrate | avoid | fail | reduce
+Delicious || This cake is .....! Can I have another piece? || delicious | dirty | boring | noisy
+Event || The music festival is the biggest ..... in our city this year. || event | drawer | pill | landlord
+Fresh || I buy ..... bread from the bakery every morning. || fresh | dirty | noisy | lonely
+Grow || My grandfather ..... tomatoes and onions in his garden. || grows | invites | avoids | celebrates
+Popular || This restaurant is very ....., there are always a lot of people waiting for a table. || popular | unusual | lonely | private
+Prepare || My mother usually ..... dinner at seven o'clock. || prepares | invites | collects | celebrates
+Apples || Red and green ..... are my favourite fruit. || apples | onions | potatoes | beans
+Bananas || Monkeys love eating long, yellow ...... || bananas | onions | potatoes | shrimp
+Beans || Green ..... are long, thin vegetables. || beans | bananas | grapes | apples
+Beef || ..... is meat that comes from cows. || Beef | Chicken | Shrimp | Lobster
+Cheese || ..... is made from milk, and we put it on pizza. || Cheese | Beef | Onions | Bananas
+Chicken || ..... is a kind of bird, and we eat its meat and eggs. || Chicken | Beef | Cheese | Lobster
+Dairy || Milk, cheese and yogurt are ..... products. || dairy | seafood | vegetables | fruit
+Fruit || Apples, oranges and grapes are kinds of ...... || fruit | vegetables | dairy | seafood
+Grapes || ..... are small, round fruits that grow in bunches. || Grapes | Potatoes | Onions | Beans
+Lobster || A ..... is a large sea animal with big claws. It is very expensive to eat. || lobster | chicken | beef | cheese
+Meat || Vegetarians don't eat ...... || meat | vegetables | fruit | beans
+Milk || Babies drink ..... every day. || milk | beef | onions | shrimp
+Onions || Cutting ..... always makes me cry. || onions | apples | bananas | grapes
+Potatoes || French fries are made from ...... || potatoes | grapes | apples | bananas
+Seafood || Fish, shrimp and lobster are kinds of ...... || seafood | dairy | fruit | vegetables
+Shrimp || ..... are small sea animals. They turn pink when you cook them. || Shrimp | Beef | Onions | Grapes
+Vegetables || Carrots, onions and potatoes are ...... || vegetables | fruit | dairy | seafood
+Avoid || You should ..... eating too much sugar if you want to be healthy. || avoid | enjoy | celebrate | increase
+Flavor || This ice cream has a strawberry ...... || flavor | memory | scene | tradition
+Ingredient || Flour is the main ..... in bread. || ingredient | memory | event | landlord
+Memory || I have a good ....., I never forget people's names. || memory | flavor | scene | tradition
+Nutritious || Fruit and vegetables are very ....., they are full of vitamins. || nutritious | unhealthy | dangerous | boring
+Organic || ..... food is grown without chemicals. || Organic | Crowded | Noisy | Modern
+Vegetarian || My sister is a ....., she doesn't eat meat or fish. || vegetarian | landlord | roommate | professor
+Nondairy || He can't drink milk, so he buys ..... products. || nondairy | sugar-free | salt-free | unhealthy
+Nonfat || I'm on a diet, so I drink ..... milk with zero percent fat. || nonfat | nondairy | salt-free | unhealthy
+Salt-free || My father must not eat salt, so he buys ..... bread. || salt-free | sugar-free | nonfat | nondairy
+Sugar-free || People with diabetes can't have sugar, so they drink ..... drinks. || sugar-free | salt-free | nondairy | nonfat
+Unfriendly || The waiter was very ....., he didn't smile or say hello. || unfriendly | friendly | helpful | funny
+Unhealthy || Eating fast food every day is ...... || unhealthy | nutritious | healthy | safe
+Unsafe || This old bridge is ....., nobody should walk on it. || unsafe | safe | clean | neat
+Cost || How much does this bag .....? || cost | guess | invite | provide
+Guess || I don't know the answer, so I'll just ...... || guess | invite | cost | provide
+Idea || I have an .....! Let's go to the beach this weekend. || idea | memory | ingredient | event
+Invite || I'm going to ..... all my friends to my birthday party. || invite | avoid | guess | cost
+Nature || I love walking in ....., among the trees, rivers and mountains. || nature | tradition | memory | building
+Program || My favourite TV ..... is about animals in Africa. || program | tradition | flavor | ingredient
+Positive || Always be .....! Think about the good things in life. || positive | negative | lonely | unsafe
+Sightseeing || When we visited Paris, we went ..... and saw the Eiffel Tower. || sightseeing | swimming | skiing | jogging
+Spend || I ..... a lot of money on clothes last month. || spent | guessed | invited | provided
+Give a ride || My car is broken. Can you ..... me a ride to work? || give | have | make | tell
+Have a snack || I'm a little hungry. Let's ..... a snack before class. || have | make | tell | take
+Have an idea || I ..... an idea! Let's make a video for our project. || have | make | tell | give
+Have coffee || Let's ..... coffee together at the café after work. || have | tell | give | do
+Have fun || We went to the amusement park and ..... a lot of fun. || had | made | told | took
+Make friends || It's easy to ..... friends at university if you join clubs. || make | tell | do | take
+Make plans || Let's ..... plans for the weekend. Where should we go? || make | tell | give | do
+Take a vacation || I'm very tired from work. I need to ..... a vacation. || take | tell | make | do
+Take a walk || After dinner, my grandfather likes to ..... a walk in the park. || take | tell | make | do
+Tell a joke || My uncle always ..... a joke at dinner, and everyone laughs. || tells | takes | has | does
+Crowded || The mall was very ....., there were thousands of people. || crowded | lonely | private | safe
+Modern || Our new house is very ....., with smart lights and a new kitchen. || modern | run-down | dirty | noisy
+Outdoors || When the weather is nice, the children like to play ...... || outdoors | online | below | above
+Badly || He sang so ..... that everyone covered their ears. || badly | well | maybe | online
+Provide || The hotel ..... free breakfast for all guests. || provides | costs | guesses | invites
+Relaxing || A warm bath after a long day is very ...... || relaxing | dangerous | complicated | noisy
+Scene || The first ..... of the movie shows a big city at night. || scene | flavor | ingredient | diet
+Tradition || Drinking Arabic coffee with dates during Eid is a family ...... || tradition | ingredient | vitamin | shortage
+Do aerobic || My mother goes to the gym to ..... aerobics three times a week. || do | play | go | make
+Do crosswords || My grandfather likes to ..... crosswords in the newspaper. || do | go | make | ride
+Do gymnastics || She is very flexible because she ..... gymnastics every day. || does | plays | goes | rides
+Do judo || My brother ..... judo. He has a black belt. || does | plays | goes | rides
+Do nothing || On Fridays, I just stay at home and ..... nothing. I'm too lazy! || do | play | go | make
+Go shopping || Let's go ..... at the mall. I need new clothes. || shopping | skiing | hiking | swimming
+Go hiking || We went ..... in the mountains and walked for six hours. || hiking | shopping | swimming | skiing
+Go skiing || In winter, we go ..... on the snowy mountains. || skiing | swimming | jogging | shopping
+Go swimming || It's very hot today. Let's go ..... in the pool. || swimming | skiing | hiking | shopping
+Go jogging || Every morning, I go ..... in the park for thirty minutes to stay fit. || jogging | skiing | shopping | sightseeing
+Play baseball || In America, many people play ....., a game with a bat and a small ball. || baseball | scrabble | soccer | video games
+Play scrabble || We often play ....., a board game where you make words with letters. || scrabble | baseball | soccer | tennis
+Play soccer || My brother plays ..... with his friends. He is the goalkeeper. || soccer | scrabble | tennis | video games
+Play tennis || She plays ..... with a racket. She hits the ball over the net. || tennis | soccer | baseball | scrabble
+Play video games || He plays ..... on his computer all night. || video games | tennis | soccer | baseball
+Bright || This room is very ....., it has big windows and lots of sunlight. || bright | noisy | crowded | run-down
+Building || The Kingdom Tower is a very tall ..... in Riyadh. || building | drawer | field | flood
+Comfortable || This sofa is very ....., I could sit on it all day. || comfortable | noisy | dangerous | complicated
+Contest || She won first prize in the singing ...... || contest | drawer | shortage | landlord
+Design || I like the ..... of this house. It looks very modern. || design | shortage | stress | pill
+Drawer || I keep my socks in the top ..... of my cupboard. || drawer | building | field | campus
+Electricity || We couldn't use the lights or the TV because there was no ...... || electricity | environment | tradition | memory
+Environment || We should stop throwing plastic in the sea to protect the ...... || environment | electricity | entertainment | rent
+Extremely || It was ..... hot yesterday, fifty degrees! || extremely | badly | maybe | well
+Share || My brother and I ..... a bedroom. We each have a bed in it. || share | spend | cost | provide
+Space || Astronauts travel to ..... in a rocket. || space | field | farm | campus
+Spend Time || I like to ..... time with my family on weekends. || spend | cost | guess | provide
+View || From our hotel room, we had a beautiful ..... of the sea. || view | shortage | rent | diet
+Own || They bought a house last year, so now they ..... it. || own | cost | provide | invite
+Affordable || I want an ..... apartment. I can't pay more than 2000 riyals a month. || affordable | expensive | crowded | noisy
+Condition || The car is old, but it is in good ....., it works perfectly. || condition | location | shortage | demand
+Demand || There is a high ..... for nurses, many hospitals need them. || demand | location | condition | view
+Entertainment || The city has lots of ....., like cinemas, theaters and parks. || entertainment | environment | electricity | housing
+Housing || Students can find cheap ..... near the university, like small apartments. || housing | entertainment | electricity | environment
+Increase || The price of petrol will ..... next month, from 2 riyals to 2.5 riyals. || increase | reduce | avoid | fail
+Landlord || We pay our rent to the ..... at the end of every month. || landlord | roommate | professor | vegetarian
+Location || The hotel has a great ....., it's in the city centre, near everything. || location | condition | demand | shortage
+Noisy || I can't sleep because my neighbours are very ....., they play loud music all night. || noisy | lonely | neat | shy
+Private || This is a ..... beach. Only hotel guests can use it. || private | crowded | popular | noisy
+Problem || My car won't start. There's a ..... with the engine. || problem | goal | idea | view
+Public transportation || I don't have a car, so I use ....., like buses and the metro. || public transportation | foreign language | entertainment | housing
+Rent || The ..... for this apartment is 3000 riyals a month. || rent | landlord | location | view
+Roommate || My ..... and I share an apartment near the campus. || roommate | landlord | professor | expert
+Shortage || There is a ..... of water in the village. People don't have enough to drink. || shortage | condition | location | view
+Be addicted to || He ..... his phone. He can't stop using it, even for one minute. || is addicted to | belongs to | lives in | listens to
+Become || She studied medicine for seven years to ..... a doctor. || become | produce | manage | control
+Behavior || The teacher was happy with the students' good ..... in class. || behavior | stress | shortage | diet
+Break || Be careful! Don't ..... the glass. || break | grow | feed | celebrate
+Expert || Dr. Saleh is an ..... in computers. He knows everything about them. || expert | landlord | roommate | vegetarian
+Give up || Don't .....! Keep trying and you will succeed. || give up | stay up | turn off | pick up
+Goal || My ..... is to become a pilot one day. || goal | stress | problem | weakness
+Instead of || I drink water ..... soda because it's healthier. || instead of | above | below | depends on
+Lose weight || He wants to ..... weight, so he goes jogging every day. || lose | grow | break | fail
+Maybe || I'm not sure if I can come today. ..... I'll come tomorrow. || Maybe | Extremely | Badly | Instead of
+Plan || We ..... to travel to Turkey next summer. || plan | own | cost | guess
+Pay Attention || Please ..... to the teacher. This information will be in the exam. || pay attention | give up | stay up | turn off
+Stay Up || I had to ..... late last night to finish my homework. || stay up | give up | pick up | turn off
+Stress || Exams cause a lot of ..... for students. They feel worried and nervous. || stress | energy | strength | vitamin
+Unfortunately || I wanted to go to the beach, but ....., it rained all day. || unfortunately | maybe | extremely | well
+Turn Off || Please ..... your phone during the exam. || turn off | stay up | give up | pick up
+Control || He couldn't ..... the car on the icy road, and it hit a tree. || control | produce | reduce | become
+Depends on || Going to the beach tomorrow ..... the weather. || depends on | belongs to | listens to | lives in
+Diet || She is on a ....., she eats only vegetables and chicken to lose weight. || diet | stress | pill | energy
+Energy || I'm tired and I have no ..... today. I need some sleep. || energy | diet | behavior | shortage
+Exercise || Doctors say that ..... is good for your heart, for example walking or swimming. || exercise | stress | shortage | behavior
+Healthy || Eating fruit and vegetables keeps you ...... || healthy | unhealthy | lonely | noisy
+Lonely || He lives alone and has no friends, so he feels very ...... || lonely | crowded | healthy | positive
+Manage || She ..... a big company with 500 employees. || manages | reduces | becomes | avoids
+Pill || The doctor told me to take one ..... after every meal. || pill | diet | stress | energy
+Produce || This factory ..... 1000 cars every month. || produces | reduces | becomes | avoids
+Vitamin || Oranges are full of ..... C. || vitamin | diet | stress | memory
+Reduce || Turn off the lights when you leave the room to ..... the electricity bill. || reduce | increase | celebrate | become
+Run-down || I've been working too hard and not sleeping enough. I feel tired and ...... || run-down | healthy | relaxing | comfortable
