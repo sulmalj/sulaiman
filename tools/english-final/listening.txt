@@ -1,0 +1,1623 @@
+# مصدر مقاطع الاستماع لموقع الفاينل (مقاطع جديدة غير مقاطع الميد)
+# الصيغة:
+#   ## رقم | العنوان | dialogue أو monologue
+#   @ الاسم=الصوت الاسم=الصوت        (أصوات Kokoro)
+#   الاسم: الكلام
+#   ?? السؤال
+#   * الإجابة الصحيحة
+#   - خيار خطأ   (ثلاث خيارات خطأ)
+# البناء: python3 tools/english-final/build_listening.py --model kokoro.onnx --voices voices.bin
+
+## 1 | Booking a Dentist Appointment | dialogue
+@ Receptionist=af_bella Faisal=am_michael
+Receptionist: Good morning, Smile Dental Clinic. This is Rana speaking. How can I help you?
+Faisal: Good morning. I'd like to make an appointment with a dentist, please. I have a terrible toothache.
+Receptionist: I'm sorry to hear that. How long have you had the pain?
+Faisal: Since Saturday, so about three days now. It hurts more when I drink something cold.
+Receptionist: I see. Have you visited our clinic before?
+Faisal: No, this is my first time. My friend Majed recommended you.
+Receptionist: Great. Doctor Hassan has a free appointment tomorrow at eleven thirty in the morning. Is that OK for you?
+Faisal: Hmm, I have a class at eleven. Is there anything in the afternoon?
+Receptionist: Let me check. Yes, there's an appointment at four fifteen with Doctor Laila.
+Faisal: Four fifteen is perfect. How much does the first visit cost?
+Receptionist: The first check-up is one hundred and fifty riyals. If you need an X-ray, it's an extra fifty riyals.
+Faisal: OK, no problem. Can I pay by card?
+Receptionist: Yes, of course. Can I have your full name, please?
+Faisal: Faisal Al-Harbi.
+Receptionist: And your phone number?
+Faisal: It's oh five five, three two one, eight seven six four.
+Receptionist: Thank you, Faisal. Please come ten minutes early to fill in a form. And please bring your ID card.
+Faisal: Sure. Where exactly is the clinic?
+Receptionist: We're on Prince Sultan Street, on the second floor, above the pharmacy.
+Faisal: Thank you very much. See you tomorrow.
+?? Why does Faisal want to see a dentist?
+* He has a terrible toothache.
+- He wants to clean his teeth.
+- He broke his tooth.
+- His friend asked him to go.
+?? How long has Faisal had the pain?
+* About three days
+- About a week
+- Since this morning
+- About three weeks
+?? When does the pain get worse?
+* When he drinks something cold
+- When he eats something sweet
+- When he sleeps
+- When he drinks hot tea
+?? Who recommended the clinic?
+* His friend Majed
+- His brother
+- Doctor Hassan
+- His teacher
+?? Why can't Faisal go at eleven thirty?
+* He has a class at eleven.
+- He has to work.
+- The clinic is closed.
+- He has another appointment.
+?? What time is Faisal's appointment?
+* At four fifteen
+- At eleven thirty
+- At four fifty
+- At eleven o'clock
+?? Which doctor will Faisal see?
+* Doctor Laila
+- Doctor Hassan
+- Doctor Rana
+- Doctor Majed
+?? How much does the first check-up cost?
+* One hundred and fifty riyals
+- Fifty riyals
+- Two hundred riyals
+- One hundred riyals
+?? Why should Faisal come ten minutes early?
+* To fill in a form
+- To pay the money
+- To take an X-ray
+- To meet the doctor
+?? Where is the clinic?
+* On the second floor, above the pharmacy
+- On the ground floor, next to the pharmacy
+- On the second floor, next to the bank
+- Behind the pharmacy
+
+## 2 | A Tour of the City Zoo | monologue
+@ Guide=af_heart
+Guide: Hello, everyone, and welcome to the City Zoo! My name is Mona, and I'll be your guide this morning. The zoo is very big, with more than three hundred kinds of animals, so let me tell you how we'll spend our time.
+Guide: We'll start with the Africa area, just in front of us. There you'll see lions, giraffes and zebras. Our oldest lion, Simba, is eighteen years old, which is very old for a lion. After that, we'll walk to the bird house. It has more than one hundred kinds of birds from all over the world, including colourful parrots that can say hello!
+Guide: At eleven o'clock, we'll watch the elephants have their bath. This is the most popular show in the zoo, so we need to be there ten minutes early to get a good place.
+Guide: Then we'll visit the reptile house, where you can see snakes, lizards and turtles. Don't worry, all the snakes are behind thick glass, so it's completely safe.
+Guide: A few important rules. Please don't feed the animals. Our animals have special food, and human food can make them sick. Also, please don't knock on the glass, because it frightens the animals.
+Guide: The tour finishes at half past twelve at the main restaurant, near the gift shop. If you get lost, look for staff in green shirts. They will help you. And remember, the train around the zoo is free for all visitors. Now, let's go and see the lions!
+?? What is the guide's name?
+* Mona
+- Maha
+- Mariam
+- Noura
+?? How many kinds of animals does the zoo have?
+* More than three hundred
+- About one hundred
+- Exactly thirty
+- More than three thousand
+?? Which animals are in the Africa area?
+* lions, giraffes and zebras
+- snakes and lizards
+- parrots and eagles
+- elephants and monkeys
+?? How old is Simba?
+* Eighteen years old
+- Eight years old
+- Twenty years old
+- Thirteen years old
+?? What can some of the parrots do?
+* Say hello
+- Sing songs
+- Dance
+- Count numbers
+?? What time is the elephants' bath?
+* At eleven o'clock
+- At ten o'clock
+- At half past twelve
+- At ten minutes past eleven
+?? Why is it safe to see the snakes?
+* They are behind thick glass.
+- They are sleeping.
+- They are very small.
+- They are not dangerous.
+?? Why shouldn't visitors feed the animals?
+* Human food can make them sick.
+- The animals are not hungry.
+- It is too expensive.
+- The animals bite.
+?? Where does the tour finish?
+* At the main restaurant, near the gift shop
+- At the bird house
+- At the main gate
+- At the reptile house
+?? What is free for all visitors?
+* The train around the zoo
+- Lunch at the restaurant
+- Gifts from the gift shop
+- Animal food
+
+## 3 | Buying a New Phone | dialogue
+@ Seller=am_fenrir Huda=af_sarah
+Seller: Good evening. Welcome to Tech World. How can I help you?
+Huda: Hi. I'm looking for a new phone. My old one is four years old, and the battery dies very quickly.
+Seller: OK. What do you use your phone for most?
+Huda: Mostly for taking photos and for my university work. I also watch videos a lot.
+Seller: Then you need a phone with a good camera and a big screen. How much would you like to spend?
+Huda: Not more than two thousand riyals.
+Seller: I have two good choices for you. This one is the Nova Five. It has a great camera and a battery that lasts two days. It's one thousand eight hundred riyals.
+Huda: And the other one?
+Seller: This is the Star X. It has a bigger screen, but the camera is not as good. It's one thousand five hundred riyals.
+Huda: Hmm. Photos are very important to me, so I'll take the Nova Five. Does it come in other colours?
+Seller: Yes, it comes in black, silver and blue. But we only have black and blue in the shop today.
+Huda: Blue, please. Do I get a cover with it?
+Seller: The cover isn't included, but this week we have an offer. If you buy the phone, you get a cover and a screen protector for free.
+Huda: That's great. And is there a warranty?
+Seller: Yes, there's a two-year warranty. If anything goes wrong, just bring it back with the receipt.
+Huda: Perfect. Can I pay in cash?
+Seller: Of course. That's one thousand eight hundred riyals, please.
+?? Why does Huda want a new phone?
+* The battery of her old phone dies very quickly.
+- She broke her old phone.
+- She lost her old phone.
+- Her old phone has no camera.
+?? How old is Huda's old phone?
+* Four years old
+- Two years old
+- One year old
+- Five years old
+?? What does Huda use her phone for most?
+* Taking photos and university work
+- Playing games
+- Calling her family
+- Listening to music
+?? What is the most Huda wants to spend?
+* Two thousand riyals
+- One thousand five hundred riyals
+- One thousand eight hundred riyals
+- Three thousand riyals
+?? How long does the Nova Five battery last?
+* Two days
+- One day
+- Two weeks
+- Twelve hours
+?? What is the problem with the Star X?
+* The camera is not as good.
+- The screen is too small.
+- It is too expensive.
+- The battery is weak.
+?? Why does Huda choose the Nova Five?
+* Photos are very important to her.
+- It is the cheapest phone.
+- It has the biggest screen.
+- Her friend has the same phone.
+?? Which colour does Huda choose?
+* Blue
+- Black
+- Silver
+- Red
+?? What does Huda get for free this week?
+* A cover and a screen protector
+- Headphones
+- A charger
+- A second phone
+?? How does Huda pay?
+* In cash
+- By card
+- Online
+- In two payments
+
+## 4 | A Message from the Professor | monologue
+@ Professor=am_michael
+Professor: Good afternoon, students. This is Doctor Khalid Al-Otaibi with an important message about our English course.
+Professor: First, there's a change to our class next week. On Monday, the class will not be in Room 214 as usual. It will be in the computer lab in Building 5, on the first floor. We're going to practise listening skills, and each student will need a computer with headphones.
+Professor: Second, about the final exam. The exam will be on Thursday, the twenty-second, at nine o'clock in the morning. It will last two hours. It will have four parts: grammar, vocabulary, reading and listening. Please arrive fifteen minutes early, and don't forget your student ID. Without it, you can't enter the exam room.
+Professor: Third, many of you have asked about the essay. The deadline is now Sunday the eleventh, not Thursday the eighth. So you have three more days. The essay should be about three hundred words. Please send it by email, not on paper.
+Professor: Finally, I'll have extra office hours next week, on Tuesday and Wednesday from one to three. If you have any questions about the exam, please come and see me in my office, Room 110.
+Professor: Good luck with your studies, and see you on Monday.
+?? What is the professor's name?
+* Doctor Khalid Al-Otaibi
+- Doctor Khalid Al-Harbi
+- Doctor Faisal Al-Otaibi
+- Doctor Khalid Al-Qahtani
+?? Where will the class be on Monday?
+* In the computer lab in Building 5
+- In Room 214
+- In Room 110
+- In the library
+?? Why will the class be in a different place?
+* Students will practise listening and need computers with headphones.
+- Room 214 is being painted.
+- The professor is sick.
+- There are too many students.
+?? When is the final exam?
+* On Thursday the twenty-second
+- On Monday the twenty-second
+- On Sunday the eleventh
+- On Thursday the eighth
+?? How long will the exam last?
+* Two hours
+- One hour
+- Three hours
+- Ninety minutes
+?? Which part of the exam does the professor NOT mention?
+* writing
+- grammar
+- reading
+- listening
+?? What happens if a student forgets their student ID?
+* They can't enter the exam room.
+- They must pay a fine.
+- They will lose ten marks.
+- They have to come early.
+?? What is the new deadline for the essay?
+* Sunday the eleventh
+- Thursday the eighth
+- Monday the eleventh
+- Thursday the twenty-second
+?? How should students send the essay?
+* By email
+- On paper
+- To the professor's office
+- By text message
+?? When are the extra office hours?
+* On Tuesday and Wednesday from one to three
+- On Monday and Tuesday from one to three
+- On Tuesday and Wednesday from three to five
+- On Sunday from nine to eleven
+
+## 5 | Planning a Desert Camping Trip | dialogue
+@ Sami=am_puck Fahad=am_michael
+Sami: Fahad, the weather is perfect now. Why don't we go camping in the desert this weekend?
+Fahad: Great idea! Where should we go? Last time we went to the red sand dunes near Riyadh.
+Sami: Yes, but it was very crowded. What about a place a bit farther? My cousin says there's a quiet place about two hours north of the city.
+Fahad: Two hours is fine. Who else is coming?
+Sami: I asked Omar and Nasser. Omar said yes, but Nasser has to work on Friday. So it's just the three of us.
+Fahad: OK. Should we leave on Thursday evening or Friday morning?
+Sami: Thursday after work, at about five. Then we can arrive before it gets dark and put up the tent.
+Fahad: Good. What do we need to take? I have a big tent that's good for four people.
+Sami: Perfect. I'll bring the barbecue and the chicken. Omar can bring the drinks and the fruit.
+Fahad: And I'll bring the blankets. The desert gets very cold at night, even if the day is warm.
+Sami: That's true. Don't forget your power bank, too. There's no electricity there, and the phone signal is weak.
+Fahad: Good point. Should we take my car or yours?
+Sami: Let's take yours. It's bigger, and it's better for driving on sand. I'll pay for the petrol.
+Fahad: Deal. When do we come back?
+Sami: On Saturday afternoon. I have to study for my exam on Sunday.
+Fahad: OK, sounds like a great plan!
+?? Why does Sami suggest going camping this weekend?
+* The weather is perfect now.
+- It is a holiday.
+- His cousin invited them.
+- They have no exams.
+?? Why don't they want to go to the red sand dunes again?
+* It was very crowded.
+- It was too far.
+- It was too hot.
+- It was too expensive.
+?? How far is the new place from the city?
+* About two hours
+- About twenty minutes
+- About half an hour
+- About five hours
+?? Why isn't Nasser coming?
+* He has to work on Friday.
+- He is sick.
+- He doesn't like camping.
+- He has an exam.
+?? How many people are going on the trip?
+* Three
+- Two
+- Four
+- Five
+?? When will they leave?
+* On Thursday at about five
+- On Friday morning
+- On Thursday morning
+- On Saturday afternoon
+?? What will Sami bring?
+* The barbecue and the chicken
+- The tent
+- The blankets
+- The drinks and the fruit
+?? Why does Fahad bring blankets?
+* The desert gets very cold at night.
+- The tent is small.
+- They will sleep outside.
+- It will rain.
+?? Why will they take Fahad's car?
+* It is bigger and better for driving on sand.
+- Sami's car is broken.
+- Fahad's car uses less petrol.
+- Sami can't drive.
+?? Why does Sami want to come back on Saturday?
+* He has to study for his exam on Sunday.
+- He has to work on Saturday.
+- His family is visiting.
+- The weather will change.
+
+## 6 | Advert for a New Supermarket | monologue
+@ Voice=af_nicole
+Voice: Good news for everyone in the Al-Nakheel district! Fresh Market, the newest supermarket in town, opens its doors this Saturday, on King Abdullah Road, next to the gas station.
+Voice: At Fresh Market, you'll find everything you need under one roof. We have fresh fruit and vegetables from local farms, delivered every morning. Our bakery makes fresh bread three times a day, so your bread is always warm. And our butcher's section has the best meat and chicken in the city.
+Voice: We are open from seven in the morning until midnight, every day of the week. And we have a large car park with more than two hundred spaces, so you never have to worry about parking.
+Voice: To celebrate our opening, we have amazing offers for the first week. All fruit and vegetables are twenty percent off. The first one hundred customers on Saturday will get a free shopping bag full of gifts. And for every purchase over two hundred riyals, you'll get a free box of dates.
+Voice: Don't want to leave your house? No problem! Download our app and order online. Delivery is free for orders over one hundred riyals, and your shopping will arrive in less than one hour.
+Voice: Fresh Market. Fresh food, fresh prices. See you on Saturday!
+?? Which day does the supermarket open?
+* Saturday
+- Friday
+- Sunday
+- Thursday
+?? Where is the supermarket?
+* On King Abdullah Road, next to the gas station
+- On King Fahd Road, next to the bank
+- In the city centre, next to the mall
+- On King Abdullah Road, behind the gas station
+?? Where do the fruit and vegetables come from?
+* Local farms
+- Other countries
+- The supermarket's own garden
+- The city market
+?? How many times a day does the bakery make bread?
+* Three times
+- Once
+- Twice
+- Four times
+?? What time does the supermarket close?
+* At midnight
+- At eleven at night
+- At ten at night
+- It never closes
+?? How many spaces does the car park have?
+* More than two hundred
+- About one hundred
+- Exactly twenty
+- More than two thousand
+?? What is the discount on fruit and vegetables in the first week?
+* Twenty percent
+- Ten percent
+- Fifty percent
+- Twelve percent
+?? What will the first one hundred customers on Saturday get?
+* A free shopping bag full of gifts
+- A free box of dates
+- Free delivery for a year
+- Free bread
+?? What do customers get for purchases over two hundred riyals?
+* A free box of dates
+- A shopping bag
+- Free delivery
+- Twenty percent off
+?? When is delivery free?
+* For orders over one hundred riyals
+- For all orders
+- For orders over two hundred riyals
+- Only on Saturday
+
+## 7 | Opening a Bank Account | dialogue
+@ Employee=af_bella Student=am_puck
+Employee: Good morning. Please have a seat. How can I help you today?
+Student: Good morning. I'm a new student at the university, and I'd like to open a bank account.
+Employee: Of course. We have a special account for students. There's no monthly fee, and you get a free bank card.
+Student: That sounds good. What do I need to open it?
+Employee: I need your national ID card and your student card. And a phone number, so we can send you messages.
+Student: Here they are. How long does it take?
+Employee: About twenty minutes. I'll enter your information now, and you'll get your card today.
+Student: Great. Can I use the card to shop online?
+Employee: Yes, you can. You can also use our app to check your balance, pay bills and send money to your friends.
+Student: Is there a limit on how much I can take out from the ATM?
+Employee: Yes. With the student account, you can take out up to five thousand riyals a day.
+Student: That's more than enough! What if I lose my card?
+Employee: Call us immediately on our free number, or stop the card from the app. We'll send you a new one in three days.
+Student: OK. And does the bank give students any discounts?
+Employee: Yes. With our card, you get ten percent off at some bookshops and restaurants near the university. Here's a list.
+Student: Thank you! You've been very helpful.
+Employee: You're welcome. Please sign here, and here. And your card is ready.
+?? Why does the student want to open a bank account?
+* He is a new student at the university.
+- He got a new job.
+- He lost his old card.
+- He wants to buy a car.
+?? What is special about the student account?
+* There's no monthly fee, and you get a free card.
+- It gives you free money every month.
+- You can only use it at the university.
+- It has a high monthly fee.
+?? What does the student NOT need to open the account?
+* His passport
+- His national ID card
+- His student card
+- A phone number
+?? How long does it take to open the account?
+* About twenty minutes
+- About two hours
+- Three days
+- One week
+?? When will the student get his card?
+* Today
+- In three days
+- Next week
+- Tomorrow
+?? What can the student do with the app?
+* Check his balance, pay bills and send money
+- Take out money without a card
+- Get a free phone
+- Open a second account
+?? How much can the student take out from the ATM each day?
+* Up to five thousand riyals
+- Up to five hundred riyals
+- Up to one thousand riyals
+- Up to fifty thousand riyals
+?? What should he do if he loses his card?
+* Call the free number or stop the card from the app
+- Go to the police
+- Open a new account
+- Wait for three days
+?? How long does it take to get a new card?
+* Three days
+- Twenty minutes
+- One day
+- Two weeks
+?? What discount does the card give near the university?
+* Ten percent off at some bookshops and restaurants
+- Twenty percent off at all shops
+- Free food at restaurants
+- Free books
+
+## 8 | A Famous Scientist: Ibn al-Haytham | monologue
+@ Student=af_heart
+Student: Good morning, everyone. Today, my presentation is about a famous scientist called Ibn al-Haytham. He is sometimes called the father of modern optics, which is the science of light and how we see.
+Student: Ibn al-Haytham was born in the city of Basra, in Iraq, about one thousand years ago. When he was young, he studied many subjects, like mathematics, medicine and philosophy. Later, he moved to Cairo, in Egypt, where he did most of his work.
+Student: In the past, many people believed that we see things because light comes out of our eyes. Ibn al-Haytham did many experiments and showed that this idea was wrong. He explained that we see things because light comes from objects into our eyes.
+Student: He wrote more than ninety books, but his most famous one is the Book of Optics. It has seven parts, and it was later translated into Latin. Scientists in Europe studied it for hundreds of years.
+Student: Ibn al-Haytham was also one of the first scientists to use experiments to test his ideas, step by step. Today, this is called the scientific method, and all scientists use it.
+Student: I chose him for my presentation because he teaches us something important: don't just believe an idea because many people believe it. Test it yourself. Thank you for listening. Do you have any questions?
+?? What is the presentation about?
+* A famous scientist called Ibn al-Haytham
+- The history of Cairo
+- How to do experiments
+- The city of Basra
+?? What is optics?
+* The science of light and how we see
+- The science of medicine
+- The study of mathematics
+- The study of stars
+?? Where was Ibn al-Haytham born?
+* In Basra, in Iraq
+- In Cairo, in Egypt
+- In Baghdad, in Iraq
+- In Damascus, in Syria
+?? Which subject does the speaker NOT mention?
+* chemistry
+- mathematics
+- medicine
+- philosophy
+?? Where did he do most of his work?
+* In Cairo
+- In Basra
+- In Europe
+- In Baghdad
+?? What did many people believe in the past?
+* Light comes out of our eyes.
+- Light comes from the sun only.
+- We see with our ears.
+- Light doesn't exist.
+?? How many books did he write?
+* More than ninety
+- About nine
+- Exactly seven
+- More than nine hundred
+?? How many parts does the Book of Optics have?
+* Seven
+- Ninety
+- Nine
+- Seventeen
+?? What is the scientific method?
+* Using experiments to test ideas step by step
+- Writing many books
+- Translating books into Latin
+- Believing what most people believe
+?? Why did the student choose Ibn al-Haytham?
+* He teaches us to test ideas ourselves.
+- He was born in her city.
+- He was very rich.
+- He wrote the most books in history.
+
+## 9 | Asking for Directions | dialogue
+@ Tourist=am_fenrir Woman=af_sarah
+Tourist: Excuse me. I'm sorry to bother you, but I think I'm lost. Can you help me?
+Woman: Of course. Where do you want to go?
+Tourist: I'm looking for the National Museum.
+Woman: Oh, it's not far. You can walk there in about ten minutes. Go straight along this street until you reach the traffic lights.
+Tourist: Straight to the traffic lights. OK.
+Woman: At the traffic lights, turn left. You'll see a big mosque on your right. Walk past the mosque, and the museum is next to the park, on the left side of the street.
+Tourist: So, turn left at the traffic lights, walk past the mosque, and it's next to the park.
+Woman: That's right. It's a big white building with a garden in front of it. You can't miss it.
+Tourist: Thank you so much. Is there a place to eat near the museum? I haven't had lunch yet.
+Woman: Yes. There's a nice café inside the museum, on the ground floor. Or, if you want a real meal, there's a traditional restaurant opposite the museum, behind the bus stop.
+Tourist: Great. And do you know what time the museum closes?
+Woman: I think it closes at eight in the evening, but on Fridays it opens only in the afternoon, from four.
+Tourist: Today is Wednesday, so that's fine. Is the museum free?
+Woman: Yes, it's free for everyone.
+Tourist: Wonderful. Thank you again!
+Woman: You're welcome. Enjoy your visit!
+?? Where does the tourist want to go?
+* The National Museum
+- The big mosque
+- The park
+- A traditional restaurant
+?? How long does it take to walk there?
+* About ten minutes
+- About two minutes
+- About thirty minutes
+- About an hour
+?? What should the tourist do at the traffic lights?
+* Turn left
+- Turn right
+- Go straight
+- Cross the bridge
+?? What will the tourist see on his right after turning?
+* A big mosque
+- A park
+- A bus stop
+- A café
+?? Where is the museum?
+* Next to the park, on the left side of the street
+- Next to the mosque, on the right
+- Behind the bus stop
+- Opposite the traffic lights
+?? What does the museum look like?
+* A big white building with a garden in front of it
+- A small red building
+- A tall glass tower
+- An old building behind a park
+?? Where is the café?
+* Inside the museum, on the ground floor
+- Opposite the museum
+- Next to the mosque
+- Behind the bus stop
+?? Where is the traditional restaurant?
+* Opposite the museum, behind the bus stop
+- Inside the museum
+- Next to the traffic lights
+- In front of the mosque
+?? What time does the museum close?
+* At eight in the evening
+- At four in the afternoon
+- At six in the evening
+- At ten at night
+?? How much does it cost to visit the museum?
+* It is free.
+- Ten riyals
+- Twenty riyals
+- It is free on Fridays only.
+
+## 10 | Train Station Announcements | monologue
+@ Announcer=bm_george
+Announcer: Good morning, passengers. Welcome to Riyadh Train Station. Here are some important announcements.
+Announcer: The train to Qassim, leaving at eight thirty, is now ready on platform three. Please make sure you have your ticket and ID with you. Passengers in business class, please use the doors at the front of the train.
+Announcer: Passengers travelling to Dammam, we're sorry to tell you that the nine fifteen train is delayed by forty minutes because of a technical problem. The new departure time is nine fifty-five. Passengers can wait in the waiting room on the first floor, where free tea and coffee are available.
+Announcer: The ten o'clock train to Hail will now leave from platform five, not platform two. Please go to platform five now.
+Announcer: This is a message for a passenger called Mr. Saad Al-Dosari. Mr. Saad Al-Dosari, please come to the information desk near the main entrance. Your son is waiting for you there.
+Announcer: Please remember that smoking is not allowed anywhere in the station. Keep your bags with you at all times, and tell a member of staff if you see a bag that nobody is watching.
+Announcer: Food and drinks are available at the café near platform one. Thank you for travelling with us, and have a safe journey.
+?? Where is the train to Qassim?
+* On platform three
+- On platform two
+- On platform five
+- On platform one
+?? What time does the train to Qassim leave?
+* At eight thirty
+- At nine fifteen
+- At ten o'clock
+- At eight fifteen
+?? Which doors should business class passengers use?
+* The doors at the front of the train
+- The doors at the back of the train
+- The doors in the middle
+- Any door
+?? Why is the train to Dammam delayed?
+* Because of a technical problem
+- Because of bad weather
+- Because the driver is late
+- Because there are too many passengers
+?? How long is the delay for the Dammam train?
+* Forty minutes
+- Fifteen minutes
+- Fourteen minutes
+- One hour
+?? What is free in the waiting room?
+* Tea and coffee
+- Food
+- Newspapers
+- Tickets
+?? What has changed for the train to Hail?
+* The platform
+- The time
+- The price
+- The day
+?? Why should Mr. Saad Al-Dosari go to the information desk?
+* His son is waiting for him there.
+- He forgot his ticket.
+- His train is cancelled.
+- He found a bag.
+?? What should passengers do if they see a bag that nobody is watching?
+* Tell a member of staff.
+- Take it to the café.
+- Open it.
+- Take it home.
+?? Where is the café?
+* Near platform one
+- Near the main entrance
+- On the first floor
+- Near platform five
+
+## 11 | Talking About a Film | dialogue
+@ Nora=af_heart Reem=af_bella
+Nora: Reem, did you watch the new film, The Long Road, last night?
+Reem: Yes! I went with my sisters. Did you see it too?
+Nora: I saw it on Tuesday. What did you think?
+Reem: I loved it! The story was really exciting. I didn't know what was going to happen until the very end.
+Nora: Me too. But I thought it was a bit too long. It's almost three hours!
+Reem: That's true. The middle part was slow. But the ending was amazing. I cried a little!
+Nora: Ha! So did my brother, and he never cries. Who was your favourite character?
+Reem: The young doctor, Adam. He was so brave. He helped all those people in the village, even when he was sick himself.
+Nora: I liked the old teacher more. She was very funny, and she gave great advice.
+Reem: Oh yes, she was great. And the music was beautiful, too.
+Nora: I agree. I already downloaded the songs on my phone. What about the cinema? Where did you watch it?
+Reem: At the new cinema in the mall. The seats were very comfortable, but the tickets were expensive, sixty-five riyals each.
+Nora: Wow! I paid forty-five at the cinema near the university. But the screen there is smaller.
+Reem: Well, it was worth it. I think I'll watch it again next month with my cousins.
+Nora: You should! I'd give it eight out of ten.
+Reem: For me, it's nine out of ten.
+?? What is the name of the film?
+* The Long Road
+- The Lost Road
+- The Long Night
+- The Young Doctor
+?? Who did Reem watch the film with?
+* Her sisters
+- Her brother
+- Her cousins
+- Nora
+?? When did Nora see the film?
+* On Tuesday
+- Last night
+- On Thursday
+- Last month
+?? What did Nora NOT like about the film?
+* It was too long.
+- The music was bad.
+- The ending was boring.
+- The story was not exciting.
+?? How long is the film?
+* Almost three hours
+- About two hours
+- One and a half hours
+- More than four hours
+?? Who was Reem's favourite character?
+* The young doctor, Adam
+- The old teacher
+- Nora's brother
+- A child in the village
+?? Why did Nora like the old teacher?
+* She was very funny and gave great advice.
+- She was very brave.
+- She helped people in the village.
+- She was a doctor.
+?? How much were the tickets at the new cinema in the mall?
+* Sixty-five riyals each
+- Forty-five riyals each
+- Fifty-five riyals each
+- Sixty riyals each
+?? What is the problem with the cinema near the university?
+* The screen is smaller.
+- The tickets are more expensive.
+- The seats are uncomfortable.
+- It is very far.
+?? What score does Reem give the film?
+* Nine out of ten
+- Eight out of ten
+- Ten out of ten
+- Seven out of ten
+
+## 12 | My New Job | monologue
+@ Ahmed=am_michael
+Ahmed: Hi, my name is Ahmed, and I want to tell you about my new job. Three months ago, I started working as a tour guide in Jeddah. Before that, I was an English teacher for five years.
+Ahmed: Why did I change jobs? I loved teaching, but I always dreamed of a job where I could meet people from different countries and show them my city. When I saw that a travel company needed guides who speak English, I applied immediately.
+Ahmed: My day usually starts at eight in the morning. I meet the tourists at their hotel, and then we travel by bus to different places. The most popular place is the old part of Jeddah, called Al-Balad. It has old houses made of coral stone, with beautiful wooden windows. Tourists love taking photos there.
+Ahmed: After that, we usually have lunch at a traditional restaurant, and in the evening, we walk along the Corniche by the Red Sea.
+Ahmed: The job is not always easy. I work long hours, sometimes ten hours a day, and I have to stay patient when tourists ask the same questions again and again. But I love it. Every day is different, and I learn something new from every group.
+Ahmed: My advice to anyone choosing a job is this: do something you really enjoy. Then work never feels like work.
+?? What is Ahmed's new job?
+* A tour guide
+- An English teacher
+- A bus driver
+- A hotel manager
+?? When did Ahmed start his new job?
+* Three months ago
+- Five years ago
+- Three years ago
+- Last week
+?? What was Ahmed's job before?
+* An English teacher
+- A tour guide
+- A photographer
+- A cook
+?? Why did Ahmed change jobs?
+* He wanted to meet people from different countries and show them his city.
+- He didn't like teaching.
+- He wanted more money.
+- His school closed.
+?? What time does Ahmed's day usually start?
+* At eight in the morning
+- At ten in the morning
+- At seven in the morning
+- At noon
+?? What is Al-Balad?
+* The old part of Jeddah
+- A new shopping mall
+- A restaurant
+- A beach
+?? What are the old houses in Al-Balad made of?
+* Coral stone
+- Wood only
+- Glass
+- Mud
+?? What do they do in the evening?
+* Walk along the Corniche by the Red Sea
+- Go shopping
+- Visit a museum
+- Go back to the hotel
+?? What is difficult about Ahmed's job?
+* He works long hours and must stay patient.
+- He doesn't speak English well.
+- He doesn't like tourists.
+- The pay is very low.
+?? What is Ahmed's advice?
+* Do something you really enjoy.
+- Always work long hours.
+- Choose a job with a high salary.
+- Never change your job.
+
+## 13 | Ordering Food by Phone | dialogue
+@ Worker=am_puck Customer=af_nicole
+Worker: Hello, Pizza Palace. Would you like to order for delivery or pick-up?
+Customer: Delivery, please.
+Worker: Sure. What would you like?
+Customer: I'd like two large pizzas, please. One chicken pizza and one vegetable pizza.
+Worker: Would you like extra cheese on them?
+Customer: Yes, on the chicken pizza, but not on the vegetable one.
+Worker: OK. Anything else?
+Customer: Yes, a large salad and four bottles of orange juice.
+Worker: I'm sorry, we don't have orange juice today. We have apple juice or lemon juice.
+Customer: Then apple juice, please. Four bottles.
+Worker: OK. So that's two large pizzas, one with extra cheese, one large salad, and four apple juices. That comes to one hundred and twenty riyals.
+Customer: Is there a delivery charge?
+Worker: Delivery is usually ten riyals, but it's free for orders over one hundred riyals. So yours is free.
+Customer: Great. How long will it take?
+Worker: About forty-five minutes. We're very busy tonight because there's a football match.
+Customer: Oh, OK. Can I pay when the food arrives?
+Worker: Yes, you can pay the driver in cash or by card. Can I have your address, please?
+Customer: It's building number twelve, Al-Yasmin Street, apartment five, on the third floor.
+Worker: Thank you. Your order will arrive soon. Enjoy your meal!
+?? How does the customer want to get the food?
+* Delivery
+- Pick-up
+- Eat at the restaurant
+- She hasn't decided
+?? What pizzas does the customer order?
+* One chicken pizza and one vegetable pizza
+- Two chicken pizzas
+- Two vegetable pizzas
+- One cheese pizza and one meat pizza
+?? Which pizza has extra cheese?
+* The chicken pizza
+- The vegetable pizza
+- Both pizzas
+- Neither pizza
+?? Why can't the customer get orange juice?
+* The restaurant doesn't have it today.
+- It is too expensive.
+- She changed her mind.
+- It is only for children.
+?? How many bottles of juice does she order?
+* Four
+- Two
+- Three
+- One
+?? How much is the order?
+* One hundred and twenty riyals
+- One hundred and ten riyals
+- One hundred riyals
+- One hundred and thirty riyals
+?? Why is delivery free?
+* The order is over one hundred riyals.
+- It's her first order.
+- It's a holiday.
+- She lives near the restaurant.
+?? How long will the delivery take?
+* About forty-five minutes
+- About fifteen minutes
+- About thirty minutes
+- About an hour and a half
+?? Why is the restaurant very busy tonight?
+* There's a football match.
+- It's the weekend.
+- It's a new restaurant.
+- There's a holiday.
+?? Which floor does the customer live on?
+* The third floor
+- The fifth floor
+- The twelfth floor
+- The ground floor
+
+## 14 | Rules of the Swimming Class | monologue
+@ Coach=am_fenrir
+Coach: Good evening, everyone, and welcome to your first swimming class. My name is Coach Turki, and I'll be your teacher for the next eight weeks.
+Coach: Our class meets twice a week, on Mondays and Wednesdays, from six to seven in the evening. Please try to arrive ten minutes early, so you have time to change and take a shower before you enter the pool.
+Coach: Now, some important rules. First, everyone must take a shower before swimming. This keeps the water clean for everyone. Second, you must wear a swimming cap. If you don't have one, you can buy one at reception for fifteen riyals.
+Coach: Third, no running near the pool. The floor is very wet and slippery, and many accidents happen because people run. Fourth, please don't eat for at least one hour before the class, because swimming on a full stomach can make you feel sick.
+Coach: In today's class, we'll start in the shallow end of the pool, where the water is only one metre deep. We'll practise breathing and floating. Don't worry if you can't swim yet. By the end of the course, everyone will be able to swim at least twenty-five metres.
+Coach: Finally, if you feel tired or have any problem in the water, raise your hand, and I'll come to help you immediately. Safety is the most important thing. OK, let's begin!
+?? What is the coach's name?
+* Coach Turki
+- Coach Tariq
+- Coach Talal
+- Coach Tamer
+?? How long is the course?
+* Eight weeks
+- Two weeks
+- Eight months
+- Six weeks
+?? When does the class meet?
+* On Mondays and Wednesdays, from six to seven
+- On Sundays and Tuesdays, from six to seven
+- On Mondays and Wednesdays, from seven to eight
+- Every day from six to seven
+?? Why should students arrive ten minutes early?
+* To have time to change and take a shower
+- To pay for the class
+- To buy a swimming cap
+- To talk to the coach
+?? Why must everyone take a shower before swimming?
+* To keep the water clean for everyone
+- Because the water is cold
+- To practise breathing
+- Because it's relaxing
+?? How much does a swimming cap cost at reception?
+* Fifteen riyals
+- Fifty riyals
+- Five riyals
+- It's free
+?? Why is running near the pool not allowed?
+* The floor is wet and slippery.
+- It makes too much noise.
+- It disturbs other swimmers.
+- It makes the water dirty.
+?? How long should students not eat before the class?
+* At least one hour
+- At least thirty minutes
+- Two hours
+- All day
+?? How deep is the water in the shallow end?
+* One metre
+- Two metres
+- Twenty-five metres
+- Half a metre
+?? What should students do if they have a problem in the water?
+* Raise their hand.
+- Shout loudly.
+- Get out of the pool.
+- Call reception.
+
+## 15 | Missing an Exam | dialogue
+@ Student=am_michael Professor=af_sarah
+Student: Excuse me, Doctor Sara. Do you have a minute?
+Professor: Of course, Yousef. Come in. What's the matter?
+Student: I'm very sorry, but I missed the history exam yesterday.
+Professor: I noticed you weren't there. What happened?
+Student: I was in the hospital. My father had a car accident in the morning, and I went with him.
+Professor: Oh, I'm so sorry to hear that. Is he OK now?
+Student: Yes, thank God. He broke his arm, but he's at home now and feeling better.
+Professor: I'm glad to hear that. Don't worry about the exam. You can take it another day. But I need a paper from the hospital that shows you were there.
+Student: Yes, I have a report from the hospital. Here it is.
+Professor: Thank you. This is fine. You can take the exam next Tuesday at ten o'clock in my office, Room 305.
+Student: Next Tuesday at ten. Will it be the same exam?
+Professor: No, it will be a different exam, but it will cover the same chapters, from chapter four to chapter seven.
+Student: OK. How long will it be?
+Professor: One hour, like the original exam. And it will be worth twenty percent of your final grade.
+Student: Thank you so much for understanding, Doctor.
+Professor: You're welcome. Take care of your father, and good luck with your studying.
+?? Why did Yousef miss the exam?
+* He was in the hospital with his father.
+- He was sick.
+- He forgot the date.
+- He was late.
+?? What happened to Yousef's father?
+* He had a car accident and broke his arm.
+- He fell at home.
+- He had a heart problem.
+- He broke his leg at work.
+?? Which exam did Yousef miss?
+* The history exam
+- The English exam
+- The math exam
+- The science exam
+?? What does the professor need from Yousef?
+* A paper from the hospital
+- A letter from his father
+- His student ID
+- Money for the new exam
+?? When will Yousef take the exam?
+* Next Tuesday at ten o'clock
+- Tomorrow at ten o'clock
+- Next Thursday at two o'clock
+- Next Tuesday at three o'clock
+?? Where will Yousef take the exam?
+* In the professor's office, Room 305
+- In the exam hall
+- In Room 350
+- In the library
+?? Will it be the same exam?
+* No, it will be a different exam on the same chapters.
+- Yes, exactly the same.
+- No, it will be on new chapters.
+- He doesn't need to take it.
+?? Which chapters will the exam cover?
+* From chapter four to chapter seven
+- From chapter one to chapter four
+- From chapter five to chapter seven
+- Only chapter seven
+?? How long will the exam be?
+* One hour
+- Two hours
+- Thirty minutes
+- Ninety minutes
+?? How much of the final grade is the exam worth?
+* Twenty percent
+- Ten percent
+- Thirty percent
+- Fifty percent
+
+## 16 | University Sports Day | monologue
+@ Speaker=af_nicole
+Speaker: Hello, students! This is an announcement from the Student Activities Office about our annual Sports Day.
+Speaker: Sports Day will be next Thursday, from eight in the morning until four in the afternoon, at the university stadium. All students and staff are welcome, and entry is free.
+Speaker: There will be many competitions this year, including football, basketball, volleyball, running and table tennis. If you want to take part, you must register by this Sunday. You can register online on the university website or at the Student Activities Office in Building 3.
+Speaker: Each student can take part in a maximum of two sports. Football and basketball teams must have at least seven players, so ask your friends to join you.
+Speaker: There will be prizes for the winners. The first-place team in each sport will get a trophy and a gift card worth five hundred riyals. All participants will get a free T-shirt and a certificate.
+Speaker: Food trucks will be at the stadium all day, selling sandwiches, snacks and cold drinks. We also have a special area with free water and fruit for all players.
+Speaker: Please wear sports clothes and comfortable shoes. Don't forget to bring a hat and sunscreen, because it will be sunny and hot.
+Speaker: We hope to see you all there. Let's make this the best Sports Day ever!
+?? Who is making the announcement?
+* The Student Activities Office
+- The football coach
+- The university president
+- The Sports Club
+?? When is Sports Day?
+* Next Thursday
+- This Sunday
+- Next Monday
+- This Thursday
+?? Where will Sports Day be?
+* At the university stadium
+- In Building 3
+- At the city park
+- In the sports hall
+?? Which sport does the speaker NOT mention?
+* swimming
+- football
+- volleyball
+- table tennis
+?? When must students register?
+* By this Sunday
+- By next Thursday
+- On Sports Day
+- By the end of the month
+?? How many sports can each student take part in?
+* A maximum of two
+- Only one
+- Three
+- As many as they want
+?? How many players must football and basketball teams have, at least?
+* Seven
+- Five
+- Eleven
+- Two
+?? What will the first-place team in each sport get?
+* A trophy and a gift card worth five hundred riyals
+- A free T-shirt only
+- Five hundred riyals in cash
+- A trip abroad
+?? What will all participants get?
+* A free T-shirt and a certificate
+- A trophy
+- A gift card
+- Free lunch
+?? Why should students bring a hat and sunscreen?
+* It will be sunny and hot.
+- It's a rule of the competition.
+- There will be no shade at all.
+- They will get a prize.
+
+## 17 | Returning a Broken Item | dialogue
+@ Customer=am_puck Assistant=af_bella
+Customer: Hello. I bought this coffee machine here last week, but it's not working.
+Assistant: I'm sorry to hear that. What's the problem with it?
+Customer: When I turn it on, the light comes on, but the water doesn't get hot. I tried it three times.
+Assistant: I see. Do you have the receipt?
+Customer: Yes, here it is. I bought it on the fifth.
+Assistant: Thank you. So you bought it eight days ago. That's fine. You can return items within fourteen days. Would you like a new machine, or your money back?
+Customer: Hmm. Do you have the same machine in stock?
+Assistant: Let me check. I'm sorry, we don't have the same model right now. We'll get more next week. But we have a similar model, the Café Pro, which is a bit better.
+Customer: How much is it?
+Assistant: It's three hundred and fifty riyals. Your machine was three hundred, so you would need to pay fifty riyals more.
+Customer: What's the difference between them?
+Assistant: The Café Pro can also make milk foam for cappuccino, and it has a two-year warranty instead of one year.
+Customer: That sounds good. OK, I'll take the Café Pro and pay the difference.
+Assistant: Great choice. Can I see your card, please? And I'll give you a new receipt. Please keep it in a safe place.
+Customer: I will. Thanks for your help.
+?? What did the customer buy?
+* A coffee machine
+- A kettle
+- A phone
+- A toaster
+?? When did the customer buy it?
+* Last week
+- Yesterday
+- Last month
+- Two weeks ago
+?? What is the problem?
+* The water doesn't get hot.
+- The light doesn't come on.
+- It makes a loud noise.
+- It's leaking water.
+?? How many times did the customer try it?
+* Three times
+- Once
+- Twice
+- Five times
+?? How many days ago did he buy it?
+* Eight days ago
+- Five days ago
+- Fourteen days ago
+- Three days ago
+?? Within how many days can customers return items?
+* Fourteen
+- Seven
+- Eight
+- Thirty
+?? Why can't the customer get the same machine?
+* The shop doesn't have the same model right now.
+- It's too expensive.
+- The model is broken.
+- He doesn't want it.
+?? How much is the Café Pro?
+* Three hundred and fifty riyals
+- Three hundred riyals
+- Fifty riyals
+- Four hundred riyals
+?? What can the Café Pro do that the old machine can't?
+* Make milk foam for cappuccino
+- Make tea
+- Make cold drinks
+- Work without electricity
+?? How long is the warranty on the Café Pro?
+* Two years
+- One year
+- Fourteen days
+- Three years
+
+## 18 | Tips for Learning New Words | monologue
+@ Host=af_heart
+Host: Welcome back to English Every Day, the podcast for English learners. I'm your host, Lina. Today, I want to share five tips to help you learn and remember new English words.
+Host: Tip number one: keep a vocabulary notebook. Every time you learn a new word, write it down with its meaning and an example sentence. Don't just write the translation in your language. A sentence helps you remember how to use the word.
+Host: Tip number two: learn words in groups. For example, learn food words together, or words about the weather together. Your brain remembers words better when they are connected.
+Host: Tip number three: review your words again and again. Studies show that we forget about half of new information in one day if we don't review it. So look at your notebook for ten minutes every day, especially before you sleep.
+Host: Tip number four: use the new words. Try to use them when you speak or write. For example, write three sentences every day using your new words, or send a message to a friend in English.
+Host: And tip number five: read and listen a lot. When you read stories or watch videos in English, you see words in real situations. Choose things that are not too difficult, so you can enjoy them.
+Host: Remember, don't try to learn fifty words in one day. Learning ten words a day and remembering them is much better. That's all for today. See you next week!
+?? What is the name of the podcast?
+* English Every Day
+- English Words
+- Learn English Now
+- Every Day English
+?? What is the host's name?
+* Lina
+- Lama
+- Lana
+- Layla
+?? How many tips does the host give?
+* Five
+- Three
+- Ten
+- Fifty
+?? What should you write in your vocabulary notebook?
+* The word, its meaning and an example sentence
+- Only the translation
+- Only the word
+- A long story
+?? Why does the host suggest learning words in groups?
+* Your brain remembers words better when they are connected.
+- It's faster to write them.
+- Teachers like it.
+- You need fewer notebooks.
+?? How much new information do we forget in one day if we don't review it?
+* About half
+- About ten percent
+- All of it
+- Almost nothing
+?? When does the host say it is especially good to review?
+* Before you sleep
+- In the morning
+- After lunch
+- During class
+?? How many sentences does the host suggest writing every day?
+* Three
+- Ten
+- Five
+- One
+?? What kind of things should you read and watch?
+* Things that are not too difficult
+- Only very difficult things
+- Only the news
+- Only grammar books
+?? How many words a day does the host suggest learning?
+* Ten
+- Fifty
+- Five
+- Twenty
+
+## 19 | A Problem with the Neighbours | dialogue
+@ Majed=am_michael Neighbour=am_fenrir
+Majed: Good evening. Sorry to bother you. I'm Majed, from the apartment upstairs.
+Neighbour: Oh, hello Majed. Nice to meet you. I'm Ibrahim. Is everything OK?
+Majed: Well, I wanted to talk to you about something. For the last two weeks, there's been a lot of noise from your apartment late at night.
+Neighbour: Really? I'm so sorry. What kind of noise?
+Majed: Mostly loud music and the TV, usually after midnight. I have to wake up at six for work, so I can't sleep well.
+Neighbour: Oh, I didn't know the sound could go up to your apartment. My brother is staying with us this month, and he likes to watch football matches late at night.
+Majed: I understand. I don't mind some noise in the evening, but after midnight, it's really difficult.
+Neighbour: Of course. I'll talk to him tonight. He can use headphones after eleven o'clock.
+Majed: That would be great. Thank you for understanding.
+Neighbour: No problem at all. And please, if it happens again, just knock on my door or send me a message. Here's my number.
+Majed: Thank you. And if my children are too noisy during the day, please tell me too.
+Neighbour: Ha, don't worry. I love hearing children playing. By the way, my wife made some dates cake today. Please take some for your family.
+Majed: That's very kind of you. Thank you, Ibrahim.
+?? Where does Majed live?
+* In the apartment upstairs
+- In the apartment downstairs
+- In the house next door
+- Across the street
+?? How long has there been a noise problem?
+* For the last two weeks
+- For two months
+- Since last night
+- For two days
+?? What kind of noise is it?
+* Loud music and the TV
+- Children playing
+- Building work
+- A barking dog
+?? When does the noise usually happen?
+* After midnight
+- In the morning
+- In the afternoon
+- At six in the evening
+?? Why can't Majed sleep well?
+* He has to wake up at six for work.
+- He is sick.
+- His children are noisy.
+- His bed is uncomfortable.
+?? Who is making the noise?
+* Ibrahim's brother
+- Ibrahim's children
+- Ibrahim's wife
+- Majed's children
+?? Why does Ibrahim's brother stay up late?
+* He likes to watch football matches.
+- He works at night.
+- He studies late.
+- He plays video games.
+?? What is Ibrahim's solution?
+* His brother can use headphones after eleven o'clock.
+- They will move to another apartment.
+- They will stop watching TV.
+- Majed should close his windows.
+?? What should Majed do if the noise happens again?
+* Knock on Ibrahim's door or send him a message.
+- Call the police.
+- Talk to the building manager.
+- Play loud music too.
+?? What does Ibrahim give Majed?
+* Some dates cake
+- His phone
+- Headphones
+- A book
+
+## 20 | Recycling on Campus | monologue
+@ Speaker=am_puck
+Speaker: Good morning, everyone. I'm Faris from the Green Campus Club. I'm here to tell you about our new recycling program, which starts next week.
+Speaker: Every year, our university produces more than two hundred tons of rubbish. Most of it is paper, plastic bottles and food waste. A lot of this can be recycled, but at the moment, almost everything goes to the landfill.
+Speaker: From next Sunday, you'll see new recycling bins in every building. The blue bins are for paper, the yellow bins are for plastic bottles and cans, and the green bins are for food waste. Please put the right rubbish in the right bin. If you put food in the paper bin, the paper can't be recycled.
+Speaker: We also have a special challenge. Each building will compete to recycle the most. The building that recycles the most by the end of the semester will win a new garden area with seats and shade.
+Speaker: There are also some easy things you can do every day. Bring your own water bottle instead of buying plastic ones. There are free water machines on the ground floor of every building. And print only when you really need to.
+Speaker: If you want to join our club, we meet every Wednesday at one o'clock in the library meeting room. Everyone is welcome. Together, we can make our campus cleaner and greener. Thank you.
+?? Who is the speaker?
+* Faris from the Green Campus Club
+- A professor of science
+- The university president
+- A cleaner
+?? When does the recycling program start?
+* Next week
+- Today
+- Next month
+- Next year
+?? How much rubbish does the university produce every year?
+* More than two hundred tons
+- About twenty tons
+- Two thousand tons
+- Less than one hundred tons
+?? Which kind of rubbish does the speaker NOT mention?
+* glass
+- paper
+- plastic bottles
+- food waste
+?? What are the blue bins for?
+* Paper
+- Plastic bottles and cans
+- Food waste
+- Glass
+?? What are the green bins for?
+* Food waste
+- Paper
+- Plastic
+- Cans
+?? Why shouldn't you put food in the paper bin?
+* The paper can't be recycled.
+- It smells bad.
+- The bin will break.
+- It's not allowed by law.
+?? What will the winning building get?
+* A new garden area with seats and shade
+- Free lunch for a month
+- New computers
+- A trophy
+?? Where are the free water machines?
+* On the ground floor of every building
+- In the library only
+- Next to the recycling bins
+- In the cafeteria
+?? When does the club meet?
+* Every Wednesday at one o'clock
+- Every Sunday at one o'clock
+- Every Wednesday at three o'clock
+- Every Monday at one o'clock
+
+## 21 | Booking a Desert Tour | dialogue
+@ Agent=af_sarah Tourist=am_michael
+Agent: Good afternoon, Golden Sands Tours. How can I help you?
+Tourist: Hello. I'm visiting Riyadh with my wife, and we'd like to book a desert tour.
+Agent: Wonderful! We have two tours. The short tour is four hours, and the full-day tour is ten hours.
+Tourist: What's included in the short tour?
+Agent: We pick you up from your hotel at three in the afternoon. We drive to the red sand dunes, where you can ride camels and try sandboarding. Then you watch the sunset and have dinner in a traditional tent. We bring you back at about seven.
+Tourist: That sounds great. How much is it?
+Agent: It's three hundred riyals for each person. Children under twelve pay half price.
+Tourist: It's just the two of us. And the full-day tour?
+Agent: The full-day tour also visits an old village and a farm. It costs five hundred and fifty riyals each, and lunch is included.
+Tourist: Hmm, I think the short tour is better for us. My wife doesn't like long trips in the car.
+Agent: No problem. Which day would you like?
+Tourist: Is Friday possible?
+Agent: I'm sorry, Friday is full. But we have places on Saturday.
+Tourist: Saturday is fine. What should we bring?
+Agent: Bring comfortable shoes, sunglasses and a jacket. It gets cold in the desert after sunset. Water is free on the bus.
+Tourist: Great. Can I pay at the hotel?
+Agent: You can pay online now, or pay the driver in cash when he picks you up.
+Tourist: I'll pay the driver. Thank you!
+?? Who is the tourist visiting Riyadh with?
+* His wife
+- His children
+- His friends
+- His brother
+?? How long is the short tour?
+* Four hours
+- Ten hours
+- Three hours
+- Seven hours
+?? What time does the short tour pick people up?
+* At three in the afternoon
+- At four in the afternoon
+- At seven in the evening
+- At ten in the morning
+?? Which activity is NOT part of the short tour?
+* Visiting an old village
+- Riding camels
+- Sandboarding
+- Watching the sunset
+?? How much is the short tour for each person?
+* Three hundred riyals
+- Five hundred and fifty riyals
+- One hundred and fifty riyals
+- Six hundred riyals
+?? Who pays half price?
+* Children under twelve
+- Students
+- Old people
+- Groups of four
+?? Why does the tourist choose the short tour?
+* His wife doesn't like long trips in the car.
+- It includes lunch.
+- It's on Friday.
+- The full-day tour is full.
+?? Which day will they go?
+* Saturday
+- Friday
+- Thursday
+- Sunday
+?? Why should they bring a jacket?
+* It gets cold in the desert after sunset.
+- It will rain.
+- The bus has air conditioning.
+- The tent is cold.
+?? How will the tourist pay?
+* In cash to the driver
+- Online now
+- At the hotel reception
+- By bank transfer
+
+## 22 | My Favourite Season | monologue
+@ Speaker=bf_emma
+Speaker: Hi, I'm Dana, and today I want to talk about my favourite season, which is winter. Many people prefer summer, but for me, winter in Saudi Arabia is the best time of the year.
+Speaker: In summer, it's very hot here. The temperature can be more than forty-five degrees, so most people stay inside with the air conditioner on. But in winter, from December to February, the weather is cool and pleasant. During the day, it's usually around twenty degrees, and at night it can go down to eight or nine.
+Speaker: Winter is the season of going outside. On weekends, my family and I often go to the desert. We sit around a fire, drink Arabic coffee and tea, and my father tells us stories from when he was young. These are my favourite memories.
+Speaker: In some years, if it rains a lot, the desert becomes green, and small flowers grow everywhere. It's really beautiful, and many families go out to see it.
+Speaker: Winter also has special food. My grandmother makes a hot dish called marqooq, with vegetables and meat. It's perfect on a cold evening.
+Speaker: The only thing I don't like about winter is that it's too short! Before you know it, summer comes again. But I always look forward to the next winter.
+?? What is the speaker's favourite season?
+* Winter
+- Summer
+- Spring
+- Autumn
+?? How hot can it get in summer?
+* More than forty-five degrees
+- About thirty degrees
+- About twenty degrees
+- More than fifty-five degrees
+?? When is winter in Saudi Arabia, according to the speaker?
+* From December to February
+- From June to August
+- From March to May
+- From October to December
+?? What is the temperature usually during the day in winter?
+* Around twenty degrees
+- Around eight degrees
+- Around forty-five degrees
+- Around thirty degrees
+?? Where does Dana's family often go on weekends in winter?
+* To the desert
+- To the beach
+- To the mall
+- To another country
+?? What does Dana's father do around the fire?
+* He tells stories from when he was young.
+- He cooks marqooq.
+- He sings songs.
+- He reads books.
+?? What happens to the desert when it rains a lot?
+* It becomes green, and small flowers grow.
+- It becomes very hot.
+- It becomes dangerous.
+- It turns into a lake.
+?? Who makes marqooq?
+* Dana's grandmother
+- Dana's mother
+- Dana's father
+- Dana
+?? What is marqooq made with?
+* Vegetables and meat
+- Rice and fish
+- Dates and milk
+- Bread and cheese
+?? What doesn't Dana like about winter?
+* It is too short.
+- It is too cold.
+- It rains too much.
+- There is nothing to do.
+
+## 23 | At the Pharmacy | dialogue
+@ Pharmacist=am_fenrir Woman=af_nicole
+Pharmacist: Good evening. How can I help you?
+Woman: Good evening. My son has a fever and a cough. Do you have something for him?
+Pharmacist: How old is he?
+Woman: He's six years old.
+Pharmacist: And how high is his temperature?
+Woman: It was thirty-eight and a half this afternoon.
+Pharmacist: OK. For the fever, I recommend this syrup. It's for children between two and twelve years old. Give him five millilitres every six hours, but not more than four times a day.
+Woman: Five millilitres every six hours. Should he take it before or after food?
+Pharmacist: It's better after food. And for the cough, this honey syrup is good and natural. He can take one spoon in the morning and one before he sleeps.
+Woman: Great. How much are they?
+Pharmacist: The fever syrup is twenty-two riyals, and the cough syrup is eighteen riyals. So that's forty riyals in total.
+Woman: OK. Is there anything else I should do?
+Pharmacist: Yes. Make sure he drinks a lot of water and gets plenty of rest. If the fever doesn't go down in two days, or if it goes higher than thirty-nine, please take him to a doctor.
+Woman: I will. Thank you so much.
+Pharmacist: You're welcome. I hope he feels better soon.
+?? What is wrong with the woman's son?
+* He has a fever and a cough.
+- He has a stomach ache.
+- He has a headache.
+- He broke his arm.
+?? How old is her son?
+* Six years old
+- Two years old
+- Twelve years old
+- Eight years old
+?? What was his temperature this afternoon?
+* Thirty-eight and a half
+- Thirty-nine
+- Thirty-seven and a half
+- Forty
+?? Who is the fever syrup for?
+* Children between two and twelve years old
+- Babies under two
+- Adults only
+- Children over twelve
+?? How often should he take the fever syrup?
+* Every six hours
+- Every two hours
+- Every twelve hours
+- Once a day
+?? When should he take the fever syrup?
+* After food
+- Before food
+- Only at night
+- With milk
+?? What is the cough syrup made with?
+* Honey
+- Lemon
+- Sugar
+- Milk
+?? How much is the cough syrup?
+* Eighteen riyals
+- Twenty-two riyals
+- Forty riyals
+- Eight riyals
+?? What else should the boy do?
+* Drink a lot of water and get plenty of rest.
+- Go to school.
+- Eat a lot of sweets.
+- Play outside.
+?? When should the woman take her son to a doctor?
+* If the fever doesn't go down in two days or goes higher than thirty-nine
+- Tomorrow morning
+- If he stops coughing
+- After one week
+
+## 24 | Morning Traffic Report | monologue
+@ Reporter=am_michael
+Reporter: Good morning, and here is the traffic report for Riyadh at seven forty-five.
+Reporter: Traffic is very heavy on King Fahd Road this morning, especially near the Kingdom Tower. There was a small accident between two cars about twenty minutes ago. Nobody was hurt, but two lanes are closed, so drivers should expect delays of up to thirty minutes. If you can, take Olaya Street instead.
+Reporter: On the Northern Ring Road, traffic is moving well in both directions, with no problems at the moment.
+Reporter: Drivers going to the airport, please note that there is road work on Airport Road, near exit eight. Only one lane is open, and the work will continue until Thursday. Please leave your home earlier than usual if you have a flight to catch.
+Reporter: For metro users, all lines are running normally this morning, and trains are arriving every five minutes. The metro is a good choice today if you want to avoid traffic.
+Reporter: The weather is clear and sunny, with a temperature of twenty-two degrees now, and a high of thirty-one this afternoon. Visibility on the roads is good.
+Reporter: That's all for now. Our next traffic report will be at eight fifteen. Drive safely!
+?? What time is the traffic report?
+* At seven forty-five
+- At eight fifteen
+- At seven fifteen
+- At eight forty-five
+?? Where is traffic very heavy this morning?
+* On King Fahd Road
+- On the Northern Ring Road
+- On Olaya Street
+- On Airport Road
+?? What happened about twenty minutes ago?
+* A small accident between two cars
+- A big fire
+- A bus broke down
+- It started to rain
+?? How many lanes are closed on King Fahd Road?
+* Two
+- One
+- Three
+- All of them
+?? How long could the delays be?
+* Up to thirty minutes
+- Up to twenty minutes
+- Up to one hour
+- Up to ten minutes
+?? Which road does the reporter suggest instead of King Fahd Road?
+* Olaya Street
+- Airport Road
+- The Northern Ring Road
+- Exit eight
+?? Why is there a problem on Airport Road?
+* There is road work near exit eight.
+- There was an accident.
+- It is closed for a festival.
+- There is too much traffic.
+?? Until when will the road work continue?
+* Until Thursday
+- Until Friday
+- Until tonight
+- Until next month
+?? How often are metro trains arriving?
+* Every five minutes
+- Every fifteen minutes
+- Every ten minutes
+- Every thirty minutes
+?? When is the next traffic report?
+* At eight fifteen
+- At seven forty-five
+- At nine o'clock
+- At eight thirty
+
+## 25 | Choosing Courses for Next Semester | dialogue
+@ Hind=af_bella Lama=af_heart
+Hind: Lama, have you chosen your courses for next semester yet? Registration closes on Thursday.
+Lama: Not yet. I'm still thinking. I have to take four courses, and two of them must be English and math.
+Hind: Me too. Which English course are you taking? English 2 or English for Business?
+Lama: English 2. I need it before I can take English for Business next year.
+Hind: OK. I'll take English 2 too, so we can study together. There are two groups: one on Sunday and Tuesday mornings, and one on Monday and Wednesday afternoons.
+Lama: The morning group is better for me. I work at the library in the afternoons.
+Hind: Great, the morning group then. What about the other two courses?
+Lama: I'm thinking about psychology. My sister took it last year, and she said it was really interesting.
+Hind: I heard the psychology professor is excellent, but there's a lot of reading. You have to read one chapter every week.
+Lama: That's fine, I like reading. What are you taking?
+Hind: I want to take computer skills. It's useful for any job, and there are no exams, only projects.
+Lama: No exams? That sounds perfect! Maybe I'll take it too, as my fourth course.
+Hind: Then we'll have three courses together! But be quick, because computer skills fills up very fast. Last semester, there were only thirty places.
+Lama: OK, I'll register tonight. Thanks, Hind!
+?? When does registration close?
+* On Thursday
+- On Sunday
+- Tonight
+- Next week
+?? How many courses does Lama have to take?
+* Four
+- Two
+- Three
+- Five
+?? Which two courses must Lama take?
+* English and math
+- English and psychology
+- Math and computer skills
+- Psychology and computer skills
+?? Why does Lama take English 2?
+* She needs it before English for Business.
+- It's easier than English for Business.
+- Her sister took it.
+- It has no exams.
+?? When does the morning group meet?
+* On Sunday and Tuesday mornings
+- On Monday and Wednesday mornings
+- On Sunday and Tuesday afternoons
+- Every morning
+?? Why is the morning group better for Lama?
+* She works at the library in the afternoons.
+- She has math in the afternoons.
+- She likes waking up early.
+- Her sister is in the morning group.
+?? Why is Lama thinking about psychology?
+* Her sister said it was really interesting.
+- It has no exams.
+- It's useful for any job.
+- Hind is taking it.
+?? What is difficult about the psychology course?
+* There's a lot of reading.
+- The professor is not good.
+- There are many exams.
+- It's in the afternoon.
+?? Why does Hind want to take computer skills?
+* It's useful for any job and has no exams, only projects.
+- Her sister recommended it.
+- It's easy to get a place.
+- It has a lot of reading.
+?? How many places were there in computer skills last semester?
+* Only thirty
+- Only thirteen
+- Fifty
+- Three hundred

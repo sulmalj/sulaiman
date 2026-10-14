@@ -9,7 +9,8 @@ import json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-SITE = os.path.join(ROOT, 'sites', 'english')
+NAME = os.path.basename(HERE)   # english (الميد) أو english-final (الفاينل): نفس السكربت، كل مجلد يبني موقعه
+SITE = os.path.join(ROOT, 'sites', NAME)
 
 
 def rows(name):
@@ -36,7 +37,9 @@ def write(name, var, data, note):
 
 
 def vocab():
-    words = [l.split(' | ')[0].strip() for l in open(os.path.join(ROOT, 'store', 'english', 'vocabulary-list.txt'), encoding='utf-8')
+    if rows('vocabulary.txt') is None:   # الكلمات لسا ما وصلت (موقع جديد)
+        write('vocab.js', 'VOCAB', [], 'أسئلة الكلمات (Vocabulary)'); return
+    words = [l.split(' | ')[0].strip() for l in open(os.path.join(ROOT, 'store', NAME, 'vocabulary-list.txt'), encoding='utf-8')
              if l.strip() and not l.startswith('# ')]
     out = []
     for n, l in rows('vocabulary.txt'):
