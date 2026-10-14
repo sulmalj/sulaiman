@@ -1,6 +1,7 @@
 # القطع (Reading) — كل قطعة عليها 10 أسئلة
 # الصيغة:  ## رقم | العنوان   ثم الفقرات (كل فقرة سطر، تبدأ برقمها)   ثم  ?? سؤال  * الصحيح  - خطأ ×3
 # _كلمة_ = كلمة تحتها خط في القطعة
+# !! الشرح = يطلع للطالب بعد ما يجاوب (وين الجواب في القطعة وليش)
 # القطع 1–3 من ملفات المستخدم (مصححة ومكمّلة لعشر أسئلة)، والباقي مكتوبة بنفس الطريقة.
 
 ## 1 | Laughter in Hospitals and Schools
@@ -12,51 +13,61 @@
 - funny idea
 - boring idea
 - great idea
+!! الفقرة 3 آخر جملة: «Simple ideas like this can make a big difference» ← الكاتب يعتبر فكرة النكت فكرة بسيطة (simple idea).
 ?? People laugh the most when they're ______.
 * around other people
 - in stressful situations
 - watching funny videos
 - not in pain or at school
+!! الفقرة 2: «people laugh the most when they're around other people».
 ?? Laughter helps people ______ their pain.
 * forget about
 - remember
 - explain
 - learn about
+!! الفقرة 1: «Laughter also helps people forget about their pain».
 ?? Why does the writer think professors and teachers should try to make students laugh?
 * Students will remember more from the lessons.
 - Students never complete their homework quickly.
 - Professors rarely make great efforts.
 - Classes are usually boring.
+!! الفقرة 3: الطلاب ضحكوا و«They also remembered the lessons more» ← يتذكرون الدروس أكثر.
 ?? What does the underlined word "facilitates" in paragraph 1 mean?
 * helps
 - remembers
 - stops
 - slows down
+!! facilitates learning = يسهّل التعلّم ويساعد عليه ← helps.
 ?? What does the underlined word "prescribe" in paragraph 2 mean?
 * give
 - take
 - watch
 - use
+!! «doctors prescribe drugs to patients» = الدكتور يعطي (يصرف) الدواء للمريض ← give.
 ?? What does the underlined word "They" in paragraph 2 refer to?
 * visitors
 - videos
 - hospitals
 - patients
+!! الجملة قبلها: «hospitals can tell visitors how helpful laughter is. They should try…» ← They = الزوار (visitors).
 ?? What does the underlined word "They" in paragraph 3 refer to?
 * The students
 - The professors
 - The jokes
 - The lessons
+!! الجملة قبلها: «his students still laughed. They also remembered…» ← They = الطلاب.
 ?? What is the best title for the passage?
 * Two places that need more laughter
 - Patients and laughter
 - Students and laughter
 - The main reasons of laughter
+!! الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر.
 ?? What did the accounting professor do every five or ten minutes?
 * He told the students a joke.
 - He gave the students a short test.
 - He showed the students a funny video.
 - He let the students play games.
+!! الفقرة 3: «he told the students a joke every five or ten minutes».
 
 ## 2 | Working From Home
 1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, "It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day."
@@ -67,51 +78,61 @@
 - An hour or two
 - 10 to 20 minutes
 - More than two hours
+!! الفقرة 2: «In most countries, workers need 30 to 60 minutes to get to work».
 ?? Workers who take online meditation classes ______.
 * can improve their attention
 - can't send emails after a certain time
 - go to the office every day
 - need more time to get to work
+!! الفقرة 3: «Workers can do something quiet together that helps them improve their attention».
 ?? In paragraph 2, why does the writer mention not needing to provide places for workers to relax?
 * To show how employers save money
 - To show that workers don't like game rooms
 - To explain why workers feel stressed
 - To show that offices are not safe
+!! الفقرة 2 تتكلم عن توفير المال: «For employers, it saves money… They also don't need to… provide places like game rooms» ← المثال يوضّح كيف يوفّر صاحب العمل.
 ?? What do the underlined words "heading to" in paragraph 1 mean?
 * going to
 - coming back from
 - looking at
 - thinking about
+!! «before heading to work» = قبل ما يروح للعمل ← going to.
 ?? What does the underlined word "it" in paragraph 1 refer to?
 * work
 - the park
 - the coffee
 - the laptop
+!! «I'd leave work and not think about it until the next day» ← it ترجع على work.
 ?? What do the underlined words "spring for" in paragraph 2 mean?
 * pay for
 - look for
 - ask for
 - wait for
+!! «spring for things like office parties» = يدفع تكاليف الحفلات ← pay for.
 ?? What does the underlined word "them" in paragraph 3 refer to?
 * workers
 - businesses
 - classes
 - emails
+!! «Workers can do something quiet together that helps them…» ← them = العمّال (workers).
 ?? Why does Alex find working from home stressful?
 * He feels like the workday never ends.
 - He doesn't like his laptop.
 - He needs an hour to get to work.
 - His home is too noisy.
+!! الفقرة 1: Alex يقول «It's like the workday never ends… I answer emails and texts at all hours».
 ?? What does Alex do before he starts work?
 * He has some coffee and takes a short walk.
 - He drives to his office.
 - He answers emails in the park.
 - He goes to a meditation class.
+!! الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park».
 ?? What is the main idea of the passage?
 * Working from home has advantages, but it also has problems.
 - Working from home is perfect for all workers.
 - Offices are always better than working from home.
 - Employers should pay for more office parties.
+!! آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems».
 
 ## 3 | Stress at Work
 1. The stress of modern jobs can make it challenging for employees to focus while they are working. This stress may also lead to employees getting sick more often or even quitting. When this happens, employers must use time and resources to find and train new employees.
@@ -123,51 +144,61 @@
 - successful
 - interesting
 - relaxing
+!! الفقرة 1: «The stress of modern jobs can make it challenging for employees to focus».
 ?? Some employees don't like meditation classes because the classes ______.
 * add to their stress
 - use time and resources
 - take place during lunch
 - make them miss work
+!! الفقرة 2: «meditation doesn't support them at all and adds to their stress».
 ?? The writer says that carefully planned solutions feel like ______ for employees.
 * more work
 - more time
 - more useful
 - more fun
+!! الفقرة 3: «Carefully planned solutions can feel like more work for employees».
 ?? The writer gives an example to show how ______.
 * trying cakes together can be better than building a game room
 - planning a party can be better than building a game room
 - building a game room can be better than trying cakes
 - planning a party can be better than trying cakes
+!! الفقرة 4: بدل بناء غرفة ألعاب (building a game room)، المدير يقول «Let's all go do it right now!» ويروحون يجربون الكيك ← تجربة الكيك أحسن من بناء غرفة ألعاب.
 ?? Which idea for reducing stress does the writer NOT mention?
 * buying books
 - buying plants
 - buying lunches
 - buying gifts
+!! الفقرة 2 ذكرت plants و lunches، والفقرة 4 ذكرت gifts. أما الكتب (books) ما انذكرت.
 ?? What do the underlined words "give a boost" in paragraph 2 mean?
 * help
 - stress
 - entertain
 - stop
+!! «they don't give a boost to everyone» = ما تساعد الكل ← help.
 ?? What does the underlined word "spontaneously" in paragraph 3 mean?
 * without planning
 - without helping
 - with careful thinking
 - with a lot of work
+!! الفقرة 3: الحلول «spontaneously» عكس «Carefully planned»، يعني تصير فجأة «in the moment» ← without planning.
 ?? What does the underlined word "them" in paragraph 2 refer to?
 * the problems in their lives
 - the employees
 - the meditation classes
 - the game rooms
+!! «thinking about the problems in their lives, and it's hard to stop thinking about them» ← them = المشاكل.
 ?? What happens when employees get sick often or quit?
 * Employers must use time and resources to find and train new employees.
 - Employers must build more game rooms.
 - Employees must take more meditation classes.
 - Employees must work longer hours.
+!! الفقرة 1: «employers must use time and resources to find and train new employees».
 ?? What is the best title for the passage?
 * Spontaneous ways to reduce stress at work
 - How to plan a perfect office party
 - Why meditation is the best solution
 - Building game rooms at work
+!! القطعة كلها عن حلول ضغط العمل، وأحسنها اللي تصير بدون تخطيط (spontaneously).
 
 ## 4 | Making Friends at University
 1. Starting university is exciting, but it can also be difficult. Many new students move to a new city and leave their old friends behind. For the first few weeks, they may feel _lonely_. However, studies show that students who make friends early are happier and get better grades.
@@ -179,51 +210,61 @@
 - famous
 - crowded
 - angry
+!! الفقرة 1: «For the first few weeks, they may feel lonely».
 ?? Students who make friends early ______.
 * are happier and get better grades
 - don't need to join clubs
 - always move to a new city
 - study less than other students
+!! الفقرة 1: «students who make friends early are happier and get better grades».
 ?? Why is it easy to start a conversation in a club?
 * People in the club are interested in the same things.
 - Clubs are always quiet.
 - Teachers help students talk.
 - People in clubs are never shy.
+!! الفقرة 2: «you meet people who are interested in the same things as you, so it is easy to start a conversation».
 ?? Which club does the writer NOT mention?
 * cooking
 - sports
 - art
 - photography
+!! الفقرة 2 ذكرت «sports, art, photography»، والطبخ (cooking) ما انذكر.
 ?? What does the underlined word "lonely" in paragraph 1 mean?
 * sad because you are alone
 - happy with many friends
 - very tired
 - very busy
+!! lonely = تحس إنك وحيد وحزين لأن ما عندك أحد. والجملة عن طلاب تركوا أصحابهم.
 ?? What does the underlined word "them" in paragraph 3 refer to?
 * shy students
 - new people
 - clubs
 - classmates
+!! «Some students are shy, and talking to new people is hard for them» ← them = الطلاب الخجولين.
 ?? What does the underlined word "gradually" in paragraph 3 mean?
 * slowly, step by step
 - suddenly
 - never
 - quickly
+!! «can gradually become real friendships» = شوي شوي ← slowly, step by step.
 ?? What small step does the writer suggest for shy students?
 * Saying hello to the person next to them in class
 - Joining three clubs at the same time
 - Moving to a new city
 - Talking to the professor every day
+!! الفقرة 3: «they can say hello to the person sitting next to them in class».
 ?? The writer says that real friendships ______.
 * need time and patience
 - happen in one day
 - start only in clubs
 - are not important
+!! الفقرة 4: «Real friendships don't happen in one day… be patient».
 ?? What is the best title for the passage?
 * How to make friends at university
 - Why university is difficult
 - The best clubs at university
 - How to get better grades
+!! القطعة كلها عن طرق تكوين صداقات في الجامعة.
 
 ## 5 | Collecting Things
 1. Many people around the world have a hobby of collecting things. Some people collect stamps or coins. Others collect toys, shoes, or even old bottles. Collecting is one of the most popular hobbies because anyone can do _it_, at any age.
@@ -235,51 +276,61 @@
 - It is always very cheap.
 - It makes people rich.
 - It is easy to sell items.
+!! الفقرة 1: «anyone can do it, at any age».
 ?? What does the underlined word "it" in paragraph 1 refer to?
 * collecting
 - the world
 - a bottle
 - a toy
+!! «Collecting is one of the most popular hobbies because anyone can do it» ← it = collecting.
 ?? According to the passage, how can collecting coins help people?
 * They learn about the history of different countries.
 - They become famous.
 - They forget about their friends.
 - They travel to England.
+!! الفقرة 2: «A person who collects coins… learns a lot about the history of different countries».
 ?? Collectors often meet at clubs and events to ______.
 * buy, sell, and share their items
 - learn how to cook
 - play sports together
 - write about history
+!! الفقرة 2: «collectors often meet at clubs and events to buy, sell, and share their items».
 ?? What does the underlined word "events" in paragraph 2 mean?
 * planned activities where people meet
 - old coins
 - small shops
 - problems
+!! events = مناسبات وفعاليات منظّمة يجتمع فيها الناس.
 ?? How many keys does the woman in the United States have?
 * Over 3,000
 - More than 8,000
 - About 300
 - Exactly 1,000
+!! الفقرة 3: «she has over 3,000 of them». أما 8,000 فهي البطّات حق الرجل.
 ?? What does the man in England collect?
 * rubber ducks
 - keys
 - stamps
 - paintings
+!! الفقرة 3: «One man in England has more than 8,000 rubber ducks».
 ?? Collecting can become a problem when people ______.
 * spend too much money on it
 - meet other collectors
 - learn about history
 - organize their collection
+!! الفقرة 4: «collecting can become a problem if people spend too much money on it».
 ?? What does the underlined word "set" in paragraph 4 mean?
 * decide on
 - break
 - forget
 - spend
+!! «set a budget» = يحدد ميزانية ← decide on.
 ?? What is the main idea of the passage?
 * Collecting is a popular hobby with many benefits, but people should be careful with money.
 - Collecting is a waste of money.
 - Only rich people can collect things.
 - Rubber ducks are the most valuable items to collect.
+!! القطعة تذكر فوائد الجمع، وفي الأخير تنبّه على صرف الفلوس.
 
 ## 6 | Learning a Foreign Language
 1. Today, more and more people want to learn a foreign language. Some learn for their jobs, some for travel, and some just for fun. Learning a new language is not easy, but it has many _benefits_.
@@ -291,51 +342,61 @@
 - problems
 - costs
 - mistakes
+!! benefits = فوائد ← good results.
 ?? Why do many companies want employees who speak another language?
 * To communicate with customers from other countries
 - To teach other employees
 - To travel less
 - To write books
+!! الفقرة 2: «companies want employees who can communicate with customers from other countries».
 ?? According to studies, people who speak two languages ______.
 * have better memories
 - are always rich
 - don't need to study
 - forget things easily
+!! الفقرة 2: «people who speak two languages have better memories».
 ?? How does a new language help you when you travel?
 * You can talk to local people and read signs.
 - You can travel for free.
 - You don't need a passport.
 - You can find a job in the airport.
+!! الفقرة 2: «you can talk to local people, read signs, and order food without help».
 ?? Experts say that the most important thing in learning a language is ______.
 * practice
 - money
 - talent
 - age
+!! الفقرة 3: «Experts say that practice is the most important thing».
 ?? How long should you use the language every day, according to the writer?
 * Even just fifteen minutes
 - At least three hours
 - Exactly one hour
 - Fifty minutes
+!! الفقرة 3: «use the language every day, even for just fifteen minutes».
 ?? What is a language partner?
 * Someone who speaks the language well and wants to learn your language
 - A teacher who works at a school
 - A person who travels with you
 - An app that teaches languages
+!! الفقرة 3: «someone who speaks the language well and wants to learn your language».
 ?? What does the underlined word "they" in paragraph 4 refer to?
 * mistakes
 - people
 - languages
 - partners
+!! «Mistakes are a normal part of learning, and they help you improve» ← they = الأخطاء.
 ?? Which way of learning does the writer NOT mention?
 * reading newspapers
 - watching movies
 - listening to songs
 - using apps
+!! الفقرة 3 ذكرت movies و songs و apps، والجرايد (newspapers) ما انذكرت.
 ?? What is the writer's advice about mistakes?
 * Don't be afraid of them; they are a normal part of learning.
 - Try never to make them.
 - Stop learning if you make many mistakes.
 - Only make mistakes with your teacher.
+!! الفقرة 4: «don't be afraid of making mistakes… Mistakes are a normal part of learning».
 
 ## 7 | Online Classes or Classrooms?
 1. In the past, students had to go to a classroom to learn. Today, many students take classes online. They can watch lectures, do tests, and talk to their teachers from home. Some people think online classes are the future of education, while others believe traditional classrooms are still better.
@@ -347,51 +408,61 @@
 - Meet their classmates face to face
 - Live near the campus
 - Go to the library every day
+!! الفقرة 1: «They can watch lectures, do tests, and talk to their teachers from home».
 ?? What does the underlined word "convenient" in paragraph 2 mean?
 * easy and suitable
 - expensive
 - difficult
 - boring
+!! convenient = مريح ومناسب، لأن الطالب يدرس بأي وقت وأي مكان.
 ?? Why are online classes often cheaper?
 * Students don't pay for transportation or housing near the campus.
 - Teachers work for free.
 - Students don't need computers.
 - The classes are shorter.
+!! الفقرة 2: «students don't need to pay for transportation or housing near the campus».
 ?? Who may feel more comfortable asking questions online?
 * Shy students
 - Teachers
 - Parents
 - Organized students
+!! الفقرة 2: «students who are shy may feel more comfortable asking questions online».
 ?? Which distraction does the writer NOT mention?
 * noisy neighbours
 - phones
 - the TV
 - family members
+!! الفقرة 3 ذكرت «their phones, the TV, or family members»، والجيران (neighbours) ما انذكروا.
 ?? What do students miss in online classes?
 * The chance to meet classmates face to face
 - The chance to study at any time
 - The chance to save money
 - The chance to watch lectures
+!! الفقرة 3: «Students also miss the chance to meet classmates face to face».
 ?? What do the underlined words "depends on" in paragraph 4 mean?
 * is decided by
 - is better than
 - is far from
 - is the same as
+!! «The answer depends on the student» = الجواب يتحدد حسب الطالب ← is decided by.
 ?? Which students often do well online?
 * Students who are organized and manage their time well
 - Students who need more support
 - Students who like to meet friends
 - Students who live near the campus
+!! الفقرة 4: «Students who are organized and can manage their time well often do well online».
 ?? What does the underlined word "them" in paragraph 4 refer to?
 * students
 - universities
 - classes
 - teachers
+!! «so students can choose what works best for them» ← them = الطلاب.
 ?? What is the main idea of the passage?
 * Online classes and classrooms both have advantages and disadvantages.
 - Online classes are always better than classrooms.
 - Classrooms will disappear in the future.
 - Students should never study online.
+!! القطعة تذكر مميزات وعيوب الدراسة أونلاين، وتقول الأفضل يعتمد على الطالب.
 
 ## 8 | Fast Food and Our Health
 1. Fast food is popular all over the world. It is cheap, quick, and easy to find. Many people eat burgers, fries, and pizza several times a week. But eating too much fast food can be bad for our health.
@@ -403,51 +474,61 @@
 - It is very healthy.
 - It has many vitamins.
 - It is only sold to children.
+!! الفقرة 1: «It is cheap, quick, and easy to find».
 ?? What makes fast food taste delicious?
 * salt, sugar, and fat
 - fresh vegetables
 - vitamins
 - water
+!! الفقرة 2: «a lot of salt, sugar, and fat. These things make the food taste delicious».
 ?? What does the underlined word "overweight" in paragraph 2 mean?
 * heavier than is healthy
 - very thin
 - very tall
 - very strong
+!! overweight = وزنه زايد عن الطبيعي ← heavier than is healthy.
 ?? What does the underlined word "nutritious" in paragraph 2 mean?
 * good for your body
 - delicious
 - expensive
 - fast
+!! nutritious = مغذّي ومفيد للجسم. والجملة تقول إن الأكل السريع ما فيه فيتامينات كثيرة.
 ?? Which reason for eating fast food does the writer NOT mention?
 * People don't know how to cook.
 - People don't have time to cook.
 - Fast food can be cheaper.
 - Fast food companies have many ads.
+!! الفقرة 3 ذكرت الوقت والسعر والإعلانات، وما ذكرت إن الناس ما يعرفون يطبخون.
 ?? Fast food companies spend a lot of money on ads, especially for ______.
 * children
 - doctors
 - old people
 - students
+!! الفقرة 3: «Fast food companies spend a lot of money on ads, especially ads for children».
 ?? How often does the writer suggest eating fast food?
 * Only once a week
 - Every day
 - Never
 - Three times a week
+!! الفقرة 4: «try to eat it only once a week».
 ?? What does the underlined word "it" in paragraph 4 refer to?
 * fast food
 - the good news
 - a week
 - soda
+!! «You don't need to stop eating fast food completely. Instead, try to eat it» ← it = fast food.
 ?? Which is a healthier option, according to the writer?
 * Grilled chicken instead of fried chicken
 - Soda instead of water
 - Fries instead of salad
 - Pizza instead of burgers
+!! الفقرة 4: «grilled chicken instead of fried chicken, and water instead of soda».
 ?? What is the best title for the passage?
 * Fast food: problems and simple solutions
 - How to make a burger at home
 - The history of fast food
 - Why children love ads
+!! القطعة تشرح مشاكل الأكل السريع، وفي الأخير حلول بسيطة.
 
 ## 9 | Organic Food
 1. In many supermarkets today, you can find a special section for organic food. Organic fruit, vegetables, meat, and dairy products are grown or produced without chemicals. Farmers who grow organic food don't use chemical sprays to kill insects, and their animals don't get unnecessary medicines.
@@ -459,51 +540,61 @@
 - Food that is sold only in small shops
 - Food that has a lot of sugar
 - Food that comes from other countries
+!! الفقرة 1: «grown or produced without chemicals».
 ?? Organic farmers don't use chemical sprays to ______.
 * kill insects
 - grow bigger fruit
 - feed their animals
 - clean the water
+!! الفقرة 1: «don't use chemical sprays to kill insects».
 ?? According to some studies, organic fruit and vegetables have ______.
 * slightly more vitamins
 - much more sugar
 - fewer vitamins
 - a lot of chemicals
+!! الفقرة 2: «organic fruit and vegetables have slightly more vitamins».
 ?? Why is organic farming better for the environment?
 * The soil, water, and animals stay cleaner and safer.
 - It uses more chemicals.
 - It produces more food.
 - It needs fewer workers.
+!! الفقرة 2: «the soil, the water, and the animals… stay cleaner and safer».
 ?? What does the underlined word "safer" in paragraph 2 mean?
 * more protected from danger
 - more expensive
 - more crowded
 - more dangerous
+!! safer = أكثر أماناً، يعني محمية من الخطر.
 ?? How much more can organic food cost than normal food?
 * 20 to 100 percent more
 - 2 to 10 percent more
 - 200 percent more
 - The same price
+!! الفقرة 3: «Organic food can cost 20 to 100 percent more».
 ?? Which is a reason why organic food is expensive?
 * It needs more workers and more time.
 - It is always imported.
 - It has more chemicals.
 - Supermarkets don't like it.
+!! الفقرة 3: «organic farming needs more workers and more time».
 ?? What does the underlined word "supply" in paragraph 3 mean?
 * the amount that is available
 - the price
 - the taste
 - the farmers
+!! supply = الكمية المتوفرة. والمزارع العضوية تنتج أقل، فالكمية أقل.
 ?? According to some experts, what is more important than choosing organic food?
 * Eating a lot of fruit and vegetables
 - Buying food from big supermarkets
 - Eating only meat and dairy
 - Spending more money on food
+!! الفقرة 4: «eating a lot of fruit and vegetables is more important than choosing organic ones».
 ?? What do experts suggest for people with a small budget?
 * Buy organic only for the fruit and vegetables they eat most often.
 - Never buy organic food.
 - Buy only organic meat.
 - Stop eating vegetables.
+!! الفقرة 4: «buying organic only for the fruit and vegetables that you eat most often».
 
 ## 10 | Celebrating Eid
 1. Eid is one of the most important celebrations for Muslims around the world. There are two Eids every year: Eid al-Fitr, which comes after the month of Ramadan, and Eid al-Adha, which comes during the time of Hajj. Both are happy times for families and friends.
@@ -515,51 +606,61 @@
 - One
 - Three
 - Four
+!! الفقرة 1: «There are two Eids every year».
 ?? When does Eid al-Fitr come?
 * After the month of Ramadan
 - During the time of Hajj
 - At the beginning of the year
 - In the summer only
+!! الفقرة 1: «Eid al-Fitr, which comes after the month of Ramadan».
 ?? How does Eid start in Saudi Arabia?
 * With the Eid prayer early in the morning
 - With fireworks at night
 - With a big lunch
 - With a trip to the mall
+!! الفقرة 2: «Eid starts early in the morning with the Eid prayer».
 ?? Why are children very excited on Eid?
 * Adults give them money or small gifts.
 - They don't have to wear new clothes.
 - They go to school.
 - They cook traditional dishes.
+!! الفقرة 2: «adults give them money or small gifts called "Eidiya"».
 ?? What does the underlined word "them" in paragraph 2 refer to?
 * children
 - adults
 - families
 - clothes
+!! «Children are very excited, because adults give them…» ← them = الأطفال.
 ?? Which food does the writer NOT mention?
 * fish
 - kabsa
 - dates
 - sweets
+!! الفقرة 3 ذكرت kabsa و dates و sweets، والسمك (fish) ما انذكر.
 ?? What does the underlined word "tradition" in paragraph 3 mean?
 * something people have done for a long time
 - a new idea
 - a kind of food
 - a problem
+!! tradition = عادة يسويها الناس من زمان.
 ?? What does the underlined word "crowded" in paragraph 4 mean?
 * full of people
 - empty
 - closed
 - quiet
+!! crowded = مزدحم ومليان ناس.
 ?? Which event do cities organize during Eid, according to the passage?
 * fireworks
 - football matches
 - car races
 - exams
+!! الفقرة 4: «events during Eid, like fireworks, festivals, and shows for children».
 ?? What is the best thing about Eid for most people, according to the writer?
 * Spending time with the people they love
 - Getting new clothes
 - Going to the mall
 - Eating sweets
+!! آخر جملة: «the best thing about Eid is spending time with the people they love».
 
 ## 11 | Travelling on a Small Budget
 1. Many people love to travel, but they think it is too expensive. In fact, you can travel to many interesting places without spending a lot of money. You just need to make good plans before you go.
@@ -571,51 +672,61 @@
 - It is boring.
 - It is dangerous.
 - It is easy.
+!! الفقرة 1: «they think it is too expensive».
 ?? When are flights and hotels usually more expensive?
 * During holidays and in the summer
 - In the winter only
 - On weekdays
 - Early in the morning
+!! الفقرة 2: «Flights and hotels are usually more expensive during holidays and in the summer».
 ?? Why should you book your tickets early?
 * Prices often increase close to the travel date.
 - Airlines give free meals.
 - You can choose a bigger hotel.
 - Tickets are only sold early.
+!! الفقرة 2: «prices often increase close to the travel date».
 ?? What does the underlined word "increase" in paragraph 2 mean?
 * go up
 - go down
 - stay the same
 - disappear
+!! increase = يزيد ويرتفع ← go up.
 ?? According to paragraph 3, why is renting an apartment a good idea?
 * You can prepare some of your meals in the kitchen.
 - It is always near the airport.
 - It has a swimming pool.
 - It includes free tours.
+!! الفقرة 3: «Apartments often have a kitchen, so you can prepare some of your meals».
 ?? Which free activity does the writer NOT mention?
 * going to the beach
 - visiting museums
 - walking in parks
 - visiting markets
+!! الفقرة 4 ذكرت museums و parks و markets، والبحر (beach) ما انذكر.
 ?? How do you pay for a walking tour?
 * You pay what you want at the end.
 - You pay a fixed price before you start.
 - You don't pay anything.
 - You pay the hotel.
+!! الفقرة 4: «you only pay what you want at the end».
 ?? What do the underlined words "public transportation" in paragraph 4 mean?
 * buses and trains that everyone can use
 - private cars
 - taxis
 - planes
+!! public transportation = المواصلات العامة، والكاتب يقول «Buses and trains».
 ?? What does the underlined word "they" in paragraph 4 refer to?
 * buses and trains
 - local guides
 - taxis
 - markets
+!! «Buses and trains are cheap, and they help you see the city» ← they = الباصات والقطارات.
 ?? What is the main idea of the passage?
 * With good plans, you can travel without spending a lot of money.
 - Travelling is only for rich people.
 - Hotels are better than apartments.
 - You should always travel in the summer.
+!! الفقرة 1: «You just need to make good plans before you go».
 
 ## 12 | Spending Time in Nature
 1. Many people today spend most of their time indoors. They work in offices, study in classrooms, and relax at home in front of screens. Some studies say that the average person spends about 90 percent of their time inside buildings. However, experts believe that spending time outdoors is very important for our health.
@@ -627,51 +738,61 @@
 - 50 percent
 - 19 percent
 - 9 percent
+!! الفقرة 1: «spends about 90 percent of their time inside buildings».
 ?? How did people feel after walking in a park for 90 minutes?
 * Calmer and more positive
 - More tired
 - More stressed
 - Hungrier
+!! الفقرة 2: «felt calmer and more positive».
 ?? Why do we usually move more when we are outside?
 * We walk, run, ride bikes, or play sports.
 - We sleep more.
 - We watch more screens.
 - We eat more food.
+!! الفقرة 2: «We walk, run, ride bikes, or play sports».
 ?? What does sunlight help our bodies make?
 * vitamin D
 - vitamin C
 - sugar
 - water
+!! الفقرة 2: «Sunlight also helps our bodies make vitamin D».
 ?? What does the underlined word "concentrate" in paragraph 3 mean?
 * focus
 - sleep
 - play
 - forget
+!! concentrate = يركّز ← focus.
 ?? What are "forest classes"?
 * Classes where children learn outside for part of the day
 - Classes about how to plant trees
 - Classes for adults in the mountains
 - Online classes about nature
+!! الفقرة 3: «where children learn outside for part of the day».
 ?? Where do some schools have "forest classes"?
 * In Europe
 - In Asia
 - In Africa
 - In America
+!! الفقرة 3: «Some schools in Europe now have "forest classes,"».
 ?? How much time in nature do experts suggest each week?
 * At least two hours
 - At least ninety minutes a day
 - Ten hours
 - Thirty minutes
+!! الفقرة 4: «spending at least two hours a week in nature».
 ?? What does the underlined word "habits" in paragraph 4 mean?
 * things you do regularly
 - problems
 - plants
 - trips
+!! habits = عادات تسويها بشكل منتظم.
 ?? What is the best title for the passage?
 * Why we need to spend time in nature
 - How to build a garden
 - The best parks in Europe
 - Why offices are bad
+!! القطعة كلها عن فوائد الطبيعة وأهمية قضاء وقت فيها.
 
 ## 13 | The Student Housing Problem
 1. Every year, thousands of students move to big cities to study at university. Finding a place to live is one of the first challenges they face. In many cities, there is a _shortage_ of student housing, and the rent is very high.
@@ -683,51 +804,61 @@
 - Finding a job
 - Making friends
 - Learning a language
+!! الفقرة 1: «Finding a place to live is one of the first challenges they face».
 ?? What does the underlined word "shortage" in paragraph 1 mean?
 * not enough of something
 - too much of something
 - a high price
 - a small room
+!! shortage = نقص، يعني ما فيه سكن كافي للطلاب.
 ?? According to paragraph 2, why can landlords ask for more money?
 * Many students want to live near the campus.
 - Students are rich.
 - Apartments are very big.
 - Universities pay the rent.
+!! الفقرة 2: «When many students want to live near the campus, landlords can ask for more money».
 ?? What happens to students who live far from the university?
 * They spend a lot of time on public transportation.
 - They don't need to pay rent.
 - They live with their professors.
 - They study online.
+!! الفقرة 2: «spend a lot of time on public transportation every day».
 ?? How do roommates save money?
 * They divide the rent and the bills.
 - They don't pay for electricity.
 - They live in dormitories.
 - They work for the landlord.
+!! الفقرة 3: «they can divide the rent and the bills».
 ?? Some students live with a family in exchange for ______.
 * help with housework or taking care of children
 - free food
 - English lessons
 - a car
+!! الفقرة 3: «in exchange for help with housework or taking care of children».
 ?? Dormitories are usually ______ than private apartments.
 * cheaper
 - bigger
 - noisier
 - farther
+!! الفقرة 3: «dormitories, which are usually cheaper than private apartments».
 ?? Why is a cheap apartment not always a good choice?
 * It might take two hours to get to class.
 - It is always dirty.
 - It has no landlord.
 - It is too big.
+!! الفقرة 4: «A cheap apartment is not a good choice if it takes two hours to get to class».
 ?? What does the underlined word "it" in paragraph 4 refer to?
 * the apartment
 - the location
 - the class
 - the contract
+!! «check that it is clean, safe, and not too noisy» ← it = الشقة.
 ?? Which extra cost does the writer mention?
 * electricity
 - food
 - books
 - transportation
+!! الفقرة 4: «extra costs, like electricity and internet».
 
 ## 14 | Living With a Roommate
 1. Sharing an apartment with a roommate is common among university students. It can save money, and it can be fun to live with a friend. However, living with someone else can also cause problems if you are not careful.
@@ -739,51 +870,61 @@
 - It is quiet, and it is clean.
 - It is safe, and it is free.
 - You don't need to cook or clean.
+!! الفقرة 1: «It can save money, and it can be fun to live with a friend».
 ?? What happens when one roommate never washes the dishes?
 * The neat roommate will soon feel angry.
 - The landlord will be happy.
 - They will save money.
 - The messy roommate will move out.
+!! الفقرة 2: «the neat roommate will soon feel angry».
 ?? What is another common problem, besides cleaning?
 * noise
 - food
 - the internet
 - transportation
+!! الفقرة 2: «Noise is another problem».
 ?? When should roommates talk about their rules?
 * Before they move in together
 - After they finish university
 - Only when there is a problem
 - At the end of every month
+!! الفقرة 3: «roommates should talk about their rules before they move in together».
 ?? What does the underlined word "schedule" in paragraph 3 mean?
 * a plan that shows when things happen
 - a type of cleaning product
 - a small room
 - a bill
+!! schedule = جدول يوضّح مين ينظّف في أي يوم.
 ?? What example of quiet hours does the writer give?
 * After 11 p.m. on weekdays
 - After 9 p.m. every day
 - Before 7 a.m. on weekends
 - During lunch time
+!! الفقرة 3: «quiet hours, such as after 11 p.m. on weekdays».
 ?? According to the writer, what is the key to a happy home?
 * Good communication
 - A big apartment
 - Expensive furniture
 - Living alone
+!! الفقرة 4: «Good communication is the key to a happy home».
 ?? What does the underlined word "politely" in paragraph 4 mean?
 * in a kind and respectful way
 - in an angry way
 - very quickly
 - very loudly
+!! politely = بأدب واحترام، وهو عكس «getting angry» اللي في نفس الجملة.
 ?? Which topic does the writer NOT suggest roommates discuss?
 * which university to choose
 - cleaning
 - quiet hours
 - sharing costs
+!! الفقرة 3 ذكرت التنظيف والهدوء والمصاريف، واختيار الجامعة ما انذكر.
 ?? What is the main idea of the passage?
 * Roommates can avoid problems by making rules and communicating well.
 - Students should never live with roommates.
 - Neat people and messy people can't live together.
 - Roommates should not share costs.
+!! القطعة كلها عن كيف يتجنب الساكنين مع بعض المشاكل، بالقوانين والتفاهم.
 
 ## 15 | Breaking Bad Habits
 1. Everyone has some bad habits. Some people eat too much junk food, some stay up too late, and others spend hours on their phones. Bad habits can be hard to break, but experts say that it is possible if you use the right _strategies_.
@@ -795,51 +936,61 @@
 - eating too much junk food
 - staying up too late
 - spending hours on phones
+!! الفقرة 1 ذكرت junk food و stay up late و phones، وقضم الأظافر (biting nails) ما انذكر.
 ?? What does the underlined word "strategies" in paragraph 1 mean?
 * plans or methods
 - problems
 - habits
 - friends
+!! strategies = خطط وطرق.
 ?? What is a "trigger"?
 * Something that makes you start the behavior
 - A good habit
 - A kind of food
 - A type of phone
+!! الفقرة 2: «a "trigger", something that makes you start the behavior».
 ?? According to paragraph 2, what do some people do when they feel stressed?
 * They eat sweets.
 - They read a book.
 - They go to bed early.
 - They call a friend.
+!! الفقرة 2: «some people eat sweets when they feel stressed».
 ?? Experts say that replacing a bad habit with a good one ______.
 * works better than just trying to stop
 - never works
 - is too difficult
 - takes only one day
+!! الفقرة 3: «this works better than just trying to stop».
 ?? What does the underlined word "it" in paragraph 3 refer to?
 * your phone
 - the TV
 - the bed
 - the book
+!! «If you always check your phone in bed, put it in another room» ← it = الجوال.
 ?? How long does it take, on average, to form a new habit?
 * 66 days
 - 6 days
 - 16 days
 - 6 months
+!! الفقرة 4: «it takes an average of 66 days to form a new habit».
 ?? What should you do if you fail one day?
 * Don't give up and start again the next day.
 - Stop trying.
 - Choose a new habit.
 - Ask a doctor.
+!! الفقرة 4: «If you fail one day, don't give up. Just start again the next day».
 ?? What does the underlined word "motivated" in paragraph 4 mean?
 * wanting to do something and working hard for it
 - tired and bored
 - angry and stressed
 - lonely and sad
+!! motivated = عندك دافع وحماس تكمّل.
 ?? What is the best title for the passage?
 * How to break bad habits
 - Why phones are dangerous
 - The best healthy snacks
 - How to sleep better
+!! القطعة كلها عن طرق التخلص من العادات السيئة.
 
 ## 16 | Addicted to Our Phones
 1. Today, almost everyone has a smartphone. We use our phones to call friends, check the news, play games, and watch videos. Phones are very useful, but many people now feel that they can't live without _them_. Some experts say that people can become addicted to their phones.
@@ -851,51 +1002,61 @@
 - experts
 - friends
 - videos
+!! «many people now feel that they can't live without them» ← them = الجوالات.
 ?? How often does the average person check their phone, according to the survey?
 * About 96 times a day
 - About 69 times a day
 - About 10 times a day
 - About 96 times a week
+!! الفقرة 2: «checks their phone about 96 times a day».
 ?? Which problem of using phones too much does the writer NOT mention?
 * It makes us gain weight.
 - It makes it hard to sleep.
 - It hurts our eyes.
 - It makes us feel more stressed.
+!! الفقرة 2 ذكرت النوم والعيون والتوتر، وزيادة الوزن ما انذكرت.
 ?? Why can phones affect our relationships?
 * We spend less time talking to the people around us.
 - Our friends don't have phones.
 - Phones are too expensive.
 - We call our friends too often.
+!! الفقرة 2: «we spend less time talking to the people around us».
 ?? What is one simple idea to use phones less?
 * Turn off notifications for apps that are not important.
 - Buy a new phone.
 - Play more games.
 - Check the news more often.
+!! الفقرة 3: «turn off notifications for apps that are not important».
 ?? When does the writer suggest having "phone-free" times?
 * During meals or the first hour after waking up
 - Only at work
 - At night only
 - During exams
+!! الفقرة 3: «during meals or the first hour after waking up».
 ?? What does the underlined word "total" in paragraph 3 mean?
 * the complete number
 - the phone
 - the app
 - the problem
+!! total = المجموع الكامل لعدد الساعات.
 ?? How do people often feel when they see how many hours they spend on their phones?
 * surprised
 - happy
 - bored
 - proud
+!! الفقرة 3: «When they see the total, they are often surprised».
 ?? What does the underlined word "control" in paragraph 4 mean?
 * manage or limit
 - break
 - increase
 - forget
+!! control = يتحكم ويحدد استخدامه ← manage or limit.
 ?? What is the writer's opinion about phones?
 * Phones are not bad; the problem is how we use them.
 - Phones are dangerous and we should stop using them.
 - Phones are only useful for games.
 - Everyone should have two phones.
+!! الفقرة 4: «Phones are not bad in themselves. The problem is how we use them».
 
 ## 17 | Why Sleep Matters
 1. Many students stay up late to study, watch videos, or chat with friends. They think that sleeping less gives them more time to do things. However, scientists say that sleep is one of the most important things for our health and our success at school.
@@ -907,51 +1068,61 @@
 - Because they are not tired
 - Because their parents tell them to
 - To exercise
+!! الفقرة 1: «stay up late to study, watch videos, or chat with friends».
 ?? How many hours of sleep do teenagers need?
 * About eight to ten hours
 - About five to six hours
 - Between seven and nine hours
 - More than twelve hours
+!! الفقرة 2: «teenagers need even more, about eight to ten hours».
 ?? According to studies, most teenagers sleep ______ on school nights.
 * less than seven hours
 - more than ten hours
 - exactly eight hours
 - about nine hours
+!! الفقرة 2: «most teenagers sleep less than seven hours on school nights».
 ?? What does the underlined word "run-down" in paragraph 2 mean?
 * tired and not healthy
 - happy and full of energy
 - angry
 - very busy
+!! run-down = تعبان وصحته مو زينة. وفي الجملة «they feel tired and run-down».
 ?? Which effect of not sleeping enough does the writer NOT mention?
 * gaining weight
 - feeling tired
 - problems paying attention
 - weaker memory
+!! الفقرة 2 ذكرت التعب وضعف التركيز وضعف الذاكرة، وزيادة الوزن ما انذكرت.
 ?? What does our brain do while we sleep?
 * It organizes information and stores it in our memory.
 - It stops working completely.
 - It forgets everything we learned.
 - It makes us hungry.
+!! الفقرة 3: «our brain organizes the information we learned… and stores it in our memory».
 ?? In the study, students who slept eight hours ______.
 * remembered 30 percent more information
 - remembered 13 percent less information
 - did not remember anything
 - studied all night
+!! الفقرة 3: «students who slept eight hours remembered 30 percent more information».
 ?? What do experts suggest about bedtime?
 * Go to bed at the same time every night, even on weekends.
 - Go to bed late on weekends.
 - Sleep only in the afternoon.
 - Go to bed at a different time every night.
+!! الفقرة 4: «going to bed at the same time every night, even on weekends».
 ?? What does the underlined word "them" in paragraph 4 refer to?
 * your phone and other screens
 - coffee and energy drinks
 - weekends
 - experts
+!! «turn off your phone and other screens… because the light from them» ← them = الجوال والشاشات.
 ?? What is the main idea of the passage?
 * Getting enough sleep is very important for health and learning.
 - Students should study all night before exams.
 - Coffee helps students sleep better.
 - Teenagers sleep too much.
+!! القطعة كلها عن أهمية النوم للصحة والتعلّم.
 
 ## 18 | Exercise and Energy
 1. Many people say they are too tired to exercise. They work or study all day, and when they get home, they just want to sit on the sofa. But surprisingly, regular exercise can actually give you more energy.
@@ -963,51 +1134,61 @@
 - They don't like sports.
 - Gyms are too far.
 - They have no shoes.
+!! الفقرة 1: «Many people say they are too tired to exercise».
 ?? According to the writer, what can regular exercise give you?
 * more energy
 - more stress
 - less oxygen
 - a weaker heart
+!! الفقرة 1: «regular exercise can actually give you more energy».
 ?? What happens to your heart when you exercise?
 * It becomes stronger.
 - It becomes weaker.
 - It stops for a moment.
 - Nothing happens.
+!! الفقرة 2: «your heart becomes stronger».
 ?? In the study, how did people feel after six weeks of light exercise?
 * 20 percent more energetic
 - 20 percent more tired
 - 6 percent happier
 - The same as before
+!! الفقرة 2: «felt 20 percent more energetic than before».
 ?? What does the underlined word "reduce" in paragraph 2 mean?
 * make less
 - make more
 - produce
 - cause
+!! reduce stress = يقلّل التوتر ← make less.
 ?? What does the underlined word "them" in paragraph 3 refer to?
 * walking, running, and cycling
 - gyms
 - push-ups and sit-ups
 - household activities
+!! «Walking, running, and cycling are free, and you can do them» ← them = المشي والجري وركوب الدراجة.
 ?? Which activity does the writer say counts as exercise?
 * working in the garden
 - watching TV
 - reading a book
 - playing video games
+!! الفقرة 3: «household activities, like cleaning or working in the garden, count as exercise».
 ?? How many minutes of exercise do experts recommend every week?
 * At least 150 minutes
 - At least 50 minutes
 - At least 300 minutes
 - At least 15 minutes
+!! الفقرة 4: «at least 150 minutes of exercise every week».
 ?? What do the underlined words "stick with" in paragraph 4 mean?
 * continue doing
 - stop doing
 - forget about
 - look for
+!! stick with it = تستمر عليه ← continue doing.
 ?? What is the writer's advice for people who think 30 minutes a day is a lot?
 * Start with ten minutes a day and slowly increase the time.
 - Exercise for two hours once a week.
 - Don't exercise at all.
 - Go to an expensive gym.
+!! الفقرة 4: «start with ten minutes a day and slowly increase the time».
 
 ## 19 | Vitamins: Food or Pills?
 1. Vitamins are important for our health. They help our bodies grow, fight illness, and produce energy. Today, many people take vitamin pills every day because they think the pills will make them healthier. In some countries, more than half of all adults take vitamin _supplements_.
@@ -1019,51 +1200,61 @@
 - sleep and dream
 - become heavier
 - stop eating
+!! الفقرة 1: «They help our bodies grow, fight illness, and produce energy».
 ?? What does the underlined word "supplements" in paragraph 1 mean?
 * things you take to add to your diet
 - kinds of fruit
 - doctors
 - illnesses
+!! supplements = مكمّلات، يعني شي تاخذه زيادة على أكلك (حبوب الفيتامين).
 ?? What do many doctors say about vitamins?
 * Most healthy people can get all the vitamins they need from food.
 - Everyone needs to take vitamin pills.
 - Fruit doesn't have vitamins.
 - Vitamins are not important.
+!! الفقرة 2: «most healthy people can get all the vitamins they need from food».
 ?? Which food has a lot of vitamin C?
 * oranges
 - carrots
 - milk
 - eggs
+!! الفقرة 2: «oranges have a lot of vitamin C».
 ?? What does the underlined word "it" in paragraph 2 refer to?
 * the body
 - a balanced diet
 - milk
 - vitamin D
+!! «A balanced diet… usually gives the body everything it needs» ← it = الجسم.
 ?? Which group of people does the writer NOT mention as needing extra vitamins?
 * teenagers who play sports
 - pregnant women
 - older people
 - people who don't get much sunlight
+!! الفقرة 3 ذكرت الحوامل وكبار السن واللي ما يتعرضون للشمس والنباتيين. أما المراهقين الرياضيين فما انذكروا.
 ?? Why may vegetarians need vitamin B12?
 * It is found mostly in meat, fish, and dairy products.
 - It is found only in fruit.
 - They don't drink water.
 - They don't get sunlight.
+!! الفقرة 3: «it is found mostly in meat, fish, and dairy products».
 ?? How can a doctor decide which vitamins a person needs?
 * By doing a blood test
 - By looking at their food
 - By asking their friends
 - By checking their weight
+!! الفقرة 3: «a doctor can do a blood test».
 ?? What does the underlined word "replace" in paragraph 4 mean?
 * take the place of
 - add to
 - make better
 - cook
+!! «pills should not replace healthy food» = ما تاخذ مكان الأكل الصحي.
 ?? Why can taking too many vitamin pills be dangerous?
 * Some vitamins stay in the body and too much can cause health problems.
 - Vitamin pills are very expensive.
 - Vitamin pills have a lot of sugar.
 - Vitamin pills make you hungry.
+!! الفقرة 4: «Some vitamins… stay in the body, and too much of them can cause health problems».
 
 ## 20 | Loneliness in Older People
 1. Loneliness is a growing problem around the world, especially among older people. As people get older, their children often move away, their friends may pass away, and they may stop working. As a result, many older people spend most of their day alone. In some countries, one in three people over the age of 65 feels lonely.
@@ -1075,51 +1266,61 @@
 - They don't like other people.
 - They are always busy.
 - They live in big cities.
+!! الفقرة 1: «their children often move away, their friends may pass away, and they may stop working».
 ?? In some countries, how many people over the age of 65 feel lonely?
 * One in three
 - One in five
 - Two in three
 - One in ten
+!! الفقرة 1: «one in three people over the age of 65 feels lonely».
 ?? Doctors say loneliness can be as harmful as ______.
 * smoking 15 cigarettes a day
 - eating fast food every day
 - sleeping 15 hours a day
 - drinking too much coffee
+!! الفقرة 2: «as harmful to our health as smoking 15 cigarettes a day».
 ?? Which health problem of loneliness does the writer NOT mention?
 * problems with eyesight
 - heart problems
 - sleeping badly
 - losing memory
+!! الفقرة 2 ذكرت القلب والنوم والذاكرة، والنظر (eyesight) ما انذكر.
 ?? What do young volunteers do in some cities?
 * They visit older people every week.
 - They build new houses for older people.
 - They give older people money.
 - They teach older people how to drive.
+!! الفقرة 3: «young volunteers visit older people every week».
 ?? What do the underlined words "In return" in paragraph 3 mean?
 * as an exchange
 - going back home
 - arriving late
 - saying no
+!! In return = مقابل ذلك، يعني الطالب يسكن مجاناً وبالمقابل يساعدهم.
 ?? How do students benefit from living with older people?
 * They save money on rent.
 - They get free cars.
 - They don't have to study.
 - They get better grades.
+!! الفقرة 3: «the students save money on rent».
 ?? Which simple thing does the writer suggest everyone can do?
 * Teach an older person how to use video calls.
 - Move in with an older neighbour.
 - Buy gifts for older people every day.
 - Give up their jobs.
+!! الفقرة 4: «teach an older person how to use video calls».
 ?? What does the underlined word "us" in paragraph 4 refer to?
 * all of us, when we are old
 - the older neighbours
 - the volunteers
 - the doctors
+!! «one day we will all be old, and we will want someone to care about us» ← us = كلنا لما نكبر.
 ?? What is the main idea of the passage?
 * Loneliness is a serious problem for older people, but there are ways to help.
 - Older people prefer to live alone.
 - Students should not live with older people.
 - Loneliness is not harmful to health.
+!! القطعة تشرح مشكلة الوحدة عند كبار السن، وتذكر طرق للمساعدة.
 
 ## 21 | The Riyadh Metro
 1. For many years, most people in Riyadh used cars to get around. The city is large, and public transportation was limited. As the population grew, traffic became a serious problem. Some people spent more than two hours a day in their cars. To solve this problem, the city built one of the largest metro systems in the world.
@@ -1131,51 +1332,61 @@
 - The roads were closed.
 - There were too many trains.
 - People stopped driving.
+!! الفقرة 1: «As the population grew, traffic became a serious problem».
 ?? How many lines does the Riyadh Metro have?
 * Six
 - Eight
 - Four
 - Eighty-five
+!! الفقرة 2: «The Riyadh Metro has six lines».
 ?? What does "driverless" mean, according to the passage?
 * The trains are controlled by computers.
 - The trains have two drivers.
 - The trains don't move.
 - Passengers drive the trains.
+!! الفقرة 2: «The trains are driverless, which means they are controlled by computers».
 ?? Which class on the trains does the writer NOT mention?
 * business class
 - first class
 - family class
 - single class
+!! الفقرة 2 ذكرت first class و family class و single class، وما فيه business class.
 ?? Why is the metro better for the environment?
 * Fewer cars on the road means less air pollution.
 - The trains use a lot of petrol.
 - The stations have gardens.
 - The metro is very fast.
+!! الفقرة 3: «fewer cars on the road means less air pollution».
 ?? Which place does the metro connect, according to the passage?
 * the airport
 - the beach
 - the zoo
 - the mountains
+!! الفقرة 3: «connects important places like the airport, universities, hospitals, and shopping centres».
 ?? What does the underlined word "destinations" in paragraph 3 mean?
 * the places where people are going
 - tickets
 - trains
 - jobs
+!! destinations = الأماكن اللي رايحين لها.
 ?? Why do many people still prefer their own cars?
 * They like the comfort, especially in the hot summer.
 - The metro is too expensive.
 - The metro has no stations.
 - Cars are better for the environment.
+!! الفقرة 4: «Many people still prefer the comfort of their own cars, especially in the hot summer».
 ?? What is the city building to connect to the metro?
 * more bus lines
 - more roads
 - more car parks
 - more airports
+!! الفقرة 4: «the city is building more bus lines that connect to the metro».
 ?? What does the underlined word "change" in paragraph 4 mean?
 * make different
 - keep the same
 - stop
 - pay for
+!! «change the way people live» = يغيّر حياة الناس، يعني يخليها مختلفة.
 
 ## 22 | Volunteering in the Community
 1. Volunteering means giving your time to help others without getting paid. Volunteers work in hospitals, schools, parks, and many other places. In Saudi Arabia, the number of volunteers has grown quickly in recent years, and the country hopes to have one million volunteers every year.
@@ -1187,51 +1398,61 @@
 - Working in a company for money
 - Studying at a university
 - Travelling to other countries
+!! الفقرة 1: «giving your time to help others without getting paid».
 ?? How many volunteers does Saudi Arabia hope to have every year?
 * One million
 - One hundred thousand
 - Ten million
 - One thousand
+!! الفقرة 1: «the country hopes to have one million volunteers every year».
 ?? What does the underlined word "distribute" in paragraph 2 mean?
 * give out to many people
 - cook
 - buy
 - throw away
+!! distribute food = يوزّع الأكل على ناس كثير.
 ?? Which volunteer activity does the writer NOT mention?
 * building houses
 - cleaning beaches and parks
 - teaching children to read
 - visiting patients in hospitals
+!! الفقرة 2 ذكرت تنظيف الشواطئ وتعليم الأطفال وزيارة المرضى، وبناء البيوت ما انذكر.
 ?? According to studies, how do people who volunteer feel?
 * happier and less stressed
 - more tired and lonely
 - angry and bored
 - the same as before
+!! الفقرة 3: «people who volunteer feel happier and less stressed».
 ?? What does the underlined word "them" in paragraph 3 refer to?
 * young people
 - skills
 - companies
 - volunteers in hospitals
+!! «young people learn new skills… These skills can help them» ← them = الشباب.
 ?? Which skill does the writer say young people can learn from volunteering?
 * teamwork
 - cooking
 - driving
 - swimming
+!! الفقرة 3: «teamwork, communication, and leadership».
 ?? Why do many companies like to hire people with volunteer experience?
 * They have useful skills like communication and leadership.
 - They work for free.
 - They don't need training.
 - They are always older.
+!! الفقرة 3 تقول إن التطوع يعلّم مهارات تساعد في الوظيفة، و«Many companies like to hire people who have volunteer experience».
 ?? What does the underlined word "opportunities" in paragraph 4 mean?
 * chances
 - problems
 - skills
 - websites
+!! opportunities = فرص.
 ?? What does the writer suggest you think about first if you want to volunteer?
 * What you enjoy
 - How much money you can get
 - Which company you want to work for
 - How many hours you can work every day
+!! الفقرة 4: «First, think about what you enjoy».
 
 ## 23 | Video Games: Good or Bad?
 1. Video games are one of the most popular forms of entertainment in the world. More than three billion people play them on computers, phones, and game consoles. Many parents worry that their children spend too much time playing games. But are video games really bad?
@@ -1243,51 +1464,61 @@
 - About three million
 - Less than one billion
 - More than thirty billion
+!! الفقرة 1: «More than three billion people play them».
 ?? What do many parents worry about?
 * Their children spend too much time playing games.
 - Video games are too expensive.
 - Their children don't like games.
 - Games are only played on phones.
+!! الفقرة 1: «Many parents worry that their children spend too much time playing games».
 ?? What can action games improve?
 * attention and quick decision-making
 - spelling and grammar
 - cooking skills
 - running speed
+!! الفقرة 2: «Action games… can improve players' attention and help them make decisions quickly».
 ?? What can puzzle and strategy games improve?
 * problem-solving skills and memory
 - eyesight
 - sleep
 - physical strength
+!! الفقرة 2: «Puzzle and strategy games can improve problem-solving skills and memory».
 ?? What does the underlined word "develop" in paragraph 2 mean?
 * build or improve
 - forget
 - stop
 - buy
+!! develop teamwork skills = يطوّر ويبني المهارات.
 ?? What does the underlined word "it" in paragraph 3 refer to?
 * stopping playing
 - homework
 - the screen
 - exercise
+!! «find it difficult to stop playing» ← it = إيقاف اللعب (to stop playing).
 ?? Which problem of playing too much does the writer NOT mention?
 * spending too much money
 - not getting enough exercise
 - not getting enough sleep
 - becoming addicted
+!! الفقرة 3 ذكرت الرياضة والنوم والإدمان، وصرف الفلوس ما انذكر.
 ?? How long do experts suggest children should play each day?
 * No more than one or two hours
 - At least three hours
 - Only on weekends
 - As long as they want
+!! الفقرة 4: «should not play for more than one or two hours a day».
 ?? What does the underlined word "beneficial" in paragraph 4 mean?
 * helpful and good
 - boring
 - dangerous
 - expensive
+!! beneficial = مفيد.
 ?? What is the writer's main point?
 * Video games can be good if they are played in a balanced way.
 - Video games are always bad for children.
 - Children should play video games all day.
 - Only adults should play video games.
+!! الفقرة 4: «The key is balance… When video games are played in a healthy way, they can be both fun and beneficial».
 
 ## 24 | A Famous Farm in the City
 1. When people think of farms, they usually imagine large fields in the countryside. But in many big cities around the world, people are now growing food in unusual places, such as on the roofs of buildings. This is called "urban farming".
@@ -1299,51 +1530,61 @@
 - Only in large fields in the countryside
 - Inside shopping malls
 - In the sea
+!! الفقرة 1: «growing food in unusual places, such as on the roofs of buildings».
 ?? How big is the rooftop farm in New York City?
 * About 6,000 square metres
 - About 600 square metres
 - About 20,000 square metres
 - About 60 square metres
+!! الفقرة 2: «covers about 6,000 square metres».
 ?? How many kilograms of vegetables does the farm produce every year?
 * More than 20,000
 - About 6,000
 - Less than 2,000
 - Exactly 200,000
+!! الفقرة 2: «produces more than 20,000 kilograms of vegetables».
 ?? Which vegetable does the writer NOT mention?
 * potatoes
 - tomatoes
 - peppers
 - lettuce
+!! الفقرة 2 ذكرت tomatoes و peppers و lettuce، والبطاطس (potatoes) ما انذكرت.
 ?? What does the underlined word "it" in paragraph 2 refer to?
 * the food
 - the farm
 - the market
 - the building
+!! «Because the food doesn't travel far, it is very fresh» ← it = الأكل.
 ?? Why is the food from the rooftop farm very fresh?
 * It doesn't travel far.
 - It is kept in a fridge for a long time.
 - It is grown with chemicals.
 - It is sold only in winter.
+!! الفقرة 2: «Because the food doesn't travel far, it is very fresh».
 ?? Which benefit of urban farms does the writer mention?
 * They help keep buildings cool in summer.
 - They make buildings taller.
 - They make rent cheaper.
 - They stop strong winds.
+!! الفقرة 3: «They make cities greener and help keep buildings cool in summer».
 ?? Why do urban farms bring the community together?
 * Neighbours often work on the farm as volunteers.
 - They are very expensive.
 - They are only for children.
 - They sell food to restaurants.
+!! الفقرة 3: «neighbours often work on the farm as volunteers».
 ?? What does the underlined word "difficulties" in paragraph 4 mean?
 * problems
 - benefits
 - vegetables
 - volunteers
+!! difficulties = صعوبات ومشاكل.
 ?? Which challenge of urban farming does the writer mention?
 * Rooftops must be strong enough to hold heavy soil and water.
 - Vegetables don't grow on roofs.
 - Nobody wants to buy the vegetables.
 - Children are not allowed on the farms.
+!! الفقرة 4: «Rooftops must be strong enough to hold heavy soil and water».
 
 ## 25 | Stress and Students
 1. University can be one of the best times of a person's life, but it can also be very stressful. Students have exams, projects, and deadlines. Many of them also work part-time or live away from their families for the first time. A recent survey found that about 60 percent of university students feel stressed most of the time.
@@ -1355,48 +1596,58 @@
 - About 16 percent
 - About 6 percent
 - About 90 percent
+!! الفقرة 1: «about 60 percent of university students feel stressed most of the time».
 ?? Which cause of stress does the writer NOT mention?
 * problems with roommates
 - exams
 - deadlines
 - living away from family
+!! الفقرة 1 ذكرت الاختبارات والمواعيد والسكن بعيد عن الأهل، والمشاكل مع اللي ساكن معك ما انذكرت.
 ?? How can a little stress be helpful?
 * It can make us work harder before an exam.
 - It can cause headaches.
 - It can help us sleep more.
 - It can make us forget our problems.
+!! الفقرة 2: «It can make us work harder before an exam».
 ?? Which effect of too much stress does the writer mention?
 * sleep problems
 - better grades
 - more energy
 - stronger memory
+!! الفقرة 2: «It can cause headaches, sleep problems, and lack of energy».
 ?? What does the underlined word "manage" in paragraph 3 mean?
 * control or deal with
 - increase
 - forget
 - cause
+!! manage stress = يتحكّم في التوتر ويتعامل معه.
 ?? Why do students feel more in control when they make a weekly plan?
 * They divide big tasks into small steps.
 - They don't have any tasks.
 - They study all night.
 - They stop going to class.
+!! الفقرة 3: «divide big tasks into small steps, they feel more in control».
 ?? What does the underlined word "them" in paragraph 3 refer to?
 * your problems
 - friends
 - family members
 - counsellors
+!! «Sharing your problems can make them feel smaller» ← them = مشاكلك.
 ?? Who does the writer suggest talking to?
 * a friend, a family member, or a university counsellor
 - only your professor
 - people on social media
 - nobody
+!! الفقرة 3: «a friend, a family member, or a university counsellor».
 ?? What does the underlined word "succeed" in paragraph 4 mean?
 * do well
 - fail
 - relax
 - stop
+!! succeed = ينجح ويتفوق ← do well.
 ?? What is the best title for the passage?
 * How students can manage stress
 - Why university is the best time of life
 - How to get a part-time job
 - The best hobbies for students
+!! القطعة كلها عن طرق تعامل الطلاب مع التوتر.

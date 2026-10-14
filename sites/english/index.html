@@ -54,6 +54,7 @@ a{color:inherit}
 .expl{margin-top:10px;background:var(--g-soft);color:var(--ink);border-radius:var(--r-ctl);padding:10px 14px;font-size:15px;line-height:1.75}
 .expl b{color:var(--g)}
 .expl bdi.en{display:inline;font-size:14.5px}
+.expl q.en{display:block;margin:6px 0;padding:6px 10px;background:var(--surface);border-radius:8px;font-size:14.5px;quotes:'“' '”'}
 .score .rnote{margin-top:14px;font-size:13.5px}
 .notice{display:flex;gap:10px;align-items:flex-start;background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);border-radius:var(--r-ctl);padding:10px 14px;font-weight:700;font-size:14.5px;line-height:1.6;margin-top:8px}
 
@@ -384,7 +385,7 @@ const GR = window.GRAMMAR || [], VO = window.VOCAB || [], RE = window.READING ||
 const QS = [];
 GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, code: `G${ri + 1}-${k + 1}` })));
 VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, code: `V-${i + 1}` }));
-RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, code: `R${p.n}-${k + 1}` })));
+RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
 LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
 const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const ofSec = s => QS.filter(q => q.sec === s);
@@ -411,8 +412,9 @@ const options = q => ORD[q.id] || (ORD[q.id] = shuffle(q.o.map((txt, i) => ({ tx
 const blankify = (s, fill) => esc(s).replace(/\.{4,}/g, fill ? `<span class="blank fill">${esc(fill)}</span>` : '<span class="blank">&nbsp;</span>');
 const rich = s => esc(s).replace(/_([^_]+)_/g, '<u>$1</u>');   // _كلمة_ = تحتها خط
 const paraHTML = t => { const m = t.match(/^(\d+)\.\s*(.*)$/); return m ? `<p><b class="pn">${m[1]}.</b> ${rich(m[2])}</p>` : `<p>${rich(t)}</p>`; };
-const bidiEn = s => esc(s).replace(/[A-Za-z][A-Za-z0-9'’ +\/.\-]*[A-Za-z0-9]|[A-Za-z]/g, m => `<bdi class="en">${m}</bdi>`);   // الكلمات الإنجليزية داخل الشرح العربي
-const explHTML = q => q.e ? `<div class="expl"><b>📘 شرح القاعدة:</b> <span>${bidiEn(q.e)}</span></div>` : '';
+const bidiRun = t => t.replace(/[A-Za-z][A-Za-z0-9'’ +\/.\-]*[A-Za-z0-9]|[A-Za-z]/g, m => `<bdi class="en">${m}</bdi>`);
+const bidiEn = s => esc(s).split(/(«[^»]*»)/).filter(part => !/^[\s.]*$/.test(part)).map(part => part.startsWith('«') ? `<q class="en" dir="ltr">${part.slice(1, -1)}</q>` : bidiRun(part)).join('');   // الكلمات الإنجليزية داخل الشرح العربي
+const explHTML = q => q.e ? `<div class="expl"><b>📘 ${q.sec === 'r' ? 'التوضيح' : 'شرح القاعدة'}:</b> <span>${bidiEn(q.e)}</span></div>` : '';
 const qHTML = (q, fill) => q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
 
 /* ── التنقل ── */
@@ -566,7 +568,7 @@ function renderGroupQs() {
         let cls = ''; if (done) { if (o.ok) cls = 'ok'; else if (i === p) cls = 'no'; }
         return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
       }).join('')}</div>
-      ${done ? `<div class="fb ${opts[p].ok ? 'ok' : 'no'}">${opts[p].ok ? '✓ صح' : `✗ غلط — الصحيح: <span class="en">${esc(q.o[0])}</span>`}</div>` : ''}
+      ${done ? `<div class="fb ${opts[p].ok ? 'ok' : 'no'}">${opts[p].ok ? '✓ صح' : `✗ غلط — الصحيح: <span class="en">${esc(q.o[0])}</span>`}</div>` + explHTML(q) : ''}
       <div class="qmeta"><span class="qcode">${q.code}</span>${repBtn(q)}</div>
     </div>`;
   }).join('');
