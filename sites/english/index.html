@@ -387,8 +387,9 @@ const EHSAN_URL = 'https://ehsan.sa';
 
 /* ════════ إعدادات ════════ */
 const VOCAB_SET = 20;                                  // عدد أسئلة كل مجموعة كلمات
-const EXAM_PER = 10;                                   // أسئلة كل قسم في الاختبار التجريبي
-const EXAM_MIN = { g: 8, v: 8, r: 12, l: 12 };         // دقائق كل قسم في الاختبار
+const EXAM_PER = 10;                                   // أسئلة كل جزء في الاختبار التجريبي
+const EXAM_GROUPS = { r: 1, l: 2 };                    // الاختبار: قطعة وحدة + مقطعين استماع (كل واحد بأسئلته العشر)
+const EXAM_MIN = 50;                                   // مدة الاختبار بالدقائق
 const EXAM_PLAYS = 2;                                  // عدد مرات سماع المقطع في الاختبار
 
 const SEC = {
@@ -474,9 +475,9 @@ function renderHome() {
   }).join('');
 
   const parts = examParts();
-  const total = parts.reduce((a, p) => a + p.ids.length, 0), mins = parts.reduce((a, p) => a + EXAM_MIN[p.s], 0);
-  $('examInfo').textContent = `${EXAM_PER} أسئلة عشوائية من كل قسم (${parts.map(p => SEC[p.s].ar).join('، ')}) — المجموع ${total} سؤال في ${mins} دقيقة. ` +
-    (LI.length ? `المقطع الصوتي في الاختبار تقدر تسمعه ${EXAM_PLAYS === 2 ? 'مرتين' : EXAM_PLAYS + ' مرات'} بس.` : '');
+  const total = parts.reduce((a, p) => a + p.ids.length, 0), mins = EXAM_MIN;
+  $('examInfo').textContent = `${parts.map(partLabel).join(' + ')} — المجموع ${total} سؤال في ${mins} دقيقة. ` +
+    (LI.length ? `كل مقطع صوتي في الاختبار تقدر تسمعه ${EXAM_PLAYS === 2 ? 'مرتين' : EXAM_PLAYS + ' مرات'} بس.` : '');
   $('startExam').disabled = !total;
 }
 $('secs').addEventListener('click', e => { const b = e.target.closest('[data-sec]'); if (b && !b.disabled) openList(b.dataset.sec); });
@@ -618,15 +619,18 @@ function examParts() {
   ORDER_SEC.forEach(s => {
     const all = ofSec(s); if (!all.length) return;
     if (s === 'g' || s === 'v') parts.push({ s, ids: shuffle(all.map(q => q.id)).slice(0, EXAM_PER) });
-    else { const g = Math.floor(Math.random() * grpCount(s)); parts.push({ s, g, ids: ofGrp(s, g).map(q => q.id).slice(0, EXAM_PER) }); }
+    else shuffle(Array.from({ length: grpCount(s) }, (_, g) => g)).slice(0, EXAM_GROUPS[s]).forEach((g, k, arr) =>
+      parts.push({ s, g, k: arr.length > 1 ? k + 1 : 0, plays: 0, ids: ofGrp(s, g).map(q => q.id).slice(0, EXAM_PER) }));
   });
   return parts;
 }
+const partLabel = p => p.s === 'g' || p.s === 'v' ? `${p.ids.length} ${SEC[p.s].ar}` : p.s === 'r' ? 'قطعة وحدة (10 أسئلة)' : `مقطع استماع ${p.k || ''} (10 أسئلة)`;
+const partTab = p => SEC[p.s].ar + (p.k ? ' ' + p.k : '');
 let E = null, timer = null;
 function startExam() {
   const parts = examParts(); if (!parts.length) return;
   parts.forEach(p => p.ids.forEach(id => delete ORD[id]));
-  E = { parts, t: 0, picked: {}, plays: 0, end: Date.now() + parts.reduce((a, p) => a + EXAM_MIN[p.s], 0) * 60000 };
+  E = { parts, t: 0, picked: {}, end: Date.now() + EXAM_MIN * 60000 };
   show('exam'); renderE(); tick();
   clearInterval(timer); timer = setInterval(tick, 500);
 }
@@ -643,7 +647,7 @@ function renderE() {
   const p = E.parts[E.t];
   const total = E.parts.reduce((a, x) => a + x.ids.length, 0), answered = Object.keys(E.picked).length;
   $('eCount').textContent = `جاوبت ${answered} من ${total}`;
-  $('eTabs').innerHTML = E.parts.map((x, k) => `<button type="button" data-t="${k}" class="${k === E.t ? 'cur' : ''}">${SEC[x.s].ar} <small>${x.ids.filter(id => id in E.picked).length}/${x.ids.length}</small></button>`).join('');
+  $('eTabs').innerHTML = E.parts.map((x, k) => `<button type="button" data-t="${k}" class="${k === E.t ? 'cur' : ''}">${partTab(x)} <small>${x.ids.filter(id => id in E.picked).length}/${x.ids.length}</small></button>`).join('');
   $('eHead').innerHTML = p.s === 'r' || p.s === 'l' ? headHTML(p.s, p.g, true) : '';
   $('eList').innerHTML = p.ids.map((id, k) => {
     const q = BY_ID[id], opts = options(q), pk = E.picked[id];
@@ -652,23 +656,23 @@ function renderE() {
       <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => `<button class="opt ${pk === i ? 'sel' : ''}" type="button" data-i="${i}"><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`).join('')}</div>
     </div>`;
   }).join('');
-  if (p.s === 'l') bindPlayer();
+  if (p.s === 'l') bindPlayer(p);
   $('ePrev').disabled = E.t === 0;
   $('eNext').textContent = E.t === E.parts.length - 1 ? 'إنهاء وتصحيح ✓' : 'القسم التالي ←';
 }
-function bindPlayer() {   // مشغّل الاختبار: بدون تقديم، وعدد مرات محدود
+function bindPlayer(P) {   // مشغّل الاختبار: بدون تقديم، وعدد مرات محدود
   const a = $('xpAudio'), btn = $('xpBtn'), bar = $('xpBar'), time = $('xpTime'), cnt = $('xpCount');
   const upd = () => {
     if (!E) return;
-    const left = EXAM_PLAYS - E.plays;
-    cnt.textContent = a.paused && (a.currentTime === 0 || a.ended) ? (left > 0 ? `تقدر تسمع المقطع ${left === 2 ? 'مرتين' : 'مرة وحدة'} بعد` : 'خلّصت مرات السماع المسموحة') : `سماع ${E.plays} من ${EXAM_PLAYS}`;
+    const left = EXAM_PLAYS - P.plays;
+    cnt.textContent = a.paused && (a.currentTime === 0 || a.ended) ? (left > 0 ? `تقدر تسمع المقطع ${left === 2 ? 'مرتين' : 'مرة وحدة'} بعد` : 'خلّصت مرات السماع المسموحة') : `سماع ${P.plays} من ${EXAM_PLAYS}`;
     btn.textContent = a.paused ? '▶' : '❚❚';
     btn.disabled = a.paused && (a.currentTime === 0 || a.ended) && left <= 0;
   };
   btn.onclick = () => {
     if (!E) return;
     if (!a.paused) { a.pause(); return; }
-    if (a.currentTime === 0 || a.ended) { if (E.plays >= EXAM_PLAYS) return; E.plays++; a.currentTime = 0; }
+    if (a.currentTime === 0 || a.ended) { if (P.plays >= EXAM_PLAYS) return; P.plays++; a.currentTime = 0; }
     a.play().catch(() => {});
   };
   a.ontimeupdate = () => { if (a.duration) bar.style.width = (a.currentTime / a.duration * 100) + '%'; time.textContent = Math.floor(a.currentTime / 60) + ':' + String(Math.floor(a.currentTime % 60)).padStart(2, '0'); };
@@ -707,7 +711,7 @@ function finishExam(timeUp) {
   const score = res.filter(r => r.ok).length, total = res.length, pct = Math.round(score / total * 100);
   const msg = pct >= 90 ? 'ممتاز! مستواك عالي 🔥' : pct >= 75 ? 'جيد جداً، راجع أخطاءك وتكون جاهز 👍' : pct >= 50 ? 'لا بأس، تحتاج تدريب أكثر.' : 'ارجع للأقسام وتدرّب زين قبل الاختبار.';
   $('rScore').innerHTML = `<div class="n">${score}<small> / ${total}</small></div><p>${timeUp ? '⏱ انتهى الوقت · ' : ''}${msg}</p>
-    <div class="brk">${parts.map(p => `<span>${SEC[p.s].ar}: ${res.filter(r => r.q.sec === p.s && r.ok).length}/${p.ids.length}</span>`).join('')}</div>`;
+    <div class="brk">${parts.map(p => `<span>${partTab(p)}: ${res.filter(r => p.ids.includes(r.q.id) && r.ok).length}/${p.ids.length}</span>`).join('')}</div>`;
   const wrong = res.filter(r => !r.ok);
   $('rHead').textContent = wrong.length ? `❌ الأسئلة اللي غلطت فيها (${wrong.length})` : '🎉 ما غلطت في ولا سؤال!';
   $('rList').innerHTML = wrong.map(r => `<div class="card ritem">
