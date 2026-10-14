@@ -173,6 +173,8 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 .passage h2{margin:0 0 10px;font-family:var(--f-display);font-size:20px;line-height:1.4}
 .passage p{margin:0 0 12px}
 .passage p:last-child{margin:0}
+.passage u{text-decoration-thickness:2px;text-underline-offset:3px;font-weight:700;color:var(--r)}
+.passage .pn{color:var(--muted)}
 .gq{padding:16px 18px}
 .gq .qtext{font-size:17px;margin-bottom:12px;display:flex;gap:8px}
 .gq .qtext .n{flex:none;color:var(--muted)}
@@ -434,6 +436,8 @@ const weakIds = () => QS.filter(q => LS.wrong[q.id]).map(q => q.id);
 const ORD = {};
 const options = q => ORD[q.id] || (ORD[q.id] = shuffle(q.o.map((txt, i) => ({ txt, ok: i === 0 }))));
 const blankify = (s, fill) => esc(s).replace(/\.{4,}/g, fill ? `<span class="blank fill">${esc(fill)}</span>` : '<span class="blank">&nbsp;</span>');
+const rich = s => esc(s).replace(/_([^_]+)_/g, '<u>$1</u>');   // _كلمة_ = تحتها خط
+const paraHTML = t => { const m = t.match(/^(\d+)\.\s*(.*)$/); return m ? `<p><b class="pn">${m[1]}.</b> ${rich(m[2])}</p>` : `<p>${rich(t)}</p>`; };
 const qHTML = (q, fill) => q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
 
 /* ── التنقل ── */
@@ -516,7 +520,7 @@ function startReview() {
   show('quiz'); renderQ();
 }
 function ctxHTML(q) {   // للمراجعة: يعرض القطعة أو المقطع مع السؤال
-  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"><summary>📖 اعرض القطعة: <span class="en">${esc(p.title)}</span></summary><div class="card passage en">${p.text.map(t => `<p>${esc(t)}</p>`).join('')}</div></details>`; }
+  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"><summary>📖 اعرض القطعة: <span class="en">${esc(p.title)}</span></summary><div class="card passage en">${p.text.map(paraHTML).join('')}</div></details>`; }
   if (q.sec === 'l') { const c = LI[q.grp]; return `<div class="ctx"><div class="qmeta"><span>🎧 المقطع ${c.n}: <span class="en">${esc(c.title)}</span></span></div><audio controls preload="none" src="${c.audio}"></audio></div>`; }
   return '';
 }
@@ -561,7 +565,7 @@ $('qBack').onclick = quizBack;
 let G = null; // {s, g, picked}
 function openGroup(s, g) { G = { s, g, picked: {} }; show('group'); renderGroup(); }
 function headHTML(s, g, exam) {
-  if (s === 'r') { const p = RE[g]; return `<div class="card passage en"><h2>${esc(p.title)}</h2>${p.text.map(t => `<p>${esc(t)}</p>`).join('')}</div>`; }
+  if (s === 'r') { const p = RE[g]; return `<div class="card passage en"><h2>${esc(p.title)}</h2>${p.text.map(paraHTML).join('')}</div>`; }
   const c = LI[g];
   const player = exam
     ? `<div class="xplayer" id="xp"><button class="pbtn" type="button" id="xpBtn" aria-label="تشغيل">▶</button><span class="pb"><i id="xpBar"></i></span><span class="pt" id="xpTime">0:00</span><span class="pc" id="xpCount"></span><audio id="xpAudio" preload="auto" src="${c.audio}"></audio></div>`
@@ -655,12 +659,14 @@ function renderE() {
 function bindPlayer() {   // مشغّل الاختبار: بدون تقديم، وعدد مرات محدود
   const a = $('xpAudio'), btn = $('xpBtn'), bar = $('xpBar'), time = $('xpTime'), cnt = $('xpCount');
   const upd = () => {
+    if (!E) return;
     const left = EXAM_PLAYS - E.plays;
     cnt.textContent = a.paused && (a.currentTime === 0 || a.ended) ? (left > 0 ? `تقدر تسمع المقطع ${left === 2 ? 'مرتين' : 'مرة وحدة'} بعد` : 'خلّصت مرات السماع المسموحة') : `سماع ${E.plays} من ${EXAM_PLAYS}`;
     btn.textContent = a.paused ? '▶' : '❚❚';
     btn.disabled = a.paused && (a.currentTime === 0 || a.ended) && left <= 0;
   };
   btn.onclick = () => {
+    if (!E) return;
     if (!a.paused) { a.pause(); return; }
     if (a.currentTime === 0 || a.ended) { if (E.plays >= EXAM_PLAYS) return; E.plays++; a.currentTime = 0; }
     a.play().catch(() => {});

@@ -227,3 +227,12 @@ Produce || This factory ..... 1000 cars every month. || produces | reduces | bec
 Vitamin || Oranges are full of ..... C. || vitamin | diet | stress | memory
 Reduce || Turn off the lights when you leave the room to ..... the electricity bill. || reduce | increase | celebrate | become
 Run-down || I've been working too hard and not sleeping enough. I feel tired and ...... || run-down | healthy | relaxing | comfortable
+# ── نماذج المستخدم (صور التليجرام + ملف القطع) ──
+Idea || I don't know what to do for my art project. Can you give me some .....? || ideas | fields | hobbies | uniforms
+Wear || In the summer, when the weather gets hot, I ..... only cotton shirts. || wear | watch | meet | grow
+Celebrate || You finally got the promotion that you worked so hard for. How do you want to .....? || celebrate | promise | transform | express
+Feed || That's a lot of food! It can easily ..... twenty people. || feed | interest | affect | measure
+Nature || I enjoy going to the park because it has beautiful flowers and trees. I love being in ...... || nature | tradition | scene | memory
+Collect || My sister ..... shoes. She has 15 pairs of them. || collects | invites | operates | prepares
+Contagious || His hard work was ...... It was amazing how much we all accomplished after he was hired. || contagious | worrying | troubled | apologetic
+Difficulty || He has ..... reading. It takes him a long time to read just a few words. || difficulty | dishonesty | confidence | combination

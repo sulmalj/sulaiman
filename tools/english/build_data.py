@@ -17,7 +17,7 @@ def rows(name):
     if not os.path.exists(p):
         return None
     return [(n, l.rstrip('\n')) for n, l in enumerate(open(p, encoding='utf-8'), 1)
-            if l.strip() and not l.startswith('#')]
+            if l.strip() and not l.startswith('# ')]
 
 
 def opts(s, where):
@@ -37,7 +37,7 @@ def write(name, var, data, note):
 
 def vocab():
     words = [l.split(' | ')[0].strip() for l in open(os.path.join(ROOT, 'store', 'english', 'vocabulary-list.txt'), encoding='utf-8')
-             if l.strip() and not l.startswith('#')]
+             if l.strip() and not l.startswith('# ')]
     out = []
     for n, l in rows('vocabulary.txt'):
         w, q, o = [x.strip() for x in l.split(' || ')]
@@ -77,9 +77,20 @@ def reading():
             q['o'].append(l[2:].strip())
         else:
             out[-1]['text'].append(l.strip())
+    import re
     for p in out:
+        if len(p['qs']) != 10:
+            sys.exit(f'القطعة {p["n"]}: عدد الأسئلة {len(p["qs"])} (لازم 10)')
         for qq in p['qs']:
             opts(' | '.join(qq['o']), f'reading.txt القطعة {p["n"]}')
+            m = re.search(r'underlined words? "([^"]+)" in paragraph (\d)', qq['q'])
+            if m:   # الكلمة اللي تحتها خط لازم تكون معلّمة _كذا_ في نفس الفقرة
+                para = next((t for t in p['text'] if t.startswith(m.group(2) + '.')), '')
+                if f'_{m.group(1)}_' not in para:
+                    sys.exit(f'القطعة {p["n"]}: «{m.group(1)}» مو معلّمة بخط في الفقرة {m.group(2)}')
+    nums = [p['n'] for p in out]
+    if nums != list(range(1, len(out) + 1)):
+        sys.exit(f'أرقام القطع مو متسلسلة: {nums}')
     write('reading.js', 'READING', out, 'القطع (Reading) — كل قطعة مع أسئلتها')
 
 
