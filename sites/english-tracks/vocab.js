@@ -878,7 +878,7 @@ window.VOCAB = [
 "attention",
 "effort",
 "trust",
-"respect"
+"weight"
 ]
 },
 {

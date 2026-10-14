@@ -114,16 +114,16 @@ A: ..... you have any brothers? B: Yes, I have two. || Do | Does | Are | Has || 
 My father ..... a lot of free time. He works from early morning until late at night. || doesn't have | don't have | doesn't has | hasn't have || My father = He ← النفي doesn't have (في النفي دائماً have).
 Our neighbours ..... three cats and a big dog. || have | has | having | are have || Our neighbours جمع (They) ← have.
 A: What does Ahmed have in his hand? B: He ..... a cup of coffee. || has | have | is | haves || He ← في الإثبات has.
-I'm sorry, I ..... a pen. Can I borrow yours? || don't have | doesn't have | don't has | haven't || I ← النفي don't have.
+I'm sorry, I ..... a pen. Can I borrow yours? || don't have | doesn't have | don't has | hasn't || I ← النفي don't have.
 This hotel is great. It ..... a big swimming pool and a gym. || has | have | is | having || The hotel = It ← has.
 A: ..... your school have a library? B: Yes, it does. It's very big. || Does | Do | Has | Is || your school = It ← Does + it + have، والجواب Yes, it does.
 My friends and I ..... an important exam tomorrow, so we're studying tonight. || have | has | are | having || My friends and I = We ← have.
 Fahad can't call you. He ..... a phone right now. It's broken. || doesn't have | don't have | doesn't has | not have || Fahad = He ← doesn't have.
-A: Do your parents have a car? B: No, they ...... They take the metro. || don't | doesn't | haven't | aren't || Do your parents…? ← الجواب No, they don't.
+A: Do your parents have a car? B: No, they ...... They take the metro. || don't | doesn't | hasn't | aren't || Do your parents…? ← الجواب No, they don't.
 Let's go to the new café on Olaya Street. It ..... great coffee and delicious cakes. || has | have | having | has had || The café = It ← has.
 A: What ..... you have for breakfast? B: I usually have eggs and bread. || do | does | are | have || you ← What do you have…?
 Riyadh ..... many big parks and malls. || has | have | is | having || Riyadh = It ← has.
-My little brother ..... long hair. It's very short. || doesn't have | don't have | doesn't has | hasn't || My little brother = He ← النفي doesn't have.
+My little brother ..... long hair. It's very short. || doesn't have | don't have | doesn't has | not has || My little brother = He ← النفي doesn't have.
 A: Does Sara have a laptop? B: Yes, she ...... She uses it for her studies. || does | has | have | is || Does she…? ← الجواب Yes, she does.
 We ..... a big family. I have five brothers and three sisters. || have | has | are | is || We ← have.
 A: How many classes ..... you have today? B: I have four. || do | does | are | have || you ← How many classes do you have?
@@ -225,7 +225,7 @@ A: Where is the bus stop? B: It's ..... the hospital. You can see it when you co
 I'm waiting for you ..... the traffic lights. Hurry up! || at | in | under | over || at للمكان المحدد اللي الشخص واقف عنده: at the traffic lights.
 There's a small café ..... the corner of the street. || on | in | under | over || on the corner = على زاوية الشارع.
 The car park is ..... the mall. Walk to the back of the building to find it. || behind | in front of | over | in || الخلف (the back of the building) ← behind.
-Be careful! There's a cat ..... your car. || under | over | above | in || under = تحت السيارة.
+Be careful! There's a cat ..... your car. Look down before you drive. || under | over | above | in || under = تحت السيارة.
 The children are playing football ..... the street. It's dangerous! || in | over | under | above || in للمكان اللي الشخص داخله: in the street.
 A: Where is the bakery? B: It's ..... the right of the supermarket. || on | in | at | under || on the right of = على يمين.
 The bridge is ..... the highway. Cars drive under it. || over | under | in | behind || السيارات تمشي تحته، فالجسر فوق ← over.
@@ -243,12 +243,12 @@ The boy is hiding ..... the car. His friends can't find him. || behind | in fron
 A: Where is the hospital? B: It's ..... the end of this street. || at | on | under | over || at the end of the street = في نهاية الشارع.
 The bank is on the left of the café, so the café is on the ..... of the bank. || right | left | front | behind || إذا البنك يسار المقهى، فالمقهى يمين البنك ← right.
 There is a big tree ..... our house. It gives shade to the front door. || in front of | behind | under | over || يظلل الباب الأمامي، فالشجرة قدام البيت ← in front of.
-My car is ..... the garage. || in | over | above | at || in = داخل الكراج.
+My car is ..... the garage. || in | over | above | under || in = داخل الكراج.
 A: Where is your bike? B: It's ..... the wall, beside the door. || next to | over | in | above || beside = next to ← جنب الجدار.
 The police officer is standing ..... the middle of the road. || in | on | at | under || in the middle of = في وسط.
 A: I can't find my phone! B: Look down. It's ..... the car seat. || under | over | above | in || Look down (طالع تحت) ← under = تحت الكرسي.
 The children are waiting ..... the school gate for their parents. || at | in | under | over || at للمكان المحدد: at the school gate.
 The shop's name is written ..... the window. || on | under | behind | over || on = على سطح الشيء (مكتوب على الزجاج).
 A: Where are the shopping bags? B: They're ..... the car, on the back seat. || in | on | under | over || in = داخل السيارة.
-The traffic lights are ..... the corner, next to the bank. || on | under | in | over || on the corner = على الزاوية.
+The traffic lights are ..... the corner, next to the bank. || on | under | above | over || on the corner = على الزاوية.
 The new restaurant is ..... the mall. It's on the second floor. || in | under | over | behind || in = داخل المول.
