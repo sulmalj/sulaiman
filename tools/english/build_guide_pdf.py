@@ -215,6 +215,18 @@ def hide_source_units(page):
         page.draw_line((x, area.y0 - 0.3), (x, area.y1 + 0.3), color=(0, 0, 0), width=0.6)
 
 
+def hide_course_code(page):
+    """يشيل رمز المقرر (ENGL 102 / 103B) ويرجّع سطر المسار في النص (طلب المستخدم)."""
+    hits = [r for t, r in lines_of(page) if t.startswith("ENGL")]
+    assert len(hits) == 1
+    r = hits[0]
+    page.add_redact_annot(r + (-1, -0.5, 1, 0.5), fill=(1, 1, 1))
+    page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE, graphics=pymupdf.PDF_REDACT_LINE_ART_NONE)
+    box = pymupdf.Rect(20.7, r.y0 - 1.5, 576.5, r.y1 + 3)
+    page.insert_htmlbox(box, '<p dir="rtl" style="text-align:center;margin:0;font-family:sans-serif;'
+                             'font-weight:bold;font-size:9px">المسار الانساني (Humanities)</p>')
+
+
 def hide_page_numbers(doc):
     """أرقام صفحات الملف الأصلي تتلخبط بعد حذف صفحتين القائمة، فنشيلها."""
     for page in doc:
@@ -244,6 +256,7 @@ def main():
 
     src = pymupdf.open(a.src)
     hide_source_units(src[0])
+    hide_course_code(src[0])
     mark_answers(src)
     src.delete_pages([1, 2])  # صفحتين قائمة الكلمات الأصلية — بدالها بطاقات الكلمات
     hide_page_numbers(src)
