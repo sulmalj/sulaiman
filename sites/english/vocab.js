@@ -2332,16 +2332,6 @@ window.VOCAB = [
 ]
 },
 {
-"w": "Contagious",
-"q": "His hard work was ...... It was amazing how much we all accomplished after he was hired.",
-"o": [
-"contagious",
-"worrying",
-"troubled",
-"apologetic"
-]
-},
-{
 "w": "Difficulty",
 "q": "He has ..... reading. It takes him a long time to read just a few words.",
 "o": [
