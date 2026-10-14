@@ -410,7 +410,8 @@ window.VOCAB = [
 "pollution",
 "population",
 "advertising"
-]
+],
+"e": "كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23): فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41) — وهو المقصود في هذا السؤال: اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»"
 },
 {
 "w": "Tough",
@@ -1411,7 +1412,8 @@ window.VOCAB = [
 "whole",
 "basic",
 "similar"
-]
+],
+"e": "كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117): اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141) — وهو المقصود في هذا السؤال: صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»"
 },
 {
 "w": "Bargain",
