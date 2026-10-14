@@ -2,7 +2,7 @@
 # الصيغة: الكلمة | نوعها (من الملف) | المعنى | جملة إنجليزية (الكلمة بين **) | ترجمة الجملة
 Advertising | Noun | الإعلان / الدعاية | **Advertising** helps companies sell their products. | الإعلان يساعد الشركات على بيع منتجاتها.
 Application | Noun | طلب (تقديم) | I sent my job **application** yesterday. | أرسلت طلب التوظيف أمس.
-Assistant | Noun | مساعد | The doctor's **assistant** called me. | اتصلت بي مساعدة الطبيب.
+Assistant | Noun | مساعد | The doctor's **assistant** called me. | اتصل بي مساعد الطبيب.
 Basic | Adjective | أساسي | You need **basic** computer skills for this job. | تحتاج مهارات أساسية في الحاسب لهذه الوظيفة.
 Career | Noun | مهنة / مسيرة مهنية | She wants a **career** in medicine. | تريد مهنة في مجال الطب.
 Degree | Noun | شهادة جامعية / درجة علمية | He has a **degree** in nursing. | لديه شهادة جامعية في التمريض.
@@ -20,9 +20,9 @@ Data | Noun | بيانات | The scientists collected **data** from 500 patients
 Decision | Noun | قرار | It was a difficult **decision**. | كان قراراً صعباً.
 Event | Noun | حدث / فعالية | The university has a big **event** tonight. | لدى الجامعة فعالية كبيرة الليلة.
 Flexible | Adjective | مَرِن | I need a job with **flexible** hours. | أحتاج وظيفة بساعات عمل مرنة.
-Match | Verb | يتطابق مع / يناسب | Your skills **match** this job. | مهاراتك تناسب هذه الوظيفة.
+Match | Verb | يتطابق مع / يناسب | Her skills **match** the job requirements. | مهاراتها تتطابق مع متطلبات الوظيفة.
 Plan | Verb | يُخطِّط | We **plan** to travel next month. | نخطط للسفر الشهر القادم.
-Research | Verb | يبحث (بحثاً علمياً) | Scientists **research** new medicines. | يبحث العلماء عن أدوية جديدة.
+Research | Verb | يبحث (بحثاً علمياً) | Scientists **research** the causes of cancer. | يبحث العلماء في أسباب السرطان.
 Result | Noun | نتيجة | I got my test **results** today. | استلمت نتائج فحوصاتي اليوم.
 Routine | Noun | روتين | Exercise is part of my daily **routine**. | الرياضة جزء من روتيني اليومي.
 Skill | Noun | مهارة | Writing is an important **skill**. | الكتابة مهارة مهمة.
@@ -112,7 +112,7 @@ Population | Noun | عدد السكان | The **population** of Riyadh is growin
 Prepare | Verb | يُحضِّر / يستعد | I **prepare** for my exams early. | أستعد لاختباراتي مبكراً.
 Pretty | Adjective | جميل / لطيف | She lives in a **pretty** little house. | تسكن في بيت صغير جميل.
 Repair | Verb | يُصلِح | Can you **repair** my watch? | هل تستطيع إصلاح ساعتي؟
-Shake | Verb | يهُزّ / يرتجف | **Shake** the bottle before you use it. | رجّ الزجاجة قبل أن تستخدمها.
+Shake | Verb | يهُزّ / يرُجّ | **Shake** the bottle before you use it. | رجّ الزجاجة قبل أن تستخدمها.
 Tourist | Noun | سائح | Many **tourists** visit Jeddah every year. | يزور كثير من السياح جدة كل سنة.
 Volunteer | Noun | متطوِّع | She works as a **volunteer** at the hospital. | تعمل متطوعة في المستشفى.
 Attitude | Noun | موقف / طريقة تفكير | He has a positive **attitude** about work. | لديه موقف إيجابي تجاه العمل.
