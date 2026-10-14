@@ -384,7 +384,7 @@ const secName = s => `${SEC[s].ar} (${SEC[s].en})`;
 const GR = window.GRAMMAR || [], VO = window.VOCAB || [], RE = window.READING || [], LI = window.LISTENING || [];
 const QS = [];
 GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, code: `G${ri + 1}-${k + 1}` })));
-VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, code: `V-${i + 1}` }));
+VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, e: v.e, code: `V-${i + 1}` }));
 RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
 LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
 const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
@@ -414,7 +414,7 @@ const rich = s => esc(s).replace(/_([^_]+)_/g, '<u>$1</u>');   // _كلمة_ = �
 const paraHTML = t => { const m = t.match(/^(\d+)\.\s*(.*)$/); return m ? `<p><b class="pn">${m[1]}.</b> ${rich(m[2])}</p>` : `<p>${rich(t)}</p>`; };
 const bidiRun = t => t.replace(/[A-Za-z][A-Za-z0-9'’ +\/.\-]*[A-Za-z0-9]|[A-Za-z]/g, m => `<bdi class="en">${m}</bdi>`);
 const bidiEn = s => esc(s).split(/(«[^»]*»)/).filter(part => !/^[\s.]*$/.test(part)).map(part => part.startsWith('«') ? `<q class="en" dir="ltr">${part.slice(1, -1)}</q>` : bidiRun(part)).join('');   // الكلمات الإنجليزية داخل الشرح العربي
-const explHTML = q => q.e ? `<div class="expl"><b>📘 ${q.sec === 'r' ? 'التوضيح' : 'شرح القاعدة'}:</b> <span>${bidiEn(q.e)}</span></div>` : '';
+const explHTML = q => q.e ? `<div class="expl"><b>${q.sec === 'v' ? '⚠️ تنويه' : q.sec === 'r' ? '📘 التوضيح' : '📘 شرح القاعدة'}:</b> <span>${bidiEn(q.e)}</span></div>` : '';
 const qHTML = (q, fill) => q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
 
 /* ── التنقل ── */

@@ -223,13 +223,14 @@ window.VOCAB = [
 },
 {
 "w": "Research",
-"q": "Scientists are doing ..... to find a new medicine for this disease.",
+"q": "Dr. Sara and her team ..... how sleep affects students' memory. They have studied this topic for three years.",
 "o": [
 "research",
-"pollution",
-"population",
-"advertising"
-]
+"pretend",
+"interrupt",
+"repair"
+],
+"e": "كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23) — وهو المقصود في هذا السؤال: فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41): اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»"
 },
 {
 "w": "Result",
@@ -399,6 +400,16 @@ window.VOCAB = [
 "nervous",
 "upset",
 "embarrassed"
+]
+},
+{
+"w": "Research",
+"q": "Scientists are doing ..... to find a new medicine for this disease.",
+"o": [
+"research",
+"pollution",
+"population",
+"advertising"
 ]
 },
 {
@@ -1153,13 +1164,14 @@ window.VOCAB = [
 },
 {
 "w": "Average",
-"q": "The ..... temperature in Riyadh in July is about 43 degrees.",
+"q": "I got an A in most of my courses, so my ..... this semester is 4.6 out of 5.",
 "o": [
 "average",
-"whole",
-"basic",
-"similar"
-]
+"weight",
+"bargain",
+"trend"
+],
+"e": "كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117) — وهو المقصود في هذا السؤال: اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141): صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»"
 },
 {
 "w": "Benefit",
@@ -1389,6 +1401,16 @@ window.VOCAB = [
 "some kind of",
 "according to",
 "in order to"
+]
+},
+{
+"w": "Average",
+"q": "The ..... temperature in Riyadh in July is about 43 degrees.",
+"o": [
+"average",
+"whole",
+"basic",
+"similar"
 ]
 },
 {

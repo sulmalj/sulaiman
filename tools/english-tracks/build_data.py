@@ -43,10 +43,16 @@ def vocab():
              if l.strip() and not l.startswith('# ')]
     out = []
     for n, l in rows('vocabulary.txt'):
-        w, q, o = [x.strip() for x in l.split(' || ')]
+        parts = [x.strip() for x in l.split(' || ')]
+        if len(parts) not in (3, 4):
+            sys.exit(f'vocabulary.txt:{n}: لازم: الكلمة || الجملة || الخيارات [|| تنويه]')
+        w, q, o = parts[:3]
         if '.....' not in q:
             sys.exit(f'vocabulary.txt:{n}: الجملة بدون فراغ .....')
-        out.append({'w': w, 'q': q, 'o': opts(o, f'vocabulary.txt:{n}')})
+        item = {'w': w, 'q': q, 'o': opts(o, f'vocabulary.txt:{n}')}
+        if len(parts) == 4:   # تنويه يطلع بعد الإجابة (مثل الكلمة اللي لها معنيين)
+            item['e'] = parts[3]
+        out.append(item)
     missing = [w for w in words if w not in {x['w'] for x in out}]
     if missing:
         sys.exit(f'كلمات بدون سؤال: {missing}')
