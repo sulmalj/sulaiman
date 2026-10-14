@@ -1,5 +1,5 @@
 # أسئلة الكلمات (جميع المسارات باستثناء الإنساني) — سؤال لكل كلمة من store/english-tracks/vocabulary-list.txt
-# الصيغة: الكلمة (من القائمة) || الجملة وفيها ..... || الإجابة الصحيحة | خطأ | خطأ | خطأ
+# الصيغة: الكلمة (من القائمة) || الجملة وفيها ..... || الإجابة الصحيحة | خطأ | خطأ | خطأ [|| تنويه يطلع بعد الإجابة — اختياري]
 # الكلمات اللي لها نموذج من اختبار المستخدم: سؤالها هو النموذج نفسه (Graduate, Company, Tough, Afraid, Talented, Pretend, Practice, Pretty, Volunteer, History)
 Advertising || The company spends a lot of money on ....., so you can see its ads on TV and social media every day. || advertising | requirement | pollution | treatment
 Application || If you want this job, you must fill in an ..... form and send it with your resume. || application | attitude | emotion | insect
@@ -23,7 +23,7 @@ Event || The music festival is the biggest ..... in the city this year. Thousand
 Flexible || My working hours are very ....., I can start work at 8 or at 10, it's my choice. || flexible | serious | ancient | physical
 Match || These shoes don't ..... my dress. The colours are too different. || match | repair | shake | destroy
 Plan || We ..... to visit our grandparents next weekend. We've already bought the tickets. || plan | pretend | escape | interrupt
-Research || Scientists are doing ..... to find a new medicine for this disease. || research | pollution | population | advertising
+Research || Dr. Sara and her team ..... how sleep affects students' memory. They have studied this topic for three years. || research | pretend | interrupt | repair || كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23) — وهو المقصود في هذا السؤال: فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41): اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»
 Result || I studied very hard, and the ..... was great: I got 98 in the exam. || result | mistake | attitude | crowd
 Routine || My morning ..... is always the same: I wake up, pray, have breakfast and go to work. || routine | trend | debate | bargain
 Skill || Communication is an important ..... for any job, especially for managers. || skill | insect | weight | crowd
@@ -41,6 +41,7 @@ Increase || The price of petrol will ..... next month, from 2 riyals to 2.5 riya
 Mistake || Don't worry, everyone makes .....! Just try again. || mistakes | decisions | efforts | choices
 Optimistic || Ali is always ....., he believes that good things will happen. || optimistic | upset | nervous | confused
 Positive || Try to be ..... and think about the good things in your life. || positive | nervous | upset | embarrassed
+Research || Scientists are doing ..... to find a new medicine for this disease. || research | pollution | population | advertising
 Tough || I find studying chemistry to be easy; however, getting full marks on the exams is rather ...... || tough | ancient | basic | inferior
 Upset || She was ..... because she lost her new phone. || upset | optimistic | calm | talented
 Area || This ..... of the city is very quiet. There are no shops or traffic. || area | crowd | trend | survey
@@ -116,7 +117,7 @@ Shake || When you meet someone for the first time, you should ..... hands with t
 Tourist || Many ..... visit AlUla every year to see the old tombs. || tourists | employees | athletes | insects
 Volunteer || Samir doesn't get paid for the work he does at the Hayat Children's Camp. He's a ...... || volunteer | stranger | tourist | foreigner
 Attitude || She has a positive ..... about life, she always smiles and never gives up. || attitude | population | pollution | requirement
-Average || The ..... temperature in Riyadh in July is about 43 degrees. || average | whole | basic | similar
+Average || I got an A in most of my courses, so my ..... this semester is 4.6 out of 5. || average | weight | bargain | trend || كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117) — وهو المقصود في هذا السؤال: اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141): صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»
 Benefit || One ..... of walking every day is that it makes your heart stronger. || benefit | mistake | difficulty | requirement
 Compete || Ten teams will ..... in the football tournament this year. || compete | communicate | interrupt | repeat
 Control || He couldn't ..... the car on the wet road, and it hit a tree. || control | produce | provide | reduce
@@ -140,6 +141,7 @@ Similar || The two sisters look very ....., many people think they are twins. ||
 Training || The football team has ..... three times a week to prepare for the big match. || training | pollution | advertising | research
 Weight || He wants to lose ....., so he eats less and exercises every day. || weight | level | rate | score
 A little bit || The soup is ..... cold. Can you heat it for me? || a little bit | some kind of | according to | in order to
+Average || The ..... temperature in Riyadh in July is about 43 degrees. || average | whole | basic | similar
 Bargain || This jacket was only 50 riyals instead of 200. What a .....! || bargain | debate | survey | trend
 Behavior || The teacher was happy with the students' good ..... in class. || behavior | pollution | population | weight
 Consumer || Companies do surveys to find out what ..... want to buy. || consumers | athletes | insects | coaches
