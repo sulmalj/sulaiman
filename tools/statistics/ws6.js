@@ -7,6 +7,7 @@ const Q=k=>`Q${s(k)}`;
 // [x0,y0,x1,y1,fontPt,html,dir,align]
 const pages={
  1:[
+  [42,44,182,98,11,`<span class="badge"><span class="b1">الأقدم في شروحات احص 102</span><span class="b2">منذ عام 1444 هـ</span></span>`,'rtl','center'],
   [300,140,488,163,14,A('ملازم عدل'),'rtl'],
   [37,618,116,640,12,A('<b>خطأ</b>'),'rtl','center'],
   [37,641,116,663,12,A('<b>صح</b>'),'rtl','center'],
@@ -41,6 +42,9 @@ html,body{margin:0;background:transparent}
 .l{position:absolute;display:flex;align-items:center;color:#0b2a9c;font-family:'DejaVu Sans',sans-serif;font-weight:bold;overflow:visible}
 .in{white-space:nowrap}
 .a{font-family:ar}
+.badge{display:inline-flex;flex-direction:column;align-items:center;gap:2pt;font-family:ar;border:1.4pt solid #0b2a9c;border-radius:8pt;padding:3pt 9pt 4pt;background:#fff;box-shadow:2pt 2pt 0 #ea580c}
+.b1{font-size:10pt;color:#0b2a9c;line-height:1.3}
+.b2{font-size:8.5pt;color:#ea580c;line-height:1.2;border-top:0.8pt solid #ea580c;padding-top:2pt}
 .a .b{display:inline-block;line-height:1.05;padding:0.5pt 3pt 1.5pt}
 .b{border:1pt solid #ea580c;padding:0 2pt;font-weight:bold}
 sub{font-size:68%;vertical-align:sub;line-height:0}
