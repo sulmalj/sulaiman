@@ -4,9 +4,9 @@
 الاستخدام:
   المسار الإنساني:
     python3 tools/english/build_guide_pdf.py store/english/midterm-guide-humanities-original.pdf store/english/midterm-guide-humanities-ready.pdf
-  المسار الطبي:
-    python3 tools/english/build_guide_pdf.py store/english/midterm-guide-engl108-original.pdf store/english/midterm-guide-engl108-ready.pdf \
-      --vocab tools/english/vocab_cards_medical.txt --track "المسار الطبي (Medical)"
+  جميع المسارات باستثناء الإنساني (الأصلي ملف المسار الطبي ENGL 108/109B):
+    python3 tools/english/build_guide_pdf.py store/english/midterm-guide-engl108-original.pdf store/english/midterm-guide-all-tracks-except-humanities-ready.pdf \
+      --vocab tools/english/vocab_cards_medical.txt --track "جميع المسارات باستثناء المسار الإنساني"
 """
 import argparse, html, re, sys, tempfile, pathlib
 import base64, io
@@ -244,9 +244,17 @@ def hide_course_code(page, track):
     r = hits[0]
     page.add_redact_annot(r + (-1, -0.5, 1, 0.5), fill=(1, 1, 1))
     page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE, graphics=pymupdf.PDF_REDACT_LINE_ART_NONE)
-    box = pymupdf.Rect(20.7, r.y0 - 1.5, 576.5, r.y1 + 3)
-    page.insert_htmlbox(box, '<p dir="rtl" style="text-align:center;margin:0;font-family:sans-serif;'
-                             'font-weight:bold;font-size:9px">' + html.escape(track) + '</p>')
+    # المسافة بين صندوق العنوان والجدول اللي تحته — نكتب المسار فيها بخط كبير وواضح
+    hl = sorted(d["rect"].y0 for d in page.get_drawings() if d["rect"].height < 1.5 and d["rect"].width > 400)
+    top = max(y for y in hl if y < r.y0) + 0.8
+    bot = min(y for y in hl if y > r.y1) - 0.8
+    box = pymupdf.Rect(20.7, top, 576.5, bot)
+    fs = min(14, (bot - top) * 0.58)
+    arch = pymupdf.Archive(str(HERE.parent / "statistics"))  # فيه cairo-bold.ttf (خط عربي عريض)
+    css = "@font-face {font-family: cairob; src: url(cairo-bold.ttf);}"
+    page.insert_htmlbox(box, f'<p dir="rtl" style="text-align:center;margin:0;line-height:1;padding-top:{(bot - top - fs * 1.15) / 2:.1f}px;'
+                             f'font-family:cairob;font-size:{fs:.1f}px;color:#9b1c1c">'
+                             + html.escape(track) + '</p>', css=css, archive=arch)
 
 
 def hide_page_numbers(doc):
@@ -263,7 +271,7 @@ def main():
     ap.add_argument("src", help="ملف المسار الإنساني الأصلي")
     ap.add_argument("out")
     ap.add_argument("--vocab", default=str(HERE / "vocab_cards.txt"), help="ملف بطاقات الكلمات الخاص بالمسار")
-    ap.add_argument("--track", default="المسار الانساني (Humanities)", help="سطر المسار اللي يبقى في الغلاف")
+    ap.add_argument("--track", default="المسار الإنساني (Humanities)", help="سطر المسار اللي يبقى في الغلاف")
     a = ap.parse_args()
     tmp = pathlib.Path(tempfile.mkdtemp())
     vdoc, n = vocab_pages(a.vocab)
@@ -298,6 +306,7 @@ def main():
                          (pg.rect.width + fr.width) / 2, pg.rect.height - 6)
         pg.show_pdf_page(r, foot, 0)
         pg.insert_link({"kind": pymupdf.LINK_URI, "from": r, "uri": TELEGRAM})
+    out.set_metadata({"title": f"دليل الميد للإنجليزي — {a.track}", "author": "ملازم عدل"})
     out.save(a.out, garbage=3, deflate=True)
     print(f"{a.out}: {out.page_count} صفحة، {n} كلمة")
 
