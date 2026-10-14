@@ -2,7 +2,7 @@
 # الصيغة:  ## اسم القاعدة   ثم:  السؤال || الصحيح | خطأ | خطأ | خطأ
 # في كل قاعدة: تدريبات الملزمة + نماذج المستخدم (صور التليجرام) + أسئلة إضافية
 
-## Simple present: Verb be (am / is / are)
+## Simple present
 Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not
 He ..... really intelligent. || is | am | are | am not
 The books ..... red and white. || are | is | am | am not
@@ -44,7 +44,6 @@ Where is my book? ..... on your desk. || It's | Its | It'is | Its'
 ..... from Egypt. They're from Sudan. || They aren't | They isn't | They don't | They not
 Khalid and Omar ..... brothers. || are | is | am | be
 
-## Simple present: do / does + verbs
 Children usually ..... watching cartoons. || like | likes | likeing | does like
 In many countries, people ..... until they are sixty-five. || work | works | working | are work
 Betty is not very kind. She ..... help old people. || does not | do not | is not | are not
@@ -231,3 +230,45 @@ My friend avoids ..... coffee at night. || drinking | to drink | drink | drinks
 I love ..... music while I study. || listening to | listen to | listens to | to listening to
 Do you need ..... a break? || to take | take | taking | to taking
 I ..... to a dentist. I have a lot of pain in my teeth. || should go | should to go | should going | should to going
+
+## Prepositions of location
+The student is sitting ..... his desk. || at | on | under | behind
+The ruler is ..... the desk drawer. || in | on | over | at
+The light is ..... the desk. || above | under | in | at
+The backpack is ..... the table. It's on the floor. || under | above | over | in
+The poster is ..... the wall. || on | in | under | behind
+The trash can is ..... the desk. || next to | in | over | at
+The bookshelf is ..... the fan. || behind | on | in | over
+The fan is ..... the bookshelf. || in front of | in | on | under
+Excuse me, where is the bank? It's ..... the pharmacy. They are side by side. || next to | under | in | over
+I'm waiting for you ..... the bus stop. || at | in | under | over
+The traffic lights are ..... the road. The cars stop under them. || over | under | in | behind
+There is a cat sleeping ..... the car. Be careful when you drive! || under | over | above | in
+The children are playing football ..... the street. || in | over | under | above
+Park your car ..... the restaurant, not in front of it. There is a big car park back there. || behind | in front of | over | in
+Wait for me ..... the corner of the street. || on | under | over | behind
+The bakery is ..... the right of the bank. || on | in | at | under
+The police car is ..... the school gate, so the students can see it when they come out. || in front of | behind | under | over
+The bridge is ..... the river. || over | under | in | at
+The man is standing ..... the traffic lights. He wants to cross the street. || at | in | under | over
+The bus stop is ..... the hospital. It's right beside it. || next to | under | above | in
+The sign above the shop says "Pharmacy". The sign is ..... the door. || above | under | in | behind
+Look at the street: the mosque is in the middle, the bank is on the left, and the café is on the ..... of the mosque. || right | front | back | next
+My car is ..... the garage. || in | over | above | at
+There is a big tree ..... my house, so I can't see it from the street. It's in the back garden. || behind | in front of | over | on
+A: Where is the supermarket? B: It's ..... the gas station. You can see it beside the station. || next to | under | over | in
+The taxi is waiting ..... the hotel entrance. || in front of | under | above | in
+There are many shops ..... King Fahd Road. || on | under | above | over
+The streetlight is ..... the parked car. || over | under | in | at
+The bike is ..... the wall. || next to | over | in | above
+The mall is ..... the left of the hospital. || on | in | at | under
+The keys are ..... my pocket. || in | on | over | under
+The bus is ..... the car. The car can't see the road ahead. || in front of | behind | under | over
+The restaurant is ..... the ground floor of the building. || on | in | under | over
+Turn right at the traffic lights. The museum is ..... your left. || on | in | at | under
+The boy is hiding ..... the car. His friends can't see him from the street. || behind | in front of | on | over
+The newspaper is ..... the table. || on | in | under | over
+There's a coffee shop ..... the end of the street. || at | on | under | over
+The bank is on the left of the bakery, so the bakery is on the ..... of the bank. || right | left | front | behind
+The man is sitting ..... the bench in the park. || on | in | under | over
+The car is ..... the bus. The bus can't see the road ahead. || in front of | behind | under | on
