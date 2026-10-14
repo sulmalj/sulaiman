@@ -26,7 +26,7 @@ const pages={
   [43,502,381,545,11.5,`QCD = ${F(Q(3)+' − '+Q(1),Q(3)+' + '+Q(1))} × 100% = ${F('12 − 8','12 + 8')} × 100% = ${B('20%')}`],
   [42,560,413,603,11.5,`CV = ${F('S',xb)} × 100% = ${F('2','9')} × 100% = ${B('22.22%')}`],
   [43,617,383,660,11.5,`Z<sub>x<sub>i</sub></sub> = ${F('x'+s('i')+' − '+xb,'S')} = ${F('5 − 9','2')} = ${B('−2')}`],
-  [44,694,536,722,11.5,`${Q(1)} = 8 &nbsp;⟹&nbsp; ${F('r(n + 1)','4')} = 7 &nbsp;⟹&nbsp; ${F('1(n + 1)','4')} = 7 &nbsp;⟹&nbsp; n + 1 = 28 &nbsp;⟹&nbsp; n = ${B('27')}`],
+  [44,693,536,720,11.5,`q${s('r')} = ${F('r(n + 1)','4')} = ${F('1(n + 1)','4')} = 7 &nbsp;&nbsp;⟹&nbsp;&nbsp; n + 1 = 28 &nbsp;&nbsp;⟹&nbsp;&nbsp; n = ${B('27')}`],
  ]};
 (async()=>{
  const br=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'}).catch(()=>chromium.launch());
