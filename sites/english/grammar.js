@@ -2,7 +2,7 @@
    o[0] = الإجابة الصحيحة (الخيارات تنخلط في الموقع) */
 window.GRAMMAR = [
 {
-"rule": "Simple present: Verb be (am / is / are)",
+"rule": "Simple present",
 "qs": [
 {
 "q": "Sulaiman and Fahad ..... from Saudi Arabia.",
@@ -363,12 +363,7 @@ window.GRAMMAR = [
 "am",
 "be"
 ]
-}
-]
 },
-{
-"rule": "Simple present: do / does + verbs",
-"qs": [
 {
 "q": "Children usually ..... watching cartoons.",
 "o": [
@@ -1989,6 +1984,371 @@ window.GRAMMAR = [
 "should to go",
 "should going",
 "should to going"
+]
+}
+]
+},
+{
+"rule": "Prepositions of location",
+"qs": [
+{
+"q": "The student is sitting ..... his desk.",
+"o": [
+"at",
+"on",
+"under",
+"behind"
+]
+},
+{
+"q": "The ruler is ..... the desk drawer.",
+"o": [
+"in",
+"on",
+"over",
+"at"
+]
+},
+{
+"q": "The light is ..... the desk.",
+"o": [
+"above",
+"under",
+"in",
+"at"
+]
+},
+{
+"q": "The backpack is ..... the table. It's on the floor.",
+"o": [
+"under",
+"above",
+"over",
+"in"
+]
+},
+{
+"q": "The poster is ..... the wall.",
+"o": [
+"on",
+"in",
+"under",
+"behind"
+]
+},
+{
+"q": "The trash can is ..... the desk.",
+"o": [
+"next to",
+"in",
+"over",
+"at"
+]
+},
+{
+"q": "The bookshelf is ..... the fan.",
+"o": [
+"behind",
+"on",
+"in",
+"over"
+]
+},
+{
+"q": "The fan is ..... the bookshelf.",
+"o": [
+"in front of",
+"in",
+"on",
+"under"
+]
+},
+{
+"q": "Excuse me, where is the bank? It's ..... the pharmacy. They are side by side.",
+"o": [
+"next to",
+"under",
+"in",
+"over"
+]
+},
+{
+"q": "I'm waiting for you ..... the bus stop.",
+"o": [
+"at",
+"in",
+"under",
+"over"
+]
+},
+{
+"q": "The traffic lights are ..... the road. The cars stop under them.",
+"o": [
+"over",
+"under",
+"in",
+"behind"
+]
+},
+{
+"q": "There is a cat sleeping ..... the car. Be careful when you drive!",
+"o": [
+"under",
+"over",
+"above",
+"in"
+]
+},
+{
+"q": "The children are playing football ..... the street.",
+"o": [
+"in",
+"over",
+"under",
+"above"
+]
+},
+{
+"q": "Park your car ..... the restaurant, not in front of it. There is a big car park back there.",
+"o": [
+"behind",
+"in front of",
+"over",
+"in"
+]
+},
+{
+"q": "Wait for me ..... the corner of the street.",
+"o": [
+"on",
+"under",
+"over",
+"behind"
+]
+},
+{
+"q": "The bakery is ..... the right of the bank.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+]
+},
+{
+"q": "The police car is ..... the school gate, so the students can see it when they come out.",
+"o": [
+"in front of",
+"behind",
+"under",
+"over"
+]
+},
+{
+"q": "The bridge is ..... the river.",
+"o": [
+"over",
+"under",
+"in",
+"at"
+]
+},
+{
+"q": "The man is standing ..... the traffic lights. He wants to cross the street.",
+"o": [
+"at",
+"in",
+"under",
+"over"
+]
+},
+{
+"q": "The bus stop is ..... the hospital. It's right beside it.",
+"o": [
+"next to",
+"under",
+"above",
+"in"
+]
+},
+{
+"q": "The sign above the shop says \"Pharmacy\". The sign is ..... the door.",
+"o": [
+"above",
+"under",
+"in",
+"behind"
+]
+},
+{
+"q": "Look at the street: the mosque is in the middle, the bank is on the left, and the café is on the ..... of the mosque.",
+"o": [
+"right",
+"front",
+"back",
+"next"
+]
+},
+{
+"q": "My car is ..... the garage.",
+"o": [
+"in",
+"over",
+"above",
+"at"
+]
+},
+{
+"q": "There is a big tree ..... my house, so I can't see it from the street. It's in the back garden.",
+"o": [
+"behind",
+"in front of",
+"over",
+"on"
+]
+},
+{
+"q": "A: Where is the supermarket? B: It's ..... the gas station. You can see it beside the station.",
+"o": [
+"next to",
+"under",
+"over",
+"in"
+]
+},
+{
+"q": "The taxi is waiting ..... the hotel entrance.",
+"o": [
+"in front of",
+"under",
+"above",
+"in"
+]
+},
+{
+"q": "There are many shops ..... King Fahd Road.",
+"o": [
+"on",
+"under",
+"above",
+"over"
+]
+},
+{
+"q": "The streetlight is ..... the parked car.",
+"o": [
+"over",
+"under",
+"in",
+"at"
+]
+},
+{
+"q": "The bike is ..... the wall.",
+"o": [
+"next to",
+"over",
+"in",
+"above"
+]
+},
+{
+"q": "The mall is ..... the left of the hospital.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+]
+},
+{
+"q": "The keys are ..... my pocket.",
+"o": [
+"in",
+"on",
+"over",
+"under"
+]
+},
+{
+"q": "The bus is ..... the car. The car can't see the road ahead.",
+"o": [
+"in front of",
+"behind",
+"under",
+"over"
+]
+},
+{
+"q": "The restaurant is ..... the ground floor of the building.",
+"o": [
+"on",
+"in",
+"under",
+"over"
+]
+},
+{
+"q": "Turn right at the traffic lights. The museum is ..... your left.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+]
+},
+{
+"q": "The boy is hiding ..... the car. His friends can't see him from the street.",
+"o": [
+"behind",
+"in front of",
+"on",
+"over"
+]
+},
+{
+"q": "The newspaper is ..... the table.",
+"o": [
+"on",
+"in",
+"under",
+"over"
+]
+},
+{
+"q": "There's a coffee shop ..... the end of the street.",
+"o": [
+"at",
+"on",
+"under",
+"over"
+]
+},
+{
+"q": "The bank is on the left of the bakery, so the bakery is on the ..... of the bank.",
+"o": [
+"right",
+"left",
+"front",
+"behind"
+]
+},
+{
+"q": "The man is sitting ..... the bench in the park.",
+"o": [
+"on",
+"in",
+"under",
+"over"
+]
+},
+{
+"q": "The car is ..... the bus. The bus can't see the road ahead.",
+"o": [
+"in front of",
+"behind",
+"under",
+"on"
 ]
 }
 ]

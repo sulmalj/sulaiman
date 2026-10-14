@@ -378,7 +378,7 @@ const ofSec = s => QS.filter(q => q.sec === s);
 const ofGrp = (s, g) => QS.filter(q => q.sec === s && q.grp === g);
 const vocabSets = Math.ceil(VO.length / VOCAB_SET);
 const grpCount = s => ({ g: GR.length, v: vocabSets, r: RE.length, l: LI.length }[s]);
-const repBtn = q => `<a class="rep" href="${TELEGRAM_URL}" target="_blank" rel="noopener" title="اكتب لنا رقم السؤال ${q.code} في القناة">⚑ بلّغ عن خطأ</a>`;
+const repBtn = q => '';   // زر «بلّغ عن خطأ» محذوف (طلب المستخدم: الموقع للمشتركين)
 
 /* ── الحفظ في المتصفح ── */
 const KEY = 'english-v1';
