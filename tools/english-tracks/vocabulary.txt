@@ -41,7 +41,7 @@ Increase || The price of petrol will ..... next month, from 2 riyals to 2.5 riya
 Mistake || Don't worry, everyone makes .....! Just try again. || mistakes | decisions | efforts | choices
 Optimistic || Ali is always ....., he believes that good things will happen. || optimistic | upset | nervous | confused
 Positive || Try to be ..... and think about the good things in your life. || positive | nervous | upset | embarrassed
-Research || Scientists are doing ..... to find a new medicine for this disease. || research | pollution | population | advertising
+Research || Scientists are doing ..... to find a new medicine for this disease. || research | pollution | population | advertising || كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23): فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41) — وهو المقصود في هذا السؤال: اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»
 Tough || I find studying chemistry to be easy; however, getting full marks on the exams is rather ...... || tough | ancient | basic | inferior
 Upset || She was ..... because she lost her new phone. || upset | optimistic | calm | talented
 Area || This ..... of the city is very quiet. There are no shops or traffic. || area | crowd | trend | survey
@@ -141,7 +141,7 @@ Similar || The two sisters look very ....., many people think they are twins. ||
 Training || The football team has ..... three times a week to prepare for the big match. || training | pollution | advertising | research
 Weight || He wants to lose ....., so he eats less and exercises every day. || weight | level | rate | score
 A little bit || The soup is ..... cold. Can you heat it for me? || a little bit | some kind of | according to | in order to
-Average || The ..... temperature in Riyadh in July is about 43 degrees. || average | whole | basic | similar
+Average || The ..... temperature in Riyadh in July is about 43 degrees. || average | whole | basic | similar || كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117): اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141) — وهو المقصود في هذا السؤال: صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»
 Bargain || This jacket was only 50 riyals instead of 200. What a .....! || bargain | debate | survey | trend
 Behavior || The teacher was happy with the students' good ..... in class. || behavior | pollution | population | weight
 Consumer || Companies do surveys to find out what ..... want to buy. || consumers | athletes | insects | coaches
