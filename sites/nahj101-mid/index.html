@@ -100,6 +100,19 @@ a{color:inherit}
 .ad h3{margin:0;font-family:var(--f-display);font-size:21px;line-height:1.4}
 .ad ul{margin:0;padding-inline-start:20px;color:var(--muted)}
 .ad .btn{justify-self:start;font-size:16px;padding:12px 22px}
+.ad{margin-top:18px}
+.ad-by{margin:0;padding-top:10px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;line-height:1.8}
+.ad-by b{color:var(--ink)}
+.ad-by p{margin:0 0 8px}
+.subj{display:flex;flex-wrap:wrap;gap:6px}
+.subj span{background:var(--sunk);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:13px;color:var(--ink);font-weight:600}
+.mini-ad{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px;padding:9px 12px;border-radius:12px;background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);text-decoration:none;font-size:14px;line-height:1.5}
+.mini-ad:hover{border-color:var(--gold)}
+.mini-ad > span:nth-child(2){flex:1;min-width:0}
+.mini-tag{background:var(--gold);color:#fff;border-radius:6px;padding:1px 8px;font-size:12px;font-weight:700}
+:root[data-theme="dark"] .mini-tag{color:#2A1800}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .mini-tag{color:#2A1800}}
+.mini-go{font-weight:700;white-space:nowrap}
 
 footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px}
 
@@ -182,6 +195,16 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
           <p>الموقع مجاني بالكامل للجميع — تدرّب براحتك</p>
         </div>
       </div>
+      <aside class="ad" aria-label="إعلان">
+        <span class="tag">إعلان</span>
+        <h3>📘 عندنا ملزمة شاملة لنهج 101 تغني عن الكتاب</h3>
+        <ul>
+          <li>ملزمة شاملة لجزئية الميد تغنيك عن الكتاب تماماً.</li>
+          <li>كويزات وتجميعات إضافية للمشتركين.</li>
+        </ul>
+        <a class="btn btn-gold" id="storeLink" href="https://mtgradl.com" target="_blank" rel="noopener">ادخل متجر ملازم عدل ←</a>
+        <div class="ad-by"><p>المتجر من <b>ملازم عدل</b> · عندنا أكثر من 10 مواد، منها:</p><div class="subj"><span>احص 102</span><span>تقن 102</span><span>فجب 101</span><span>مواد السلم</span><span>عرب 100</span><span>نهج 101</span></div></div>
+      </aside>
       <h1>تدرّب على <span>جزئية الميد</span> بأسئلة من الكتاب نفسه</h1>
       <p class="lead">أسئلة صح وخطأ واختيار من متعدد على الجلسات الثلاث، مأخوذة من محتوى الكتاب مباشرة. جاوب، ويطلع لك على طول هل إجابتك صح، والإجابة الصحيحة، وتصحيح العبارة إذا كانت خاطئة.</p>
       <div class="chips"><span class="chip" id="chipTotal"></span><span class="chip">صح وخطأ + اختيار من متعدد</span><span class="chip">اختبار ميد تجريبي</span></div>
@@ -211,16 +234,6 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
       </div>
     </div>
 
-    <aside class="ad" aria-label="إعلان">
-      <span class="tag">إعلان</span>
-      <h3>📘 عندنا ملزمة شاملة لنهج 101 تغني عن الكتاب</h3>
-      <ul>
-        <li>ملزمة شاملة لجزئية الميد تغنيك عن الكتاب تماماً.</li>
-        <li>كويزات وتجميعات إضافية للمشتركين.</li>
-      </ul>
-      <a class="btn btn-gold" id="storeLink" href="https://mtgradl.com" target="_blank" rel="noopener">ادخل المتجر واشترك ←</a>
-    </aside>
-
     <footer>
       <div>نهج 101 · جزئية الميد — موقع تدريب مجاني</div>
       <div style="margin-top:6px"><button class="btn btn-sec btn-sm" id="resetAll" type="button">مسح تقدمي</button></div>
@@ -234,6 +247,7 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
       <button class="btn btn-sec btn-sm" id="qBack" type="button">→ الرئيسية</button>
     </div>
     <div class="qbar"><i id="qBar"></i></div>
+    <a class="mini-ad" href="https://mtgradl.com" target="_blank" rel="noopener"><span class="mini-tag">إعلان</span><span>ملزمة <b>نهج 101</b> الشاملة + كويزات إضافية من <b>ملازم عدل</b></span><span class="mini-go">المتجر ←</span></a>
     <div class="card qcard" id="qCard"></div>
     <div class="qnav">
       <button class="btn btn-sec" id="qPrev" type="button">→ السابق</button>
@@ -248,6 +262,7 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
       <div class="timer" id="eTimer">15:00</div>
     </div>
     <div class="dots" id="eDots"></div>
+    <a class="mini-ad" href="https://mtgradl.com" target="_blank" rel="noopener"><span class="mini-tag">إعلان</span><span>ملزمة <b>نهج 101</b> الشاملة + كويزات إضافية من <b>ملازم عدل</b></span><span class="mini-go">المتجر ←</span></a>
     <div class="card qcard" id="eCard"></div>
     <div class="qnav">
       <button class="btn btn-sec" id="ePrev" type="button">→ السابق</button>
