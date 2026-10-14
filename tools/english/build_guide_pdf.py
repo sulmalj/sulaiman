@@ -70,6 +70,19 @@ li {{ font-size:21px; font-weight:700; color:var(--navy); display:flex; align-it
 </div></body></html>"""
 
 
+def ad2():
+    qr = segno.make(STORE, error="m").svg_inline(scale=4, dark="#1f2f57", border=0)
+    tiles = [("القواعد", "Grammar"), ("الكلمات", "Vocabulary"), ("القطع", "Reading"), ("الاستماع", "Listening")]
+    t = "".join(f'<div class="tile"><b>{a}</b><span>{b}</span></div>' for a, b in tiles)
+    return f"""<div class="ad2"><span class="kick">خلّصت الكلمات؟</span>
+<h2>الحين جاء وقت التدريب الحقيقي</h2>
+<p class="sub">دورة ملازم عدل للإنجليزي — موقع تدريب شامل كل أقسام الاختبار، مع شرح كامل القواعد</p>
+<div class="tiles">{t}</div>
+<div class="row"><div class="t">أكثر من <strong>900 سؤال</strong> بمستوى مشابه للاختبار، و<strong>تصحيح تلقائي</strong> من الموقع.<br>سعر الدورة في متناول اليد<br>
+<a class="go" href="{STORE}">mtgradl.com</a></div><a class="qr" href="{STORE}">{qr}</a></div>
+<a class="tg2" href="{TELEGRAM}">قناتنا لمعرفة كل جديد: <span>t.me/mlazmadl</span></a></div>"""
+
+
 def vocab_pages():
     rows = []
     for line in (HERE / "vocab_cards.txt").read_text(encoding="utf-8").splitlines():
@@ -98,12 +111,30 @@ def vocab_pages():
 .s {{ font-size:11.5px; color:var(--ink); margin-top:2px; line-height:1.4; text-align:left; }}
 mark {{ background:#fde7b8; color:var(--navy); font-weight:600; border-radius:3px; padding:0 2px; }}
 .sa {{ font-size:11.5px; color:var(--muted); line-height:1.45; }}
+.ad2 {{ break-inside:avoid; margin-top:12px; background:var(--navy); color:#fff; border-radius:20px; padding:22px 24px; position:relative; overflow:hidden; }}
+.ad2::before {{ content:""; position:absolute; inset:auto -60px -60px auto; width:220px; height:220px; border-radius:50%; background:var(--rose); opacity:.35; }}
+.ad2::after {{ content:""; position:absolute; inset:-50px auto auto -50px; width:160px; height:160px; border-radius:50%; border:18px solid var(--gold); opacity:.25; }}
+.ad2 > * {{ position:relative; }}
+.ad2 .kick {{ display:inline-block; background:var(--gold); color:var(--navy); font-weight:800; font-size:14px; border-radius:999px; padding:4px 14px; }}
+.ad2 h2 {{ margin:10px 0 4px; font-size:30px; font-weight:800; line-height:1.3; }}
+.ad2 .sub {{ font-size:16px; opacity:.9; margin:0 0 14px; }}
+.ad2 .tiles {{ display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:14px; }}
+.ad2 .tile {{ background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); border-radius:12px; padding:10px 6px; text-align:center; }}
+.ad2 .tile b {{ display:block; font-size:17px; }}
+.ad2 .tile span {{ font-family:'Lexend'; font-size:11px; color:var(--gold); }}
+.ad2 .row {{ display:flex; align-items:center; gap:18px; background:#fff; color:var(--navy); border-radius:14px; padding:12px 16px; }}
+.ad2 .row .t {{ flex:1; font-size:15px; font-weight:700; line-height:1.6; }}
+.ad2 .row .t strong {{ color:var(--rose); }}
+.ad2 .go {{ display:inline-block; margin-top:6px; background:var(--rose); color:#fff; border-radius:10px; padding:6px 18px; font:600 18px 'Lexend'; }}
+.ad2 .qr svg {{ width:96px; height:96px; display:block; }}
+.ad2 .tg2 {{ display:block; margin-top:12px; text-align:center; font-size:15px; font-weight:700; }}
+.ad2 .tg2 span {{ font-family:'Lexend'; color:var(--gold); }}
 .foot {{ position:fixed; bottom:-12mm; left:0; right:0; text-align:center; }}
 .foot a {{ display:inline-block; background:var(--rose-soft); color:var(--navy); border-radius:8px; padding:3px 12px; font-size:12.5px; font-weight:700; }}
 .foot a span {{ font-family:'Lexend'; color:var(--rose); }}
 </style></head><body>
 <div class="head"><div class="t">الكلمات ومعانيها<small>({len(rows)} كلمة)</small></div><div class="en">Vocabulary List</div></div>
-<div class="grid">{''.join(cards)}</div></body></html>"""
+<div class="grid">{''.join(cards)}</div>{ad2()}</body></html>"""
     return doc, len(rows)
 
 
