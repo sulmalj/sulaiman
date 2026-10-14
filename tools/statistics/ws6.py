@@ -10,4 +10,6 @@ W=[(43,131,399,150),(41,153,537,172),(53,188,210,207),(52,223,326,242),(50,258,3
 for r in W: p2.draw_rect(pymupdf.Rect(r),color=None,fill=(1,1,1))
 for n,pg in ((1,p1),(2,p2)):
     ov=pymupdf.open(G+f'w6ov{n}.pdf'); pg.show_pdf_page(pg.rect,ov,0,overlay=True)
+    for l in ov[0].get_links():
+        if l.get('uri'): pg.insert_link({'kind':pymupdf.LINK_URI,'from':l['from'],'uri':l['uri']})
 doc.save(sys.argv[1],garbage=3,deflate=True)

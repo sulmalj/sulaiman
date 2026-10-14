@@ -7,6 +7,7 @@ const Q=k=>`Q${s(k)}`;
 // [x0,y0,x1,y1,fontPt,html,dir,align]
 const pages={
  1:[
+  [60,818.5,535,841.5,9,`<a class="ft" href="https://t.me/mlazmadl"><span class="f1">قناتنا لمعرفة كل جديد: <span dir="ltr" class="url">https://t.me/mlazmadl</span></span><span class="f2">للدخول للقناة اضغط على الرابط</span></a>`,'rtl','center'],
   [42,44,182,98,11,`<span class="badge"><span class="b1">الأقدم في شروحات احص 102</span><span class="b2">منذ عام 1444 هـ</span></span>`,'rtl','center'],
   [300,140,488,163,14,A('ملازم عدل'),'rtl'],
   [37,618,116,640,12,A('<b>خطأ</b>'),'rtl','center'],
@@ -15,6 +16,7 @@ const pages={
   [37,686,116,709,12,A('<b>خطأ</b>'),'rtl','center'],
  ],
  2:[
+  [60,818.5,535,841.5,9,`<a class="ft" href="https://t.me/mlazmadl"><span class="f1">قناتنا لمعرفة كل جديد: <span dir="ltr" class="url">https://t.me/mlazmadl</span></span><span class="f2">للدخول للقناة اضغط على الرابط</span></a>`,'rtl','center'],
   [44,129,398,152,11.5,`x${s('s')} = ${B('1')} &nbsp;&nbsp;&nbsp; ${Q(1)} = ${B('8')} &nbsp;&nbsp;&nbsp; ${Q(2)} = ${B('11')} &nbsp;&nbsp;&nbsp; ${Q(3)} = ${B('12')} &nbsp;&nbsp;&nbsp; x${s('l')} = ${B('16')}`],
   [54,187,208,208,11.5,B('25%')],
   [53,222,322,243,11.5,B('75%')],
@@ -42,6 +44,10 @@ html,body{margin:0;background:transparent}
 .l{position:absolute;display:flex;align-items:center;color:#0b2a9c;font-family:'DejaVu Sans',sans-serif;font-weight:bold;overflow:visible}
 .in{white-space:nowrap}
 .a{font-family:ar}
+.ft{display:inline-flex;flex-direction:column;align-items:center;font-family:ar;text-decoration:none;color:#0b2a9c}
+.f1{font-size:9pt;line-height:1.25}
+.url{font-family:'DejaVu Sans',sans-serif;color:#ea580c;text-decoration:underline;font-size:8.5pt}
+.f2{font-size:7.5pt;line-height:1.2;color:#ea580c}
 .badge{display:inline-flex;flex-direction:column;align-items:center;gap:2pt;font-family:ar;border:1.4pt solid #0b2a9c;border-radius:8pt;padding:3pt 9pt 4pt;background:#fff;box-shadow:2pt 2pt 0 #ea580c}
 .b1{font-size:10pt;color:#0b2a9c;line-height:1.3}
 .b2{font-size:8.5pt;color:#ea580c;line-height:1.2;border-top:0.8pt solid #ea580c;padding-top:2pt}
