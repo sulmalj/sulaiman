@@ -10,7 +10,7 @@
 import argparse, hashlib, json, os, re, subprocess, sys, tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-NAME = os.path.basename(os.path.dirname(os.path.abspath(__file__)))   # english أو english-final
+NAME = os.path.basename(os.path.dirname(os.path.abspath(__file__)))   # english أو english-tracks
 SRC = os.path.join(ROOT, 'tools', NAME, 'listening.txt')
 SITE = os.path.join(ROOT, 'sites', NAME)
 AUDIO = os.path.join(SITE, 'audio')

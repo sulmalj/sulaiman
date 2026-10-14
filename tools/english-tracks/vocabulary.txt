@@ -1,4 +1,4 @@
-# أسئلة الكلمات (الفاينل) — سؤال لكل كلمة من store/english-final/vocabulary-list.txt
+# أسئلة الكلمات (جميع المسارات باستثناء الإنساني) — سؤال لكل كلمة من store/english-tracks/vocabulary-list.txt
 # الصيغة: الكلمة (من القائمة) || الجملة وفيها ..... || الإجابة الصحيحة | خطأ | خطأ | خطأ
 # الكلمات اللي لها نموذج من اختبار المستخدم: سؤالها هو النموذج نفسه (Graduate, Company, Tough, Afraid, Talented, Pretend, Practice, Pretty, Volunteer, History)
 Advertising || The company spends a lot of money on ....., so you can see its ads on TV and social media every day. || advertising | requirement | pollution | treatment

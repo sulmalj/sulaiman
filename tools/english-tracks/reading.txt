@@ -2,7 +2,7 @@
 # الصيغة:  ## رقم | العنوان   ثم الفقرات (كل فقرة سطر، تبدأ برقمها)   ثم  ?? سؤال  * الصحيح  - خطأ ×3
 # _كلمة_ = كلمة تحتها خط في القطعة
 # !! الشرح = يطلع للطالب بعد ما يجاوب (وين الجواب في القطعة وليش)
-# موقع الفاينل: القطع 1–3 نفس قطع المستخدم (من اختبارات سابقة)، والباقي قطع جديدة للفاينل (غير قطع الميد).
+# موقع جميع المسارات (الميد): القطع 1–3 نفس قطع المستخدم (من اختبارات سابقة)، والباقي قطع جديدة لموقع جميع المسارات (غير قطع الميد).
 
 ## 1 | Laughter in Hospitals and Schools
 1. There are many positive effects of laughter. Laughing is fun. Laughing helps us relax in stressful situations. Laughter also helps people forget about their pain and _facilitates_ learning. Indeed, one study found that students who laugh more remember more things and complete their homework more quickly. With these facts in mind, there are two areas where we should try to help people laugh more: hospitals and schools.
