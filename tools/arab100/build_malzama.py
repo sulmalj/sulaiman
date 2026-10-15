@@ -47,11 +47,11 @@ CSS = f"""
 html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:700;
             font-size:12.6pt; line-height:1.6; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
 p {{ margin:0; }}
-.sec {{ color:var(--sec); font-size:14.5pt; margin:20pt 0 8pt; break-after:avoid; }}
+.sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .sec::before {{ content:''; display:inline-block; width:5pt; height:5pt; border-radius:50%; background:var(--sec);
                margin-left:9pt; vertical-align:middle; }}
-.sub {{ color:var(--sub); font-size:13.4pt; margin:16pt 0 6pt; break-after:avoid; }}
+.sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
 .ex {{ color:var(--ex); }}
@@ -256,7 +256,7 @@ def solutions_html():
 .soltitle{text-align:center;font-family:'Alexandria';font-weight:800;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
 .soltitle small{display:block;font-family:'Baloo Bhaijaan 2';font-size:13pt;color:#ad7c95}
 .unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-family:'Alexandria';font-weight:800;font-size:16pt;margin:8pt 0}
-.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-family:'Alexandria';font-weight:800;font-size:13.5pt;margin:12pt 0 4pt;break-after:avoid}
+.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-family:'Alexandria';font-weight:800;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
 .ok{color:#527c82;white-space:nowrap}
 .q{font-size:11.8pt}
 </style>"""
