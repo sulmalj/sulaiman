@@ -16,6 +16,7 @@
 import argparse, base64, html, pathlib, re, sys, tempfile
 import pymupdf
 from playwright.sync_api import sync_playwright
+import frontmatter as fm
 
 HERE = pathlib.Path(__file__).resolve().parent
 FONTS = HERE / "fonts"
@@ -49,6 +50,15 @@ html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'
 p {{ margin:0; }}
 .sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
+/* عنوان القسم: نقطة + خط ناعم يكمل لآخر السطر */
+.sec {{ display:flex; align-items:center; }}
+.sec::after {{ content:''; flex:1; height:1.6pt; margin-right:10pt; border-radius:2pt;
+              background:linear-gradient(to left, #e6cfd9, rgba(230,207,217,0)); }}
+.sub {{ width:fit-content; border-bottom:2pt solid #efdccf; padding-bottom:1pt; }}
+.lessonhead {{ background:#f5e6d9; border-radius:14pt; padding:7pt 16pt 6pt; margin:0 0 6pt; position:relative; overflow:hidden; }}
+.lessonhead::before {{ content:''; position:absolute; left:-30pt; top:-30pt; width:110pt; height:90pt; border-radius:50%; background:#f3dfe7; }}
+.lessonhead small {{ position:relative; display:block; color:#ad7c95; font-size:11pt; }}
+.lessonhead b {{ position:relative; display:block; color:#89543d; font-family:'{FONT_HEAD}'; font-weight:800; font-size:17pt; line-height:1.35; }}
 /* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
 .sec::before {{ content:'●'; font-family:'DejaVu Sans',sans-serif; font-size:7pt; color:var(--sec); margin-left:9pt; vertical-align:2pt; }}
 .sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
@@ -70,9 +80,12 @@ ul.b > li::marker {{ color:var(--sec); }}
 .d1 {{ background:#e3a594; }} .d2 {{ background:#f0c98d; }} .d3 {{ background:#8db3b3; }} .d4 {{ background:#bb9cae; }}
 .bul {{ display:flex; gap:8pt; align-items:flex-start; margin:9pt 0; break-inside:avoid; }}
 .bul > .dot {{ flex:none; margin:3pt 0 0; width:13pt; height:13pt; }}
-table.t {{ width:100%; border-collapse:collapse; margin:9pt 0 12pt; font-size:11.6pt; line-height:1.45; }}
-table.t th {{ background:var(--blue); color:#fff; font-family:'{FONT_HEAD}'; font-weight:700; font-size:11.6pt; padding:5pt 6pt; border:.8pt solid #2b2b2b; }}
-table.t td {{ padding:4pt 6pt; border:.8pt solid #2b2b2b; text-align:center; vertical-align:middle; }}
+table.t {{ width:100%; border-collapse:separate; border-spacing:0; margin:9pt 0 12pt; font-size:11.6pt; line-height:1.45;
+           border:1pt solid #d9c2b1; border-radius:9pt; overflow:hidden; }}
+table.t th {{ background:var(--blue); color:#fff; font-family:'{FONT_HEAD}'; font-weight:700; font-size:11.6pt; padding:5pt 6pt; border-left:1pt solid #4a73a3; }}
+table.t th:last-child, table.t td:last-child {{ border-left:0; }}
+table.t td {{ padding:4pt 6pt; border-top:1pt solid #e2cfc1; border-left:1pt solid #e2cfc1; text-align:center; vertical-align:middle; background:#fdf8f3; }}
+table.t tr:nth-child(even) td {{ background:#f6ece4; }}
 table.t tr {{ break-inside:avoid; }}
 table.t td.r {{ text-align:right; }}
 table.t td.no {{ width:20pt; }}
@@ -277,7 +290,8 @@ def bank_html(qs, per_page=10):
 # ---------- التذييل ----------
 def footers_html(items):
     pages = "".join(
-        f'<div class="fp"><div class="ft">{html.escape(t)}</div><div class="pn">~{n}~</div></div>' for t, n in items)
+        f'<div class="fp"><div class="ft">{html.escape(t)}</div>' + (f'<div class="pn">~{n}~</div>' if n else '') + '</div>'
+        for t, n in items)
     css = f"""@page{{size:{W}pt {H}pt;margin:0}}
 .fp{{width:{W}pt;height:{H}pt;position:relative;break-after:page}} .fp:last-child{{break-after:auto}}
 .ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:800;font-size:11pt;line-height:1.25;color:#603b28}}
@@ -344,6 +358,16 @@ def solutions_html():
     return "\n".join(out[:1]) + css + "\n".join(out[1:])
 
 
+# مكان صورة الطالب في الغلاف الجديد (أسفل الصفحة، بنسبة الصورة الأصلية 454×382)
+ART_BOX = (128, 452, 468, 738)
+
+
+def intro_link_rect(intro_pdf):
+    pg = pymupdf.open(intro_pdf)[0]
+    r = pg.search_for("هنا")
+    return r[0] if r else pymupdf.Rect(0, 0, 0, 0)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
@@ -360,14 +384,15 @@ def main():
     base = pymupdf.open(BASE)
     base_bank = pymupdf.open(BASE_BANK)
     out = pymupdf.open()
-    if not a.only and not a.solutions:
-        out.insert_pdf(pymupdf.open(COVER))
     overlays, foot_items = [], []
     with sync_playwright() as p:
         br = p.chromium.launch(executable_path=CHROME)
         for li, les in enumerate(lessons):
             src = les if isinstance(les, str) else les.read_text(encoding="utf-8")
             title = re.match(r"<!--\s*(.+?)\s*-->", src).group(1)
+            if not a.solutions:
+                unit, topic = fm.lesson_label(li if not a.only else int(a.only) - 1)
+                src = src.replace("-->", f'-->\n<div class="lessonhead"><small>{unit} · {topic}</small><b>{html.escape(title)}</b></div>', 1)
             render_fit(src, tmp / f"c{li}.pdf", br)
             overlays.append((tmp / f"c{li}.pdf", title, False))
             bank = None if isinstance(les, str) else HERE / "bank" / (les.stem + ".txt")
@@ -383,11 +408,35 @@ def main():
                 num += 1
                 plan.append((path, i, title, num, is_bank))
                 foot_items.append((title, num))
+        front = not a.only and not a.solutions
+        if front:
+            toc = []
+            for li, les in enumerate(lessons):
+                t = re.match(r"<!--\s*(.+?)\s*-->", les.read_text(encoding="utf-8")).group(1)
+                p_les = next(n for (pth, i, tt, n, b) in plan if pth == tmp / f"c{li}.pdf")
+                p_bank = next((n for (pth, i, tt, n, b) in plan if pth == tmp / f"b{li}.pdf"), None)
+                toc.append((li, t, p_les, p_bank))
+            render(fm.cover_html(font_faces(), ART_BOX), tmp / "cover.pdf", br)
+            render(doc(fm.intro_body(toc)), tmp / "intro.pdf", br)
+            foot_items = [("المقدمة", None)] + foot_items
         render(footers_html(foot_items), tmp / "f.pdf", br)
         br.close()
     foot = pymupdf.open(tmp / "f.pdf")
+    if front:
+        cv = out.new_page(width=W, height=H)
+        cv.show_pdf_page(cv.rect, pymupdf.open(tmp / "cover.pdf"), 0)
+        cv.show_pdf_page(pymupdf.Rect(*ART_BOX), pymupdf.open(COVER), 0, clip=pymupdf.Rect(*fm.ART_CLIP))
+        ip = out.new_page(width=W, height=H)
+        ip.show_pdf_page(ip.rect, base, 0)
+        ip.show_pdf_page(ip.rect, pymupdf.open(tmp / "intro.pdf"), 0)
+        ip.show_pdf_page(ip.rect, foot, 0)
+        ip.insert_link({"kind": pymupdf.LINK_URI, "uri": fm.INTRO_LINK, "from": intro_link_rect(tmp / "intro.pdf")})
+        plan = [None] + plan
     cache = {}
-    for k, (path, i, title, num, is_bank) in enumerate(plan):
+    for k, item in enumerate(plan):
+        if item is None:
+            continue
+        path, i, title, num, is_bank = item
         src = cache.setdefault(path, pymupdf.open(path))
         pg = out.new_page(width=W, height=H)
         pg.show_pdf_page(pg.rect, base_bank if is_bank else base, 0)
