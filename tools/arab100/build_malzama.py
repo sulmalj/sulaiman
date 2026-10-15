@@ -10,7 +10,8 @@
   python3 tools/arab100/build_malzama.py store/arab100/malzama-mid-new.pdf
   python3 tools/arab100/build_malzama.py out.pdf --only 01   # درس واحد للمعاينة
 
-الخطوط: خطوط الملزمة الأصلية (Childos Arabic و 29LT Azer) تجارية؛ البديل Baloo Bhaijaan 2 و Alexandria في `fonts/`.
+الخطوط: خطوط الملزمة الأصلية (Childos Arabic و 29LT Azer) تجارية؛ البديل Readex Pro في `fonts/`
+(اخترناه لأنه يرسم الحروف والحركات صح؛ Baloo كان يشوّه «لى» و«الإملائي»، وAlexandria يرسم خط قاعدة كأنه تسطير).
 لو توفرت ملفات الخطوط الأصلية: حطها في `fonts/` وعدّل FONT_BODY / FONT_HEAD تحت.
 """
 import argparse, base64, html, pathlib, re, sys, tempfile
@@ -26,15 +27,15 @@ COVER = HERE / "base" / "cover-intro.pdf"
 LOGO = HERE.parent / "statistics" / "logo-adl.png"
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 W, H = 595.5, 842.25
-FONT_BODY = "Baloo Bhaijaan 2"
-FONT_HEAD = "Alexandria"
+FONT_BODY = "Readex Pro"
+FONT_HEAD = "Readex Pro"
 
 
 def font_faces():
     out = []
     for f in sorted(FONTS.glob("*.ttf")):
         fam, wt = f.stem.rsplit("-", 1)
-        fam = {"Baloo": "Baloo Bhaijaan 2"}.get(fam, fam)
+        fam = {"Readex": "Readex Pro"}.get(fam, fam)
         out.append(f"@font-face{{font-family:'{fam}';font-weight:{wt};src:url('{f.as_uri()}') format('truetype');}}")
     return "\n".join(out)
 
@@ -45,8 +46,8 @@ CSS = f"""
 :root {{ --brown:#603b28; --term:#cc6e53; --mithl:#db526f; --ex:#527c82; --sec:#ad7c95; --sub:#844f6a;
         --teal:#41848d; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
 * {{ box-sizing:border-box; }}
-html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:700;
-            font-size:12.6pt; line-height:1.6; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
+html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:600;
+            font-size:12pt; line-height:1.65; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
 p {{ margin:0; }}
 .sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
@@ -55,10 +56,9 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .sec::after {{ content:''; flex:1; height:1.6pt; margin-right:10pt; border-radius:2pt;
               background:linear-gradient(to left, #e6cfd9, rgba(230,207,217,0)); }}
 .sub {{ width:fit-content; border-bottom:2pt solid #efdccf; padding-bottom:1pt; }}
-.lessonhead {{ background:#f5e6d9; border-radius:14pt; padding:7pt 16pt 6pt; margin:0 0 6pt; position:relative; overflow:hidden; }}
-.lessonhead::before {{ content:''; position:absolute; left:-30pt; top:-30pt; width:110pt; height:90pt; border-radius:50%; background:#f3dfe7; }}
-.lessonhead small {{ position:relative; display:block; color:#ad7c95; font-size:11pt; }}
-.lessonhead b {{ position:relative; display:block; color:#89543d; font-family:'{FONT_HEAD}'; font-weight:800; font-size:17pt; line-height:1.35; }}
+.lessonhead {{ border-right:5pt solid #cc6e53; padding:2pt 12pt 4pt; margin:0 0 4pt; }}
+.lessonhead small {{ display:inline-block; background:#f5e6d9; color:#844f6a; font-size:10.5pt; border-radius:10pt; padding:1pt 10pt; }}
+.lessonhead b {{ display:block; color:#89543d; font-weight:700; font-size:18pt; line-height:1.5; margin-top:2pt; }}
 /* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
 .sec::before {{ content:'●'; font-family:'DejaVu Sans',sans-serif; font-size:7pt; color:var(--sec); margin-left:9pt; vertical-align:2pt; }}
 .sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
@@ -109,7 +109,7 @@ BANK_CSS = """
 .q { display:flex; align-items:center; gap:14pt; }
 .ans { flex:none; width:36pt; height:36pt; border-radius:50%; background:#8a6455; color:#fff; display:flex; align-items:center;
        justify-content:center; font-size:17pt; font-weight:700; padding-top:2pt; }
-.box { flex:1; border:1.6pt solid #603b28; border-radius:7pt; overflow:hidden; font-family:'%HEAD%'; font-weight:700; font-size:10.4pt; line-height:1.35; }
+.box { flex:1; border:1.6pt solid #603b28; border-radius:7pt; overflow:hidden; font-family:'%HEAD%'; font-weight:600; font-size:10pt; line-height:1.35; }
 .box .qt { padding:4pt 8pt; color:#844f6a; border-bottom:1.2pt solid #603b28; }
 .box .row { display:flex; border-bottom:1.2pt solid #603b28; }
 .box .row:last-child { border-bottom:0; }
@@ -294,8 +294,8 @@ def footers_html(items):
         for t, n in items)
     css = f"""@page{{size:{W}pt {H}pt;margin:0}}
 .fp{{width:{W}pt;height:{H}pt;position:relative;break-after:page}} .fp:last-child{{break-after:auto}}
-.ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:800;font-size:11pt;line-height:1.25;color:#603b28}}
-.pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:800;font-size:14pt;color:#111;direction:ltr}}"""
+.ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:700;font-size:10.5pt;line-height:1.25;color:#603b28}}
+.pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:700;font-size:14pt;color:#111;direction:ltr}}"""
     return f'<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>{font_faces()}{css}</style></head><body style="margin:0">{pages}</body></html>'
 
 
@@ -348,18 +348,14 @@ def solutions_html():
             out.append(f'<p class="ln">{_inline(ln)}</p>')
         i += 1
     css = """<style>
-.soltitle{text-align:center;font-family:'Alexandria';font-weight:800;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
-.soltitle small{display:block;font-family:'Baloo Bhaijaan 2';font-size:13pt;color:#ad7c95}
-.unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-family:'Alexandria';font-weight:800;font-size:16pt;margin:8pt 0}
-.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-family:'Alexandria';font-weight:800;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
+.soltitle{text-align:center;font-weight:700;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
+.soltitle small{display:block;font-size:13pt;color:#ad7c95}
+.unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-weight:700;font-size:16pt;margin:8pt 0}
+.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-weight:700;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
 .ok{color:#527c82;white-space:nowrap}
 .q{font-size:11.8pt}
 </style>"""
     return "\n".join(out[:1]) + css + "\n".join(out[1:])
-
-
-# مكان صورة الطالب في الغلاف الجديد (أسفل الصفحة، بنسبة الصورة الأصلية 454×382)
-ART_BOX = (128, 452, 468, 738)
 
 
 def intro_link_rect(intro_pdf):
@@ -416,7 +412,9 @@ def main():
                 p_les = next(n for (pth, i, tt, n, b) in plan if pth == tmp / f"c{li}.pdf")
                 p_bank = next((n for (pth, i, tt, n, b) in plan if pth == tmp / f"b{li}.pdf"), None)
                 toc.append((li, t, p_les, p_bank))
-            render(fm.cover_html(font_faces(), ART_BOX), tmp / "cover.pdf", br)
+            names = [t for (_, t, _, _) in toc]
+            topics = [(u, ut, names[i * 4:(i + 1) * 4]) for i, (u, ut) in enumerate(fm.UNITS)]
+            render(fm.cover_html(font_faces(), topics), tmp / "cover.pdf", br)
             render(doc(fm.intro_body(toc)), tmp / "intro.pdf", br)
             foot_items = [("المقدمة", None)] + foot_items
         render(footers_html(foot_items), tmp / "f.pdf", br)
@@ -425,7 +423,6 @@ def main():
     if front:
         cv = out.new_page(width=W, height=H)
         cv.show_pdf_page(cv.rect, pymupdf.open(tmp / "cover.pdf"), 0)
-        cv.show_pdf_page(pymupdf.Rect(*ART_BOX), pymupdf.open(COVER), 0, clip=pymupdf.Rect(*fm.ART_CLIP))
         ip = out.new_page(width=W, height=H)
         ip.show_pdf_page(ip.rect, base, 0)
         ip.show_pdf_page(ip.rect, pymupdf.open(tmp / "intro.pdf"), 0)
