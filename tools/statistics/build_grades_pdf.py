@@ -1,16 +1,22 @@
-"""يبني ملف «درجات طلابنا» لدورة احص 102 (المسار الإنساني):
-صفحة غلاف إعلانية + صفحات صور الدرجات (ترتيب عشوائي، الدرجات المتشابهة متفرقة)
-مع علامة مائية بحقوق ملازم عدل ورابط القناة والمتجر أسفل كل صفحة.
+"""يبني ملف «درجات طلابنا» لدورة احص 102 (المسار الإنساني) بهوية ملازم عدل:
+صفحة غلاف إعلانية + صفحات صور الدرجات (ترتيب عشوائي، الدرجات المتساوية متفرقة)
+مع علامة مائية بحقوق ملازم عدل، وتنويه إن التقييمات جزء بسيط، ورابط القناة والمتجر أسفل كل صفحة.
+
+الهوية (من شعار المستخدم وملازمه `store/brand/`): خلفية كريمية #fffdf5، كحلي الشعار #204b7d،
+أزرق المخ #6c89ac، وردي اللمبة #b0698d، وخط عناوين دائري (Baloo Bhaijaan 2 بديل Childos Arabic).
 
 الاستخدام:
-  python3 tools/statistics/build_grades_pdf.py store/statistics/grades/images store/statistics/grades/grades-ready.pdf
-  (اختياري) --grades ملف فيه سطر لكل صورة: «اسم_الملف<TAB>الدرجة» عشان الدرجات المتساوية ما تجي ورا بعض.
-  (اختياري) --seed رقم ثابت للخلط (نفس الرقم = نفس الترتيب).
+  python3 tools/statistics/build_grades_pdf.py store/statistics/grades/images store/statistics/grades/stat102-humanities-grades.pdf \
+    --grades store/statistics/grades/grades.txt
+  --grades: سطر لكل صورة «اسم_الملف<TAB>الدرجة» عشان الدرجات المتساوية ما تجي جنب بعض.
+  --seed: رقم ثابت للخلط (نفس الرقم = نفس الترتيب).
 """
 import argparse, base64, io, pathlib, random, sys, tempfile
 import pymupdf, segno
 from playwright.sync_api import sync_playwright
 
+HERE = pathlib.Path(__file__).resolve().parent
+LOGO = HERE / "logo-adl.png"
 TELEGRAM = "https://t.me/mlazmadl"
 STORE = "https://mtgradl.com"
 DEMO = "https://t.me/mlazmadl/3465"
@@ -18,103 +24,142 @@ COURSE = "احص 102"
 TRACK = "المسار الإنساني"
 FEATURES = ["ملزمة مرتبة وشاملة", "شروحات لكامل الدروس", "حلول للواجبات",
             "شروحات للواجبات", "كويزات للمعلومات النظرية", "تغني عن الكتاب واي مصدر آخر"]
+NOTE = ("التقييمات في هذا الملف جزء بسيط جداً من تقييماتنا، ولا تشكّل حتى 5% منها — "
+        "وجميع التقييمات متواجدة في المتجر وفي قناتنا العامة")
+NOTE_HTML = NOTE.replace("ولا تشكّل حتى 5% منها", "<em>ولا تشكّل حتى 5% منها</em>")
 IMG_EXT = {".jpg", ".jpeg", ".png", ".webp"}
 
-FONTS = ('<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800'
-         '&family=Lexend:wght@400;600;700&family=Lalezar&display=block" rel="stylesheet">')
-BASE_CSS = """
-:root { --navy:#13294b; --blue:#1d4ed8; --orange:#f08a24; --orange-soft:#fff1e2; --sky:#eaf1ff; --ink:#1f2633; --muted:#5b6475; }
-* { box-sizing:border-box; }
-html,body { margin:0; color:var(--ink); font-family:'Tajawal',sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-a { color:inherit; text-decoration:none; }
-.en { font-family:'Lexend',sans-serif; direction:ltr; unicode-bidi:isolate; }
+CREAM = (1, 253 / 255, 245 / 255)
+NAVY, BLUE, ROSE = "#204b7d", "#6c89ac", "#b0698d"
+
+FONTS = ('<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700;800'
+         '&family=Tajawal:wght@500;700;800&family=Lexend:wght@500;600;700&display=block" rel="stylesheet">')
+BASE_CSS = f"""
+:root {{ --navy:{NAVY}; --blue:{BLUE}; --rose:{ROSE}; --cream:#fffdf5; --blue-soft:#e3eaf3; --rose-soft:#f5e3ec; --ink:#23324a; --muted:#6b7385; }}
+* {{ box-sizing:border-box; }}
+html,body {{ margin:0; color:var(--ink); font-family:'Tajawal',sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
+a {{ color:inherit; text-decoration:none; }}
+.en {{ font-family:'Lexend',sans-serif; direction:ltr; unicode-bidi:isolate; }}
 """
+
+
+def data_uri(path):
+    return "data:image/png;base64," + base64.b64encode(pathlib.Path(path).read_bytes()).decode()
 
 
 def qr_img(url, px):
     """باركود PNG حاد (نسخة SVG ما كانت تنقرأ)."""
     buf = io.BytesIO()
-    segno.make(url, error="m").save(buf, kind="png", scale=20, border=2, dark="#13294b")
+    segno.make(url, error="m").save(buf, kind="png", scale=20, border=1, dark=NAVY)
     return (f'<img alt="QR" src="data:image/png;base64,{base64.b64encode(buf.getvalue()).decode()}" '
             f'style="width:{px}px;height:{px}px;display:block;image-rendering:pixelated">')
 
 
-def cover_html(n_imgs):
-    lis = "".join(f'<li><span class="tick">✓</span>{t}</li>' for t in FEATURES)
+# زخارف عضوية بنفس روح أغلفة ملازم عدل (بقع ناعمة + نقاط + أقواس)
+DECO_TOP = f"""<svg class="deco top" viewBox="0 0 794 260" preserveAspectRatio="none">
+<path d="M794 0H430c10 40 52 70 110 78 70 10 96 52 150 66 46 12 80 0 104-18Z" fill="#e3eaf3"/>
+<path d="M794 0H600c4 34 30 58 74 62 52 5 80 34 120 30Z" fill="#c9d6e7"/>
+<path d="M0 0h250c-6 46-48 74-104 80C88 86 40 112 0 140Z" fill="#f5e3ec"/>
+<g fill="none" stroke="{ROSE}" stroke-width="3" opacity=".55"><path d="M0 92c40-10 70-40 78-92"/><path d="M0 70c28-8 48-30 54-70"/></g>
+<g fill="{BLUE}" opacity=".55"><circle cx="470" cy="34" r="7"/><circle cx="505" cy="58" r="5"/><circle cx="440" cy="62" r="4"/></g>
+<g fill="{ROSE}" opacity=".5"><circle cx="300" cy="28" r="6"/><circle cx="330" cy="48" r="4"/></g>
+</svg>"""
+DECO_BOT = f"""<svg class="deco bot" viewBox="0 0 794 200" preserveAspectRatio="none">
+<path d="M0 200V70c40 10 70 44 130 46 66 2 90-40 150-36 60 4 80 52 140 70 20 6 40 8 60 50Z" fill="#e3eaf3"/>
+<path d="M794 200V60c-50 6-80 46-140 54-56 8-90-14-140 6-44 18-56 58-90 80Z" fill="#f5e3ec"/>
+<path d="M794 200v-70c-36 4-60 30-110 34-36 3-60 18-74 36Z" fill="#e8c9d8"/>
+<g fill="{ROSE}" opacity=".5"><circle cx="560" cy="60" r="6"/><circle cx="590" cy="40" r="4"/></g>
+<g fill="{BLUE}" opacity=".55"><circle cx="210" cy="50" r="6"/><circle cx="240" cy="70" r="4"/><circle cx="180" cy="30" r="4"/></g>
+</svg>"""
+
+ICONS = [  # أيقونات بسيطة لكل ميزة
+    '<path d="M6 4h9l3 3v13H6z M15 4v3h3 M9 11h6 M9 14h6 M9 17h4"/>',
+    '<rect x="3" y="5" width="18" height="12" rx="2"/><path d="M10 9l5 2.5-5 2.5z M8 20h8"/>',
+    '<path d="M5 12l4 4 10-10"/>',
+    '<path d="M4 6h16v10H9l-5 4z M8 10h8 M8 13h5"/>',
+    '<circle cx="12" cy="12" r="8"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.2 2.4c-.7.3-.7.8-.7 1.6 M12 16.5v.5"/>',
+    '<path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/>',
+]
+
+
+def cover_html():
+    feats = "".join(
+        f'<div class="f"><span class="ic {"b" if i % 2 == 0 else "r"}"><svg viewBox="0 0 24 24">{ICONS[i]}</svg></span>{t}</div>'
+        for i, t in enumerate(FEATURES))
     return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8">{FONTS}<style>{BASE_CSS}
 @page {{ size:A4; margin:0; }}
-body {{ background:#fff; }}
-.page {{ width:210mm; height:297mm; padding:12mm 12mm 10mm; display:flex; flex-direction:column; justify-content:space-between;
-  background:radial-gradient(circle at 100% 0, #dbe7ff 0, transparent 38%), radial-gradient(circle at 0 100%, #ffe6cc 0, transparent 34%), #fff; }}
-.top {{ display:flex; justify-content:space-between; align-items:flex-start; }}
-.brand {{ font-family:'Lalezar'; font-size:30px; color:var(--navy); background:#fff; border:2px solid var(--navy); border-radius:14px; padding:2px 18px 0; box-shadow:4px 4px 0 var(--orange); }}
-.badge {{ text-align:center; border:2.5px solid var(--blue); border-radius:14px; padding:6px 14px; background:#fff; box-shadow:5px 5px 0 var(--orange); }}
-.badge b {{ display:block; font-size:18px; font-weight:800; color:var(--blue); }}
-.badge span {{ font-size:14px; font-weight:700; color:var(--navy); }}
-.hero {{ text-align:center; }}
-.hero .k {{ display:inline-block; background:var(--orange); color:#fff; font-weight:800; font-size:20px; border-radius:999px; padding:4px 18px; }}
-.hero h1 {{ font-family:'Lalezar'; font-weight:400; margin:6px 0 0; font-size:84px; line-height:1.1; color:var(--navy); }}
-.hero h1 em {{ font-style:normal; color:var(--blue); }}
-.hero .tr {{ display:inline-block; margin-top:6px; font-size:26px; font-weight:800; color:#fff; background:var(--navy); border-radius:12px; padding:5px 22px; }}
-.card {{ background:#fff; border:2px solid #d6e2fb; border-radius:20px; padding:18px 20px; box-shadow:0 6px 18px rgba(19,41,75,.08); }}
-.card h2 {{ margin:0 0 14px; font-size:27px; font-weight:800; color:var(--blue); }}
-ul {{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:12px 14px; }}
-li {{ display:flex; align-items:center; gap:9px; font-size:20.5px; font-weight:800; color:var(--navy); background:var(--sky); border-radius:14px; padding:14px 10px; }}
-.tick {{ flex:none; width:30px; height:30px; border-radius:50%; background:var(--orange); color:#fff; display:grid; place-items:center; font-size:14px; }}
-.links {{ display:grid; grid-template-columns:1fr 1fr; gap:4.2mm; }}
-.lk {{ display:flex; align-items:center; gap:12px; border-radius:20px; padding:16px 16px; }}
-.lk .t {{ flex:1; }}
-.lk .t b {{ display:block; font-size:24px; font-weight:800; line-height:1.35; }}
-.lk .t small {{ display:block; font-size:14px; font-weight:600; opacity:.9; margin:2px 0 7px; line-height:1.5; }}
-.lk .u {{ display:inline-block; font:700 15px 'Lexend'; direction:ltr; border-radius:9px; padding:4px 10px; }}
-.qr {{ flex:none; background:#fff; border-radius:12px; padding:5px; }}
-.demo {{ background:var(--navy); color:#fff; }}
-.demo .u {{ background:var(--orange); color:#fff; }}
-.store {{ background:var(--orange-soft); color:var(--navy); border:2px solid var(--orange); }}
-.store .u {{ background:var(--navy); color:#fff; }}
-.proof {{ text-align:center; background:linear-gradient(90deg, var(--blue), var(--navy)); color:#fff; border-radius:18px; padding:16px 12px; }}
-.proof b {{ display:block; font-family:'Lalezar'; font-weight:400; font-size:40px; line-height:1.2; }}
-.proof span {{ font-size:18px; font-weight:700; opacity:.95; }}
-.tg {{ display:flex; justify-content:center; align-items:center; gap:10px; font-size:19px; font-weight:800; color:var(--navy); }}
-.tg .u {{ font:700 16px 'Lexend'; direction:ltr; background:var(--sky); color:var(--blue); border-radius:9px; padding:4px 12px; }}
-</style></head><body><div class="page">
-<div class="top">
-  <div class="brand">ملازم عدل</div>
-  <div class="badge"><b>الأقدم في شروحات {COURSE}</b><span>منذ عام 1444 هـ</span></div>
+body {{ background:var(--cream); }}
+.page {{ width:210mm; height:297mm; position:relative; overflow:hidden; background:var(--cream); }}
+.deco {{ position:absolute; left:0; width:100%; }} .deco.top {{ top:0; height:68mm; }} .deco.bot {{ bottom:0; height:52mm; }}
+.in {{ position:relative; height:100%; padding:10mm 14mm 9mm; display:flex; flex-direction:column; align-items:center; }}
+.badge {{ position:absolute; top:12mm; left:14mm; text-align:center; background:#fff; border:2px solid var(--navy); border-radius:16px; padding:7px 14px 5px; box-shadow:4px 4px 0 var(--rose); }}
+.badge b {{ display:block; font:700 15px 'Baloo Bhaijaan 2'; color:var(--navy); line-height:1.3; }}
+.badge span {{ font-size:12.5px; font-weight:700; color:var(--rose); }}
+.logo {{ height:35mm; margin-top:3mm; }}
+.kick {{ margin-top:3mm; font:600 19px 'Baloo Bhaijaan 2'; color:var(--rose); }}
+h1 {{ margin:-2mm 0 0; font:800 74px/1.12 'Baloo Bhaijaan 2'; color:var(--navy); }}
+.track {{ margin-top:1mm; font:700 21px 'Baloo Bhaijaan 2'; color:#fff; background:var(--blue); border-radius:999px; padding:3px 26px 1px; }}
+.sec {{ width:100%; margin-top:5mm; }}
+.sec h2 {{ display:flex; align-items:center; gap:10px; margin:0 0 3.5mm; font:800 24px 'Baloo Bhaijaan 2'; color:var(--navy); }}
+.sec h2::after {{ content:""; flex:1; height:2px; background:linear-gradient(90deg, transparent, var(--blue)); border-radius:2px; }}
+.grid {{ display:grid; grid-template-columns:1fr 1fr; gap:3mm 4mm; }}
+.f {{ display:flex; align-items:center; gap:10px; background:#fff; border:1.5px solid #e6e1d3; border-radius:16px; padding:9px 12px; font-size:19px; font-weight:800; color:var(--navy); }}
+.ic {{ flex:none; width:36px; height:36px; border-radius:12px; display:grid; place-items:center; }}
+.ic.b {{ background:var(--blue-soft); }} .ic.r {{ background:var(--rose-soft); }}
+.ic svg {{ width:21px; height:21px; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }}
+.ic.b svg {{ stroke:var(--navy); }} .ic.r svg {{ stroke:var(--rose); }}
+.cta {{ width:100%; margin-top:5mm; display:grid; gap:3.5mm; }}
+.c {{ display:flex; align-items:center; gap:16px; border-radius:22px; padding:9px 12px 9px 22px; }}
+.c .t {{ flex:1; }}
+.c b {{ display:block; font:800 27px/1.25 'Baloo Bhaijaan 2'; }}
+.c small {{ display:block; font-size:15px; font-weight:700; margin:2px 0 8px; opacity:.92; }}
+.c .u {{ display:inline-block; font:600 16px 'Lexend'; direction:ltr; border-radius:9px; padding:3px 10px; }}
+.c .q {{ flex:none; background:#fff; border-radius:12px; padding:5px; }}
+.c.demo {{ background:var(--navy); color:#fff; }} .c.demo .u {{ background:#fff; color:var(--navy); }}
+.c.store {{ background:var(--rose); color:#fff; }} .c.store .u {{ background:#fff; color:var(--rose); }}
+.proof {{ width:100%; margin-top:5mm; background:#fff; border:2px dashed var(--blue); border-radius:20px; padding:10px 16px; text-align:center; }}
+.proof b {{ display:block; font:800 25px 'Baloo Bhaijaan 2'; color:var(--navy); }}
+.proof p {{ margin:2px 0 0; font-size:15px; font-weight:700; color:var(--ink); line-height:1.6; }}
+.proof p em {{ font-style:normal; color:var(--rose); font-weight:800; }}
+.tg {{ margin-top:auto; position:relative; display:flex; align-items:center; gap:9px; background:#fff; border-radius:999px; padding:6px 18px; font-size:16px; font-weight:800; color:var(--navy); box-shadow:0 3px 10px rgba(32,75,125,.12); }}
+.tg .u {{ font:600 15px 'Lexend'; direction:ltr; color:var(--rose); }}
+</style></head><body><div class="page">{DECO_TOP}{DECO_BOT}<div class="in">
+<div class="badge"><b>الأقدم في شروحات {COURSE}</b><span>منذ عام 1444 هـ</span></div>
+<img class="logo" src="{data_uri(LOGO)}" alt="عدل">
+<div class="kick">دورة ملازم عدل</div>
+<h1>{COURSE}</h1>
+<div class="track">{TRACK}</div>
+<div class="sec"><h2>الدورة تشمل</h2><div class="grid">{feats}</div></div>
+<div class="cta">
+  <a class="c demo" href="{DEMO}"><div class="t"><b>شاهد الشرح التجريبي</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">t.me/mlazmadl/3465</span></div><div class="q">{qr_img(DEMO, 88)}</div></a>
+  <a class="c store" href="{STORE}"><div class="t"><b>اشترك الآن من متجرنا</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">mtgradl.com</span></div><div class="q">{qr_img(STORE, 88)}</div></a>
 </div>
-<div class="hero">
-  <span class="k">دورة ملازم عدل</span>
-  <h1>دورة <em>{COURSE}</em></h1>
-  <span class="tr">{TRACK}</span>
-</div>
-<div class="card"><h2>الدورة تشمل:</h2><ul>{lis}</ul></div>
-<div class="links">
-  <a class="lk demo" href="{DEMO}"><div class="t"><b>شاهد الشرح التجريبي</b><small>جرّب بنفسك قبل ما تشترك</small><span class="u">t.me/mlazmadl/3465</span></div><div class="qr">{qr_img(DEMO, 128)}</div></a>
-  <a class="lk store" href="{STORE}"><div class="t"><b>اشترك الآن من متجرنا</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">mtgradl.com</span></div><div class="qr">{qr_img(STORE, 128)}</div></a>
-</div>
-<div class="proof"><b>درجات طلابنا تتكلم عنّا</b><span>شوف درجات مشتركي الدورة في الصفحات التالية ({n_imgs} صورة)</span></div>
+<div class="proof"><b>درجات طلابنا في الصفحات التالية</b><p>{NOTE_HTML}</p></div>
 <a class="tg" href="{TELEGRAM}">قناتنا لمعرفة كل جديد: <span class="u">t.me/mlazmadl</span></a>
-</div></body></html>"""
+</div></div></body></html>"""
 
 
 def frame_html(page_no, total):
-    """إطار صفحات الدرجات: عنوان فوق + روابط القناة والمتجر تحت."""
+    """إطار صفحات الدرجات: الشعار + اسم المقرر فوق، التنويه، وروابط القناة والمتجر تحت."""
     return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8">{FONTS}<style>{BASE_CSS}
 @page {{ size:A4; margin:0; }}
-body {{ background:#fff; }}
-.page {{ width:210mm; height:297mm; position:relative; background:linear-gradient(#f4f7fd, #fff 20%); }}
-.head {{ position:absolute; top:8mm; left:10mm; right:10mm; height:13mm; display:flex; align-items:center; justify-content:space-between;
-  background:var(--navy); color:#fff; border-radius:12px; padding:0 14px; box-shadow:4px 4px 0 var(--orange); }}
-.head b {{ font-family:'Lalezar'; font-weight:400; font-size:23px; }}
-.head span {{ font-size:14px; font-weight:700; color:#ffd7ad; }}
-.foot {{ position:absolute; bottom:6mm; left:10mm; right:10mm; height:12mm; display:flex; gap:3mm; }}
-.foot a {{ flex:1; display:flex; align-items:center; justify-content:center; gap:8px; border-radius:11px; font-size:14.5px; font-weight:800; }}
-.foot .u {{ font:700 14px 'Lexend'; direction:ltr; }}
-.foot .tg {{ background:var(--sky); color:var(--navy); }} .foot .tg .u {{ color:var(--blue); }}
-.foot .st {{ background:var(--orange-soft); color:var(--navy); border:1.5px solid var(--orange); }} .foot .st .u {{ color:#c25e00; }}
-.pn {{ position:absolute; bottom:19.5mm; left:0; right:0; text-align:center; font:600 10px 'Lexend'; color:var(--muted); }}
+body {{ background:var(--cream); }}
+.page {{ width:210mm; height:297mm; position:relative; overflow:hidden; background:var(--cream); }}
+.head {{ position:absolute; top:7mm; left:12mm; right:12mm; height:16mm; display:flex; align-items:center; justify-content:space-between; border-bottom:2px solid var(--blue-soft); }}
+.head .ttl b {{ display:block; font:800 21px/1.2 'Baloo Bhaijaan 2'; color:var(--navy); }}
+.head .ttl span {{ font:700 13px 'Baloo Bhaijaan 2'; color:var(--rose); }}
+.head img {{ height:13mm; }}
+.note {{ position:absolute; top:25mm; left:12mm; right:12mm; text-align:center; font-size:11.5px; font-weight:700; color:var(--muted); }}
+.note em {{ font-style:normal; color:var(--rose); }}
+.foot {{ position:absolute; bottom:6mm; left:12mm; right:12mm; height:11mm; display:flex; gap:3mm; }}
+.foot a {{ flex:1; display:flex; align-items:center; justify-content:center; gap:8px; border-radius:999px; font-size:14px; font-weight:800; }}
+.foot .u {{ font:600 13.5px 'Lexend'; direction:ltr; }}
+.foot .tg {{ background:var(--navy); color:#fff; }} .foot .tg .u {{ color:#cfe0f5; }}
+.foot .st {{ background:var(--rose); color:#fff; }} .foot .st .u {{ color:#fff3f8; }}
+.pn {{ position:absolute; bottom:18.5mm; left:0; right:0; text-align:center; font:600 10px 'Lexend'; color:var(--muted); }}
 </style></head><body><div class="page">
-<div class="head"><b>درجات طلاب دورة ملازم عدل</b><span>{COURSE} · {TRACK}</span></div>
+<div class="head"><div class="ttl"><b>درجات طلاب دورة ملازم عدل</b><span>{COURSE} · {TRACK}</span></div><img src="{data_uri(LOGO)}" alt="عدل"></div>
+<div class="note">{NOTE_HTML}</div>
 <div class="pn"><span class="en">{page_no} / {total}</span></div>
 <div class="foot">
   <a class="tg" href="{TELEGRAM}">قناتنا لمعرفة كل جديد: <span class="u">t.me/mlazmadl</span></a>
@@ -122,84 +167,135 @@ body {{ background:#fff; }}
 </div></div></body></html>"""
 
 
-def watermark_html():
-    """علامة مائية شفافة (بدون خلفية) تنحط فوق الصور."""
-    cells = "".join('<div class="w">حقوق ملازم عدل<small>mtgradl.com</small></div>' for _ in range(40))
+def watermark_html(w_mm, h_mm):
+    """علامة مائية شفافة (بدون خلفية) تنحط فوق منطقة الصور."""
+    cells = "".join('<div class="w">حقوق ملازم عدل<small>mtgradl.com</small></div>' for _ in range(42))
     return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8">{FONTS}<style>{BASE_CSS}
-@page {{ size:190mm 248mm; margin:0; }}
+@page {{ size:{w_mm}mm {h_mm}mm; margin:0; }}
 html,body {{ background:transparent; overflow:hidden; }}
-.page {{ width:190mm; height:248mm; overflow:hidden; position:relative; }}
-.grid {{ position:absolute; left:-70mm; top:-60mm; width:330mm; height:380mm; transform:rotate(-30deg);
-  display:grid; grid-template-columns:repeat(5, 1fr); align-content:space-around; justify-items:center; row-gap:16mm; }}
-.w {{ font-family:'Lalezar'; font-size:31px; color:rgba(19,41,75,.13); text-align:center; line-height:1.1; white-space:nowrap; }}
-.w small {{ display:block; font:700 14px 'Lexend'; color:rgba(240,138,36,.2); }}
-.w:nth-child(10n+6), .w:nth-child(10n+7), .w:nth-child(10n+8), .w:nth-child(10n+9), .w:nth-child(10n+10) {{ transform:translateX(-24mm); }}
+.page {{ width:{w_mm}mm; height:{h_mm}mm; overflow:hidden; position:relative; }}
+.grid {{ position:absolute; left:-70mm; top:-60mm; width:330mm; height:380mm; transform:rotate(-28deg);
+  display:grid; grid-template-columns:repeat(6, 1fr); align-content:space-around; justify-items:center; }}
+.w {{ font:800 25px/1 'Baloo Bhaijaan 2'; color:rgba(32,75,125,.15); -webkit-text-stroke:.7px rgba(255,255,255,.28); text-align:center; white-space:nowrap; }}
+.w small {{ display:block; margin-top:3px; font:600 11px 'Lexend'; color:rgba(176,105,141,.3); -webkit-text-stroke:0; }}
+.w:nth-child(12n+7), .w:nth-child(12n+8), .w:nth-child(12n+9), .w:nth-child(12n+10), .w:nth-child(12n+11), .w:nth-child(12n+12) {{ transform:translateX(-20mm); }}
 </style></head><body><div class="page"><div class="grid">{cells}</div></div></body></html>"""
 
 
+def closing_html(w_mm, h_mm):
+    """مربع ختامي يملأ الفراغ في آخر صفحة: دعوة للاشتراك + باركود المتجر."""
+    return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8">{FONTS}<style>{BASE_CSS}
+@page {{ size:{w_mm}mm {h_mm}mm; margin:0; }}
+html,body {{ background:transparent; }}
+.box {{ width:{w_mm}mm; height:{h_mm}mm; border-radius:22px; background:var(--navy); color:#fff; display:flex; align-items:center; gap:18px; padding:0 20px 0 26px; position:relative; overflow:hidden; }}
+.box::before {{ content:""; position:absolute; left:-40px; bottom:-60px; width:220px; height:180px; border-radius:50%; background:rgba(176,105,141,.45); }}
+.box::after {{ content:""; position:absolute; right:-30px; top:-50px; width:150px; height:120px; border-radius:50%; background:rgba(108,137,172,.35); }}
+.t {{ flex:1; position:relative; z-index:1; }}
+.t b {{ display:block; font:800 30px/1.25 'Baloo Bhaijaan 2'; }}
+.t p {{ margin:4px 0 10px; font-size:16px; font-weight:700; opacity:.92; }}
+.u {{ display:inline-block; font:600 17px 'Lexend'; direction:ltr; background:#fff; color:var(--navy); border-radius:10px; padding:4px 14px; }}
+.q {{ position:relative; z-index:1; background:#fff; border-radius:14px; padding:6px; }}
+</style></head><body><div class="box"><div class="t"><b>تبي تكون منهم؟</b><p>اشترك الآن في دورة {COURSE} ({TRACK})</p><span class="u" id="st">mtgradl.com</span></div>
+<div class="q" id="qr">{qr_img(STORE, 120)}</div></div></body></html>"""
+
+
 def spread_order(items, grade_of, seed):
-    """خلط عشوائي، والصور اللي درجتها متساوية ما تجي جنب بعض (قدر الإمكان)."""
+    """خلط عشوائي، والصور اللي درجتها متساوية تكون متباعدة قدر الإمكان (الـ25 مثلاً موزعة على الصفحات)،
+    والدرجات العالية (24 وفوق) بعد ما تتجمع في مكان واحد."""
     rng = random.Random(seed)
     pool = items[:]
     rng.shuffle(pool)
+    n = len(items)
+    keys = [lambda it: grade_of(it), lambda it: grade_of(it) is not None and grade_of(it) >= 24]
+    totals = [{} for _ in keys]
+    for it in items:
+        for t, key in zip(totals, keys):
+            t[key(it)] = t.get(key(it), 0) + 1
     out = []
+
+    def score(it):
+        sc = 1.0
+        for t, key in zip(totals, keys):
+            k = key(it)
+            if k is None or k is False:
+                continue
+            ideal = n / t[k]
+            d = next((j for j, x in enumerate(reversed(out), 1) if key(x) == k), n)
+            sc = min(sc, min(d, ideal) / ideal)
+        return sc
+
     while pool:
-        # الأولوية للدرجة الأكثر تبقّياً (عشان ما تتكدس في الآخر)، بشرط ما تساوي آخر درجتين
-        counts = {}
-        for it in pool:
-            counts[grade_of(it)] = counts.get(grade_of(it), 0) + 1
-        recent = {grade_of(x) for x in out[-2:]}
-        cands = [it for it in pool if grade_of(it) not in recent or grade_of(it) is None] or \
-                [it for it in pool if not out or grade_of(it) != grade_of(out[-1])] or pool
-        top = max(counts.get(grade_of(it), 0) for it in cands)
-        best = [it for it in cands if counts.get(grade_of(it), 0) >= max(1, top - 1)]
-        pick = rng.choice(best)
+        best = max(score(it) for it in pool)
+        pick = rng.choice([it for it in pool if score(it) >= best - 0.05])
         pool.remove(pick)
         out.append(pick)
     return out
 
 
-def layout(aspects, W, H, gap, target_h):
-    """صفوف متساوية العرض (justified rows) ثم توزيع الصفوف على الصفحات.
-    يرجّع: قائمة صفحات، كل صفحة قائمة صفوف، كل صف (ارتفاع، [(index, عرض)])."""
-    rows, cur = [], []
-    for i, a in enumerate(aspects):
-        cur.append(i)
-        s = sum(aspects[j] for j in cur)
-        if s * target_h + gap * (len(cur) - 1) >= W:
-            h = min((W - gap * (len(cur) - 1)) / s, H)
-            rows.append((h, cur))
-            cur = []
-    if cur:  # آخر صف: بنفس الارتفاع المستهدف وفي النص
-        s = sum(aspects[j] for j in cur)
-        h = min(target_h, (W - gap * (len(cur) - 1)) / s, H)
-        rows.append((h, cur))
-    pages, pg, used = [], [], 0
-    for h, idx in rows:
-        need = h + (gap if pg else 0)
-        if pg and used + need > H:
-            pages.append(pg)
-            pg, used = [], 0
-            need = h
-        pg.append((h, [(j, aspects[j] * h) for j in idx]))
-        used += need
-    if pg:
-        pages.append(pg)
+def spread_quality(order, grade_of):
+    """أقل مسافة بين صورتين بنفس الدرجة (مقسومة على المسافة المثالية)، والـ25 وزنها أكبر."""
+    n, q = len(order), []
+    for k in {grade_of(x) for x in order if grade_of(x) is not None}:
+        pos = [i for i, x in enumerate(order) if grade_of(x) == k]
+        if len(pos) > 1:
+            d = min(b - a for a, b in zip(pos, pos[1:])) / (n / len(pos))
+            q.append(d * (0.5 if k == max(grade_of(x) for x in order) else 1))
+    return min(q, default=1), sum(q)
+
+
+def masonry(heights, H, gap):
+    """توزيع على عمودين: كل صورة تروح للعمود الأقصر، وإذا ما وسعت تبدأ صفحة جديدة.
+    يرجّع قائمة صفحات، كل صفحة [(index, عمود, y)]."""
+    pages, cur, cols = [], [], [0.0, 0.0]
+    for i, h in enumerate(heights):
+        c = 0 if cols[0] <= cols[1] else 1
+        y = cols[c] + (gap if cols[c] else 0)
+        if y + h > H:
+            c2 = 1 - c
+            y2 = cols[c2] + (gap if cols[c2] else 0)
+            if y2 + h <= H:
+                c, y = c2, y2
+            else:
+                pages.append(cur)
+                cur, cols, c, y = [], [0.0, 0.0], 0, 0.0
+        cur.append((i, c, y))
+        cols[c] = y + h
+    if cur:
+        pages.append(cur)
     return pages
 
 
-def render(pg, html_text, out):
+def rounded_mask(page, r, rad, color):
+    """يغطي زوايا الصورة بلون الخلفية عشان تطلع زواياها دائرية (بدون ما نعيد ضغط الصورة)."""
+    k = 0.5523 * rad
+    x0, y0, x1, y1 = r
+    sh = page.new_shape()
+    for (cx, cy, sx, sy) in ((x0, y0, 1, 1), (x1, y0, -1, 1), (x0, y1, 1, -1), (x1, y1, -1, -1)):
+        p0 = pymupdf.Point(cx, cy)
+        a = pymupdf.Point(cx + sx * rad, cy)
+        b = pymupdf.Point(cx, cy + sy * rad)
+        sh.draw_polyline([b, p0, a])
+        sh.draw_bezier(a, pymupdf.Point(cx + sx * (rad - k), cy), pymupdf.Point(cx, cy + sy * (rad - k)), b)
+        sh.finish(fill=color, color=None, closePath=True)
+    sh.commit()
+
+
+def render(pg, html_text, out, bg=True):
     pg.set_content(html_text, wait_until="networkidle")
     pg.evaluate("document.fonts.ready")
-    pg.pdf(path=str(out), format="A4", print_background=True, prefer_css_page_size=True)
+    pg.pdf(path=str(out), print_background=bg, prefer_css_page_size=True)
 
 
-def add_links(page, uris):
+def check_links(page, uris):
     """روابط Chrome تنحفظ مع insert_pdf (Chrome يضيف / في آخر الرابط)، بس نتأكد إنها موجودة."""
     have = {(l.get("uri") or "").rstrip("/") for l in page.get_links()}
     missing = [u for u in uris if u.rstrip("/") not in have]
     if missing:
         raise SystemExit(f"روابط ناقصة في الصفحة: {missing}")
+
+
+def hexrgb(h):
+    return tuple(int(h[i:i + 2], 16) / 255 for i in (1, 3, 5))
 
 
 def main():
@@ -208,7 +304,6 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--grades", help="ملف: اسم_الملف<TAB>الدرجة")
     ap.add_argument("--seed", type=int, default=1448)
-    ap.add_argument("--per-row-h", type=float, default=0, help="ارتفاع الصف المستهدف بالنقاط (0 = تلقائي)")
     a = ap.parse_args()
 
     files = sorted(p for p in pathlib.Path(a.images).iterdir() if p.suffix.lower() in IMG_EXT)
@@ -217,65 +312,87 @@ def main():
     grades = {}
     if a.grades:
         for line in pathlib.Path(a.grades).read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                name, g = line.split("\t")
-                grades[name.strip()] = g.strip()
-    files = spread_order(files, lambda p: grades.get(p.name), a.seed)
+            if line.strip() and not line.startswith("#"):
+                name, g = line.split("\t")[:2]
+                grades[name.strip()] = float(g)
+        missing = [f.name for f in files if f.name not in grades]
+        if missing:
+            raise SystemExit(f"صور بدون درجة في {a.grades}: {missing}")
+    # نجرب كذا خلطة ونختار اللي الدرجات المتساوية فيها أبعد عن بعض
+    g = lambda p: grades.get(p.name)
+    files = max((spread_order(files, g, a.seed + t) for t in range(200)), key=lambda o: spread_quality(o, g))
 
     # مقاسات الصفحة بالنقاط (A4 = 595×842)
     PW, PH = 595.28, 841.89
     mm = 72 / 25.4
-    X0, X1 = 10 * mm, PW - 10 * mm
-    Y0, Y1 = 26 * mm, PH - 23 * mm
-    W, H, gap = X1 - X0, Y1 - Y0, 4 * mm
-    aspects = []
+    X0, X1 = 12 * mm, PW - 12 * mm
+    Y0, Y1 = 31 * mm, PH - 22 * mm
+    W, H, gap = X1 - X0, Y1 - Y0, 5 * mm
+    CLOSE_MM = 48  # ارتفاع المربع الختامي
+    colw = (W - gap) / 2
+    heights = []
     for f in files:
         pix = pymupdf.Pixmap(str(f))
-        aspects.append(pix.width / pix.height)
-    target_h = a.per_row_h or min(H / 2 - gap, max(H / 4, W / (2.2 * (sum(aspects) / len(aspects)))))
-    pages = layout(aspects, W, H, gap, target_h)
+        heights.append(colw * pix.height / pix.width)
+    pages = masonry(heights, H, gap)
+    # توازن: أقل ارتفاع يعطي نفس عدد الصفحات، عشان آخر صفحة ما تطلع فاضية والصفحات متقاربة
+    lo, hi = max(heights), H
+    for _ in range(30):
+        mid = (lo + hi) / 2
+        if len(masonry(heights, mid, gap)) <= len(pages):
+            hi = mid
+        else:
+            lo = mid
+    pages = masonry(heights, hi, gap)
 
     tmp = pathlib.Path(tempfile.mkdtemp())
     with sync_playwright() as p:
         b = p.chromium.launch(executable_path="/opt/pw-browsers/chromium")
         pg = b.new_page()
-        render(pg, cover_html(len(files)), tmp / "cover.pdf")
+        render(pg, cover_html(), tmp / "cover.pdf")
         for k in range(len(pages)):
             render(pg, frame_html(k + 1, len(pages)), tmp / f"frame{k}.pdf")
-        pg.set_content(watermark_html(), wait_until="networkidle")
-        pg.evaluate("document.fonts.ready")
-        pg.pdf(path=str(tmp / "wm.pdf"), print_background=False, prefer_css_page_size=True)
+        render(pg, closing_html(round(W / mm, 2), CLOSE_MM), tmp / "close.pdf", bg=True)
+        render(pg, watermark_html(round((X1 - X0) / mm, 2), round((Y1 - Y0) / mm, 2)), tmp / "wm.pdf", bg=False)
         b.close()
 
     out = pymupdf.open()
     out.insert_pdf(pymupdf.open(tmp / "cover.pdf"))
     if out.page_count != 1:
         raise SystemExit(f"الغلاف طلع {out.page_count} صفحات")
-    add_links(out[0], [DEMO, STORE, TELEGRAM])
+    check_links(out[0], [DEMO, STORE, TELEGRAM])
     wm = pymupdf.open(tmp / "wm.pdf")
-    for k, rows in enumerate(pages):
+    shadow = hexrgb("#e9dfd0")
+    for k, cells in enumerate(pages):
         out.insert_pdf(pymupdf.open(tmp / f"frame{k}.pdf"))
         page = out[-1]
-        add_links(page, [STORE, TELEGRAM])
-        # توزيع المساحة الفاضية بالتساوي بين الصفوف (بحد أقصى) عشان الصفحة تبين مرتبة
-        used = sum(h for h, _ in rows) + gap * (len(rows) - 1)
-        extra = min((H - used) / (len(rows) + 1), 14 * mm)
-        y = Y0 + (H - used - extra * (len(rows) - 1)) / 2
-        for h, cells in rows:
-            rw = sum(w for _, w in cells) + gap * (len(cells) - 1)
-            x = X0 + (W - rw) / 2
-            for j, w in cells:
-                r = pymupdf.Rect(x, y, x + w, y + h)
-                page.draw_rect(r + (1.5, 1.5, 1.5, 1.5), color=None, fill=(0.94, 0.54, 0.14), radius=None)
-                page.insert_image(r, filename=str(files[j]))  # الصورة الأصلية نفسها بدون ضغط
-                page.draw_rect(r, color=(0.075, 0.16, 0.29), width=1.2)
-                x += w + gap
-            y += h + gap + extra
-        page.show_pdf_page(pymupdf.Rect(X0, Y0, X1, Y1), wm, 0, overlay=True)  # العلامة المائية على منطقة الصور بس
+        check_links(page, [STORE, TELEGRAM])
+        # المحتوى في النص عمودياً
+        used = max(y + heights[i] for i, _, y in cells)
+        dy = min((H - used) / 2, 4 * mm)
+        for i, c, y in cells:
+            x = X1 - colw - c * (colw + gap)  # العمود الأول يمين (RTL)
+            r = pymupdf.Rect(x, Y0 + dy + y, x + colw, Y0 + dy + y + heights[i])
+            page.draw_rect(r + (2.5, 3, 2.5, 3), color=None, fill=shadow, radius=9 / min(r.width, r.height))
+            page.insert_image(r, filename=str(files[i]))  # الصورة الأصلية نفسها بدون ضغط
+            rounded_mask(page, r, 9, CREAM)
+            # العلامة المائية على الصورة نفسها (نفس النمط ممتد على الصفحة، بس ما يطلع على الفراغ)
+            page.show_pdf_page(r, wm, 0, clip=r - (X0, Y0, X0, Y0), overlay=True)
+            page.draw_rect(r, color=hexrgb(BLUE), width=1, radius=9 / min(r.width, r.height))
 
+    # المربع الختامي في آخر صفحة إذا فيه فراغ تحت الصور
+    page = out[-1]
+    cells = pages[-1]
+    bottom = Y0 + min((H - max(y + heights[i] for i, _, y in cells)) / 2, 4 * mm) + max(y + heights[i] for i, _, y in cells)
+    box_h = CLOSE_MM * mm
+    if Y1 - bottom >= box_h + gap:
+        r = pymupdf.Rect(X0, Y1 - box_h, X1, Y1)
+        page.show_pdf_page(r, pymupdf.open(tmp / "close.pdf"), 0)
+        page.insert_link({"kind": pymupdf.LINK_URI, "from": r, "uri": STORE})
     out.set_metadata({"title": f"درجات طلاب دورة ملازم عدل — {COURSE} ({TRACK})", "author": "ملازم عدل"})
     out.save(a.out, garbage=3, deflate=True)
     print(f"{a.out}: {out.page_count} صفحة، {len(files)} صورة")
+    print("الترتيب:", " ".join(f"{f.stem}({grades.get(f.name, '?')})" for f in files))
 
 
 if __name__ == "__main__":
