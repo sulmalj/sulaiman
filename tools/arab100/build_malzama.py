@@ -132,17 +132,90 @@ KEEP_JS = """() => {
 }"""
 
 
+# ما نفتح سطر جديد عشان كلمة أو كلمتين: إذا آخر سطر في الفقرة قصير مرة، نضغط الفقرة شوي
+# (مسافة الكلمات ثم حجم الخط بحد أقصى) لين يرجع الكلام سطر أقل؛ وإذا ما نفع نرجعها مثل ما كانت.
+TIGHTEN_JS = """() => {
+  const lineInfo = (el) => {
+    const r = document.createRange(); r.selectNodeContents(el);
+    const rects = [...r.getClientRects()].filter(x => x.width > 0.5 && x.height > 4);
+    const rows = [];
+    for (const x of rects) {
+      let row = rows.find(o => Math.abs(o.top - x.top) < x.height * 0.5);
+      if (!row) { row = {top: x.top, left: x.left, right: x.right}; rows.push(row); }
+      row.left = Math.min(row.left, x.left); row.right = Math.max(row.right, x.right);
+    }
+    rows.sort((a, b) => a.top - b.top);
+    return rows;
+  };
+  const els = document.querySelectorAll('.ln, .note, .pill, .card, li, .bul > div, td, .box .qt, .box .fix');
+  for (const el of els) {
+    const rows = lineInfo(el);
+    if (rows.length < 2) continue;
+    const full = Math.max(...rows.map(o => o.right - o.left));
+    const last = rows[rows.length - 1];
+    if ((last.right - last.left) > full * 0.22) continue;
+    const n0 = rows.length, fs0 = parseFloat(getComputedStyle(el).fontSize);
+    const steps = [];
+    // مسافة الكلمات تنقص شوي بس (أكثر من كذا تلتصق الكلمات العربية)، والباقي من حجم الخط
+    for (const ws of [-0.3, -0.6]) steps.push([ws, 1]);
+    for (const k of [0.98, 0.96, 0.94, 0.92, 0.9]) for (const ws of [0, -0.6]) steps.push([ws, k]);
+    let ok = false;
+    for (const [ws, k] of steps) {
+      el.style.wordSpacing = ws + 'pt';
+      el.style.fontSize = (fs0 * k) + 'px';
+      if (lineInfo(el).length < n0) { ok = true; break; }
+    }
+    if (!ok) { el.style.wordSpacing = ''; el.style.fontSize = ''; }
+    else window.__fixed = (window.__fixed || 0) + 1;
+  }
+  return window.__fixed || 0;
+}"""
+
+
 def render(html_str, out_pdf, browser):
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name
-    pg = browser.new_page()
+    # عرض الصفحة = عرض منطقة الطباعة بالضبط (الصفحة ناقص الهوامش) عشان قياس الأسطر يطابق الـPDF
+    pg = browser.new_page(viewport={"width": round((W - 26) * 96 / 72), "height": 1100})
+    pg.emulate_media(media="print")
     pg.goto(pathlib.Path(path).as_uri())
     pg.evaluate(KEEP_JS)
     pg.evaluate("document.fonts.ready")
     pg.wait_for_timeout(300)
+    fixed = pg.evaluate(TIGHTEN_JS)
+    if fixed:
+        print(f"  {pathlib.Path(out_pdf).name}: انضمّت {fixed} كلمة يتيمة لسطرها")
     pg.pdf(path=str(out_pdf), print_background=True, prefer_css_page_size=True)
     pg.close()
+
+
+def last_page_fill(pdf_path):
+    """نسبة المساحة المستخدمة في آخر صفحة (من أعلى منطقة المحتوى لأسفل عنصر فيها)."""
+    d = pymupdf.open(pdf_path)
+    pg = d[-1]
+    bottoms = [b[3] for b in pg.get_text("blocks")] + [x["rect"].y1 for x in pg.get_drawings()]
+    top, bot = 84, H - 36
+    n = d.page_count
+    return n, (max(bottoms, default=top) - top) / (bot - top)
+
+
+def render_fit(src, out_pdf, browser):
+    """إذا آخر صفحة في الدرس فيها شي بسيط (جدول لحاله مثلاً)، نصغّر الدرس كله شوي لين يرجع للصفحة اللي قبل،
+    بحد أقصى 92%؛ وإذا ما نفع نخليه مثل ما هو."""
+    render(doc(src), out_pdf, browser)
+    n0, fill = last_page_fill(out_pdf)
+    if n0 < 2 or fill > 0.7:
+        return
+    trial = pathlib.Path(str(out_pdf) + ".fit.pdf")
+    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .ln{margin:6pt 0;line-height:1.9} "
+             ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
+    for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
+        render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
+        if last_page_fill(trial)[0] < n0:
+            trial.replace(out_pdf)
+            print(f"  {pathlib.Path(out_pdf).name}: انضمّت آخر صفحة (تصغير {round((1 - z) * 100)}%{' + مسافات أقل' if t else ''})")
+            return
 
 
 def doc(body, extra_css=""):
@@ -295,7 +368,7 @@ def main():
         for li, les in enumerate(lessons):
             src = les if isinstance(les, str) else les.read_text(encoding="utf-8")
             title = re.match(r"<!--\s*(.+?)\s*-->", src).group(1)
-            render(doc(src), tmp / f"c{li}.pdf", br)
+            render_fit(src, tmp / f"c{li}.pdf", br)
             overlays.append((tmp / f"c{li}.pdf", title, False))
             bank = None if isinstance(les, str) else HERE / "bank" / (les.stem + ".txt")
             if bank and bank.exists():
