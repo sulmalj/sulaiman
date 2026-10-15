@@ -49,8 +49,8 @@ html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'
 p {{ margin:0; }}
 .sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
-.sec::before {{ content:''; display:inline-block; width:5pt; height:5pt; border-radius:50%; background:var(--sec);
-               margin-left:9pt; vertical-align:middle; }}
+/* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
+.sec::before {{ content:'●'; font-family:'DejaVu Sans',sans-serif; font-size:7pt; color:var(--sec); margin-left:9pt; vertical-align:2pt; }}
 .sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
