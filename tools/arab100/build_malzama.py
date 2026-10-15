@@ -45,36 +45,40 @@ CSS = f"""
         --teal:#41848d; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
 * {{ box-sizing:border-box; }}
 html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:700;
-            font-size:12.6pt; line-height:1.55; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
+            font-size:12.6pt; line-height:1.6; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
 p {{ margin:0; }}
-.sec {{ color:var(--sec); font-size:14pt; margin:12pt 0 6pt; break-after:avoid; }}
+.sec {{ color:var(--sec); font-size:14.5pt; margin:20pt 0 8pt; break-after:avoid; }}
+body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .sec::before {{ content:''; display:inline-block; width:5pt; height:5pt; border-radius:50%; background:var(--sec);
                margin-left:9pt; vertical-align:middle; }}
-.sub {{ color:var(--sub); font-size:13.4pt; margin:9pt 0 3pt; break-after:avoid; }}
+.sub {{ color:var(--sub); font-size:13.4pt; margin:16pt 0 6pt; break-after:avoid; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
 .ex {{ color:var(--ex); }}
 .red {{ color:var(--mithl); }}
-.ln {{ display:block; width:fit-content; max-width:100%; background:var(--hl); padding:2.5pt 8pt; margin:6pt 0; border-radius:2pt; break-inside:avoid; }}
-.pill {{ background:var(--pill); border-radius:22pt; padding:6pt 14pt; margin:6pt 0 8pt; break-inside:avoid; }}
-.dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:10pt 0; }}
+.ln {{ display:block; background:var(--hl); padding:4pt 9pt; margin:8pt 0; border-radius:3pt; break-inside:avoid;
+       text-align:justify; text-align-last:right; }}
+.pill {{ background:var(--pill); border-radius:22pt; padding:7pt 16pt; margin:8pt 0 10pt; break-inside:avoid; text-align:justify; text-align-last:right; }}
+.dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
-ol.n > li, ul.b > li {{ margin:2pt 0; break-inside:avoid; }}
+ol.n > li, ul.b > li {{ margin:4pt 0; break-inside:avoid; }}
 ul.b > li::marker {{ color:var(--sec); }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
 .dot {{ display:block; width:15pt; height:15pt; border-radius:50%; margin:0 auto 4pt; }}
 .d1 {{ background:#e3a594; }} .d2 {{ background:#f0c98d; }} .d3 {{ background:#8db3b3; }} .d4 {{ background:#bb9cae; }}
-.bul {{ display:flex; gap:8pt; align-items:flex-start; margin:7pt 0; break-inside:avoid; }}
+.bul {{ display:flex; gap:8pt; align-items:flex-start; margin:9pt 0; break-inside:avoid; }}
 .bul > .dot {{ flex:none; margin:3pt 0 0; width:13pt; height:13pt; }}
-table.t {{ width:100%; border-collapse:collapse; margin:7pt 0 9pt; font-size:11.6pt; line-height:1.45; }}
+table.t {{ width:100%; border-collapse:collapse; margin:9pt 0 12pt; font-size:11.6pt; line-height:1.45; }}
 table.t th {{ background:var(--blue); color:#fff; font-family:'{FONT_HEAD}'; font-weight:700; font-size:11.6pt; padding:5pt 6pt; border:.8pt solid #2b2b2b; }}
 table.t td {{ padding:4pt 6pt; border:.8pt solid #2b2b2b; text-align:center; vertical-align:middle; }}
 table.t tr {{ break-inside:avoid; }}
 table.t td.r {{ text-align:right; }}
 table.t td.no {{ width:20pt; }}
 .u {{ text-decoration:underline; text-decoration-thickness:1.2pt; text-underline-offset:3pt; }}
-.note {{ border-right:4pt solid var(--term); background:var(--hl); padding:5pt 9pt; margin:7pt 0; break-inside:avoid; border-radius:2pt; }}
+.note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
+.keep {{ break-inside:avoid; }}
+table.t.short {{ break-inside:avoid; }}
 .two {{ display:flex; gap:14pt; break-inside:avoid; }}
 .two > div {{ flex:1; }}
 .hd {{ color:var(--teal); text-align:center; margin-bottom:2pt; }}
@@ -101,12 +105,32 @@ BANK_CSS = """
 """
 
 
+# العنوان ما ينفصل عن اللي تحته، والجدول القصير ما ينقسم بين صفحتين، والطويل يتكرر رأسه في الصفحة الثانية
+KEEP_JS = """() => {
+  for (const t of document.querySelectorAll('table.t')) {
+    const first = t.querySelector('tr');
+    if (first && first.querySelector('th') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
+    if (t.rows.length <= 9) t.classList.add('short');
+  }
+  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .lesson'));
+  for (const h of heads) {
+    const grp = document.createElement('div'); grp.className = 'keep';
+    h.before(grp); grp.appendChild(h);
+    let n = grp.nextElementSibling;
+    // يمسك العنوان مع العنوان الفرعي اللي بعده ثم أول عنصر محتوى
+    while (n && n.matches('.sub, .sec')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
+    if (n && !(n.matches('table') && !n.classList.contains('short'))) grp.appendChild(n);
+  }
+}"""
+
+
 def render(html_str, out_pdf, browser):
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name
     pg = browser.new_page()
     pg.goto(pathlib.Path(path).as_uri())
+    pg.evaluate(KEEP_JS)
     pg.evaluate("document.fonts.ready")
     pg.wait_for_timeout(300)
     pg.pdf(path=str(out_pdf), print_background=True, prefer_css_page_size=True)
@@ -175,7 +199,7 @@ def footers_html(items):
         f'<div class="fp"><div class="ft">{html.escape(t)}</div><div class="pn">~{n}~</div></div>' for t, n in items)
     css = f"""@page{{size:{W}pt {H}pt;margin:0}}
 .fp{{width:{W}pt;height:{H}pt;position:relative;break-after:page}} .fp:last-child{{break-after:auto}}
-.ft{{position:absolute;right:9pt;bottom:6pt;width:290pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:800;font-size:13.5pt;line-height:1.2;color:#603b28}}
+.ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:800;font-size:11pt;line-height:1.25;color:#603b28}}
 .pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:800;font-size:14pt;color:#111;direction:ltr}}"""
     return f'<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>{font_faces()}{css}</style></head><body style="margin:0">{pages}</body></html>'
 
