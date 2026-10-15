@@ -190,6 +190,34 @@ def render(html_str, out_pdf, browser):
     pg.close()
 
 
+def last_page_fill(pdf_path):
+    """نسبة المساحة المستخدمة في آخر صفحة (من أعلى منطقة المحتوى لأسفل عنصر فيها)."""
+    d = pymupdf.open(pdf_path)
+    pg = d[-1]
+    bottoms = [b[3] for b in pg.get_text("blocks")] + [x["rect"].y1 for x in pg.get_drawings()]
+    top, bot = 84, H - 36
+    n = d.page_count
+    return n, (max(bottoms, default=top) - top) / (bot - top)
+
+
+def render_fit(src, out_pdf, browser):
+    """إذا آخر صفحة في الدرس فيها شي بسيط (جدول لحاله مثلاً)، نصغّر الدرس كله شوي لين يرجع للصفحة اللي قبل،
+    بحد أقصى 92%؛ وإذا ما نفع نخليه مثل ما هو."""
+    render(doc(src), out_pdf, browser)
+    n0, fill = last_page_fill(out_pdf)
+    if n0 < 2 or fill > 0.7:
+        return
+    trial = pathlib.Path(str(out_pdf) + ".fit.pdf")
+    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .ln{margin:6pt 0;line-height:1.9} "
+             ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
+    for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
+        render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
+        if last_page_fill(trial)[0] < n0:
+            trial.replace(out_pdf)
+            print(f"  {pathlib.Path(out_pdf).name}: انضمّت آخر صفحة (تصغير {round((1 - z) * 100)}%{' + مسافات أقل' if t else ''})")
+            return
+
+
 def doc(body, extra_css=""):
     return f'<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><style>{CSS}{extra_css}</style></head><body>{body}</body></html>'
 
@@ -340,7 +368,7 @@ def main():
         for li, les in enumerate(lessons):
             src = les if isinstance(les, str) else les.read_text(encoding="utf-8")
             title = re.match(r"<!--\s*(.+?)\s*-->", src).group(1)
-            render(doc(src), tmp / f"c{li}.pdf", br)
+            render_fit(src, tmp / f"c{li}.pdf", br)
             overlays.append((tmp / f"c{li}.pdf", title, False))
             bank = None if isinstance(les, str) else HERE / "bank" / (les.stem + ".txt")
             if bank and bank.exists():
