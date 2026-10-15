@@ -47,17 +47,18 @@ CSS = f"""
 html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:700;
             font-size:12.6pt; line-height:1.6; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
 p {{ margin:0; }}
-.sec {{ color:var(--sec); font-size:14.5pt; margin:20pt 0 8pt; break-after:avoid; }}
+.sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .sec::before {{ content:''; display:inline-block; width:5pt; height:5pt; border-radius:50%; background:var(--sec);
                margin-left:9pt; vertical-align:middle; }}
-.sub {{ color:var(--sub); font-size:13.4pt; margin:16pt 0 6pt; break-after:avoid; }}
+.sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
 .ex {{ color:var(--ex); }}
 .red {{ color:var(--mithl); }}
-.ln {{ display:block; background:var(--hl); padding:4pt 9pt; margin:8pt 0; border-radius:3pt; break-inside:avoid;
-       text-align:justify; text-align-last:right; }}
+.ln {{ display:block; margin:9pt 0; break-inside:avoid; line-height:2.05; }}
+/* الخلفية تمشي مع النص سطر سطر وتوقف عند آخر كلمة (مثل الملزمة القديمة) */
+.ln > .hl {{ background:var(--hl); padding:3pt 9pt; border-radius:3pt; -webkit-box-decoration-break:clone; box-decoration-break:clone; }}
 .pill {{ background:var(--pill); border-radius:22pt; padding:7pt 16pt; margin:8pt 0 10pt; break-inside:avoid; text-align:justify; text-align-last:right; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
@@ -78,6 +79,7 @@ table.t td.no {{ width:20pt; }}
 .u {{ text-decoration:underline; text-decoration-thickness:1.2pt; text-underline-offset:3pt; }}
 .note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
 .keep {{ break-inside:avoid; }}
+.card {{ background:var(--hl); padding:6pt 10pt; margin:8pt 0; border-radius:3pt; break-inside:avoid; }}
 table.t.short {{ break-inside:avoid; }}
 .two {{ display:flex; gap:14pt; break-inside:avoid; }}
 .two > div {{ flex:1; }}
@@ -111,6 +113,12 @@ KEEP_JS = """() => {
     const first = t.querySelector('tr');
     if (first && first.querySelector('th') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
     if (t.rows.length <= 9) t.classList.add('short');
+  }
+  for (const e of document.querySelectorAll('.ln')) {
+    if (e.firstElementChild && e.firstElementChild.classList.contains('hl')) continue;
+    const sp = document.createElement('span'); sp.className = 'hl';
+    while (e.firstChild) sp.appendChild(e.firstChild);
+    e.appendChild(sp);
   }
   const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .lesson'));
   for (const h of heads) {
@@ -256,7 +264,7 @@ def solutions_html():
 .soltitle{text-align:center;font-family:'Alexandria';font-weight:800;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
 .soltitle small{display:block;font-family:'Baloo Bhaijaan 2';font-size:13pt;color:#ad7c95}
 .unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-family:'Alexandria';font-weight:800;font-size:16pt;margin:8pt 0}
-.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-family:'Alexandria';font-weight:800;font-size:13.5pt;margin:12pt 0 4pt;break-after:avoid}
+.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-family:'Alexandria';font-weight:800;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
 .ok{color:#527c82;white-space:nowrap}
 .q{font-size:11.8pt}
 </style>"""
