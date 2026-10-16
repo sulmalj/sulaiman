@@ -236,9 +236,9 @@ def qr(url, pt):
 
 
 FEATURES = [  # ميزات الاشتراك (كلام المستخدم)
-    ("ملزمة شاملة تغني عن الكتاب", '<path d="M6 3.5h9l3 3v14H6zM9 9h6M9 12.5h6M9 16h4"/>'),
     ("حلول للتطبيقات", '<path d="M5 12.5l4.2 4.2L19 7"/>'),
-    ("شرح للدروس", '<path d="M4 5.5h7v13H4zM13 5.5h7v13h-7z"/>'),
+    ("شروحات وملزمة شاملة", '<path d="M4 5.5h7v13H4zM13 5.5h7v13h-7z"/>'),
+    ("جروب خاص للأسئلة", '<path d="M4 5.5h16v10H10l-4.5 3.5V15.5H4z"/>'),
     ("موقع محاكي", '<rect x="3.5" y="4.5" width="17" height="11.5" rx="1.8"/><path d="M9 20h6M12 16v4"/>'),
     ("تجميعات", '<path d="M6 4.5h12v15H6zM9 9h6M9 12.5h6M9 16h4"/>'),
 ]
@@ -274,9 +274,9 @@ def closing_html():
 
 
 def ad_page_html():
-    feats = [
-        ("ملزمة شاملة", "تغني عن الكتاب وأي مصدر آخر", '<path d="M6 3.5h9l3 3v14H6zM9 9h6M9 12.5h6M9 16h4"/>'),
-        ("شروحات", "شروحات لدروس الكتاب", '<path d="M4 5.5h7v13H4zM13 5.5h7v13h-7z"/>'),
+    feats = [  # كلام المستخدم
+        ("شروحات وملزمة شاملة", "شروحات لدروس الكتاب، وتغني عن الكتاب وأي مصدر آخر", '<path d="M4 5.5h7v13H4zM13 5.5h7v13h-7z"/>'),
+        ("جروب خاص للأسئلة والاستفسارات", "على مدار الساعة", '<path d="M4 5.5h16v10H10l-4.5 3.5V15.5H4z"/>'),
         ("موقع محاكي", "يشمل جميع أجزاء الاختبار وجميع الدروس", '<rect x="3.5" y="4.5" width="17" height="11.5" rx="1.8"/><path d="M9 20h6M12 16v4"/>'),
         ("تصحيح تلقائي", "لإجاباتك في الموقع", '<path d="M5 12.5l4.2 4.2L19 7"/>'),
     ]
@@ -322,7 +322,7 @@ h1 {{ margin:0; font-weight:700; font-size:50pt; line-height:1.3; color:#89543d;
 <div class="top"><img src="{fm._logo()}"><div class="free">ملف مجاني</div></div>
 <div class="hero"><div class="kicker">عرب 100 · مهارات الكتابة</div><h1>حلول التطبيقات</h1>
 <div class="sub">الوحدتان الأولى والثانية</div></div>
-<div class="ad"><h2>عندنا دورة شاملة لمادة عرب 100</h2><div class="lead">دورة ملازم عدل شاملة وتغني عن الكتاب وأي مصدر آخر، وتشمل:</div>{cards}
+<div class="ad"><h2>عندنا دورة شاملة لمادة عرب 100</h2><div class="lead">دورة ملازم عدل تشمل:</div>{cards}
 <a class="buy" href="{STORE}"><div class="t"><b>للاشتراك في الدورة</b><span>من متجر ملازم عدل</span><span class="url">mtgradl.com</span></div>
 <div class="q">{qr(STORE, 78)}</div></a></div>
 <a class="tg" href="{CHANNEL}">قناتنا لمعرفة كل جديد: <span class="url">t.me/mlazmadl</span></a>
