@@ -42,12 +42,14 @@ def font_faces():
 
 CSS = f"""
 {font_faces()}
-@page {{ size:{W}pt {H}pt; margin:84pt 13pt 36pt 13pt; }}
+/* Chrome يقص أي شي يطلع عن منطقة المحتوى؛ نخلي 4pt زيادة على الجنبين (حشوة للـbody) عشان الدوائر والخلفيات ما تنقص */
+@page {{ size:{W}pt {H}pt; margin:84pt 9pt 36pt 9pt; }}
 :root {{ --brown:#603b28; --term:#cc6e53; --mithl:#db526f; --ex:#527c82; --sec:#ad7c95; --sub:#844f6a;
         --teal:#41848d; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
 * {{ box-sizing:border-box; }}
 html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:600;
             font-size:12pt; line-height:1.65; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
+body {{ padding:0 4pt; }}
 p {{ margin:0; }}
 .sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
@@ -196,7 +198,7 @@ def render(html_str, out_pdf, browser):
         f.write(html_str)
         path = f.name
     # عرض الصفحة = عرض منطقة الطباعة بالضبط (الصفحة ناقص الهوامش) عشان قياس الأسطر يطابق الـPDF
-    pg = browser.new_page(viewport={"width": round((W - 26) * 96 / 72), "height": 1100})
+    pg = browser.new_page(viewport={"width": round((W - 18) * 96 / 72), "height": 1100})
     pg.emulate_media(media="print")
     pg.goto(pathlib.Path(path).as_uri())
     pg.evaluate(KEEP_JS)
@@ -307,6 +309,8 @@ def footers_html(items):
 
 # ---------- ملف حلول التطبيقات ----------
 APPS = HERE.parents[1] / "store" / "arab100" / "book" / "applications.md"
+# بعده: تطبيقات الوحدتين الثالثة والرابعة، ثم أنشطة آخر الكتاب
+EXTRA_APPS = [APPS.parent / "applications-u34.md", APPS.parent / "activities.md"]
 
 
 def _inline(t):
@@ -318,13 +322,14 @@ def _inline(t):
 
 def solutions_html():
     """يحوّل applications.md (عناوين ## و###، جداول |، أسئلة اختيار بـ✔) إلى صفحات بنفس تصميم الملزمة."""
-    lines = APPS.read_text(encoding="utf-8").splitlines()
+    paths = [APPS] + [p for p in EXTRA_APPS if p.exists() and p != APPS]
+    lines = [l for p in paths for l in p.read_text(encoding="utf-8").splitlines()]
     out = ['<!-- حلول تطبيقات الكتاب -->',
-           '<div class="soltitle">حلول تطبيقات الكتاب<small>مهارات الكتابة — عرب 100 — مقسّمة حسب الدروس</small></div>']
+           '<div class="soltitle">حلول تطبيقات الكتاب وأنشطته<small>مهارات الكتابة — عرب 100 — مقسّمة حسب الوحدات والدروس</small></div>']
     i, first_unit = 0, True
     while i < len(lines):
         ln = lines[i].rstrip()
-        if not ln.strip() or ln.startswith("# تطبيقات") or ln.startswith("كل تطبيق"):
+        if not ln.strip() or ln.startswith("# تطبيقات") or ln.startswith("# حلول") or ln.startswith("كل تطبيق"):
             i += 1; continue
         if ln.startswith("# "):
             out.append(f'<div class="unit{"" if first_unit else " pb"}">{_inline(ln[2:])}</div>')
@@ -419,22 +424,26 @@ def main():
                 p_bank = next((n for (pth, i, tt, n, b) in plan if pth == tmp / f"b{li}.pdf"), None)
                 toc.append((li, t, p_les, p_bank))
             names = [t for (_, t, _, _) in toc]
-            topics = [(u, ut, names[i * 4:(i + 1) * 4]) for i, (u, ut) in enumerate(fm.UNITS)]
+            topics = fm.unit_lessons(names)
             render(fm.cover_html(font_faces(), topics), tmp / "cover.pdf", br)
             render(doc(fm.intro_body(toc)), tmp / "intro.pdf", br)
-            foot_items = [("المقدمة", None)] + foot_items
+            n_intro = pymupdf.open(tmp / "intro.pdf").page_count
+            foot_items = [("المقدمة", None)] * n_intro + foot_items
         render(footers_html(foot_items), tmp / "f.pdf", br)
         br.close()
     foot = pymupdf.open(tmp / "f.pdf")
     if front:
         cv = out.new_page(width=W, height=H)
         cv.show_pdf_page(cv.rect, pymupdf.open(tmp / "cover.pdf"), 0)
-        ip = out.new_page(width=W, height=H)
-        ip.show_pdf_page(ip.rect, base, 0)
-        ip.show_pdf_page(ip.rect, pymupdf.open(tmp / "intro.pdf"), 0)
-        ip.show_pdf_page(ip.rect, foot, 0)
-        ip.insert_link({"kind": pymupdf.LINK_URI, "uri": fm.INTRO_LINK, "from": intro_link_rect(tmp / "intro.pdf")})
-        plan = [None] + plan
+        intro = pymupdf.open(tmp / "intro.pdf")
+        for k in range(intro.page_count):  # التنويهات ثم الفهرس (كل واحد في صفحة)
+            ip = out.new_page(width=W, height=H)
+            ip.show_pdf_page(ip.rect, base, 0)
+            ip.show_pdf_page(ip.rect, intro, k)
+            ip.show_pdf_page(ip.rect, foot, k)
+            if k == 0:
+                ip.insert_link({"kind": pymupdf.LINK_URI, "uri": fm.INTRO_LINK, "from": intro_link_rect(tmp / "intro.pdf")})
+        plan = [None] * intro.page_count + plan
     cache = {}
     for k, item in enumerate(plan):
         if item is None:
@@ -445,7 +454,7 @@ def main():
         pg.show_pdf_page(pg.rect, base_bank if is_bank else base, 0)
         pg.show_pdf_page(pg.rect, src, i)
         pg.show_pdf_page(pg.rect, foot, k)
-    out.set_metadata({"title": "عرب 100 — " + ("حلول تطبيقات الكتاب" if a.solutions else "مهارات الكتابة (الميد)"), "author": "ملازم عدل"})
+    out.set_metadata({"title": "عرب 100 — " + ("حلول تطبيقات الكتاب" if a.solutions else "مهارات الكتابة"), "author": "ملازم عدل"})
     out.save(a.out, garbage=4, deflate=True)
     print(f"{a.out}: {out.page_count} صفحة")
 

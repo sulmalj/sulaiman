@@ -53,10 +53,10 @@ def html_text(src):
     return html.unescape(src)
 
 
-def check(num):
-    ex = next(EXACT.glob(f"{num}-*.txt"))
+def check(num, ex=None, les=None):
+    ex = pathlib.Path(ex) if ex else next(EXACT.glob(f"{num}-*.txt"))
     book = "\n".join(l for l in ex.read_text(encoding="utf-8").splitlines() if not l.startswith("#"))
-    les = next((HERE / "content").glob(f"{num}-*.html"))
+    les = pathlib.Path(les) if les else next((HERE / "content").glob(f"{num}-*.html"))
     mine = html_text(les.read_text(encoding="utf-8"))
     forms = {}
     for w in words(book):
@@ -88,6 +88,11 @@ def check(num):
 
 
 if __name__ == "__main__":
+    # أجزاء درس: python3 check_harakat.py --exact نص.txt --html جزء.html
+    if "--exact" in sys.argv:
+        a = sys.argv
+        ok = check("", a[a.index("--exact") + 1], a[a.index("--html") + 1])
+        sys.exit(0 if ok else 1)
     nums = sys.argv[1:] or sorted({p.name[:2] for p in EXACT.glob("*.txt")})
     ok = all([check(n) for n in nums])
     sys.exit(0 if ok else 1)
