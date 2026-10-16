@@ -69,8 +69,6 @@ h1,h2,h3,h4{text-wrap:balance}
 .mini div{border-top:1px solid rgba(255,255,255,.14);padding-top:8px}
 .mini dt{font-size:12.5px;color:#C9D7EA}
 .mini dd{margin:0;font-family:var(--f-head);font-weight:700;font-size:19px;font-variant-numeric:tabular-nums}
-.hero-glyph{position:absolute;left:-10px;bottom:-34px;font-family:var(--f-head);font-weight:800;font-size:120px;line-height:1;color:rgba(255,255,255,.05);white-space:nowrap;pointer-events:none;direction:rtl}
-@media (max-width:760px){.hero-glyph{font-size:84px;bottom:-22px}}
 
 .tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 @media (max-width:900px){.tools{grid-template-columns:repeat(2,minmax(0,1fr))}}
