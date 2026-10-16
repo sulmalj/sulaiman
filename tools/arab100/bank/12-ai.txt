@@ -17,10 +17,10 @@
 ج: ب
 ت: Grammarly من أدوات التدقيق الإملائي واللغوي؛ أدواتٌ تكتشف الأخطاء الإملائية والنحوية وتصحّحها.
 س: من أدوات التحرير والصياغة التي تعيد صياغة النص وتحسّن أسلوبه ووضوحه:
-أ) QuillBot و Wordtune
-ب) DeepL و Google Translate
-ج) ChatGPT و Gemini
-د) Otter.ai و ElevenLabs
+أ) QuillBot
+ب) DeepL
+ج) ChatGPT
+د) Otter.ai
 ج: أ
 س: من التطبيقات المتخصّصة، أداة تحوّل النص إلى صوت:
 أ) Perplexity AI
