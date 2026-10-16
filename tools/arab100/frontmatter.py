@@ -126,7 +126,7 @@ def intro_body(toc):
         if unit != last_unit:
             rows += f'<tr class="unitrow"><td colspan="3">{unit}: {UNITS[unit_of(idx)[0]][1]}</td></tr>'
             last_unit = unit
-        rows += (f'<tr><td class="r"><span class="tp">{topic}</span>{html.escape(title)}</td>'
+        rows += (f'<tr><td class="r"><span class="tp">{topic}</span> {html.escape(title)}</td>'
                  f'<td>{p_les}</td><td>{p_bank if p_bank else "—"}</td></tr>')
     return f"""<!-- المقدمة -->
 <style>
