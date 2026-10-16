@@ -55,8 +55,8 @@ CSS = f"""
 {font_faces()}
 /* Chrome يقص أي شي يطلع عن منطقة المحتوى؛ نخلي 4pt زيادة على الجنبين (حشوة للـbody) عشان الدوائر والخلفيات ما تنقص */
 @page {{ size:{W}pt {H}pt; margin:84pt 9pt 36pt 9pt; }}
-:root {{ --brown:#603b28; --term:#a94a2e; --mithl:#c42446; --ex:#466c72; --sec:#8c5671; --sub:#844f6a;
-        --teal:#346e76; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
+:root {{ --brown:#603b28; --term:#cc6e53; --mithl:#db526f; --ex:#527c82; --sec:#ad7c95; --sub:#844f6a;
+        --teal:#41848d; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
 * {{ box-sizing:border-box; }}
 html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:600;
             font-size:12pt; line-height:1.65; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
@@ -69,7 +69,7 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .sec::after {{ content:''; flex:1; height:1.6pt; margin-right:10pt; border-radius:2pt;
               background:linear-gradient(to left, #e6cfd9, rgba(230,207,217,0)); }}
 .sub {{ width:fit-content; border-bottom:2pt solid #efdccf; padding-bottom:1pt; }}
-.lessonhead {{ border-right:5pt solid #a94a2e; padding:2pt 12pt 4pt; margin:0 0 4pt; }}
+.lessonhead {{ border-right:5pt solid #cc6e53; padding:2pt 12pt 4pt; margin:0 0 4pt; }}
 .lessonhead small {{ display:inline-block; background:#f5e6d9; color:#844f6a; font-size:10.5pt; border-radius:10pt; padding:1pt 10pt; }}
 .lessonhead b {{ display:block; color:#89543d; font-weight:700; font-size:18pt; line-height:1.5; margin-top:2pt; }}
 /* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
@@ -138,10 +138,10 @@ BANK_CSS = """
 .box .qt { padding:4pt 8pt; color:#844f6a; border-bottom:1.2pt solid #603b28; }
 .box .row { display:flex; border-bottom:1.2pt solid #603b28; }
 .box .row:last-child { border-bottom:0; }
-.box .op { flex:1; padding:3.5pt 8pt; color:#a94a2e; }
+.box .op { flex:1; padding:3.5pt 8pt; color:#cc6e53; }
 .box .op + .op { border-right:1.2pt solid #603b28; }
 .box .fix { padding:3.5pt 8pt; color:#603b28; }
-.box .fix b { color:#c42446; font-weight:700; }
+.box .fix b { color:#db526f; font-weight:700; }
 """
 
 
@@ -556,10 +556,10 @@ def solutions_html():
         i += 1
     css = """<style>
 .soltitle{text-align:center;font-weight:700;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
-.soltitle small{display:block;font-size:13pt;color:#8c5671}
+.soltitle small{display:block;font-size:13pt;color:#ad7c95}
 .unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-weight:700;font-size:16pt;margin:8pt 0}
-.lesson{background:#f5e6d9;border-right:5pt solid #a94a2e;border-radius:4pt;padding:5pt 10pt;color:#a94a2e;font-weight:700;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
-.ok{color:#466c72;white-space:nowrap}
+.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-weight:700;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
+.ok{color:#527c82;white-space:nowrap}
 .q{font-size:11.8pt}
 </style>"""
     return "\n".join(out[:1]) + css + "\n".join(out[1:])
