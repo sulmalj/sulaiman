@@ -101,7 +101,7 @@ h1 {{ margin:0; font-weight:700; font-size:70pt; line-height:1.25; color:#89543d
 .part {{ display:inline-block; margin-top:8pt; background:#325c8e; color:#fff; border-radius:14pt; padding:3pt 18pt 4pt; font-weight:700; font-size:15pt; }}
 {".hero{top:128pt} .nib{top:150pt} .units{top:330pt;gap:11pt} .uc{padding:12pt 14pt 10pt} .it{line-height:1.85} .ct{margin-bottom:3pt;padding-bottom:3pt} .ver{background:#db526f;color:#fff;border-color:#db526f;font-weight:700}" if compact else ""}
 </style></head><body><div class="pg">
-<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dots"></div>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
 <div class="frame"></div>
 {nib}
 <div class="top"><img src="{_logo()}"><div class="ver">{badge}</div></div>

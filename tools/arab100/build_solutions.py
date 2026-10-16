@@ -148,8 +148,21 @@ def md_html(lines, lessons):
                 i += 1
             head, body = rows[0], rows[1:]
             t = '<table class="t"><tr>' + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr>"
-            for r in body:
-                t += "<tr>" + "".join(f'<td class="r">{inline(c)}</td>' for c in r) + "</tr>"
+            # خانة أولى فاضية = نفس الجملة اللي فوقها (كلمتين من جملة وحدة) ← تندمج معها بدل ما تبان فاضية
+            span = [1] * len(body)
+            for k in range(len(body) - 1, 0, -1):
+                if body[k] and not body[k][0]:
+                    j = k - 1
+                    while j > 0 and body[j] and not body[j][0]:
+                        j -= 1
+                    span[j] += 1
+            for k, r in enumerate(body):
+                cells = [f'<td class="r">{inline(c)}</td>' for c in r]
+                if r and not r[0] and k > 0:
+                    cells = cells[1:]
+                elif span[k] > 1:
+                    cells[0] = f'<td class="r" rowspan="{span[k]}">{inline(r[0])}</td>'
+                t += "<tr>" + "".join(cells) + "</tr>"
             out.append(t + "</table>")
             continue
         elif re.match(r"^\d+\.\s", s):
@@ -191,7 +204,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .qq,.item{display:flex;gap:7pt;align-items:baseline;line-height:1.75}
 .qn{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:17pt;height:17pt;border-radius:9pt;
   background:#cc6e53;color:#fff;font-size:9.5pt;font-weight:700;padding:0 4pt;transform:translateY(-1pt)}
-.item{margin:6pt 0;break-inside:avoid}
+.item{margin:6pt 0;break-inside:avoid;break-after:avoid}
 .ops{display:grid;gap:4pt 7pt;margin:4pt 24pt 0 0}
 .ops.c4{grid-template-columns:repeat(4,1fr)} .ops.c3{grid-template-columns:repeat(3,1fr)} .ops.c2{grid-template-columns:1fr 1fr}
 .op{background:#fbf3ec;border:1pt solid #eddccf;border-radius:7pt;padding:2pt 8pt 3pt;font-size:11pt;line-height:1.5;color:#6d4a37}
