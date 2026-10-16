@@ -141,6 +141,9 @@ BANK_CSS = """
 .q { display:flex; align-items:center; gap:14pt; }
 .ans { flex:none; width:36pt; height:36pt; border-radius:50%; background:#8a6455; color:#fff; display:flex; align-items:center;
        justify-content:center; font-size:17pt; font-weight:700; padding-top:2pt; }
+/* كل حرف شكله غير (الباء والجيم تحتها نقطة/ذيل)، فنحركه عشان يجي بالضبط في نص الدائرة (طلب المستخدم) */
+.ans span { position:relative; }
+.ans .L0 { top:1.9pt; } .ans .L1 { top:-5pt; } .ans .L2 { top:-6.7pt; } .ans .L3 { top:-2.3pt; }
 .box { flex:1; border:1.6pt solid #603b28; border-radius:7pt; overflow:hidden; font-family:'%HEAD%'; font-weight:600; font-size:10pt; line-height:1.35; }
 .box .qt { padding:4pt 8pt; color:#844f6a; border-bottom:1.2pt solid #603b28; }
 .box .row { display:flex; border-bottom:1.2pt solid #603b28; }
@@ -519,7 +522,7 @@ def bank_html(qs, per_page=10):
             rows = "".join(f'<div class="row">{"".join(ops[i:i + 2])}</div>' for i in range(0, len(ops), 2))
             fix = f'<div class="row"><div class="fix"><b>التصحيح:</b> {esc(q["fix"])}</div></div>' if q["fix"] else ""
             items.append(f'<div class="q"><div class="box"><div class="qt">{n}- {esc(q["q"])}</div>{rows}{fix}</div>'
-                         f'<div class="ans">{q["ans"]}</div></div>')
+                         f'<div class="ans"><span class="L{LETTERS.index(q["ans"])}">{q["ans"]}</span></div></div>')
         pages.append(f'<div class="page"><img class="wm" src="{logo}"><div class="qs">{"".join(items)}</div></div>')
     return "".join(pages)
 
@@ -650,7 +653,7 @@ def main():
             if bank and bank.exists():
                 qs = parse_bank(bank)
                 render(doc(bank_html(qs), BANK_CSS.replace("%HEAD%", FONT_HEAD) + "@page{margin:0}"), tmp / f"b{li}.pdf", br)
-                overlays.append((tmp / f"b{li}.pdf", "تجميعات " + title, True))
+                overlays.append((tmp / f"b{li}.pdf", "تدريبات " + title, True))
         num = 0
         plan = []
         for path, title, is_bank in overlays:
