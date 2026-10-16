@@ -10,7 +10,8 @@
   python3 tools/arab100/build_malzama.py store/arab100/malzama-mid-new.pdf
   python3 tools/arab100/build_malzama.py out.pdf --only 01   # درس واحد للمعاينة
 
-الخطوط: خطوط الملزمة الأصلية (Childos Arabic و 29LT Azer) تجارية؛ البديل Baloo Bhaijaan 2 و Alexandria في `fonts/`.
+الخطوط: خطوط الملزمة الأصلية (Childos Arabic و 29LT Azer) تجارية؛ البديل Readex Pro في `fonts/`
+(اخترناه لأنه يرسم الحروف والحركات صح؛ Baloo كان يشوّه «لى» و«الإملائي»، وAlexandria يرسم خط قاعدة كأنه تسطير).
 لو توفرت ملفات الخطوط الأصلية: حطها في `fonts/` وعدّل FONT_BODY / FONT_HEAD تحت.
 """
 import argparse, base64, html, pathlib, re, sys, tempfile
@@ -26,27 +27,40 @@ COVER = HERE / "base" / "cover-intro.pdf"
 LOGO = HERE.parent / "statistics" / "logo-adl.png"
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 W, H = 595.5, 842.25
-FONT_BODY = "Baloo Bhaijaan 2"
-FONT_HEAD = "Alexandria"
+FONT_BODY = "Readex Pro"
+FONT_HEAD = "Readex Pro"
 
 
 def font_faces():
-    out = []
+    out, weights = [], []
     for f in sorted(FONTS.glob("*.ttf")):
         fam, wt = f.stem.rsplit("-", 1)
-        fam = {"Baloo": "Baloo Bhaijaan 2"}.get(fam, fam)
+        if fam == "Amiri":
+            continue
+        fam = {"Readex": "Readex Pro"}.get(fam, fam)
+        if fam == "Readex Pro":
+            weights.append(wt)
         out.append(f"@font-face{{font-family:'{fam}';font-weight:{wt};src:url('{f.as_uri()}') format('truetype');}}")
+    # القوسان المزخرفان ﴿ ﴾: Readex يرسمهم أقواس عادية، فناخذ هالحرفين من Amiri
+    # (نفس العائلة والوزن + unicode-range، والوجه اللي ينكتب آخر يتقدّم لهالحرفين)
+    amiri = FONTS / "Amiri-Regular.ttf"
+    if amiri.exists():
+        for wt in weights:
+            out.append(f"@font-face{{font-family:'Readex Pro';font-weight:{wt};src:url('{amiri.as_uri()}') format('truetype');"
+                       "unicode-range:U+FD3E-FD3F;}")
     return "\n".join(out)
 
 
 CSS = f"""
 {font_faces()}
-@page {{ size:{W}pt {H}pt; margin:84pt 13pt 36pt 13pt; }}
+/* Chrome يقص أي شي يطلع عن منطقة المحتوى؛ نخلي 4pt زيادة على الجنبين (حشوة للـbody) عشان الدوائر والخلفيات ما تنقص */
+@page {{ size:{W}pt {H}pt; margin:84pt 9pt 36pt 9pt; }}
 :root {{ --brown:#603b28; --term:#cc6e53; --mithl:#db526f; --ex:#527c82; --sec:#ad7c95; --sub:#844f6a;
         --teal:#41848d; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
 * {{ box-sizing:border-box; }}
-html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:700;
-            font-size:12.6pt; line-height:1.6; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
+html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'{FONT_BODY}'; font-weight:600;
+            font-size:12pt; line-height:1.65; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
+body {{ padding:0 4pt; }}
 p {{ margin:0; }}
 .sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
@@ -55,13 +69,15 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .sec::after {{ content:''; flex:1; height:1.6pt; margin-right:10pt; border-radius:2pt;
               background:linear-gradient(to left, #e6cfd9, rgba(230,207,217,0)); }}
 .sub {{ width:fit-content; border-bottom:2pt solid #efdccf; padding-bottom:1pt; }}
-.lessonhead {{ background:#f5e6d9; border-radius:14pt; padding:7pt 16pt 6pt; margin:0 0 6pt; position:relative; overflow:hidden; }}
-.lessonhead::before {{ content:''; position:absolute; left:-30pt; top:-30pt; width:110pt; height:90pt; border-radius:50%; background:#f3dfe7; }}
-.lessonhead small {{ position:relative; display:block; color:#ad7c95; font-size:11pt; }}
-.lessonhead b {{ position:relative; display:block; color:#89543d; font-family:'{FONT_HEAD}'; font-weight:800; font-size:17pt; line-height:1.35; }}
+.lessonhead {{ border-right:5pt solid #cc6e53; padding:2pt 12pt 4pt; margin:0 0 4pt; }}
+.lessonhead small {{ display:inline-block; background:#f5e6d9; color:#844f6a; font-size:10.5pt; border-radius:10pt; padding:1pt 10pt; }}
+.lessonhead b {{ display:block; color:#89543d; font-weight:700; font-size:18pt; line-height:1.5; margin-top:2pt; }}
 /* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
 .sec::before {{ content:'●'; font-family:'DejaVu Sans',sans-serif; font-size:7pt; color:var(--sec); margin-left:9pt; vertical-align:2pt; }}
 .sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
+/* عنوان ثالث (مثل «■ حذف الهمزة من أول الكلمة» في الكتاب) */
+.sub2 {{ color:var(--term); font-size:12.6pt; margin:16pt 0 6pt; break-after:avoid; }}
+.sub2::before {{ content:'■'; font-family:'DejaVu Sans',sans-serif; font-size:7.5pt; color:var(--sub); margin-left:7pt; vertical-align:2pt; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
 .ex {{ color:var(--ex); }}
@@ -73,6 +89,7 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
 ol.n > li, ul.b > li {{ margin:4pt 0; break-inside:avoid; }}
+ol.n, ul.b {{ break-inside:avoid; }}
 ul.b > li::marker {{ color:var(--sec); }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
@@ -87,7 +104,12 @@ table.t th:last-child, table.t td:last-child {{ border-left:0; }}
 table.t td {{ padding:4pt 6pt; border-top:1pt solid #e2cfc1; border-left:1pt solid #e2cfc1; text-align:center; vertical-align:middle; background:#fdf8f3; }}
 table.t tr:nth-child(even) td {{ background:#f6ece4; }}
 table.t tr {{ break-inside:avoid; }}
+/* الجدول الطويل اللي ينقسم: ما يبقى صف أو صفين لحالهم أول الجدول أو آخره */
+table.t tbody tr:nth-child(-n+3), table.t tbody tr:nth-last-child(-n+2) {{ break-before:avoid; }}
 table.t td.r {{ text-align:right; }}
+/* جدول عناوينه في العمود الأول (مثل جدول حالات التاء والهاء في الكتاب) */
+table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
+table.t.side tr:first-child th {{ border-top:0; }}
 table.t td.no {{ width:20pt; }}
 .u {{ text-decoration:underline; text-decoration-thickness:1.2pt; text-underline-offset:3pt; }}
 .note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
@@ -109,7 +131,7 @@ BANK_CSS = """
 .q { display:flex; align-items:center; gap:14pt; }
 .ans { flex:none; width:36pt; height:36pt; border-radius:50%; background:#8a6455; color:#fff; display:flex; align-items:center;
        justify-content:center; font-size:17pt; font-weight:700; padding-top:2pt; }
-.box { flex:1; border:1.6pt solid #603b28; border-radius:7pt; overflow:hidden; font-family:'%HEAD%'; font-weight:700; font-size:10.4pt; line-height:1.35; }
+.box { flex:1; border:1.6pt solid #603b28; border-radius:7pt; overflow:hidden; font-family:'%HEAD%'; font-weight:600; font-size:10pt; line-height:1.35; }
 .box .qt { padding:4pt 8pt; color:#844f6a; border-bottom:1.2pt solid #603b28; }
 .box .row { display:flex; border-bottom:1.2pt solid #603b28; }
 .box .row:last-child { border-bottom:0; }
@@ -124,8 +146,10 @@ BANK_CSS = """
 KEEP_JS = """() => {
   for (const t of document.querySelectorAll('table.t')) {
     const first = t.querySelector('tr');
-    if (first && first.querySelector('th') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
-    if (t.rows.length <= 9) t.classList.add('short');
+    if (first && first.querySelector('th') && !first.querySelector('td') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
+    // الجدول ما ينقسم بين صفحتين (طلب المستخدم) إلا إذا كان أطول من صفحة
+    // (والجدول الطويل — أكثر من نص صفحة — يكمل تحت عنوانه ويتكرر رأسه، عشان ما تبقى نص صفحة فاضية)
+    if (t.getBoundingClientRect().height < 470) t.classList.add('short');
   }
   for (const e of document.querySelectorAll('.ln')) {
     if (e.firstElementChild && e.firstElementChild.classList.contains('hl')) continue;
@@ -133,14 +157,26 @@ KEEP_JS = """() => {
     while (e.firstChild) sp.appendChild(e.firstChild);
     e.appendChild(sp);
   }
-  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .lesson'));
+  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .sub2, .lesson, .unit'));
   for (const h of heads) {
     const grp = document.createElement('div'); grp.className = 'keep';
     h.before(grp); grp.appendChild(h);
     let n = grp.nextElementSibling;
     // يمسك العنوان مع العنوان الفرعي اللي بعده ثم أول عنصر محتوى
-    while (n && n.matches('.sub, .sec')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
-    if (n && !(n.matches('table') && !n.classList.contains('short'))) grp.appendChild(n);
+    while (n && n.matches('.sub, .sec, .sub2, .lesson')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
+    if (n && !(n.matches('table') && !n.classList.contains('short'))) {
+      const nx = n.nextElementSibling; grp.appendChild(n);
+      // سطر ينتهي بنقطتين (مثل «مثال:» أو «تحذف الواو في الحالات الآتية:») ما ينفصل عن اللي بعده
+      if (n.matches('.ln') && /:\\s*$/.test(n.textContent) && nx && !nx.matches('.sec, .sub, .sub2')
+          && !(nx.matches('table') && !nx.classList.contains('short'))) grp.appendChild(nx);
+    }
+  }
+  for (const p of [...document.querySelectorAll('body > .ln')]) {
+    const nx = p.nextElementSibling;
+    if (!nx || !/:\\s*$/.test(p.textContent) || nx.matches('.sec, .sub, .sub2, .keep')) continue;
+    if (nx.matches('table') && !nx.classList.contains('short')) continue;
+    const grp = document.createElement('div'); grp.className = 'keep';
+    p.before(grp); grp.appendChild(p); grp.appendChild(nx);
   }
 }"""
 
@@ -160,7 +196,8 @@ TIGHTEN_JS = """() => {
     rows.sort((a, b) => a.top - b.top);
     return rows;
   };
-  const els = document.querySelectorAll('.ln, .note, .pill, .card, li, .bul > div, td, .box .qt, .box .fix');
+  // (.passage .bl .qq .op .why .item: عناصر ملف الحلول)
+  const els = document.querySelectorAll('.ln, .note, .pill, .card, li, .bul > div, td, .box .qt, .box .fix, .passage, .bl, .qq, .op, .why, .item > div');
   for (const el of els) {
     const rows = lineInfo(el);
     if (rows.length < 2) continue;
@@ -190,7 +227,7 @@ def render(html_str, out_pdf, browser):
         f.write(html_str)
         path = f.name
     # عرض الصفحة = عرض منطقة الطباعة بالضبط (الصفحة ناقص الهوامش) عشان قياس الأسطر يطابق الـPDF
-    pg = browser.new_page(viewport={"width": round((W - 26) * 96 / 72), "height": 1100})
+    pg = browser.new_page(viewport={"width": round((W - 18) * 96 / 72), "height": 1100})
     pg.emulate_media(media="print")
     pg.goto(pathlib.Path(path).as_uri())
     pg.evaluate(KEEP_JS)
@@ -221,7 +258,7 @@ def render_fit(src, out_pdf, browser):
     if n0 < 2 or fill > 0.7:
         return
     trial = pathlib.Path(str(out_pdf) + ".fit.pdf")
-    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .ln{margin:6pt 0;line-height:1.9} "
+    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .sub2{margin-top:12pt} .ln{margin:6pt 0;line-height:1.9} "
              ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
     for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
         render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
@@ -294,13 +331,15 @@ def footers_html(items):
         for t, n in items)
     css = f"""@page{{size:{W}pt {H}pt;margin:0}}
 .fp{{width:{W}pt;height:{H}pt;position:relative;break-after:page}} .fp:last-child{{break-after:auto}}
-.ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:800;font-size:11pt;line-height:1.25;color:#603b28}}
-.pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:800;font-size:14pt;color:#111;direction:ltr}}"""
+.ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:700;font-size:10.5pt;line-height:1.25;color:#603b28}}
+.pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:700;font-size:14pt;color:#111;direction:ltr}}"""
     return f'<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>{font_faces()}{css}</style></head><body style="margin:0">{pages}</body></html>'
 
 
 # ---------- ملف حلول التطبيقات ----------
 APPS = HERE.parents[1] / "store" / "arab100" / "book" / "applications.md"
+# بعده: تطبيقات الوحدتين الثالثة والرابعة، ثم أنشطة آخر الكتاب
+EXTRA_APPS = [APPS.parent / "applications-u34.md", APPS.parent / "activities.md"]
 
 
 def _inline(t):
@@ -312,13 +351,14 @@ def _inline(t):
 
 def solutions_html():
     """يحوّل applications.md (عناوين ## و###، جداول |، أسئلة اختيار بـ✔) إلى صفحات بنفس تصميم الملزمة."""
-    lines = APPS.read_text(encoding="utf-8").splitlines()
+    paths = [APPS] + [p for p in EXTRA_APPS if p.exists() and p != APPS]
+    lines = [l for p in paths for l in p.read_text(encoding="utf-8").splitlines()]
     out = ['<!-- حلول تطبيقات الكتاب -->',
-           '<div class="soltitle">حلول تطبيقات الكتاب<small>مهارات الكتابة — عرب 100 — مقسّمة حسب الدروس</small></div>']
+           '<div class="soltitle">حلول تطبيقات الكتاب وأنشطته<small>مهارات الكتابة — عرب 100 — مقسّمة حسب الوحدات والدروس</small></div>']
     i, first_unit = 0, True
     while i < len(lines):
         ln = lines[i].rstrip()
-        if not ln.strip() or ln.startswith("# تطبيقات") or ln.startswith("كل تطبيق"):
+        if not ln.strip() or ln.startswith("# تطبيقات") or ln.startswith("# حلول") or ln.startswith("كل تطبيق"):
             i += 1; continue
         if ln.startswith("# "):
             out.append(f'<div class="unit{"" if first_unit else " pb"}">{_inline(ln[2:])}</div>')
@@ -348,18 +388,14 @@ def solutions_html():
             out.append(f'<p class="ln">{_inline(ln)}</p>')
         i += 1
     css = """<style>
-.soltitle{text-align:center;font-family:'Alexandria';font-weight:800;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
-.soltitle small{display:block;font-family:'Baloo Bhaijaan 2';font-size:13pt;color:#ad7c95}
-.unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-family:'Alexandria';font-weight:800;font-size:16pt;margin:8pt 0}
-.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-family:'Alexandria';font-weight:800;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
+.soltitle{text-align:center;font-weight:700;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
+.soltitle small{display:block;font-size:13pt;color:#ad7c95}
+.unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-weight:700;font-size:16pt;margin:8pt 0}
+.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-weight:700;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
 .ok{color:#527c82;white-space:nowrap}
 .q{font-size:11.8pt}
 </style>"""
     return "\n".join(out[:1]) + css + "\n".join(out[1:])
-
-
-# مكان صورة الطالب في الغلاف الجديد (أسفل الصفحة، بنسبة الصورة الأصلية 454×382)
-ART_BOX = (128, 452, 468, 738)
 
 
 def intro_link_rect(intro_pdf):
@@ -416,22 +452,27 @@ def main():
                 p_les = next(n for (pth, i, tt, n, b) in plan if pth == tmp / f"c{li}.pdf")
                 p_bank = next((n for (pth, i, tt, n, b) in plan if pth == tmp / f"b{li}.pdf"), None)
                 toc.append((li, t, p_les, p_bank))
-            render(fm.cover_html(font_faces(), ART_BOX), tmp / "cover.pdf", br)
+            names = [t for (_, t, _, _) in toc]
+            topics = fm.unit_lessons(names)
+            render(fm.cover_html(font_faces(), topics), tmp / "cover.pdf", br)
             render(doc(fm.intro_body(toc)), tmp / "intro.pdf", br)
-            foot_items = [("المقدمة", None)] + foot_items
+            n_intro = pymupdf.open(tmp / "intro.pdf").page_count
+            foot_items = [("المقدمة", None)] * n_intro + foot_items
         render(footers_html(foot_items), tmp / "f.pdf", br)
         br.close()
     foot = pymupdf.open(tmp / "f.pdf")
     if front:
         cv = out.new_page(width=W, height=H)
         cv.show_pdf_page(cv.rect, pymupdf.open(tmp / "cover.pdf"), 0)
-        cv.show_pdf_page(pymupdf.Rect(*ART_BOX), pymupdf.open(COVER), 0, clip=pymupdf.Rect(*fm.ART_CLIP))
-        ip = out.new_page(width=W, height=H)
-        ip.show_pdf_page(ip.rect, base, 0)
-        ip.show_pdf_page(ip.rect, pymupdf.open(tmp / "intro.pdf"), 0)
-        ip.show_pdf_page(ip.rect, foot, 0)
-        ip.insert_link({"kind": pymupdf.LINK_URI, "uri": fm.INTRO_LINK, "from": intro_link_rect(tmp / "intro.pdf")})
-        plan = [None] + plan
+        intro = pymupdf.open(tmp / "intro.pdf")
+        for k in range(intro.page_count):  # التنويهات ثم الفهرس (كل واحد في صفحة)
+            ip = out.new_page(width=W, height=H)
+            ip.show_pdf_page(ip.rect, base, 0)
+            ip.show_pdf_page(ip.rect, intro, k)
+            ip.show_pdf_page(ip.rect, foot, k)
+            if k == 0:
+                ip.insert_link({"kind": pymupdf.LINK_URI, "uri": fm.INTRO_LINK, "from": intro_link_rect(tmp / "intro.pdf")})
+        plan = [None] * intro.page_count + plan
     cache = {}
     for k, item in enumerate(plan):
         if item is None:
@@ -442,7 +483,7 @@ def main():
         pg.show_pdf_page(pg.rect, base_bank if is_bank else base, 0)
         pg.show_pdf_page(pg.rect, src, i)
         pg.show_pdf_page(pg.rect, foot, k)
-    out.set_metadata({"title": "عرب 100 — " + ("حلول تطبيقات الكتاب" if a.solutions else "مهارات الكتابة (الميد)"), "author": "ملازم عدل"})
+    out.set_metadata({"title": "عرب 100 — " + ("حلول تطبيقات الكتاب" if a.solutions else "مهارات الكتابة"), "author": "ملازم عدل"})
     out.save(a.out, garbage=4, deflate=True)
     print(f"{a.out}: {out.page_count} صفحة")
 

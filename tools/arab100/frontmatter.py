@@ -4,58 +4,110 @@ import base64, html, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 LOGO = HERE.parent / "statistics" / "logo-adl.png"
 INTRO_LINK = "https://drive.google.com/file/d/1idhtoHzHLnsHvXAvInF3tcthe6o2rmTa/view?usp=drivesdk"
-# صورة الطالب من الغلاف القديم (مقطوعة منه كما هي، بخلفيتها #fff4e9)
-ART_CLIP = (82, 352, 536, 734)
-CREAM = "#fff4e9"
 
-UNITS = [("الوحدة الأولى", "الرسم الإملائي"),
-         ("الوحدة الثانية", "تحرير الكتابة وعلامات الترقيم وأهم الأخطاء الشائعة")]
+UNITS = [("الوحدة الأولى", "الرسم الإملائي", 4),
+         ("الوحدة الثانية", "تحرير الكتابة وعلامات الترقيم وأهم الأخطاء الشائعة", 4),
+         ("الوحدة الثالثة", "كتابة الفقرة المقالية", 2),
+         ("الوحدة الرابعة", "الكتابة الوظيفية", 2)]
 TOPIC_NAMES = ["الموضوع الأول", "الموضوع الثاني", "الموضوع الثالث", "الموضوع الرابع"]
 
 
+def unit_of(idx):
+    """درس رقم idx (من 0) ← (رقم الوحدة، رقم الموضوع داخلها) حسب عدد مواضيع كل وحدة في الكتاب."""
+    for u, (_, _, n) in enumerate(UNITS):
+        if idx < n:
+            return u, idx
+        idx -= n
+    raise IndexError("درس خارج الوحدات")
+
+
 def lesson_label(idx):
-    """درس رقم idx (من 0) ← (الوحدة، الموضوع) حسب الكتاب: 4 مواضيع لكل وحدة."""
-    return UNITS[idx // 4][0], TOPIC_NAMES[idx % 4]
+    """درس رقم idx (من 0) ← (الوحدة، الموضوع) حسب الكتاب."""
+    u, t = unit_of(idx)
+    return UNITS[u][0], TOPIC_NAMES[t]
+
+
+def unit_lessons(names):
+    """[(اسم الوحدة، عنوانها، [أسماء مواضيعها])] من قائمة أسماء الدروس بالترتيب."""
+    out, k = [], 0
+    for unit, title, n in UNITS:
+        out.append((unit, title, names[k:k + n]))
+        k += n
+    return out
 
 
 def _logo():
     return "data:image/png;base64," + base64.b64encode(LOGO.read_bytes()).decode()
 
 
-def cover_html(fonts_css, art_box):
-    """art_box: (x0, y0, x1, y1) بالنقاط — مكان صورة الطالب (تنحط فوق الصفحة بعدين من الـPDF القديم)."""
-    x0, y0, x1, y1 = art_box
-    chips = "".join(f'<div class="chip"><b>{u}</b>{html.escape(t)}</div>' for u, t in UNITS)
+UNIT_STYLE = [  # (لون الوحدة، لون خفيف، أيقونة SVG بيضاء 24×24)
+    ("#cc6e53", "#fbe8df", '<text x="12" y="19.5" text-anchor="middle" font-size="21" font-weight="700" fill="#fff" stroke="none">ء</text>'),
+    ("#527c82", "#e2eded", '<path d="M5 19l1-4L15.5 5.5a1.6 1.6 0 0 1 2.3 0l.7.7a1.6 1.6 0 0 1 0 2.3L9 18z M13.5 7.5l3 3"/>'),
+    ("#a9718f", "#f4e6ee", '<path d="M4 6.5h16M8 10.5h12M4 14.5h16M11 18.5h9"/>'),
+    ("#325c8e", "#e3eaf4", '<rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M4 7.5l8 5.5 8-5.5"/>'),
+]
+
+
+def cover_html(fonts_css, topics, kicker="ملزمة مطابقة للكتاب الجديد", title="مهارات الكتابة",
+               badge="نسخة 1448 · الفصل الأول", foot="لا أحلل نشر أو إرسال الملخص أو جزء منه"):
+    """الغلاف: عنوان كبير مع ريشة كتابة خفيفة خلفه، وبطاقة لكل وحدة من وحدات الكتاب الأربع بلونها وأيقونتها ومواضيعها.
+    topics: [(اسم الوحدة، عنوانها، [أسماء المواضيع])]. (ملف الحلول يستخدمه بعنوان وشارة وتذييل خاصين فيه.)"""
+    compact = max(len(t[2]) for t in topics) > 4
+    cards = ""
+    for (unit, utitle, items), (col, tint, icon) in zip(topics, UNIT_STYLE):
+        lis = "".join(f'<div class="it"><span class="n" style="background:{tint};color:{col}">{i}</span>{html.escape(t)}</div>'
+                      for i, t in enumerate(items, 1))
+        cards += (f'<div class="uc" style="--c:{col};--t:{tint}"><div class="ch">'
+                  f'<svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{icon}</svg>'
+                  f'<div class="cu">{html.escape(unit)}</div></div>'
+                  f'<div class="ct">{html.escape(utitle)}</div>{lis}</div>')
+    nib = ('<svg class="nib" viewBox="0 0 120 200"><g transform="rotate(32 60 100)">'
+           '<path d="M60 8 C96 44 110 92 90 134 L60 196 L30 134 C10 92 24 44 60 8 Z" fill="#f4dfcf" stroke="#e6c5ad" stroke-width="2"/>'
+           '<path d="M60 196 L60 104" stroke="#e6c5ad" stroke-width="3" stroke-linecap="round"/>'
+           '<circle cx="60" cy="96" r="8" fill="#fff7ee" stroke="#e6c5ad" stroke-width="2.5"/></g></svg>')
     return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><style>{fonts_css}
 @page {{ size:595.5pt 842.25pt; margin:0; }}
 html,body {{ margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
-.pg {{ width:595.5pt; height:842.25pt; background:#b1794a; position:relative; overflow:hidden; font-family:'Baloo Bhaijaan 2'; }}
-.in {{ position:absolute; inset:14pt; background:{CREAM}; border-radius:18pt; overflow:hidden; }}
+.pg {{ width:595.5pt; height:842.25pt; position:relative; overflow:hidden; background:#fff7ee; font-family:'Readex Pro'; color:#603b28; }}
+/* بقع ناعمة ونقاط (ستايل ملازم عدل) */
 .blob {{ position:absolute; border-radius:50%; }}
-.b1 {{ width:230pt; height:200pt; background:#f6e2d2; top:-70pt; left:-60pt; }}
-.b2 {{ width:160pt; height:150pt; background:#f3dfe7; top:-40pt; right:-50pt; }}
-.b3 {{ width:120pt; height:120pt; background:#e4efee; top:250pt; left:-55pt; }}
-.dotgrid {{ position:absolute; top:40pt; right:40pt; width:60pt; height:40pt;
-  background-image:radial-gradient(#d9b9a3 1.6pt, transparent 1.7pt); background-size:12pt 12pt; }}
-.ver {{ position:absolute; top:26pt; left:28pt; text-align:left; color:#844f6a; font-weight:700; font-size:11pt; line-height:1.45; }}
-.logo {{ position:absolute; top:22pt; right:30pt; width:70pt; }}
-.title {{ position:absolute; top:118pt; left:0; right:0; text-align:center; }}
-.title h1 {{ margin:0; font-weight:800; font-size:64pt; line-height:1.15; color:#89543d; }}
-.pill {{ display:inline-block; margin-top:4pt; background:#89543d; color:#fff; font-weight:800; font-size:20pt; border-radius:30pt; padding:3pt 30pt 0; }}
-.sub {{ margin-top:10pt; font-weight:700; font-size:14pt; color:#ad7c95; }}
-.chips {{ position:absolute; top:330pt; left:60pt; right:60pt; display:flex; flex-direction:column; gap:7pt; align-items:center; }}
-.chip {{ background:#fff; border:1.4pt solid #ead2bf; border-radius:22pt; padding:4pt 16pt 2pt; font-weight:700; font-size:12.5pt; color:#603b28; }}
-.chip b {{ color:#cc6e53; margin-left:6pt; }}
-.foot {{ position:absolute; bottom:22pt; left:0; right:0; text-align:center; font-weight:700; font-size:11pt; color:#844f6a; }}
-</style></head><body><div class="pg"><div class="in">
-<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dotgrid"></div>
-<img class="logo" src="{_logo()}">
-<div class="ver">نسخة 1448 · الفصل الأول<br>جزئية الاختبار النصفي (الميد)</div>
-<div class="title"><h1>مهارات الكتابة</h1><div class="pill">عرب 100</div>
-<div class="sub">ملزمة مطابقة للكتاب الجديد · مع تجميعات لكل درس</div></div>
-<div class="chips">{chips}</div>
-<div class="foot">ملازم عدل · لا أحلل نشر أو إرسال الملخص أو جزء منه</div>
-</div></div></body></html>"""
+.b1 {{ width:300pt; height:260pt; background:#f9e7d8; top:-120pt; left:-110pt; }}
+.b2 {{ width:230pt; height:210pt; background:#e8f0ef; bottom:-90pt; right:-80pt; }}
+.b3 {{ width:110pt; height:110pt; background:#f6e6ee; top:250pt; right:-55pt; }}
+.dots {{ position:absolute; top:30pt; right:120pt; width:90pt; height:40pt;
+  background-image:radial-gradient(#e9cdb9 1.6pt, transparent 1.7pt); background-size:12pt 12pt; }}
+.frame {{ position:absolute; inset:15pt; border:1.2pt solid #dcbfa6; border-radius:22pt; }}
+.top {{ position:absolute; top:34pt; left:42pt; right:42pt; display:flex; justify-content:space-between; align-items:center; }}
+.top img {{ width:66pt; }}
+.ver {{ background:#fff; border:1pt solid #ecd9c9; border-radius:14pt; padding:4pt 12pt; color:#844f6a; font-weight:600; font-size:10.5pt; }}
+.nib {{ position:absolute; width:104pt; height:172pt; top:176pt; left:-2pt; opacity:.85; }}
+.hero {{ position:absolute; top:146pt; left:0; right:0; text-align:center; }}
+.kicker {{ color:#cc6e53; font-weight:600; font-size:13pt; }}
+h1 {{ margin:0; font-weight:700; font-size:70pt; line-height:1.25; color:#89543d; }}
+.swash {{ display:block; margin:-4pt auto 0; width:230pt; height:16pt; }}
+.code {{ display:inline-block; margin-top:10pt; background:#89543d; color:#fff7ee; font-weight:700; font-size:19pt; border-radius:30pt; padding:2pt 36pt 4pt; }}
+.units {{ position:absolute; top:384pt; left:34pt; right:34pt; display:grid; grid-template-columns:1fr 1fr; gap:13pt; }}
+.uc {{ background:#fffdfa; border-radius:16pt; padding:15pt 16pt 13pt; box-shadow:0 4pt 14pt rgba(96,59,40,.10); border-top:4pt solid var(--c); }}
+.ch {{ display:flex; align-items:center; gap:9pt; margin-bottom:4pt; }}
+.ic {{ flex:none; width:38pt; height:38pt; border-radius:50%; background:var(--c); padding:6pt; box-sizing:border-box; }}
+.cu {{ color:var(--c); font-weight:700; font-size:12pt; line-height:1.3; }}
+.ct {{ color:#603b28; font-weight:700; font-size:13.5pt; line-height:1.5; margin-bottom:5pt; padding-bottom:5pt; border-bottom:1pt dashed var(--t); }}
+.it {{ display:flex; align-items:center; gap:6pt; font-weight:600; font-size:11pt; line-height:2.05; color:#5c4033; white-space:nowrap; }}
+.n {{ flex:none; width:16pt; height:16pt; border-radius:50%; font-size:9pt; font-weight:700; display:inline-flex; align-items:center; justify-content:center; line-height:1; }}
+.foot {{ position:absolute; bottom:30pt; left:0; right:0; text-align:center; font-weight:600; font-size:10.5pt; color:#844f6a; }}
+.foot b {{ color:#cc6e53; }}
+{".hero{top:128pt} .nib{top:150pt} .units{top:330pt;gap:11pt} .uc{padding:12pt 14pt 10pt} .it{line-height:1.85} .ct{margin-bottom:3pt;padding-bottom:3pt} .ver{background:#db526f;color:#fff;border-color:#db526f;font-weight:700}" if compact else ""}
+</style></head><body><div class="pg">
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dots"></div>
+<div class="frame"></div>
+{nib}
+<div class="top"><img src="{_logo()}"><div class="ver">{badge}</div></div>
+<div class="hero"><div class="kicker">{kicker}</div><h1>{title}</h1>
+<svg class="swash" viewBox="0 0 230 16"><path d="M6 10 C60 2 120 2 224 9" fill="none" stroke="#cc6e53" stroke-width="3.2" stroke-linecap="round"/><path d="M40 13 C90 8 140 8 190 12" fill="none" stroke="#f0c98d" stroke-width="2.2" stroke-linecap="round"/></svg>
+<div class="code">عرب 100</div></div>
+<div class="units">{cards}</div>
+<div class="foot"><b>ملازم عدل</b> · {foot}</div>
+</div></body></html>"""
 
 
 def intro_body(toc):
@@ -67,30 +119,28 @@ def intro_body(toc):
         ("الاشتراك", "الاشتراك معنا بأي مادة هو عامل مساعد لحصولك على أعلى الدرجات، وبدون اجتهادك وسعيك لن يكون للاشتراك أي دور لتحقيق أعلى الدرجات."),
         ("عن ملازمنا", "جميع الملازم في المتجر يتم تجهيزها على أحدث نسخة."),
     ]
-    cards = "".join(f'<div class="nc"><span class="nk">{k}</span>{v}</div>' for k, v in notes)
+    cards = "".join(f'<p class="ln nc"><span class="nk">{k}</span> {v}</p>' for k, v in notes)
     rows, last_unit = "", None
     for idx, title, p_les, p_bank in toc:
         unit, topic = lesson_label(idx)
         if unit != last_unit:
-            rows += f'<tr class="u"><td colspan="3">{unit}: {UNITS[idx // 4][1]}</td></tr>'
+            rows += f'<tr class="unitrow"><td colspan="3">{unit}: {UNITS[unit_of(idx)[0]][1]}</td></tr>'
             last_unit = unit
         rows += (f'<tr><td class="r"><span class="tp">{topic}</span>{html.escape(title)}</td>'
                  f'<td>{p_les}</td><td>{p_bank if p_bank else "—"}</td></tr>')
     return f"""<!-- المقدمة -->
 <style>
-.nc {{ background:#f2e6dd; border-radius:10pt; padding:5pt 11pt; margin:0 0 6pt; font-size:11pt; line-height:1.7; text-align:justify; text-align-last:right; break-inside:avoid; }}
-.nk {{ display:inline-block; background:#cc6e53; color:#fff; border-radius:12pt; padding:0 9pt; margin-left:7pt; font-size:10.5pt; }}
+.nc {{ font-size:11pt; margin:0 0 7pt; }}
+.nk {{ background:#cc6e53; color:#fff; border-radius:10pt; padding:0 8pt; font-size:10pt; }}
 .nc a {{ color:#db526f; text-decoration:none; }}
-.toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:11pt; margin-top:4pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
-.toc th {{ background:#325c8e; color:#fff; font-family:'Alexandria'; font-weight:700; padding:4pt 6pt; }}
-.toc td {{ padding:3pt 8pt; text-align:center; border-top:1pt solid #eadbd0; background:#fbf6f1; }}
+.toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:12pt; margin-top:8pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
+.toc th {{ background:#325c8e; color:#fff; font-weight:700; padding:4pt 6pt; }}
+.toc td {{ padding:6pt 10pt; text-align:center; border-top:1pt solid #eadbd0; background:#fbf6f1; }}
 .toc td.r {{ text-align:right; }}
-.toc tr.u td {{ background:#f5e6d9; color:#cc6e53; font-weight:800; font-size:12pt; text-align:right; }}
-.tp {{ color:#ad7c95; margin-left:6pt; font-size:10pt; }}
-.thanks {{ text-align:center; color:#db526f; font-size:15pt; margin-top:10pt; }}
+.toc tr.unitrow td {{ background:#f5e6d9; color:#cc6e53; font-weight:700; font-size:12.5pt; text-align:right; }}
+.tp {{ display:inline-block; color:#ad7c95; margin-left:8pt; padding:0 2pt; font-size:10pt; }}
 </style>
 <div class="sec">قبل أن تبدأ</div>
 {cards}
-<div class="sec">فهرس الملزمة</div>
-<table class="toc"><tr><th>الموضوع</th><th style="width:60pt">الشرح</th><th style="width:70pt">التجميعات</th></tr>{rows}</table>
-<div class="thanks">شكرًا لكم على اختياركم</div>"""
+<div class="sec pb">فهرس الملزمة</div>
+<table class="toc"><tr><th>الموضوع</th><th style="width:60pt">الشرح</th><th style="width:70pt">التجميعات</th></tr>{rows}</table>"""
