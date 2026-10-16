@@ -112,7 +112,9 @@ table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
 table.t.side tr:first-child th {{ border-top:0; }}
 table.t td.no {{ width:20pt; }}
 /* الخط تحت الكلمة كاملة (بدون ما يتقطع عند الياء) وينزل تحت نقاطها عشان ما يغطيها — طلب المستخدم */
-.u {{ text-decoration:underline; text-decoration-thickness:1.2pt; text-underline-offset:6.5pt; text-decoration-skip-ink:none; }}
+.u {{ text-decoration:underline; text-decoration-thickness:0.9pt; text-underline-offset:4.5pt; text-decoration-skip-ink:none; }}
+/* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
+td:has(.u), li:has(.u), .note:has(.u), .bul > div:has(.u) {{ line-height:1.85; }}
 .note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
 .keep {{ break-inside:avoid; }}
 .card {{ background:var(--hl); padding:6pt 10pt; margin:8pt 0; border-radius:3pt; break-inside:avoid; }}
