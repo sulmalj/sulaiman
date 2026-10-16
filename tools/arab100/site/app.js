@@ -39,12 +39,10 @@ const inPart = s => SITE.lessons.includes(s);
 
 /* ── البيانات ── */
 const QS = (D.questions || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'q' + q.s + '-' + hash(q.q + '|' + (q.o ? q.o[0] : q.c || '')) }, q));
-const ES = (D.essays || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'e' + q.s + '-' + hash(q.q), t: 'es' }, q));
 const CARDS = (D.cards || []).filter(c => inPart(c.s));
-const BY_ID = Object.fromEntries(QS.concat(ES).map(q => [q.id, q]));
+const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const qOf = s => QS.filter(q => q.s === s);
-const eOf = s => ES.filter(q => q.s === s);
-SITE.lessons.forEach(s => { qOf(s).forEach((q, i) => q.code = s + '-' + (i + 1)); eOf(s).forEach((q, i) => q.code = 'م' + s + '-' + (i + 1)); });
+SITE.lessons.forEach(s => qOf(s).forEach((q, i) => q.code = s + '-' + (i + 1)));
 
 /* ── الحفظ في المتصفح ── */
 const fresh = () => ({ ans: {}, wrong: {}, pos: {}, paras: 0, proof: {}, drafts: {} });
@@ -74,7 +72,7 @@ function show(v, navKey) {
 function go(key) {
   if (E && key !== 'examrun') { confirmBox('تطلع من الاختبار؟', 'إذا طلعت بيضيع هذا الاختبار.', 'إيه، اطلع', () => { stopExam(); go(key); }); return; }
   if (key === 'home') { renderHome(); show('home'); }
-  else if (key === 'rules' || key === 'practice' || key === 'essay') { renderLessons(key); show('lessons', key); }
+  else if (key === 'rules' || key === 'practice') { renderLessons(key); show('lessons', key); }
   else if (key === 'write') { show('write'); window.Paragraph && Paragraph.open(); }
   else if (key === 'exam') { renderExamIntro(); show('exam'); }
   else if (key === 'review') { renderReviewIntro(); show('review'); }
@@ -85,12 +83,12 @@ document.addEventListener('click', e => { const b = e.target.closest('[data-nav]
 
 /* ── الرئيسية ── */
 function renderHome() {
-  const ids = Object.keys(LS.ans).filter(id => BY_ID[id] && BY_ID[id].t !== 'es');
+  const ids = Object.keys(LS.ans).filter(id => BY_ID[id]);
   const right = ids.filter(id => LS.ans[id]).length;
   const mastery = QS.length ? Math.round(right / QS.length * 100) : 0;
   $('mPct').textContent = mastery + '%';
   $('mBar').style.width = mastery + '%';
-  $('heroLead').textContent = `${SITE.lessons.length} دروس من كتاب مهارات الكتابة: ${QS.length} سؤال صح وخطأ واختيار، و${ES.length} سؤال مقالي، وبطاقات للقواعد، وتصحيح لكتابة الفقرة.`;
+  $('heroLead').textContent = `${SITE.lessons.length} ${SITE.lessons.length > 10 ? 'درسًا' : 'دروس'} من كتاب مهارات الكتابة: ${QS.length} سؤال صح وخطأ واختيار من متعدد، وبطاقات للقواعد، وتصحيح لكتابة الفقرة.`;
   $('toolExam').textContent = `${SITE.examN} سؤال عشوائي في ${SITE.examMin} دقيقة، والنتيجة في النهاية`;
   $('sAns').textContent = ids.length;
   $('sAcc').textContent = ids.length ? Math.round(right / ids.length * 100) + '%' : '—';
@@ -103,7 +101,6 @@ let MODE = 'practice';
 const MODES = {
   rules: { t: 'الدروس والقواعد', p: 'بطاقات تلخّص قواعد كل درس واستثناءاتها. راجعها قبل ما تتدرّب.' },
   practice: { t: 'تدرّب بالدرس', p: 'أسئلة صح وخطأ واختيار من متعدد لكل درس، وتطلع لك الإجابة الصحيحة والتوضيح أول ما تجاوب.' },
-  essay: { t: 'الأسئلة المقالية', p: 'علّل وصحّح واذكر. اكتب إجابتك، وبعدها قارنها بالإجابة النموذجية.' }
 };
 function renderLessons(mode) {
   MODE = mode;
@@ -120,7 +117,7 @@ function renderLessons(mode) {
     } else if (L.write && mode === 'practice') {
       meta = 'تمرين كتابي: اكتب فقرة وتُصحَّح لك'; act = 'data-nav="write"'; cls = 'special';
     } else {
-      const list = mode === 'essay' ? eOf(s) : qOf(s);
+      const list = qOf(s);
       const done = list.filter(q => q.id in LS.ans).length;
       pct = list.length ? Math.round(done / list.length * 100) : 0;
       meta = list.length ? `${list.length} سؤال` : 'قريباً'; disabled = !list.length;
@@ -163,12 +160,12 @@ function openCards(s) {
   show('cards', 'rules');
 }
 
-/* ── التدريب / المقالي / المراجعة ── */
+/* ── التدريب / المراجعة ── */
 let P = null;
 function startLesson(s, mode) {
-  const ids = (mode === 'essay' ? eOf(s) : qOf(s)).map(q => q.id);
+  const ids = qOf(s).map(q => q.id);
   if (!ids.length) return;
-  const key = (mode === 'essay' ? 'e' : 'p') + s;
+  const key = 'p' + s;
   P = { kind: mode, s, key, ids, i: Math.min(LS.pos[key] || 0, ids.length - 1), picked: {}, shown: {}, typed: {} };
   show('quiz', mode); renderQ();
 }
@@ -186,27 +183,16 @@ function options(q) {
 }
 const rightText = q => q.t === 'tf' ? (q.a ? 'صح' : 'خطأ') : q.o[0];
 const explain = q => (q.t === 'tf' && !q.a ? `<span class="corr"><b>التصحيح:</b> ${esc(q.c)}</span>` : '') + (q.x ? `<span class="corr"><b>التوضيح:</b> ${esc(q.x)}</span>` : '');
-const kindLabel = q => q.t === 'es' ? q.k : q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد';
+const kindLabel = q => q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد';
 
 function renderQ() {
   const q = BY_ID[P.ids[P.i]];
-  const head = P.kind === 'review' ? 'مراجعة أخطائي' : P.kind === 'essay' ? 'الأسئلة المقالية' : 'تدرّب بالدرس';
+  const head = P.kind === 'review' ? 'مراجعة أخطائي' : 'تدرّب بالدرس';
   $('qTitle').innerHTML = `${head}<small>${esc(lessonName(q.s))} · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
   $('qBar').style.width = ((P.i + 1) / P.ids.length * 100) + '%';
-  let html = `<div class="qmeta"><span class="tag ${q.t === 'es' ? 'rose' : ''}">${esc(kindLabel(q))}</span><span class="qcode">سؤال ${q.code}</span></div>
+  let html = `<div class="qmeta"><span class="tag">${esc(kindLabel(q))}</span><span class="qcode">سؤال ${q.code}</span></div>
     <p class="qtext">${esc(q.q)}</p>`;
-  if (q.t === 'es') {
-    const shown = P.shown[q.id];
-    html += `<textarea class="ans-in" id="esIn" placeholder="اكتب إجابتك هنا (اختياري)…">${esc(P.typed[q.id] || '')}</textarea>`;
-    if (!shown) html += `<div class="self"><button class="btn btn-pri" type="button" id="esShow">اعرض الإجابة النموذجية</button></div>`;
-    else {
-      html += `<div class="model-ans"><div class="h">الإجابة النموذجية</div>${esc(q.a)}</div>` + (q.x ? `<div class="model-ans ex"><div class="h">الشرح</div>${esc(q.x)}</div>` : '');
-      const m = P.picked[q.id];
-      html += m === undefined
-        ? `<div class="self"><span>قارن إجابتك:</span><button class="btn btn-good btn-sm" type="button" data-self="1">${ICON('check')}إجابتي صحيحة</button><button class="btn btn-bad btn-sm" type="button" data-self="0">${ICON('x')}أخطأت أو ما عرفتها</button></div>`
-        : `<div class="fb ${m ? 'ok' : 'no'}"><div class="h">${m ? ICON('check') + 'ممتاز' : ICON('x') + 'انضاف لـ«مراجعة أخطائي»، ارجع له بعدين'}</div></div>`;
-    }
-  } else {
+  {
     const opts = options(q), picked = P.picked[q.id];
     html += `<div class="opts ${q.t === 'tf' ? 'tf' : ''}">` + opts.map((o, i) => {
       let cls = '';
@@ -222,12 +208,8 @@ function renderQ() {
   $('qPrev').disabled = P.i === 0;
   $('qNext').innerHTML = P.i === P.ids.length - 1 ? 'إنهاء' : 'التالي' + ICON('next');
 }
-$('qCard').addEventListener('input', e => { if (e.target.id === 'esIn') P.typed[P.ids[P.i]] = e.target.value; });
 $('qCard').addEventListener('click', e => {
   const q = BY_ID[P.ids[P.i]];
-  if (e.target.closest('#esShow')) { P.shown[q.id] = 1; renderQ(); return; }
-  const sb = e.target.closest('[data-self]');
-  if (sb) { const ok = sb.dataset.self === '1'; P.picked[q.id] = ok; record(q, ok); renderQ(); return; }
   const b = e.target.closest('.opt'); if (!b || b.disabled) return;
   const i = +b.dataset.i;
   P.picked[q.id] = i;

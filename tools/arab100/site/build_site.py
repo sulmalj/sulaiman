@@ -2,7 +2,7 @@
 """يبني موقعي تدريب عرب 100 من المصادر:
      sites/arab100-mid    (جزئية الميد: الدروس 1–8)
      sites/arab100-final  (جزئية الفاينل: الكتاب كامل 1–12)
-   المصادر في tools/arab100/site/: questions/ cards/ essay/ proof.js common_errors.json
+   المصادر في tools/arab100/site/: questions/ cards/ proof.js common_errors.json
    template.html style.css app.js paragraph.js edge-correct.js
    الاستخدام:  python3 tools/arab100/site/build_site.py
 """
@@ -24,18 +24,17 @@ PARTS = {
 
 LOADER = r"""
 const fs = require('fs'), path = require('path'), vm = require('vm');
-const out = { questions: [], cards: [], essays: [], proof: [] };
+const out = { questions: [], cards: [], proof: [] };
 const ctx = {
   M: (s, q, o, x) => out.questions.push({ s, t: 'mc', q, o, x: x || '' }),
   T: (s, q, x) => out.questions.push({ s, t: 'tf', q, a: true, x: x || '' }),
   F: (s, q, c, x) => out.questions.push({ s, t: 'tf', q, a: false, c, x: x || '' }),
   C: (s, t, l, e, x) => out.cards.push({ s, t, l, e: e || [], x: x || '' }),
-  E: (s, k, q, a, x) => out.essays.push({ s, k, q, a, x: x || '' }),
   PR: (title, text) => out.proof.push({ title, text })
 };
 vm.createContext(ctx);
 const dir = process.argv[1];
-for (const sub of ['questions', 'cards', 'essay']) {
+for (const sub of ['questions', 'cards']) {
   const d = path.join(dir, sub);
   if (!fs.existsSync(d)) continue;
   for (const f of fs.readdirSync(d).filter(f => f.endsWith('.js')).sort()) {
@@ -73,9 +72,6 @@ def validate(d):
         seen.add(key)
     for c in d['cards']:
         if not c['l']: errs.append(f"بطاقة فاضية: {c['s']} {c['t']}")
-    for e in d['essays']:
-        if not e['a'].strip(): errs.append(f"مقالي بدون إجابة: {e['q'][:40]}")
-        if not e.get('x', '').strip(): errs.append(f"مقالي بدون شرح: {e['q'][:40]}")
     mk = re.compile(r'\[\[([^|\]]+)\|([^|\]]+)\|([^\]]+)\]\]')
     for p in d['proof']:
         ms = mk.findall(p['text'])
@@ -103,7 +99,7 @@ def build(part, d):
         shutil.rmtree(out)
     (out / 'netlify/edge-functions').mkdir(parents=True)
     les = set(P['site']['lessons'])
-    data = {k: [x for x in d[k] if x.get('s', 1) in les] for k in ('questions', 'cards', 'essays')}
+    data = {k: [x for x in d[k] if x.get('s', 1) in les] for k in ('questions', 'cards')}
     data['proof'] = d['proof']
     (out / 'data.js').write_text('/* بيانات مولّدة من tools/arab100/site/build_site.py — لا تعدّلها يدوياً */\nwindow.DATA = ' + json.dumps(data, ensure_ascii=False) + ';\n', encoding='utf-8')
     html = (HERE / 'template.html').read_text(encoding='utf-8')
