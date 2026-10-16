@@ -142,13 +142,13 @@ KEEP_JS = """() => {
     while (e.firstChild) sp.appendChild(e.firstChild);
     e.appendChild(sp);
   }
-  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .sub2, .lesson'));
+  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .sub2, .lesson, .unit'));
   for (const h of heads) {
     const grp = document.createElement('div'); grp.className = 'keep';
     h.before(grp); grp.appendChild(h);
     let n = grp.nextElementSibling;
     // يمسك العنوان مع العنوان الفرعي اللي بعده ثم أول عنصر محتوى
-    while (n && n.matches('.sub, .sec, .sub2')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
+    while (n && n.matches('.sub, .sec, .sub2, .lesson')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
     if (n && !(n.matches('table') && !n.classList.contains('short'))) {
       const nx = n.nextElementSibling; grp.appendChild(n);
       // سطر ينتهي بنقطتين (مثل «مثال:» أو «تحذف الواو في الحالات الآتية:») ما ينفصل عن اللي بعده

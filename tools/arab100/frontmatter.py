@@ -48,9 +48,11 @@ UNIT_STYLE = [  # (لون الوحدة، لون خفيف، أيقونة SVG بي
 ]
 
 
-def cover_html(fonts_css, topics):
+def cover_html(fonts_css, topics, kicker="ملزمة مطابقة للكتاب الجديد", title="مهارات الكتابة",
+               badge="نسخة 1448 · الفصل الأول", foot="لا أحلل نشر أو إرسال الملخص أو جزء منه"):
     """الغلاف: عنوان كبير مع ريشة كتابة خفيفة خلفه، وبطاقة لكل وحدة من وحدات الكتاب الأربع بلونها وأيقونتها ومواضيعها.
-    topics: [(اسم الوحدة، عنوانها، [أسماء المواضيع])]."""
+    topics: [(اسم الوحدة، عنوانها، [أسماء المواضيع])]. (ملف الحلول يستخدمه بعنوان وشارة وتذييل خاصين فيه.)"""
+    compact = max(len(t[2]) for t in topics) > 4
     cards = ""
     for (unit, utitle, items), (col, tint, icon) in zip(topics, UNIT_STYLE):
         lis = "".join(f'<div class="it"><span class="n" style="background:{tint};color:{col}">{i}</span>{html.escape(t)}</div>'
@@ -94,16 +96,17 @@ h1 {{ margin:0; font-weight:700; font-size:70pt; line-height:1.25; color:#89543d
 .n {{ flex:none; width:16pt; height:16pt; border-radius:50%; font-size:9pt; font-weight:700; display:inline-flex; align-items:center; justify-content:center; line-height:1; }}
 .foot {{ position:absolute; bottom:30pt; left:0; right:0; text-align:center; font-weight:600; font-size:10.5pt; color:#844f6a; }}
 .foot b {{ color:#cc6e53; }}
+{".hero{top:128pt} .nib{top:150pt} .units{top:330pt;gap:11pt} .uc{padding:12pt 14pt 10pt} .it{line-height:1.85} .ct{margin-bottom:3pt;padding-bottom:3pt} .ver{background:#db526f;color:#fff;border-color:#db526f;font-weight:700}" if compact else ""}
 </style></head><body><div class="pg">
 <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dots"></div>
 <div class="frame"></div>
 {nib}
-<div class="top"><img src="{_logo()}"><div class="ver">نسخة 1448 · الفصل الأول</div></div>
-<div class="hero"><div class="kicker">ملزمة مطابقة للكتاب الجديد</div><h1>مهارات الكتابة</h1>
+<div class="top"><img src="{_logo()}"><div class="ver">{badge}</div></div>
+<div class="hero"><div class="kicker">{kicker}</div><h1>{title}</h1>
 <svg class="swash" viewBox="0 0 230 16"><path d="M6 10 C60 2 120 2 224 9" fill="none" stroke="#cc6e53" stroke-width="3.2" stroke-linecap="round"/><path d="M40 13 C90 8 140 8 190 12" fill="none" stroke="#f0c98d" stroke-width="2.2" stroke-linecap="round"/></svg>
 <div class="code">عرب 100</div></div>
 <div class="units">{cards}</div>
-<div class="foot"><b>ملازم عدل</b> · لا أحلل نشر أو إرسال الملخص أو جزء منه</div>
+<div class="foot"><b>ملازم عدل</b> · {foot}</div>
 </div></body></html>"""
 
 
