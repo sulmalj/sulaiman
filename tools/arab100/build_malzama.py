@@ -99,6 +99,9 @@ ol.n > li, ul.b > li {{ margin:10pt 0; break-inside:avoid; }}
 /* (لما يطلبها المستخدم بس) قائمة ببندين في كل سطر عشان توفير مساحة */
 ul.b.two {{ display:grid; grid-template-columns:1fr 1fr; column-gap:28pt; padding-right:16pt; }}
 ul.b.two > li {{ margin:2pt 0; }}
+/* (استثناء بطلب المستخدم لصفحة معيّنة) مسافات أضيق شوي عشان يدخل قسم كامل في الصفحة */
+.sec.tz {{ margin-top:26pt; }} .sub.tz {{ margin-top:16pt; }} .sub2.tz {{ margin-top:12pt; }}
+.ln.tz {{ margin:9pt 0; }} .pill.tz {{ margin:6pt 0 8pt; }} .bul.tz {{ margin:8pt 0; }}
 /* القائمة تنقسم بين البنود إذا طالت (القصيرة — 3 بنود أو أقل — تبقى مع بعض) */
 ol.n, ul.b {{ break-inside:auto; }}
 ol.n:not(:has(> li:nth-child(4))), ul.b:not(:has(> li:nth-child(4))) {{ break-inside:avoid; }}
