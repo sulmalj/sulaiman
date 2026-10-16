@@ -335,14 +335,29 @@ def bank_html(qs, per_page=10):
 
 
 # ---------- التذييل ----------
+# عبارة أسفل يسار كل صفحة (بدل «لا احلل نشر او ارسال الملخص او جزء منه» اللي في خلفية الملزمة القديمة — طلب المستخدم)
+FOOT_NOTE = "ملف خاص بالمشتركين · لا أحلل نشره"
+
+
+def plain_base(path):
+    """خلفية الملزمة بدون العبارة القديمة المطبوعة فيها (نكتب بدالها FOOT_NOTE في التذييل)."""
+    d = pymupdf.open(path)
+    pg = d[0]
+    pg.add_redact_annot(pymupdf.Rect(10, 821, 207, 841), fill=False)
+    pg.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE, graphics=pymupdf.PDF_REDACT_LINE_ART_NONE)
+    return d
+
+
 def footers_html(items):
     pages = "".join(
-        f'<div class="fp"><div class="ft">{html.escape(t)}</div>' + (f'<div class="pn">~{n}~</div>' if n else '') + '</div>'
+        f'<div class="fp"><div class="ft">{html.escape(t)}</div>' + (f'<div class="pn">~{n}~</div>' if n else '')
+        + f'<div class="lf">{FOOT_NOTE}</div></div>'
         for t, n in items)
     css = f"""@page{{size:{W}pt {H}pt;margin:0}}
 .fp{{width:{W}pt;height:{H}pt;position:relative;break-after:page}} .fp:last-child{{break-after:auto}}
 .ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:700;font-size:10.5pt;line-height:1.25;color:#603b28}}
-.pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:700;font-size:14pt;color:#111;direction:ltr}}"""
+.pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:700;font-size:14pt;color:#111;direction:ltr}}
+.lf{{position:absolute;left:12pt;bottom:7pt;width:200pt;text-align:left;font-family:'{FONT_HEAD}';font-weight:700;font-size:10pt;line-height:1.25;color:#603b28}}"""
     return f'<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>{font_faces()}{css}</style></head><body style="margin:0">{pages}</body></html>'
 
 
@@ -427,8 +442,8 @@ def main():
     if a.only:
         lessons = [p for p in lessons if p.name.startswith(a.only)]
     tmp = pathlib.Path(tempfile.mkdtemp())
-    base = pymupdf.open(BASE)
-    base_bank = pymupdf.open(BASE_BANK)
+    base = plain_base(BASE)
+    base_bank = plain_base(BASE_BANK)
     out = pymupdf.open()
     overlays, foot_items = [], []
     with sync_playwright() as p:
