@@ -200,7 +200,7 @@ function renderQ() {
     html += `<textarea class="ans-in" id="esIn" placeholder="اكتب إجابتك هنا (اختياري)…">${esc(P.typed[q.id] || '')}</textarea>`;
     if (!shown) html += `<div class="self"><button class="btn btn-pri" type="button" id="esShow">اعرض الإجابة النموذجية</button></div>`;
     else {
-      html += `<div class="model-ans"><div class="h">الإجابة النموذجية</div>${esc(q.a)}</div>`;
+      html += `<div class="model-ans"><div class="h">الإجابة النموذجية</div>${esc(q.a)}</div>` + (q.x ? `<div class="model-ans ex"><div class="h">الشرح</div>${esc(q.x)}</div>` : '');
       const m = P.picked[q.id];
       html += m === undefined
         ? `<div class="self"><span>قارن إجابتك:</span><button class="btn btn-good btn-sm" type="button" data-self="1">${ICON('check')}إجابتي صحيحة</button><button class="btn btn-bad btn-sm" type="button" data-self="0">${ICON('x')}أخطأت أو ما عرفتها</button></div>`

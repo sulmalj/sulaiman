@@ -30,7 +30,7 @@ const ctx = {
   T: (s, q, x) => out.questions.push({ s, t: 'tf', q, a: true, x: x || '' }),
   F: (s, q, c, x) => out.questions.push({ s, t: 'tf', q, a: false, c, x: x || '' }),
   C: (s, t, l, e, x) => out.cards.push({ s, t, l, e: e || [], x: x || '' }),
-  E: (s, k, q, a) => out.essays.push({ s, k, q, a }),
+  E: (s, k, q, a, x) => out.essays.push({ s, k, q, a, x: x || '' }),
   PR: (title, text) => out.proof.push({ title, text })
 };
 vm.createContext(ctx);
@@ -67,6 +67,7 @@ def validate(d):
             if not (3 <= len(o) <= 5): errs.append('عدد الخيارات: ' + tag)
             if len(set(o)) != len(o): errs.append('خيارات مكررة: ' + tag)
         if q['t'] == 'tf' and not q['a'] and not q.get('c'): errs.append('خطأ بدون تصحيح: ' + tag)
+        if not q.get('x', '').strip(): errs.append('سؤال بدون شرح: ' + tag)
         key = (q['s'], q['q'], tuple(q.get('o') or []))
         if key in seen: errs.append('سؤال مكرر: ' + tag)
         seen.add(key)
@@ -74,6 +75,7 @@ def validate(d):
         if not c['l']: errs.append(f"بطاقة فاضية: {c['s']} {c['t']}")
     for e in d['essays']:
         if not e['a'].strip(): errs.append(f"مقالي بدون إجابة: {e['q'][:40]}")
+        if not e.get('x', '').strip(): errs.append(f"مقالي بدون شرح: {e['q'][:40]}")
     mk = re.compile(r'\[\[([^|\]]+)\|([^|\]]+)\|([^\]]+)\]\]')
     for p in d['proof']:
         ms = mk.findall(p['text'])
