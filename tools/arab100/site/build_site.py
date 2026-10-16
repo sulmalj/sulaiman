@@ -16,10 +16,10 @@ EXACT = ROOT / 'store/arab100/book/exact'
 PARTS = {
     'mid': dict(out='sites/arab100-mid', title='جزئية الميد', hero='استعد لاختبار الميد في عرب 100',
                 site=dict(key='arab100-mid-v1', lessons=list(range(1, 9)), examLessons=[1, 2, 3, 4, 5, 6, 8],
-                          examN=20, examMin=50, examName='محاكاة الميد', examScope='دروس جزئية الميد')),
+                          examN=30, examMin=50, examName='محاكاة الميد', examScope='دروس جزئية الميد')),
     'final': dict(out='sites/arab100-final', title='جزئية الفاينل', hero='استعد لاختبار الفاينل في عرب 100',
                   site=dict(key='arab100-final-v1', lessons=list(range(1, 13)), examLessons=[1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12],
-                            examN=30, examMin=50, examName='محاكاة الفاينل', examScope='كل دروس الكتاب')),
+                            examN=40, examMin=50, examName='محاكاة الفاينل', examScope='كل دروس الكتاب')),
 }
 
 LOADER = r"""
