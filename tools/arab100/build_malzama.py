@@ -113,6 +113,9 @@ ul.b.rm > li {{ margin:20pt 0; }} .bul.rm {{ margin:24pt 0; }} .sec.rm:not(.pb) 
 ol.n, ul.b {{ break-inside:auto; }}
 ol.n:not(:has(> li:nth-child(4))), ul.b:not(:has(> li:nth-child(4))) {{ break-inside:avoid; }}
 ul.b > li::marker {{ color:var(--sec); }}
+/* الترقيم مثل الكتاب: «١- ٢- ٣-» (أرقام عربية وشرطة) بدل «1. 2.» */
+ol.n {{ list-style:arabic-indic; }}
+ol.n > li::marker {{ content:counter(list-item, arabic-indic) "- "; color:var(--term); font-weight:700; }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
 .dot {{ display:block; width:15pt; height:15pt; border-radius:50%; margin:0 auto 4pt; }}
@@ -651,10 +654,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
     ap.add_argument("--only", help="رقم الدرس (مثل 01) للمعاينة")
+    ap.add_argument("--upto", type=int, help="آخر درس داخل (مثل 8 = لين «الأخطاء الشائعة» = جزئية الميد)")
+    ap.add_argument("--part", default="", help="اسم الجزئية على الغلاف (جزئية الميد / جزئية الفاينل)")
     ap.add_argument("--solutions", action="store_true", help="يبني ملف حلول التطبيقات من store/arab100/book/applications.md")
     a = ap.parse_args()
 
     lessons = sorted((HERE / "content").glob("*.html"))
+    if a.upto:
+        lessons = lessons[:a.upto]
     if a.solutions:
         lessons = [solutions_html()]
     if a.only:
@@ -697,7 +704,7 @@ def main():
                 toc.append((li, t, p_les, p_bank))
             names = [t for (_, t, _, _) in toc]
             topics = fm.unit_lessons(names)
-            render(fm.cover_html(font_faces(), topics), tmp / "cover.pdf", br)
+            render(fm.cover_html(font_faces(), topics, part=a.part), tmp / "cover.pdf", br)
             render(doc(fm.intro_body(toc)), tmp / "intro.pdf", br)
             n_intro = pymupdf.open(tmp / "intro.pdf").page_count
             foot_items = [("المقدمة", None)] * n_intro + foot_items
