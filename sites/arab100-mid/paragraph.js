@@ -64,7 +64,7 @@ function saveDraft() {
 }
 $('wTopics').addEventListener('click', e => {
   const b = e.target.closest('[data-t]'); if (!b) return;
-  saveDraft(); T = b.dataset.t; $('wRes').innerHTML = ''; $('wModelBox').innerHTML = ''; open();
+  saveDraft(); T = b.dataset.t; $('wRes').innerHTML = ''; hideModel(); open();
 });
 $('wText').addEventListener('input', () => { counts(); saveDraft(); });
 $('wTopic').addEventListener('input', saveDraft);
@@ -73,12 +73,15 @@ $('wPlus').onclick = () => { N = Math.min(15, N + 1); $('wN').textContent = N; c
 $('wClear').onclick = () => { $('wText').value = ''; $('wRes').innerHTML = ''; counts(); saveDraft(); };
 $('wModel').onclick = () => {
   const m = MODELS[T]; if (!m) return;
-  if ($('wModelBox').innerHTML) { $('wModelBox').innerHTML = ''; return; }
+  if ($('wModelBox').innerHTML) { hideModel(); return; }
+  $('wModelNote').hidden = false; $('wModel').textContent = 'إخفاء النموذج';
   $('wModelBox').innerHTML = `<div class="panel model"><h4>نموذج فقرة: ${esc(topicTitle())}</h4>
     <p>${m.map(([c, s]) => `<span class="${c}">${esc(s)}</span>`).join(' ')}</p>
     <div class="legend"><span class="k">الجملة المفتاحية</span><span class="s">الجمل الداعمة</span><span class="c">الجملة الختامية</span></div>
     <p class="mnote">لاحظ أدوات الربط: فـ، كما أنّ، بالإضافة إلى ذلك، وبذلك، ولذلك. اكتب فقرتك بأسلوبك أنت، ولا تنسخ النموذج.</p></div>`;
 };
+function hideModel() { $('wModelBox').innerHTML = ''; $('wModelNote').hidden = true; $('wModel').textContent = 'نموذج فقرة'; }
+$('wModelGo').onclick = () => $('wModelBox').scrollIntoView({ behavior: 'smooth', block: 'start' });
 const topicTitle = () => T === 'own' ? ($('wTopic').value.trim() || 'موضوع من اختيارك') : TOPICS.find(t => t.id === T).title;
 
 $('wCheck').onclick = async () => {

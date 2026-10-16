@@ -113,6 +113,10 @@ footer p{margin:0}
 .note{display:flex;gap:10px;align-items:flex-start;border-radius:var(--r);padding:10px 14px;font-size:14.5px;line-height:1.7;margin:0 0 14px}
 .note .i{margin-top:3px;width:18px;height:18px}
 .note.warn{background:var(--warn-tint);color:var(--warn)}
+.note.info{background:var(--navy-tint);color:var(--ink-2);margin:14px 0 0}
+.note.info .i{color:var(--navy)}
+.note.info b{color:var(--navy)}
+.lnk{background:none;border:0;padding:0;color:var(--navy-2);font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 .empty{color:var(--muted);text-align:center;padding:10px;margin:0}
 
 /* ── قائمة الدروس ── */
