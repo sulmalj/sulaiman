@@ -42,7 +42,7 @@ const words = text => (text.trim().match(/[^\s]+/g) || []).filter(w => /[ء-ي]/
 
 /* ── الواجهة ── */
 function open() {
-  $('wTopics').innerHTML = TOPICS.map(t => `<button type="button" class="topic ${t.id === T ? 'on' : ''}" data-t="${t.id}">${t.own ? '✏️ ' : ''}${esc(t.title)}<small>${t.own ? 'اكتب عنوان موضوعك' : 'موضوع مقترح'}</small></button>`).join('');
+  $('wTopics').innerHTML = TOPICS.map(t => `<button type="button" class="topic ${t.id === T ? 'on' : ''}" data-t="${t.id}">${esc(t.title)}<small>${t.own ? 'اكتب عنوان موضوعك' : 'موضوع مقترح'}</small></button>`).join('');
   $('wTopic').hidden = T !== 'own';
   const d = st().drafts || {};
   $('wText').value = d[draftKey()] || '';
@@ -74,10 +74,10 @@ $('wClear').onclick = () => { $('wText').value = ''; $('wRes').innerHTML = ''; c
 $('wModel').onclick = () => {
   const m = MODELS[T]; if (!m) return;
   if ($('wModelBox').innerHTML) { $('wModelBox').innerHTML = ''; return; }
-  $('wModelBox').innerHTML = `<div class="card model"><h4>نموذج فقرة: ${esc(topicTitle())}</h4>
+  $('wModelBox').innerHTML = `<div class="panel model"><h4>نموذج فقرة: ${esc(topicTitle())}</h4>
     <p>${m.map(([c, s]) => `<span class="${c}">${esc(s)}</span>`).join(' ')}</p>
     <div class="legend"><span class="k">الجملة المفتاحية</span><span class="s">الجمل الداعمة</span><span class="c">الجملة الختامية</span></div>
-    <p class="note" style="font-size:13.5px;color:var(--muted);margin-top:6px">لاحظ أدوات الربط: فـ، كما أنّ، بالإضافة إلى ذلك، وبذلك/ولذلك. اكتب فقرتك بأسلوبك أنت، لا تنسخ النموذج.</p></div>`;
+    <p class="mnote">لاحظ أدوات الربط: فـ، كما أنّ، بالإضافة إلى ذلك، وبذلك، ولذلك. اكتب فقرتك بأسلوبك أنت، ولا تنسخ النموذج.</p></div>`;
 };
 const topicTitle = () => T === 'own' ? ($('wTopic').value.trim() || 'موضوع من اختيارك') : TOPICS.find(t => t.id === T).title;
 
@@ -95,7 +95,7 @@ $('wCheck').onclick = async () => {
   render(r, text, src);
   $('wRes').scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
-function alertRes(msg) { $('wRes').innerHTML = `<p class="warn">${esc(msg)}</p>`; }
+function alertRes(msg) { $('wRes').innerHTML = `<p class="note warn">${window.ICON ? ICON('alert') : ''}<span>${esc(msg)}</span></p>`; }
 
 /* ── التصحيح بالذكاء الاصطناعي (بث مباشر من /api/correct) ── */
 async function aiCorrect(text) {
@@ -238,13 +238,14 @@ function localCheck(text) {
     }
   }
   // 3) علامات الترقيم
+  const W = '[\u0621-\u0652]+';
   const P = [
-    [/ +([،؛:.!؟?,;])/g, (mm) => mm.trim(), 'لا تُترك مسافة قبل علامة الترقيم؛ تُلصق العلامة بالكلمة التي قبلها.'],
-    [/[ء-ي],(?=\s*[ء-ي])/g, mm => mm[0] + '،', 'الفاصلة العربية تُكتب (،) لا (,).'],
-    [/[ء-ي]\?/g, mm => mm[0] + '؟', 'علامة الاستفهام العربية تُكتب (؟).'],
-    [/[ء-ي];/g, mm => mm[0] + '؛', 'الفاصلة المنقوطة العربية تُكتب (؛).'],
+    [new RegExp('(' + W + ') +([،؛:.!؟?,;])', 'g'), mm => mm.replace(/ +/, ''), 'لا تُترك مسافة قبل علامة الترقيم؛ تُلصق العلامة بالكلمة التي قبلها.'],
+    [new RegExp('(' + W + '),(?=\\s*[\u0621-\u064A])', 'g'), mm => mm.slice(0, -1) + '،', 'الفاصلة العربية تُكتب (،) لا (,).'],
+    [new RegExp('(' + W + ')\\?', 'g'), mm => mm.slice(0, -1) + '؟', 'علامة الاستفهام العربية تُكتب (؟).'],
+    [new RegExp('(' + W + ');', 'g'), mm => mm.slice(0, -1) + '؛', 'الفاصلة المنقوطة العربية تُكتب (؛).'],
     [/([،؛])\1+|([!؟])\2{1,}/g, mm => mm[0], 'لا تُكرر علامة الترقيم.'],
-    [/[،؛.](?=[ء-ي])/g, mm => mm + ' ', 'اترك مسافة بعد علامة الترقيم قبل الكلمة التالية.']
+    [new RegExp('([،؛.])(' + W + ')', 'g'), mm => mm[0] + ' ' + mm.slice(1), 'اترك مسافة بعد علامة الترقيم قبل الكلمة التالية.']
   ];
   P.forEach(([re, f, why]) => { let mm; re.lastIndex = 0; while ((mm = re.exec(text))) { if (mm[0] === '.' && /\d/.test(text[mm.index - 1] || '')) continue; add(mm.index, mm.index + mm[0].length, f(mm[0]), 'ترقيم', why, LESS.tarq, true); } });
   // تكرار كلمة متتالية
@@ -275,6 +276,16 @@ function localCheck(text) {
   const linked = supp.concat(closing ? [closing] : []).filter(s => connOf(s)).length;
   const needLinks = Math.max(1, Math.ceil((n - 1) / 2));
   const relevance = sents.filter(hasKey).length;
+  // وحدة الفقرة: كل جملة تذكر الموضوع، أو ترجع له بضمير أو أداة ربط
+  const REF = /^(?:و|ف)?(?:هو|هي|هم|هذا|هذه|ذلك|تلك|كما|لذلك|لهذا|إذ|حيث|بل|ثم|أيضا|كذلك|بالإضافة|بالاضافة|إضافة|علاوة|فضلا|بناء|وبذلك|بذلك|هكذا|عليه)(?![\u0621-\u064A])/;
+  const offTopic = sents.slice(1).filter(x => !hasKey(x) && !REF.test(plain(x).trim()) && !connOf(x));
+  const unityOk = n >= 2 && offTopic.length === 0;
+  // التسلسل المنطقي: مفتاحية في البداية، وختام في النهاية، وما فيه أداة ختام في وسط الفقرة، والتعداد مرتب
+  const midClose = supp.filter(x => CLOSE.test(plain(x).trim()) && !/^(?:و|ف)?(?:لذلك|عليه|من\s+ثم)/.test(plain(x).trim()));
+  const ORD = ['أولا', 'ثانيا', 'ثالثا', 'رابعا', 'خامسا'];
+  const ordSeen = sents.map(x => ORD.findIndex(o => plain(x).replace(/[أإآ]/g, 'ا').includes(o.replace(/[أإآ]/g, 'ا')))).filter(k => k >= 0);
+  const ordOk = ordSeen.every((k, j) => j === 0 || k > ordSeen[j - 1]);
+  const seqOk = keyOk && !!closing && closeOk && midClose.length === 0 && ordOk;
 
   const R = {
     score: 0, sentence_count: n,
@@ -283,9 +294,9 @@ function localCheck(text) {
     supporting_note: supp.length >= 2 ? 'تأكد إن كل جملة داعمة تشرح الفكرة الرئيسة أو تدعمها بدليل أو معلومة أو مثال.' : 'الجمل الداعمة قليلة: أضف جملًا تشرح الفكرة الرئيسة وتدعمها بالأدلة أو المعلومات أو الأمثلة.',
     closing: { text: closing, ok: closeOk, note: !closing ? 'ما فيه جملة ختامية: اختم الفقرة بجملة تلخّص الفكرة أو تؤكدها.' : closeOk ? 'جملة ختامية تؤكد الفكرة أو تلخّصها.' : 'الجملة الأخيرة ما تبيّن إنها خاتمة. ابدأها بأداة ختام (وبذلك، ولذلك، وهكذا) وأكّد فيها الفكرة الرئيسة.' },
     conditions: {
-      unity: { ok: null, note: 'راجعها بنفسك: هل كل الجمل تدور حول فكرة واحدة فقط؟ (الفحص الآلي ما يقدر يحكم على المعنى بدقة).' },
+      unity: { ok: unityOk, note: unityOk ? `كل الجمل تدور حول فكرة واحدة هي «${topicTitle()}»، وكل جملة مرتبطة بالفكرة الرئيسة.` : n < 2 ? 'الفقرة جملة واحدة؛ الفقرة مجموعة جمل تدور حول فكرة واحدة.' : `هذي الجمل ما يظهر ارتباطها بالفكرة الرئيسة، وقد تكون فكرة ثانية: ${offTopic.map(x => '«' + x + '»').join('، ')}. تأكد إن جميع الجمل تدور حول فكرة واحدة فقط دون إدخال أفكار أخرى.` },
       cohesion: { ok: linked >= needLinks, note: linked >= needLinks ? `استعملت أدوات ربط بين الجمل (${linked} من ${n - 1}).` : `أدوات الربط قليلة (${linked} من ${n - 1}). اربط الجمل بأدوات مثل: لذلك، كما أنّ، بالإضافة إلى ذلك، بناءً على ذلك.` },
-      sequence: { ok: null, note: 'راجعه بنفسك: هل الجمل مرتبة ترتيبًا واضحًا (من العام إلى الخاص، أو من السبب إلى النتيجة)؟' },
+      sequence: { ok: seqOk, note: seqOk ? 'الفقرة مرتبة: تبدأ بالفكرة الرئيسة (العام)، ثم الجمل الداعمة (التفاصيل)، ثم الختام.' : !keyOk ? 'الفقرة ما تبدأ بالفكرة الرئيسة؛ رتّبها من العام إلى الخاص: ابدأ بالجملة المفتاحية ثم التفاصيل.' : midClose.length ? `فيه جملة ختام في وسط الفقرة: «${midClose[0]}». الختام يكون في آخر جملة.` : !ordOk ? 'التعداد (أولًا، ثانيًا…) ما جاء بالترتيب.' : 'الفقرة ما تنتهي بجملة ختامية واضحة؛ الترتيب المنطقي: فكرة رئيسة، ثم تفاصيل، ثم ختام.' },
       relevance: { ok: relevance >= Math.ceil(n / 2), note: relevance >= Math.ceil(n / 2) ? 'الفقرة مرتبطة بعنوان الموضوع.' : 'كثير من الجمل ما تذكر الموضوع؛ تأكد إن الفقرة مرتبطة بعنوان «' + topicTitle() + '».' }
     },
     ends_with_period: { ok: endsDot, note: endsDot ? 'الفقرة تنتهي بنقطة.' : 'الفقرة لازم تنتهي بنقطة بعد الجملة الأخيرة.' },
@@ -299,22 +310,24 @@ function localCheck(text) {
   R.corrected = c;
   // الدرجة: البناء 4، الشروط 3، السلامة اللغوية 3
   let sc = (keyOk ? 1.5 : 0) + Math.min(1.5, supp.length * 0.5) + (closeOk ? 1 : closing ? 0.5 : 0);
-  sc += (R.conditions.cohesion.ok ? 1.5 : linked ? 0.75 : 0) + (R.conditions.relevance.ok ? 1.5 : 0.5);
+  sc += (R.conditions.cohesion.ok ? 0.75 : linked ? 0.4 : 0) + (R.conditions.relevance.ok ? 0.75 : 0.25) + (unityOk ? 0.75 : 0) + (seqOk ? 0.75 : 0.25);
   sc += Math.max(0, 3 - errs.length * 0.5 - (endsDot ? 0 : 0.5));
   if (n !== N) sc -= 0.5;
   R.score = Math.max(0, Math.min(10, Math.round(sc)));
-  R.summary = (n === N ? `عدد الجمل مطابق للمطلوب (${N}). ` : `عدد الجمل ${n} والمطلوب ${N}. `) + (errs.length ? `لقينا ${errs.length} ملاحظة لغوية أو ترقيمية — شوفها تحت.` : 'ما لقينا أخطاء من الأخطاء المعروفة في الفحص الآلي.');
+  R.summary = (n === N ? `عدد الجمل مطابق للمطلوب (${N}). ` : `عدد الجمل ${n} والمطلوب ${N}. `) + (errs.length ? `لقينا ${errs.length === 1 ? 'ملاحظة واحدة' : errs.length === 2 ? 'ملاحظتين' : errs.length + (errs.length <= 10 ? ' ملاحظات' : ' ملاحظة')} لغوية أو ترقيمية، شوفها تحت.` : 'ما لقينا أخطاء من الأخطاء المعروفة في الفحص الآلي.');
   if (keyOk) R.tips.push('أحسنت في البدء بجملة مفتاحية واضحة.');
   if (n !== N) R.tips.push(`الدكتور طالب ${N} جمل، وفقرتك فيها ${n}. عدّل عدد الجمل (الجملة تنتهي بنقطة).`);
   if (!R.conditions.cohesion.ok) R.tips.push('اربط كل جملة بالتي قبلها بأداة ربط مناسبة.');
+  if (!unityOk) R.tips.push('خلّ كل الجمل تخدم فكرة الموضوع نفسها، واحذف أي جملة تفتح فكرة ثانية.');
   if (supp.length < 2) R.tips.push('ادعم الفكرة بمثال أو معلومة في جملة داعمة.');
   R.tips.push('اقرأ فقرتك قراءة أخيرة للتأكد من الهمزات والتاء المربوطة وعلامات الترقيم.');
   return R;
 }
 
 /* ══════════ عرض النتيجة ══════════ */
-const showWs = w => /^\s/.test(w) ? 'مسافة ثم «' + w.trim() + '»' : w;
-const stTag = (ok, y, n) => ok === null || ok === undefined ? '<span class="st na">راجعها بنفسك</span>' : ok ? `<span class="st ok">✓ ${y}</span>` : `<span class="st no">✗ ${n}</span>`;
+const showWs = w => w;
+const IC = n => window.ICON ? ICON(n) : '';
+const stTag = (ok, y, n) => ok === null || ok === undefined ? '<span class="st na">راجعها بنفسك</span>' : ok ? `<span class="st ok">${IC('check')}${y}</span>` : `<span class="st no">${IC('x')}${n}</span>`;
 const cls = ok => ok === null || ok === undefined ? 'na' : ok ? 'ok' : 'no';
 function highlight(text, errs) {
   // نحدد مواضع الأخطاء (من الفحص الآلي جاهزة، ومن الذكاء الاصطناعي نبحث عن النص)
@@ -336,27 +349,27 @@ function render(r, text, src) {
   const errs = r.errors || [];
   $('wRes').innerHTML = `<div class="card res-card">
     <div class="res-head">
-      <div class="ring" style="--p:${r.score * 10}"><b>${r.score}/10</b><small>درجتك</small></div>
-      <div><h3>${esc(topicTitle())}</h3><div class="sc">عدد الجمل: <span class="${n === N ? 'ok' : 'no'}">${n} من ${N} ${n === N ? '✓' : '✗'}</span></div><p>${esc(r.summary || '')}</p></div>
+      <div class="sc-box"><b>${r.score}/10</b><small>درجتك</small></div>
+      <div><h3>${esc(topicTitle())}</h3><div class="sc">عدد الجمل: <span class="${n === N ? 'ok' : 'no'}">${n} من ${N}</span></div><p>${esc(r.summary || '')}</p></div>
     </div>
-    <div class="src">${src === 'ai' ? '✨ صُحّحت فقرتك بالذكاء الاصطناعي حسب شروط الكتاب وطريقته.' : '⚙️ فحص آلي سريع: يكشف الشروط الظاهرة والأخطاء المعروفة (من جداول الكتاب) فقط، والشروط اللي تحتاج فهم المعنى راجعها بنفسك.'}</div>
+    <div class="src">${src === 'ai' ? 'صُحّحت فقرتك بالذكاء الاصطناعي حسب شروط الكتاب وطريقته.' : 'تصحيح آلي حسب شروط الكتاب وجداول الأخطاء فيه.'}</div>
     <div class="lbl-h">بناء الفقرة</div>
     <div class="chk ${cls(r.key_sentence.ok)}"><h5>الجملة المفتاحية (الفكرة الرئيسة) ${stTag(r.key_sentence.ok, 'صحيحة', 'تحتاج تعديل')}</h5>
       ${r.key_sentence.text ? `<p class="quote">«${esc(r.key_sentence.text)}»</p>` : ''}<p class="note">${esc(r.key_sentence.note)}</p></div>
     <div class="chk ${supp.length ? 'ok' : 'no'}"><h5>الجمل الداعمة ${stTag(supp.length > 0, 'تدعم الفكرة', 'ناقصة')}</h5>
-      ${supp.length ? `<ol>${supp.map(s => `<li>${esc(s.text)}${s.role || s.connector ? `<small>${s.role ? '← ' + esc(s.role) : ''}${s.connector ? `${s.role ? '، ' : '← '}وربطت بـ«${esc(s.connector)}»` : ''}</small>` : ''}</li>`).join('')}</ol>` : ''}
+      ${supp.length ? `<ol>${supp.map(s => `<li>${esc(s.text)}${s.role || s.connector ? `<small>${s.role ? esc(s.role) : ''}${s.connector ? `${s.role ? '، ' : ''}وربطت بـ«${esc(s.connector)}»` : ''}</small>` : ''}</li>`).join('')}</ol>` : ''}
       <p class="note">${esc(r.supporting_note || '')}</p></div>
     <div class="chk ${cls(r.closing.ok)}"><h5>الجملة الختامية ${stTag(r.closing.ok, 'صحيحة', 'تحتاج تعديل')}</h5>
       ${r.closing.text ? `<p class="quote">«${esc(r.closing.text)}»</p>` : ''}<p class="note">${esc(r.closing.note)}</p></div>
     <div class="lbl-h">شروط الفقرة الجيدة</div>
     ${[['unity', 'وحدة الفقرة'], ['cohesion', 'الترابط والتماسك'], ['sequence', 'التسلسل المنطقي'], ['relevance', 'الارتباط بعنوان الموضوع']].map(([k, t]) => C[k] ? `<div class="chk ${cls(C[k].ok)}"><h5>${t} ${stTag(C[k].ok, 'متحقق', 'غير متحقق')}</h5><p class="note">${esc(C[k].note)}</p></div>` : '').join('')}
     ${r.ends_with_period ? `<div class="chk ${cls(r.ends_with_period.ok)}"><h5>علامة النهاية ${stTag(r.ends_with_period.ok, 'متحقق', 'غير متحقق')}</h5><p class="note">${esc(r.ends_with_period.note)}</p></div>` : ''}
-    <div class="lbl-h">فقرتك (الأخطاء مظلّلة)</div>
+    ${errs.length ? `<div class="lbl-h">فقرتك (الأخطاء مظلّلة)</div>
     <div class="ptext">${highlight(text, errs)}</div>
     <div class="lbl-h">الأخطاء (${errs.length})</div>
-    ${errs.length ? `<div class="errs">${errs.map(e => `<div class="err"><div class="ln"><span class="w">${esc(showWs(e.wrong))}</span>←<span class="r">${esc(e.right)}</span><span class="ty">${esc(e.type)}</span></div><p>${esc(e.reason)}</p>${e.lesson ? `<div class="ls">📖 ارجع لدرس: ${esc(e.lesson)}</div>` : ''}</div>`).join('')}</div>` : '<p style="margin:0">ما فيه أخطاء 👏</p>'}
+    <div class="errs">${errs.map(e => `<div class="err"><div class="ln"><span class="w">${esc(showWs(e.wrong))}</span>${IC('next').replace('class="i"', 'class="i ar"')}<span class="r">${esc(e.right)}</span><span class="ty">${esc(e.type)}</span></div><p>${esc(e.reason)}</p>${e.lesson ? `<div class="ls">ارجع لدرس: ${esc(e.lesson)}</div>` : ''}</div>`).join('')}</div>
     <div class="lbl-h">الفقرة بعد التصحيح</div>
-    <div class="ptext fixed">${esc(r.corrected || text)}</div>
+    <div class="ptext fixed">${esc(r.corrected || text)}</div>` : `<div class="chk"><h5>الأخطاء اللغوية والإملائية <span class="st ok">${IC('check')}ما فيه أخطاء</span></h5></div>`}
     ${r.tips && r.tips.length ? `<div class="lbl-h">نصائح لتحسين فقرتك</div><ul class="tips">${r.tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
   </div>`;
 }

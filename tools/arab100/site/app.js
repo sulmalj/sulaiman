@@ -33,6 +33,8 @@ const hash = s => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const lessonName = s => `الدرس ${NUMS[s]}: ${LESSONS[s].t}`;
 const D = window.DATA || {};
+const ICON = n => `<svg class="i" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+window.ICON = ICON;
 const inPart = s => SITE.lessons.includes(s);
 
 /* ── البيانات ── */
@@ -86,9 +88,10 @@ function renderHome() {
   const ids = Object.keys(LS.ans).filter(id => BY_ID[id] && BY_ID[id].t !== 'es');
   const right = ids.filter(id => LS.ans[id]).length;
   const mastery = QS.length ? Math.round(right / QS.length * 100) : 0;
-  $('masteryRing').style.setProperty('--p', mastery);
-  $('masteryRing').querySelector('b').textContent = mastery + '%';
-  $('heroLead').textContent = `${QS.length} سؤال صح وخطأ واختيار، و${ES.length} سؤال مقالي من كتاب مهارات الكتابة، مع بطاقات القواعد، وتصحيح الفقرة، و${SITE.examName}.`;
+  $('mPct').textContent = mastery + '%';
+  $('mBar').style.width = mastery + '%';
+  $('heroLead').textContent = `${SITE.lessons.length} دروس من كتاب مهارات الكتابة: ${QS.length} سؤال صح وخطأ واختيار، و${ES.length} سؤال مقالي، وبطاقات للقواعد، وتصحيح لكتابة الفقرة.`;
+  $('toolExam').textContent = `${SITE.examN} سؤال عشوائي في ${SITE.examMin} دقيقة، والنتيجة في النهاية`;
   $('sAns').textContent = ids.length;
   $('sAcc').textContent = ids.length ? Math.round(right / ids.length * 100) + '%' : '—';
   $('sRev').textContent = weakIds().length;
@@ -98,9 +101,9 @@ function renderHome() {
 /* ── قائمة الدروس ── */
 let MODE = 'practice';
 const MODES = {
-  rules: { t: '📚 الدروس والقواعد', p: 'بطاقات تلخّص قواعد كل درس واستثناءاتها — راجعها قبل ما تتدرّب.' },
-  practice: { t: '✅ تدرّب بالدرس', p: 'أسئلة صح وخطأ واختيار من متعدد لكل درس، وتطلع لك الإجابة الصحيحة والتوضيح أول ما تجاوب.' },
-  essay: { t: '🖊️ الأسئلة المقالية', p: 'علّل وصحّح واذكر — اكتب إجابتك، وبعدها قارنها بالإجابة النموذجية.' }
+  rules: { t: 'الدروس والقواعد', p: 'بطاقات تلخّص قواعد كل درس واستثناءاتها. راجعها قبل ما تتدرّب.' },
+  practice: { t: 'تدرّب بالدرس', p: 'أسئلة صح وخطأ واختيار من متعدد لكل درس، وتطلع لك الإجابة الصحيحة والتوضيح أول ما تجاوب.' },
+  essay: { t: 'الأسئلة المقالية', p: 'علّل وصحّح واذكر. اكتب إجابتك، وبعدها قارنها بالإجابة النموذجية.' }
 };
 function renderLessons(mode) {
   MODE = mode;
@@ -109,25 +112,27 @@ function renderLessons(mode) {
   let html = '', unit = 0;
   SITE.lessons.forEach(s => {
     const L = LESSONS[s];
-    if (L.u !== unit) { if (unit) html += '</div>'; unit = L.u; html += `<div class="unit-h"><b>${UNITS[unit][0]}</b><span>${UNITS[unit][1]}</span><i></i></div><div class="lessons">`; }
-    let meta = '', pct = 0, disabled = false, act = `data-les="${s}"`;
+    if (L.u !== unit) { if (unit) html += '</div></div>'; unit = L.u; html += `<div class="unit"><div class="unit-h"><b>${UNITS[unit][0]}</b><span>${UNITS[unit][1]}</span></div><div class="rows">`; }
+    let meta = '', pct = null, disabled = false, act = `data-les="${s}"`, cls = '';
     if (mode === 'rules') {
       const n = CARDS.filter(c => c.s === s).length;
       meta = n ? `${n} بطاقة` : 'قريباً'; disabled = !n;
     } else if (L.write && mode === 'practice') {
-      meta = '✍️ اكتب فقرة وتنصحّح لك — افتح «كتابة الفقرة»'; act = 'data-nav="write"';
+      meta = 'تمرين كتابي: اكتب فقرة وتُصحَّح لك'; act = 'data-nav="write"'; cls = 'special';
     } else {
       const list = mode === 'essay' ? eOf(s) : qOf(s);
       const done = list.filter(q => q.id in LS.ans).length;
-      pct = list.length ? done / list.length * 100 : 0;
-      meta = list.length ? `${list.length} سؤال · جاوبت ${done}` : 'قريباً'; disabled = !list.length;
+      pct = list.length ? Math.round(done / list.length * 100) : 0;
+      meta = list.length ? `${list.length} سؤال` : 'قريباً'; disabled = !list.length;
     }
-    html += `<button type="button" class="card les u${L.u} ${disabled ? 'disabled' : ''}" ${disabled ? 'disabled' : act}>
-      <span class="num">${s}</span><h3>${esc(LESSONS[s].t)}</h3><span class="meta">${meta}</span>
-      ${mode !== 'rules' && !(L.write && mode === 'practice') ? `<span class="bar"><i style="width:${pct}%"></i></span>` : '<span></span>'}
+    html += `<button type="button" class="row ${cls}" ${disabled ? 'disabled' : act}>
+      <span class="n">${s}</span>
+      <span class="t"><b>${esc(LESSONS[s].t)}</b><small>${meta}</small></span>
+      ${pct === null ? '<span></span>' : `<span class="pg"><span class="pgbar"><i style="width:${pct}%"></i></span>${pct}%</span>`}
+      <span class="chev">${ICON('chev')}</span>
     </button>`;
   });
-  $('lesList').innerHTML = html + '</div>';
+  $('lesList').innerHTML = html + '</div></div>';
 }
 $('lesList').addEventListener('click', e => {
   const b = e.target.closest('[data-les]'); if (!b) return;
@@ -142,12 +147,12 @@ function openCards(s) {
   CS = s;
   const list = CARDS.filter(c => c.s === s);
   $('cTitle').innerHTML = `${esc(lessonName(s))}<small>${UNITS[LESSONS[s].u].join(' · ')} · ${list.length} بطاقة</small>`;
-  $('cList').innerHTML = list.map(c => `<div class="card rc u${LESSONS[s].u}">
+  $('cList').innerHTML = list.map(c => `<article class="rc">
       <h4>${rich(c.t)}</h4>
       <ul>${c.l.map(x => `<li>${rich(x)}</li>`).join('')}</ul>
-      ${c.e && c.e.length ? `<div class="ex">${c.e.map(x => `<span>${rich(x)}</span>`).join('')}</div>` : ''}
-      ${c.x ? `<div class="exc"><b>⚠️ استثناء/تنبيه:</b> ${rich(c.x)}</div>` : ''}
-    </div>`).join('');
+      ${c.e && c.e.length ? `<div class="ex"><span class="ex-l">أمثلة</span>${c.e.map(x => `<span class="c">${rich(x)}</span>`).join('')}</div>` : ''}
+      ${c.x ? `<div class="exc"><b>استثناء أو تنبيه:</b> ${rich(c.x)}</div>` : ''}
+    </article>`).join('');
   const withCards = SITE.lessons.filter(x => CARDS.some(c => c.s === x));
   const i = withCards.indexOf(s);
   $('cPrev').disabled = i <= 0; $('cNext').disabled = i >= withCards.length - 1;
@@ -188,18 +193,18 @@ function renderQ() {
   const head = P.kind === 'review' ? 'مراجعة أخطائي' : P.kind === 'essay' ? 'الأسئلة المقالية' : 'تدرّب بالدرس';
   $('qTitle').innerHTML = `${head}<small>${esc(lessonName(q.s))} · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
   $('qBar').style.width = ((P.i + 1) / P.ids.length * 100) + '%';
-  let html = `<div class="qmeta"><span class="k ${q.t === 'es' ? 'es' : ''}">${esc(kindLabel(q))}</span><span class="qcode">سؤال رقم ${q.code}</span></div>
+  let html = `<div class="qmeta"><span class="tag ${q.t === 'es' ? 'rose' : ''}">${esc(kindLabel(q))}</span><span class="qcode">سؤال ${q.code}</span></div>
     <p class="qtext">${esc(q.q)}</p>`;
   if (q.t === 'es') {
     const shown = P.shown[q.id];
     html += `<textarea class="ans-in" id="esIn" placeholder="اكتب إجابتك هنا (اختياري)…">${esc(P.typed[q.id] || '')}</textarea>`;
-    if (!shown) html += `<div class="self"><button class="btn btn-pink" type="button" id="esShow">اعرض الإجابة النموذجية</button></div>`;
+    if (!shown) html += `<div class="self"><button class="btn btn-pri" type="button" id="esShow">اعرض الإجابة النموذجية</button></div>`;
     else {
-      html += `<div class="model-ans"><b>الإجابة النموذجية:</b>\n${esc(q.a)}</div>`;
+      html += `<div class="model-ans"><div class="h">الإجابة النموذجية</div>${esc(q.a)}</div>`;
       const m = P.picked[q.id];
       html += m === undefined
-        ? `<div class="self"><span>قارن إجابتك:</span><button class="btn btn-good btn-sm" type="button" data-self="1">✓ إجابتي صحيحة</button><button class="btn btn-bad btn-sm" type="button" data-self="0">✗ أخطأت / ما عرفتها</button></div>`
-        : `<div class="fb ${m ? 'ok' : 'no'}">${m ? '✓ ممتاز!' : '✗ انضاف لـ«مراجعة أخطائي» — ارجع له بعدين.'}</div>`;
+        ? `<div class="self"><span>قارن إجابتك:</span><button class="btn btn-good btn-sm" type="button" data-self="1">${ICON('check')}إجابتي صحيحة</button><button class="btn btn-bad btn-sm" type="button" data-self="0">${ICON('x')}أخطأت أو ما عرفتها</button></div>`
+        : `<div class="fb ${m ? 'ok' : 'no'}"><div class="h">${m ? ICON('check') + 'ممتاز' : ICON('x') + 'انضاف لـ«مراجعة أخطائي»، ارجع له بعدين'}</div></div>`;
     }
   } else {
     const opts = options(q), picked = P.picked[q.id];
@@ -210,12 +215,12 @@ function renderQ() {
     }).join('') + `</div>`;
     if (picked !== undefined) {
       const ok = opts[picked].ok;
-      html += `<div class="fb ${ok ? 'ok' : 'no'}">${ok ? '✓ إجابة صحيحة' : '✗ إجابة خاطئة — الإجابة الصحيحة: ' + esc(rightText(q))}${explain(q)}</div>`;
+      html += `<div class="fb ${ok ? 'ok' : 'no'}"><div class="h">${ok ? ICON('check') + 'إجابة صحيحة' : ICON('x') + 'إجابة خاطئة، والصحيحة: ' + esc(rightText(q))}</div>${explain(q)}</div>`;
     }
   }
   $('qCard').innerHTML = html;
   $('qPrev').disabled = P.i === 0;
-  $('qNext').textContent = P.i === P.ids.length - 1 ? 'خلّصت ✓' : 'التالي ←';
+  $('qNext').innerHTML = P.i === P.ids.length - 1 ? 'إنهاء' : 'التالي' + ICON('next');
 }
 $('qCard').addEventListener('input', e => { if (e.target.id === 'esIn') P.typed[P.ids[P.i]] = e.target.value; });
 $('qCard').addEventListener('click', e => {
@@ -248,16 +253,16 @@ function renderReviewIntro() {
   ids.forEach(id => { const s = BY_ID[id].s; by[s] = (by[s] || 0) + 1; });
   $('revBox').innerHTML = ids.length
     ? `<p style="margin:0 0 10px">عندك <b>${ids.length}</b> سؤال تحتاج مراجعة:</p>
-       <div class="chips" style="margin-bottom:14px">${Object.keys(by).map(s => `<span class="chip-btn">${esc(LESSONS[s].t)} (${by[s]})</span>`).join('')}</div>
+       <div class="revs">${Object.keys(by).map(s => `<span>${esc(LESSONS[s].t)} · ${by[s]}</span>`).join('')}</div>
        <button class="btn btn-pri" type="button" id="revStart">ابدأ المراجعة</button>`
-    : `<p class="empty">ما عندك أخطاء حالياً 👌 — تدرّب على الدروس، وأي سؤال تغلط فيه بيجيك هنا.</p>`;
+    : `<p class="empty">ما عندك أخطاء حالياً. تدرّب على الدروس، وأي سؤال تغلط فيه بيجيك هنا.</p>`;
   const b = $('revStart'); if (b) b.onclick = startReview;
 }
 
 /* ── الاختبار التجريبي ── */
 let E = null, timer = null;
 function renderExamIntro() {
-  $('exDesc').textContent = `${SITE.examN} سؤال عشوائي (صح وخطأ واختيار) من ${SITE.examScope}، في ${SITE.examMin} دقيقة — بدون تصحيح أثناء الاختبار، وفي الأخير تطلع درجتك والأخطاء مع الإجابات.`;
+  $('exFacts').innerHTML = `<div><dt>عدد الأسئلة</dt><dd>${SITE.examN} سؤال</dd></div><div><dt>الوقت</dt><dd>${SITE.examMin} دقيقة</dd></div><div><dt>الأسئلة من</dt><dd>${SITE.examScope}</dd></div>`;
 }
 function startExam() {
   const pool = QS.filter(q => SITE.examLessons.includes(q.s));
@@ -280,12 +285,12 @@ function renderE() {
   const q = BY_ID[E.ids[E.i]], opts = options(q), picked = E.picked[q.id];
   $('eCount').textContent = `سؤال ${E.i + 1} من ${E.ids.length} · جاوبت ${Object.keys(E.picked).length}`;
   $('eDots').innerHTML = E.ids.map((id, k) => `<button type="button" data-k="${k}" class="${id in E.picked ? 'ans' : ''} ${k === E.i ? 'cur' : ''}" aria-label="سؤال ${k + 1}">${k + 1}</button>`).join('');
-  $('eCard').innerHTML = `<div class="qmeta"><span class="k">${kindLabel(q)}</span><span>${esc(LESSONS[q.s].t)}</span></div>
+  $('eCard').innerHTML = `<div class="qmeta"><span class="tag">${kindLabel(q)}</span><span>${esc(LESSONS[q.s].t)}</span></div>
     <p class="qtext">${esc(q.q)}</p>
     <div class="opts ${q.t === 'tf' ? 'tf' : ''}">` +
     opts.map((o, i) => `<button class="opt ${picked === i ? 'sel' : ''}" type="button" data-i="${i}">${q.t === 'tf' ? '' : `<span class="lt">${LETTERS[i]}</span>`}<span>${esc(o.txt)}</span></button>`).join('') + `</div>`;
   $('ePrev').disabled = E.i === 0;
-  $('eNext').textContent = E.i === E.ids.length - 1 ? 'إنهاء وتصحيح ✓' : 'التالي ←';
+  $('eNext').innerHTML = E.i === E.ids.length - 1 ? 'إنهاء وتصحيح' : 'التالي' + ICON('next');
 }
 $('startExam').onclick = startExam;
 $('eCard').addEventListener('click', e => { const b = e.target.closest('.opt'); if (!b) return; E.picked[E.ids[E.i]] = +b.dataset.i; renderE(); });
@@ -307,17 +312,17 @@ function finishExam(timeUp) {
   });
   stopExam();
   const score = res.filter(r => r.ok).length, n = res.length, pct = Math.round(score / n * 100);
-  const msg = pct >= 90 ? 'ممتاز! مستواك عالي 🔥' : pct >= 75 ? 'جيد جداً، راجع أخطاءك وتكون جاهز 👍' : pct >= 50 ? 'لا بأس، تحتاج مراجعة أكثر للدروس.' : 'ارجع للدروس وبطاقات القواعد وراجعها زين قبل الاختبار.';
-  $('rScore').innerHTML = `<div class="n">${score}<small> / ${n}</small></div><p>${timeUp ? '⏱ انتهى الوقت · ' : ''}${msg}</p>`;
+  const msg = pct >= 90 ? 'ممتاز، مستواك عالي.' : pct >= 75 ? 'جيد جداً، راجع أخطاءك وتكون جاهز.' : pct >= 50 ? 'لا بأس، تحتاج مراجعة أكثر للدروس.' : 'ارجع للدروس وبطاقات القواعد وراجعها زين قبل الاختبار.';
+  $('rScore').innerHTML = `<div class="n">${score}<small> / ${n}</small></div><p>${timeUp ? 'انتهى الوقت · ' : ''}${msg}</p>`;
   const wrong = res.filter(r => !r.ok);
-  $('rHead').textContent = wrong.length ? `❌ الأسئلة اللي غلطت فيها (${wrong.length})` : '🎉 ما غلطت في ولا سؤال!';
-  $('rList').innerHTML = wrong.map(r => `<div class="card ritem">
+  $('rHead').textContent = wrong.length ? `الأسئلة اللي غلطت فيها (${wrong.length})` : 'ما غلطت في ولا سؤال';
+  $('rList').innerHTML = wrong.map(r => `<div class="ritem">
       <p class="q">${esc(r.q.q)}</p>
-      <div class="row you">إجابتك: <b>${r.you === null ? 'ما جاوبت' : esc(r.you)}</b></div>
-      <div class="row right">الإجابة الصحيحة: <b>${esc(rightText(r.q))}</b></div>
+      <div class="rw you">إجابتك: <b>${r.you === null ? 'ما جاوبت' : esc(r.you)}</b></div>
+      <div class="rw right">الإجابة الصحيحة: <b>${esc(rightText(r.q))}</b></div>
       ${r.q.t === 'tf' && !r.q.a ? `<div class="cr"><b>التصحيح:</b> ${esc(r.q.c)}</div>` : ''}
       ${r.q.x ? `<div class="cr"><b>التوضيح:</b> ${esc(r.q.x)}</div>` : ''}
-      <div class="rrow"><span class="qcode">${esc(lessonName(r.q.s))} · سؤال رقم ${r.q.code}</span></div>
+      <div class="src">${esc(lessonName(r.q.s))} · سؤال ${r.q.code}</div>
     </div>`).join('');
   show('report', 'exam');
 }
@@ -468,7 +473,7 @@ function hzSolve() {
     if (!s.ev || (s.ev === 'suk' && !s.esk) || !s.ex) return null;
     steps.push('الهمزة في آخر الكلمة تُكتب على حرف يناسب حركة الحرف الذي قبلها فقط.');
     if (s.ex === 'pro') {
-      return { g: '⇦', title: 'صارت همزة متوسطة', steps: steps.concat(['إذا اتصلت بالكلمة زيادة كالضمير، فالهمزة ما تصير متطرفة، وتأخذ حكم الهمزة المتوسطة (قاعدة أقوى الحركات بين حركتها وحركة ما قبلها).', 'اختر «وسط الكلمة» فوق، وحدّد حركة الهمزة الجديدة وحركة ما قبلها.']), ex: ['يملَؤُها', 'تملَئِين', 'شاطِئُكم', 'سماؤُنا', 'سمائِنا'] };
+      return { g: 'ـئـ', title: 'صارت همزة متوسطة', steps: steps.concat(['إذا اتصلت بالكلمة زيادة كالضمير، فالهمزة ما تصير متطرفة، وتأخذ حكم الهمزة المتوسطة (قاعدة أقوى الحركات بين حركتها وحركة ما قبلها).', 'اختر «وسط الكلمة» فوق، وحدّد حركة الهمزة الجديدة وحركة ما قبلها.']), ex: ['يملَؤُها', 'تملَئِين', 'شاطِئُكم', 'سماؤُنا', 'سمائِنا'] };
     }
     const base = s.ev;
     g = SEAT[base][0]; title = SEAT[base][1] + ` (${g})`;
@@ -506,17 +511,17 @@ function hzSolve() {
 }
 function renderHamza() {
   const flow = hzFlow();
-  $('hzBox').innerHTML = flow.map(k => `<div class="hz-q"><b>${HZQ[k].q}</b><div class="chips">${HZQ[k].o.map(([v, t]) => `<button type="button" class="chip-btn ${HZ[k] === v ? 'on' : ''}" data-hk="${k}" data-hv="${v}">${esc(t)}</button>`).join('')}</div></div>`).join('') +
-    `<button class="btn btn-sec btn-sm" type="button" id="hzReset">ابدأ من جديد</button>`;
+  $('hzBox').innerHTML = flow.map(k => `<div class="hz-q"><b>${HZQ[k].q}</b><div class="seg">${HZQ[k].o.map(([v, t]) => `<button type="button" class="${HZ[k] === v ? 'on' : ''}" data-hk="${k}" data-hv="${v}">${esc(t)}</button>`).join('')}</div></div>`).join('') +
+    `<button class="btn btn-quiet btn-sm" type="button" id="hzReset">ابدأ من جديد</button>`;
   $('hzReset').onclick = () => { Object.keys(HZ).forEach(k => delete HZ[k]); renderHamza(); };
   const r = hzSolve();
   if (!r) { $('hzOut').innerHTML = ''; return; }
-  if (r.err) { $('hzOut').innerHTML = `<div class="card hz-res"><p class="warn" style="margin:0">${esc(r.err)}</p></div>`; return; }
-  $('hzOut').innerHTML = `<div class="card hz-res" style="margin-top:12px">
+  if (r.err) { $('hzOut').innerHTML = `<div class="panel hz-res" style="margin-top:12px"><p class="note warn" style="margin:0">${ICON('alert')}<span>${esc(r.err)}</span></p></div>`; return; }
+  $('hzOut').innerHTML = `<div class="panel hz-res" style="margin-top:12px">
       <div class="hz-final"><span class="hz-glyph">${esc(r.g)}</span><div><h3>${esc(r.title)}</h3><p>الخطوات حسب قاعدة الكتاب:</p></div></div>
       <ol class="hz-steps">${r.steps.map((t, i) => `<li><i>${i + 1}</i><span>${esc(t)}</span></li>`).join('')}</ol>
-      ${r.ex && r.ex.length ? `<div><b>أمثلة من الكتاب:</b><div class="hz-ex" style="margin-top:6px">${r.ex.map(x => `<span>${esc(x)}</span>`).join('')}</div></div>` : ''}
-      ${r.note ? `<p class="warn" style="margin:0">${esc(r.note)}</p>` : ''}
+      ${r.ex && r.ex.length ? `<div><b>أمثلة من الكتاب</b><div class="hz-ex">${r.ex.map(x => `<span>${esc(x)}</span>`).join('')}</div></div>` : ''}
+      ${r.note ? `<p class="note warn" style="margin:0">${ICON('alert')}<span>${esc(r.note)}</span></p>` : ''}
     </div>`;
 }
 $('hzBox').addEventListener('click', e => {
@@ -543,7 +548,7 @@ let PRI = 0, PRSEL = new Set(), PRDONE = false;
 function renderProof() {
   if (!PROOF.length) { $('prBox').innerHTML = '<p class="empty">قريباً</p>'; return; }
   const p = PROOF[PRI];
-  const pick = PROOF.map((x, k) => `<button type="button" data-pk="${k}" class="${k === PRI ? 'on' : (k in LS.proof ? 'done' : '')}" title="${esc(x.title)}">${k + 1}</button>`).join('');
+  const pick = PROOF.map((x, k) => `<button type="button" data-pk="${k}" class="${k === PRI ? 'on' : (k in LS.proof ? 'done' : '')}" title="${esc(x.title)}" aria-label="فقرة ${k + 1}">${k + 1}</button>`).join('');
   let txt = '', k = 0;
   p.toks.forEach(t => {
     if (t.sp) { txt += t.sp; return; }
@@ -557,16 +562,16 @@ function renderProof() {
     const words = p.toks.filter(t => !t.sp);
     const hits = words.filter((t, j) => t.right && PRSEL.has(j)).length;
     const fals = words.filter((t, j) => !t.right && PRSEL.has(j)).length;
-    res = `<div class="fb ${hits === p.n && !fals ? 'ok' : 'no'}">اكتشفت ${hits} من ${p.n} أخطاء${fals ? ` · وحدّدت ${fals} كلمة صحيحة على أنها خطأ` : ''}</div>
-      <div class="errs" style="margin-top:12px">${words.filter(t => t.right).map(t => `<div class="err"><div class="ln"><span class="w">${esc(t.w)}</span>←<span class="r">${esc(t.right)}</span></div><p>${esc(t.why)}</p></div>`).join('')}</div>`;
+    res = `<div class="pr-res"><div class="fb ${hits === p.n && !fals ? 'ok' : 'no'}"><div class="h">${hits === p.n && !fals ? ICON('check') : ICON('alert')}اكتشفت ${hits} من ${p.n} أخطاء${fals ? `، وحدّدت ${fals} كلمة صحيحة على أنها خطأ` : ''}</div></div>
+      <div class="errs">${words.filter(t => t.right).map(t => `<div class="err"><div class="ln"><span class="w">${esc(t.w)}</span>${ICON('next').replace('class="i"', 'class="i ar"')}<span class="r">${esc(t.right)}</span></div><p>${esc(t.why)}</p></div>`).join('')}</div></div>`;
   }
-  $('prBox').innerHTML = `<div class="pr-pick">${pick}</div>
-    <div class="card">
+  $('prBox').innerHTML = `<div class="pager">${pick}</div>
+    <div class="panel">
       <div class="pr-head"><h3>${esc(p.title)}</h3><span>عدد الأخطاء في الفقرة: ${p.n}</span></div>
       <div class="pr-text">${txt}</div>
       <div class="wacts" style="margin-top:14px">${PRDONE
-        ? `<button class="btn btn-pri" type="button" id="prNext">${PRI < PROOF.length - 1 ? 'الفقرة التالية ←' : 'من البداية'}</button><button class="btn btn-sec" type="button" id="prRetry">أعد المحاولة</button>`
-        : `<button class="btn btn-pink" type="button" id="prCheck">تحقّق ✓</button><span class="counts" style="margin:0">حدّدت ${PRSEL.size} كلمة</span>`}</div>
+        ? `<button class="btn btn-pri" type="button" id="prNext">${PRI < PROOF.length - 1 ? 'الفقرة التالية' + ICON('next') : 'من البداية'}</button><button class="btn btn-quiet" type="button" id="prRetry">أعد المحاولة</button>`
+        : `<button class="btn btn-pri" type="button" id="prCheck">تحقّق</button><span class="counts" style="margin:0">حدّدت ${PRSEL.size} كلمة</span>`}</div>
       ${res}
     </div>`;
 }
