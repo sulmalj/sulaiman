@@ -112,9 +112,9 @@ table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
 table.t.side tr:first-child th {{ border-top:0; }}
 table.t td.no {{ width:20pt; }}
 /* الخط تحت الكلمة كاملة (بدون ما يتقطع عند الياء) وينزل تحت نقاطها عشان ما يغطيها — طلب المستخدم */
-.u {{ text-decoration:underline; text-decoration-thickness:0.9pt; text-underline-offset:4.5pt; text-decoration-skip-ink:none; }}
+.u {{ text-decoration:underline; text-decoration-thickness:0.8pt; text-underline-offset:0.56em; text-decoration-skip-ink:none; }}
 /* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
-td:has(.u), li:has(.u), .note:has(.u), .bul > div:has(.u) {{ line-height:1.85; }}
+td:has(.u), li:has(.u), .note:has(.u), .bul > div:has(.u), .ln:has(.u) {{ line-height:2.1; }}
 .note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
 .keep {{ break-inside:avoid; }}
 .card {{ background:var(--hl); padding:6pt 10pt; margin:8pt 0; border-radius:3pt; break-inside:avoid; }}
@@ -241,10 +241,12 @@ def fix_lam_alef(s):
 # brk: رقم عنصر يبدأ صفحة جديدة (موازنة آخر صفحتين في الدرس).
 SPREAD_JS = """(o) => {
   const items = [], z = parseFloat(getComputedStyle(document.body).zoom) || 1;
+  const isHead = (c) => c.matches('.sec, .sub, .sub2') ||
+    (c.matches('.keep') && c.firstElementChild && c.firstElementChild.matches('.sec, .sub, .sub2'));
   for (const c of [...document.body.children]) {
     if (c.tagName === 'STYLE' || c.tagName === 'SCRIPT') continue;
-    items.push(['B', c]);
-    for (const li of c.querySelectorAll(':scope li, :scope ol.n > li, :scope ul.b > li'))
+    items.push([isHead(c) ? 'H' : 'B', c]);
+    for (const li of c.querySelectorAll(':scope li'))
       if (li.parentElement.matches('ol.n, ul.b') && li.previousElementSibling) items.push(['I', li]);
   }
   items.forEach(([kind, c], i) => {
@@ -269,7 +271,10 @@ SPREAD_JS = """(o) => {
         add += (want - d) / z;
       }
     }
-    if (o.brk === i) {
+    // عنوان في أول الصفحة: ينزل شوي (margin يختفي أول الصفحة، فنستخدم padding)
+    const pd = o.pad[String(i)];
+    if (pd) c.style.paddingTop = pd + 'pt';
+    if (o.brks.includes(i)) {
       c.style.breakBefore = 'page';
       for (let a = c.parentElement; a && a !== document.body; a = a.parentElement) a.style.breakInside = 'auto';
     }
@@ -277,63 +282,80 @@ SPREAD_JS = """(o) => {
 }"""
 
 TOP, BOT = 84, H - 36  # حدود منطقة المحتوى في صفحة الدرس
+CAPH = BOT - TOP
 
 
 def page_marks(pdf_path):
-    """لكل صفحة: [(y, رقم, نوع)] وأسفل محتوى فيها."""
+    """لكل صفحة: [(y, رقم, نوع)] وأسفل محتوى فيها. النوع: H عنوان، B قسم، I بند في قائمة."""
     out = []
     for pg in pymupdf.open(pdf_path):
         marks = sorted((w[1], int(re.search(r"\d+", w[4]).group()), w[4][2]) for w in pg.get_text("words")
-                       if re.fullmatch(r"zz[BI]\d+zz", w[4]))
-        bottoms = [b[3] for b in pg.get_text("blocks") if not re.fullmatch(r"\s*(zz[BI]\d+zz\s*)+", b[4])]
+                       if re.fullmatch(r"zz[BIH]\d+zz", w[4]))
+        bottoms = [b[3] for b in pg.get_text("blocks") if not re.fullmatch(r"\s*(zz[BIH]\d+zz\s*)+", b[4])]
         bottoms += [x["rect"].y1 for x in pg.get_drawings()]
         out.append((marks, max(bottoms, default=TOP)))
     return out
 
 
-def spread_map(pdf_path, cap=30, cap_item=16):
-    """لكل صفحة فيها فراغ تحت: نوزّعه على الأقسام والبنود اللي فيها (ما عدا أول واحد)، القسم ياخذ ضعف البند."""
-    out = {}
-    pages = page_marks(pdf_path)
+def head_break(pages):
+    """عنوان قسم في ربع الصفحة الأخير وكلامه يكمل في الصفحة اللي بعدها → ينزل مع قسمه للصفحة الجاية
+    (طلب المستخدم: «المفروض تحطه بالصفحة اللي تحت»)."""
+    page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, _ in m}
+    for pi, (marks, _) in enumerate(pages[:-1]):
+        for y, i, k in marks[1:]:
+            if k != "H" or (y - TOP) < 0.7 * CAPH:
+                continue
+            nxt = min((j for j in page_of if j > i), default=None)
+            if nxt is None or page_of[nxt] > pi:
+                return i
+    return None
+
+
+def spread_map(pages, cap=30, cap_head=48, cap_item=18):
+    """لكل صفحة فيها فراغ تحت: العنوان اللي أول الصفحة ينزل شوي، والباقي يتوزع بين الأقسام والبنود
+    (القسم ياخذ ضعف البند). آخر صفحة في الدرس ما تتمطّط."""
+    sp, pad = {}, {}
     for pi, (marks, bottom) in enumerate(pages):
-        # آخر صفحة في الدرس ما نمطّها (الفراغ تحتها طبيعي)
-        if pi == len(pages) - 1 or len(marks) < 2:
+        if pi == len(pages) - 1 or not marks:
             continue
         gap = BOT - bottom - 8
-        if gap < 20:
+        if gap < 16:
             continue
+        y0, i0, k0 = marks[0]
+        if k0 == "H" and pi > 0:
+            pad[str(i0)] = p0 = round(min(20, gap * 0.3), 1)
+            gap -= p0
         rest = [(i, k) for _, i, k in marks[1:]]
-        units = sum(2 if k == "B" else 1 for _, k in rest)
+        if not rest or gap < 16:
+            continue
+        # العنوان ياخذ 3 أضعاف البند، والقسم ضعفه
+        units = sum({"I": 1, "B": 2, "H": 3}[k] for _, k in rest)
         u = gap / units
         for i, k in rest:
-            out[str(i)] = round(min(cap, 2 * u) if k == "B" else min(cap_item, u), 1)
-    return out
+            sp[str(i)] = round({"I": min(cap_item, u), "B": min(cap, 2 * u), "H": min(cap_head, 3 * u)}[k], 1)
+    return sp, pad
 
 
-def balance_break(pdf_path):
+def balance_break(pages):
     """إذا آخر صفحة في الدرس شبه فاضية والصفحة اللي قبلها مليانة: نختار نقطة نبدأ منها صفحة جديدة
-    عشان ينقسم الكلام على الصفحتين بالتساوي تقريباً (مثل: نقاط 5–8 من حالات الإدغام تنزل للصفحة الأخيرة)."""
-    pages = page_marks(pdf_path)
+    عشان ينقسم الكلام على الصفحتين بالتساوي تقريباً (مثل: نقاط 7–8 من حالات الإدغام تنزل للصفحة الأخيرة)."""
     if len(pages) < 2:
-        return None
+        return []
     (pm, pb), (lm, lb) = pages[-2], pages[-1]
-    cap = BOT - TOP
     used_l = lb - TOP
-    if used_l / cap > 0.6 or (pb - TOP) / cap < 0.85 or not pm:
-        return None
-    best = None
+    if used_l / CAPH > 0.6 or (pb - TOP) / CAPH < 0.6 or not pm:
+        return []
+    cands = []
     for y, i, k in pm[1:]:
         moved = pb - y
         new_l = used_l + moved + 14
-        if new_l > cap * 0.9 or moved < 60:
+        if new_l > CAPH * 0.9 or moved < 60:
             continue
-        score = abs((y - TOP) - new_l)
-        if best is None or score < best[0]:
-            best = (score, i)
-    return best and best[1]
+        cands.append((abs((y - TOP) - new_l), i))
+    return [i for _, i in sorted(cands)]
 
 
-def render(html_str, out_pdf, browser, spread=None, markers=False, brk=None):
+def render(html_str, out_pdf, browser, spread=None, markers=False, brks=(), pad=None):
     html_str = fix_lam_alef(html_str)
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
@@ -348,8 +370,8 @@ def render(html_str, out_pdf, browser, spread=None, markers=False, brk=None):
     fixed = pg.evaluate(TIGHTEN_JS)
     if fixed:
         print(f"  {pathlib.Path(out_pdf).name}: انضمّت {fixed} كلمة يتيمة لسطرها")
-    if spread or markers or brk is not None:
-        pg.evaluate(SPREAD_JS, {"spread": spread or {}, "markers": markers, "brk": -1 if brk is None else brk})
+    if spread or markers or brks or pad:
+        pg.evaluate(SPREAD_JS, {"spread": spread or {}, "markers": markers, "brks": list(brks), "pad": pad or {}})
     pg.pdf(path=str(out_pdf), print_background=True, prefer_css_page_size=True)
     pg.close()
 
@@ -365,59 +387,63 @@ def last_page_fill(pdf_path):
 
 
 def render_fit(src, out_pdf, browser):
-    """إذا آخر صفحة في الدرس فيها شي بسيط (جدول لحاله مثلاً)، نصغّر الدرس كله شوي لين يرجع للصفحة اللي قبل،
-    بحد أقصى 92%؛ وإذا ما نفع: نوسّع المسافات قبل العناوين وبين الفقرات (بدون ما يزيد عدد الصفحات).
-    وبعدها في كل صفحة يبقى تحتها فراغ نوزّعه بين أقسامها (طلب المستخدم: «تستغل المساحة»)."""
+    """ترتيب صفحات الدرس — أهم شي عند المستخدم: «ما أحب زحمة بالصفحة».
+    1) ما نضغط الدرس أبداً عشان نوفّر صفحة.
+    2) العنوان اللي يجي آخر الصفحة وكلامه يكمل بعدها ينزل للصفحة الجاية.
+    3) إذا آخر صفحة شبه فاضية والقبلها مليانة، ينقسم الكلام بينهم.
+    4) أي فراغ يبقى تحت صفحة يتوزع بين أقسامها، والعنوان اللي أول الصفحة ينزل شوي."""
+    name = pathlib.Path(out_pdf).name
     css = ""
     render(doc(src), out_pdf, browser)
-    n0, fill = last_page_fill(out_pdf)
     trial = pathlib.Path(str(out_pdf) + ".fit.pdf")
-    if n0 >= 2 and fill <= 0.85:
-        folded = False
-        if fill <= 0.7:
-            tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .sub2{margin-top:12pt} .ln{margin:6pt 0;line-height:1.9} "
-                     ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
-            for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
-                render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
-                if last_page_fill(trial)[0] < n0:
-                    trial.replace(out_pdf)
-                    css, folded = f"body{{zoom:{z}}} " + t, True
-                    print(f"  {pathlib.Path(out_pdf).name}: انضمّت آخر صفحة (تصغير {round((1 - z) * 100)}%{' + مسافات أقل' if t else ''})")
-                    break
-        if not folded:
-            for x in (6, 12, 18, 24, 30, 36):
-                loose = (f".sec{{margin-top:{32 + x}pt}} .sub{{margin-top:{24 + x * .75:.0f}pt}} .sub2{{margin-top:{16 + x * .6:.0f}pt}} "
-                         f".ln{{margin:{9 + x / 4:.0f}pt 0}} .bul{{margin:{9 + x / 4:.0f}pt 0}} table.t{{margin:{9 + x / 3:.0f}pt 0 {12 + x / 3:.0f}pt}}")
-                render(doc(src, loose), trial, browser)
-                n, f = last_page_fill(trial)
-                if n != n0 or f > 0.97:
-                    break
-                css = loose
-            if css:
-                render(doc(src, css), out_pdf, browser)
-                print(f"  {pathlib.Path(out_pdf).name}: المسافات توسّعت عشان تستغل آخر صفحة")
-    # موازنة آخر صفحتين ثم توزيع الفراغ في كل الصفحات
-    n_before = pymupdf.open(out_pdf).page_count
-    render(doc(src, css), trial, browser, markers=True)
-    brk = balance_break(trial)
-    if brk is not None:
-        render(doc(src, css), trial, browser, markers=True, brk=brk)
-        if pymupdf.open(trial).page_count != n_before:
-            brk = None
-            render(doc(src, css), trial, browser, markers=True)
-    where = {i: pi for pi, (m, _) in enumerate(page_marks(trial)) for _, i, _ in m}
-    sp = spread_map(trial)
+    brks = []
+    for _ in range(8):
+        render(doc(src, css), trial, browser, markers=True, brks=brks)
+        pages = page_marks(trial)
+        hb = head_break(pages)
+        if hb is None or hb in brks:
+            break
+        brks.append(hb)
+    bb = None
+    # الكسر اللي يبدأ آخر صفحة (عنوان نزل لها) ينشال لما نوازن، وإلا تبقى الصفحتين مقسومة عنده
+    last_first = pages[-1][0][0][1] if pages[-1][0] else None
+    base_brks = [b for b in brks if b != last_first]
+    cands = balance_break(pages)[:4]
+    tail = {i for m, _ in pages[-3:] for _, i, _ in m}
+    if any(b in tail for b in brks):
+        # أول: نجرب نشيل الكسور اللي في آخر 3 صفحات — إذا قلّت صفحة، أحسن من صفحات نصها فاضي (وبعدها نوازن)
+        merged = [b for b in brks if b not in tail]
+        render(doc(src, css), trial, browser, markers=True, brks=merged)
+        p2 = page_marks(trial)
+        if len(p2) < len(pages):
+            brks, pages = merged, p2
+            last_first = pages[-1][0][0][1] if pages[-1][0] else None
+            base_brks = [b for b in brks if b != last_first]
+            cands = balance_break(pages)[:4]
+    for c in cands:
+        render(doc(src, css), trial, browser, markers=True, brks=base_brks + [c])
+        p2 = page_marks(trial)
+        if len(p2) <= len(pages) and (p2[-1][1] - TOP) / CAPH > 0.45:
+            bb, brks, pages = c, base_brks + [c], p2
+            break
+    where = {i: pi for pi, (m, _) in enumerate(pages) for _, i, _ in m}
+    sp, pad = spread_map(pages)
     # نتأكد إن ولا قسم انتقل من صفحته بعد المسافات؛ وإذا انتقل نصغّر المسافات
     for k in (1, 0.75, 0.5, 0):
-        sp_k = {i: round(h * k, 1) for i, h in sp.items()} if k else {}
-        render(doc(src, css), trial, browser, markers=True, spread=sp_k, brk=brk)
+        sp_k = {i: round(h * k, 1) for i, h in sp.items()}
+        pad_k = {i: round(h * k, 1) for i, h in pad.items()}
+        render(doc(src, css), trial, browser, markers=True, spread=sp_k, brks=brks, pad=pad_k)
         if {i: pi for pi, (m, _) in enumerate(page_marks(trial)) for _, i, _ in m} == where:
             break
-    if sp_k or brk is not None:
-        render(doc(src, css), trial, browser, spread=sp_k, brk=brk)
-        if pymupdf.open(trial).page_count == n_before:
-            trial.replace(out_pdf)
-            print(f"  {pathlib.Path(out_pdf).name}: توزعت المساحة في {len(sp_k)} موضع" + (" + توازنت آخر صفحتين" if brk is not None else ""))
+    render(doc(src, css), out_pdf, browser, spread=sp_k, brks=brks, pad=pad_k)
+    msg = [f"{len(sp_k)} مسافة"] if sp_k else []
+    if brks:
+        msg.append(f"{len(brks) - (bb is not None)} عنوان نزل للصفحة الجاية" if len(brks) - (bb is not None) else "")
+    if bb is not None:
+        msg.append("توازنت آخر صفحتين")
+    msg = [m for m in msg if m]
+    if msg:
+        print(f"  {name}: " + "، ".join(msg) + f" ({pymupdf.open(out_pdf).page_count} صفحات)")
 
 
 def doc(body, extra_css=""):
