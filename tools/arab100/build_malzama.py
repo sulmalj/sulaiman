@@ -102,6 +102,13 @@ ul.b.two > li {{ margin:2pt 0; }}
 /* (استثناء بطلب المستخدم لصفحة معيّنة) مسافات أضيق شوي عشان يدخل قسم كامل في الصفحة */
 .sec.tz {{ margin-top:26pt; }} .sub.tz {{ margin-top:16pt; }} .sub2.tz {{ margin-top:12pt; }}
 .ln.tz {{ margin:9pt 0; }} .pill.tz {{ margin:6pt 0 8pt; }} .bul.tz {{ margin:8pt 0; }}
+ul.b.tz > li {{ margin:5pt 0; }} table.t.tz {{ margin:8pt 0 4pt; }}
+/* (استثناء بطلب المستخدم) يبدأ صفحة جديدة */
+.pb {{ break-before:page; margin-top:0 !important; }}
+/* (استثناء بطلب المستخدم: «توزعهم على الصفحة») مسافات أوسع شوي في صفحات فيها قسمين بس */
+ul.b.rm > li {{ margin:20pt 0; }} .bul.rm {{ margin:24pt 0; }} .sec.rm:not(.pb) {{ margin-top:62pt; }} .lead.rm {{ margin:16pt 0 6pt; }}
+/* سطر تمهيدي قبل قائمة (مثل «ومن مبادئها الأساسية:») بلون غير لون بنود القائمة */
+.lead {{ color:var(--blue); font-weight:700; margin:10pt 0 4pt; }}
 /* القائمة تنقسم بين البنود إذا طالت (القصيرة — 3 بنود أو أقل — تبقى مع بعض) */
 ol.n, ul.b {{ break-inside:auto; }}
 ol.n:not(:has(> li:nth-child(4))), ul.b:not(:has(> li:nth-child(4))) {{ break-inside:avoid; }}
