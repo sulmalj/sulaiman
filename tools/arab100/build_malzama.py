@@ -104,6 +104,8 @@ table.t th:last-child, table.t td:last-child {{ border-left:0; }}
 table.t td {{ padding:4pt 6pt; border-top:1pt solid #e2cfc1; border-left:1pt solid #e2cfc1; text-align:center; vertical-align:middle; background:#fdf8f3; }}
 table.t tr:nth-child(even) td {{ background:#f6ece4; }}
 table.t tr {{ break-inside:avoid; }}
+/* الجدول الطويل اللي ينقسم: ما يبقى صف أو صفين لحالهم أول الجدول أو آخره */
+table.t tbody tr:nth-child(-n+3), table.t tbody tr:nth-last-child(-n+2) {{ break-before:avoid; }}
 table.t td.r {{ text-align:right; }}
 /* جدول عناوينه في العمود الأول (مثل جدول حالات التاء والهاء في الكتاب) */
 table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
@@ -146,7 +148,8 @@ KEEP_JS = """() => {
     const first = t.querySelector('tr');
     if (first && first.querySelector('th') && !first.querySelector('td') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
     // الجدول ما ينقسم بين صفحتين (طلب المستخدم) إلا إذا كان أطول من صفحة
-    if (t.rows.length <= 22) t.classList.add('short');
+    // (والجدول الطويل — أكثر من نص صفحة — يكمل تحت عنوانه ويتكرر رأسه، عشان ما تبقى نص صفحة فاضية)
+    if (t.getBoundingClientRect().height < 470) t.classList.add('short');
   }
   for (const e of document.querySelectorAll('.ln')) {
     if (e.firstElementChild && e.firstElementChild.classList.contains('hl')) continue;
