@@ -27,6 +27,7 @@ COVER = HERE / "base" / "cover-intro.pdf"
 LOGO = HERE.parent / "statistics" / "logo-adl.png"
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 W, H = 595.5, 842.25
+TOP_M, BOT_M = 96, 54  # هوامش صفحة الدرس: مسافة واضحة تحت خط الترويسة وفوق رقم الصفحة
 FONT_BODY = "Readex Pro"
 FONT_HEAD = "Readex Pro"
 
@@ -54,7 +55,8 @@ def font_faces():
 CSS = f"""
 {font_faces()}
 /* Chrome يقص أي شي يطلع عن منطقة المحتوى؛ نخلي 4pt زيادة على الجنبين (حشوة للـbody) عشان الدوائر والخلفيات ما تنقص */
-@page {{ size:{W}pt {H}pt; margin:84pt 9pt 36pt 9pt; }}
+/* (طلب المستخدم) الكلام ما يلصق بخط الترويسة فوق (الخط عند 69pt) ولا برقم الصفحة تحت */
+@page {{ size:{W}pt {H}pt; margin:{TOP_M}pt 9pt {BOT_M}pt 9pt; }}
 :root {{ --brown:#603b28; --term:#cc6e53; --mithl:#db526f; --ex:#527c82; --sec:#ad7c95; --sub:#844f6a;
         --teal:#41848d; --hl:#f2e6dd; --pill:#f5e6d9; --blue:#325c8e; }}
 * {{ box-sizing:border-box; }}
@@ -62,21 +64,25 @@ html,body {{ margin:0; background:transparent; color:var(--brown); font-family:'
             font-size:12pt; line-height:1.65; direction:rtl; -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
 body {{ padding:0 4pt; }}
 p {{ margin:0; }}
-.sec {{ color:var(--sec); font-size:14.5pt; margin:32pt 0 10pt; break-after:avoid; }}
+.sec {{ color:var(--sec); font-size:14.5pt; margin:44pt 0 8pt; break-after:avoid; }}
 body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 /* عنوان القسم: نقطة + خط ناعم يكمل لآخر السطر */
 .sec {{ display:flex; align-items:center; }}
 .sec::after {{ content:''; flex:1; height:1.6pt; margin-right:10pt; border-radius:2pt;
               background:linear-gradient(to left, #e6cfd9, rgba(230,207,217,0)); }}
 .sub {{ width:fit-content; border-bottom:2pt solid #efdccf; padding-bottom:1pt; }}
-.lessonhead {{ border-right:5pt solid #cc6e53; padding:2pt 12pt 4pt; margin:0 0 4pt; }}
+.lessonhead {{ border-right:5pt solid #325c8e; padding:2pt 12pt 4pt; margin:0 0 4pt; }}
 .lessonhead small {{ display:inline-block; background:#f5e6d9; color:#844f6a; font-size:10.5pt; border-radius:10pt; padding:1pt 10pt; }}
 .lessonhead b {{ display:block; color:#89543d; font-weight:700; font-size:18pt; line-height:1.5; margin-top:2pt; }}
 /* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
 .sec::before {{ content:'●'; font-family:'DejaVu Sans',sans-serif; font-size:7pt; color:var(--sec); margin-left:9pt; vertical-align:2pt; }}
-.sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
+/* العنوان الرئيسي اللي تحته «أولًا/ثانيًا…» (طلب المستخدم): في النص، بدون الدائرة والخط، وبلون مختلف (كحلي الجداول) */
+.sec.main {{ display:block; text-align:center; color:var(--blue); font-size:16.5pt; margin:44pt 0 12pt; }}
+.sec.main::before {{ content:none; }}
+.sec.main::after {{ content:''; display:block; width:56pt; height:2.2pt; margin:5pt auto 0; border-radius:2pt; background:#c9d6e6; flex:none; }}
+.sub {{ color:var(--sub); font-size:13.4pt; margin:34pt 0 6pt; break-after:avoid; }}
 /* عنوان ثالث (مثل «■ حذف الهمزة من أول الكلمة» في الكتاب) */
-.sub2 {{ color:var(--term); font-size:12.6pt; margin:16pt 0 6pt; break-after:avoid; }}
+.sub2 {{ color:var(--term); font-size:12.6pt; margin:26pt 0 6pt; break-after:avoid; }}
 .sub2::before {{ content:'■'; font-family:'DejaVu Sans',sans-serif; font-size:7.5pt; color:var(--sub); margin-left:7pt; vertical-align:2pt; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
@@ -116,7 +122,7 @@ table.t td.no {{ width:20pt; }}
 .u {{ text-decoration:underline; text-decoration-thickness:0.8pt; text-underline-offset:0.56em; text-decoration-skip-ink:none; }}
 /* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
 td:has(.u), li:has(.u), .note:has(.u), .bul > div:has(.u), .ln:has(.u) {{ line-height:2.1; }}
-.note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:16pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
+.note {{ border-right:4pt solid var(--blue); background:var(--hl); padding:6pt 10pt; margin:16pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
 .keep {{ break-inside:avoid; }}
 .card {{ background:var(--hl); padding:6pt 10pt; margin:8pt 0; border-radius:3pt; break-inside:avoid; }}
 table.t.short {{ break-inside:avoid; }}
@@ -287,7 +293,7 @@ SPREAD_JS = """(o) => {
   });
 }"""
 
-TOP, BOT = 84, H - 36  # حدود منطقة المحتوى في صفحة الدرس
+TOP, BOT = TOP_M, H - BOT_M  # حدود منطقة المحتوى في صفحة الدرس
 CAPH = BOT - TOP
 
 
@@ -330,7 +336,7 @@ def spread_map(pages, cap=44, cap_head=60, cap_item=24):
             continue
         y0, i0, k0 = marks[0]
         if k0 == "H" and pi > 0:
-            pad[str(i0)] = p0 = round(min(20, gap * 0.3), 1)
+            pad[str(i0)] = p0 = round(min(6, gap * 0.3), 1)
             gap -= p0
         rest = [(i, k) for _, i, k in marks[1:]]
         if not rest or gap < 16:
@@ -388,7 +394,7 @@ def last_page_fill(pdf_path):
     d = pymupdf.open(pdf_path)
     pg = d[-1]
     bottoms = [b[3] for b in pg.get_text("blocks")] + [x["rect"].y1 for x in pg.get_drawings()]
-    top, bot = 84, H - 36
+    top, bot = TOP, BOT
     n = d.page_count
     return n, (max(bottoms, default=top) - top) / (bot - top)
 
@@ -435,6 +441,9 @@ def render_fit(src, out_pdf, browser):
             break
     where = {i: pi for pi, (m, _) in enumerate(pages) for _, i, _ in m}
     sp, pad = spread_map(pages)
+    # (طلب المستخدم بعد ما أرسل ملزمة النهج كمرجع للمسافات) مسافات ثابتة في كل الصفحات، بدون تمطيط الفراغ بين الفقرات —
+    # الفراغ اللي يبقى تحت الصفحة عادي. نخلي بس نزول العنوان اللي يبدأ الصفحة.
+    sp = {}
     # نتأكد إن ولا قسم انتقل من صفحته بعد المسافات؛ والصفحة اللي انتقل منها شي بس تتصغّر مسافاتها
     # (قبل كانت أي مشكلة في صفحة وحدة تلغي المسافات في كل الدرس)
     factor = {pi: 1.0 for pi in range(len(pages))}
@@ -597,7 +606,7 @@ def solutions_html():
 .soltitle{text-align:center;font-weight:700;font-size:26pt;color:#603b28;margin:4pt 0 12pt;line-height:1.4}
 .soltitle small{display:block;font-size:13pt;color:#ad7c95}
 .unit{background:#603b28;color:#fff;text-align:center;border-radius:22pt;padding:5pt;font-weight:700;font-size:16pt;margin:8pt 0}
-.lesson{background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-weight:700;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
+.lesson{background:#f5e6d9;border-right:5pt solid #325c8e;border-radius:4pt;padding:5pt 10pt;color:#cc6e53;font-weight:700;font-size:13.5pt;margin:30pt 0 6pt;break-after:avoid}
 .ok{color:#527c82;white-space:nowrap}
 .q{font-size:11.8pt}
 </style>"""

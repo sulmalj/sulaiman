@@ -132,7 +132,7 @@ def intro_body(toc):
     return f"""<!-- المقدمة -->
 <style>
 /* صفحة «قبل أن تبدأ» تعبّي الصفحة: كل تنويه في بطاقة بخط أكبر */
-.nc {{ display:block; font-size:13pt; line-height:1.9; margin:0 0 10pt; background:#fbf3ec; border-right:5pt solid #cc6e53;
+.nc {{ display:block; font-size:13pt; line-height:1.9; margin:0 0 10pt; background:#fbf3ec; border-right:5pt solid #325c8e;
       border-radius:10pt; padding:7pt 14pt 8pt; text-align:justify; text-align-last:right; break-inside:avoid; }}
 .nc > .hl {{ background:none !important; padding:0 !important; }}
 .nk {{ display:table; background:#cc6e53; color:#fff; border-radius:12pt; padding:1pt 12pt 2pt; font-size:11.5pt; margin-bottom:3pt; }}
