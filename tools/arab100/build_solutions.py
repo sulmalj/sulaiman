@@ -19,7 +19,8 @@ import build_malzama as bm
 import frontmatter as fm
 
 BOOK = bm.HERE.parents[1] / "store" / "arab100" / "book"
-SOURCES = [BOOK / "applications.md", BOOK / "applications-u34.md"]
+# pretest-u1.md أول شي: التدريب القبلي للوحدة الأولى (صفحته قبل ص17، من صورة المستخدم)
+SOURCES = [BOOK / "pretest-u1.md", BOOK / "applications.md", BOOK / "applications-u34.md"]
 ACTS = BOOK / "activities.md"
 STORE = "https://mtgradl.com"
 CHANNEL = "https://t.me/mlazmadl"
