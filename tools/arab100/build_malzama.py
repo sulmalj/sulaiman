@@ -82,22 +82,23 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .m {{ color:var(--mithl); }}
 .ex {{ color:var(--ex); }}
 .red {{ color:var(--mithl); }}
-.ln {{ display:block; margin:9pt 0; break-inside:avoid; line-height:2.05; }}
+/* (طلب المستخدم: «ما أحب زحمة بالصفحة») مسافة واضحة بين كل فقرة ونقطة — حتى لو زادت الصفحات */
+.ln {{ display:block; margin:17pt 0; break-inside:avoid; line-height:2.1; }}
 /* الخلفية تمشي مع النص سطر سطر وتوقف عند آخر كلمة (مثل الملزمة القديمة) */
 .ln > .hl {{ background:var(--hl); padding:3pt 9pt; border-radius:3pt; -webkit-box-decoration-break:clone; box-decoration-break:clone; }}
-.pill {{ background:var(--pill); border-radius:22pt; padding:7pt 16pt; margin:8pt 0 10pt; break-inside:avoid; text-align:justify; text-align-last:right; }}
+.pill {{ background:var(--pill); border-radius:22pt; padding:7pt 16pt; margin:14pt 0 16pt; break-inside:avoid; text-align:justify; text-align-last:right; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
-ol.n > li, ul.b > li {{ margin:4pt 0; break-inside:avoid; }}
+ol.n > li, ul.b > li {{ margin:10pt 0; break-inside:avoid; }}
 ol.n, ul.b {{ break-inside:avoid; }}
 ul.b > li::marker {{ color:var(--sec); }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
 .dot {{ display:block; width:15pt; height:15pt; border-radius:50%; margin:0 auto 4pt; }}
 .d1 {{ background:#e3a594; }} .d2 {{ background:#f0c98d; }} .d3 {{ background:#8db3b3; }} .d4 {{ background:#bb9cae; }}
-.bul {{ display:flex; gap:8pt; align-items:flex-start; margin:9pt 0; break-inside:avoid; }}
+.bul {{ display:flex; gap:8pt; align-items:flex-start; margin:15pt 0; break-inside:avoid; }}
 .bul > .dot {{ flex:none; margin:3pt 0 0; width:13pt; height:13pt; }}
-table.t {{ width:100%; border-collapse:separate; border-spacing:0; margin:9pt 0 12pt; font-size:11.6pt; line-height:1.45;
+table.t {{ width:100%; border-collapse:separate; border-spacing:0; margin:16pt 0 18pt; font-size:11.6pt; line-height:1.45;
            border:1pt solid #d9c2b1; border-radius:9pt; overflow:hidden; }}
 table.t th {{ background:var(--blue); color:#fff; font-family:'{FONT_HEAD}'; font-weight:700; font-size:11.6pt; padding:5pt 6pt; border-left:1pt solid #4a73a3; }}
 table.t th:last-child, table.t td:last-child {{ border-left:0; }}
@@ -115,7 +116,7 @@ table.t td.no {{ width:20pt; }}
 .u {{ text-decoration:underline; text-decoration-thickness:0.8pt; text-underline-offset:0.56em; text-decoration-skip-ink:none; }}
 /* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
 td:has(.u), li:has(.u), .note:has(.u), .bul > div:has(.u), .ln:has(.u) {{ line-height:2.1; }}
-.note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
+.note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:16pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
 .keep {{ break-inside:avoid; }}
 .card {{ background:var(--hl); padding:6pt 10pt; margin:8pt 0; border-radius:3pt; break-inside:avoid; }}
 table.t.short {{ break-inside:avoid; }}
@@ -246,6 +247,11 @@ SPREAD_JS = """(o) => {
   for (const c of [...document.body.children]) {
     if (c.tagName === 'STYLE' || c.tagName === 'SCRIPT') continue;
     items.push([isHead(c) ? 'H' : 'B', c]);
+    // داخل مجموعة العنوان: الفقرات بعد أول فقرة تاخذ مسافات بعد (مثل البند ١ اللي ماسك في المقدمة)
+    if (c.matches('.keep')) {
+      const kids = [...c.children].filter(k => !k.matches('.sec, .sub, .sub2, .lesson, .unit'));
+      for (const k of kids.slice(1)) if (k.matches('.ln, .bul, .note, p')) items.push(['C', k]);
+    }
     for (const li of c.querySelectorAll(':scope li'))
       if (li.parentElement.matches('ol.n, ul.b') && li.previousElementSibling) items.push(['I', li]);
   }
@@ -290,8 +296,8 @@ def page_marks(pdf_path):
     out = []
     for pg in pymupdf.open(pdf_path):
         marks = sorted((w[1], int(re.search(r"\d+", w[4]).group()), w[4][2]) for w in pg.get_text("words")
-                       if re.fullmatch(r"zz[BIH]\d+zz", w[4]))
-        bottoms = [b[3] for b in pg.get_text("blocks") if not re.fullmatch(r"\s*(zz[BIH]\d+zz\s*)+", b[4])]
+                       if re.fullmatch(r"zz[BIHC]\d+zz", w[4]))
+        bottoms = [b[3] for b in pg.get_text("blocks") if not re.fullmatch(r"\s*(zz[BIHC]\d+zz\s*)+", b[4])]
         bottoms += [x["rect"].y1 for x in pg.get_drawings()]
         out.append((marks, max(bottoms, default=TOP)))
     return out
@@ -300,7 +306,8 @@ def page_marks(pdf_path):
 def head_break(pages):
     """عنوان قسم في ربع الصفحة الأخير وكلامه يكمل في الصفحة اللي بعدها → ينزل مع قسمه للصفحة الجاية
     (طلب المستخدم: «المفروض تحطه بالصفحة اللي تحت»)."""
-    page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, _ in m}
+    # بس الأقسام (مو البنود والفقرات اللي داخل مجموعة العنوان)
+    page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, k in m if k in "BH"}
     for pi, (marks, _) in enumerate(pages[:-1]):
         for y, i, k in marks[1:]:
             if k != "H" or (y - TOP) < 0.7 * CAPH:
@@ -311,7 +318,7 @@ def head_break(pages):
     return None
 
 
-def spread_map(pages, cap=30, cap_head=48, cap_item=18):
+def spread_map(pages, cap=44, cap_head=60, cap_item=24):
     """لكل صفحة فيها فراغ تحت: العنوان اللي أول الصفحة ينزل شوي، والباقي يتوزع بين الأقسام والبنود
     (القسم ياخذ ضعف البند). آخر صفحة في الدرس ما تتمطّط."""
     sp, pad = {}, {}
@@ -329,10 +336,10 @@ def spread_map(pages, cap=30, cap_head=48, cap_item=18):
         if not rest or gap < 16:
             continue
         # العنوان ياخذ 3 أضعاف البند، والقسم ضعفه
-        units = sum({"I": 1, "B": 2, "H": 3}[k] for _, k in rest)
+        units = sum({"I": 1, "B": 2, "C": 2, "H": 3}[k] for _, k in rest)
         u = gap / units
         for i, k in rest:
-            sp[str(i)] = round({"I": min(cap_item, u), "B": min(cap, 2 * u), "H": min(cap_head, 3 * u)}[k], 1)
+            sp[str(i)] = round({"I": min(cap_item, u), "B": min(cap, 2 * u), "C": min(cap, 2 * u), "H": min(cap_head, 3 * u)}[k], 1)
     return sp, pad
 
 
@@ -428,13 +435,19 @@ def render_fit(src, out_pdf, browser):
             break
     where = {i: pi for pi, (m, _) in enumerate(pages) for _, i, _ in m}
     sp, pad = spread_map(pages)
-    # نتأكد إن ولا قسم انتقل من صفحته بعد المسافات؛ وإذا انتقل نصغّر المسافات
-    for k in (1, 0.75, 0.5, 0):
-        sp_k = {i: round(h * k, 1) for i, h in sp.items()}
-        pad_k = {i: round(h * k, 1) for i, h in pad.items()}
+    # نتأكد إن ولا قسم انتقل من صفحته بعد المسافات؛ والصفحة اللي انتقل منها شي بس تتصغّر مسافاتها
+    # (قبل كانت أي مشكلة في صفحة وحدة تلغي المسافات في كل الدرس)
+    factor = {pi: 1.0 for pi in range(len(pages))}
+    for _ in range(6):
+        sp_k = {i: round(h * factor[where[int(i)]], 1) for i, h in sp.items() if factor[where[int(i)]] > 0}
+        pad_k = {i: round(h * factor[where[int(i)]], 1) for i, h in pad.items() if factor[where[int(i)]] > 0}
         render(doc(src, css), trial, browser, markers=True, spread=sp_k, brks=brks, pad=pad_k)
-        if {i: pi for pi, (m, _) in enumerate(page_marks(trial)) for _, i, _ in m} == where:
+        now = {i: pi for pi, (m, _) in enumerate(page_marks(trial)) for _, i, _ in m}
+        bad = {where[i] for i in where if now.get(i) != where[i]}
+        if not bad:
             break
+        for pi in bad:
+            factor[pi] = 0 if factor[pi] < 0.3 else factor[pi] * 0.6
     render(doc(src, css), out_pdf, browser, spread=sp_k, brks=brks, pad=pad_k)
     msg = [f"{len(sp_k)} مسافة"] if sp_k else []
     if brks:
