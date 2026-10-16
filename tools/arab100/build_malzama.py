@@ -262,20 +262,35 @@ def last_page_fill(pdf_path):
 
 def render_fit(src, out_pdf, browser):
     """إذا آخر صفحة في الدرس فيها شي بسيط (جدول لحاله مثلاً)، نصغّر الدرس كله شوي لين يرجع للصفحة اللي قبل،
-    بحد أقصى 92%؛ وإذا ما نفع نخليه مثل ما هو."""
+    بحد أقصى 92%؛ وإذا ما نفع: نوسّع المسافات قبل العناوين وبين الفقرات (بدون ما يزيد عدد الصفحات)
+    عشان الكلام ما يكون لاصق في بعض وآخر صفحة تستغل مساحتها (طلب المستخدم)."""
     render(doc(src), out_pdf, browser)
     n0, fill = last_page_fill(out_pdf)
-    if n0 < 2 or fill > 0.7:
+    if n0 < 2 or fill > 0.85:
         return
     trial = pathlib.Path(str(out_pdf) + ".fit.pdf")
-    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .sub2{margin-top:12pt} .ln{margin:6pt 0;line-height:1.9} "
-             ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
-    for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
-        render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
-        if last_page_fill(trial)[0] < n0:
-            trial.replace(out_pdf)
-            print(f"  {pathlib.Path(out_pdf).name}: انضمّت آخر صفحة (تصغير {round((1 - z) * 100)}%{' + مسافات أقل' if t else ''})")
-            return
+    if fill <= 0.7:
+        tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .sub2{margin-top:12pt} .ln{margin:6pt 0;line-height:1.9} "
+                 ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
+        for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
+            render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
+            if last_page_fill(trial)[0] < n0:
+                trial.replace(out_pdf)
+                print(f"  {pathlib.Path(out_pdf).name}: انضمّت آخر صفحة (تصغير {round((1 - z) * 100)}%{' + مسافات أقل' if t else ''})")
+                return
+    best = None
+    for x in (6, 12, 18, 24, 30, 36):
+        loose = (f".sec{{margin-top:{32 + x}pt}} .sub{{margin-top:{24 + x * .75:.0f}pt}} .sub2{{margin-top:{16 + x * .6:.0f}pt}} "
+                 f".ln{{margin:{9 + x / 4:.0f}pt 0}} .bul{{margin:{9 + x / 4:.0f}pt 0}} table.t{{margin:{9 + x / 3:.0f}pt 0 {12 + x / 3:.0f}pt}}")
+        render(doc(src, loose), trial, browser)
+        n, f = last_page_fill(trial)
+        if n != n0 or f > 0.97:
+            break
+        best = x
+        trial.replace(str(out_pdf) + ".best.pdf")
+    if best:
+        pathlib.Path(str(out_pdf) + ".best.pdf").replace(out_pdf)
+        print(f"  {pathlib.Path(out_pdf).name}: المسافات توسّعت (+{best}pt) عشان تستغل آخر صفحة")
 
 
 def doc(body, extra_css=""):
