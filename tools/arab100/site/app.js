@@ -390,6 +390,7 @@ const RANK = { kas: 4, dam: 3, fat: 2, suk: 1 };
 function hzSolve() {
   const s = HZ, steps = [];
   let g, title, ex = [], note = '';
+  if (!s.pos) return null;
   if (s.pos === 'first') {
     const w = hzWasl(); if (w === undefined) return null;
     const why = {
@@ -507,6 +508,7 @@ function hzSolve() {
       } else note = 'الدمج مدًّا (آ) يكون إذا كانت الهمزة المتطرفة على ألف؛ وغير ذلك تصير الهمزة متوسطة بعد الزيادة.';
     }
   }
+  if (!g) return null;
   return { g, title, steps, ex, note };
 }
 function renderHamza() {
