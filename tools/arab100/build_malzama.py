@@ -78,6 +78,7 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
 ol.n > li, ul.b > li {{ margin:4pt 0; break-inside:avoid; }}
+ol.n, ul.b {{ break-inside:avoid; }}
 ul.b > li::marker {{ color:var(--sec); }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
@@ -148,7 +149,19 @@ KEEP_JS = """() => {
     let n = grp.nextElementSibling;
     // يمسك العنوان مع العنوان الفرعي اللي بعده ثم أول عنصر محتوى
     while (n && n.matches('.sub, .sec, .sub2')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
-    if (n && !(n.matches('table') && !n.classList.contains('short'))) grp.appendChild(n);
+    if (n && !(n.matches('table') && !n.classList.contains('short'))) {
+      const nx = n.nextElementSibling; grp.appendChild(n);
+      // سطر ينتهي بنقطتين (مثل «مثال:» أو «تحذف الواو في الحالات الآتية:») ما ينفصل عن اللي بعده
+      if (n.matches('.ln') && /:\\s*$/.test(n.textContent) && nx && !nx.matches('.sec, .sub, .sub2')
+          && !(nx.matches('table') && !nx.classList.contains('short'))) grp.appendChild(nx);
+    }
+  }
+  for (const p of [...document.querySelectorAll('body > .ln')]) {
+    const nx = p.nextElementSibling;
+    if (!nx || !/:\\s*$/.test(p.textContent) || nx.matches('.sec, .sub, .sub2, .keep')) continue;
+    if (nx.matches('table') && !nx.classList.contains('short')) continue;
+    const grp = document.createElement('div'); grp.className = 'keep';
+    p.before(grp); grp.appendChild(p); grp.appendChild(nx);
   }
 }"""
 
