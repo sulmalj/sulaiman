@@ -62,6 +62,9 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 /* النقطة حرف (●) مو شكل مرسوم: بعض برامج قراءة الـPDF تقص الأشكال الصغيرة */
 .sec::before {{ content:'●'; font-family:'DejaVu Sans',sans-serif; font-size:7pt; color:var(--sec); margin-left:9pt; vertical-align:2pt; }}
 .sub {{ color:var(--sub); font-size:13.4pt; margin:24pt 0 8pt; break-after:avoid; }}
+/* عنوان ثالث (مثل «■ حذف الهمزة من أول الكلمة» في الكتاب) */
+.sub2 {{ color:var(--term); font-size:12.6pt; margin:16pt 0 6pt; break-after:avoid; }}
+.sub2::before {{ content:'■'; font-family:'DejaVu Sans',sans-serif; font-size:7.5pt; color:var(--sub); margin-left:7pt; vertical-align:2pt; }}
 .term {{ color:var(--term); }}
 .m {{ color:var(--mithl); }}
 .ex {{ color:var(--ex); }}
@@ -133,13 +136,13 @@ KEEP_JS = """() => {
     while (e.firstChild) sp.appendChild(e.firstChild);
     e.appendChild(sp);
   }
-  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .lesson'));
+  const heads = [...document.body.children].filter(e => e.matches('.sec, .sub, .sub2, .lesson'));
   for (const h of heads) {
     const grp = document.createElement('div'); grp.className = 'keep';
     h.before(grp); grp.appendChild(h);
     let n = grp.nextElementSibling;
     // يمسك العنوان مع العنوان الفرعي اللي بعده ثم أول عنصر محتوى
-    while (n && n.matches('.sub, .sec')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
+    while (n && n.matches('.sub, .sec, .sub2')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
     if (n && !(n.matches('table') && !n.classList.contains('short'))) grp.appendChild(n);
   }
 }"""
@@ -221,7 +224,7 @@ def render_fit(src, out_pdf, browser):
     if n0 < 2 or fill > 0.7:
         return
     trial = pathlib.Path(str(out_pdf) + ".fit.pdf")
-    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .ln{margin:6pt 0;line-height:1.9} "
+    tight = (".sec{margin-top:24pt} .sub{margin-top:18pt} .sub2{margin-top:12pt} .ln{margin:6pt 0;line-height:1.9} "
              ".bul{margin:6pt 0} ol.n>li,ul.b>li{margin:2pt 0} table.t{margin:7pt 0 9pt}")
     for z, t in ((0.98, ""), (0.96, ""), (1, tight), (0.97, tight), (0.94, tight), (0.92, tight), (0.9, tight)):
         render(doc(src, f"body{{zoom:{z}}} " + t), trial, browser)
