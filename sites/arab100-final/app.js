@@ -200,7 +200,7 @@ function renderQ() {
     html += `<textarea class="ans-in" id="esIn" placeholder="اكتب إجابتك هنا (اختياري)…">${esc(P.typed[q.id] || '')}</textarea>`;
     if (!shown) html += `<div class="self"><button class="btn btn-pri" type="button" id="esShow">اعرض الإجابة النموذجية</button></div>`;
     else {
-      html += `<div class="model-ans"><div class="h">الإجابة النموذجية</div>${esc(q.a)}</div>`;
+      html += `<div class="model-ans"><div class="h">الإجابة النموذجية</div>${esc(q.a)}</div>` + (q.x ? `<div class="model-ans ex"><div class="h">الشرح</div>${esc(q.x)}</div>` : '');
       const m = P.picked[q.id];
       html += m === undefined
         ? `<div class="self"><span>قارن إجابتك:</span><button class="btn btn-good btn-sm" type="button" data-self="1">${ICON('check')}إجابتي صحيحة</button><button class="btn btn-bad btn-sm" type="button" data-self="0">${ICON('x')}أخطأت أو ما عرفتها</button></div>`
@@ -390,6 +390,7 @@ const RANK = { kas: 4, dam: 3, fat: 2, suk: 1 };
 function hzSolve() {
   const s = HZ, steps = [];
   let g, title, ex = [], note = '';
+  if (!s.pos) return null;
   if (s.pos === 'first') {
     const w = hzWasl(); if (w === undefined) return null;
     const why = {
@@ -507,15 +508,24 @@ function hzSolve() {
       } else note = 'الدمج مدًّا (آ) يكون إذا كانت الهمزة المتطرفة على ألف؛ وغير ذلك تصير الهمزة متوسطة بعد الزيادة.';
     }
   }
+  if (!g) return null;
   return { g, title, steps, ex, note };
 }
 function renderHamza() {
   const flow = hzFlow();
-  $('hzBox').innerHTML = flow.map(k => `<div class="hz-q"><b>${HZQ[k].q}</b><div class="seg">${HZQ[k].o.map(([v, t]) => `<button type="button" class="${HZ[k] === v ? 'on' : ''}" data-hk="${k}" data-hv="${v}">${esc(t)}</button>`).join('')}</div></div>`).join('') +
+  // الخيار الناقص: سؤال قبله ما تجاوب وفيه سؤال بعده متجاوب
+  const firstMissing = flow.find(k => HZ[k] === undefined || HZ[k] === null);
+  const answeredAfter = firstMissing && flow.slice(flow.indexOf(firstMissing) + 1).some(k => HZ[k] !== undefined && HZ[k] !== null);
+  $('hzBox').innerHTML = flow.map(k => `<div class="hz-q ${answeredAfter && k === firstMissing ? 'miss' : ''}" id="hzq-${k}"><b>${HZQ[k].q}</b><div class="seg">${HZQ[k].o.map(([v, t]) => `<button type="button" class="${HZ[k] === v ? 'on' : ''}" data-hk="${k}" data-hv="${v}">${esc(t)}</button>`).join('')}</div></div>`).join('') +
     `<button class="btn btn-quiet btn-sm" type="button" id="hzReset">ابدأ من جديد</button>`;
   $('hzReset').onclick = () => { Object.keys(HZ).forEach(k => delete HZ[k]); renderHamza(); };
   const r = hzSolve();
-  if (!r) { $('hzOut').innerHTML = ''; return; }
+  if (!r) {
+    $('hzOut').innerHTML = answeredAfter
+      ? `<div class="panel hz-res" style="margin-top:12px"><p class="note warn" style="margin:0">${ICON('alert')}<span>حدّد أول: <b>${esc(HZQ[firstMissing].q)}</b> (${HZQ[firstMissing].o.map(o => o[1].replace(/ \(.*$/, '')).join('، ')})، وبعدها يطلع لك مكان الهمزة.</span></p></div>`
+      : '';
+    return;
+  }
   if (r.err) { $('hzOut').innerHTML = `<div class="panel hz-res" style="margin-top:12px"><p class="note warn" style="margin:0">${ICON('alert')}<span>${esc(r.err)}</span></p></div>`; return; }
   $('hzOut').innerHTML = `<div class="panel hz-res" style="margin-top:12px">
       <div class="hz-final"><span class="hz-glyph">${esc(r.g)}</span><div><h3>${esc(r.title)}</h3><p>الخطوات حسب قاعدة الكتاب:</p></div></div>
@@ -527,10 +537,11 @@ function renderHamza() {
 $('hzBox').addEventListener('click', e => {
   const b = e.target.closest('[data-hk]'); if (!b) return;
   const k = b.dataset.hk, v = b.dataset.hv;
-  const flow = hzFlow();
-  flow.slice(flow.indexOf(k) + 1).forEach(x => delete HZ[x]);   // أي اختيار بعده يتصفر
-  if (k === 'pos' || k === 'kind') Object.keys(HZ).forEach(x => { if (x !== 'pos' && (k === 'pos' || x !== 'kind')) delete HZ[x]; });
+  if (k === 'pos' && HZ.pos !== v) Object.keys(HZ).forEach(x => delete HZ[x]);   // تغيير مكان الهمزة يبدأ من جديد
   HZ[k] = v;
+  // نحتفظ بباقي اختيارات الطالب، ونشيل بس اللي ما عاد لها سؤال
+  const flow = hzFlow();
+  Object.keys(HZ).forEach(x => { if (!flow.includes(x)) delete HZ[x]; });
   renderHamza();
 });
 
