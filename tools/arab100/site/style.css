@@ -311,6 +311,8 @@ footer p{margin:0}
 /* ── محلل الهمزة ── */
 .hz-q{margin:0 0 16px}
 .hz-q > b{display:block;margin-bottom:8px;font-weight:700;color:var(--ink)}
+.hz-q.miss{background:var(--warn-tint);border-radius:12px;padding:10px 12px;outline:1.5px solid color-mix(in srgb,var(--warn) 45%,transparent)}
+.hz-q.miss > b{color:var(--warn)}
 .seg{display:flex;flex-wrap:wrap;gap:8px}
 .seg button{border:1.5px solid var(--line-2);background:var(--surface);border-radius:10px;padding:6px 14px;font-weight:600;font-size:14.5px;text-align:start;line-height:1.6;transition:border-color .15s}
 .seg button:hover{border-color:var(--navy-2)}
