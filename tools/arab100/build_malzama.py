@@ -96,7 +96,9 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
 ol.n > li, ul.b > li {{ margin:10pt 0; break-inside:avoid; }}
-ol.n, ul.b {{ break-inside:avoid; }}
+/* القائمة تنقسم بين البنود إذا طالت (القصيرة — 3 بنود أو أقل — تبقى مع بعض) */
+ol.n, ul.b {{ break-inside:auto; }}
+ol.n:not(:has(> li:nth-child(4))), ul.b:not(:has(> li:nth-child(4))) {{ break-inside:avoid; }}
 ul.b > li::marker {{ color:var(--sec); }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
@@ -177,11 +179,18 @@ KEEP_JS = """() => {
     let n = grp.nextElementSibling;
     // يمسك العنوان مع العنوان الفرعي اللي بعده ثم أول عنصر محتوى
     while (n && n.matches('.sub, .sec, .sub2, .lesson')) { const nx = n.nextElementSibling; grp.appendChild(n); n = nx; }
-    if (n && !(n.matches('table') && !n.classList.contains('short'))) {
+    // القائمة الطويلة (أكثر من 3 بنود) ما تنمسك كاملة مع العنوان — تنقسم بين البنود (العنوان + أول بندين ما ينفصلون)،
+    // عشان ما تنزل القائمة كلها للصفحة الجاية وتخلي فراغ كبير (طلب المستخدم: «فراغات مبالغ فيها»)
+    const longList = (e) => e && e.matches('ol.n, ul.b') && e.children.length > 3;
+    const softKeep = (lst) => { grp.style.breakAfter = 'avoid'; lst.firstElementChild.style.breakAfter = 'avoid'; };
+    if (longList(n)) softKeep(n);
+    else if (n && !(n.matches('table') && !n.classList.contains('short'))) {
       const nx = n.nextElementSibling; grp.appendChild(n);
       // سطر ينتهي بنقطتين (مثل «مثال:» أو «تحذف الواو في الحالات الآتية:») ما ينفصل عن اللي بعده
       if (n.matches('.ln') && /:\\s*$/.test(n.textContent) && nx && !nx.matches('.sec, .sub, .sub2')
-          && !(nx.matches('table') && !nx.classList.contains('short'))) grp.appendChild(nx);
+          && !(nx.matches('table') && !nx.classList.contains('short'))) {
+        if (longList(nx)) softKeep(nx); else grp.appendChild(nx);
+      }
     }
   }
   for (const p of [...document.querySelectorAll('body > .ln')]) {
@@ -291,6 +300,8 @@ SPREAD_JS = """(o) => {
     if (pd) c.style.paddingTop = pd + 'pt';
     if (o.brks.includes(i)) {
       c.style.breakBefore = 'page';
+      // الكسر الإجباري يخلي مسافة العنوان فوق — نشيلها عشان ما ينزل العنوان بزيادة أول الصفحة
+      c.style.marginTop = '0'; if (c.firstElementChild) c.firstElementChild.style.marginTop = '0';
       for (let a = c.parentElement; a && a !== document.body; a = a.parentElement) a.style.breakInside = 'auto';
     }
   });
@@ -319,7 +330,7 @@ def head_break(pages):
     page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, k in m if k in "BH"}
     for pi, (marks, _) in enumerate(pages[:-1]):
         for y, i, k in marks[1:]:
-            if k != "H" or (y - TOP) < 0.7 * CAPH:
+            if k != "H" or (y - TOP) < 0.85 * CAPH:
                 continue
             nxt = min((j for j in page_of if j > i), default=None)
             if nxt is None or page_of[nxt] > pi:
