@@ -188,6 +188,7 @@ footer p{margin:0}
 .field:focus,.ans-in:focus,.para:focus{outline:none;border-color:var(--navy-2);box-shadow:0 0 0 3px var(--navy-tint)}
 .model-ans{margin-top:14px;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px}
 .model-ans .h{font-weight:700;color:var(--navy);margin-bottom:2px}
+.model-ans.ex{background:var(--navy-tint);border-color:transparent;margin-top:10px}
 .self{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center}
 .self span{font-weight:600;color:var(--muted);font-size:14px}
 .qnav{display:flex;gap:8px;justify-content:space-between;margin:16px 0 18px;flex-wrap:wrap}
@@ -253,7 +254,11 @@ footer p{margin:0}
 .rules-b{padding:0 20px 16px}
 .rules h4{margin:12px 0 4px;font-family:var(--f-head);font-size:15px;color:var(--ink)}
 .rules ol,.rules ul{margin:0;padding-inline-start:22px;font-size:15px;color:var(--ink-2)}
-.rules li{margin:3px 0}
+.rules li{margin:5px 0}
+.rules .bk{margin:4px 0 6px;font-size:15px;color:var(--ink-2)}
+.rules q{quotes:"«" "»";color:var(--navy)}
+.rules .hint{margin:8px 0 0;font-size:13.5px;color:var(--muted)}
+.rules .ex-par{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;line-height:2}
 .res{margin-top:14px}
 .res-card{display:grid;gap:14px}
 .res-head{display:flex;gap:16px;align-items:center}
