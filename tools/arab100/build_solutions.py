@@ -175,7 +175,7 @@ SOL_CSS = """
   font-weight:700;font-size:15pt;margin:30pt 0 6pt;break-after:avoid}
 body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .unit small{background:#fff7ee;color:#603b28;border-radius:14pt;padding:0 10pt;font-size:11pt}
-.lesson{position:relative;background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:6pt;padding:6pt 12pt 7pt;
+.lesson{position:relative;background:#f5e6d9;border-right:5pt solid #325c8e;border-radius:6pt;padding:6pt 12pt 7pt;
   margin:26pt 0 8pt;break-after:avoid;line-height:1.5}
 .lesson small{display:block;color:#ad7c95;font-size:10.5pt;font-weight:600}
 .lesson b{display:block;color:#89543d;font-size:15pt;font-weight:700}
