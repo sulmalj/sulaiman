@@ -47,7 +47,6 @@
     <button type="button" data-nav="home">الرئيسية</button>
     <button type="button" data-nav="rules">الدروس والقواعد</button>
     <button type="button" data-nav="practice">تدرّب بالدرس</button>
-    <button type="button" data-nav="essay">الأسئلة المقالية</button>
     <button type="button" data-nav="write">كتابة الفقرة</button>
     <button type="button" data-nav="exam">محاكاة الفاينل</button>
     <button type="button" data-nav="review">مراجعة أخطائي</button>
@@ -87,7 +86,6 @@
     <div class="tools">
       <button class="tool" type="button" data-nav="rules"><span class="ti"><svg class="i"><use href="#i-book"/></svg></span><span class="tt"><b>الدروس والقواعد</b><small>بطاقات تلخّص كل قاعدة واستثناءاتها</small></span></button>
       <button class="tool" type="button" data-nav="practice"><span class="ti"><svg class="i"><use href="#i-list"/></svg></span><span class="tt"><b>تدرّب بالدرس</b><small>صح وخطأ واختيار من متعدد، مع التصحيح والتوضيح</small></span></button>
-      <button class="tool" type="button" data-nav="essay"><span class="ti"><svg class="i"><use href="#i-pen"/></svg></span><span class="tt"><b>الأسئلة المقالية</b><small>علّل وصحّح واذكر، مع إجابة نموذجية</small></span></button>
       <button class="tool rose" type="button" data-nav="write"><span class="ti"><svg class="i"><use href="#i-para"/></svg></span><span class="tt"><b>كتابة الفقرة</b><small>اكتب فقرتك وتُصحَّح حسب شروط الكتاب</small></span></button>
       <button class="tool" type="button" data-nav="exam"><span class="ti"><svg class="i"><use href="#i-timer"/></svg></span><span class="tt"><b>محاكاة الفاينل</b><small id="toolExam"></small></span></button>
       <button class="tool" type="button" data-nav="review"><span class="ti"><svg class="i"><use href="#i-redo"/></svg></span><span class="tt"><b>مراجعة أخطائي</b><small>الخطأ ينشال إذا جاوبته صح مرتين متتاليتين</small></span></button>
@@ -120,7 +118,7 @@
     </div>
   </section>
 
-  <!-- ═════ سؤال (تدريب / مقالي / مراجعة) ═════ -->
+  <!-- ═════ سؤال (تدريب / مراجعة) ═════ -->
   <section id="v-quiz" class="view narrow" hidden>
     <div class="qtop"><div class="ttl" id="qTitle"></div><button class="btn btn-quiet btn-sm" id="qBack" type="button"><svg class="i"><use href="#i-prev"/></svg>رجوع</button></div>
     <div class="qbar"><i id="qBar"></i></div>
@@ -216,7 +214,7 @@
 
   <!-- ═════ مراجعة الأخطاء ═════ -->
   <section id="v-review" class="view narrow" hidden>
-    <div class="vhead"><h2>مراجعة أخطائي</h2><p>كل سؤال غلطت فيه (في التدريب أو الاختبار أو المقالي) ينحفظ هنا، وينشال من القائمة إذا جاوبته صح مرتين ورا بعض.</p></div>
+    <div class="vhead"><h2>مراجعة أخطائي</h2><p>كل سؤال غلطت فيه (في التدريب أو الاختبار) ينحفظ هنا، وينشال من القائمة إذا جاوبته صح مرتين ورا بعض.</p></div>
     <div class="panel" id="revBox"></div>
   </section>
 
