@@ -118,7 +118,6 @@ def intro_body(toc):
     notes = [
         ("للتنويه", f'الملزمة مع الشروحات تغني عن الكتاب تمامًا، وتتوفر قناة خاصة بالمشتركين فيها الشروحات <a href="{INTRO_LINK}">(طريقة الدخول <u>هنا</u>)</a>.'),
         ("موقع التدريب", "يتوفر أيضًا موقع للتدريب على جميع الدروس، تجدونه في قناة المشتركين مع الشروحات."),
-        ("ملحوظة هامة", "الاختبار النصفي (الميد) لمادة عرب 100 لا يعتمد على التجميعات؛ بسبب أن كل دكتور هو من يقوم بعمل أسئلة الاختبار، فلا يجب الاعتماد على التجميعات فقط (التحضيري يكون موحدًا). وأنا ذكرت هذه الملحوظة بسبب أنني لا أريد الضرر لأحد، وفي الاختبار النهائي بإذن الله ستكون التجميعات لها دور أكبر، لكن في الميد لا يجب الاعتماد عليها."),
         ("هام", "بمجرد شرائك للملف فأنت تتعهد بعدم نشره أو تصويره أو نقله إلى أي مكان أو شخص آخر، وهو خاص بك فقط، ولا أحلل وأمنع اشتراك شخصين أو أكثر في اشتراك واحد (القطّات)."),
         ("الاشتراك", "الاشتراك معنا بأي مادة هو عامل مساعد لحصولك على أعلى الدرجات، وبدون اجتهادك وسعيك لن يكون للاشتراك أي دور لتحقيق أعلى الدرجات."),
         ("عن ملازمنا", "جميع الملازم في المتجر يتم تجهيزها على أحدث نسخة."),
@@ -135,12 +134,12 @@ def intro_body(toc):
     return f"""<!-- المقدمة -->
 <style>
 /* صفحة «قبل أن تبدأ» تعبّي الصفحة: كل تنويه في بطاقة بخط أكبر */
-.nc {{ display:block; font-size:13pt; line-height:1.9; margin:0 0 10pt; background:#fbf3ec; border-right:5pt solid #325c8e;
-      border-radius:10pt; padding:7pt 14pt 8pt; text-align:justify; text-align-last:right; break-inside:avoid; }}
+.nc {{ display:block; font-size:14.2pt; line-height:2.05; margin:0 0 20pt; background:#fbf3ec; border-right:5pt solid #325c8e;
+      border-radius:10pt; padding:11pt 16pt 12pt; text-align:justify; text-align-last:right; break-inside:avoid; }}
 .nc > .hl {{ background:none !important; padding:0 !important; }}
 .nk {{ display:table; background:#cc6e53; color:#fff; border-radius:12pt; padding:1pt 12pt 2pt; font-size:11.5pt; margin-bottom:3pt; }}
 .nc a {{ color:#db526f; text-decoration:none; }}
-.toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:12pt; margin-top:8pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
+.toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:12pt; margin-top:26pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
 .toc th {{ background:#325c8e; color:#fff; font-weight:700; padding:4pt 6pt; }}
 .toc td {{ padding:6pt 10pt; text-align:center; border-top:1pt solid #eadbd0; background:#fbf6f1; }}
 .toc td.r {{ text-align:right; }}
