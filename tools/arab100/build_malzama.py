@@ -222,7 +222,17 @@ TIGHTEN_JS = """() => {
 }"""
 
 
+# «لًا / لّا»: إذا كانت الحركة بين اللام والألف، خط Readex ما يركّب «لا» ويطلع اللام لاصق بالألف (المستخدم: «مو واضح»).
+# نأخر الحركة بعد الألف عند الرسم بس (المصادر تبقى بحركات الكتاب) عشان تنرسم «لا» مركّبة والحركة فوقها.
+LAM_ALEF = re.compile("ل([\u064B-\u0652]+)([اأإآ])")
+
+
+def fix_lam_alef(s):
+    return LAM_ALEF.sub(lambda m: "ل" + m.group(2) + m.group(1), s)
+
+
 def render(html_str, out_pdf, browser):
+    html_str = fix_lam_alef(html_str)
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name
