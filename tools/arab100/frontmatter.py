@@ -41,8 +41,8 @@ def _logo():
 
 
 UNIT_STYLE = [  # (لون الوحدة، لون خفيف، أيقونة SVG بيضاء 24×24)
-    ("#cc6e53", "#fbe8df", '<text x="12" y="19.5" text-anchor="middle" font-size="21" font-weight="700" fill="#fff" stroke="none">ء</text>'),
-    ("#527c82", "#e2eded", '<path d="M5 19l1-4L15.5 5.5a1.6 1.6 0 0 1 2.3 0l.7.7a1.6 1.6 0 0 1 0 2.3L9 18z M13.5 7.5l3 3"/>'),
+    ("#a94a2e", "#fbe8df", '<text x="12" y="19.5" text-anchor="middle" font-size="21" font-weight="700" fill="#fff" stroke="none">ء</text>'),
+    ("#466c72", "#e2eded", '<path d="M5 19l1-4L15.5 5.5a1.6 1.6 0 0 1 2.3 0l.7.7a1.6 1.6 0 0 1 0 2.3L9 18z M13.5 7.5l3 3"/>'),
     ("#a9718f", "#f4e6ee", '<path d="M4 6.5h16M8 10.5h12M4 14.5h16M11 18.5h9"/>'),
     ("#325c8e", "#e3eaf4", '<rect x="3.5" y="6" width="17" height="12.5" rx="2"/><path d="M4 7.5l8 5.5 8-5.5"/>'),
 ]
@@ -82,7 +82,7 @@ html,body {{ margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exac
 .ver {{ background:#fff; border:1pt solid #ecd9c9; border-radius:14pt; padding:4pt 12pt; color:#844f6a; font-weight:600; font-size:10.5pt; }}
 .nib {{ position:absolute; width:104pt; height:172pt; top:176pt; left:-2pt; opacity:.85; }}
 .hero {{ position:absolute; top:146pt; left:0; right:0; text-align:center; }}
-.kicker {{ color:#cc6e53; font-weight:600; font-size:13pt; }}
+.kicker {{ color:#a94a2e; font-weight:600; font-size:13pt; }}
 h1 {{ margin:0; font-weight:700; font-size:70pt; line-height:1.25; color:#89543d; }}
 .swash {{ display:block; margin:-4pt auto 0; width:230pt; height:16pt; }}
 .code {{ display:inline-block; margin-top:10pt; background:#89543d; color:#fff7ee; font-weight:700; font-size:19pt; border-radius:30pt; padding:2pt 36pt 4pt; }}
@@ -95,15 +95,15 @@ h1 {{ margin:0; font-weight:700; font-size:70pt; line-height:1.25; color:#89543d
 .it {{ display:flex; align-items:center; gap:6pt; font-weight:600; font-size:11pt; line-height:2.05; color:#5c4033; white-space:nowrap; }}
 .n {{ flex:none; width:16pt; height:16pt; border-radius:50%; font-size:9pt; font-weight:700; display:inline-flex; align-items:center; justify-content:center; line-height:1; }}
 .foot {{ position:absolute; bottom:30pt; left:0; right:0; text-align:center; font-weight:600; font-size:10.5pt; color:#844f6a; }}
-.foot b {{ color:#cc6e53; }}
-{".hero{top:128pt} .nib{top:150pt} .units{top:330pt;gap:11pt} .uc{padding:12pt 14pt 10pt} .it{line-height:1.85} .ct{margin-bottom:3pt;padding-bottom:3pt} .ver{background:#db526f;color:#fff;border-color:#db526f;font-weight:700}" if compact else ""}
+.foot b {{ color:#a94a2e; }}
+{".hero{top:128pt} .nib{top:150pt} .units{top:330pt;gap:11pt} .uc{padding:12pt 14pt 10pt} .it{line-height:1.85} .ct{margin-bottom:3pt;padding-bottom:3pt} .ver{background:#c42446;color:#fff;border-color:#c42446;font-weight:700}" if compact else ""}
 </style></head><body><div class="pg">
 <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dots"></div>
 <div class="frame"></div>
 {nib}
 <div class="top"><img src="{_logo()}"><div class="ver">{badge}</div></div>
 <div class="hero"><div class="kicker">{kicker}</div><h1>{title}</h1>
-<svg class="swash" viewBox="0 0 230 16"><path d="M6 10 C60 2 120 2 224 9" fill="none" stroke="#cc6e53" stroke-width="3.2" stroke-linecap="round"/><path d="M40 13 C90 8 140 8 190 12" fill="none" stroke="#f0c98d" stroke-width="2.2" stroke-linecap="round"/></svg>
+<svg class="swash" viewBox="0 0 230 16"><path d="M6 10 C60 2 120 2 224 9" fill="none" stroke="#a94a2e" stroke-width="3.2" stroke-linecap="round"/><path d="M40 13 C90 8 140 8 190 12" fill="none" stroke="#f0c98d" stroke-width="2.2" stroke-linecap="round"/></svg>
 <div class="code">عرب 100</div></div>
 <div class="units">{cards}</div>
 <div class="foot"><b>ملازم عدل</b> · {foot}</div>
@@ -132,17 +132,17 @@ def intro_body(toc):
     return f"""<!-- المقدمة -->
 <style>
 /* صفحة «قبل أن تبدأ» تعبّي الصفحة: كل تنويه في بطاقة بخط أكبر */
-.nc {{ display:block; font-size:13pt; line-height:1.9; margin:0 0 10pt; background:#fbf3ec; border-right:5pt solid #cc6e53;
+.nc {{ display:block; font-size:13pt; line-height:1.9; margin:0 0 10pt; background:#fbf3ec; border-right:5pt solid #a94a2e;
       border-radius:10pt; padding:7pt 14pt 8pt; text-align:justify; text-align-last:right; break-inside:avoid; }}
 .nc > .hl {{ background:none !important; padding:0 !important; }}
-.nk {{ display:table; background:#cc6e53; color:#fff; border-radius:12pt; padding:1pt 12pt 2pt; font-size:11.5pt; margin-bottom:3pt; }}
-.nc a {{ color:#db526f; text-decoration:none; }}
+.nk {{ display:table; background:#a94a2e; color:#fff; border-radius:12pt; padding:1pt 12pt 2pt; font-size:11.5pt; margin-bottom:3pt; }}
+.nc a {{ color:#c42446; text-decoration:none; }}
 .toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:12pt; margin-top:8pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
 .toc th {{ background:#325c8e; color:#fff; font-weight:700; padding:4pt 6pt; }}
 .toc td {{ padding:6pt 10pt; text-align:center; border-top:1pt solid #eadbd0; background:#fbf6f1; }}
 .toc td.r {{ text-align:right; }}
-.toc tr.unitrow td {{ background:#f5e6d9; color:#cc6e53; font-weight:700; font-size:12.5pt; text-align:right; }}
-.tp {{ display:inline-block; color:#ad7c95; margin-left:8pt; padding:0 2pt; font-size:10pt; }}
+.toc tr.unitrow td {{ background:#f5e6d9; color:#a94a2e; font-weight:700; font-size:12.5pt; text-align:right; }}
+.tp {{ display:inline-block; color:#8c5671; margin-left:8pt; padding:0 2pt; font-size:10pt; }}
 </style>
 <div class="sec">قبل أن تبدأ</div>
 {cards}
