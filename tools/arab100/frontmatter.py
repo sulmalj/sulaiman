@@ -147,4 +147,4 @@ def intro_body(toc):
 <div class="sec">قبل أن تبدأ</div>
 {cards}
 <div class="sec pb">فهرس الملزمة</div>
-<table class="toc"><tr><th>الموضوع</th><th style="width:60pt">الشرح</th><th style="width:70pt">التجميعات</th></tr>{rows}</table>"""
+<table class="toc"><tr><th>الموضوع</th><th style="width:60pt">الشرح</th><th style="width:70pt">التدريبات</th></tr>{rows}</table>"""
