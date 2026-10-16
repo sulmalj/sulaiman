@@ -96,6 +96,9 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
 ol.n > li, ul.b > li {{ margin:10pt 0; break-inside:avoid; }}
+/* (لما يطلبها المستخدم بس) قائمة ببندين في كل سطر عشان توفير مساحة */
+ul.b.two {{ display:grid; grid-template-columns:1fr 1fr; column-gap:28pt; padding-right:16pt; }}
+ul.b.two > li {{ margin:2pt 0; }}
 /* القائمة تنقسم بين البنود إذا طالت (القصيرة — 3 بنود أو أقل — تبقى مع بعض) */
 ol.n, ul.b {{ break-inside:auto; }}
 ol.n:not(:has(> li:nth-child(4))), ul.b:not(:has(> li:nth-child(4))) {{ break-inside:avoid; }}
