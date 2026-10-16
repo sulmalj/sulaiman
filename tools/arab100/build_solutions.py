@@ -100,7 +100,7 @@ def mcq(ln):
     q, ops = parts[0].strip(), [(parts[i], parts[i + 1].strip()) for i in range(1, len(parts) - 1, 2)]
     if len(ops) < 2 or ans not in [l for l, _ in ops]:
         return None
-    cells = "".join(f'<div class="op{" ok" if l == ans else ""}"><b>{l}</b>{inline(o)}</div>' for l, o in ops)
+    cells = "".join(f'<div class="op{" ok" if l == ans else ""}"><b>{l}</b> {inline(o)}</div>' for l, o in ops)
     why = f'<div class="why">{inline(why)}</div>' if why.strip() else ""
     longest = max(len(o) for _, o in ops)
     cols = len(ops) if longest <= 16 else (3 if len(ops) == 3 and longest <= 26 else 2)
@@ -137,8 +137,8 @@ def md_html(lines, lessons):
             small, big, rest, pages = split_head(ln[4:])
             label = (small + ": " + big) if small else big
             out.append(f'<div class="sec"><span class="exn">{inline(label)}</span>'
-                       + (f'<span class="ext">{inline(rest)}</span>' if rest else "")
-                       + (f'<span class="pgref">{inline(pages)}</span>' if pages else "") + "</div>")
+                       + (f' <span class="ext">{inline(rest)}</span>' if rest else "")
+                       + (f' <span class="pgref">{inline(pages)}</span>' if pages else "") + "</div>")
         elif ln.startswith("|"):
             rows = []
             while i < len(lines) and lines[i].startswith("|"):
@@ -157,7 +157,7 @@ def md_html(lines, lessons):
                                   f'<div>{inline(s.split(".", 1)[1])}</div></div>'))
         elif re.match(r"^(النص|الفقرة)\s*:", s):
             k, _, v = s.partition(":")
-            out.append(f'<div class="passage"><span class="pk">{inline(k)}</span>{inline(v)}</div>')
+            out.append(f'<div class="passage"><span class="pk">{inline(k)}:</span> {inline(v)}</div>')
         elif s.startswith("- "):
             out.append(f'<div class="bl">{inline(s[2:])}</div>')
         elif s.startswith("(") and s.endswith(")"):
@@ -195,7 +195,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .ops{display:grid;gap:4pt 7pt;margin:4pt 24pt 0 0}
 .ops.c4{grid-template-columns:repeat(4,1fr)} .ops.c3{grid-template-columns:repeat(3,1fr)} .ops.c2{grid-template-columns:1fr 1fr}
 .op{background:#fbf3ec;border:1pt solid #eddccf;border-radius:7pt;padding:2pt 8pt 3pt;font-size:11pt;line-height:1.5;color:#6d4a37}
-.op b{color:#ad7c95;margin-left:5pt}
+.op b{color:#ad7c95;margin-left:3pt}
 .op.ok{background:#e3efed;border-color:#7fa9a4;color:#2f5f63;box-shadow:inset -3pt 0 0 #527c82}
 .op.ok b{color:#527c82}
 .op.ok::after{content:'✔';font-family:'DejaVu Sans',sans-serif;color:#527c82;margin-right:6pt;font-size:10pt}
@@ -236,6 +236,7 @@ def qr(url, pt):
 
 
 FEATURES = [  # ميزات الاشتراك (كلام المستخدم)
+    ("ملزمة شاملة تغني عن الكتاب", '<path d="M6 3.5h9l3 3v14H6zM9 9h6M9 12.5h6M9 16h4"/>'),
     ("حلول للتطبيقات", '<path d="M5 12.5l4.2 4.2L19 7"/>'),
     ("شرح للدروس", '<path d="M4 5.5h7v13H4zM13 5.5h7v13h-7z"/>'),
     ("موقع محاكي", '<rect x="3.5" y="4.5" width="17" height="11.5" rx="1.8"/><path d="M9 20h6M12 16v4"/>'),
@@ -274,6 +275,7 @@ def closing_html():
 
 def ad_page_html():
     feats = [
+        ("ملزمة شاملة", "تغني عن الكتاب وأي مصدر آخر", '<path d="M6 3.5h9l3 3v14H6zM9 9h6M9 12.5h6M9 16h4"/>'),
         ("شروحات", "شروحات لدروس الكتاب", '<path d="M4 5.5h7v13H4zM13 5.5h7v13h-7z"/>'),
         ("موقع محاكي", "يشمل جميع أجزاء الاختبار وجميع الدروس", '<rect x="3.5" y="4.5" width="17" height="11.5" rx="1.8"/><path d="M9 20h6M12 16v4"/>'),
         ("تصحيح تلقائي", "لإجاباتك في الموقع", '<path d="M5 12.5l4.2 4.2L19 7"/>'),
@@ -298,11 +300,11 @@ html,body {{ margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exac
 .kicker {{ color:#cc6e53; font-weight:600; font-size:13pt; }}
 h1 {{ margin:0; font-weight:700; font-size:50pt; line-height:1.3; color:#89543d; }}
 .sub {{ display:inline-block; margin-top:6pt; background:#89543d; color:#fff7ee; font-weight:700; font-size:15pt; border-radius:30pt; padding:3pt 24pt 5pt; }}
-.ad {{ position:absolute; top:318pt; left:40pt; right:40pt; background:#fffdfa; border-radius:20pt; padding:16pt 20pt 18pt;
+.ad {{ position:absolute; top:296pt; left:40pt; right:40pt; background:#fffdfa; border-radius:20pt; padding:16pt 20pt 18pt;
   box-shadow:0 5pt 16pt rgba(96,59,40,.12); border-top:5pt solid #cc6e53; }}
 .ad h2 {{ margin:0; text-align:center; color:#89543d; font-size:21pt; line-height:1.45; }}
 .ad .lead {{ text-align:center; color:#cc6e53; font-size:13pt; font-weight:600; margin:2pt 0 12pt; }}
-.fc {{ display:flex; align-items:center; gap:11pt; background:#fbf3ec; border-radius:14pt; padding:8pt 12pt; margin-bottom:8pt; }}
+.fc {{ display:flex; align-items:center; gap:11pt; background:#fbf3ec; border-radius:14pt; padding:6pt 12pt; margin-bottom:6pt; }}
 .fc .fi {{ flex:none; width:36pt; height:36pt; border-radius:50%; background:#527c82; padding:7pt; box-sizing:border-box; display:flex; }}
 .fc b {{ display:block; color:#603b28; font-size:15pt; line-height:1.4; }}
 .fc span {{ color:#7a5a48; font-size:11.5pt; font-weight:500; }}
@@ -320,7 +322,7 @@ h1 {{ margin:0; font-weight:700; font-size:50pt; line-height:1.3; color:#89543d;
 <div class="top"><img src="{fm._logo()}"><div class="free">ملف مجاني</div></div>
 <div class="hero"><div class="kicker">عرب 100 · مهارات الكتابة</div><h1>حلول التطبيقات</h1>
 <div class="sub">الوحدتان الأولى والثانية</div></div>
-<div class="ad"><h2>عندنا دورة شاملة لمادة عرب 100</h2><div class="lead">دورة ملازم عدل تشمل:</div>{cards}
+<div class="ad"><h2>عندنا دورة شاملة لمادة عرب 100</h2><div class="lead">دورة ملازم عدل شاملة وتغني عن الكتاب وأي مصدر آخر، وتشمل:</div>{cards}
 <a class="buy" href="{STORE}"><div class="t"><b>للاشتراك في الدورة</b><span>من متجر ملازم عدل</span><span class="url">mtgradl.com</span></div>
 <div class="q">{qr(STORE, 78)}</div></a></div>
 <a class="tg" href="{CHANNEL}">قناتنا لمعرفة كل جديد: <span class="url">t.me/mlazmadl</span></a>
