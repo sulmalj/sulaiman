@@ -32,11 +32,22 @@ FONT_HEAD = "Readex Pro"
 
 
 def font_faces():
-    out = []
+    out, weights = [], []
     for f in sorted(FONTS.glob("*.ttf")):
         fam, wt = f.stem.rsplit("-", 1)
+        if fam == "Amiri":
+            continue
         fam = {"Readex": "Readex Pro"}.get(fam, fam)
+        if fam == "Readex Pro":
+            weights.append(wt)
         out.append(f"@font-face{{font-family:'{fam}';font-weight:{wt};src:url('{f.as_uri()}') format('truetype');}}")
+    # القوسان المزخرفان ﴿ ﴾: Readex يرسمهم أقواس عادية، فناخذ هالحرفين من Amiri
+    # (نفس العائلة والوزن + unicode-range، والوجه اللي ينكتب آخر يتقدّم لهالحرفين)
+    amiri = FONTS / "Amiri-Regular.ttf"
+    if amiri.exists():
+        for wt in weights:
+            out.append(f"@font-face{{font-family:'Readex Pro';font-weight:{wt};src:url('{amiri.as_uri()}') format('truetype');"
+                       "unicode-range:U+FD3E-FD3F;}")
     return "\n".join(out)
 
 
@@ -134,7 +145,8 @@ KEEP_JS = """() => {
   for (const t of document.querySelectorAll('table.t')) {
     const first = t.querySelector('tr');
     if (first && first.querySelector('th') && !first.querySelector('td') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
-    if (t.rows.length <= 9) t.classList.add('short');
+    // الجدول ما ينقسم بين صفحتين (طلب المستخدم) إلا إذا كان أطول من صفحة
+    if (t.rows.length <= 22) t.classList.add('short');
   }
   for (const e of document.querySelectorAll('.ln')) {
     if (e.firstElementChild && e.firstElementChild.classList.contains('hl')) continue;
