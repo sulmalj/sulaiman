@@ -40,12 +40,14 @@ const inPart = s => SITE.lessons.includes(s);
 /* ── البيانات ── */
 const QS = (D.questions || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'q' + q.s + '-' + hash(q.q + '|' + (q.o ? q.o[0] : q.c || '')) }, q));
 const CARDS = (D.cards || []).filter(c => inPart(c.s));
+const EXS = (D.examples || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'x' + q.s + '-' + hash(q.q) }, q));
+const exOf = s => EXS.filter(q => q.s === s);
 const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const qOf = s => QS.filter(q => q.s === s);
 SITE.lessons.forEach(s => qOf(s).forEach((q, i) => q.code = s + '-' + (i + 1)));
 
 /* ── الحفظ في المتصفح ── */
-const fresh = () => ({ ans: {}, wrong: {}, pos: {}, paras: 0, proof: {}, drafts: {} });
+const fresh = () => ({ ans: {}, wrong: {}, pos: {}, paras: 0, proof: {}, drafts: {}, exa: {}, fix: {} });
 let LS = fresh();
 try { const v = JSON.parse(localStorage.getItem(SITE.key) || 'null'); if (v && typeof v === 'object') LS = Object.assign(fresh(), v); } catch (e) {}
 const save = () => { try { localStorage.setItem(SITE.key, JSON.stringify(LS)); } catch (e) {} };
@@ -61,7 +63,7 @@ function record(q, ok) {
 const weakIds = () => Object.keys(LS.wrong).filter(id => BY_ID[id]);
 
 /* ── التنقل ── */
-const VIEWS = ['home', 'lessons', 'cards', 'quiz', 'write', 'exam', 'examrun', 'report', 'review', 'hamza', 'proof'];
+const VIEWS = ['home', 'lessons', 'cards', 'quiz', 'ex', 'write', 'exam', 'examrun', 'report', 'review', 'hamza', 'proof'];
 let cur = 'home';
 function show(v, navKey) {
   cur = v;
@@ -72,8 +74,8 @@ function show(v, navKey) {
 function go(key) {
   if (E && key !== 'examrun') { confirmBox('تطلع من الاختبار؟', 'إذا طلعت بيضيع هذا الاختبار.', 'إيه، اطلع', () => { stopExam(); go(key); }); return; }
   if (key === 'home') { renderHome(); show('home'); }
-  else if (key === 'rules' || key === 'practice') { renderLessons(key); show('lessons', key); }
-  else if (key === 'write') { show('write'); window.Paragraph && Paragraph.open(); }
+  else if (key === 'rules' || key === 'practice' || key === 'examples') { renderLessons(key); show('lessons', key); }
+  else if (key === 'write') { show('write'); window.Paragraph && Paragraph.open(); window.FixPara && FixPara.setMode('choose'); }
   else if (key === 'exam') { renderExamIntro(); show('exam'); }
   else if (key === 'review') { renderReviewIntro(); show('review'); }
   else if (key === 'hamza') { renderHamza(); show('hamza'); }
@@ -101,6 +103,7 @@ let MODE = 'practice';
 const MODES = {
   rules: { t: 'الدروس والقواعد', p: 'بطاقات تلخّص قواعد كل درس واستثناءاتها. راجعها قبل ما تتدرّب.' },
   practice: { t: 'تدرّب بالدرس', p: 'أسئلة صح وخطأ واختيار من متعدد لكل درس، وتطلع لك الإجابة الصحيحة والتوضيح أول ما تجاوب.' },
+  examples: { t: 'اذكر مثالًا', p: 'اكتب مثالك بنفسك (مو لازم مثال الكتاب)، ويتصحّح لك بمرونة: أي مثال تنطبق عليه القاعدة يُقبل، مع التوضيح وأمثلة الكتاب.' },
 };
 function renderLessons(mode) {
   MODE = mode;
@@ -114,6 +117,11 @@ function renderLessons(mode) {
     if (mode === 'rules') {
       const n = CARDS.filter(c => c.s === s).length;
       meta = n ? `${n} بطاقة` : 'قريباً'; disabled = !n;
+    } else if (mode === 'examples') {
+      const list = exOf(s);
+      const done = list.filter(q => q.id in (LS.exa || {})).length;
+      pct = list.length ? Math.round(done / list.length * 100) : null;
+      meta = list.length ? `${list.length} سؤال` : (L.write ? 'ما فيه أسئلة أمثلة لهذا الدرس' : 'قريباً'); disabled = !list.length;
     } else if (L.write && mode === 'practice') {
       meta = 'تمرين كتابي: اكتب فقرة وتُصحَّح لك'; act = 'data-nav="write"'; cls = 'special';
     } else {
@@ -135,6 +143,7 @@ $('lesList').addEventListener('click', e => {
   const b = e.target.closest('[data-les]'); if (!b) return;
   const s = +b.dataset.les;
   if (MODE === 'rules') openCards(s);
+  else if (MODE === 'examples') openEx(s);
   else startLesson(s, MODE);
 });
 
@@ -227,6 +236,124 @@ function moveQ(d) {
 $('qPrev').onclick = () => moveQ(-1);
 $('qNext').onclick = () => moveQ(1);
 $('qBack').onclick = () => go(P && P.kind !== 'review' ? P.kind : 'review');
+
+/* ══════════ اذكر مثالًا — تصحيح مرن ══════════ */
+const HARAKA = /[\u064B-\u0652\u0670\u0640]/g;
+const clean = s => String(s).replace(HARAKA, '').replace(/[«»"'()\[\]،؛:.!؟?,;\-–—]/g, ' ').replace(/\s+/g, ' ').trim();
+const unifyA = s => s.replace(/[أإآ]/g, 'ا');
+const PREF = ['وال', 'فال', 'بال', 'كال', 'لل', 'ال', 'و', 'ف', 'ب', 'ك', 'ل'];
+const HZ_CH = 'ءأإؤئآ';
+// قاعدة الكلمة: نشيل السابقة إذا اللي بعدها يبدأ بهمزة أو ألف وطوله 3 فأكثر (وأخذ ← أخذ، الأسرة ← أسرة، بس فأس تبقى فأس)
+function bases(w) {
+  const out = [w];
+  for (const p of PREF) if (w.startsWith(p) && w.length - p.length >= 3) out.push(w.slice(p.length));
+  return out;
+}
+function hzBase(w) {
+  for (const p of PREF) { const r = w.slice(p.length); if (w.startsWith(p) && r.length >= 3 && /^[ءأإؤئآا]/.test(r)) return r; }
+  return w;
+}
+const dropTanAlif = w => (w.length > 2 && w.endsWith('ا') && HZ_CH.includes(w[w.length - 2])) ? w.slice(0, -1) : w;
+const POS = { start: 'أول الكلمة', mid: 'وسط الكلمة', end: 'آخر الكلمة' };
+const SEATN = { 'أ': 'على ألف (أ)', 'إ': 'تحت الألف (إ)', 'ؤ': 'على واو (ؤ)', 'ئ': 'على نبرة (ئـ)', 'ء': 'مفردة على السطر (ء)', 'آ': 'مدًّا (آ)', 'ا': 'همزة وصل (ألف بلا همزة)' };
+function hzWhere(w, ch) {
+  const b = dropTanAlif(hzBase(w)); const out = [];
+  for (let i = 0; i < b.length; i++) if (b[i] === ch) out.push(i === 0 ? 'start' : i === b.length - 1 ? 'end' : 'mid');
+  return out;
+}
+function checkOne(chk, ans, words) {
+  if (chk.t === 'all') {
+    for (const c of chk.of) { const r = checkOne(c, ans, words); if (r.s !== 'ok') return r; }
+    return { s: 'ok' };
+  }
+  if (chk.t === 'hamza') {
+    const want = chk.pos, seat = chk.seat;
+    for (const w of words) {
+      if (seat === 'ا' && want === 'start') { const b = hzBase(w); if (b[0] === 'ا' && b.length >= 3) return { s: 'ok', w }; continue; }
+      if (hzWhere(w, seat).includes(want)) return { s: 'ok', w };
+    }
+    // نوضح للطالب وين المشكلة
+    for (const w of words) {
+      const at = seat === 'ا' ? [] : hzWhere(w, seat).filter(x => x !== want);
+      if (at.length) return { s: 'no', why: `في كلمتك (${w}) الهمزة ${SEATN[seat]} لكنها في ${POS[at[0]]}، والمطلوب في ${POS[want]}.` };
+    }
+    for (const w of words) {
+      const b = dropTanAlif(hzBase(w));
+      for (let i = 0; i < b.length; i++) if (HZ_CH.includes(b[i])) {
+        const p = i === 0 ? 'start' : i === b.length - 1 ? 'end' : 'mid';
+        return { s: 'no', why: `في كلمتك (${w}) همزة ${SEATN[b[i]] || ''} في ${POS[p]}، والمطلوب همزة ${SEATN[seat]} في ${POS[want]}.` };
+      }
+    }
+    return { s: 'no', why: seat === 'ا' ? 'ما لقينا كلمة تبدأ بهمزة وصل (ألف بلا همزة).' : `ما لقينا في إجابتك همزة ${SEATN[seat]} في ${POS[want]}.` };
+  }
+  if (chk.t === 'end') {
+    for (const w of words) for (const b of bases(w)) if (b.endsWith(chk.s) && b.length > chk.s.length) return { s: 'ok', w };
+    return { s: 'no', why: `ما لقينا كلمة تنتهي بـ(${chk.s}).` };
+  }
+  if (chk.t === 're') {
+    let re; try { re = new RegExp(chk.re); } catch (e) { return { s: 'unsure' }; }
+    for (const w of words) for (const b of bases(w)) if (re.test(b)) return { s: 'ok', w };
+    return { s: 'no', why: chk.msg || 'مثالك ما ينطبق عليه شرط السؤال.' };
+  }
+  if (chk.t === 'punct') {
+    const n = clean(ans).split(' ').filter(Boolean).length;
+    if (!ans.includes(chk.mark)) return { s: 'no', why: `جملتك ما فيها العلامة المطلوبة (${chk.mark}).` };
+    if (n < 3) return { s: 'no', why: 'اكتب جملة كاملة (ثلاث كلمات على الأقل).' };
+    return { s: 'ok', note: 'تأكد إن العلامة في مكانها حسب وظيفتها اللي في السؤال.' };
+  }
+  if (chk.t === 'list') {
+    const a = ' ' + unifyA(clean(ans)) + ' ';
+    const hit = (chk.ok || []).find(o => { const c = unifyA(clean(o)); return c && a.includes(' ' + c + ' ') || (c.length > 4 && a.includes(c)); });
+    return hit ? { s: 'ok', w: hit } : { s: 'unsure' };
+  }
+  return { s: 'unsure' };
+}
+function checkEx(q, ans) {
+  const words = clean(ans).split(' ').filter(w => w.length >= 2);
+  if (!words.length) return { s: 'empty' };
+  return checkOne(q.chk, ans, words);
+}
+let X = null;
+function openEx(s) {
+  const ids = exOf(s).map(q => q.id); if (!ids.length) return;
+  X = { s, ids, i: 0, res: {}, typed: {} };
+  show('ex', 'examples'); renderX();
+}
+function renderX() {
+  const q = EXS.find(e => e.id === X.ids[X.i]);
+  $('xTitle').innerHTML = `اذكر مثالًا<small>${esc(lessonName(q.s))} · سؤال ${X.i + 1} من ${X.ids.length}</small>`;
+  $('xBar').style.width = ((X.i + 1) / X.ids.length * 100) + '%';
+  const r = X.res[q.id];
+  let html = `<div class="qmeta"><span class="tag rose">اذكر مثالًا</span></div><p class="qtext">${esc(q.q)}</p>
+    <div class="ex-in"><input class="field" id="xIn" type="text" autocomplete="off" placeholder="اكتب مثالك هنا" value="${esc(X.typed[q.id] || '')}"><button class="btn btn-pri" type="button" id="xCheck">تحقّق</button></div>`;
+  if (r) {
+    if (r.s === 'empty') html += `<p class="note warn" style="margin-top:12px">${ICON('alert')}<span>اكتب مثالك أول.</span></p>`;
+    else {
+      const head = r.s === 'ok' ? `${ICON('check')}مثالك صحيح${r.w ? ` (${esc(r.w)})` : ''}` : r.s === 'no' ? `${ICON('x')}مثالك ما ينطبق عليه شرط السؤال` : `${ICON('alert')}ما قدرنا نتأكد من مثالك آليًا — قارنه بأمثلة الكتاب تحت`;
+      html += `<div class="fb ${r.s === 'ok' ? 'ok' : r.s === 'no' ? 'no' : 'na'}"><div class="h">${head}</div>
+        ${r.why ? `<span class="corr">${esc(r.why)}</span>` : ''}${r.note ? `<span class="corr">${esc(r.note)}</span>` : ''}
+        ${q.ex && q.ex.length ? `<span class="corr"><b>أمثلة من الكتاب:</b> ${q.ex.map(esc).join('، ')}</span>` : ''}
+        ${q.x ? `<span class="corr"><b>التوضيح:</b> ${esc(q.x)}</span>` : ''}</div>`;
+    }
+  }
+  $('xCard').innerHTML = html;
+  $('xPrev').disabled = X.i === 0;
+  $('xNext').innerHTML = X.i === X.ids.length - 1 ? 'إنهاء' : 'التالي' + ICON('next');
+}
+$('xCard').addEventListener('input', e => { if (e.target.id === 'xIn') X.typed[X.ids[X.i]] = e.target.value; });
+function doCheckX() {
+  const q = EXS.find(e => e.id === X.ids[X.i]);
+  const ans = $('xIn').value; X.typed[q.id] = ans;
+  const r = checkEx(q, ans); X.res[q.id] = r;
+  if (r.s !== 'empty') { LS.exa = LS.exa || {}; LS.exa[q.id] = r.s === 'ok' ? 1 : 0; save(); }
+  renderX();
+  const inp = $('xIn'); if (inp && r.s === 'empty') inp.focus();
+}
+$('xCard').addEventListener('click', e => { if (e.target.closest('#xCheck')) doCheckX(); });
+$('xCard').addEventListener('keydown', e => { if (e.target.id === 'xIn' && e.key === 'Enter') { e.preventDefault(); doCheckX(); } });
+$('xPrev').onclick = () => { if (X.i > 0) { X.i--; renderX(); } };
+$('xNext').onclick = () => { if (X.i < X.ids.length - 1) { X.i++; renderX(); window.scrollTo(0, 0); } else go('examples'); };
+window.checkEx = checkEx;
 
 /* ── مراجعة الأخطاء ── */
 function renderReviewIntro() {

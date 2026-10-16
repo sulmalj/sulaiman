@@ -24,6 +24,7 @@
     <symbol id="i-redo" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
     <symbol id="i-hamza" viewBox="0 0 24 24"><text x="12" y="19" text-anchor="middle" font-size="19" font-family="Noto Kufi Arabic, sans-serif" font-weight="700" fill="currentColor" stroke="none">ء</text></symbol>
     <symbol id="i-spell" viewBox="0 0 24 24"><path d="M3 6h12"/><path d="M3 11h9"/><path d="M3 16h6"/><path d="m13 17 3 3 6-7"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
@@ -47,6 +48,7 @@
     <button type="button" data-nav="home">الرئيسية</button>
     <button type="button" data-nav="rules">الدروس والقواعد</button>
     <button type="button" data-nav="practice">تدرّب بالدرس</button>
+    <button type="button" data-nav="examples">اذكر مثالًا</button>
     <button type="button" data-nav="write">كتابة الفقرة</button>
     <button type="button" data-nav="exam">__EXAM_NAME__</button>
     <button type="button" data-nav="review">مراجعة أخطائي</button>
@@ -86,7 +88,8 @@
     <div class="tools">
       <button class="tool" type="button" data-nav="rules"><span class="ti"><svg class="i"><use href="#i-book"/></svg></span><span class="tt"><b>الدروس والقواعد</b><small>بطاقات تلخّص كل قاعدة واستثناءاتها</small></span></button>
       <button class="tool" type="button" data-nav="practice"><span class="ti"><svg class="i"><use href="#i-list"/></svg></span><span class="tt"><b>تدرّب بالدرس</b><small>صح وخطأ واختيار من متعدد، مع التصحيح والتوضيح</small></span></button>
-      <button class="tool rose" type="button" data-nav="write"><span class="ti"><svg class="i"><use href="#i-para"/></svg></span><span class="tt"><b>كتابة الفقرة</b><small>اكتب فقرتك وتُصحَّح حسب شروط الكتاب</small></span></button>
+      <button class="tool" type="button" data-nav="examples"><span class="ti"><svg class="i"><use href="#i-bulb"/></svg></span><span class="tt"><b>اذكر مثالًا</b><small>اكتب مثالك بنفسك، ويتصحّح بمرونة مع التوضيح</small></span></button>
+      <button class="tool rose" type="button" data-nav="write"><span class="ti"><svg class="i"><use href="#i-para"/></svg></span><span class="tt"><b>كتابة الفقرة</b><small>اكتب فقرتك وتُصحَّح، أو صحّح فقرة فيها أخطاء</small></span></button>
       <button class="tool" type="button" data-nav="exam"><span class="ti"><svg class="i"><use href="#i-timer"/></svg></span><span class="tt"><b>__EXAM_NAME__</b><small id="toolExam"></small></span></button>
       <button class="tool" type="button" data-nav="review"><span class="ti"><svg class="i"><use href="#i-redo"/></svg></span><span class="tt"><b>مراجعة أخطائي</b><small>الخطأ ينشال إذا جاوبته صح مرتين متتاليتين</small></span></button>
       <button class="tool" type="button" data-nav="hamza"><span class="ti"><svg class="i"><use href="#i-hamza"/></svg></span><span class="tt"><b>محلّل الهمزة</b><small>حدّد الحركات ويطلع لك مكان الهمزة خطوة بخطوة</small></span></button>
@@ -132,7 +135,13 @@
 
   <!-- ═════ كتابة الفقرة ═════ -->
   <section id="v-write" class="view narrow" hidden>
-    <div class="vhead"><h2>كتابة الفقرة</h2><p>اختر الموضوع، وحدّد عدد الجمل، واكتب فقرتك. يطلع لك التصحيح حسب شروط الكتاب: بناء الفقرة، وشروطها، والأخطاء مع شرحها.</p></div>
+    <div class="vhead"><h2>كتابة الفقرة</h2><p id="wHeadP">وش تبي تسوي؟ اختر طريقة التدريب.</p></div>
+    <div class="wchoose" id="wChoose">
+      <button type="button" class="wpick" data-wm="write"><span class="ti"><svg class="i"><use href="#i-pen"/></svg></span><span class="tt"><b>اكتب فقرتك وأنا أصحّحها</b><small>تختار الموضوع وعدد الجمل وتكتب فقرتك، ويطلع لك التصحيح حسب شروط الكتاب مع شرح كل خطأ.</small></span></button>
+      <button type="button" class="wpick" data-wm="fix"><span class="ti"><svg class="i"><use href="#i-spell"/></svg></span><span class="tt"><b>صحّح فقرة جاهزة</b><small>نعطيك فقرة فيها أخطاء: تصحّح علامات الترقيم والأخطاء اللغوية وتجاوب عن بناء الفقرة، وبعدين يطلع لك التصحيح مع التوضيح.</small></span></button>
+    </div>
+    <div class="wswitch" id="wSwitch" role="tablist" hidden><button type="button" data-wm="write">اكتب فقرتك</button><button type="button" data-wm="fix">صحّح فقرة جاهزة</button></div>
+    <div id="wWrite" hidden>
     <div class="panel wcard">
       <div class="step"><span class="sn">1</span>اختر الموضوع</div>
       <div class="topics" id="wTopics"></div>
@@ -182,6 +191,20 @@
     </details>
     <div id="wModelBox"></div>
     <div class="res" id="wRes"></div>
+    </div>
+    <div id="wFix" hidden></div>
+    <p class="rights-mini">© ملازم عدل · موقع خاص بالمشتركين · لا نُحلّل نسخ محتواه أو نشره.</p>
+  </section>
+
+  <!-- ═════ اذكر مثالًا ═════ -->
+  <section id="v-ex" class="view narrow" hidden>
+    <div class="qtop"><div class="ttl" id="xTitle"></div><button class="btn btn-quiet btn-sm" data-nav="examples" type="button"><svg class="i"><use href="#i-prev"/></svg>الدروس</button></div>
+    <div class="qbar"><i id="xBar"></i></div>
+    <div class="panel qcard" id="xCard"></div>
+    <div class="qnav">
+      <button class="btn btn-quiet" id="xPrev" type="button"><svg class="i"><use href="#i-prev"/></svg>السابق</button>
+      <button class="btn btn-pri" id="xNext" type="button">التالي</button>
+    </div>
     <p class="rights-mini">© ملازم عدل · موقع خاص بالمشتركين · لا نُحلّل نسخ محتواه أو نشره.</p>
   </section>
 
@@ -244,5 +267,6 @@
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="paragraph.js"></script>
+<script src="fix.js"></script>
 </body>
 </html>
