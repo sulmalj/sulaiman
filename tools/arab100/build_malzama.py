@@ -181,7 +181,8 @@ TIGHTEN_JS = """() => {
     rows.sort((a, b) => a.top - b.top);
     return rows;
   };
-  const els = document.querySelectorAll('.ln, .note, .pill, .card, li, .bul > div, td, .box .qt, .box .fix');
+  // (.passage .bl .qq .op .why .item: عناصر ملف الحلول)
+  const els = document.querySelectorAll('.ln, .note, .pill, .card, li, .bul > div, td, .box .qt, .box .fix, .passage, .bl, .qq, .op, .why, .item > div');
   for (const el of els) {
     const rows = lineInfo(el);
     if (rows.length < 2) continue;
