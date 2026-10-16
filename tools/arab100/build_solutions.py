@@ -170,16 +170,16 @@ def md_html(lines, lessons):
 
 SOL_CSS = """
 .soltitle{text-align:center;font-weight:700;font-size:22pt;color:#89543d;margin:0 0 6pt;line-height:1.45}
-.soltitle small{display:block;font-size:12pt;color:#8c5671;font-weight:600}
+.soltitle small{display:block;font-size:12pt;color:#ad7c95;font-weight:600}
 .unit{display:flex;align-items:center;gap:10pt;background:#603b28;color:#fff7ee;border-radius:24pt;padding:6pt 18pt 7pt;
   font-weight:700;font-size:15pt;margin:30pt 0 6pt;break-after:avoid}
 body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .unit small{background:#fff7ee;color:#603b28;border-radius:14pt;padding:0 10pt;font-size:11pt}
-.lesson{position:relative;background:#f5e6d9;border-right:5pt solid #a94a2e;border-radius:6pt;padding:6pt 12pt 7pt;
+.lesson{position:relative;background:#f5e6d9;border-right:5pt solid #cc6e53;border-radius:6pt;padding:6pt 12pt 7pt;
   margin:26pt 0 8pt;break-after:avoid;line-height:1.5}
-.lesson small{display:block;color:#8c5671;font-size:10.5pt;font-weight:600}
+.lesson small{display:block;color:#ad7c95;font-size:10.5pt;font-weight:600}
 .lesson b{display:block;color:#89543d;font-size:15pt;font-weight:700}
-.lesson i{display:block;font-style:normal;color:#a94a2e;font-size:11.5pt}
+.lesson i{display:block;font-style:normal;color:#cc6e53;font-size:11.5pt}
 .lesson .pgref{position:absolute;left:10pt;top:8pt}
 .mk{position:absolute;left:30pt;bottom:2pt;font-size:2pt;color:#f5e6d9;font-family:'OpenSans';direction:ltr}
 .pgref{display:inline-block;background:#fff;color:#844f6a;border:1pt solid #ecd9c9;border-radius:9pt;padding:0 7pt;font-size:9.5pt;font-weight:600;margin-right:6pt;white-space:nowrap}
@@ -190,18 +190,18 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .mcq{margin:7pt 0 9pt;break-inside:avoid}
 .qq,.item{display:flex;gap:7pt;align-items:baseline;line-height:1.75}
 .qn{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:17pt;height:17pt;border-radius:9pt;
-  background:#a94a2e;color:#fff;font-size:9.5pt;font-weight:700;padding:0 4pt;transform:translateY(-1pt)}
+  background:#cc6e53;color:#fff;font-size:9.5pt;font-weight:700;padding:0 4pt;transform:translateY(-1pt)}
 .item{margin:6pt 0;break-inside:avoid}
 .ops{display:grid;gap:4pt 7pt;margin:4pt 24pt 0 0}
 .ops.c4{grid-template-columns:repeat(4,1fr)} .ops.c3{grid-template-columns:repeat(3,1fr)} .ops.c2{grid-template-columns:1fr 1fr}
 .op{background:#fbf3ec;border:1pt solid #eddccf;border-radius:7pt;padding:2pt 8pt 3pt;font-size:11pt;line-height:1.5;color:#6d4a37}
-.op b{color:#8c5671;margin-left:3pt}
-.op.ok{background:#e3efed;border-color:#7fa9a4;color:#2f5f63;box-shadow:inset -3pt 0 0 #466c72}
-.op.ok b{color:#466c72}
-.op.ok::after{content:'✔';font-family:'DejaVu Sans',sans-serif;color:#466c72;margin-right:6pt;font-size:10pt}
-.why{margin:3pt 24pt 0 0;font-size:10.5pt;color:#466c72}
+.op b{color:#ad7c95;margin-left:3pt}
+.op.ok{background:#e3efed;border-color:#7fa9a4;color:#2f5f63;box-shadow:inset -3pt 0 0 #527c82}
+.op.ok b{color:#527c82}
+.op.ok::after{content:'✔';font-family:'DejaVu Sans',sans-serif;color:#527c82;margin-right:6pt;font-size:10pt}
+.why{margin:3pt 24pt 0 0;font-size:10.5pt;color:#527c82}
 .passage{background:#fffaf5;border:1pt dashed #dcbfa6;border-radius:8pt;padding:6pt 11pt;margin:7pt 0;line-height:1.9;font-size:11.4pt;break-inside:avoid;text-align:justify}
-.passage .pk{color:#a94a2e;margin-left:5pt}
+.passage .pk{color:#cc6e53;margin-left:5pt}
 .bl{position:relative;padding-right:14pt;margin:5pt 0;line-height:1.9;break-inside:avoid}
 .bl::before{content:'';position:absolute;right:2pt;top:8.5pt;width:6pt;height:6pt;border-radius:50%;background:#e3a594}
 .note{font-size:10.6pt}
@@ -261,15 +261,15 @@ def closing_html():
 .closing{{margin:26pt 0 0;break-inside:avoid;background:#fffaf5;border:1.4pt solid #dcbfa6;border-radius:18pt;padding:14pt 18pt 14pt;
   box-shadow:0 4pt 0 #f1e2d4}}
 .closing .ct{{color:#89543d;font-weight:700;font-size:19pt;text-align:center;line-height:1.4}}
-.closing .cs{{color:#a94a2e;font-size:12pt;text-align:center;margin-bottom:9pt}}
+.closing .cs{{color:#cc6e53;font-size:12pt;text-align:center;margin-bottom:9pt}}
 .closing .cb{{display:flex;gap:16pt;align-items:center}}
 .closing .feats{{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:7pt 10pt}}
 .closing .fh{{grid-column:1/-1;color:#603b28;font-size:12pt}}
 .closing .f{{display:flex;align-items:center;gap:7pt;background:#f5e6d9;border-radius:12pt;padding:4pt 9pt;color:#603b28;font-size:12pt;font-weight:700}}
-.closing .fi{{flex:none;width:22pt;height:22pt;border-radius:50%;background:#a94a2e;padding:4pt;box-sizing:border-box;display:flex}}
+.closing .fi{{flex:none;width:22pt;height:22pt;border-radius:50%;background:#cc6e53;padding:4pt;box-sizing:border-box;display:flex}}
 .closing .store{{flex:none;display:flex;flex-direction:column;align-items:center;gap:3pt;text-decoration:none;
   background:#fff;border:1pt solid #ecd9c9;border-radius:12pt;padding:7pt 9pt 5pt}}
-.closing .store span{{font-family:'OpenSans';font-weight:800;font-size:11pt;color:#c42446;direction:ltr}}
+.closing .store span{{font-family:'OpenSans';font-weight:800;font-size:11pt;color:#db526f;direction:ltr}}
 </style>"""
 
 
@@ -295,17 +295,17 @@ html,body {{ margin:0; -webkit-print-color-adjust:exact; print-color-adjust:exac
 .frame {{ position:absolute; inset:15pt; border:1.2pt solid #dcbfa6; border-radius:22pt; }}
 .top {{ position:absolute; top:34pt; left:42pt; right:42pt; display:flex; justify-content:space-between; align-items:center; }}
 .top img {{ width:66pt; }}
-.free {{ background:#c42446; color:#fff; border-radius:14pt; padding:3pt 14pt 4pt; font-weight:700; font-size:12pt; }}
+.free {{ background:#db526f; color:#fff; border-radius:14pt; padding:3pt 14pt 4pt; font-weight:700; font-size:12pt; }}
 .hero {{ position:absolute; top:118pt; left:40pt; right:40pt; text-align:center; }}
-.kicker {{ color:#a94a2e; font-weight:600; font-size:13pt; }}
+.kicker {{ color:#cc6e53; font-weight:600; font-size:13pt; }}
 h1 {{ margin:0; font-weight:700; font-size:50pt; line-height:1.3; color:#89543d; }}
 .sub {{ display:inline-block; margin-top:6pt; background:#89543d; color:#fff7ee; font-weight:700; font-size:15pt; border-radius:30pt; padding:3pt 24pt 5pt; }}
 .ad {{ position:absolute; top:296pt; left:40pt; right:40pt; background:#fffdfa; border-radius:20pt; padding:16pt 20pt 18pt;
-  box-shadow:0 5pt 16pt rgba(96,59,40,.12); border-top:5pt solid #a94a2e; }}
+  box-shadow:0 5pt 16pt rgba(96,59,40,.12); border-top:5pt solid #cc6e53; }}
 .ad h2 {{ margin:0; text-align:center; color:#89543d; font-size:21pt; line-height:1.45; }}
-.ad .lead {{ text-align:center; color:#a94a2e; font-size:13pt; font-weight:600; margin:2pt 0 12pt; }}
+.ad .lead {{ text-align:center; color:#cc6e53; font-size:13pt; font-weight:600; margin:2pt 0 12pt; }}
 .fc {{ display:flex; align-items:center; gap:11pt; background:#fbf3ec; border-radius:14pt; padding:6pt 12pt; margin-bottom:6pt; }}
-.fc .fi {{ flex:none; width:36pt; height:36pt; border-radius:50%; background:#466c72; padding:7pt; box-sizing:border-box; display:flex; }}
+.fc .fi {{ flex:none; width:36pt; height:36pt; border-radius:50%; background:#527c82; padding:7pt; box-sizing:border-box; display:flex; }}
 .fc b {{ display:block; color:#603b28; font-size:15pt; line-height:1.4; }}
 .fc span {{ color:#7a5a48; font-size:11.5pt; font-weight:500; }}
 .buy {{ display:flex; align-items:center; gap:14pt; margin-top:12pt; background:#603b28; border-radius:16pt; padding:10pt 14pt; color:#fff7ee; text-decoration:none; }}
@@ -341,12 +341,12 @@ def intro_html(toc_rows):
     return f"""<!-- قبل أن تبدأ -->
 <style>
 .nc {{ font-size:11.4pt; margin:0 0 8pt; }}
-.nk {{ background:#a94a2e; color:#fff; border-radius:10pt; padding:0 8pt; font-size:10.5pt; }}
+.nk {{ background:#cc6e53; color:#fff; border-radius:10pt; padding:0 8pt; font-size:10.5pt; }}
 .toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:11.4pt; margin-top:8pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
 .toc th {{ background:#325c8e; color:#fff; font-weight:700; padding:4pt 6pt; }}
 .toc td {{ padding:4.5pt 10pt; text-align:center; border-top:1pt solid #eadbd0; background:#fbf6f1; line-height:1.5; }}
 .toc td.r {{ text-align:right; }}
-.toc tr.unitrow td {{ background:#f5e6d9; color:#a94a2e; font-weight:700; font-size:12pt; text-align:right; }}
+.toc tr.unitrow td {{ background:#f5e6d9; color:#cc6e53; font-weight:700; font-size:12pt; text-align:right; }}
 </style>
 <div class="sec">قبل أن تبدأ</div>
 {cards}
@@ -365,7 +365,7 @@ def footers_html(items, left):
 .ft{{position:absolute;right:9pt;bottom:7pt;width:200pt;text-align:right;font-family:'Readex Pro';font-weight:700;font-size:10pt;line-height:1.25;color:#603b28}}
 .pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:700;font-size:14pt;color:#111;direction:ltr}}
 .lf{{position:absolute;left:12pt;bottom:6pt;width:200pt;text-align:left;font-family:'Readex Pro';font-weight:700;font-size:9.6pt;line-height:1.3;color:#603b28}}
-.lf a{{color:#c42446;text-decoration:none;font-family:'OpenSans';font-weight:800;direction:ltr;unicode-bidi:embed}}"""
+.lf a{{color:#db526f;text-decoration:none;font-family:'OpenSans';font-weight:800;direction:ltr;unicode-bidi:embed}}"""
     return (f'<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>{bm.font_faces()}{css}</style></head>'
             f'<body style="margin:0">{pages}</body></html>')
 
