@@ -47,6 +47,8 @@ def words(text):
 def html_text(src):
     src = re.sub(r"<!--.*?-->", " ", src, flags=re.S)
     src = re.sub(r"<style.*?</style>", " ", src, flags=re.S)
+    # وسوم السطر (span/b/i) تنشال بدون مسافة عشان «و<span>الضمة</span>» تبقى كلمة وحدة
+    src = re.sub(r"</?(span|b|i|em|strong)\b[^>]*>", "", src)
     src = re.sub(r"<[^>]+>", " ", src)
     return html.unescape(src)
 

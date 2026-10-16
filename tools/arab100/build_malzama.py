@@ -91,6 +91,9 @@ table.t td {{ padding:4pt 6pt; border-top:1pt solid #e2cfc1; border-left:1pt sol
 table.t tr:nth-child(even) td {{ background:#f6ece4; }}
 table.t tr {{ break-inside:avoid; }}
 table.t td.r {{ text-align:right; }}
+/* جدول عناوينه في العمود الأول (مثل جدول حالات التاء والهاء في الكتاب) */
+table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
+table.t.side tr:first-child th {{ border-top:0; }}
 table.t td.no {{ width:20pt; }}
 .u {{ text-decoration:underline; text-decoration-thickness:1.2pt; text-underline-offset:3pt; }}
 .note {{ border-right:4pt solid var(--term); background:var(--hl); padding:6pt 10pt; margin:9pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
@@ -127,7 +130,7 @@ BANK_CSS = """
 KEEP_JS = """() => {
   for (const t of document.querySelectorAll('table.t')) {
     const first = t.querySelector('tr');
-    if (first && first.querySelector('th') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
+    if (first && first.querySelector('th') && !first.querySelector('td') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
     if (t.rows.length <= 9) t.classList.add('short');
   }
   for (const e of document.querySelectorAll('.ln')) {
