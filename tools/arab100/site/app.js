@@ -296,21 +296,33 @@ function checkOne(chk, ans, words) {
     return { s: 'no', why: chk.msg || 'مثالك ما ينطبق عليه شرط السؤال.' };
   }
   if (chk.t === 'punct') {
-    const n = clean(ans).split(' ').filter(Boolean).length;
-    if (!ans.includes(chk.mark)) return { s: 'no', why: `جملتك ما فيها العلامة المطلوبة (${chk.mark}).` };
-    if (n < 3) return { s: 'no', why: 'اكتب جملة كاملة (ثلاث كلمات على الأقل).' };
+    const a = normMarks(ans), mark = normMarks(chk.mark);
+    const n = clean(a.replace(/\//g, ' ')).split(' ').filter(Boolean).length;
+    if (!a.includes(mark)) return { s: 'no', why: `جملتك ما فيها العلامة المطلوبة (${chk.mark}).` };
+    if (n < 2) return { s: 'no', why: 'اكتب مثالًا كاملًا (كلمتين على الأقل).' };
     return { s: 'ok', note: 'تأكد إن العلامة في مكانها حسب وظيفتها اللي في السؤال.' };
   }
   if (chk.t === 'list') {
-    const a = ' ' + unifyA(clean(ans)) + ' ';
-    const hit = (chk.ok || []).find(o => { const c = unifyA(clean(o)); return c && a.includes(' ' + c + ' ') || (c.length > 4 && a.includes(c)); });
+    /* يُقبل: الإجابة كلها = عنصر، أو كلمة منها (بسوابقها أو بدونها) = عنصر من كلمة وحدة،
+       أو (إذا ما كان الفاحص exact) الإجابة فيها العنصر كاملًا */
+    const norm = x => unifyA(clean(x)).toLowerCase();
+    const a = norm(ans), aw = a.split(' ').filter(Boolean);
+    const hit = (chk.ok || []).find(o => {
+      const c = norm(o); if (!c) return false;
+      if (a === c) return true;
+      if (!c.includes(' ')) return aw.some(w => bases(w).includes(c));
+      return !chk.exact && (' ' + a + ' ').includes(' ' + c + ' ');
+    });
     return hit ? { s: 'ok', w: hit } : { s: 'unsure' };
   }
   return { s: 'unsure' };
 }
+/* صيغ الكيبورد المختلفة لنفس العلامة */
+const normMarks = s => String(s).replace(/,/g, '،').replace(/;/g, '؛').replace(/\?/g, '؟').replace(/[«»“”]/g, '"').replace(/[—–]/g, '-').replace(/…/g, '...');
 function checkEx(q, ans) {
+  if (!String(ans).replace(HARAKA, '').trim()) return { s: 'empty' };
   const words = clean(ans).split(' ').filter(w => w.length >= 2);
-  if (!words.length) return { s: 'empty' };
+  if (!words.length && q.chk.t !== 'list' && q.chk.t !== 'punct') return { s: 'empty' };
   return checkOne(q.chk, ans, words);
 }
 let X = null;
