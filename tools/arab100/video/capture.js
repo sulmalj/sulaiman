@@ -104,7 +104,7 @@ const SCALE = 1.5;                       // 1280×720 → 1920×1080
   step({ view: v, cur: ctr(r), click: true, dur: 0.9, scroll: 0 });
   await p.click('#nav [data-nav="examples"]'); await p.waitForTimeout(300);
   await p.click('#lesList [data-les="2"]'); await p.waitForTimeout(300);
-  await p.fill('#xIn', 'سأل');
+  await p.fill('#xIn', 'ذئب');
   v = await snap();
   r = await rect('#xCard', 0, 6);
   step({ view: v, box: r, cur: ctr(await rect('#xIn', 0, 0)), cap: '<y>«اذكر مثالًا»</y>: تكتب مثالك بنفسك، مو لازم مثال الكتاب', dur: 3.8, scroll: 0 });
@@ -149,6 +149,15 @@ const SCALE = 1.5;                       // 1280×720 → 1920×1080
   step({ view: v, box: r, cur: ctr(r), cap: '<y>«صحّح فقرة جاهزة»</y>: فقرات عن الفرد والقائد، أو <y>فقرة عشوائية</y>', dur: 4, scroll: 0 });
   r = await rects([['#wFix .fx-steps', 0], ['#wFix .fx-text', 0]], 10);
   step({ view: v, box: r, cur: ctr(await rect('#wFix .fx-steps', 0, 0)), cap: 'تصحّح <y>علامات الترقيم</y>، و<y>الأخطاء اللغوية</y>، و<y>بناء الفقرة</y>', dur: 4.2, scroll: 'box' });
+  // نحل الفقرة صح: الخانات، ثم الكلمات الغلط، ثم أسئلة البناء
+  const plan = await p.evaluate(() => { const f = FixPara.ALL[0]; let wi = 0; const slots = [], words = [];
+    f.toks.forEach(t => { if (t.sp !== undefined) return; if (t.slot !== undefined) { slots.push([t.slot, t.c]); return; } if (t.err !== undefined) words.push(wi); wi++; });
+    return { slots, words, nq: f.qs.length }; });
+  for (const [sl, c] of plan.slots) { await p.click(`#wFix [data-slot="${sl}"]`); await p.click(`#wFix [data-mark="${c}"]`); }
+  await p.click('#wFix .fx-steps [data-mode="w"]');
+  for (const w of plan.words) await p.click(`#wFix [data-w="${w}"]`);
+  await p.click('#wFix .fx-steps [data-mode="s"]');
+  for (let k = 0; k < plan.nq; k++) { const j = await p.evaluate(k => FixPara.ALL[0].qs[k]._o.findIndex(o => o.ok), k); await p.click(`#wFix [data-q="${k}"][data-o="${j}"]`); }
   await p.click('#fxCheck'); await p.waitForTimeout(200);
   if (await p.isVisible('#mYes')) await p.click('#mYes');
   await p.waitForTimeout(300);
