@@ -410,7 +410,7 @@ h1 {{ margin:0; font-weight:700; font-size:50pt; line-height:1.3; color:#89543d;
 
 
 # ---------- الغلاف وصفحة التنويه (ملف المشتركين) ----------
-def intro_html(toc_rows):
+def intro_html(toc_rows, compact=False):
     notes = [
         ("خاص بالمشتركين", "هذا الملف خاص بمشتركي ملازم عدل في مادة عرب 100، ولا أحلل نشره أو إرساله أو إعطاءه لأي شخص، ولا نقل الحلول منه أو تصويرها."),
         ("ترتيب الحلول", "الحلول مرتبة حسب وحدات الكتاب ومواضيعه، وأنشطة كل وحدة (من آخر الكتاب) بعد تطبيقاتها، ومع كل تطبيق رقم صفحته في الكتاب."),
@@ -418,8 +418,12 @@ def intro_html(toc_rows):
     ]
     cards = "".join(f'<p class="ln nc"><span class="nk">{k}</span> {v}</p>' for k, v in notes)
     rows = "".join(r for r in toc_rows)
+    # (طلب المستخدم، ملف الوحدتين) «قبل أن تبدأ» والفهرس يرتفعون ويدخل الفهرس كامل في صفحة وحدة
+    tight = (".intro-top{margin-top:0!important} .sec.toch{margin-top:18pt!important}"
+             " .toc td{padding-top:3.2pt!important;padding-bottom:3.2pt!important}") if compact else ""
     return f"""<!-- قبل أن تبدأ -->
 <style>
+{tight}
 .nc {{ font-size:11.4pt; margin:0 0 8pt; }}
 .nk {{ background:#cc6e53; color:#fff; border-radius:10pt; padding:0 8pt; font-size:10.5pt; }}
 /* الفهرس ينقسم على صفحتين: رأسه يتكرر، وكل صف مقفول بحدوده (عشان ما يبقى الجدول مفتوح تحت) */
@@ -432,9 +436,9 @@ def intro_html(toc_rows):
 .toc td.r {{ text-align:right; }}
 .toc tr.unitrow td {{ background:#f5e6d9; color:#cc6e53; font-weight:700; font-size:12pt; text-align:right; }}
 </style>
-<div class="sec">قبل أن تبدأ</div>
+<div class="sec intro-top">قبل أن تبدأ</div>
 {cards}
-<div class="sec">فهرس الحلول</div>
+<div class="sec toch">فهرس الحلول</div>
 <table class="toc"><thead><tr><th>الموضوع</th><th style="width:60pt">الصفحة</th></tr></thead><tbody>{rows}</tbody></table>"""
 
 
@@ -542,7 +546,7 @@ def main():
                                     title="حلول التطبيقات", badge="ملف خاص بالمشتركين",
                                     foot="خاص بالمشتركين · لا أحلل نشر الملف أو إرساله أو إعطاءه لأي شخص أو نقل حلوله"),
                       tmp / "cover.pdf", br)
-            bm.render(bm.doc(intro_html(rows)), tmp / "intro.pdf", br)
+            bm.render(bm.doc(intro_html(rows, compact=a.units12)), tmp / "intro.pdf", br)
             front += [("cover", tmp / "cover.pdf"), ("intro", tmp / "intro.pdf")]
         n_intro = pymupdf.open(tmp / "intro.pdf").page_count if not a.promo else 0
         bm.render(footers_html([("قبل أن تبدأ", None)] * n_intro + foot, left), tmp / "f.pdf", br)
