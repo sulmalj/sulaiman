@@ -250,7 +250,7 @@ function bases(w) {
   return out;
 }
 function hzBase(w) {
-  for (const p of PREF) { const r = w.slice(p.length); if (w.startsWith(p) && r.length >= 3 && /^[ءأإؤئآا]/.test(r)) return r; }
+  for (const p of PREF) { const r = w.slice(p.length); if (w.startsWith(p) && r.length >= 3 && /^[أإآا]/.test(r)) return r; }
   return w;
 }
 const dropTanAlif = w => (w.length > 2 && w.endsWith('ا') && HZ_CH.includes(w[w.length - 2])) ? w.slice(0, -1) : w;
@@ -315,6 +315,7 @@ function checkCore(chk, ans, words) {
     const a = normMarks(ans), mark = normMarks(chk.mark);
     const n = clean(a.replace(/\//g, ' ')).split(' ').filter(Boolean).length;
     if (!a.includes(mark)) return { s: 'no', why: `جملتك ما فيها العلامة المطلوبة (${chk.mark}).` };
+    if (chk.min && a.split(mark).length - 1 < chk.min) return { s: 'no', why: `العلامة (${chk.mark}) لازم تجي ${chk.min === 2 ? 'مرتين' : chk.min + ' مرات'} في جملتك.` };
     if (n < 2) return { s: 'no', why: 'اكتب مثالًا كاملًا (كلمتين على الأقل).' };
     return { s: 'ok', note: 'تأكد إن العلامة في مكانها حسب وظيفتها اللي في السؤال.' };
   }
@@ -324,10 +325,12 @@ function checkCore(chk, ans, words) {
     /* strict: في دروس الإملاء ما نوحّد صور الألف والهمزة (إكتب ≠ اكتب) */
     const norm = x => (chk.strict ? clean(x) : unifyA(clean(x))).toLowerCase();
     const a = norm(ans), aw = a.split(' ').filter(Boolean);
+    /* exact: كل كلمات الإجابة لازم تكون من عناصر القائمة (عشان «حاز على» ما تنقبل، و«أظافير وأظفر» تنقبل) */
+    const single = new Set((chk.ok || []).map(norm).filter(c => c && !c.includes(' ')));
     const hit = (chk.ok || []).find(o => {
       const c = norm(o); if (!c) return false;
       if (a === c) return true;
-      if (!c.includes(' ')) return aw.some(w => bases(w).includes(c));
+      if (!c.includes(' ')) return aw.some(w => bases(w).includes(c)) && (!chk.exact || aw.every(w => bases(w).some(b => single.has(b))));
       return !chk.exact && (' ' + a + ' ').includes(' ' + c + ' ');
     });
     return hit ? { s: 'ok', w: hit } : { s: 'unsure' };
@@ -438,7 +441,7 @@ $('eNext').onclick = () => { if (E.i < E.ids.length - 1) { E.i++; renderE(); win
 $('eEnd').onclick = askFinish;
 function askFinish() {
   const left = E.ids.length - Object.keys(E.picked).length;
-  confirmBox('تنهي الاختبار؟', left ? `باقي ${left} سؤال ما جاوبت عليه، وبينحسب خطأ.` : 'جاوبت على كل الأسئلة. يطلع لك التصحيح الحين.', 'إيه، أنهِ الاختبار', () => finishExam(false));
+  confirmBox('تنهي الاختبار؟', left ? `باقي ${left} سؤال ما جاوبت عنه، وبينحسب خطأ.` : 'جاوبت عن كل الأسئلة. يطلع لك التصحيح الحين.', 'إيه، أنهِ الاختبار', () => finishExam(false));
 }
 function finishExam(timeUp) {
   if (!E) return;
@@ -612,7 +615,7 @@ function hzSolve() {
     if (!s.ev || (s.ev === 'suk' && !s.esk) || !s.ex) return null;
     steps.push('الهمزة في آخر الكلمة تُكتب على حرف يناسب حركة الحرف الذي قبلها فقط.');
     if (s.ex === 'pro') {
-      return { g: 'ـئـ', title: 'صارت همزة متوسطة', steps: steps.concat(['إذا اتصلت بالكلمة زيادة كالضمير، فالهمزة ما تصير متطرفة، وتأخذ حكم الهمزة المتوسطة (قاعدة أقوى الحركات بين حركتها وحركة ما قبلها).', 'اختر «وسط الكلمة» فوق، وحدّد حركة الهمزة الجديدة وحركة ما قبلها.']), ex: ['يملَؤُها', 'تملَئِين', 'شاطِئُكم', 'سماؤُنا', 'سمائِنا'] };
+      return { g: '↺', title: 'صارت همزة متوسطة — طبّق عليها قاعدة الهمزة المتوسطة', steps: steps.concat(['إذا اتصلت بالكلمة زيادة كالضمير، فالهمزة ما تصير متطرفة، وتأخذ حكم الهمزة المتوسطة (قاعدة أقوى الحركات بين حركتها وحركة ما قبلها).', 'اختر «وسط الكلمة» فوق، وحدّد حركة الهمزة الجديدة وحركة ما قبلها.']), ex: ['يملَؤُها', 'تملَئِين', 'شاطِئُكم', 'سماؤُنا', 'سمائِنا'] };
     }
     const base = s.ev;
     g = SEAT[base][0]; title = SEAT[base][1] + ` (${g})`;
