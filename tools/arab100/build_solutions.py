@@ -171,14 +171,56 @@ def md_html(lines, lessons):
         elif re.match(r"^(النص|الفقرة)\s*:", s):
             k, _, v = s.partition(":")
             out.append(f'<div class="passage"><span class="pk">{inline(k)}:</span> {inline(v)}</div>')
-        elif s.startswith("- "):
+        elif s.startswith("- ") or s.startswith("• "):
             out.append(f'<div class="bl">{inline(s[2:])}</div>')
         elif s.startswith("(") and s.endswith(")"):
             out.append(f'<p class="note">{inline(s[1:-1])}</p>')
         else:
             out.append(f'<p class="ln">{inline(s)}</p>')
         i += 1
-    return "\n".join(out)
+    return "\n".join(keep_groups(out))
+
+
+def keep_groups(out):
+    """ما يبقى شي لحاله أعلى أو أسفل الصفحة (المراجعة: «٢ الجمل الداعمة:» آخر الصفحة وقائمتها بعدها،
+    بند وحيد أول الصفحة، سؤال انفصل عن حله):
+    - القائمة: أول بندين مع بعض وآخر بندين مع بعض (والقصيرة كلها مع بعض).
+    - السؤال المرقّم، أو أي سطر ينتهي بـ«:»، يمسك في اللي بعده (إلا الجدول — له رأس يتكرر)."""
+    isbl = lambda h: h.startswith('<div class="bl">')
+    pieces, k = [], 0
+    while k < len(out):
+        if isbl(out[k]):
+            j = k
+            while j < len(out) and isbl(out[j]):
+                j += 1
+            run = out[k:j]
+            if len(run) <= 3:
+                pieces.append(["".join(run)])
+            else:
+                pieces.append(["".join(run[:2])])
+                pieces += [[x] for x in run[2:-2]]
+                pieces.append(["".join(run[-2:])])
+            k = j
+        else:
+            pieces.append([out[k]])
+            k += 1
+    text = lambda h: re.sub(r"<[^>]+>", "", h).strip()
+    res, k = [], 0
+    while k < len(pieces):
+        h = pieces[k][0]
+        lead = (h.startswith('<div class="item">') or h.startswith('<div class="bl">') and text(h).endswith(":")
+                or h.startswith('<p class="ln">') and text(h).endswith(":"))
+        # السؤال (حتى لو مرقّم «٣-» في سطر عادي) ما ينفصل عن «الحل:» اللي بعده
+        if k + 1 < len(pieces) and text(pieces[k + 1][0]).startswith("الحل"):
+            lead = True
+        if lead and k + 1 < len(pieces) and not pieces[k + 1][0].startswith("<table"):
+            res.append(f'<div class="keep">{h}{pieces[k + 1][0]}</div>')
+            k += 2
+            continue
+        res.append(h if len(pieces[k]) == 1 and not h.startswith('<div class="bl">') or not isbl(h) else
+                   (f'<div class="keep">{h}</div>' if h.count('<div class="bl">') > 1 else h))
+        k += 1
+    return res
 
 
 SOL_CSS = """
@@ -355,16 +397,20 @@ def intro_html(toc_rows):
 <style>
 .nc {{ font-size:11.4pt; margin:0 0 8pt; }}
 .nk {{ background:#cc6e53; color:#fff; border-radius:10pt; padding:0 8pt; font-size:10.5pt; }}
-.toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:11.4pt; margin-top:8pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}
+/* الفهرس ينقسم على صفحتين: رأسه يتكرر، وكل صف مقفول بحدوده (عشان ما يبقى الجدول مفتوح تحت) */
+.toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:11.4pt; margin-top:8pt; }}
 .toc th {{ background:#325c8e; color:#fff; font-weight:700; padding:4pt 6pt; }}
-.toc td {{ padding:4.5pt 10pt; text-align:center; border-top:1pt solid #eadbd0; background:#fbf6f1; line-height:1.5; }}
+.toc thead th:first-child {{ border-top-right-radius:9pt; }} .toc thead th:last-child {{ border-top-left-radius:9pt; }}
+.toc tr {{ break-inside:avoid; }}
+.toc td {{ padding:4.5pt 10pt; text-align:center; border-bottom:1pt solid #e2cdbd; background:#fbf6f1; line-height:1.5; }}
+.toc td:first-child {{ border-right:1pt solid #e2cdbd; }} .toc td:last-child {{ border-left:1pt solid #e2cdbd; }}
 .toc td.r {{ text-align:right; }}
 .toc tr.unitrow td {{ background:#f5e6d9; color:#cc6e53; font-weight:700; font-size:12pt; text-align:right; }}
 </style>
 <div class="sec">قبل أن تبدأ</div>
 {cards}
 <div class="sec">فهرس الحلول</div>
-<table class="toc"><tr><th>الموضوع</th><th style="width:60pt">الصفحة</th></tr>{rows}</table>"""
+<table class="toc"><thead><tr><th>الموضوع</th><th style="width:60pt">الصفحة</th></tr></thead><tbody>{rows}</tbody></table>"""
 
 
 # ---------- التذييل ----------

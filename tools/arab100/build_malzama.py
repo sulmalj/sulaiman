@@ -436,7 +436,8 @@ def balance_break(pages):
         new_l = used_l + moved + 14
         if new_l > CAPH * 0.9 or moved < 60:
             continue
-        cands.append((abs((y - TOP) - new_l), i))
+        # نفضّل نقسم عند عنوان أو قسم، مو في نص قائمة (كانت «أنواعها» تنقسم بين صفحتين قصيرتين)
+        cands.append((abs((y - TOP) - new_l) + (150 if k in "IC" else 0), i))
     return [i for _, i in sorted(cands)]
 
 
@@ -513,6 +514,17 @@ def render_fit(src, out_pdf, browser):
         if len(p2) <= len(pages) and (p2[-1][1] - TOP) / CAPH > 0.45:
             bb, brks, pages = c, base_brks + [c], p2
             break
+    # العنوان اللي يبدأ صفحة (بدون كسر إجباري) كان ياخذ مسافته فوق كاملة فينزل ~45pt أكثر من غيره ←
+    # نعامله ككسر (نفس المسافة الصغيرة فوق في كل الصفحات)
+    for _ in range(4):
+        tops = [m[0][1] for m, _ in pages[1:] if m and m[0][2] == "H" and m[0][1] not in brks]
+        if not tops:
+            break
+        render(doc(src, css), trial, browser, markers=True, brks=brks + tops)
+        p2 = page_marks(trial)
+        if len(p2) > len(pages):
+            break
+        brks, pages = brks + tops, p2
     where = {i: pi for pi, (m, _) in enumerate(pages) for _, i, _ in m}
     sp, pad = spread_map(pages)
     # (طلب المستخدم بعد ما أرسل ملزمة النهج كمرجع للمسافات) مسافات ثابتة في كل الصفحات، بدون تمطيط الفراغ بين الفقرات —
