@@ -91,7 +91,11 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 /* (طلب المستخدم: «ما أحب زحمة بالصفحة») مسافة واضحة بين كل فقرة ونقطة — حتى لو زادت الصفحات */
 .ln {{ display:block; margin:17pt 0; break-inside:avoid; line-height:2.1; }}
 /* الخلفية تمشي مع النص سطر سطر وتوقف عند آخر كلمة (مثل الملزمة القديمة) */
-.ln > .hl {{ background:var(--hl); padding:3pt 9pt; border-radius:3pt; -webkit-box-decoration-break:clone; box-decoration-break:clone; }}
+/* (مراجعة: «للتفريق/سقطت» ص4) حشوة اليمين واليسار كانت تضيع أحياناً في السطر الثاني (Chrome) فيطلع السطر داخل أكثر من اللي فوقه —
+   الحين الحشوة على الفقرة نفسها، والخلفية تمتد يمين ويسار بظل بنفس اللون، فكل الأسطر تبدأ من نفس المكان */
+.ln {{ padding-left:9pt; padding-right:9pt; }}
+.ln > .hl {{ background:var(--hl); padding:3pt 0; border-radius:3pt; box-shadow:9pt 0 0 var(--hl), -9pt 0 0 var(--hl);
+            -webkit-box-decoration-break:clone; box-decoration-break:clone; }}
 .pill {{ background:var(--pill); border-radius:22pt; padding:7pt 16pt; margin:14pt 0 16pt; break-inside:avoid; text-align:justify; text-align-last:right; }}
 .dots {{ border:0; border-top:2.2pt dotted var(--brown); opacity:.55; margin:16pt 0; }}
 ol.n, ul.b {{ margin:3pt 0; padding-right:16pt; }}
