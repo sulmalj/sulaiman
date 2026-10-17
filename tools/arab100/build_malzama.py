@@ -89,7 +89,7 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .ex {{ color:var(--ex); }}
 .red {{ color:var(--mithl); }}
 /* (طلب المستخدم: «ما أحب زحمة بالصفحة») مسافة واضحة بين كل فقرة ونقطة — حتى لو زادت الصفحات */
-.ln {{ display:block; margin:17pt 0; break-inside:avoid; line-height:2.1; }}
+.ln {{ display:block; margin:17pt 0; break-inside:auto; orphans:2; widows:2; line-height:2.1; }}
 /* الخلفية تمشي مع النص سطر سطر وتوقف عند آخر كلمة (مثل الملزمة القديمة) */
 /* (مراجعة: «للتفريق/سقطت» ص4) حشوة اليمين واليسار كانت تضيع أحياناً في السطر الثاني (Chrome) فيطلع السطر داخل أكثر من اللي فوقه —
    الحين الحشوة على الفقرة نفسها، والخلفية تمتد يمين ويسار بظل بنفس اللون، فكل الأسطر تبدأ من نفس المكان */
@@ -220,7 +220,11 @@ KEEP_JS = """() => {
     // عشان ما تنزل القائمة كلها للصفحة الجاية وتخلي فراغ كبير (طلب المستخدم: «فراغات مبالغ فيها»)
     const longList = (e) => e && e.matches('ol.n, ul.b') && e.children.length > 3;
     const softKeep = (lst) => { grp.style.breakAfter = 'avoid'; lst.firstElementChild.style.breakAfter = 'avoid'; };
+    // فقرة طويلة (أكثر من 4 أسطر) ما تنمسك كاملة مع العنوان — العنوان يبقى معها وهي تقدر تنقسم بين الصفحتين
+    // (عشان ما ينزل القسم كله للصفحة الجاية ويخلي فراغ كبير — مراجعة: «نموذج لنص قبل التحرير وبعده»)
+    const longPara = (e) => e && e.matches('.ln, .note, .pill') && e.getBoundingClientRect().height > 150;
     if (longList(n)) softKeep(n);
+    else if (longPara(n)) grp.style.breakAfter = 'avoid';
     else if (n && !(n.matches('table') && !n.classList.contains('short'))) {
       let nx = n.nextElementSibling; grp.appendChild(n);
       // سطر قصير يشتغل كعنوان (مثل «١- من وسط الكلمة») ما يبقى لحاله تحت الصفحة
@@ -233,10 +237,16 @@ KEEP_JS = """() => {
       }
     }
   }
-  // آخر نقطة (.bul) في مجموعة نقاط ما تنزل لحالها أول الصفحة
-  for (const b of document.querySelectorAll('.bul')) {
-    const nx = b.nextElementSibling;
-    if (!(nx && nx.matches('.bul')) && b.previousElementSibling && b.previousElementSibling.matches('.bul')) b.style.breakBefore = 'avoid';
+  // سلسلة بنود (نقاط .bul أو فقرات مرقمة «١- …»): آخر بند ما ينزل لحاله أول الصفحة، وأول بند ما يبقى لحاله تحت الصفحة
+  const isItem = (e) => e && (e.matches('.bul') || (e.matches('.ln') && /^\\s*[٠-٩0-9]+\\s*[-–]/.test(e.textContent)));
+  const nextOf = (e) => e.nextElementSibling || (e.parentElement.matches('.keep') ? e.parentElement.nextElementSibling : null);
+  const prevOf = (e) => e.previousElementSibling && !e.previousElementSibling.matches('.sec, .sub, .sub2') ? e.previousElementSibling : null;
+  for (const b of document.querySelectorAll('.bul, .ln')) {
+    if (!isItem(b)) continue;
+    let nx = nextOf(b); if (nx && nx.matches('.keep')) nx = nx.firstElementChild;
+    const pv = prevOf(b);
+    if (!isItem(nx) && isItem(pv)) b.style.breakBefore = 'avoid';
+    if (isItem(nx) && !isItem(pv)) b.style.breakAfter = 'avoid';
   }
   for (const p of [...document.querySelectorAll('body > .ln')]) {
     const nx = p.nextElementSibling;
@@ -432,6 +442,8 @@ def balance_break(pages):
 
 def render(html_str, out_pdf, browser, spread=None, markers=False, brks=(), pad=None):
     html_str = fix_lam_alef(html_str)
+    # الشرطة «–» ما تبدأ سطر جديد (تبقى آخر السطر مع الكلمة اللي قبلها)
+    html_str = html_str.replace(' – ', '\u00a0– ')
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name
