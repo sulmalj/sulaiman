@@ -149,6 +149,10 @@ table.t tr:last-child > :first-child {{ border-bottom-right-radius:9pt; }}
 table.t tr:last-child > :last-child {{ border-bottom-left-radius:9pt; }}
 table.t tr:first-child > td {{ border-top:1pt solid #d9c2b1 !important; }}
 table.t td.no {{ width:20pt; }}
+/* خانة أمثلة فيها جمل: كل جملة كاملة في سطر لحالها (ما تنكسر نصين وتختلط باللي بعدها) */
+table.t td.sents {{ width:34%; }}
+table.t td.sents > span {{ display:block; white-space:nowrap; padding:2pt 0; }}
+table.t td.sents > span + span {{ border-top:1pt dashed #e2cfc1; }}
 /* الخط تحت الكلمة كاملة (بدون ما يتقطع عند الياء) وينزل تحت نقاطها عشان ما يغطيها — طلب المستخدم */
 .u {{ text-decoration:underline; text-decoration-thickness:0.8pt; text-underline-offset:0.56em; text-decoration-skip-ink:none; }}
 /* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
