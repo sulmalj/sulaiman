@@ -392,10 +392,10 @@ def base_page():
     return d
 
 
-def copy_links(src_page, dst_page):
+def copy_links(src_page, dst_page, shift=0):
     for l in src_page.get_links():
         if l.get("uri"):
-            dst_page.insert_link({"kind": pymupdf.LINK_URI, "uri": l["uri"], "from": l["from"]})
+            dst_page.insert_link({"kind": pymupdf.LINK_URI, "uri": l["uri"], "from": l["from"] + (0, shift, 0, shift)})
 
 
 def marker_pages(pdf):
@@ -494,6 +494,22 @@ def main():
                 copy_links(footp[fk], pg)
                 fk += 1
     for i in range(content.page_count):
+        bottom = bm.content_bottom(content[i])
+        if bottom is not None and (H - bm.BOT_M) - bottom > bm.TRIM_GAP * bm.CAPH:
+            # نفس الملزمة: الصفحة اللي فيها فراغ كبير تنقص على قد الكلام والتذييل تحتها مباشرة
+            cut = bottom + 30
+            hn = cut + bm.FOOT_STRIP
+            pg = out.new_page(width=W, height=hn)
+            top_r, bot_r = pymupdf.Rect(0, 0, W, cut), pymupdf.Rect(0, cut, W, hn)
+            top_clip, bot_clip = pymupdf.Rect(0, 0, W, cut), pymupdf.Rect(0, H - bm.FOOT_STRIP, W, H)
+            pg.show_pdf_page(top_r, base, 0, clip=top_clip)
+            pg.show_pdf_page(bot_r, base, 0, clip=bot_clip)
+            pg.show_pdf_page(top_r, content, i, clip=top_clip)
+            copy_links(content[i], pg)
+            pg.show_pdf_page(bot_r, footp, fk, clip=bot_clip)
+            copy_links(footp[fk], pg, shift=cut - (H - bm.FOOT_STRIP))
+            fk += 1
+            continue
         pg = out.new_page(width=W, height=H)
         pg.show_pdf_page(pg.rect, base, 0)
         pg.show_pdf_page(pg.rect, content, i)

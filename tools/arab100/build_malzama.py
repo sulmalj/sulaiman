@@ -110,7 +110,7 @@ ul.b.tz > li {{ margin:5pt 0; }} table.t.tz {{ margin:8pt 0 4pt; }}
 /* (استثناء بطلب المستخدم) يبدأ صفحة جديدة */
 .pb {{ break-before:page; margin-top:0 !important; }}
 /* (استثناء بطلب المستخدم: «توزعهم على الصفحة») مسافات أوسع شوي في صفحات فيها قسمين بس */
-ul.b.rm > li {{ margin:20pt 0; }} .bul.rm {{ margin:24pt 0; }} .sec.rm:not(.pb) {{ margin-top:62pt; }} .lead.rm {{ margin:16pt 0 6pt; }}
+ul.b.rm > li {{ margin:20pt 0; }} ol.n.rm > li {{ margin:19pt 0; }} .bul.rm {{ margin:24pt 0; }} .sec.rm:not(.pb) {{ margin-top:62pt; }} .lead.rm {{ margin:16pt 0 6pt; }}
 /* سطر تمهيدي قبل قائمة (مثل «ومن مبادئها الأساسية:») بلون غير لون بنود القائمة */
 .lead {{ color:var(--blue); font-weight:700; margin:10pt 0 4pt; }}
 /* القائمة تنقسم بين البنود إذا طالت (القصيرة — 3 بنود أو أقل — تبقى مع بعض) */
