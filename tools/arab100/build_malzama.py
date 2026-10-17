@@ -417,7 +417,8 @@ def balance_break(pages):
     (pm, pb), (lm, lb) = pages[-2], pages[-1]
     used_l = lb - TOP
     # (طلب المستخدم) الكلام يمشي طبيعي ويعبّي الصفحة؛ نوازن بس إذا آخر صفحة فيها سطر أو سطرين
-    if used_l / CAPH > 0.15 or (pb - TOP) / CAPH < 0.6 or not pm:
+    # (طلب المستخدم) ما تبقى صفحة فيها جزئية بسيطة من الدرس: إذا آخر صفحة أقل من 30% نوازنها مع اللي قبلها
+    if used_l / CAPH > 0.3 or (pb - TOP) / CAPH < 0.6 or not pm:
         return []
     cands = []
     for y, i, k in pm[1:]:
