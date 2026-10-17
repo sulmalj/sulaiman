@@ -542,6 +542,17 @@ def render_fit(src, out_pdf, browser):
         print(f"  {name}: " + "، ".join(msg) + f" ({pymupdf.open(out_pdf).page_count} صفحات)")
 
 
+# (طلب المستخدم) آخر صفحة في الدرس اللي يبقى تحتها فراغ كبير (أكثر من 35% من الصفحة) تنقص على قد الكلام
+TRIM_GAP = 0.35
+FOOT_STRIP = 62  # شريط التذييل (عنوان الدرس + رقم الصفحة + العبارة) اللي ينحط تحت الصفحة المقصوصة
+
+
+def content_bottom(page):
+    """أسفل كلام/رسمة في صفحة المحتوى (بدون الخلفية)."""
+    ys = [b[3] for b in page.get_text("blocks") if b[4].strip()] + [d["rect"].y1 for d in page.get_drawings() if d["rect"].height < H * 0.9]
+    return max(ys, default=None)
+
+
 def doc(body, extra_css=""):
     return f'<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8"><style>{CSS}{extra_css}</style></head><body>{body}</body></html>'
 
@@ -772,6 +783,19 @@ def main():
             continue
         path, i, title, num, is_bank = item
         src = cache.setdefault(path, pymupdf.open(path))
+        bottom = None if is_bank else content_bottom(src[i])
+        if bottom is not None and (H - BOT_M) - bottom > TRIM_GAP * CAPH:
+            # (طلب المستخدم) صفحة فيها فراغ كبير ما يمديك تستغله ← تنقص على قد الكلام (للقراءة على الجوال والآيباد)
+            cut = bottom + 30                       # شوي مسافة تحت آخر سطر
+            hn = cut + FOOT_STRIP
+            pg = out.new_page(width=W, height=hn)
+            top_r, bot_r = pymupdf.Rect(0, 0, W, cut), pymupdf.Rect(0, cut, W, hn)
+            top_clip, bot_clip = pymupdf.Rect(0, 0, W, cut), pymupdf.Rect(0, H - FOOT_STRIP, W, H)
+            pg.show_pdf_page(top_r, base, 0, clip=top_clip)
+            pg.show_pdf_page(bot_r, base, 0, clip=bot_clip)
+            pg.show_pdf_page(top_r, src, i, clip=top_clip)
+            pg.show_pdf_page(bot_r, foot, k, clip=bot_clip)
+            continue
         pg = out.new_page(width=W, height=H)
         pg.show_pdf_page(pg.rect, base_bank if is_bank else base, 0)
         pg.show_pdf_page(pg.rect, src, i)
