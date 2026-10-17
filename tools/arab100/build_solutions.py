@@ -217,6 +217,8 @@ def keep_groups(out):
             return True
         if is_tab(nxt):  # النص/السؤال وجدول حله القصير (الطويل ينقسم تحته ورأسه يتكرر)
             return nxt.count("<tr>") <= 7 and not is_q(last) or last.startswith('<div class="item">')
+        if nxt.startswith('<div class="passage">') and last.startswith(('<p class="ln">', '<div class="bl">')):  # المطلوب والنص اللي بعده
+            return True
         if text(last).endswith(":") and not is_q(last):  # سطر ينتهي بـ«:» وكلامه بعده
             return True
         # سؤال مرقّم وحله (سطر/قائمة/نص بعده — مو عنوان أو درس جديد)
@@ -235,8 +237,9 @@ def keep_groups(out):
         html_ = "".join(group)
         if len(group) > 1 or html_.count('<div class="bl">') + html_.count('<div class="item">') > 1:
             html_ = f'<div class="keep">{html_}</div>'
-        if is_tab(nxt) and attach(last, nxt):  # جدول طويل: يبدأ تحت سؤاله مباشرة
-            html_ = re.sub(r"^<(\w+) ", r'<\1 style="break-after:avoid" ', html_, count=1)
+        if is_tab(nxt) and nxt.count("<tr>") > 7 and not is_tab(last):  # جدول طويل: يبدأ تحت سؤاله مباشرة
+            # data-tp: سؤال/نص قبل جدول طويل — لو بقى آخر الصفحة والجدول بدأ في الجاية، ينزل معه (head_break)
+            html_ = re.sub(r"^<(\w+) ", r'<\1 data-tp="1" style="break-after:avoid" ', html_, count=1)
         res.append(html_)
         k += 1
     return res
@@ -250,22 +253,22 @@ SOL_CSS = """
 body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .unit small{background:#fff7ee;color:#603b28;border-radius:14pt;padding:0 10pt;font-size:11pt}
 .lesson{position:relative;background:#f5e6d9;border-right:5pt solid #325c8e;border-radius:6pt;padding:6pt 12pt 7pt;
-  margin:26pt 0 8pt;break-after:avoid;line-height:1.5}
+  margin:44pt 0 12pt;break-after:avoid;line-height:1.5}
 .lesson small{display:block;color:#ad7c95;font-size:10.5pt;font-weight:600}
 .lesson b{display:block;color:#89543d;font-size:15pt;font-weight:700}
 .lesson i{display:block;font-style:normal;color:#cc6e53;font-size:11.5pt}
 .lesson .pgref{position:absolute;left:10pt;top:8pt}
 .mk{position:absolute;left:30pt;bottom:2pt;font-size:2pt;color:#f5e6d9;font-family:'OpenSans';direction:ltr}
 .pgref{display:inline-block;background:#fff;color:#844f6a;border:1pt solid #ecd9c9;border-radius:9pt;padding:0 7pt;font-size:9.5pt;font-weight:600;margin-right:6pt;white-space:nowrap}
-.sec{margin:18pt 0 7pt;display:block;line-height:1.6;font-size:12pt}
+.sec{margin:34pt 0 10pt;display:block;line-height:1.6;font-size:12pt}  /* نفس مسافات الملزمة: مسافة واضحة قبل كل تطبيق */
 .sec::after{display:none}
 .sec .exn{color:#a9718f;font-weight:700;font-size:13pt;margin-left:6pt}
 .sec .ext{color:#603b28}
-.mcq{margin:7pt 0 9pt;break-inside:avoid}
+.mcq{margin:13pt 0 15pt;break-inside:avoid}
 .qq,.item{display:flex;gap:7pt;align-items:baseline;line-height:1.75}
 .qn{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:17pt;height:17pt;border-radius:9pt;
   background:#cc6e53;color:#fff;font-size:9.5pt;font-weight:700;padding:0 4pt;transform:translateY(-1pt)}
-.item{margin:6pt 0;break-inside:avoid}
+.item{margin:11pt 0;break-inside:avoid}
 .ops{display:grid;gap:4pt 7pt;margin:4pt 24pt 0 0}
 .ops.c4{grid-template-columns:repeat(4,1fr)} .ops.c3{grid-template-columns:repeat(3,1fr)} .ops.c2{grid-template-columns:1fr 1fr}
 .op{background:#fbf3ec;border:1pt solid #eddccf;border-radius:7pt;padding:2pt 8pt 3pt;font-size:11pt;line-height:1.5;color:#6d4a37}
@@ -274,9 +277,9 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .op.ok b{color:#527c82}
 .op.ok::after{content:'✔';font-family:'DejaVu Sans',sans-serif;color:#527c82;margin-right:6pt;font-size:10pt}
 .why{margin:3pt 24pt 0 0;font-size:10.5pt;color:#527c82}
-.passage{background:#fffaf5;border:1pt dashed #dcbfa6;border-radius:8pt;padding:6pt 11pt;margin:7pt 0;line-height:1.9;font-size:11.4pt;break-inside:avoid;text-align:justify}
+.passage{background:#fffaf5;border:1pt dashed #dcbfa6;border-radius:8pt;padding:6pt 11pt;margin:12pt 0;line-height:1.9;font-size:11.4pt;break-inside:avoid;text-align:justify}
 .passage .pk{color:#cc6e53;margin-left:5pt}
-.bl{position:relative;padding-right:14pt;margin:5pt 0;line-height:1.9;break-inside:avoid}
+.bl{position:relative;padding-right:14pt;margin:9pt 0;line-height:1.9;break-inside:avoid}
 .bl::before{content:'';position:absolute;right:2pt;top:8.5pt;width:6pt;height:6pt;border-radius:50%;background:#e3a594}
 .note{font-size:10.6pt}
 table.t td{font-size:11pt}
