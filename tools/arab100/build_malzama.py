@@ -116,6 +116,8 @@ ul.b > li::marker {{ color:var(--sec); }}
 /* الترقيم مثل الكتاب: «١- ٢- ٣-» (أرقام عربية وشرطة) بدل «1. 2.» */
 ol.n {{ list-style:arabic-indic; }}
 ol.n > li::marker {{ content:counter(list-item, arabic-indic) "- "; color:var(--term); font-weight:700; }}
+/* (مراجعة) آخر بند ما ينزل لحاله للصفحة الجاية */
+ol.n > li:last-child, ul.b > li:last-child {{ break-before:avoid; }}
 .cards {{ display:flex; gap:8pt; margin:6pt 0; break-inside:avoid; }}
 .cards > div {{ flex:1; text-align:center; }}
 .dot {{ display:block; width:15pt; height:15pt; border-radius:50%; margin:0 auto 4pt; }}
@@ -135,7 +137,22 @@ table.t td.r {{ text-align:right; }}
 /* جدول عناوينه في العمود الأول (مثل جدول حالات التاء والهاء في الكتاب) */
 table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
 table.t.side tr:first-child th {{ border-top:0; }}
+/* (مراجعة) الجدول اللي ينقسم بين صفحتين كان إطاره الخارجي يبقى مفتوح ويمتد فاضي لآخر الصفحة —
+   الحين الإطار مرسوم على الخلايا نفسها: كل صف يقفل نفسه من تحت، والزوايا الدائرية على أول وآخر صف */
+table.t {{ border:0 !important; border-radius:0 !important; overflow:visible !important; }}
+table.t td {{ border-top:0 !important; border-bottom:1pt solid #e2cfc1; }}
+table.t tr > :first-child {{ border-right:1pt solid #d9c2b1 !important; }}
+table.t tr > :last-child {{ border-left:1pt solid #d9c2b1 !important; }}
+table.t tr:first-child > :first-child {{ border-top-right-radius:9pt; }}
+table.t tr:first-child > :last-child {{ border-top-left-radius:9pt; }}
+table.t tr:last-child > :first-child {{ border-bottom-right-radius:9pt; }}
+table.t tr:last-child > :last-child {{ border-bottom-left-radius:9pt; }}
+table.t tr:first-child > td {{ border-top:1pt solid #d9c2b1 !important; }}
 table.t td.no {{ width:20pt; }}
+/* خانة أمثلة فيها جمل: كل جملة كاملة في سطر لحالها (ما تنكسر نصين وتختلط باللي بعدها) */
+table.t td.sents {{ width:34%; }}
+table.t td.sents > span {{ display:block; white-space:nowrap; padding:2pt 0; }}
+table.t td.sents > span + span {{ border-top:1pt dashed #e2cfc1; }}
 /* الخط تحت الكلمة كاملة (بدون ما يتقطع عند الياء) وينزل تحت نقاطها عشان ما يغطيها — طلب المستخدم */
 .u {{ text-decoration:underline; text-decoration-thickness:0.8pt; text-underline-offset:0.56em; text-decoration-skip-ink:none; }}
 /* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
@@ -201,13 +218,21 @@ KEEP_JS = """() => {
     const softKeep = (lst) => { grp.style.breakAfter = 'avoid'; lst.firstElementChild.style.breakAfter = 'avoid'; };
     if (longList(n)) softKeep(n);
     else if (n && !(n.matches('table') && !n.classList.contains('short'))) {
-      const nx = n.nextElementSibling; grp.appendChild(n);
+      let nx = n.nextElementSibling; grp.appendChild(n);
+      // سطر قصير يشتغل كعنوان (مثل «١- من وسط الكلمة») ما يبقى لحاله تحت الصفحة
+      if (n.matches('.ln') && n.textContent.trim().length < 40 && nx && !nx.matches('.sec, .sub, .sub2')
+          && !(nx.matches('table') && !nx.classList.contains('short')) && !longList(nx)) { const nn = nx.nextElementSibling; grp.appendChild(nx); n = nx; nx = nn; }
       // سطر ينتهي بنقطتين (مثل «مثال:» أو «تحذف الواو في الحالات الآتية:») ما ينفصل عن اللي بعده
       if (n.matches('.ln') && /:\\s*$/.test(n.textContent) && nx && !nx.matches('.sec, .sub, .sub2')
           && !(nx.matches('table') && !nx.classList.contains('short'))) {
         if (longList(nx)) softKeep(nx); else grp.appendChild(nx);
       }
     }
+  }
+  // آخر نقطة (.bul) في مجموعة نقاط ما تنزل لحالها أول الصفحة
+  for (const b of document.querySelectorAll('.bul')) {
+    const nx = b.nextElementSibling;
+    if (!(nx && nx.matches('.bul')) && b.previousElementSibling && b.previousElementSibling.matches('.bul')) b.style.breakBefore = 'avoid';
   }
   for (const p of [...document.querySelectorAll('body > .ln')]) {
     const nx = p.nextElementSibling;
@@ -246,7 +271,8 @@ TIGHTEN_JS = """() => {
     const steps = [];
     // مسافة الكلمات تنقص شوي بس (أكثر من كذا تلتصق الكلمات العربية)، والباقي من حجم الخط
     for (const ws of [-0.3, -0.6]) steps.push([ws, 1]);
-    for (const k of [0.98, 0.96, 0.94, 0.92, 0.9]) for (const ws of [0, -0.6]) steps.push([ws, k]);
+    // (مراجعة) التصغير كان ينلاحظ (لين 90%) — الحين بحد أقصى 3% بس
+    for (const k of [0.985, 0.97]) for (const ws of [0, -0.6]) steps.push([ws, k]);
     let ok = false;
     for (const [ws, k] of steps) {
       el.style.wordSpacing = ws + 'pt';
@@ -576,7 +602,7 @@ def footers_html(items):
         for t, n in items)
     css = f"""@page{{size:{W}pt {H}pt;margin:0}}
 .fp{{width:{W}pt;height:{H}pt;position:relative;break-after:page}} .fp:last-child{{break-after:auto}}
-.ft{{position:absolute;right:9pt;bottom:7pt;width:215pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:700;font-size:10.5pt;line-height:1.25;color:#603b28}}
+.ft{{position:absolute;right:9pt;bottom:7pt;width:262pt;text-align:right;font-family:'{FONT_HEAD}';font-weight:700;font-size:10.5pt;line-height:1.25;color:#603b28}}
 .pn{{position:absolute;left:0;right:0;bottom:7pt;text-align:center;font-family:'OpenSans';font-weight:700;font-size:14pt;color:#111;direction:ltr}}
 .lf{{position:absolute;left:12pt;bottom:7pt;width:200pt;text-align:left;font-family:'{FONT_HEAD}';font-weight:700;font-size:10pt;line-height:1.25;color:#603b28}}"""
     return f'<!doctype html><html dir="rtl"><head><meta charset="utf-8"><style>{font_faces()}{css}</style></head><body style="margin:0">{pages}</body></html>'
