@@ -136,7 +136,7 @@ def intro_body(toc):
 /* صفحة «قبل أن تبدأ» تعبّي الصفحة: كل تنويه في بطاقة بخط أكبر */
 .nc {{ display:block; font-size:14.2pt; line-height:2.05; margin:0 0 20pt; background:#fbf3ec; border-right:5pt solid #325c8e;
       border-radius:10pt; padding:11pt 16pt 12pt; text-align:justify; text-align-last:right; break-inside:avoid; }}
-.nc > .hl {{ background:none !important; padding:0 !important; }}
+.nc > .hl {{ background:none !important; padding:0 !important; box-shadow:none !important; }}
 .nk {{ display:table; background:#cc6e53; color:#fff; border-radius:12pt; padding:1pt 12pt 2pt; font-size:11.5pt; margin-bottom:3pt; }}
 .nc a {{ color:#db526f; text-decoration:none; }}
 .toc {{ width:100%; border-collapse:separate; border-spacing:0; font-size:12pt; margin-top:26pt; border:1pt solid #e2cdbd; border-radius:10pt; overflow:hidden; }}

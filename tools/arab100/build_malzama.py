@@ -89,7 +89,7 @@ body > .sec:first-child, body > .keep:first-child > .sec {{ margin-top:2pt; }}
 .ex {{ color:var(--ex); }}
 .red {{ color:var(--mithl); }}
 /* (طلب المستخدم: «ما أحب زحمة بالصفحة») مسافة واضحة بين كل فقرة ونقطة — حتى لو زادت الصفحات */
-.ln {{ display:block; margin:17pt 0; break-inside:avoid; line-height:2.1; }}
+.ln {{ display:block; margin:17pt 0; break-inside:auto; orphans:2; widows:2; line-height:2.1; }}
 /* الخلفية تمشي مع النص سطر سطر وتوقف عند آخر كلمة (مثل الملزمة القديمة) */
 /* (مراجعة: «للتفريق/سقطت» ص4) حشوة اليمين واليسار كانت تضيع أحياناً في السطر الثاني (Chrome) فيطلع السطر داخل أكثر من اللي فوقه —
    الحين الحشوة على الفقرة نفسها، والخلفية تمتد يمين ويسار بظل بنفس اللون، فكل الأسطر تبدأ من نفس المكان */
@@ -220,7 +220,11 @@ KEEP_JS = """() => {
     // عشان ما تنزل القائمة كلها للصفحة الجاية وتخلي فراغ كبير (طلب المستخدم: «فراغات مبالغ فيها»)
     const longList = (e) => e && e.matches('ol.n, ul.b') && e.children.length > 3;
     const softKeep = (lst) => { grp.style.breakAfter = 'avoid'; lst.firstElementChild.style.breakAfter = 'avoid'; };
+    // فقرة طويلة (أكثر من 4 أسطر) ما تنمسك كاملة مع العنوان — العنوان يبقى معها وهي تقدر تنقسم بين الصفحتين
+    // (عشان ما ينزل القسم كله للصفحة الجاية ويخلي فراغ كبير — مراجعة: «نموذج لنص قبل التحرير وبعده»)
+    const longPara = (e) => e && e.matches('.ln, .note, .pill') && e.getBoundingClientRect().height > 150;
     if (longList(n)) softKeep(n);
+    else if (longPara(n)) grp.style.breakAfter = 'avoid';
     else if (n && !(n.matches('table') && !n.classList.contains('short'))) {
       let nx = n.nextElementSibling; grp.appendChild(n);
       // سطر قصير يشتغل كعنوان (مثل «١- من وسط الكلمة») ما يبقى لحاله تحت الصفحة
@@ -233,10 +237,16 @@ KEEP_JS = """() => {
       }
     }
   }
-  // آخر نقطة (.bul) في مجموعة نقاط ما تنزل لحالها أول الصفحة
-  for (const b of document.querySelectorAll('.bul')) {
-    const nx = b.nextElementSibling;
-    if (!(nx && nx.matches('.bul')) && b.previousElementSibling && b.previousElementSibling.matches('.bul')) b.style.breakBefore = 'avoid';
+  // سلسلة بنود (نقاط .bul أو فقرات مرقمة «١- …»): آخر بند ما ينزل لحاله أول الصفحة، وأول بند ما يبقى لحاله تحت الصفحة
+  const isItem = (e) => e && (e.matches('.bul') || (e.matches('.ln') && /^\\s*[٠-٩0-9]+\\s*[-–]/.test(e.textContent)));
+  const nextOf = (e) => e.nextElementSibling || (e.parentElement.matches('.keep') ? e.parentElement.nextElementSibling : null);
+  const prevOf = (e) => e.previousElementSibling && !e.previousElementSibling.matches('.sec, .sub, .sub2') ? e.previousElementSibling : null;
+  for (const b of document.querySelectorAll('.bul, .ln')) {
+    if (!isItem(b)) continue;
+    let nx = nextOf(b); if (nx && nx.matches('.keep')) nx = nx.firstElementChild;
+    const pv = prevOf(b);
+    if (!isItem(nx) && isItem(pv)) b.style.breakBefore = 'avoid';
+    if (isItem(nx) && !isItem(pv)) b.style.breakAfter = 'avoid';
   }
   for (const p of [...document.querySelectorAll('body > .ln')]) {
     const nx = p.nextElementSibling;
@@ -417,7 +427,8 @@ def balance_break(pages):
     (pm, pb), (lm, lb) = pages[-2], pages[-1]
     used_l = lb - TOP
     # (طلب المستخدم) الكلام يمشي طبيعي ويعبّي الصفحة؛ نوازن بس إذا آخر صفحة فيها سطر أو سطرين
-    if used_l / CAPH > 0.15 or (pb - TOP) / CAPH < 0.6 or not pm:
+    # (طلب المستخدم) ما تبقى صفحة فيها جزئية بسيطة من الدرس: إذا آخر صفحة أقل من 30% نوازنها مع اللي قبلها
+    if used_l / CAPH > 0.3 or (pb - TOP) / CAPH < 0.6 or not pm:
         return []
     cands = []
     for y, i, k in pm[1:]:
@@ -431,6 +442,8 @@ def balance_break(pages):
 
 def render(html_str, out_pdf, browser, spread=None, markers=False, brks=(), pad=None):
     html_str = fix_lam_alef(html_str)
+    # الشرطة «–» ما تبدأ سطر جديد (تبقى آخر السطر مع الكلمة اللي قبلها)
+    html_str = html_str.replace(' – ', '\u00a0– ')
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name
@@ -527,6 +540,17 @@ def render_fit(src, out_pdf, browser):
     msg = [m for m in msg if m]
     if msg:
         print(f"  {name}: " + "، ".join(msg) + f" ({pymupdf.open(out_pdf).page_count} صفحات)")
+
+
+# (طلب المستخدم) آخر صفحة في الدرس اللي يبقى تحتها فراغ كبير (أكثر من 35% من الصفحة) تنقص على قد الكلام
+TRIM_GAP = 0.35
+FOOT_STRIP = 62  # شريط التذييل (عنوان الدرس + رقم الصفحة + العبارة) اللي ينحط تحت الصفحة المقصوصة
+
+
+def content_bottom(page):
+    """أسفل كلام/رسمة في صفحة المحتوى (بدون الخلفية)."""
+    ys = [b[3] for b in page.get_text("blocks") if b[4].strip()] + [d["rect"].y1 for d in page.get_drawings() if d["rect"].height < H * 0.9]
+    return max(ys, default=None)
 
 
 def doc(body, extra_css=""):
@@ -759,6 +783,19 @@ def main():
             continue
         path, i, title, num, is_bank = item
         src = cache.setdefault(path, pymupdf.open(path))
+        bottom = None if is_bank else content_bottom(src[i])
+        if bottom is not None and (H - BOT_M) - bottom > TRIM_GAP * CAPH:
+            # (طلب المستخدم) صفحة فيها فراغ كبير ما يمديك تستغله ← تنقص على قد الكلام (للقراءة على الجوال والآيباد)
+            cut = bottom + 30                       # شوي مسافة تحت آخر سطر
+            hn = cut + FOOT_STRIP
+            pg = out.new_page(width=W, height=hn)
+            top_r, bot_r = pymupdf.Rect(0, 0, W, cut), pymupdf.Rect(0, cut, W, hn)
+            top_clip, bot_clip = pymupdf.Rect(0, 0, W, cut), pymupdf.Rect(0, H - FOOT_STRIP, W, H)
+            pg.show_pdf_page(top_r, base, 0, clip=top_clip)
+            pg.show_pdf_page(bot_r, base, 0, clip=bot_clip)
+            pg.show_pdf_page(top_r, src, i, clip=top_clip)
+            pg.show_pdf_page(bot_r, foot, k, clip=bot_clip)
+            continue
         pg = out.new_page(width=W, height=H)
         pg.show_pdf_page(pg.rect, base_bank if is_bank else base, 0)
         pg.show_pdf_page(pg.rect, src, i)

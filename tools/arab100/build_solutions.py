@@ -331,7 +331,7 @@ h1 {{ margin:0; font-weight:700; font-size:50pt; line-height:1.3; color:#89543d;
   background:#e8f0ef; border:1pt solid #c7dbd8; border-radius:14pt; padding:8pt 12pt; text-decoration:none; color:#2f5f63; font-weight:700; font-size:13pt; }}
 .tg .url {{ font-family:'OpenSans'; font-weight:800; direction:ltr; background:#fff; color:#2f5f63; border-radius:8pt; padding:2pt 10pt; font-size:13pt; }}
 </style></head><body><div class="pg">
-<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="dots"></div><div class="frame"></div>
+<div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="frame"></div>
 <div class="top"><img src="{fm._logo()}"><div class="free">ملف مجاني</div></div>
 <div class="hero"><div class="kicker">عرب 100 · مهارات الكتابة</div><h1>حلول التطبيقات</h1>
 <div class="sub">الوحدتان الأولى والثانية</div></div>
