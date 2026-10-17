@@ -201,7 +201,7 @@ KEEP_JS = """() => {
     if (first && first.querySelector('th') && !first.querySelector('td') && !t.tHead) { const h = t.createTHead(); h.appendChild(first); }
     // الجدول ما ينقسم بين صفحتين (طلب المستخدم) إلا إذا كان أطول من صفحة
     // (والجدول الطويل — أكثر من نص صفحة — يكمل تحت عنوانه ويتكرر رأسه، عشان ما تبقى نص صفحة فاضية)
-    if (t.getBoundingClientRect().height < 470) t.classList.add('short');
+    if (t.getBoundingClientRect().height < 470 && !t.classList.contains('brk')) t.classList.add('short');  // brk: جدول حلول طويل ينقسم تحت سؤاله
   }
   for (const e of document.querySelectorAll('.ln')) {
     if (e.firstElementChild && e.firstElementChild.classList.contains('hl')) continue;
@@ -559,6 +559,32 @@ TRIM_GAP = 0.35
 FOOT_STRIP = 62  # شريط التذييل (عنوان الدرس + رقم الصفحة + العبارة) اللي ينحط تحت الصفحة المقصوصة
 
 
+def stray_marks(page):
+    """حركات شاردة على حد الكلام تحت: Chrome يرسم حركة أول سطر في الصفحة الجاية فوق حدها، فتطلع نقطة لحالها
+    آخر هذي الصفحة. نرجّع مستطيلاتها (اللي فوقها فاضي) عشان نغطيها بالخلفية."""
+    import numpy as np
+    z = 4
+    y0, y1 = BOT - 14, BOT + 6
+    pm = page.get_pixmap(clip=pymupdf.Rect(0, y0, W, y1), dpi=72 * z, alpha=True)
+    a = np.frombuffer(pm.samples, dtype=np.uint8).reshape(pm.height, pm.width, pm.n)[:, :, 3]
+    ink = a > 40
+    band = ink[int((BOT - 4 - y0) * z):, :]   # آخر 4pt + تحت الحد
+    above = ink[: int((BOT - 4 - y0) * z), :]
+    out, cols = [], np.nonzero(band.any(0))[0]
+    if not len(cols):
+        return out
+    groups, start = [], cols[0]
+    for c0, c1 in zip(cols, cols[1:]):
+        if c1 - c0 > 3 * z:
+            groups.append((start, c0)); start = c1
+    groups.append((start, cols[-1]))
+    for g0, g1 in groups:
+        if g1 - g0 > 14 * z or above[:, max(0, g0 - 2 * z): g1 + 2 * z].any():
+            continue  # جزء من سطر حقيقي
+        out.append(pymupdf.Rect(g0 / z - 2, BOT - 6, g1 / z + 2, y1))
+    return out
+
+
 def content_bottom(page):
     """أسفل كلام/رسمة في صفحة المحتوى (بدون الخلفية)."""
     ys = [b[3] for b in page.get_text("blocks") if b[4].strip()] + [d["rect"].y1 for d in page.get_drawings() if d["rect"].height < H * 0.9]
@@ -811,6 +837,8 @@ def main():
         pg = out.new_page(width=W, height=H)
         pg.show_pdf_page(pg.rect, base_bank if is_bank else base, 0)
         pg.show_pdf_page(pg.rect, src, i)
+        for r in ([] if is_bank else stray_marks(src[i])):
+            pg.show_pdf_page(r, base, 0, clip=r)
         pg.show_pdf_page(pg.rect, foot, k)
     out.set_metadata({"title": "عرب 100 — " + ("حلول تطبيقات الكتاب" if a.solutions else "مهارات الكتابة"), "author": "ملازم عدل"})
     out.save(a.out, garbage=4, deflate=True)
