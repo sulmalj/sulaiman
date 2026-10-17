@@ -27,6 +27,11 @@ const NUMS = ['', 'الأول', 'الثاني', 'الثالث', 'الرابع', 
 const LETTERS = ['أ', 'ب', 'ج', 'د', 'هـ'];
 
 const $ = id => document.getElementById(id);
+/* تمييز العدد بالعربي: 1 كلمة واحدة، 2 كلمتان، 3–10 كلمات، 11–99 كلمةً (منصوب)، 100 وأكثر كلمة */
+const cnt = (n, [one, two, few, acc, gen]) => n === 1 ? one : n === 2 ? two : (n % 100 >= 3 && n % 100 <= 10) ? `${n} ${few}` : (n % 100 >= 11) ? `${n} ${acc}` : `${n} ${gen}`;
+const W_Q = ['سؤال واحد', 'سؤالان', 'أسئلة', 'سؤالًا', 'سؤال'], W_CARD = ['بطاقة واحدة', 'بطاقتان', 'بطاقات', 'بطاقة', 'بطاقة'],
+      W_WORD = ['كلمة واحدة', 'كلمتان', 'كلمات', 'كلمة', 'كلمة'], W_ERR = ['خطأ واحد', 'خطآن', 'أخطاء', 'خطأً', 'خطأ'];
+window.cnt = cnt;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const rich = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>');
 const hash = s => { let h = 5381; for (let i = 0; i < s.length; i++) h = ((h << 5) + h + s.charCodeAt(i)) | 0; return (h >>> 0).toString(36); };
@@ -90,8 +95,8 @@ function renderHome() {
   const mastery = QS.length ? Math.round(right / QS.length * 100) : 0;
   $('mPct').textContent = mastery + '%';
   $('mBar').style.width = mastery + '%';
-  $('heroLead').textContent = `${SITE.lessons.length} ${SITE.lessons.length > 10 ? 'درسًا' : 'دروس'} من كتاب مهارات الكتابة: ${QS.length} سؤال صح وخطأ واختيار من متعدد، وبطاقات للقواعد، وتصحيح لكتابة الفقرة.`;
-  $('toolExam').textContent = `${SITE.examN} سؤال عشوائي في ${SITE.examMin} دقيقة، والنتيجة في النهاية`;
+  $('heroLead').textContent = `${SITE.lessons.length} ${SITE.lessons.length > 10 ? 'درسًا' : 'دروس'} من كتاب مهارات الكتابة: ${cnt(QS.length, W_Q)} صح وخطأ واختيار من متعدد، وبطاقات للقواعد، وتصحيح لكتابة الفقرة.`;
+  $('toolExam').textContent = `اختبار من ${cnt(SITE.examN, W_Q)} عشوائيًّا في ${SITE.examMin} دقيقة، والنتيجة في النهاية`;
   $('sAns').textContent = ids.length;
   $('sAcc').textContent = ids.length ? Math.round(right / ids.length * 100) + '%' : '—';
   $('sRev').textContent = weakIds().length;
@@ -116,19 +121,19 @@ function renderLessons(mode) {
     let meta = '', pct = null, disabled = false, act = `data-les="${s}"`, cls = '';
     if (mode === 'rules') {
       const n = CARDS.filter(c => c.s === s).length;
-      meta = n ? `${n} بطاقة` : 'قريباً'; disabled = !n;
+      meta = n ? cnt(n, W_CARD) : 'قريباً'; disabled = !n;
     } else if (mode === 'examples') {
       const list = exOf(s);
       const done = list.filter(q => q.id in (LS.exa || {})).length;
       pct = list.length ? Math.round(done / list.length * 100) : null;
-      meta = list.length ? `${list.length} سؤال` : (L.write ? 'ما فيه أسئلة أمثلة لهذا الدرس' : 'قريباً'); disabled = !list.length;
+      meta = list.length ? cnt(list.length, W_Q) : (L.write ? 'ما فيه أسئلة أمثلة لهذا الدرس' : 'قريباً'); disabled = !list.length;
     } else if (L.write && mode === 'practice') {
       meta = 'تمرين كتابي: اكتب فقرة وتُصحَّح لك'; act = 'data-nav="write"'; cls = 'special';
     } else {
       const list = qOf(s);
       const done = list.filter(q => q.id in LS.ans).length;
       pct = list.length ? Math.round(done / list.length * 100) : 0;
-      meta = list.length ? `${list.length} سؤال` : 'قريباً'; disabled = !list.length;
+      meta = list.length ? cnt(list.length, W_Q) : 'قريباً'; disabled = !list.length;
     }
     html += `<button type="button" class="row ${cls}" ${disabled ? 'disabled' : act}>
       <span class="n">${s}</span>
@@ -152,7 +157,7 @@ let CS = 1;
 function openCards(s) {
   CS = s;
   const list = CARDS.filter(c => c.s === s);
-  $('cTitle').innerHTML = `${esc(lessonName(s))}<small>${UNITS[LESSONS[s].u].join(' · ')} · ${list.length} بطاقة</small>`;
+  $('cTitle').innerHTML = `${esc(lessonName(s))}<small>${UNITS[LESSONS[s].u].join(' · ')} · ${cnt(list.length, W_CARD)}</small>`;
   $('cList').innerHTML = list.map(c => `<article class="rc">
       <h4>${rich(c.t)}</h4>
       <ul>${c.l.map(x => `<li>${rich(x)}</li>`).join('')}</ul>
@@ -308,7 +313,9 @@ function checkCore(chk, ans, words) {
   }
   if (chk.t === 're') {
     let re; try { re = new RegExp(chk.re); } catch (e) { return { s: 'unsure' }; }
-    for (const w of words) for (const b of bases(w)) if (re.test(b)) return { s: 'ok', w };
+    /* whole: الكلمة كما كتبها الطالب بدون إزالة السوابق (عشان «للليمون» ما تصير «لليمون») */
+    const bs = chk.whole ? (w => [w]) : bases;
+    for (const w of words) for (const b of bs(w)) if (re.test(b)) return { s: 'ok', w };
     return { s: 'no', why: chk.msg || 'مثالك ما ينطبق عليه شرط السؤال.' };
   }
   if (chk.t === 'punct') {
@@ -330,7 +337,7 @@ function checkCore(chk, ans, words) {
     const hit = (chk.ok || []).find(o => {
       const c = norm(o); if (!c) return false;
       if (a === c) return true;
-      if (!c.includes(' ')) return aw.some(w => bases(w).includes(c)) && (!chk.exact || aw.every(w => bases(w).some(b => single.has(b))));
+      if (!c.includes(' ')) { const bs = chk.whole ? (w => [w]) : bases; return aw.some(w => bs(w).includes(c)) && (!chk.exact || aw.every(w => bs(w).some(b => single.has(b)))); }
       return !chk.exact && (' ' + a + ' ').includes(' ' + c + ' ');
     });
     return hit ? { s: 'ok', w: hit } : { s: 'unsure' };
@@ -403,7 +410,7 @@ function renderReviewIntro() {
 /* ── الاختبار التجريبي ── */
 let E = null, timer = null;
 function renderExamIntro() {
-  $('exFacts').innerHTML = `<div><dt>عدد الأسئلة</dt><dd>${SITE.examN} سؤال</dd></div><div><dt>الوقت</dt><dd>${SITE.examMin} دقيقة</dd></div><div><dt>الأسئلة من</dt><dd>${SITE.examScope}</dd></div>`;
+  $('exFacts').innerHTML = `<div><dt>عدد الأسئلة</dt><dd>${cnt(SITE.examN, W_Q)}</dd></div><div><dt>الوقت</dt><dd>${SITE.examMin} دقيقة</dd></div><div><dt>الأسئلة من</dt><dd>${SITE.examScope}</dd></div>`;
 }
 function startExam() {
   const pool = QS.filter(q => SITE.examLessons.includes(q.s));
@@ -441,7 +448,7 @@ $('eNext').onclick = () => { if (E.i < E.ids.length - 1) { E.i++; renderE(); win
 $('eEnd').onclick = askFinish;
 function askFinish() {
   const left = E.ids.length - Object.keys(E.picked).length;
-  confirmBox('تنهي الاختبار؟', left ? `باقي ${left} سؤال ما جاوبت عنه، وبينحسب خطأ.` : 'جاوبت عن كل الأسئلة. يطلع لك التصحيح الحين.', 'إيه، أنهِ الاختبار', () => finishExam(false));
+  confirmBox('تنهي الاختبار؟', left ? `باقي ${cnt(left, W_Q)} ما جاوبت عنه، وبينحسب خطأ.` : 'جاوبت عن كل الأسئلة. يطلع لك التصحيح الحين.', 'إيه، أنهِ الاختبار', () => finishExam(false));
 }
 function finishExam(timeUp) {
   if (!E) return;
@@ -714,7 +721,7 @@ function renderProof() {
     const words = p.toks.filter(t => !t.sp);
     const hits = words.filter((t, j) => t.right && PRSEL.has(j)).length;
     const fals = words.filter((t, j) => !t.right && PRSEL.has(j)).length;
-    res = `<div class="pr-res"><div class="fb ${hits === p.n && !fals ? 'ok' : 'no'}"><div class="h">${hits === p.n && !fals ? ICON('check') : ICON('alert')}اكتشفت ${hits} من ${p.n} أخطاء${fals ? `، وحدّدت ${fals} كلمة صحيحة على أنها خطأ` : ''}</div></div>
+    res = `<div class="pr-res"><div class="fb ${hits === p.n && !fals ? 'ok' : 'no'}"><div class="h">${hits === p.n && !fals ? ICON('check') : ICON('alert')}اكتشفت ${hits} من ${cnt(p.n, W_ERR)}${fals ? `، وحدّدت ${cnt(fals, W_WORD)} صحيحة على أنها خطأ` : ''}</div></div>
       <div class="errs">${words.filter(t => t.right).map(t => `<div class="err"><div class="ln"><span class="w">${esc(t.w)}</span>${ICON('next').replace('class="i"', 'class="i ar"')}<span class="r">${esc(t.right)}</span></div><p>${esc(t.why)}</p></div>`).join('')}</div></div>`;
   }
   $('prBox').innerHTML = `<div class="pager">${pick}</div>
@@ -723,7 +730,7 @@ function renderProof() {
       <div class="pr-text">${txt}</div>
       <div class="wacts" style="margin-top:14px">${PRDONE
         ? `<button class="btn btn-pri" type="button" id="prNext">${PRI < PROOF.length - 1 ? 'الفقرة التالية' + ICON('next') : 'من البداية'}</button><button class="btn btn-quiet" type="button" id="prRetry">أعد المحاولة</button>`
-        : `<button class="btn btn-pri" type="button" id="prCheck">تحقّق</button><span class="counts" style="margin:0">حدّدت ${PRSEL.size} كلمة</span>`}</div>
+        : `<button class="btn btn-pri" type="button" id="prCheck">تحقّق</button><span class="counts" style="margin:0">حدّدت ${cnt(PRSEL.size, W_WORD)}</span>`}</div>
       ${res}
     </div>`;
 }

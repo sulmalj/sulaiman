@@ -99,7 +99,7 @@ function render() {
     txt += (mode === 'w' && !done) ? `<button type="button" class="${cls}" data-w="${idx}">${inner}</button>` : `<span class="${cls}">${inner}</span>`;
   });
   const nSlots = f.toks.filter(t => t.slot !== undefined).length, nErr = f.toks.filter(t => t.err !== undefined).length;
-  const steps = [['p', '1', 'علامات الترقيم', `اضغط على كل خانة واختر العلامة الصحيحة (أو «بدون»). فيه ${nSlots} خانات، بعضها صحيحة أصلًا.`],
+  const steps = [['p', '1', 'علامات الترقيم', `اضغط على كل خانة واختر العلامة الصحيحة (أو «بدون»). فيه ${window.cnt ? cnt(nSlots, ['خانة واحدة', 'خانتان', 'خانات', 'خانة', 'خانة']) : nSlots}، بعضها صحيحة أصلًا.`],
                  ['w', '2', 'الأخطاء اللغوية', `اضغط على كل كلمة تشوفها خطأ (إملاء أو خطأ شائع). عدد الأخطاء: ${nErr}.`],
                  ['s', '3', 'بناء الفقرة', 'جاوب عن أسئلة بناء الفقرة تحت.']];
   let qs = '';
