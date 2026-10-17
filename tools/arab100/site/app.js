@@ -313,7 +313,9 @@ function checkCore(chk, ans, words) {
   }
   if (chk.t === 're') {
     let re; try { re = new RegExp(chk.re); } catch (e) { return { s: 'unsure' }; }
-    for (const w of words) for (const b of bases(w)) if (re.test(b)) return { s: 'ok', w };
+    /* whole: الكلمة كما كتبها الطالب بدون إزالة السوابق (عشان «للليمون» ما تصير «لليمون») */
+    const bs = chk.whole ? (w => [w]) : bases;
+    for (const w of words) for (const b of bs(w)) if (re.test(b)) return { s: 'ok', w };
     return { s: 'no', why: chk.msg || 'مثالك ما ينطبق عليه شرط السؤال.' };
   }
   if (chk.t === 'punct') {
@@ -335,7 +337,7 @@ function checkCore(chk, ans, words) {
     const hit = (chk.ok || []).find(o => {
       const c = norm(o); if (!c) return false;
       if (a === c) return true;
-      if (!c.includes(' ')) return aw.some(w => bases(w).includes(c)) && (!chk.exact || aw.every(w => bases(w).some(b => single.has(b))));
+      if (!c.includes(' ')) { const bs = chk.whole ? (w => [w]) : bases; return aw.some(w => bs(w).includes(c)) && (!chk.exact || aw.every(w => bs(w).some(b => single.has(b)))); }
       return !chk.exact && (' ' + a + ' ').includes(' ' + c + ' ');
     });
     return hit ? { s: 'ok', w: hit } : { s: 'unsure' };
