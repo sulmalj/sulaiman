@@ -147,7 +147,8 @@ def md_html(lines, lessons):
                     rows.append(cells)
                 i += 1
             head, body = rows[0], rows[1:]
-            t = '<table class="t"><tr>' + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr>"
+            t = (f'<table class="t{" brk" if len(body) > 6 else ""}"><tr>'
+                 + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr>")
             # خانة أولى فاضية = نفس الجملة اللي فوقها (كلمتين من جملة وحدة) ← تندمج معها بدل ما تبان فاضية
             span = [1] * len(body)
             for k in range(len(body) - 1, 0, -1):
@@ -186,7 +187,7 @@ def keep_groups(out):
     بند وحيد أول الصفحة، سؤال انفصل عن حله):
     - القائمة: أول بندين مع بعض وآخر بندين مع بعض (والقصيرة كلها مع بعض).
     - السؤال المرقّم، أو أي سطر ينتهي بـ«:»، يمسك في اللي بعده (إلا الجدول — له رأس يتكرر)."""
-    isbl = lambda h: h.startswith('<div class="bl">')
+    isbl = lambda h: h.startswith(('<div class="bl">', '<div class="item">'))  # بنود القائمة والأسئلة المرقّمة المتتالية
     pieces, k = [], 0
     while k < len(out):
         if isbl(out[k]):
@@ -205,20 +206,38 @@ def keep_groups(out):
             pieces.append([out[k]])
             k += 1
     text = lambda h: re.sub(r"<[^>]+>", "", h).strip()
+    is_tab = lambda h: h.startswith("<table")
+    is_q = lambda h: h.startswith(('<div class="item">', '<div class="mcq">'))
+
+    def attach(last, nxt):
+        """هل «nxt» لازم يكون في نفس الصفحة مع «last»؟"""
+        if not nxt or is_tab(last):
+            return False
+        if text(nxt).startswith(("الحل", "نموذج حل", "نموذج الحل")):  # السؤال وحله
+            return True
+        if is_tab(nxt):  # النص/السؤال وجدول حله القصير (الطويل ينقسم تحته ورأسه يتكرر)
+            return nxt.count("<tr>") <= 7 and not is_q(last) or last.startswith('<div class="item">')
+        if text(last).endswith(":") and not is_q(last):  # سطر ينتهي بـ«:» وكلامه بعده
+            return True
+        # سؤال مرقّم وحله (سطر/قائمة/نص بعده — مو عنوان أو درس جديد)
+        return last.endswith('</div>') and '<div class="item">' in last[-400:] and \
+            nxt.startswith(('<div class="bl">', '<p class="ln">', '<div class="passage">', '<p class="note">'))
     res, k = [], 0
     while k < len(pieces):
-        h = pieces[k][0]
-        lead = (h.startswith('<div class="item">') or h.startswith('<div class="bl">') and text(h).endswith(":")
-                or h.startswith('<p class="ln">') and text(h).endswith(":"))
-        # السؤال (حتى لو مرقّم «٣-» في سطر عادي) ما ينفصل عن «الحل:» اللي بعده
-        if k + 1 < len(pieces) and text(pieces[k + 1][0]).startswith("الحل"):
-            lead = True
-        if lead and k + 1 < len(pieces) and not pieces[k + 1][0].startswith("<table"):
-            res.append(f'<div class="keep">{h}{pieces[k + 1][0]}</div>')
-            k += 2
-            continue
-        res.append(h if len(pieces[k]) == 1 and not h.startswith('<div class="bl">') or not isbl(h) else
-                   (f'<div class="keep">{h}</div>' if h.count('<div class="bl">') > 1 else h))
+        group, last = [pieces[k][0]], pieces[k][0]
+        while k + 1 < len(pieces) and attach(last, pieces[k + 1][0]):
+            if is_tab(pieces[k + 1][0]) and pieces[k + 1][0].count("<tr>") > 7:
+                break
+            k += 1
+            group.append(pieces[k][0])
+            last = pieces[k][0]
+        nxt = pieces[k + 1][0] if k + 1 < len(pieces) else ""
+        html_ = "".join(group)
+        if len(group) > 1 or html_.count('<div class="bl">') + html_.count('<div class="item">') > 1:
+            html_ = f'<div class="keep">{html_}</div>'
+        if is_tab(nxt) and attach(last, nxt):  # جدول طويل: يبدأ تحت سؤاله مباشرة
+            html_ = re.sub(r"^<(\w+) ", r'<\1 style="break-after:avoid" ', html_, count=1)
+        res.append(html_)
         k += 1
     return res
 
@@ -246,7 +265,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .qq,.item{display:flex;gap:7pt;align-items:baseline;line-height:1.75}
 .qn{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:17pt;height:17pt;border-radius:9pt;
   background:#cc6e53;color:#fff;font-size:9.5pt;font-weight:700;padding:0 4pt;transform:translateY(-1pt)}
-.item{margin:6pt 0;break-inside:avoid;break-after:avoid}
+.item{margin:6pt 0;break-inside:avoid}
 .ops{display:grid;gap:4pt 7pt;margin:4pt 24pt 0 0}
 .ops.c4{grid-template-columns:repeat(4,1fr)} .ops.c3{grid-template-columns:repeat(3,1fr)} .ops.c2{grid-template-columns:1fr 1fr}
 .op{background:#fbf3ec;border:1pt solid #eddccf;border-radius:7pt;padding:2pt 8pt 3pt;font-size:11pt;line-height:1.5;color:#6d4a37}
@@ -261,6 +280,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .bl::before{content:'';position:absolute;right:2pt;top:8.5pt;width:6pt;height:6pt;border-radius:50%;background:#e3a594}
 .note{font-size:10.6pt}
 table.t td{font-size:11pt}
+table.t.brk{break-inside:auto !important}
 """
 
 
@@ -522,6 +542,8 @@ def main():
         bm.render(footers_html([("قبل أن تبدأ", None)] * n_intro + foot, left), tmp / "f.pdf", br)
         br.close()
 
+    # الصفحات اللي تبدأ (من أعلاها) بموضوع/درس جديد
+    starts = {pno for pno, pg in enumerate(content) for r in pg.search_for("zzL") if r.y0 < bm.TOP + 90}
     scrub_markers(content)
     base = base_page()
     footp = pymupdf.open(tmp / "f.pdf")
@@ -541,7 +563,9 @@ def main():
                 fk += 1
     for i in range(content.page_count):
         bottom = bm.content_bottom(content[i])
-        if bottom is not None and (H - bm.BOT_M) - bottom > bm.TRIM_GAP * bm.CAPH:
+        # نقص الصفحة بس إذا الجاية تبدأ موضوع جديد (أو هي الأخيرة) — مو في نص تطبيق
+        ends = i + 1 >= content.page_count or (i + 1) in starts
+        if ends and bottom is not None and (H - bm.BOT_M) - bottom > bm.TRIM_GAP * bm.CAPH:
             # نفس الملزمة: الصفحة اللي فيها فراغ كبير تنقص على قد الكلام والتذييل تحتها مباشرة
             cut = bottom + 30
             hn = cut + bm.FOOT_STRIP
@@ -559,6 +583,9 @@ def main():
         pg = out.new_page(width=W, height=H)
         pg.show_pdf_page(pg.rect, base, 0)
         pg.show_pdf_page(pg.rect, content, i)
+        # Chrome أحياناً يرسم حركة من أول سطر في الصفحة الجاية على حد هذي الصفحة ← نغطيها بالخلفية
+        for r in bm.stray_marks(content[i]):
+            pg.show_pdf_page(r, base, 0, clip=r)
         copy_links(content[i], pg)
         pg.show_pdf_page(pg.rect, footp, fk)
         copy_links(footp[fk], pg)
