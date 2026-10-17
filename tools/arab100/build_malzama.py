@@ -316,11 +316,11 @@ def fix_lam_alef(s):
 # brk: رقم عنصر يبدأ صفحة جديدة (موازنة آخر صفحتين في الدرس).
 SPREAD_JS = """(o) => {
   const items = [], z = parseFloat(getComputedStyle(document.body).zoom) || 1;
-  const isHead = (c) => c.matches('.sec, .sub, .sub2') ||
-    (c.matches('.keep') && c.firstElementChild && c.firstElementChild.matches('.sec, .sub, .sub2'));
+  const isHead = (c) => c.matches('.sec, .sub, .sub2, .lesson, .unit') ||
+    (c.matches('.keep') && c.firstElementChild && c.firstElementChild.matches('.sec, .sub, .sub2, .lesson, .unit'));
   for (const c of [...document.body.children]) {
     if (c.tagName === 'STYLE' || c.tagName === 'SCRIPT') continue;
-    items.push([isHead(c) ? 'H' : 'B', c]);
+    items.push([(c.matches('[data-tp]') || c.querySelector('[data-tp]')) ? 'P' : isHead(c) ? 'H' : 'B', c]);
     // داخل مجموعة العنوان: الفقرات بعد أول فقرة تاخذ مسافات بعد (مثل البند ١ اللي ماسك في المقدمة)
     if (c.matches('.keep')) {
       const kids = [...c.children].filter(k => !k.matches('.sec, .sub, .sub2, .lesson, .unit'));
@@ -372,21 +372,22 @@ def page_marks(pdf_path):
     out = []
     for pg in pymupdf.open(pdf_path):
         marks = sorted((w[1], int(re.search(r"\d+", w[4]).group()), w[4][2]) for w in pg.get_text("words")
-                       if re.fullmatch(r"zz[BIHC]\d+zz", w[4]))
-        bottoms = [b[3] for b in pg.get_text("blocks") if not re.fullmatch(r"\s*(zz[BIHC]\d+zz\s*)+", b[4])]
+                       if re.fullmatch(r"zz[BIHCP]\d+zz", w[4]))
+        bottoms = [b[3] for b in pg.get_text("blocks") if not re.fullmatch(r"\s*(zz[BIHCP]\d+zz\s*)+", b[4])]
         bottoms += [x["rect"].y1 for x in pg.get_drawings()]
         out.append((marks, max(bottoms, default=TOP)))
     return out
 
 
-def head_break(pages):
+def head_break(pages, frac=0.85):
     """عنوان قسم في ربع الصفحة الأخير وكلامه يكمل في الصفحة اللي بعدها → ينزل مع قسمه للصفحة الجاية
     (طلب المستخدم: «المفروض تحطه بالصفحة اللي تحت»)."""
     # بس الأقسام (مو البنود والفقرات اللي داخل مجموعة العنوان)
-    page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, k in m if k in "BH"}
+    page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, k in m if k in "BHP"}
     for pi, (marks, _) in enumerate(pages[:-1]):
         for y, i, k in marks[1:]:
-            if k != "H" or (y - TOP) < 0.85 * CAPH:
+            # P (ملف الحلول): سؤال قبل جدول حله — ينزل معه لو الجدول ما بدأ تحته (حتى لو في نص الصفحة)
+            if k not in "HP" or (y - TOP) < (0.45 if k == "P" else frac) * CAPH:
                 continue
             nxt = min((j for j in page_of if j > i), default=None)
             if nxt is None or page_of[nxt] > pi:
@@ -405,17 +406,17 @@ def spread_map(pages, cap=44, cap_head=60, cap_item=24):
         if gap < 16:
             continue
         y0, i0, k0 = marks[0]
-        if k0 == "H" and pi > 0:
+        if k0 in "HP" and pi > 0:
             pad[str(i0)] = p0 = round(min(6, gap * 0.3), 1)
             gap -= p0
         rest = [(i, k) for _, i, k in marks[1:]]
         if not rest or gap < 16:
             continue
         # العنوان ياخذ 3 أضعاف البند، والقسم ضعفه
-        units = sum({"I": 1, "B": 2, "C": 2, "H": 3}[k] for _, k in rest)
+        units = sum({"I": 1, "B": 2, "C": 2, "H": 3, "P": 3}[k] for _, k in rest)
         u = gap / units
         for i, k in rest:
-            sp[str(i)] = round({"I": min(cap_item, u), "B": min(cap, 2 * u), "C": min(cap, 2 * u), "H": min(cap_head, 3 * u)}[k], 1)
+            sp[str(i)] = round({"I": min(cap_item, u), "B": min(cap, 2 * u), "C": min(cap, 2 * u), "H": min(cap_head, 3 * u), "P": min(cap_head, 3 * u)}[k], 1)
     return sp, pad
 
 
@@ -474,7 +475,7 @@ def last_page_fill(pdf_path):
     return n, (max(bottoms, default=top) - top) / (bot - top)
 
 
-def render_fit(src, out_pdf, browser):
+def render_fit(src, out_pdf, browser, head_frac=0.85):
     """ترتيب صفحات الدرس — أهم شي عند المستخدم: «ما أحب زحمة بالصفحة».
     1) ما نضغط الدرس أبداً عشان نوفّر صفحة.
     2) العنوان اللي يجي آخر الصفحة وكلامه يكمل بعدها ينزل للصفحة الجاية.
@@ -488,7 +489,7 @@ def render_fit(src, out_pdf, browser):
     for _ in range(8):
         render(doc(src, css), trial, browser, markers=True, brks=brks)
         pages = page_marks(trial)
-        hb = head_break(pages)
+        hb = head_break(pages, head_frac)
         if hb is None or hb in brks:
             break
         brks.append(hb)
@@ -517,7 +518,7 @@ def render_fit(src, out_pdf, browser):
     # العنوان اللي يبدأ صفحة (بدون كسر إجباري) كان ياخذ مسافته فوق كاملة فينزل ~45pt أكثر من غيره ←
     # نعامله ككسر (نفس المسافة الصغيرة فوق في كل الصفحات)
     for _ in range(4):
-        tops = [m[0][1] for m, _ in pages[1:] if m and m[0][2] == "H" and m[0][1] not in brks]
+        tops = [m[0][1] for m, _ in pages[1:] if m and m[0][2] in "HP" and m[0][1] not in brks]
         if not tops:
             break
         render(doc(src, css), trial, browser, markers=True, brks=brks + tops)
