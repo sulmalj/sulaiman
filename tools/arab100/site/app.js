@@ -266,6 +266,11 @@ function checkOne(chk, ans, words) {
     for (const c of chk.of) { const r = checkOne(c, ans, words); if (r.s !== 'ok') return r; }
     return { s: 'ok' };
   }
+  if (chk.t === 'any') {
+    let first = null;
+    for (const c of chk.of) { const r = checkOne(c, ans, words); if (r.s === 'ok') return r; if (!first || (first.s === 'unsure' && r.s === 'no')) first = r; }
+    return first || { s: 'unsure' };
+  }
   if (chk.t === 'hamza') {
     const want = chk.pos, seat = chk.seat;
     for (const w of words) {
@@ -305,7 +310,8 @@ function checkOne(chk, ans, words) {
   if (chk.t === 'list') {
     /* يُقبل: الإجابة كلها = عنصر، أو كلمة منها (بسوابقها أو بدونها) = عنصر من كلمة وحدة،
        أو (إذا ما كان الفاحص exact) الإجابة فيها العنصر كاملًا */
-    const norm = x => unifyA(clean(x)).toLowerCase();
+    /* strict: في دروس الإملاء ما نوحّد صور الألف والهمزة (إكتب ≠ اكتب) */
+    const norm = x => (chk.strict ? clean(x) : unifyA(clean(x))).toLowerCase();
     const a = norm(ans), aw = a.split(' ').filter(Boolean);
     const hit = (chk.ok || []).find(o => {
       const c = norm(o); if (!c) return false;
