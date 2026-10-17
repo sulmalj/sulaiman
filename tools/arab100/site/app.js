@@ -261,15 +261,26 @@ function hzWhere(w, ch) {
   for (let i = 0; i < b.length; i++) if (b[i] === ch) out.push(i === 0 ? 'start' : i === b.length - 1 ? 'end' : 'mid');
   return out;
 }
+/* known: الكلمة لازم تكون من قائمة كلمات حقيقية (للأسئلة اللي شكل الكلمة فيها ما يكفي بدون تشكيل)،
+   وإذا ما لقيناها: «ما قدرنا نتأكد» مو «خطأ» */
 function checkOne(chk, ans, words) {
+  const r = checkCore(chk, ans, words);
+  if (r.s !== 'ok' || !chk.known) return r;
+  const K = new Set(chk.known.map(k => clean(k)));
+  const hit = words.find(w => bases(w).some(b => K.has(b) || K.has(dropTanAlif(b))));
+  return hit ? { s: 'ok', w: hit } : { s: 'unsure', k: true, why: chk.knownMsg || 'ما لقينا كلمتك في قائمة الكلمات اللي نعرفها، فما قدرنا نتأكد منها — قارنها بأمثلة الكتاب.' };
+}
+function checkCore(chk, ans, words) {
   if (chk.t === 'all') {
     for (const c of chk.of) { const r = checkOne(c, ans, words); if (r.s !== 'ok') return r; }
     return { s: 'ok' };
   }
   if (chk.t === 'any') {
-    let first = null;
-    for (const c of chk.of) { const r = checkOne(c, ans, words); if (r.s === 'ok') return r; if (!first || (first.s === 'unsure' && r.s === 'no')) first = r; }
-    return first || { s: 'unsure' };
+    /* الأولوية: صح ← «ما قدرنا نتأكد» من قائمة known (الشكل صح) ← خطأ ← ما قدرنا نتأكد */
+    const rank = r => r.s === 'ok' ? 0 : r.k ? 1 : r.s === 'no' ? 2 : 3;
+    let best = null;
+    for (const c of chk.of) { const r = checkOne(c, ans, words); if (!best || rank(r) < rank(best)) best = r; }
+    return best || { s: 'unsure' };
   }
   if (chk.t === 'hamza') {
     const want = chk.pos, seat = chk.seat;
