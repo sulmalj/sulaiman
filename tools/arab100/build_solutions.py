@@ -6,6 +6,8 @@
 2) الملف الإعلاني (--promo): حلول الوحدتين الأولى والثانية فقط. أول صفحة إعلان (الدورة + المتجر + القناة)،
    ورابط القناة تحت كل صفحة، وفي الآخر صندوق «لرؤية حلول باقي الوحدات اشترك معنا».
      python3 tools/arab100/build_solutions.py store/arab100/applications-solutions-units-1-2.pdf --promo
+3) ملف المشتركين للوحدتين الأولى والثانية (--units12): نفس ملف المشتركين بس أول وحدتين.
+     python3 tools/arab100/build_solutions.py store/arab100/applications-solutions-units-1-2-subscribers.pdf --units12
 
 المصادر (Markdown) في store/arab100/book/: applications.md (الوحدتان 1–2)، applications-u34.md (3–4)،
 activities.md (أنشطة آخر الكتاب، قسم «## أنشطة الوحدة …» لكل وحدة).
@@ -489,10 +491,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
     ap.add_argument("--promo", action="store_true", help="الملف الإعلاني: الوحدتان الأولى والثانية فقط")
+    ap.add_argument("--units12", action="store_true", help="ملف المشتركين للوحدتين الأولى والثانية فقط (جزئية الميد)")
     a = ap.parse_args()
 
     units = load_units()
-    which = [0, 1] if a.promo else [0, 1, 2, 3]
+    which = [0, 1] if a.promo or a.units12 else [0, 1, 2, 3]
     body, lessons = content_html(units, which, a.promo)
     tmp = pathlib.Path(tempfile.mkdtemp())
     if a.promo:
@@ -535,7 +538,7 @@ def main():
                     if t not in seen and not t.startswith("تدريب"):
                         seen.append(t)
                 cov.append((fm.UNITS[u][0], fm.UNITS[u][1], seen))
-            bm.render(fm.cover_html(bm.font_faces(), cov, kicker="مهارات الكتابة · التطبيقات والأنشطة كاملة",
+            bm.render(fm.cover_html(bm.font_faces(), cov, kicker=("مهارات الكتابة · الوحدتان الأولى والثانية" if a.units12 else "مهارات الكتابة · التطبيقات والأنشطة كاملة"),
                                     title="حلول التطبيقات", badge="ملف خاص بالمشتركين",
                                     foot="خاص بالمشتركين · لا أحلل نشر الملف أو إرساله أو إعطاءه لأي شخص أو نقل حلوله"),
                       tmp / "cover.pdf", br)
@@ -593,7 +596,9 @@ def main():
         pg.show_pdf_page(pg.rect, footp, fk)
         copy_links(footp[fk], pg)
         fk += 1
-    title = "عرب 100 — حلول تطبيقات الوحدتين الأولى والثانية" if a.promo else "عرب 100 — حلول تطبيقات الكتاب وأنشطته (خاص بالمشتركين)"
+    title = ("عرب 100 — حلول تطبيقات الوحدتين الأولى والثانية" if a.promo else
+             "عرب 100 — حلول تطبيقات الوحدتين الأولى والثانية وأنشطتهما (خاص بالمشتركين)" if a.units12 else
+             "عرب 100 — حلول تطبيقات الكتاب وأنشطته (خاص بالمشتركين)")
     out.set_metadata({"title": title, "author": "ملازم عدل"})
     out.save(a.out, garbage=4, deflate=True)
     print(f"{a.out}: {out.page_count} صفحة")
