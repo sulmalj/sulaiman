@@ -24,17 +24,19 @@ PARTS = {
 
 LOADER = r"""
 const fs = require('fs'), path = require('path'), vm = require('vm');
-const out = { questions: [], cards: [], proof: [] };
+const out = { questions: [], cards: [], proof: [], examples: [], fix: [] };
 const ctx = {
   M: (s, q, o, x) => out.questions.push({ s, t: 'mc', q, o, x: x || '' }),
   T: (s, q, x) => out.questions.push({ s, t: 'tf', q, a: true, x: x || '' }),
   F: (s, q, c, x) => out.questions.push({ s, t: 'tf', q, a: false, c, x: x || '' }),
   C: (s, t, l, e, x) => out.cards.push({ s, t, l, e: e || [], x: x || '' }),
-  PR: (title, text) => out.proof.push({ title, text })
+  PR: (title, text) => out.proof.push({ title, text }),
+  EX: (s, q, chk, ex, x) => out.examples.push({ s, q, chk, ex: ex || [], x: x || '' }),
+  FX: (part, topic, title, text, qs, add) => out.fix.push({ part, topic, title, text, qs: (qs || []).map(([q, o, x]) => ({ q, o, x })), add: add || '' })
 };
 vm.createContext(ctx);
 const dir = process.argv[1];
-for (const sub of ['questions', 'cards']) {
+for (const sub of ['questions', 'cards', 'examples', 'fix']) {
   const d = path.join(dir, sub);
   if (!fs.existsSync(d)) continue;
   for (const f of fs.readdirSync(d).filter(f => f.endsWith('.js')).sort()) {
@@ -79,6 +81,22 @@ def validate(d):
         if re.search(r'\[\[|\]\]', mk.sub('', p['text'])): errs.append('علامة ناقصة: ' + p['title'])
         for w, r, _ in ms:
             if w == r or ' ' in w or ' ' in r: errs.append(f"علامة غلط في {p['title']}: {w}|{r}")
+    for e in d['examples']:
+        if not e['x'].strip(): errs.append(f"مثال بدون توضيح: {e['q'][:40]}")
+        if not isinstance(e['chk'], dict) or 't' not in e['chk']: errs.append(f"مثال بدون فاحص: {e['q'][:40]}")
+    slot = re.compile(r'\{\{([^|}]*)\|([^|}]*)\|([^}]*)\}\}')
+    for f in d['fix']:
+        if f['part'] not in ('mid', 'final'): errs.append('صحح الفقرة: part غلط: ' + f['title'])
+        if f['topic'] not in ('t1', 't2'): errs.append('صحح الفقرة: topic غلط: ' + f['title'])
+        for c, g, why in slot.findall(f['text']):
+            if c.strip() not in '،؛.:؟!-' or g.strip() not in '،؛.:؟!-' or len(c.strip()) != 1 or len(g.strip()) != 1 or not why.strip():
+                errs.append(f"صحح الفقرة: خانة غلط في {f['title']}: {c}|{g}")
+        for w, r, _ in mk.findall(f['text']):
+            if w == r: errs.append(f"صحح الفقرة: خطأ = صواب في {f['title']}: {w}")
+        rest = mk.sub('', slot.sub('', f['text']))
+        if re.search(r'\{\{|\}\}|\[\[|\]\]', rest): errs.append('صحح الفقرة: علامة ناقصة: ' + f['title'])
+        for q in f['qs']:
+            if len(q['o']) < 3 or len(set(q['o'])) != len(q['o']) or not q['x'].strip(): errs.append(f"صحح الفقرة: سؤال بناء ناقص في {f['title']}: {q['q'][:30]}")
     if errs:
         sys.exit('\n'.join(errs))
 
@@ -99,7 +117,8 @@ def build(part, d):
         shutil.rmtree(out)
     (out / 'netlify/edge-functions').mkdir(parents=True)
     les = set(P['site']['lessons'])
-    data = {k: [x for x in d[k] if x.get('s', 1) in les] for k in ('questions', 'cards')}
+    data = {k: [x for x in d[k] if x.get('s', 1) in les] for k in ('questions', 'cards', 'examples')}
+    data['fix'] = [f for f in d['fix'] if f['part'] == 'mid' or part == 'final']
     data['proof'] = d['proof']
     (out / 'data.js').write_text('/* بيانات مولّدة من tools/arab100/site/build_site.py — لا تعدّلها يدوياً */\nwindow.DATA = ' + json.dumps(data, ensure_ascii=False) + ';\n', encoding='utf-8')
     html = (HERE / 'template.html').read_text(encoding='utf-8')
@@ -108,7 +127,7 @@ def build(part, d):
                 .replace('__SITE__', json.dumps(P['site'], ensure_ascii=False)))
     assert '__' not in re.sub(r'<script src[^>]*>', '', html).replace('__proto__', ''), 'placeholder left'
     (out / 'index.html').write_text(html, encoding='utf-8')
-    for f in ('style.css', 'app.js', 'paragraph.js'):
+    for f in ('style.css', 'app.js', 'paragraph.js', 'fix.js'):
         shutil.copy(HERE / f, out / f)
     shutil.copy(ROOT / 'tools/statistics/logo-adl.png', out / 'logo.png')
     edge = (HERE / 'edge-correct.js').read_text(encoding='utf-8').replace('__BOOK__', json.dumps(book_text(), ensure_ascii=False))

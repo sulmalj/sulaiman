@@ -14,7 +14,7 @@ fonts = re.search(r'<link rel="stylesheet" href="(https://fonts[^"]+)">', head).
 css = (src / 'style.css').read_text(encoding='utf-8')
 css += '\n.top{top:env(safe-area-inset-top,0px)}\nbody::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}\n'
 body = body.replace('src="logo.png"', f'src="{logo}"')
-for f in ('data.js', 'app.js', 'paragraph.js'):
+for f in ('data.js', 'app.js', 'paragraph.js', 'fix.js'):
     js = (src / f).read_text(encoding='utf-8').replace('</script>', '<\\/script>')
     body = body.replace(f'<script src="{f}"></script>', f'<script>\n{js}\n</script>')
 assert 'src="data.js"' not in body
