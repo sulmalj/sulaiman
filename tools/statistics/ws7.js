@@ -29,7 +29,7 @@ const step1=`<table class="tb" dir="rtl"><tr><th class="a">الرتبة الأو
 const stab=`<table class="tb" dir="rtl"><tr><th>X</th><th>Y</th><th>R<sub>x</sub></th><th>R<sub>y</sub></th><th>d = R<sub>x</sub> − R<sub>y</sub></th><th>d²</th></tr>`+
  R.map(([x,y,a,b])=>{const d=val(a)-val(b);return `<tr><td class="a">${x}</td><td class="a">${y}</td><td>${cell(a)}</td><td>${cell(b)}</td><td dir="ltr">${d<0?'−'+(-d):d}</td><td>${d*d}</td></tr>`}).join('')+
  `<tr class="sum"><td colspan="5" class="a">المجموع</td><td dir="ltr">Σd² = 106.5</td></tr></table>`;
-const H=t=>A(`<span style="color:#ea580c">${t}</span>`);
+const H=t=>A(`<span style="color:#9a3412">${t}</span>`);
 // [x0,y0,x1,y1,font,html,dir,align,raw]
 const pages={
  1:[
