@@ -8,11 +8,11 @@ const L=t=>`<span dir="ltr">${t}</span>`;
 const S='Σ';
 const FOOT=`<a class="ft" href="https://t.me/mlazmadl"><span class="f1">قناتنا لمعرفة كل جديد: <span dir="ltr" class="url">https://t.me/mlazmadl</span></span><span class="f2">للدخول للقناة اضغط على الرابط</span></a>`;
 // scatter svg (pt units via viewBox)
-const sc=(()=>{const W=250,H=128,l=24,b=18,t=6,r=6;const X=v=>l+v*(W-l-r)/6,Y=v=>H-b-v*(H-b-t)/6;let g='';
+const sc=(()=>{const W=262,H=128,l=24,b=18,t=6,r=16;const X=v=>l+v*(W-l-r)/6,Y=v=>H-b-v*(H-b-t)/6;let g='';
  for(let i=0;i<=6;i++){g+=`<line x1="${X(i)}" x2="${X(i)}" y1="${Y(0)}" y2="${Y(6)}" stroke="#c7cde0" stroke-width="0.5"/><line x1="${X(0)}" x2="${X(6)}" y1="${Y(i)}" y2="${Y(i)}" stroke="#c7cde0" stroke-width="0.5"/>`;
   g+=`<text x="${X(i)}" y="${Y(0)+10}" font-size="8" text-anchor="middle">${i}</text>`; if(i) g+=`<text x="${X(0)-5}" y="${Y(i)+3}" font-size="8" text-anchor="end">${i}</text>`;}
  g+=`<line x1="${X(0)}" x2="${X(6.2)}" y1="${Y(0)}" y2="${Y(0)}" stroke="#0b2a9c" stroke-width="1.2"/><line x1="${X(0)}" x2="${X(0)}" y1="${Y(0)}" y2="${Y(6.2)}" stroke="#0b2a9c" stroke-width="1.2"/>`;
- g+=`<text x="${X(6.15)}" y="${Y(0)-4}" font-size="10" font-weight="bold" font-style="italic">X</text><text x="${X(0)+4}" y="${Y(6)+2}" font-size="10" font-weight="bold" font-style="italic">Y</text>`;
+ g+=`<text x="${X(6)+6}" y="${Y(0)+4}" font-size="10" font-weight="bold" font-style="italic">X</text><text x="${X(0)+4}" y="${Y(6)+2}" font-size="10" font-weight="bold" font-style="italic">Y</text>`;
  g+=`<line x1="${X(0)}" y1="${Y(0.2)}" x2="${X(6)}" y2="${Y(5)}" stroke="#ea580c" stroke-width="1.6"/>`;
  g+=`<text x="${X(5.95)}" y="${Y(5)-5}" font-size="8.5" text-anchor="end" fill="#ea580c" font-weight="bold">Ŷ = 0.2 + 0.8X</text>`;
  for(const [x,y] of [[4,3],[1,2],[5,5],[2,1],[3,2]]) g+=`<circle cx="${X(x)}" cy="${Y(y)}" r="3" fill="#0b2a9c"/>`;
@@ -40,12 +40,12 @@ const pages={
   [38,650,138,673,12,'1','ltr','center'],
   [38,673,138,704,12,'0.756','ltr','center'],
   [38,705,138,728,12,`(${xb} , ${yb})`,'ltr','center'],
-  [38,728,138,769,10,`Ŷ = 7.79 + 0.0961X`,'ltr','center'],
+  [41,730,136,767,11,`<span style="display:inline-block;text-align:center;line-height:1.35">Ŷ = 7.79<br>+ 0.0961X</span>`,'ltr','center','raw'],
   [38,769,138,792,12,'[0 , 1]','ltr','center'],
  ],
  2:[
   [60,794,535,816,9,FOOT,'rtl','center'],
-  [70,163,330,298,10,sc,'ltr','center','raw'],
+  [64,163,336,298,10,sc,'ltr','center','raw'],
   [372,324,550,458,10,ptab,'ltr','center','raw'],
   [42,326,365,358,11,`r = ${F(`n${S}xy − ${S}x${S}y`,`${SQ(`n${S}x² − (${S}x)²`)} ${SQ(`n${S}y² − (${S}y)²`)}`)}`],
   [42,363,365,396,11,`= ${F('5(47) − (15)(13)',`${SQ('5(55) − (15)²')} ${SQ('5(43) − (13)²')}`)}`],
@@ -93,10 +93,12 @@ html,body{margin:0;background:transparent}
 .a .b{display:inline-block;line-height:1.05;padding:0.5pt 3pt 1.5pt}
 .b{border:1pt solid #ea580c;padding:0 2pt;font-weight:bold}
 sub{font-size:68%;vertical-align:sub;line-height:0}
-.fr{display:inline-flex;flex-direction:column;align-items:center;vertical-align:middle;margin:0 1.5pt;line-height:1.15}
+.fr{display:inline-flex;flex-direction:column;align-items:stretch;text-align:center;vertical-align:middle;margin:0 1.5pt;line-height:1.15}
 .nu{padding:0 2pt 0.5pt;border-bottom:0.9pt solid currentColor}
 .de{padding:0.5pt 2pt 0}
-.sq{white-space:nowrap}.sqi{border-top:0.9pt solid currentColor;padding:0 1pt}
+.sq{white-space:nowrap;display:inline-block}.sqi{border-top:0.9pt solid currentColor;padding:0.6pt 1pt 0}
+.de .sq{margin-top:3.5pt}
+.de .sq+.sq{margin-right:2pt;margin-left:2pt}
 .tb{border-collapse:collapse;font-size:inherit;color:#0b2a9c}
 .tb td,.tb th{border:0.8pt solid #0b2a9c;padding:1.2pt 5pt;text-align:center;line-height:1.25;white-space:nowrap}
 .tb th{background:#e8edf9}
