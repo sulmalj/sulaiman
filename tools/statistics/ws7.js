@@ -20,12 +20,16 @@ const sc=(()=>{const W=250,H=128,l=24,b=18,t=6,r=6;const X=v=>l+v*(W-l-r)/6,Y=v=
 const ptab=`<table class="tb"><tr><th></th><th>x</th><th>y</th><th>xy</th><th>x²</th><th>y²</th></tr>`+
  [[4,3],[1,2],[5,5],[2,1],[3,2]].map(([x,y])=>`<tr><td></td><td>${x}</td><td>${y}</td><td>${x*y}</td><td>${x*x}</td><td>${y*y}</td></tr>`).join('')+
  `<tr class="sum"><td>Σ</td><td>15</td><td>13</td><td>47</td><td>55</td><td>43</td></tr></table>`;
-const R=[['ممتاز','منخفض جداً',6.5,1],['جيد جداً','منخفض',5,2.5],['ممتاز','منخفض',6.5,2.5],['جيد','متوسط',3.5,4.5],['مقبول','مرتفع',2,6],['جيد','متوسط',3.5,4.5],['ضعيف','مرتفع جداً',1,7]];
+const R=[['ممتاز','منخفض جداً','6+7',1],['جيد جداً','منخفض',5,'2+3'],['ممتاز','منخفض','6+7','2+3'],['جيد','متوسط','3+4','4+5'],['مقبول','مرتفع',2,6],['جيد','متوسط','3+4','4+5'],['ضعيف','مرتفع جداً',1,7]];
+const val=v=>typeof v==='string'?v.split('+').reduce((a,b)=>a+ +b,0)/2:v;
+const cell=v=>typeof v==='string'?`<span dir="ltr">${F(v.replace('+',' + '),'2')} = ${val(v)}</span>`:v;
+const step1=`<table class="tb" dir="rtl"><tr><th class="a">الرتبة الأولية</th>${[1,2,3,4,5,6,7].map(k=>`<th>${k}</th>`).join('')}</tr>
+<tr><td class="a">X</td>${['ضعيف','مقبول','جيد','جيد','جيد جداً','ممتاز','ممتاز'].map(t=>`<td class="a">${t}</td>`).join('')}</tr>
+<tr><td class="a">Y</td>${['منخفض جداً','منخفض','منخفض','متوسط','متوسط','مرتفع','مرتفع جداً'].map(t=>`<td class="a">${t}</td>`).join('')}</tr></table>`;
 const stab=`<table class="tb" dir="rtl"><tr><th>X</th><th>Y</th><th>R<sub>x</sub></th><th>R<sub>y</sub></th><th>d = R<sub>x</sub> − R<sub>y</sub></th><th>d²</th></tr>`+
- R.map(([x,y,a,b])=>{const d=a-b;return `<tr><td class="a">${x}</td><td class="a">${y}</td><td>${a}</td><td>${b}</td><td dir="ltr">${d<0?'−'+(-d):d}</td><td>${d*d}</td></tr>`}).join('')+
+ R.map(([x,y,a,b])=>{const d=val(a)-val(b);return `<tr><td class="a">${x}</td><td class="a">${y}</td><td>${cell(a)}</td><td>${cell(b)}</td><td dir="ltr">${d<0?'−'+(-d):d}</td><td>${d*d}</td></tr>`}).join('')+
  `<tr class="sum"><td colspan="5" class="a">المجموع</td><td dir="ltr">Σd² = 106.5</td></tr></table>`;
-const rank=`<div class="rk" dir="rtl"><div class="a">ترتيب X تصاعدياً:</div><div class="a">ضعيف (1) ، مقبول (2) ، جيد ، جيد <span dir="ltr">${F('3 + 4','2')} = 3.5</span></div><div class="a">جيد جداً (5) ، ممتاز ، ممتاز <span dir="ltr">${F('6 + 7','2')} = 6.5</span></div>
-<div class="a" style="margin-top:4pt">ترتيب Y تصاعدياً:</div><div class="a">منخفض جداً (1) ، منخفض ، منخفض <span dir="ltr">${F('2 + 3','2')} = 2.5</span></div><div class="a">متوسط ، متوسط <span dir="ltr">${F('4 + 5','2')} = 4.5</span> ، مرتفع (6) ، مرتفع جداً (7)</div></div>`;
+const H=t=>A(`<span style="color:#ea580c">${t}</span>`);
 // [x0,y0,x1,y1,font,html,dir,align,raw]
 const pages={
  1:[
@@ -59,9 +63,12 @@ const pages={
  ],
  3:[
   [60,758,535,782,9,FOOT,'rtl','center'],
-  [292,176,537,352,8.5,stab,'rtl','center','raw'],
-  [42,186,284,346,9.5,rank,'rtl','center','raw'],
-  [45,362,535,402,12,`r${s('s')} = 1 − ${F(`6${S}d²`,'n(n² − 1)')} = 1 − ${F('6(106.5)','7(7² − 1)')} = 1 − ${F('639','336')} = ${B('−0.90')}`],
+  [45,170,535,184,10,H('1) ترتيب المشاهدات تصاعدياً وإعطاء الرتب الأولية'),'rtl'],
+  [45,186,535,240,9,step1,'rtl','center','raw'],
+  [45,245,535,259,10,H('2) بناء جدول الرتب'),'rtl'],
+  [45,261,535,462,9,stab,'rtl','center','raw'],
+  [45,466,535,480,10,H('3) حساب معامل ارتباط سبيرمان'),'rtl'],
+  [45,484,535,524,12,`r${s('s')} = 1 − ${F(`6${S}d²`,'n(n² − 1)')} = 1 − ${F('6(106.5)','7(7² − 1)')} = 1 − ${F('639','336')} = ${B('−0.90')}`],
   [45,556,340,573,11.5,A(`ارتباط رتبي ${B('عكسي قوي جداً')}`),'rtl'],
  ]};
 (async()=>{
@@ -92,9 +99,10 @@ sub{font-size:68%;vertical-align:sub;line-height:0}
 .de{padding:0.5pt 2pt 0}
 .sq{white-space:nowrap}.sqi{border-top:0.9pt solid currentColor;padding:0 1pt}
 .tb{border-collapse:collapse;font-size:inherit;color:#0b2a9c}
-.tb td,.tb th{border:0.8pt solid #0b2a9c;padding:1.2pt 4pt;text-align:center;line-height:1.25;white-space:nowrap}
+.tb td,.tb th{border:0.8pt solid #0b2a9c;padding:1.2pt 5pt;text-align:center;line-height:1.25;white-space:nowrap}
 .tb th{background:#e8edf9}
 .tb .sum td{background:#fff3ea}
+.tb .fr{font-size:85%}
 .rk{line-height:1.55}
 .rk .fr{font-size:85%}
 </style></head><body>${divs}</body></html>`;
