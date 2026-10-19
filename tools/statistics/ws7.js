@@ -40,7 +40,7 @@ const pages={
   [38,650,138,673,12,'1','ltr','center'],
   [38,673,138,704,12,'0.756','ltr','center'],
   [38,705,138,728,12,`(${xb} , ${yb})`,'ltr','center'],
-  [41,730,136,767,11,`<span style="display:inline-block;text-align:center;line-height:1.35">Ŷ = 7.79<br>+ 0.0961X</span>`,'ltr','center','raw'],
+  [42,730,136,767,11,`Ŷ = 7.79 + 0.0961X`,'ltr','center'],
   [38,769,138,792,12,'[0 , 1]','ltr','center'],
  ],
  2:[
