@@ -192,7 +192,10 @@ def md_html(lines, lessons):
         elif s.startswith("(") and s.endswith(")"):
             out.append(f'<p class="note">{inline(s[1:-1])}</p>')
         else:
-            out.append(f'<p class="ln">{inline(s)}</p>')
+            # الفقرة النموذجية (بعد «نموذج حل» / «الفقرة بعد التعديل»): مسافة بادئة أول السطر مثل شرط الكتاب للفقرة
+            prev = re.sub(r"\*", "", lines[i - 1]).strip() if i else ""
+            ind = len(s) > 200 and prev.startswith(("نموذج حل", "نموذج الحل", "الفقرة بعد التعديل", "النص بعد التعديل"))
+            out.append(f'<p class="ln{" ind" if ind else ""}">{inline(s)}</p>')
         i += 1
     return "\n".join(keep_groups(out))
 
@@ -233,7 +236,8 @@ def keep_groups(out):
         if not nxt or is_tab(last):
             return False
         if text(nxt).startswith(("الحل", "نموذج حل", "نموذج الحل")):  # السؤال وحله (مو قائمة مطالب كاملة مع نموذج طويل)
-            return not multi(last)
+            return not multi(last) or size_ok
+
         if is_tab(nxt):  # النص/السؤال وجدول حله القصير (الطويل ينقسم تحته ورأسه يتكرر)
             return not is_long(nxt) and (not is_q(last) or last.startswith('<div class="item">'))
         if last.startswith('<div class="passage">') and (isbl(nxt) or is_q(nxt)):  # النص وأول أسئلته
@@ -246,9 +250,18 @@ def keep_groups(out):
         return last.endswith('</div>') and '<div class="item">' in last[-400:] and \
             nxt.startswith(('<div class="bl">', '<p class="ln">', '<div class="passage">', '<p class="note">'))
     res, k = [], 0
+    size_ok = False
     while k < len(pieces):
         group, last = [pieces[k][0]], pieces[k][0]
-        while k + 1 < len(pieces) and attach(last, pieces[k + 1][0]):
+        while True:
+            if k + 1 >= len(pieces):
+                break
+            # قائمة المطالب + «نموذج حل» + الفقرة: مع بعض بس إذا كلها قصيرة (تدخل في صفحة وحدة براحة)
+            nx = pieces[k + 1][0]
+            tail = pieces[k + 2][0] if k + 2 < len(pieces) and text(nx).endswith(":") else ""
+            size_ok = len(text("".join(group)) + text(nx) + text(tail)) < 1100
+            if not attach(last, nx):
+                break
             if is_long(pieces[k + 1][0]):
                 break
             k += 1
@@ -305,6 +318,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .note{font-size:10.6pt}
 table.t td{font-size:11pt}
 table.t.brk{break-inside:auto !important}
+.ln.ind{text-indent:18pt}
 table.t tr.z1 td{background:#fdf8f3} table.t tr.z0 td{background:#f6ece4}
 """
 
