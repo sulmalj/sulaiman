@@ -194,6 +194,14 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
 .tabs button{border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:var(--r-ctl);padding:6px 12px;font-weight:700;font-size:14px}
 .tabs button.cur{background:var(--accent);color:#fff;border-color:var(--accent)}
 .tabs button small{opacity:.8;font-weight:500;font-family:var(--f-en)}
+/* «ارجع لها لاحقًا» */
+.mark{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:2px 10px;font-size:12.5px;font-weight:600;white-space:nowrap}
+.mark:hover{border-color:var(--gold);color:var(--gold-ink)}
+.mark.on{background:var(--gold-soft);border-color:color-mix(in srgb,var(--gold) 45%,transparent);color:var(--gold-ink)}
+.gq .qmeta.mtop{margin:0 0 10px}
+.gq.flag{border-color:var(--gold);box-shadow:inset -4px 0 0 var(--gold)}
+.tabs button .fl{font-size:12px}
+.duo .lcard{grid-column:1/-1}
 
 .score{text-align:center;padding:26px 18px}
 .score .n{font-family:var(--f-en);font-size:52px;font-weight:700;line-height:1.1;color:var(--accent);direction:ltr}
@@ -270,6 +278,12 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
         <p>كل سؤال غلطت فيه (في التدريب أو الاختبار) ينحفظ هنا. جاوبه صح ويطلع من القائمة.</p>
         <p id="revMeta" style="margin:0 0 12px;color:var(--muted);font-size:14px"></p>
         <button class="btn btn-sec" id="startRev" type="button">ابدأ المراجعة</button>
+      </div>
+      <div class="card lcard">
+        <h3>🔖 ارجع لها لاحقًا</h3>
+        <p>الأسئلة اللي حفظتها بزر «ارجع له لاحقًا»، واللي تخطيتها في التدريب بدون ما تجاوب. أول ما تجاوبها هنا تطلع من القائمة.</p>
+        <p id="laterMeta" style="margin:0 0 12px;color:var(--muted);font-size:14px"></p>
+        <button class="btn btn-sec" id="startLater" type="button">ابدأ</button>
       </div>
     </div>
 
@@ -396,15 +410,22 @@ const repBtn = q => '';   // زر «بلّغ عن خطأ» محذوف (طلب ا
 
 /* ── الحفظ في المتصفح ── */
 const KEY = 'english-tracks-mid-v1';
-let LS = { ans: {}, wrong: {} };
+let LS = { ans: {}, wrong: {}, later: {} };
 try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); if (v && typeof v === 'object') LS = Object.assign(LS, v); } catch (e) {}
+if (!LS.later || typeof LS.later !== 'object') LS.later = {};
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(LS)); } catch (e) {} };
 function record(q, ok) {
   LS.ans[q.id] = ok ? 1 : 0;
+  if (LS.later[q.id] === 's') delete LS.later[q.id];
   if (ok) delete LS.wrong[q.id]; else LS.wrong[q.id] = 1;
   save();
 }
 const weakIds = () => QS.filter(q => LS.wrong[q.id]).map(q => q.id);
+/* «ارجع لها لاحقًا»: m = حفظه الطالب بالزر، s = تخطاه بدون إجابة */
+const laterIds = () => QS.filter(q => LS.later[q.id]).map(q => q.id);
+const markBtn = q => `<button class="mark ${LS.later[q.id] === 'm' ? 'on' : ''}" type="button" data-mark="${q.id}">${LS.later[q.id] === 'm' ? '🔖 محفوظ للرجوع' : '🔖 ارجع له لاحقًا'}</button>`;
+function toggleMark(id) { if (LS.later[id] === 'm') delete LS.later[id]; else LS.later[id] = 'm'; save(); }
+function skipIds(ids) { let n = 0; ids.forEach(id => { if (!(id in LS.ans) && !LS.later[id]) { LS.later[id] = 's'; n++; } }); if (n) save(); }
 
 /* ترتيب الخيارات (ثابت خلال الزيارة) */
 const ORD = {};
@@ -438,6 +459,9 @@ function renderHome() {
   $('pWrong').textContent = wrong;
   $('revMeta').textContent = wrong ? 'عندك ' + wrong + ' سؤال تحتاج مراجعة.' : 'ما عندك أخطاء حالياً 👌';
   $('startRev').disabled = !wrong;
+  const later = laterIds(), lm = later.filter(id => LS.later[id] === 'm').length;
+  $('laterMeta').textContent = later.length ? `عندك ${later.length} سؤال (${lm} حفظتها، ${later.length - lm} تخطيتها).` : 'ما فيه أسئلة محفوظة حالياً.';
+  $('startLater').disabled = !later.length;
 
   const unit = { g: 'قاعدة', v: 'مجموعة', r: 'قطعة', l: 'مقطع' };
   $('secs').innerHTML = ORDER_SEC.map(s => {
@@ -484,7 +508,7 @@ $('lItems').addEventListener('click', e => {
 });
 
 /* ── سؤال بسؤال ── */
-let P = null; // {kind:'set'|'review', s, g, ids, i, picked}
+let P = null; // {kind:'set'|'review'|'later', s, g, ids, i, picked}
 function startQuiz(s, g) {
   const ids = ofGrp(s, g).map(q => q.id);
   const first = ids.findIndex(id => !(id in LS.ans));
@@ -496,24 +520,30 @@ function startReview() {
   P = { kind: 'review', ids, i: 0, picked: {} };
   show('quiz'); renderQ();
 }
-function ctxHTML(q) {   // للمراجعة: يعرض القطعة أو المقطع مع السؤال
-  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"><summary>📖 اعرض القطعة: <span class="en">${esc(p.title)}</span></summary><div class="card passage en">${p.text.map(paraHTML).join('')}</div></details>`; }
-  if (q.sec === 'l') { const c = LI[q.grp]; return `<div class="ctx"><div class="qmeta"><span>🎧 المقطع ${c.n}: <span class="en">${esc(c.title)}</span></span></div><audio controls preload="none" src="${c.audio}"></audio></div>`; }
+function startLater() {
+  const ids = laterIds(); if (!ids.length) return;
+  P = { kind: 'later', ids, i: 0, picked: {} };
+  show('quiz'); renderQ();
+}
+function ctxHTML(q, open) {   // للمراجعة و«ارجع لها لاحقًا»: يعرض القطعة أو المقطع مع السؤال
+  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"${open ? ' open' : ''}><summary>📖 اعرض القطعة: <span class="en">${esc(p.title)}</span></summary><div class="card passage en">${p.text.map(paraHTML).join('')}</div></details>`; }
+  if (q.sec === 'l') { const c = LI[q.grp]; return `<div class="ctx"><div class="qmeta"><span>🎧 المقطع ${c.n}: <span class="en">${esc(c.title)}</span></span></div><audio controls preload="none" data-q="${q.id}" src="${c.audio}"></audio></div>`; }
   return '';
 }
 function renderQ() {
   const q = BY_ID[P.ids[P.i]], opts = options(q), picked = P.picked[q.id];
-  const isRev = P.kind === 'review';
+  const isRev = P.kind !== 'set';
   const where = q.sec === 'g' ? esc(GR[q.grp].rule) : q.sec === 'v' ? `المجموعة ${q.grp + 1}` : '';
   $('qTitle').innerHTML = isRev
-    ? `راجع أخطاءك<small>${secName(q.sec)} · سؤال ${P.i + 1} من ${P.ids.length}</small>`
+    ? `${P.kind === 'later' ? 'ارجع لها لاحقًا' : 'راجع أخطاءك'}<small>${secName(q.sec)} · سؤال ${P.i + 1} من ${P.ids.length}</small>`
     : `${secName(q.sec)}<small>${where} · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
   $('qBar').style.width = ((P.i + 1) / P.ids.length * 100) + '%';
   const done = picked !== undefined;
   const right = q.o[0];
+  const keepA = $('qCard').querySelector(`.ctx audio[data-q="${q.id}"]`);   // نفس السؤال: لا توقف المقطع اللي شغّال
   $('qCard').className = 'card qcard s-' + q.sec;
-  $('qCard').innerHTML = (isRev ? ctxHTML(q) : '') +
-    `<div class="qmeta"><span class="k">${SEC[q.sec].en}</span><span class="qcode">${q.code}</span>${repBtn(q)}</div>
+  $('qCard').innerHTML = (isRev ? ctxHTML(q, P.kind === 'later') : '') +
+    `<div class="qmeta"><span class="k">${SEC[q.sec].en}</span><span class="qcode">${q.code}</span>${markBtn(q)}${repBtn(q)}</div>
     <p class="qtext en">${qHTML(q, done ? right : null)}</p>
     <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">` +
     opts.map((o, i) => {
@@ -522,17 +552,22 @@ function renderQ() {
       return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
     }).join('') + `</div>` +
     (done ? `<div class="fb ${opts[picked].ok ? 'ok' : 'no'}">${opts[picked].ok ? '✓ إجابة صحيحة' : `✗ إجابة خاطئة — الإجابة الصحيحة: <span class="en">${esc(right)}</span>`}</div>` + explHTML(q) : '');
+  if (keepA) $('qCard').querySelector('.ctx audio').replaceWith(keepA);
   $('qPrev').disabled = P.i === 0;
-  $('qNext').textContent = P.i === P.ids.length - 1 ? (isRev ? 'خلّصت المراجعة ✓' : 'خلّصت ✓') : 'التالي ←';
+  $('qNext').textContent = P.i === P.ids.length - 1 ? (P.kind === 'review' ? 'خلّصت المراجعة ✓' : 'خلّصت ✓') : (!done && P.kind === 'set' && !(q.id in LS.ans) ? 'تخطَّ ←' : 'التالي ←');
 }
 $('qCard').addEventListener('click', e => {
+  const m = e.target.closest('[data-mark]'); if (m) { toggleMark(m.dataset.mark); renderQ(); return; }
   const b = e.target.closest('.opt'); if (!b || b.disabled) return;
   const q = BY_ID[P.ids[P.i]], i = +b.dataset.i;
-  P.picked[q.id] = i; record(q, options(q)[i].ok); renderQ();
+  P.picked[q.id] = i; record(q, options(q)[i].ok);
+  if (P.kind === 'later') { delete LS.later[q.id]; save(); }
+  renderQ();
 });
 function quizBack() { if (P && P.kind === 'set') openList(P.s); else goHome(); }
 $('qPrev').onclick = () => { if (P.i > 0) { P.i--; renderQ(); window.scrollTo(0, 0); } };
 $('qNext').onclick = () => {
+  if (P.kind === 'set') skipIds([P.ids[P.i]]);   // تخطّاه بدون إجابة ← «ارجع لها لاحقًا»
   if (P.i < P.ids.length - 1) { P.i++; renderQ(); window.scrollTo(0, 0); return; }
   if (P.kind === 'set' && P.g + 1 < grpCount(P.s)) startQuiz(P.s, P.g + 1); else quizBack();
 };
@@ -556,13 +591,18 @@ function renderGroup() {
   $('gHead').innerHTML = headHTML(s, g, false);
   renderGroupQs();
   $('gPrev').disabled = g === 0;
-  $('gNext').textContent = g === grpCount(s) - 1 ? 'خلّصت ✓' : (s === 'r' ? 'القطعة التالية ←' : 'المقطع التالي ←');
+  gNextLabel();
+}
+function gNextLabel() {   // فيه أسئلة ما جاوبها ← «تخطَّ» (تنحفظ في «ارجع لها لاحقًا»)
+  const { s, g } = G, left = ofGrp(s, g).some(q => !(q.id in LS.ans) && !(q.id in G.picked));
+  $('gNext').textContent = g === grpCount(s) - 1 ? (left ? 'تخطَّ وخلّص ✓' : 'خلّصت ✓') : left ? (s === 'r' ? 'تخطَّ القطعة ←' : 'تخطَّ المقطع ←') : (s === 'r' ? 'القطعة التالية ←' : 'المقطع التالي ←');
 }
 function renderGroupQs() {
   const { s, g } = G, list = ofGrp(s, g);
   $('gList').innerHTML = list.map((q, k) => {
     const opts = options(q), p = G.picked[q.id], done = p !== undefined;
     return `<div class="card gq s-${s}" data-q="${q.id}">
+      <div class="qmeta mtop">${markBtn(q)}</div>
       <p class="qtext en"><span class="n">${k + 1}.</span><span>${esc(q.q)}</span></p>
       <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => {
         let cls = ''; if (done) { if (o.ok) cls = 'ok'; else if (i === p) cls = 'no'; }
@@ -580,13 +620,14 @@ function renderGroupQs() {
   } else $('gFoot').innerHTML = '';
 }
 $('gList').addEventListener('click', e => {
+  const m = e.target.closest('[data-mark]'); if (m) { toggleMark(m.dataset.mark); const y = window.scrollY; renderGroupQs(); window.scrollTo(0, y); return; }
   const b = e.target.closest('.opt'); if (!b || b.disabled) return;
   const q = BY_ID[b.closest('[data-q]').dataset.q], i = +b.dataset.i;
   G.picked[q.id] = i; record(q, options(q)[i].ok);
-  const y = window.scrollY; renderGroupQs(); window.scrollTo(0, y);
+  const y = window.scrollY; renderGroupQs(); gNextLabel(); window.scrollTo(0, y);
 });
 $('gPrev').onclick = () => { if (G.g > 0) openGroup(G.s, G.g - 1); };
-$('gNext').onclick = () => { if (G.g + 1 < grpCount(G.s)) openGroup(G.s, G.g + 1); else openList(G.s); };
+$('gNext').onclick = () => { skipIds(ofGrp(G.s, G.g).map(q => q.id)); if (G.g + 1 < grpCount(G.s)) openGroup(G.s, G.g + 1); else openList(G.s); };
 $('gBack').onclick = () => openList(G.s);
 
 /* ── الاختبار التجريبي ── */
@@ -623,11 +664,12 @@ function renderE() {
   const p = E.parts[E.t];
   const total = E.parts.reduce((a, x) => a + x.ids.length, 0), answered = Object.keys(E.picked).length;
   $('eCount').textContent = `جاوبت ${answered} من ${total}`;
-  $('eTabs').innerHTML = E.parts.map((x, k) => `<button type="button" data-t="${k}" class="${k === E.t ? 'cur' : ''}">${partTab(x)} <small>${x.ids.filter(id => id in E.picked).length}/${x.ids.length}</small></button>`).join('');
+  $('eTabs').innerHTML = E.parts.map((x, k) => `<button type="button" data-t="${k}" class="${k === E.t ? 'cur' : ''}">${partTab(x)} <small>${x.ids.filter(id => id in E.picked).length}/${x.ids.length}</small>${tabFlag(x)}</button>`).join('');
   $('eHead').innerHTML = p.s === 'r' || p.s === 'l' ? headHTML(p.s, p.g, true) : '';
   $('eList').innerHTML = p.ids.map((id, k) => {
     const q = BY_ID[id], opts = options(q), pk = E.picked[id];
-    return `<div class="card gq s-${q.sec}" data-q="${id}">
+    return `<div class="card gq s-${q.sec} ${LS.later[id] === 'm' ? 'flag' : ''}" data-q="${id}">
+      <div class="qmeta mtop">${markBtn(q)}</div>
       <p class="qtext en"><span class="n">${k + 1}.</span><span>${qHTML(q)}</span></p>
       <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => `<button class="opt ${pk === i ? 'sel' : ''}" type="button" data-i="${i}"><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`).join('')}</div>
     </div>`;
@@ -656,7 +698,17 @@ function bindPlayer(P) {   // مشغّل الاختبار: بدون تقديم،
   a.onended = () => { a.currentTime = 0; bar.style.width = '0'; upd(); };
   upd();
 }
+const tabFlag = x => { const n = x.ids.filter(id => LS.later[id] === 'm').length; return n ? ` <span class="fl">🔖${n}</span>` : ''; };
 $('eList').addEventListener('click', e => {
+  const m = e.target.closest('[data-mark]');
+  if (m) {   // بدون إعادة رسم القسم (عشان ما يوقف المقطع الصوتي)
+    const id = m.dataset.mark; toggleMark(id);
+    m.outerHTML = markBtn(BY_ID[id]);
+    $('eList').querySelector(`[data-q="${id}"]`).classList.toggle('flag', LS.later[id] === 'm');
+    const p = E.parts[E.t], tb = $('eTabs').children[E.t], f = tb.querySelector('.fl');
+    if (f) f.remove(); tb.insertAdjacentHTML('beforeend', tabFlag(p));
+    return;
+  }
   const b = e.target.closest('.opt'); if (!b) return;
   const id = b.closest('[data-q]').dataset.q;
   E.picked[id] = +b.dataset.i;
@@ -719,7 +771,8 @@ document.querySelectorAll('[data-home]').forEach(b => b.onclick = goHome);
 $('homeBtn').onclick = goHome;
 $('startExam').onclick = startExam;
 $('startRev').onclick = startReview;
-$('resetAll').onclick = () => confirmBox('تمسح كل تقدمك؟', 'بتنمسح إجاباتك وقائمة أخطائك من هذا الجهاز.', 'إيه، امسح', () => { LS = { ans: {}, wrong: {} }; save(); renderHome(); });
+$('startLater').onclick = startLater;
+$('resetAll').onclick = () => confirmBox('تمسح كل تقدمك؟', 'بتنمسح إجاباتك وقائمة أخطائك والأسئلة المحفوظة من هذا الجهاز.', 'إيه، امسح', () => { LS = { ans: {}, wrong: {}, later: {} }; save(); renderHome(); });
 document.querySelectorAll('.tg-link').forEach(a => a.href = TELEGRAM_URL);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') $('modal').hidden = true; });
 
