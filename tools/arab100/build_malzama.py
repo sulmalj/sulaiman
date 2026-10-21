@@ -386,8 +386,8 @@ def head_break(pages, frac=0.85):
     page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, k in m if k in "BHP"}
     for pi, (marks, _) in enumerate(pages[:-1]):
         for y, i, k in marks[1:]:
-            # P (ملف الحلول): سؤال قبل جدول حله — ينزل معه لو الجدول ما بدأ تحته (حتى لو في نص الصفحة)
-            if k not in "HP" or (y - TOP) < (0.45 if k == "P" else frac) * CAPH:
+            # P (ملف الحلول): سؤال قبل جدول حله الطويل — ينزل معه بس لو جا قرب آخر الصفحة (الجدول ينقسم ورأسه يتكرر)
+            if k not in "HP" or (y - TOP) < (0.78 if k == "P" else frac) * CAPH:
                 continue
             nxt = min((j for j in page_of if j > i), default=None)
             if nxt is None or page_of[nxt] > pi:
@@ -565,12 +565,12 @@ def stray_marks(page):
     آخر هذي الصفحة. نرجّع مستطيلاتها (اللي فوقها فاضي) عشان نغطيها بالخلفية."""
     import numpy as np
     z = 4
-    y0, y1 = BOT - 14, BOT + 6
+    y0, y1 = BOT - 20, BOT + 6
     pm = page.get_pixmap(clip=pymupdf.Rect(0, y0, W, y1), dpi=72 * z, alpha=True)
     a = np.frombuffer(pm.samples, dtype=np.uint8).reshape(pm.height, pm.width, pm.n)[:, :, 3]
     ink = a > 40
-    band = ink[int((BOT - 4 - y0) * z):, :]   # آخر 4pt + تحت الحد
-    above = ink[: int((BOT - 4 - y0) * z), :]
+    band = ink[int((BOT - 8 - y0) * z):, :]   # آخر 8pt + تحت الحد (الحركة الشاردة ممكن تطلع لين 6pt فوق الحد)
+    above = ink[: int((BOT - 8 - y0) * z), :]
     out, cols = [], np.nonzero(band.any(0))[0]
     if not len(cols):
         return out
@@ -582,7 +582,7 @@ def stray_marks(page):
     for g0, g1 in groups:
         if g1 - g0 > 14 * z or above[:, max(0, g0 - 2 * z): g1 + 2 * z].any():
             continue  # جزء من سطر حقيقي
-        out.append(pymupdf.Rect(g0 / z - 2, BOT - 6, g1 / z + 2, y1))
+        out.append(pymupdf.Rect(g0 / z - 2, BOT - 10, g1 / z + 2, y1))
     return out
 
 

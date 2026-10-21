@@ -138,9 +138,16 @@ def md_html(lines, lessons):
         elif ln.startswith("### "):
             small, big, rest, pages = split_head(ln[4:])
             label = (small + ": " + big) if small else big
-            out.append(f'<div class="sec"><span class="exn">{inline(label)}</span>'
-                       + (f' <span class="ext">{inline(rest)}</span>' if rest else "")
-                       + (f' <span class="pgref">{inline(pages)}</span>' if pages else "") + "</div>")
+            ref = f'<span class="pgref">{inline(pages)}</span>' if pages else ""
+            if ref:  # رقم الصفحة ما ينزل لحاله في سطر: يمسك في آخر كلمة قبله
+                tail = rest or label
+                a_, _, w_ = tail.rpartition(" ")
+                tail = (inline(a_) + " " if a_ else "") + f'<span style="white-space:nowrap">{inline(w_)} {ref}</span>'
+                rest, label = (tail, inline(label)) if rest else ("", tail)
+            else:
+                label, rest = inline(label), inline(rest) if rest else ""
+            out.append(f'<div class="sec"><span class="exn">{label}</span>'
+                       + (f' <span class="ext">{rest}</span>' if rest else "") + "</div>")
         elif ln.startswith("|"):
             rows = []
             while i < len(lines) and lines[i].startswith("|"):
@@ -149,7 +156,8 @@ def md_html(lines, lessons):
                     rows.append(cells)
                 i += 1
             head, body = rows[0], rows[1:]
-            t = (f'<table class="t{" brk" if len(body) > 6 else ""}"><tr>'
+            heavy = len(body) > 6 or sum(len(c) for r in body for c in r) > 650  # جدول طويل أو خلاياه نصوص طويلة
+            t = (f'<table class="t{" brk" if heavy else ""}"><tr>'
                  + "".join(f"<th>{inline(c)}</th>" for c in head) + "</tr>")
             # خانة أولى فاضية = نفس الجملة اللي فوقها (كلمتين من جملة وحدة) ← تندمج معها بدل ما تبان فاضية
             span = [1] * len(body)
@@ -159,13 +167,18 @@ def md_html(lines, lessons):
                     while j > 0 and body[j] and not body[j][0]:
                         j -= 1
                     span[j] += 1
+            g, par = 0, []  # الصفوف المدموجة تاخذ نفس لون صفها الأول (التلوين المتناوب حسب المجموعة)
+            for k, r in enumerate(body):
+                if not (r and not r[0] and k > 0):
+                    g += 1
+                par.append(g % 2)
             for k, r in enumerate(body):
                 cells = [f'<td class="r">{inline(c)}</td>' for c in r]
                 if r and not r[0] and k > 0:
                     cells = cells[1:]
                 elif span[k] > 1:
                     cells[0] = f'<td class="r" rowspan="{span[k]}">{inline(r[0])}</td>'
-                t += "<tr>" + "".join(cells) + "</tr>"
+                t += (f'<tr class="z{par[k]}">' if any(s > 1 for s in span) else "<tr>") + "".join(cells) + "</tr>"
             out.append(t + "</table>")
             continue
         elif re.match(r"^\d+\.\s", s):
@@ -189,7 +202,9 @@ def keep_groups(out):
     بند وحيد أول الصفحة، سؤال انفصل عن حله):
     - القائمة: أول بندين مع بعض وآخر بندين مع بعض (والقصيرة كلها مع بعض).
     - السؤال المرقّم، أو أي سطر ينتهي بـ«:»، يمسك في اللي بعده (إلا الجدول — له رأس يتكرر)."""
-    isbl = lambda h: h.startswith(('<div class="bl">', '<div class="item">'))  # بنود القائمة والأسئلة المرقّمة المتتالية
+    # بنود القائمة والأسئلة المرقّمة المتتالية، والأسطر المرقّمة «أ- ب- ج-» و«١- ٢-»
+    isbl = lambda h: h.startswith(('<div class="bl">', '<div class="item">')) or \
+        re.match(r'<p class="ln">(?:[أبجدهو]|[١-٩][٠-٩]?)-\s', h) is not None
     pieces, k = [], 0
     while k < len(out):
         if isbl(out[k]):
@@ -210,15 +225,19 @@ def keep_groups(out):
     text = lambda h: re.sub(r"<[^>]+>", "", h).strip()
     is_tab = lambda h: h.startswith("<table")
     is_q = lambda h: h.startswith(('<div class="item">', '<div class="mcq">'))
+    is_long = lambda h: is_tab(h) and 'class="t brk"' in h[:40]
+    multi = lambda h: len(re.findall(r'<(?:p class="ln"|div class="bl"|div class="item")', h)) > 1
 
     def attach(last, nxt):
         """هل «nxt» لازم يكون في نفس الصفحة مع «last»؟"""
         if not nxt or is_tab(last):
             return False
-        if text(nxt).startswith(("الحل", "نموذج حل", "نموذج الحل")):  # السؤال وحله
-            return True
+        if text(nxt).startswith(("الحل", "نموذج حل", "نموذج الحل")):  # السؤال وحله (مو قائمة مطالب كاملة مع نموذج طويل)
+            return not multi(last)
         if is_tab(nxt):  # النص/السؤال وجدول حله القصير (الطويل ينقسم تحته ورأسه يتكرر)
-            return nxt.count("<tr>") <= 7 and not is_q(last) or last.startswith('<div class="item">')
+            return not is_long(nxt) and (not is_q(last) or last.startswith('<div class="item">'))
+        if last.startswith('<div class="passage">') and (isbl(nxt) or is_q(nxt)):  # النص وأول أسئلته
+            return True
         if nxt.startswith('<div class="passage">') and last.startswith(('<p class="ln">', '<div class="bl">')):  # المطلوب والنص اللي بعده
             return True
         if text(last).endswith(":") and not is_q(last):  # سطر ينتهي بـ«:» وكلامه بعده
@@ -230,7 +249,7 @@ def keep_groups(out):
     while k < len(pieces):
         group, last = [pieces[k][0]], pieces[k][0]
         while k + 1 < len(pieces) and attach(last, pieces[k + 1][0]):
-            if is_tab(pieces[k + 1][0]) and pieces[k + 1][0].count("<tr>") > 7:
+            if is_long(pieces[k + 1][0]):
                 break
             k += 1
             group.append(pieces[k][0])
@@ -239,7 +258,7 @@ def keep_groups(out):
         html_ = "".join(group)
         if len(group) > 1 or html_.count('<div class="bl">') + html_.count('<div class="item">') > 1:
             html_ = f'<div class="keep">{html_}</div>'
-        if is_tab(nxt) and nxt.count("<tr>") > 7 and not is_tab(last):  # جدول طويل: يبدأ تحت سؤاله مباشرة
+        if is_long(nxt) and not is_tab(last):  # جدول طويل: يبدأ تحت سؤاله مباشرة
             # data-tp: سؤال/نص قبل جدول طويل — لو بقى آخر الصفحة والجدول بدأ في الجاية، ينزل معه (head_break)
             html_ = re.sub(r"^<(\w+) ", r'<\1 data-tp="1" style="break-after:avoid" ', html_, count=1)
         res.append(html_)
@@ -250,7 +269,7 @@ def keep_groups(out):
 SOL_CSS = """
 .soltitle{text-align:center;font-weight:700;font-size:22pt;color:#89543d;margin:0 0 6pt;line-height:1.45}
 .soltitle small{display:block;font-size:12pt;color:#ad7c95;font-weight:600}
-.unit{display:flex;align-items:center;gap:10pt;background:#603b28;color:#fff7ee;border-radius:24pt;padding:6pt 18pt 7pt;
+.unit{position:relative;display:flex;align-items:center;gap:10pt;background:#603b28;color:#fff7ee;border-radius:24pt;padding:6pt 18pt 7pt;
   font-weight:700;font-size:15pt;margin:30pt 0 6pt;break-after:avoid}
 body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .unit small{background:#fff7ee;color:#603b28;border-radius:14pt;padding:0 10pt;font-size:11pt}
@@ -286,6 +305,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .note{font-size:10.6pt}
 table.t td{font-size:11pt}
 table.t.brk{break-inside:auto !important}
+table.t tr.z1 td{background:#fdf8f3} table.t tr.z0 td{background:#f6ece4}
 """
 
 
@@ -300,7 +320,7 @@ def content_html(units, which, promo):
         lines = units[k]["apps"] + units[k]["acts"]
         if not any(l.strip() for l in lines):
             continue
-        parts.append(f'<div class="unit"><small>{name}</small>{html.escape(title)}</div>')
+        parts.append(f'<div class="unit"><span class="mk">zzUzz</span><small>{name}</small>{html.escape(title)}</div>')
         parts.append(md_html(lines, lessons))
     if promo:
         parts.append(closing_html())
@@ -484,7 +504,7 @@ def marker_pages(pdf):
 
 def scrub_markers(pdf):
     for pg in pdf:
-        hits = pg.search_for("zzL")
+        hits = pg.search_for("zzL") + pg.search_for("zzU")
         if hits:
             for r in hits:
                 pg.add_redact_annot(r + (-2, -2, 30, 2), fill=False)
@@ -553,7 +573,7 @@ def main():
         br.close()
 
     # الصفحات اللي تبدأ (من أعلاها) بموضوع/درس جديد
-    starts = {pno for pno, pg in enumerate(content) for r in pg.search_for("zzL") if r.y0 < bm.TOP + 90}
+    starts = {pno for pno, pg in enumerate(content) for r in pg.search_for("zzL") + pg.search_for("zzU") if r.y0 < bm.TOP + 90}
     scrub_markers(content)
     base = base_page()
     footp = pymupdf.open(tmp / "f.pdf")
