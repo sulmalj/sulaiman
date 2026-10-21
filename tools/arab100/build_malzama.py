@@ -153,6 +153,8 @@ table.t tr:last-child > :first-child {{ border-bottom-right-radius:9pt; }}
 table.t tr:last-child > :last-child {{ border-bottom-left-radius:9pt; }}
 table.t tr:first-child > td {{ border-top:1pt solid #d9c2b1 !important; }}
 table.t td.no {{ width:20pt; }}
+/* جداول الأخطاء الشائعة: عمودا الجملة أعرض شوي عشان ما تنزل كلمة وحدة لسطر (المراجعة النهائية) */
+table.t.err td:nth-child(2), table.t.err td:nth-child(3) {{ width:29%; }}
 /* خانة أمثلة فيها جمل: كل جملة كاملة في سطر لحالها (ما تنكسر نصين وتختلط باللي بعدها) */
 table.t td.sents {{ width:34%; }}
 table.t td.sents > span {{ display:block; white-space:nowrap; padding:2pt 0; }}
@@ -289,7 +291,7 @@ TIGHTEN_JS = """() => {
     for (const k of [0.985, 0.97]) for (const ws of [0, -0.6]) steps.push([ws, k]);
     // (المراجعة النهائية) آخر حل: الصندوق/الفقرة يمتد شوي لجهة نهاية السطر (يسار) — مو للخلايا
     const ml0 = getComputedStyle(el).marginLeft;
-    if (getComputedStyle(el).display !== 'table-cell' && !el.closest('td')) for (const ml of [-4, -8]) steps.push([-0.6, 0.97, ml]);
+    if (getComputedStyle(el).display !== 'table-cell' && !el.closest('td')) for (const ml of [-4, -8, -12]) steps.push([-0.6, 0.97, ml]);
     let ok = false;
     for (const [ws, k, ml] of steps) {
       el.style.wordSpacing = ws + 'pt';
@@ -297,7 +299,13 @@ TIGHTEN_JS = """() => {
       if (ml !== undefined) el.style.marginLeft = `calc(${ml0} + ${ml}pt)`;
       if (lineInfo(el).length < n0) { ok = true; break; }
     }
-    if (!ok) { el.style.wordSpacing = ''; el.style.fontSize = ''; el.style.marginLeft = ''; }
+    if (!ok) {
+      el.style.wordSpacing = ''; el.style.fontSize = ''; el.style.marginLeft = '';
+      // ما قدرنا نرجّع الكلمة لسطرها: نخلي المتصفح يوازن آخر الأسطر (كلمتين في آخر سطر بدل وحدة) بدون سطر زيادة
+      el.style.textWrap = 'pretty';
+      const r2 = lineInfo(el), l2 = r2[r2.length - 1];
+      if (r2.length > n0 || (l2.right - l2.left) <= (last.right - last.left) + 1) el.style.textWrap = '';
+    }
     else window.__fixed = (window.__fixed || 0) + 1;
   }
   return window.__fixed || 0;
@@ -750,7 +758,15 @@ def solutions_html():
 def intro_link_rect(intro_pdf):
     pg = pymupdf.open(intro_pdf)[0]
     r = pg.search_for("هنا")
-    return r[0] if r else pymupdf.Rect(0, 0, 0, 0)
+    if not r:
+        return pymupdf.Rect(0, 0, 0, 0)
+    # الرابط على «(طريقة الدخول هنا)» كاملة: «هنا» + الكلمتين اللي قبلها في السطر نفسه (يمينها)
+    h = r[0]
+    line = sorted((w for w in pg.get_text("words") if abs(w[1] - h.y0) < 4 and w[0] >= h.x1 - 1), key=lambda w: w[0])
+    rect = pymupdf.Rect(h)
+    for w in line[:2]:
+        rect |= pymupdf.Rect(w[:4])
+    return rect + (-2, 0, 2, 0)
 
 
 def main():
