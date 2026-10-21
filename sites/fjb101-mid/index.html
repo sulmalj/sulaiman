@@ -11,9 +11,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;600;700&display=swap">
 <style>
 :root{
-  --bg:#F5F6FB; --surface:#FFFFFF; --sunk:#E9ECF6; --ink:#151A33; --muted:#5A6180; --line:#D8DCEC;
-  --accent:#3240A8; --accent-ink:#FFFFFF; --accent-soft:#E2E5F8;
-  --gold:#D2522C; --gold-soft:#FDEBE4; --gold-ink:#4A1A0B;
+  --bg:#F4F6FA; --surface:#FFFFFF; --sunk:#E9EEF5; --ink:#14233A; --muted:#55657A; --line:#D6DEE9;
+  --accent:#204B7D; --accent-ink:#FFFFFF; --accent-soft:#E3EBF5;
+  --gold:#A65A82; --gold-soft:#F7ECF2; --gold-ink:#4A1E36;
   --good:#138A4E; --good-soft:#DFF5E8; --bad:#C8372D; --bad-soft:#FCE6E3; --tg:#1F7FBF; --tg-soft:#E2F0FA; --tg-ink:#0B3A5C;
   --f-display:"Readex Pro","IBM Plex Sans Arabic",Tahoma,sans-serif;
   --f-body:"IBM Plex Sans Arabic",Tahoma,"Segoe UI",sans-serif;
@@ -39,7 +39,7 @@ a{color:inherit}
 
 /* home */
 .hero{padding:28px 0 8px}
-.free-banner{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 70%,#1B2266));color:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 10px 30px -14px color-mix(in srgb,var(--accent) 70%,transparent)}
+.free-banner{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 70%,#10294A));color:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 10px 30px -14px color-mix(in srgb,var(--accent) 70%,transparent)}
 .free-banner .ic{font-size:34px;line-height:1;flex:none}
 .free-banner h2{margin:0;font-family:var(--f-display);font-size:clamp(19px,4.6vw,26px);line-height:1.35}
 .free-banner p{margin:2px 0 0;font-weight:600;opacity:.92}
@@ -75,8 +75,7 @@ a{color:inherit}
 .btn[disabled]{opacity:.5;cursor:not-allowed}
 .btn-sm{padding:7px 12px;font-size:14px;border-radius:10px}
 
-.duo{display:grid;gap:12px;grid-template-columns:1fr 1fr}
-@media (max-width:640px){.duo{grid-template-columns:1fr}}
+.duo{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
 .duo h3{margin:0 0 4px;font-family:var(--f-display);font-size:18px}
 .duo p{margin:0 0 12px;color:var(--muted);font-size:14.5px}
 .warn{background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 35%,transparent);border-radius:12px;padding:10px 12px;font-size:14px;font-weight:600;margin:0 0 12px;line-height:1.6}
@@ -157,6 +156,11 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 .dots button{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font-weight:600;font-size:13px;padding:0}
 .dots button.ans{background:var(--accent-soft);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
 .dots button.cur{outline:2px solid var(--accent);outline-offset:1px}
+.dots button.flag{box-shadow:inset 0 -3px 0 var(--gold)}
+.mark{background:none;border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:2px 10px;font-size:12.5px;font-weight:600;white-space:nowrap}
+.mark:hover{border-color:var(--gold);color:var(--gold)}
+.mark.on{background:var(--gold-soft);border-color:color-mix(in srgb,var(--gold) 45%,transparent);color:var(--gold-ink)}
+.duo .meta{margin:0 0 12px;color:var(--muted);font-size:14px}
 
 /* report */
 .score{text-align:center;padding:26px 18px}
@@ -217,6 +221,7 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
         <div><div class="big" id="pAns">0</div><div class="lbl">سؤال جاوبته</div><div class="bar"><i id="pBar" style="width:0"></i></div></div>
         <div><div class="big" id="pAcc">—</div><div class="lbl">نسبة إجاباتك الصحيحة</div></div>
         <div><div class="big" id="pWrong">0</div><div class="lbl">سؤال في «راجع أخطاءك»</div></div>
+        <div><div class="big" id="pLater">0</div><div class="lbl">سؤال في «ارجع لها لاحقًا»</div></div>
       </div>
     </div>
 
@@ -238,9 +243,15 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
         <button class="btn btn-pri" id="startExam" type="button">ابدأ الاختبار ⏱</button>
       </div>
       <div class="card">
+        <h3>🔖 ارجع لها لاحقًا</h3>
+        <p>الأسئلة اللي حفظتها بزر «ارجع له لاحقًا»، واللي تخطيتها في الجلسات بدون ما تجاوب. أول ما تجاوبها هنا تطلع من القائمة.</p>
+        <p class="meta" id="laterMeta"></p>
+        <button class="btn btn-sec" id="startLater" type="button">ابدأ</button>
+      </div>
+      <div class="card">
         <h3>راجع أخطاءك</h3>
         <p>كل سؤال غلطت فيه (في الجلسات أو الاختبار) ينحفظ هنا. جاوبه صح ويطلع من القائمة.</p>
-        <p class="meta" id="revMeta" style="margin:0 0 12px;color:var(--muted);font-size:14px"></p>
+        <p class="meta" id="revMeta"></p>
         <button class="btn btn-sec" id="startRev" type="button">ابدأ المراجعة</button>
       </div>
     </div>
@@ -336,9 +347,14 @@ const repBtn = q => `<a class="rep" href="${TELEGRAM_URL}" target="_blank" rel="
 
 /* ── الحفظ في المتصفح ── */
 const KEY = 'fjb101-mid-v1';
-let LS = { ans: {}, wrong: {}, pos: {} };
+let LS = { ans: {}, wrong: {}, pos: {}, later: {} };
 try { const v = JSON.parse(localStorage.getItem(KEY) || 'null'); if (v && typeof v === 'object') LS = Object.assign(LS, v); } catch (e) {}
+if (!LS.later || typeof LS.later !== 'object') LS.later = {};
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(LS)); } catch (e) {} };
+/* «ارجع لها لاحقًا»: m = حفظها الطالب بالزر، s = تخطاها بدون إجابة */
+const laterIds = () => QS.filter(q => LS.later[q.id]).map(q => q.id);
+const markBtn = q => `<button class="mark ${LS.later[q.id] === 'm' ? 'on' : ''}" type="button" data-mark="${q.id}">${LS.later[q.id] === 'm' ? '🔖 محفوظ للرجوع' : '🔖 ارجع له لاحقًا'}</button>`;
+function toggleMark(id) { if (LS.later[id] === 'm') delete LS.later[id]; else LS.later[id] = 'm'; save(); }
 
 /* ترتيب الخيارات لكل سؤال (ثابت خلال الزيارة) */
 const ORDER = {};
@@ -351,6 +367,7 @@ const rightText = q => q.t === 'tf' ? (q.a ? 'صح' : 'خطأ') : q.o[0];
 
 function record(q, ok) {
   LS.ans[q.id] = ok ? 1 : 0;
+  if (LS.later[q.id] === 's') delete LS.later[q.id];
   if (ok) delete LS.wrong[q.id]; else LS.wrong[q.id] = 1;
   save();
 }
@@ -375,6 +392,11 @@ function renderHome() {
   $('pWrong').textContent = wrong;
   $('revMeta').textContent = wrong ? 'عندك ' + wrong + ' سؤال تحتاج مراجعة.' : 'ما عندك أخطاء حالياً 👌';
   $('startRev').disabled = !wrong;
+  const later = laterIds();
+  const lm = later.filter(id => LS.later[id] === 'm').length;
+  $('pLater').textContent = later.length;
+  $('laterMeta').textContent = later.length ? `عندك ${later.length} سؤال (${lm} حفظتها، ${later.length - lm} تخطيتها).` : 'ما فيه أسئلة محفوظة حالياً.';
+  $('startLater').disabled = !later.length;
 
   $('sessions').innerHTML = Object.keys(SESSIONS).map(Number).filter(s => bySession(s).length).map(s => {
     const list = bySession(s);
@@ -418,17 +440,23 @@ function startReview() {
   P = { kind: 'review', ids, i: 0, picked: {} };
   show('quiz'); renderQ();
 }
+function startLater() {
+  const ids = laterIds();
+  if (!ids.length) return;
+  P = { kind: 'later', ids, i: 0, picked: {} };
+  show('quiz'); renderQ();
+}
 function renderQ() {
   const q = BY_ID[P.ids[P.i]];
   const opts = options(q);
   const picked = P.picked[q.id];
-  const isRev = P.kind === 'review';
+  const isRev = P.kind !== 'session';
   $('qTitle').innerHTML = isRev
-    ? `راجع أخطاءك<small>${SESSIONS[q.s].n} · سؤال ${P.i + 1} من ${P.ids.length}</small>`
+    ? `${P.kind === 'later' ? 'ارجع لها لاحقًا' : 'راجع أخطاءك'}<small>${SESSIONS[q.s].n} · سؤال ${P.i + 1} من ${P.ids.length}</small>`
     : `${SESSIONS[q.s].n} <small>(${SESSIONS[q.s].t}) · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
   $('qBar').style.width = ((P.i + 1) / P.ids.length * 100) + '%';
 
-  let html = `<div class="qmeta"><span class="k">${q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد'}</span><span class="qcode">سؤال رقم ${q.code}</span>${repBtn(q)}</div>
+  let html = `<div class="qmeta"><span class="k">${q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد'}</span><span class="qcode">سؤال رقم ${q.code}</span>${markBtn(q)}${repBtn(q)}</div>
     <p class="qtext">${esc(q.q)}</p>
     <div class="opts ${q.t === 'tf' ? 'tf' : ''}">` +
     opts.map((o, i) => {
@@ -444,19 +472,23 @@ function renderQ() {
   $('qCard').innerHTML = html;
   $('qPrev').disabled = P.i === 0;
   const last = P.i === P.ids.length - 1;
-  $('qNext').textContent = last ? (isRev ? 'خلّصت المراجعة ✓' : 'خلّصت الجلسة ✓') : 'التالي ←';
+  $('qNext').textContent = last ? (isRev ? 'خلّصت ✓' : 'خلّصت الجلسة ✓') : (picked === undefined && P.kind === 'session' ? 'تخطَّ ←' : 'التالي ←');
 }
 $('qCard').addEventListener('click', e => {
+  const m = e.target.closest('[data-mark]'); if (m) { toggleMark(m.dataset.mark); renderQ(); return; }
   const b = e.target.closest('.opt'); if (!b || b.disabled) return;
   const q = BY_ID[P.ids[P.i]];
   const i = +b.dataset.i;
   P.picked[q.id] = i;
   record(q, options(q)[i].ok);
+  if (P.kind === 'later') { delete LS.later[q.id]; save(); }
   renderQ();
 });
 function moveQ(d) {
   const n = P.i + d;
   if (n < 0) return;
+  const cur = P.ids[P.i];
+  if (d > 0 && P.kind === 'session' && !(cur in P.picked) && !(cur in LS.ans) && !LS.later[cur]) { LS.later[cur] = 's'; save(); }
   if (n >= P.ids.length) { if (P.kind === 'session') LS.pos[P.s] = 0, save(); goHome(); return; }
   P.i = n;
   if (P.kind === 'session') { LS.pos[P.s] = P.i; save(); }
@@ -487,8 +519,8 @@ function renderE() {
   const q = BY_ID[E.ids[E.i]], opts = options(q), picked = E.picked[q.id];
   const answered = Object.keys(E.picked).length;
   $('eCount').textContent = `سؤال ${E.i + 1} من ${E.ids.length} · جاوبت ${answered}`;
-  $('eDots').innerHTML = E.ids.map((id, k) => `<button type="button" data-k="${k}" class="${id in E.picked ? 'ans' : ''} ${k === E.i ? 'cur' : ''}" aria-label="سؤال ${k + 1}">${k + 1}</button>`).join('');
-  $('eCard').innerHTML = `<div class="qmeta"><span class="k">${q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد'}</span><span>${SESSIONS[q.s].n}</span><span class="qcode">سؤال رقم ${q.code}</span>${repBtn(q)}</div>
+  $('eDots').innerHTML = E.ids.map((id, k) => `<button type="button" data-k="${k}" class="${id in E.picked ? 'ans' : ''} ${k === E.i ? 'cur' : ''} ${LS.later[id] === 'm' ? 'flag' : ''}" aria-label="سؤال ${k + 1}">${k + 1}</button>`).join('');
+  $('eCard').innerHTML = `<div class="qmeta"><span class="k">${q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد'}</span><span>${SESSIONS[q.s].n}</span><span class="qcode">سؤال رقم ${q.code}</span>${markBtn(q)}${repBtn(q)}</div>
     <p class="qtext">${esc(q.q)}</p>
     <div class="opts ${q.t === 'tf' ? 'tf' : ''}">` +
     opts.map((o, i) => `<button class="opt ${picked === i ? 'sel' : ''}" type="button" data-i="${i}">${q.t === 'tf' ? '' : `<span class="lt">${LETTERS[i]}</span>`}<span>${esc(o.txt)}</span></button>`).join('') +
@@ -497,6 +529,7 @@ function renderE() {
   $('eNext').textContent = E.i === E.ids.length - 1 ? 'إنهاء وتصحيح ✓' : 'التالي ←';
 }
 $('eCard').addEventListener('click', e => {
+  const m = e.target.closest('[data-mark]'); if (m) { toggleMark(m.dataset.mark); renderE(); return; }
   const b = e.target.closest('.opt'); if (!b) return;
   E.picked[E.ids[E.i]] = +b.dataset.i; renderE();
 });
@@ -552,7 +585,8 @@ function confirmBox(title, text, yes, fn) {
 $('homeBtn').onclick = goHome;
 $('startExam').onclick = startExam;
 $('startRev').onclick = startReview;
-$('resetAll').onclick = () => confirmBox('تمسح كل تقدمك؟', 'بتنمسح إجاباتك وقائمة أخطائك من هذا الجهاز.', 'إيه، امسح', () => { LS = { ans: {}, wrong: {}, pos: {} }; save(); renderHome(); });
+$('startLater').onclick = startLater;
+$('resetAll').onclick = () => confirmBox('تمسح كل تقدمك؟', 'بتنمسح إجاباتك وقائمة أخطائك والأسئلة المحفوظة من هذا الجهاز.', 'إيه، امسح', () => { LS = { ans: {}, wrong: {}, pos: {}, later: {} }; save(); renderHome(); });
 $('storeLink').href = STORE_URL;
 document.querySelectorAll('.mini-ad').forEach(a => a.href = STORE_URL);
 document.querySelectorAll('.tg-link').forEach(a => a.href = TELEGRAM_URL);
