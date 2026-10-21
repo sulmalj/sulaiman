@@ -287,13 +287,17 @@ TIGHTEN_JS = """() => {
     for (const ws of [-0.3, -0.6]) steps.push([ws, 1]);
     // (مراجعة) التصغير كان ينلاحظ (لين 90%) — الحين بحد أقصى 3% بس
     for (const k of [0.985, 0.97]) for (const ws of [0, -0.6]) steps.push([ws, k]);
+    // (المراجعة النهائية) آخر حل: الصندوق/الفقرة يمتد شوي لجهة نهاية السطر (يسار) — مو للخلايا
+    const ml0 = getComputedStyle(el).marginLeft;
+    if (getComputedStyle(el).display !== 'table-cell' && !el.closest('td')) for (const ml of [-4, -8]) steps.push([-0.6, 0.97, ml]);
     let ok = false;
-    for (const [ws, k] of steps) {
+    for (const [ws, k, ml] of steps) {
       el.style.wordSpacing = ws + 'pt';
       el.style.fontSize = (fs0 * k) + 'px';
+      if (ml !== undefined) el.style.marginLeft = `calc(${ml0} + ${ml}pt)`;
       if (lineInfo(el).length < n0) { ok = true; break; }
     }
-    if (!ok) { el.style.wordSpacing = ''; el.style.fontSize = ''; }
+    if (!ok) { el.style.wordSpacing = ''; el.style.fontSize = ''; el.style.marginLeft = ''; }
     else window.__fixed = (window.__fixed || 0) + 1;
   }
   return window.__fixed || 0;
