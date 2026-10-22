@@ -91,9 +91,9 @@ window.LISTENING = [
 "q": "Why does he want to arrive one day earlier?",
 "o": [
 "His business meeting has been moved to Monday morning.",
-"His flight was cancelled.",
-"He wants to spend a day at the beach.",
-"The hotel asked him to change the date."
+"His flight was cancelled, so he has to travel on Sunday.",
+"He wants to spend a free day at the beach before work.",
+"The hotel asked him to change the date of his booking."
 ]
 },
 {
@@ -115,12 +115,12 @@ window.LISTENING = [
 ]
 },
 {
-"q": "Why doesn't he want the standard room for the first night?",
+"q": "Why doesn't he accept the receptionist's first offer?",
 "o": [
 "He doesn't want to change rooms in the middle of his stay.",
-"It doesn't include breakfast.",
-"It is on the ground floor.",
-"It is more expensive than the suite."
+"He doesn't want to pay more than ninety-five dollars a night.",
+"He thinks the standard room is too small for his work.",
+"The standard room is on the ground floor, next to reception."
 ]
 },
 {
@@ -154,16 +154,16 @@ window.LISTENING = [
 "q": "When should he call the hotel?",
 "o": [
 "If he thinks he'll arrive after one in the morning",
-"If he wants breakfast in his room",
-"If he needs a taxi from the airport",
-"If his flight lands earlier than eleven at night"
+"If he wants breakfast to be ready in his room on Monday",
+"If he needs the hotel to send a taxi to the airport",
+"If he wants to pay for his room when he arrives"
 ]
 },
 {
 "q": "What happens if he cancels less than forty-eight hours before he arrives?",
 "o": [
 "He pays the price of the first night.",
-"He pays the price of all four nights.",
+"He pays the price of all his nights.",
 "He pays nothing.",
 "He pays half the price of one night."
 ]
@@ -443,9 +443,9 @@ window.LISTENING = [
 "q": "Why shouldn't he stop drinking coffee suddenly?",
 "o": [
 "The headaches might get worse for a few days.",
-"He might feel very hungry.",
-"He might not be able to sleep.",
-"His eyes might become dry."
+"He might feel very hungry for about a week.",
+"He might not be able to sleep for a few nights.",
+"He might need to take painkillers every day."
 ]
 },
 {
@@ -481,7 +481,7 @@ window.LISTENING = [
 ],
 [
 "Sara",
-"There are a few changes to the plan. First, we're not leaving on Friday evening any more. Ahmed has to work late on Friday, so we're leaving on Saturday morning instead. We'll meet at the train station at seven fifteen. The train leaves at seven forty, so please don't be late!"
+"There are a few changes to the plan. First, we're not leaving on Friday evening any more. Dana has to work late on Friday, so we're leaving on Saturday morning instead. We'll meet at the train station at seven fifteen. The train leaves at seven forty, so please don't be late!"
 ],
 [
 "Sara",
@@ -493,7 +493,7 @@ window.LISTENING = [
 ],
 [
 "Sara",
-"There will be five of us now. My cousin Nora is coming too, so that's you, me, Ahmed, Khalid and Nora."
+"There will be five of us now. My cousin Nora is coming too, so that's you, me, Dana, Huda and Nora."
 ],
 [
 "Sara",
@@ -517,7 +517,7 @@ window.LISTENING = [
 {
 "q": "Why did they change the day of the trip?",
 "o": [
-"Ahmed has to work late on Friday.",
+"Dana has to work late on Friday.",
 "The train on Friday is full.",
 "The weather is bad on Friday.",
 "Nora can't come on Friday."
@@ -582,7 +582,7 @@ window.LISTENING = [
 "o": [
 "Sara's cousin",
 "Sara's sister",
-"Ahmed's wife",
+"Dana's sister",
 "Emma's friend from work"
 ]
 },
@@ -700,10 +700,10 @@ window.LISTENING = [
 {
 "q": "What does Mona suggest as a compromise?",
 "o": [
-"A family dinner with a few of his old friends invited secretly",
+"A family dinner with a few old friends as a surprise",
 "A big surprise party with all his colleagues",
 "A quiet dinner with only their parents",
-"A trip to another city"
+"A weekend trip with the family to another city"
 ]
 },
 {
@@ -807,9 +807,9 @@ window.LISTENING = [
 "q": "Who is the speaker?",
 "o": [
 "The head of the Student Services Office",
-"A new student",
-"The head of the library",
-"A sports teacher"
+"A new student who is starting at the university",
+"The head of the library in Building A",
+"A sports teacher at the sports centre"
 ]
 },
 {
@@ -825,9 +825,9 @@ window.LISTENING = [
 "q": "What do students need to bring to get their ID card?",
 "o": [
 "A passport or national ID and one photo",
-"Two photos and ten dollars",
-"Their timetable and a photo",
-"A letter from their advisor"
+"Two photos and a letter from their advisor",
+"Their timetable and their library card",
+"A bank card and a copy of their timetable"
 ]
 },
 {
@@ -1002,12 +1002,12 @@ window.LISTENING = [
 ]
 },
 {
-"q": "How long would it take Majed to walk from the third flat to the university?",
+"q": "How much was the rent for the third flat?",
 "o": [
-"Ten minutes",
-"Forty minutes",
-"Five minutes",
-"Twenty minutes"
+"Six hundred and fifty dollars",
+"Five hundred dollars",
+"Seven hundred dollars",
+"Nine hundred dollars"
 ]
 },
 {
@@ -1020,25 +1020,25 @@ window.LISTENING = [
 ]
 },
 {
-"q": "How does Majed get from the house to the university?",
+"q": "How long does it take to get from the last place to the university?",
 "o": [
-"It takes forty minutes by bus.",
-"It takes ten minutes on foot.",
-"It takes twenty minutes by car.",
-"It takes forty minutes by bicycle."
+"Forty minutes by bus",
+"Ten minutes on foot",
+"Twenty minutes by car",
+"Forty minutes by train"
 ]
 },
 {
-"q": "What does Amal suggest?",
+"q": "What does Amal say Majed could buy?",
 "o": [
-"Sharing the house with a friend",
-"Buying a car",
-"Taking the flat in the city centre",
-"Living with his family"
+"A bicycle",
+"A car",
+"A motorbike",
+"A bus pass"
 ]
 },
 {
-"q": "How much would each person pay if Majed shares the house?",
+"q": "How much would each person pay if Majed and a friend shared the last place?",
 "o": [
 "Three hundred and fifty dollars",
 "Seven hundred dollars",
@@ -1256,12 +1256,12 @@ window.LISTENING = [
 ]
 },
 {
-"q": "What is the disadvantage of the first jacket?",
+"q": "What is good about the first jacket?",
 "o": [
-"It isn't waterproof.",
-"It is very heavy.",
-"It isn't very warm.",
-"It doesn't come in black."
+"It is very light and warm.",
+"It is completely waterproof.",
+"It is good in heavy rain.",
+"It is made for wet snow."
 ]
 },
 {
@@ -1910,9 +1910,9 @@ window.LISTENING = [
 "q": "Where will they meet?",
 "o": [
 "In a study room in the library",
-"In the classroom",
-"In a café",
-"At Huda's house"
+"In the classroom after their class",
+"In a café near the university",
+"At Huda's house near the campus"
 ]
 },
 {
@@ -1985,9 +1985,9 @@ window.LISTENING = [
 "q": "What is on the second floor?",
 "o": [
 "Books about history, art and languages",
-"Science and medicine books",
-"The silent study area",
-"The newspapers"
+"Books about science and medicine",
+"The silent study area for students",
+"The computers and the newspapers"
 ]
 },
 {
@@ -2132,9 +2132,9 @@ window.LISTENING = [
 "q": "Why is the woman especially worried about her bag?",
 "o": [
 "Her laptop with her work from the last month is in it.",
-"It was a present from her sister.",
-"It cost a lot of money.",
-"Her passport is in it."
+"It was an expensive present from her sister last year.",
+"Her passport and her train tickets for next week are in it.",
+"It cost her a lot of money when she bought it last month."
 ]
 },
 {
@@ -2159,9 +2159,9 @@ window.LISTENING = [
 "q": "What does her bag look like?",
 "o": [
 "It is dark blue with a long strap and a small white star.",
-"It is black with a red star.",
-"It is brown leather with a short strap.",
-"It is dark blue with her name on the front."
+"It is a black backpack with a short strap and a white star.",
+"It is brown leather with a short strap and her name on the front.",
+"It is light blue with a long strap and a small black star."
 ]
 },
 {
@@ -2213,9 +2213,9 @@ window.LISTENING = [
 "q": "What happens to bags after two weeks?",
 "o": [
 "They are sent to the main office in the city centre.",
-"They are given to charity.",
-"They are thrown away.",
-"They are returned to the train company."
+"They are given to a charity shop in the city.",
+"They are thrown away if nobody comes for them.",
+"They are returned to the train company's office."
 ]
 }
 ]
@@ -2342,9 +2342,9 @@ window.LISTENING = [
 "q": "What is the doctor's final advice?",
 "o": [
 "Start with one tip and add another one next week.",
-"Change everything at once.",
-"Go to the gym every day.",
-"Stop eating everything you love."
+"Try to change everything in your life at once.",
+"Go to the gym every day and run a marathon.",
+"Stop eating everything you love, starting this week."
 ]
 }
 ]
@@ -2440,9 +2440,9 @@ window.LISTENING = [
 "q": "What do the reviews say about the animated film?",
 "o": [
 "It is funny and teaches children about nature.",
-"It is too long for children.",
-"Some scenes are scary.",
-"It is boring for adults."
+"It is too long and too boring for children.",
+"It has a few scenes that are scary for children.",
+"It is boring for adults and too short for children."
 ]
 },
 {
@@ -2771,9 +2771,9 @@ window.LISTENING = [
 "q": "With the basic insurance, what would the customer pay after an accident?",
 "o": [
 "The first five hundred dollars of the repairs",
-"Nothing at all",
-"The full cost of the repairs",
-"Two hundred dollars"
+"Nothing at all, because insurance is included in the price",
+"The full cost of all the repairs to the car",
+"Two hundred dollars, which is taken from the deposit"
 ]
 },
 {
@@ -2798,9 +2798,9 @@ window.LISTENING = [
 "q": "Why can't his brother drive the car?",
 "o": [
 "He has had his licence for less than two years.",
-"He is under twenty-one.",
-"He doesn't have a credit card.",
-"Extra drivers are never allowed."
+"He is under twenty-one and too young to rent.",
+"He doesn't have a credit card to pay the charge.",
+"Extra drivers are never allowed on mountain roads."
 ]
 },
 {
@@ -2986,9 +2986,9 @@ window.LISTENING = [
 "q": "What will happen after he does the level test online?",
 "o": [
 "The school will call him tomorrow with the results.",
-"He will start classes tomorrow.",
-"He will get his results immediately.",
-"He will receive a certificate by email."
+"He will start the evening classes tomorrow night.",
+"He will get his results on the screen immediately.",
+"The school will email him a certificate next week."
 ]
 }
 ]
@@ -3097,9 +3097,9 @@ window.LISTENING = [
 "q": "What does the brain seem to do during deep sleep?",
 "o": [
 "It replays the day's experiences and decides which to keep.",
-"It deletes all new information.",
-"It rests completely and does nothing.",
-"It creates new emotional memories."
+"It deletes all the new information from that day.",
+"It rests completely and stops working until morning.",
+"It creates new emotional memories for the next day."
 ]
 },
 {
@@ -3179,9 +3179,9 @@ window.LISTENING = [
 "q": "What is the main topic of the discussion?",
 "o": [
 "Whether companies should move to a four-day working week",
-"How to find a better job",
-"Why people feel stressed at work",
-"How small companies can find new clients"
+"How companies can pay their workers higher salaries",
+"Why people feel more stressed at work than before",
+"How small design companies can find new clients"
 ]
 },
 {
@@ -3224,18 +3224,18 @@ window.LISTENING = [
 "q": "Why did Sara's company lose an important client?",
 "o": [
 "The client felt the company wasn't available enough.",
-"The designers made serious mistakes.",
-"The company's prices were too high.",
-"The client moved to another country."
+"The designers made serious mistakes in their work.",
+"The company's prices were too high for the client.",
+"The client moved its business to another country."
 ]
 },
 {
 "q": "What compromise did Sara's company find?",
 "o": [
 "Half the team takes Thursday off and the other half takes Sunday off.",
-"Everyone went back to working five days.",
-"Everyone works longer days from Sunday to Wednesday.",
-"The company hired new staff to work on Thursdays."
+"Everyone went back to working five days a week, from Sunday to Thursday.",
+"Everyone works longer days from Sunday to Wednesday and rests on Thursday.",
+"The company hired new staff to answer client emails on Thursdays."
 ]
 },
 {
@@ -3251,9 +3251,9 @@ window.LISTENING = [
 "q": "What is Dr. Nasser's overall opinion?",
 "o": [
 "It is a promising idea, but it is not for everyone.",
-"It should be introduced in all jobs.",
-"It is a bad idea for the economy.",
-"It only works in Britain."
+"It should be introduced in all jobs, including hospitals.",
+"It is a bad idea that will damage the economy.",
+"It only works in Britain, not in other countries."
 ]
 },
 {
@@ -3308,8 +3308,8 @@ window.LISTENING = [
 "q": "What is the speaker's main purpose?",
 "o": [
 "To explain the hidden costs of fast fashion and suggest some changes",
-"To advertise a new clothing shop",
-"To teach people how to design clothes",
+"To advertise a new clothing shop and its cheap summer collection",
+"To teach people how to design and make their own clothes",
 "To ask everyone to stop buying clothes completely"
 ]
 },
@@ -3317,9 +3317,9 @@ window.LISTENING = [
 "q": "What is fast fashion, according to the speaker?",
 "o": [
 "Producing large amounts of cheap, trendy clothing very quickly",
-"Expensive clothes made by famous designers",
-"Clothes made only from natural materials",
-"Clothes that are sold online only"
+"Producing small amounts of expensive clothing by famous designers",
+"Making clothes slowly and only from natural materials",
+"Selling used clothes cheaply through apps on the internet"
 ]
 },
 {
@@ -3362,9 +3362,9 @@ window.LISTENING = [
 "q": "What is the speaker's attitude towards buying new clothes?",
 "o": [
 "People don't need to stop, but they should buy more carefully.",
-"Everyone should stop buying new clothes immediately.",
-"Buying new clothes is never a problem.",
-"Only rich people should buy new clothes."
+"Everyone should stop buying new clothes immediately and completely.",
+"Buying new clothes is never a problem if they are cheap.",
+"Only rich people should buy new clothes from expensive shops."
 ]
 },
 {
@@ -3472,28 +3472,28 @@ window.LISTENING = [
 {
 "q": "Why were quick judgements useful for people in the past?",
 "o": [
-"They had to decide immediately whether a stranger was a friend or a threat.",
-"They had to find food before other groups found it.",
-"They were not allowed to speak to strangers at all.",
-"They lived in very large groups and met many people."
+"They had to decide quickly if a stranger was a friend or a threat.",
+"They had to find food quickly before other groups of people found it.",
+"They were not allowed to speak to strangers until they knew them well.",
+"They lived in very large groups and had to remember many new faces."
 ]
 },
 {
 "q": "What is the halo effect?",
 "o": [
 "Believing a person has other good qualities because we notice one",
-"Remembering only the bad things people do",
-"Judging people only by their voice",
-"Trusting people who agree with us"
+"Remembering only the bad things that a person has done to us",
+"Judging people mainly by their voice and the way they speak",
+"Trusting people more when they agree with our opinions"
 ]
 },
 {
 "q": "What does confirmation bias make us do?",
 "o": [
 "Look for information that supports our first impression",
-"Change our opinion very often",
-"Ask other people what they think",
-"Forget our first impression quickly"
+"Change our first opinion every time we get new information",
+"Ask other people what they think before we decide",
+"Forget our first impression after we get to know someone"
 ]
 },
 {
@@ -3509,18 +3509,18 @@ window.LISTENING = [
 "q": "According to research, which interviewers make fairer decisions?",
 "o": [
 "Those who ask every candidate the same planned questions",
-"Those who have a relaxed conversation",
-"Those who trust their feelings",
-"Those who finish the interview quickly"
+"Those who have a relaxed conversation with each candidate",
+"Those who trust their feelings about each candidate",
+"Those who finish every interview as quickly as possible"
 ]
 },
 {
 "q": "What is the speaker's main advice?",
 "o": [
 "Treat quick judgements as a first guess, not a final decision.",
-"Stop making quick judgements completely.",
-"Always trust your first impression.",
-"Avoid meeting new people."
+"Stop making quick judgements about people completely.",
+"Always trust your first impression because it is usually right.",
+"Ask your friends for their opinion before you judge someone."
 ]
 }
 ]
@@ -3595,9 +3595,9 @@ window.LISTENING = [
 "q": "What does the AI program do before Dr. Faris looks at a scan?",
 "o": [
 "It marks any areas that might be worrying.",
-"It writes the final report.",
-"It talks to the patient.",
-"It takes the X-ray."
+"It writes the final report for the doctor.",
+"It explains the results to the patient.",
+"It takes the X-ray and sends it to him."
 ]
 },
 {
@@ -3613,9 +3613,9 @@ window.LISTENING = [
 "q": "What does Dr. Faris say about the program's mistakes?",
 "o": [
 "It sometimes marks normal things, and occasionally misses something.",
-"It never makes mistakes, even with difficult scans.",
-"It makes more mistakes than doctors usually do.",
-"It only makes mistakes when the images are old."
+"It never makes mistakes, even with very small or difficult details.",
+"It only makes mistakes when the images are old or not very clear.",
+"It misses things often, so doctors don't trust its marks at all."
 ]
 },
 {
@@ -3649,27 +3649,27 @@ window.LISTENING = [
 "q": "What does Dr. Faris believe about AI and doctors' jobs?",
 "o": [
 "Doctors who use AI will gradually replace doctors who don't.",
-"AI will soon replace all doctors.",
-"AI will never be used in hospitals.",
-"Only young doctors will keep their jobs."
+"AI will soon replace all doctors who read medical images.",
+"AI will never be good enough to be used in hospitals.",
+"Only young doctors will keep their jobs in the future."
 ]
 },
 {
 "q": "Why must a program be tested on local patients?",
 "o": [
 "It may work less well for people it wasn't trained on.",
-"Local patients have more diseases.",
-"The program's company requires it.",
-"Local hospitals have better images."
+"Local patients usually have more serious diseases than others.",
+"The company that made the program requires it by law.",
+"Local hospitals take better and clearer images than others."
 ]
 },
 {
 "q": "What is his advice to medical students?",
 "o": [
 "Learn how these tools work, but keep thinking for yourself.",
-"Avoid using AI tools.",
+"Avoid using AI tools until they are completely safe.",
 "Study computer science instead of medicine.",
-"Trust the computer more than yourself."
+"Trust the computer more than your own opinion."
 ]
 }
 ]

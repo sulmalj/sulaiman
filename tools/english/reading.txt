@@ -63,12 +63,12 @@
 - Students and laughter
 - The main reasons of laughter
 !! الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر.
-?? What did the accounting professor do every five or ten minutes?
-* He told the students a joke.
-- He gave the students a short test.
-- He showed the students a funny video.
-- He let the students play games.
-!! الفقرة 3: «he told the students a joke every five or ten minutes».
+?? According to paragraph 1, students who laugh more ______.
+* complete their homework more quickly
+- take fewer tests at school
+- sleep better at night
+- talk more in class
+!! الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly».
 
 ## 2 | Working From Home
 1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, "It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day."
@@ -124,9 +124,9 @@
 !! الفقرة 1: Alex يقول «It's like the workday never ends… I answer emails and texts at all hours».
 ?? What does Alex do before he starts work?
 * He has some coffee and takes a short walk.
-- He drives to his office.
-- He answers emails in the park.
-- He goes to a meditation class.
+- He drives to his office in the city centre.
+- He reads the news on his phone in bed.
+- He goes to an online meditation class.
 !! الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park».
 ?? What is the main idea of the passage?
 * Working from home has advantages, but it also has problems.
@@ -155,7 +155,7 @@
 ?? The writer says that carefully planned solutions feel like ______ for employees.
 * more work
 - more time
-- more useful
+- more rest
 - more fun
 !! الفقرة 3: «Carefully planned solutions can feel like more work for employees».
 ?? The writer gives an example to show how ______.
@@ -189,7 +189,7 @@
 - the game rooms
 !! «thinking about the problems in their lives, and it's hard to stop thinking about them» ← them = المشاكل.
 ?? What happens when employees get sick often or quit?
-* Employers must use time and resources to find and train new employees.
+* Employers must find and train new employees.
 - Employers must build more game rooms.
 - Employees must take more meditation classes.
 - Employees must work longer hours.
@@ -208,9 +208,9 @@
 4. Finally, new students should remember that real friendships need time. It is common to feel disappointed when a friendship does not grow quickly, but this is not a reason to give up. A friendly smile, a little effort every day and some patience can turn a group of strangers into friends for life.
 ?? According to the writer, students who build friendships during their first year ______.
 * are less likely to leave their studies early
-- choose different universities
-- move to a new city
-- never feel lonely at all
+- are more likely to leave their studies early
+- usually choose to study at different universities
+- never feel lonely at any time during the year
 !! الفقرة 1: «students who build friendships during their first year usually feel happier, and they are also less likely to leave their studies early» ← احتمال إنهم يتركون الدراسة بدري أقل.
 ?? Why do conversations start naturally in a student club?
 * Members already share a hobby.
@@ -225,22 +225,22 @@
 - photography
 !! الفقرة 2 ذكرت «clubs for sports, volunteering, photography» — نادي الفن (art) ما انذكر.
 ?? What does the underlined word "gradually" in paragraph 2 mean?
-* slowly, over a period of time
+* slowly
 - suddenly
 - rarely
 - without any effort
-!! «they gradually get to know each other» = يتعرفون على بعض شوي شوي مع الوقت ← slowly, over a period of time.
+!! «they gradually get to know each other» = يتعرفون على بعض شوي شوي مع الوقت ← slowly.
 ?? What does the underlined word "encourage" in paragraph 3 mean?
 * advise and support
 - stop and prevent
 - force and order
 - blame and punish
-!! «Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise and give confidence to.
+!! «Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise and support.
 ?? What small step does the writer suggest for shy students?
 * Arriving early and saying hello to the person next to them
-- Joining many clubs in the first week
-- Waiting for a big chance to talk
-- Asking the teacher a question in every class
+- Joining as many clubs as possible in the first week
+- Waiting for a big chance to talk to a large group
+- Asking the teacher a difficult question in every class
 !! الفقرة 3: «They can arrive at class a few minutes early and say hello to the person sitting next to them».
 ?? What does the underlined word "he" in paragraph 3 refer to?
 * the student next to Faisal
@@ -262,9 +262,9 @@
 !! الفقرة 4: «this is not a reason to give up» و«some patience can turn a group of strangers into friends for life» ← يصبرون وما يستسلمون.
 ?? What is the best title for the passage?
 * Making friends in your first year at university
-- Why shy students leave university
-- The best clubs at university
-- How to study for exams in groups
+- Why shy students leave university in their first year
+- The best sports and photography clubs at university
+- How to study for difficult exams in groups
 !! القطعة كلها عن طرق تكوين صداقات في أول سنة بالجامعة (الأندية، مجموعات المذاكرة، خطوات صغيرة للخجولين، الصبر).
 
 ## 5 | Collecting Things
@@ -272,12 +272,12 @@
 2. People collect things for different reasons. For some, the hobby is a way to relax. Searching for a new item and organising a collection can help them forget the pressures of work or study. For others, collecting is a way to learn. A person who collects coins, for example, often reads about the history of the countries that produced them. Collecting can also be social. Collectors meet at clubs, markets and online groups, where they _exchange_ items and share advice with people who have the same interest.
 3. Some collections become surprisingly valuable. A stamp that cost very little when it was printed may be worth a great deal today if only a few copies still exist. However, most experts say that people should not start collecting only to make money. The value of an item can rise or fall, and it is rarely possible to predict which objects will become popular in the future. In their opinion, the real reward of collecting is the enjoyment it brings.
 4. Although collecting has many benefits, it can also cause problems. Some collectors spend more money than they can afford, while others keep so many objects that their homes become full and untidy. To avoid this, experts suggest setting a monthly budget and deciding on a clear theme, such as coins from one region or books by one writer. This keeps the collection _manageable_ and the hobby enjoyable.
-?? Why is collecting such a popular hobby, according to the writer?
-* Almost anyone can start it.
-- It always makes people rich.
-- It needs special skills.
-- It is a very new hobby.
-!! الفقرة 1: «What makes this hobby so popular is that almost anyone can start it».
+?? According to paragraph 1, people who want to collect things ______.
+* can begin at any age with only a few items
+- must begin when they are very young
+- need expensive equipment to begin
+- must first learn some special skills
+!! الفقرة 1: «You do not need special skills or expensive equipment, and you can begin at any age with only a few items».
 ?? What does the underlined word "it" in paragraph 1 refer to?
 * the hobby of collecting
 - expensive equipment
@@ -291,7 +291,7 @@
 - old cameras
 !! الفقرة 1 ذكرت «stamps, coins, old cameras, football shirts, and even pens» — الألعاب (toys) ما انذكرت.
 ?? According to the writer, a person who collects coins often ______.
-* reads about the history of the countries that produced them
+* reads about the history of those countries
 - travels to many different countries
 - makes a lot of money from them
 - prints new coins at home
@@ -301,7 +301,7 @@
 - throw away
 - repair
 - hide
-!! «they exchange items» = يتبادلون القطع، يعطي قطعة وياخذ بدالها ← give one thing and get another thing back.
+!! «they exchange items» = يتبادلون القطع، يعطي قطعة وياخذ بدالها ← swap (give one thing and get another back).
 ?? The writer gives the example of a stamp to show that ______.
 * some collections can become very valuable
 - collectors should only buy new stamps
@@ -381,11 +381,11 @@
 - Their teachers do not allow it.
 !! الفقرة 4: «Many learners, however, are afraid of making mistakes, so they avoid speaking».
 ?? What does the underlined word "obstacles" in paragraph 4 mean?
-* problems that stop progress
+* difficulties
 - useful methods
 - small mistakes
 - good chances
-!! الخوف من الغلط وعدم الكلام «one of the biggest obstacles to progress» = من أكبر العوائق اللي توقف التقدم ← problems that stop progress.
+!! الخوف من الغلط وعدم الكلام «one of the biggest obstacles to progress» = من أكبر العوائق اللي توقف التقدم ← difficulties.
 ?? The writer uses the words "Nobody learns to swim without getting wet" to show that ______.
 * you cannot learn a language without making mistakes
 - swimming is a good hobby for language learners
@@ -430,9 +430,9 @@
 !! الفقرة 2: «students save money on transport and do not need to rent a room near the campus».
 ?? Why do some shy students prefer online classes?
 * They feel more comfortable asking questions in a chat box.
-- They do not need to ask any questions.
-- Their classes are smaller.
-- They can watch lectures with their families.
+- They do not need to ask any questions in online classes.
+- Their online classes are much smaller than classes on campus.
+- They can watch the recorded lectures together with their families.
 !! الفقرة 2: «Some shy students say they feel more comfortable asking questions in a chat box than raising their hand».
 ?? Which disadvantage of online learning does the writer NOT mention?
 * the high cost of computers
@@ -460,9 +460,9 @@
 !! «This allows students to enjoy the advantages of both methods and choose what suits them best» ← them = الطلاب.
 ?? What is the main idea of the passage?
 * Online classes and classrooms both have advantages and disadvantages.
-- Online classes will soon replace all classrooms.
-- Classrooms are always better than online classes.
-- Shy students should only study online.
+- Online classes will soon replace all traditional classrooms at university.
+- Traditional classrooms are always better than online classes for every student.
+- Shy students should only take online classes and never go to campus.
 !! الكاتب ذكر مميزات الأونلاين (الفقرة 2) وعيوبه (الفقرة 3)، وقال «it depends on the student».
 
 ## 8 | Fast Food and Our Health
@@ -477,11 +477,11 @@
 - are more expensive than restaurants
 !! الفقرة 1: «delivery apps now bring burgers, pizza and fried chicken to our doors in minutes».
 ?? What does the underlined word "affect" in paragraph 1 mean?
-* have an effect on
+* change
 - protect
 - check
 - forget
-!! «can seriously affect our health» = يأثّر على صحتنا تأثير كبير ← have an effect on.
+!! «can seriously affect our health» = يأثّر على صحتنا تأثير كبير ← change (affect).
 ?? According to the writer, salt, sugar and fat ______.
 * make the food taste good
 - give the body the vitamins it needs
@@ -496,9 +496,9 @@
 !! الفقرة 2 ذكرت «become overweight and to develop heart disease or diabetes» — ضعف النظر ما انذكر.
 ?? Why does fast food fill the stomach without giving the body what it needs?
 * It contains few vitamins and little fibre.
-- It is eaten too quickly.
-- It contains too much water.
-- It is cooked at home.
+- It is usually eaten too quickly by busy students.
+- It contains too much water and too little salt.
+- It is usually cooked at home with fresh food.
 !! الفقرة 2: «these meals usually contain few vitamins and little fibre, so they fill the stomach without giving the body what it really needs».
 ?? How many reasons does the writer give in paragraph 3 for why people eat so much fast food?
 * three
@@ -526,9 +526,9 @@
 !! الفقرة 4: «Home-made food is usually healthier, and it is often cheaper too».
 ?? What is the best title for the passage?
 * Fast food: why we eat it and how to eat less
-- The history of fast food
-- Delivery apps in Saudi Arabia
-- How to cook a healthy meal
+- The long history of fast food restaurants
+- Delivery apps and how they work in Saudi Arabia
+- How to cook a healthy meal at home
 !! القطعة عن أضرار الوجبات السريعة، وليش ناكلها كثير، وكيف نقلل منها.
 
 ## 9 | Organic Food
@@ -580,18 +580,18 @@
 !! المزارع تنتج محصول أقل «so the supply is lower» = الكمية المتوفرة أقل ← the amount of something that is available.
 ?? What does the underlined word "they" in paragraph 4 refer to?
 * fruit and vegetables
-- experts
-- families
-- opinions
+- the experts' opinions
+- families on a budget
+- ordinary products
 !! «eating plenty of fruit and vegetables matters more than whether they are organic or not» ← they = الفواكه والخضار.
 ?? What do some experts recommend for families with a limited budget?
 * Buying organic versions only of the foods they eat most often
-- Buying only organic food, whatever the price
-- Growing all their own vegetables at home
-- Eating fewer vegetables to save money
+- Buying organic versions of all foods, whatever the price
+- Growing all of their own vegetables at home
+- Eating fewer vegetables so that they can save money
 !! الفقرة 4: «buy organic versions only of the foods you eat most often, and choose ordinary products for everything else».
 ?? What is the main idea of the passage?
-* Organic food has some benefits, but it is expensive, so people should choose carefully.
+* Organic food has benefits, but it is expensive.
 - Organic food is always much healthier than ordinary food.
 - Organic farming is bad for the environment.
 - Supermarkets should stop selling ordinary food.
@@ -616,9 +616,9 @@
 !! الفقرة 2: «go to the mosque or to large open areas for the Eid prayer».
 ?? Why do many families gather at the grandparents' house?
 * Showing respect to older family members is an important value.
-- The grandparents' house is the biggest one.
-- The grandparents' house is close to the mosque.
-- The grandparents cook kabsa for everyone.
+- The grandparents' house is the biggest one in the family.
+- The grandparents' house is always the closest one to the mosque.
+- The grandparents ask everyone to come and help with the cooking.
 !! الفقرة 2: «because showing respect to older members of the family is an important value».
 ?? What does the underlined word "them" in paragraph 2 refer to?
 * children
@@ -638,7 +638,7 @@
 - cook
 - keep for yourself
 !! «distribute the meat among relatives, neighbours and people in need» = يوزّعون اللحم على الأقارب والجيران والمحتاجين ← give out to different people.
-?? According to the writer, sharing the meat reminds everyone that Eid is ______.
+?? According to paragraph 3, the custom of sacrificing a sheep reminds everyone that Eid is ______.
 * also about sharing with others
 - only about personal happiness
 - a time for travelling abroad
@@ -715,7 +715,7 @@
 - dangerous
 - expensive
 - slow and late
-!! «Buses and trains are usually cheap and reliable» = تقدر تعتمد عليها وتوصلك في وقتها ← that you can trust and depend on.
+!! «Buses and trains are usually cheap and reliable» = تقدر تعتمد عليها وتوصلك في وقتها ← trustworthy (you can trust and depend on them).
 ?? What does the underlined word "they" in paragraph 4 refer to?
 * buses and trains
 - visitors
@@ -724,9 +724,9 @@
 !! «Buses and trains are usually cheap and reliable, and they allow visitors to see how local people really live» ← they = الباصات والقطارات.
 ?? What is the main idea of the passage?
 * With good planning, people can travel without spending a lot of money.
-- Travelling is always too expensive for students.
-- Hotels are better than apartments.
-- Public transport is the best way to see a city.
+- Travelling is always too expensive for students, even with good planning.
+- Hotels are always better and cheaper than apartments for people on a budget.
+- Taking taxis is the best way to save money when visiting a new city.
 !! الفقرة 1: «it is possible to visit interesting places without spending a fortune. The secret is careful planning»، وباقي القطعة نصائح للتوفير.
 
 ## 12 | Spending Time in Nature
@@ -748,7 +748,7 @@
 !! الفقرة 2: «people who walked in a park said they felt calmer and more positive». والمسافة كانت نفسها «the same distance».
 ?? According to the writer, sunlight helps the body ______.
 * produce vitamin D
-- sleep better at night
+- stay awake longer
 - lose weight
 - move faster
 !! الفقرة 2: «sunlight helps the body produce vitamin D, which is important for strong bones».
@@ -778,9 +778,9 @@
 !! «these children become more confident and more curious about the world around them» ← them = الأطفال.
 ?? According to the study in England, people who spent at least two hours a week in green places ______.
 * were more likely to say that their health was good
-- never got sick
-- lived near the mountains or the sea
-- spent less time in front of screens
+- never got sick during the whole year
+- usually lived near the mountains or the sea
+- spent much less time in front of their screens
 !! الفقرة 4: «people who spent at least two hours a week in green places were more likely to say that their health was good».
 ?? What does the underlined word "divided" in paragraph 4 mean?
 * split into parts
@@ -892,9 +892,9 @@
 !! الجملة تقارن: «Some people are very tidy, while others leave their clothes and dirty dishes everywhere» ← tidy عكس الفوضوي = مرتّب ونظيف.
 ?? Which problem does the writer NOT mention in paragraph 2?
 * paying the internet bill
-- cleaning
-- noise
-- sharing food
+- cleaning the kitchen
+- noise late at night
+- eating the other's food
 !! الفقرة 2 ذكرت التنظيف «cleaning» والإزعاج «Noise» والأكل «Sharing food»، وفاتورة الإنترنت ما انذكرت.
 ?? The writer gives the example of one roommate sleeping early while the other watches films late at night to show ______.
 * how noise can become a problem
@@ -904,9 +904,9 @@
 !! الفقرة 2: «Noise is another common complaint. One roommate may want to sleep early… while the other likes to watch films late at night» ← المثال عن مشكلة الإزعاج.
 ?? According to paragraph 3, a cleaning schedule means that ______.
 * each person is responsible for certain jobs on certain days
-- one roommate does all the cleaning
-- the kitchen is cleaned only during exams
-- a cleaner comes to the apartment every week
+- one roommate does all the cleaning in the apartment every day
+- the kitchen is cleaned only during the exam period
+- both roommates clean the whole apartment together once a month
 !! الفقرة 3: «so that each person is responsible for certain jobs on certain days».
 ?? What does the underlined word "it" in paragraph 3 refer to?
 * the money in the shared box
@@ -916,9 +916,9 @@
 !! «put a fixed amount of money into a shared box every month and use it to buy things» ← it = الفلوس اللي في الصندوق المشترك.
 ?? What do experts suggest when something bothers you?
 * speaking to your roommate calmly and directly
-- complaining to other friends
-- waiting until the end of the year
-- moving to another apartment
+- complaining about your roommate to other friends
+- waiting until the end of the year to say something
+- moving to another apartment as soon as possible
 !! الفقرة 4: «experts suggest speaking to your roommate calmly and directly instead of complaining to other friends».
 ?? What is the main idea of the passage?
 * Living with a roommate has benefits, but it needs clear rules and good communication.
@@ -940,9 +940,9 @@
 !! الفقرة 1 ذكرت «drink too many sugary drinks» و«stay up late scrolling on their phones» و«leave their work until the last minute»، والأكل السريع بالليل ما انذكر.
 ?? According to the writer, breaking a habit is hard because habits ______.
 * happen automatically, without much thinking
-- are good for our health
-- take only a few days to form
-- are always about food
+- are good for our health in many ways
+- take only a few days to form and break
+- are always about food and sugary drinks
 !! الفقرة 1: «because habits happen automatically, without much thinking».
 ?? Why do many people fail to break a bad habit?
 * They try to change everything at once.
@@ -957,7 +957,7 @@
 - the first two or three days
 !! الجملة قبلها: «some people who drink five cans of soft drinks a day decide to stop completely… After two or three days, they usually feel tired» ← they = هالناس.
 ?? What does the underlined word "gradually" in paragraph 2 mean?
-* slowly, little by little
+* little by little
 - suddenly
 - completely
 - happily
@@ -1006,9 +1006,9 @@
 !! الفقرة 1 ذكرت «read the news, pay for shopping, find our way around the city»، والتصوير ما انذكر.
 ?? What does the underlined word "dependent" in paragraph 1 mean?
 * needing something so much that it is hard to live without it
-- not interested in something and rarely using it
-- afraid of something and trying to avoid it
-- good at using something in many different ways
+- not interested in something and rarely using it during the day
+- afraid of something and always trying to stay away from it
+- good at using something in many different and useful ways
 !! «so dependent on their phones that their behaviour is similar to an addiction» ← dependent = معتمد عليه لدرجة ما يقدر يستغني عنه.
 ?? According to paragraph 2, looking at a screen late at night can ______.
 * make it harder to fall asleep
@@ -1066,9 +1066,9 @@
 4. The good news is that most people can improve their sleep with a few simple changes. Experts suggest going to bed and getting up at the same time every day, even at weekends, so that the body gets used to a regular pattern. It is also _wise_ to avoid coffee, tea and energy drinks in the late afternoon and evening. Finally, screens should be turned off about an hour before bed, and the bedroom should be dark, quiet and comfortable.
 ?? Why do many students sleep less?
 * They think it gives them more hours to get things done.
-- Their doctors advise them to sleep less.
-- They feel irritable at night.
-- They drink too much coffee.
+- Their doctors advise them to sleep less during exams.
+- They feel more relaxed when they sleep only a few hours.
+- They drink too much coffee and energy drinks at night.
 !! الفقرة 1: «They think that sleeping less gives them more hours to get things done».
 ?? According to the writer, how much sleep do teenagers need?
 * around eight to ten hours
@@ -1102,9 +1102,9 @@
 !! الفقرة 3: «tend to catch colds more often, because their bodies are less able to fight illness».
 ?? According to some studies, tired people ______.
 * feel hungrier and choose more sugary food
-- lose weight very quickly
-- eat less than other people
-- sleep better at weekends
+- lose weight quickly because they move more
+- eat less and choose healthier food
+- sleep much better at weekends
 !! الفقرة 3: «Some studies also suggest that tired people feel hungrier and choose more sugary food».
 ?? What does the underlined word "it" in paragraph 3 refer to?
 * a healthy life
@@ -1131,11 +1131,11 @@
 3. You do not need expensive equipment or a gym membership to be active. Walking, running and cycling are free, and you can do them almost anywhere. In hot weather, some people in Saudi Arabia walk inside shopping malls, while others use the walking paths in their neighbourhood after sunset. At home, simple exercises like push-ups, squats and skipping with a rope can be done in a small space. Even household jobs such as cleaning and gardening count as physical activity.
 4. The World Health Organization recommends that adults do at least 150 minutes of moderate activity every week. That may sound like a lot, but it is only about 30 minutes a day, five days a week. Beginners can start with ten minutes a day and increase the time slowly. Experts also advise choosing an activity you really enjoy, whether it is football, swimming or walking with a friend. If you enjoy it, you are much more likely to continue for months instead of giving up after a week.
 ?? What does the underlined word "logical" in paragraph 1 mean?
-* reasonable; making sense
+* reasonable
 - funny
 - dangerous
 - impossible
-!! «It seems logical that exercise would make a tired person even more tired» = يبان منطقي ومعقول ← reasonable; making sense.
+!! «It seems logical that exercise would make a tired person even more tired» = يبان منطقي ومعقول ← reasonable.
 ?? What does research suggest?
 * Regular physical activity can give people more energy.
 - Exercise always makes tired people more tired.
@@ -1144,9 +1144,9 @@
 !! الفقرة 1: «research suggests that the opposite is often true: regular physical activity can actually give people more energy».
 ?? According to the writer, when your heart and lungs become stronger, ______.
 * your body can carry oxygen to your muscles more efficiently
-- the brain stops releasing chemicals
-- you feel more tired after a walk
-- you need a gym membership
+- the brain stops releasing the chemicals that improve mood
+- you feel more tired after walking or climbing stairs
+- you need a gym membership and expensive equipment
 !! الفقرة 2: «your heart and lungs become stronger, so your body can carry oxygen to your muscles more efficiently».
 ?? What does the underlined word "require" in paragraph 2 mean?
 * need
@@ -1216,9 +1216,9 @@
 !! «whether healthy people really need these supplements» ← يقصد حبوب الفيتامين اللي تكلّم عنها في الفقرة 1 = مكمّلات تنأخذ زيادة على الأكل.
 ?? According to many doctors, a balanced diet ______.
 * usually provides all the vitamins the body needs
-- never gives enough vitamin C
-- should be replaced by vitamin pills
-- is only important for older people
+- never gives the body enough vitamin C or D
+- should be replaced by vitamin pills every morning
+- is only important for older people and pregnant women
 !! الفقرة 2: «a balanced diet… usually provides all the vitamins the body needs».
 ?? Which food does the writer NOT mention as a source of vitamins?
 * bananas
@@ -1233,7 +1233,7 @@
 - folic acid in large amounts
 !! الفقرة 2: «Food also contains fibre and other useful things that a pill cannot offer».
 ?? Why may people who spend most of the day indoors not get enough vitamin D?
-* Our skin makes vitamin D when it is exposed to sunlight.
+* Their skin is not exposed to much sunlight.
 - They eat too many eggs.
 - They take too many vitamin pills.
 - Vitamin D is found only in meat.
@@ -1252,9 +1252,9 @@
 !! الفقرة 4: «Some vitamins, such as A and D, are stored in the body, so taking large amounts over a long time can be harmful».
 ?? What is the main idea of the passage?
 * Most healthy people can get their vitamins from food, and pills are needed only in some cases.
-- Everyone should take vitamin pills every day, even if they feel healthy.
-- Vitamin pills are always dangerous, so nobody should ever take them.
-- Fresh food is too expensive, so most people need pills instead.
+- Everyone should take vitamin pills every day, even healthy people who already eat a balanced diet.
+- Vitamin pills are always dangerous, so nobody should ever take them, even when a doctor suggests them.
+- Fresh food is too expensive for most families, so most people need to take vitamin pills instead.
 !! الفقرة 2: الأكل المتوازن «usually provides all the vitamins the body needs»، والفقرة 3: «some groups of people may benefit from extra vitamins».
 
 ## 20 | Loneliness in Older People
@@ -1276,9 +1276,9 @@
 !! الفقرة 1: «Retirement can also take away the daily contact that people used to have with their colleagues».
 ?? Some researchers have compared the effect of loneliness on health to ______.
 * smoking around fifteen cigarettes a day
-- eating fast food every day
-- not sleeping for a week
-- working too many hours
+- eating fast food around fifteen times a week
+- not sleeping at all for a whole week
+- working too many hours every single day
 !! الفقرة 2: «compared its effect on health to that of smoking around fifteen cigarettes a day».
 ?? What does the underlined word "them" in paragraph 2 refer to?
 * doctors
@@ -1288,9 +1288,9 @@
 !! «Doctors in some countries report that lonely patients visit them more often» ← المرضى يزورون الدكاترة ← them = doctors.
 ?? According to paragraph 2, why do some lonely patients make more visits?
 * The visit gives them a chance to talk to someone.
-- They are always seriously ill.
-- They are asked to come every week.
-- They want to stop smoking.
+- They are always seriously ill and need medicine.
+- Their doctors ask them to come every week.
+- They want help to stop smoking cigarettes.
 !! الفقرة 2: «not always because they are ill, but because the visit gives them a chance to talk to someone».
 ?? What does the underlined word "connected" in paragraph 3 mean?
 * in contact with other people
@@ -1300,22 +1300,22 @@
 !! «keep older people connected» وبعدها أمثلة يقابلون فيها ناس ← connected = متواصلين مع غيرهم.
 ?? In a home-share programme, the student ______.
 * pays a very low rent and spends time with the older person
-- pays no rent and never helps in the house
-- lives in a university dormitory
-- organises weekly reading groups
+- pays no rent at all and never helps with jobs in the house
+- lives in a university dormitory near the older person's house
+- organises weekly reading groups at the neighbourhood centre
 !! الفقرة 3: «a student lives with an older person for a very low rent and, in return, spends time with them and helps with jobs around the house».
 ?? Why does the writer suggest showing an older relative how to make video calls?
 * So that they can see family members who live far away
-- So that they can work from home
-- So that they can watch films
-- So that they can call their doctors
+- So that they can work from home after they retire
+- So that they can watch films with their grandchildren
+- So that they can call their doctors more often
 !! الفقرة 4: «show an older relative how to make video calls so that they can see family members who live far away».
 ?? What do the underlined words "check on" in paragraph 4 mean?
 * visit or call to see if someone is fine
-- pay for someone's shopping
-- forget about someone completely
-- complain about someone to others
-!! «we will also hope that someone remembers to check on us» = يسأل عنّا ويتطمّن علينا ← visit or call to see if someone is all right.
+- pay for someone's shopping every week
+- forget about someone completely and never call
+- complain about someone to friends and neighbours
+!! «we will also hope that someone remembers to check on us» = يسأل عنّا ويتطمّن علينا ← visit or call to see if someone is fine.
 ?? What is the best title for the passage?
 * Loneliness in old age and how we can help
 - How students can save money on rent
@@ -1355,22 +1355,22 @@
 !! abandon = يتخلّى عن الشي ويتركه. «persuading people to abandon their cars» = إقناع الناس يتركون سياراتهم ← give up.
 ?? According to paragraph 3, the "first and last mile" is ______.
 * the trip between the station and home or the final destination
-- the distance between two metro stations
-- the first and last train of the day
-- the road between Riyadh and other cities
+- the distance between two metro stations on the same line
+- the first and last train that runs every day of the week
+- the road between Riyadh and the other cities in the Kingdom
 !! الفقرة 3 شرحتها بين قوسين: «the trip from home to the station and from the station to the final destination».
 ?? Why does the writer say that "new roads tend to attract even more traffic"?
 * To explain why building wider roads is not a long-term solution
-- To show that the metro costs too much money
-- To prove that few passengers use the metro
-- To show that Riyadh has stopped growing
+- To show that the metro costs too much money to build and run
+- To prove that very few passengers have used the metro so far
+- To show that Riyadh has stopped growing and needs no new roads
 !! الفقرة 4: «cannot simply keep building wider roads, because new roads tend to attract even more traffic» ← الكاتب يوضح إن توسيع الطرق مو حل على المدى البعيد، عشان كذا المترو مشروع طويل المدى.
 ?? What does the underlined word "cluster" in paragraph 5 mean?
-* gather closely together
+* gather together
 - close down
 - move away
 - grow smaller
-!! cluster = تتجمّع قريب من بعض. «encouraging homes, shops and workplaces to cluster around stations» = البيوت والمحلات تتجمّع حول المحطات ← gather closely together.
+!! cluster = تتجمّع قريب من بعض. «encouraging homes, shops and workplaces to cluster around stations» = البيوت والمحلات تتجمّع حول المحطات ← gather together.
 ?? Which statement would the writer most likely agree with?
 * Changing people's habits is harder than building the metro.
 - The metro's technology is its biggest weakness.
@@ -1379,15 +1379,15 @@
 !! الفقرة 3: «building a metro is one thing; persuading people to abandon their cars is another» ← يعني إقناع الناس يتركون سياراتهم أصعب من بناء المترو. والخيارات الباقية غلط: الكاتب يقول النظام «impressive by any standard»، و«cannot simply keep building wider roads»، والمشي في حر الصيف «unpleasant».
 ?? How would you describe the writer's attitude toward the metro?
 * hopeful, but aware of its challenges
-- completely negative
-- sure that it will fail
-- not interested
+- completely negative about its future
+- sure that it will fail very soon
+- not interested in the project at all
 !! الكاتب يمدحه: «The system is impressive by any standard» ويقول «it could gradually reshape how the city grows»، بس يذكر الصعوبات: «If not, it may remain an impressive system that many residents admire but rarely use» ← متفائل بس واقعي، ومو متأكد إنه بيفشل.
 ?? What is the main idea of the passage?
 * The metro is impressive, but its success depends on whether people change their habits.
-- The metro has already solved Riyadh's traffic problems.
-- Riyadh should stop spending money on public transport.
-- Driverless trains are more comfortable than buses.
+- The metro has already solved all of Riyadh's traffic and air problems.
+- Riyadh should stop spending money on public transport and focus on cars.
+- Driverless trains are more comfortable and cheaper to use than buses.
 !! القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour».
 
 ## 22 | Does Volunteering Always Help?
@@ -1421,7 +1421,7 @@
 - the people in hospitals
 !! «untrained volunteers who appear for a single afternoon can create extra work: someone must train them» ← اللي يحتاجون تدريب هم المتطوعين غير المدرّبين.
 ?? The writer gives the example of short visits to care homes or hospitals to show that ______.
-* some volunteering helps the volunteers more than the people it is meant to help
+* some visits help the volunteers more than the people there
 - care homes and hospitals do not accept volunteers
 - volunteers should visit hospitals more often
 - short visits are the best kind of volunteering
@@ -1471,21 +1471,21 @@
 !! «For many parents and teachers, they are a waste of time» ← اللي يعتبرونها مضيعة للوقت هي الألعاب، فـ they = video games.
 ?? According to paragraph 1, many parents and teachers blame video games for ______.
 * poor grades, lack of sleep and aggressive behaviour
-- poor eyesight, headaches and back pain
-- high costs and arguments in the family
-- weak attention and poor planning skills
+- poor eyesight, headaches and serious back pain
+- high costs, arguments and problems in the family
+- weak attention, poor planning and lack of patience
 !! الفقرة 1: «responsible for poor grades, lack of sleep and aggressive behaviour».
 ?? What does the underlined word "short-lived" in paragraph 2 mean?
 * lasting only a short time
-- very strong
-- easy to notice
-- dangerous
+- very strong and serious
+- easy to notice at once
+- dangerous for a long time
 !! short-lived = ما يدوم إلا وقت قصير. والجملة تقول الشعور بالعدوانية يكون «immediately after playing» ويكون صغير ومؤقت.
 ?? What have larger studies that follow young people over several years generally found?
 * There is no strong link between gaming and serious violence.
-- Violent games make most young people violent.
-- Players feel more aggressive for many years.
-- Family life is not important.
+- Violent games make most young people violent in later life.
+- Players feel much more aggressive for many years after playing.
+- Family life is much less important than the games people play.
 !! الفقرة 2: «Larger studies that follow young people over several years have generally failed to find a strong link between gaming and serious violence».
 ?? Which possible benefit of games does the writer NOT mention?
 * learning a foreign language
@@ -1495,15 +1495,15 @@
 !! الفقرة 3 ذكرت: «improve visual attention» و«require planning and patience» و«communicate and cooperate under pressure»، وتعلّم لغة أجنبية ما انذكر.
 ?? What can we understand from paragraph 3?
 * A skill learned in a game may not help much with schoolwork.
-- Action games make students better at exams.
-- Strategy games do not need any planning.
-- Team games stop players from communicating.
+- Becoming skilled at action games makes students better at exams.
+- Puzzle and strategy games do not require any planning or patience.
+- Online team games stop players from communicating with each other.
 !! الفقرة 3: «these benefits are often limited to tasks similar to the game itself. Becoming skilled at a fast-moving game does not necessarily make someone better at studying for an exam» ← المهارة من اللعبة ما تفيد بالضرورة في الدراسة.
 ?? According to paragraph 4, for most players the real risk is that games ______.
 * can take time away from sleep, exercise and conversation
-- cause a serious medical condition
-- make them violent
-- are too difficult to play
+- cause a serious medical condition that they cannot control
+- make them violent and aggressive towards other people
+- are too difficult and too expensive to play
 !! الفقرة 4: «For most people, the real risk is simply that games… can push out other activities such as sleep, exercise and face-to-face conversation». أما «gaming disorder» فالكاتب يقول «affects only a small minority of players».
 ?? What does the underlined word "condemnation" in paragraph 5 mean?
 * strong criticism
@@ -1532,9 +1532,9 @@
 5. For countries like Saudi Arabia, which imports a large share of its food and has very limited water, the technology remains interesting, and a number of indoor farms have already been built in the region. Its long-term success, however, is likely to depend on cheaper renewable energy, particularly solar power. If energy costs fall, vertical farming could become a sensible part of a sustainable food system. Until then, it is perhaps best seen not as a revolution in agriculture but as a promising experiment.
 ?? According to paragraph 1, plants in a vertical farm often grow ______.
 * with their roots in water rich in nutrients
-- in open fields under the sun
-- in large areas of soil
-- without any light
+- in open fields under the summer sun
+- in large areas of soil rich in nutrients
+- without any kind of light or water at all
 !! الفقرة 1: «the plants often grow with their roots in water rich in nutrients rather than in soil».
 ?? What do the underlined words "regardless of" in paragraph 2 mean?
 * without being affected by
@@ -1544,9 +1544,9 @@
 !! regardless of = بغض النظر عن. «Crops can be grown all year round, regardless of the weather» = يزرعون طول السنة والجو ما يأثّر ← without being affected by.
 ?? Why are few or no pesticides needed in a vertical farm?
 * Insects can hardly get into a closed building.
-- The plants grow without water.
-- The LED lights kill insects.
-- The farms are far from cities.
+- The plants grow without any water at all.
+- The LED lights are strong enough to kill insects.
+- The farms are built far away from cities.
 !! الفقرة 2: «since insects can hardly get into a closed building, few or no pesticides are needed» ← الحشرات ما تقدر تدخل المبنى المقفل تقريباً.
 ?? Which advantage of vertical farming does the writer NOT mention?
 * cheaper vegetables for shoppers
@@ -1574,9 +1574,9 @@
 !! supplement = يكمّل ويضيف. الجملة قبلها تقول «unlikely to replace traditional farms» ← ما تحل محلها، بس تضيف لها منتجات طازجة ← add to.
 ?? What can we understand from paragraph 4?
 * Vertical farms are unlikely to provide most of the world's wheat and rice.
-- Lettuce needs large areas and long growing periods.
-- Wheat grows faster than herbs.
-- Traditional farms will soon disappear.
+- Lettuce and herbs need large areas and long growing periods.
+- Wheat and rice grow faster indoors than lettuce and herbs do.
+- Traditional farms will soon disappear because of vertical farms.
 !! الفقرة 4: القمح والرز «need large areas and long growing periods, and producing them indoors is currently far too costly» ← فالمزارع العمودية ما راح توفر أغلب القمح والرز.
 ?? Which statement would the writer most likely agree with?
 * Cheaper renewable energy could make vertical farming more successful.
@@ -1605,9 +1605,9 @@
 !! الفقرة 1: «a low grade can feel like a judgement on a person's intelligence» ← الطالب يحس الدرجة حكم على ذكائه.
 ?? According to studies of the "pretesting effect", trying to answer a question before being told the answer ______.
 * often helps people remember the correct information better
-- always leads people to the correct answer
-- makes people forget the correct information
-- is only useful when the answer is correct
+- always leads people to the correct answer the first time
+- makes people forget the correct information more quickly
+- is only useful when the person's first answer is correct
 !! الفقرة 2: «trying to answer a question, even unsuccessfully, before being told the answer often helps people remember the correct information better later».
 ?? The writer gives the example of two students and a practice test to show that ______.
 * wrong answers show a student what he needs to study
@@ -1617,9 +1617,9 @@
 !! الفقرة 2: اللي جاوب كل شي صح «learns relatively little about what to study next»، واللي غلط في كم سؤال «has a clear map of the gaps in his knowledge» ← الأخطاء توضح له وش يذاكر.
 ?? According to the idea of a "growth mindset", abilities ______.
 * can be developed through effort and good strategies
-- are fixed from birth
-- cannot be changed after school
-- are the same in every student
+- are fixed from birth and cannot be developed
+- cannot be changed after students leave school
+- are the same in every student, whatever they do
 !! الفقرة 3: «the belief that abilities can be developed through effort and good strategies, rather than being fixed from birth».
 ?? What does the underlined word "enormously" in paragraph 3 mean?
 * very greatly
@@ -1647,9 +1647,9 @@
 !! setback = انتكاسة أو عقبة تأخّرك. الكاتب يقول الغلط مو عقبة «but a piece of feedback» ← يعني setback عكس «a piece of feedback»، فخيار (a useful piece of information) غلط.
 ?? Which statement would the writer most likely agree with?
 * Asking why an answer was wrong is more useful than just noticing it.
-- Students should try to avoid all mistakes.
-- Effort alone always leads to better grades.
-- Correct answers always teach more than wrong ones.
+- Students should try to avoid all mistakes in their homework and tests.
+- Effort alone always leads to better grades, whatever method students use.
+- Correct answers always teach students more than wrong answers do.
 !! الفقرة 5: «Simply noticing that an answer was wrong is less useful than asking why it was wrong and what should be done differently next time».
 ?? What is the writer's main purpose in the passage?
 * To explain how students can learn from their mistakes

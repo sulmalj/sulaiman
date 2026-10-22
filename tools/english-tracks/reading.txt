@@ -63,12 +63,12 @@
 - Students and laughter
 - The main reasons of laughter
 !! الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر.
-?? What did the accounting professor do every five or ten minutes?
-* He told the students a joke.
-- He gave the students a short test.
-- He showed the students a funny video.
-- He let the students play games.
-!! الفقرة 3: «he told the students a joke every five or ten minutes».
+?? According to paragraph 1, students who laugh more ______.
+* complete their homework more quickly
+- take fewer tests at school
+- sleep better at night
+- talk more in class
+!! الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly».
 
 ## 2 | Working From Home
 1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, "It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day."
@@ -124,9 +124,9 @@
 !! الفقرة 1: Alex يقول «It's like the workday never ends… I answer emails and texts at all hours».
 ?? What does Alex do before he starts work?
 * He has some coffee and takes a short walk.
-- He drives to his office.
-- He answers emails in the park.
-- He goes to a meditation class.
+- He drives to his office in the city centre.
+- He reads the news on his phone in bed.
+- He goes to an online meditation class.
 !! الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park».
 ?? What is the main idea of the passage?
 * Working from home has advantages, but it also has problems.
@@ -155,7 +155,7 @@
 ?? The writer says that carefully planned solutions feel like ______ for employees.
 * more work
 - more time
-- more useful
+- more rest
 - more fun
 !! الفقرة 3: «Carefully planned solutions can feel like more work for employees».
 ?? The writer gives an example to show how ______.
@@ -189,7 +189,7 @@
 - the game rooms
 !! «thinking about the problems in their lives, and it's hard to stop thinking about them» ← them = المشاكل.
 ?? What happens when employees get sick often or quit?
-* Employers must use time and resources to find and train new employees.
+* Employers must find and train new employees.
 - Employers must build more game rooms.
 - Employees must take more meditation classes.
 - Employees must work longer hours.
@@ -208,15 +208,15 @@
 4. Finally, experts suggest that students should "pay themselves first." This means putting a small amount into savings as soon as the money arrives, before spending anything. Even 50 riyals a month is a good start, because the habit is more important than the amount. Students who _gradually_ build this habit are usually better prepared for unexpected costs, and they often manage their money more wisely after graduation.
 ?? According to paragraph 1, many students reach the end of the month ______.
 * with an empty wallet and no idea where their money went
-- with enough money to buy new books
-- with a lot of savings in the bank
-- with more help from their families
+- with enough money left to buy their books for next term
+- with a lot of money saved in the bank for the next month
+- with extra help from their families and some money to spare
 !! الفقرة 1: «a lot of students reach the end of the month with an empty wallet and no idea where their money went» ← يخلص الشهر وجيبهم فاضي وما يدرون وين راحت فلوسهم.
 ?? What does the underlined word "budget" in paragraph 2 mean?
 * a plan for the money you receive and spend
-- a list of the books you need
-- a type of bank account
-- a monthly university allowance
+- a list of the books you need for the semester
+- a type of bank account for students who save
+- the monthly allowance that the university pays you
 !! الفقرة 2 تشرح الكلمة: «This is a simple plan that shows how much money you receive each month and how you are going to spend it».
 ?? The writer gives the example of a cup of coffee to show that ______.
 * even small purchases should be written down
@@ -232,10 +232,10 @@
 !! الفقرة 2: «Many students are shocked when they see the list, because small daily purchases can add up to several hundred riyals».
 ?? Which way of reducing costs does the writer NOT mention?
 * Walking to university instead of driving
-- Bringing lunch from home
-- Buying used textbooks
-- Cancelling app subscriptions
-!! الفقرة 3 ذكرت الغداء من البيت، والكتب المستعملة، وإلغاء اشتراكات التطبيقات. أما المشي للجامعة بدل السيارة ما انذكر.
+- Bringing lunch from home a few times a week
+- Borrowing textbooks from the library
+- Cancelling some of your app subscriptions
+!! الفقرة 3 ذكرت الغداء من البيت، واستعارة الكتب من المكتبة، وإلغاء اشتراكات التطبيقات. أما المشي للجامعة بدل السيارة ما انذكر.
 ?? What does the underlined word "them" in paragraph 3 refer to?
 * the used textbooks
 - the older students
@@ -262,9 +262,9 @@
 !! gradually = تدريجياً، شوي شوي مع الوقت. يعني الطالب يبني عادة التوفير خطوة خطوة.
 ?? What is the main idea of the passage?
 * Students can save money with a plan and a few good habits.
-- Students need a bigger income to save money.
-- University textbooks are too expensive for students.
-- Students should never buy coffee or snacks.
+- Students need a bigger monthly income before they can save money.
+- University textbooks are too expensive for most students to buy.
+- Students should never buy coffee or snacks at university.
 !! الفقرة 1: «It mainly needs a plan and a few good habits»، وباقي القطعة تشرح هذي العادات (الميزانية، تقليل المصاريف، التوفير أول ما يجي المال).
 
 ## 5 | The Story of Coffee
@@ -292,9 +292,9 @@
 !! الفقرة 2: «Kaldi decided to try the berries himself, and he also felt more awake».
 ?? The writer says that the story of Kaldi ______.
 * may not be true, but it is still told
-- is supported by all historians
-- was written by Kaldi himself
-- is only told in Ethiopia
+- is supported by all historians of coffee
+- was written down by Kaldi himself
+- is only told to children in Ethiopia
 !! الفقرة 2: «Nobody knows if the story is true, but it is still told in many countries».
 ?? How did people in Yemen prepare coffee?
 * They roasted the beans and boiled them in water.
@@ -346,9 +346,9 @@
 !! الفقرة 1: «An electric car does not have a normal engine. Instead, it has a large battery».
 ?? What does the underlined word "encourage" in paragraph 1 mean?
 * give support so that people want to do something
-- make something difficult for people
-- stop people from doing something
-- complain about something
+- make something difficult for people to do
+- stop people from doing something they want
+- complain to people about something they do
 !! encourage = يشجّع، يعني يخلّي الناس يبون يسوون الشي. الفقرة 1: «Many governments encourage people to buy these cars».
 ?? What do some governments offer to people who buy electric cars?
 * lower taxes or other benefits
@@ -394,9 +394,9 @@
 !! expect = يتوقّع. الخبراء يتوقعون إن المشاكل بتصغر «in the coming years».
 ?? What is the main idea of the passage?
 * Electric cars have benefits and problems, but they will probably become more common.
-- Electric cars are too expensive for most people.
-- Petrol cars will disappear from the roads very soon.
-- There are not enough charging stations in big cities.
+- Electric cars are too expensive, so most people will never buy them.
+- Petrol cars will disappear from the roads in the next few years.
+- There are not enough charging stations, so electric cars have no future.
 !! الفقرة 2 المميزات، والفقرة 3 العيوب، والفقرة 4: «electric cars will soon become the normal choice for new drivers». (وقالت إن سيارات البنزين بتبقى وقت طويل، فما بتختفي قريب.)
 
 ## 7 | Paper Books or E-books?
@@ -454,9 +454,9 @@
 !! الفقرة 3: «looking at a bright screen for hours can make your eyes feel tired and dry».
 ?? The writer gives the example of a student to show that ______.
 * people may choose a different kind of book for different situations
-- e-books are better than paper books for exams
-- students do not use printed books anymore
-- paper books are too expensive for students
+- e-books are always better than paper books for serious study
+- students no longer use printed books, even before their exams
+- e-books are too slow for students who need to search for information
 !! الفقرة 4: «The answer probably depends on the reader and the situation. A student might use an e-book to search quickly for information, but choose a printed book for serious study» ← يختار حسب الموقف.
 ?? What is the main idea of the passage?
 * Paper books and e-books both have benefits, and reading regularly matters most.
@@ -472,9 +472,9 @@
 4. Fortunately, there are simple ways to protect yourself. First, check the source: is the story from a well-known news organisation or an official account, or from an unknown page? Second, see whether other _reliable_ websites are reporting the same story. Third, look carefully at the date, because old stories are sometimes shared again as if they were new. Finally, if you are still not sure, do not share the post. Being a careful reader is now an important skill for everyone.
 ?? According to paragraph 1, how did people find out the news in the past?
 * They watched the news on TV or bought a newspaper.
-- They used apps on their phones.
-- They asked journalists directly.
-- They followed official accounts.
+- They used social media apps on their phones.
+- They asked journalists to tell them the news.
+- They followed official accounts on the internet.
 !! الفقرة 1: «people waited for the evening news on TV or bought a newspaper in the morning».
 ?? The writer says that on social media, news travels ______.
 * faster than ever before
@@ -496,15 +496,15 @@
 !! الفقرة 2 ذكرت متابعة الأحداث وقت حدوثها، وصور وفيديوهات الناس العاديين، والنقاش وتبادل الآراء. أما إيجاد وظائف ما انذكر.
 ?? Why do some people create fake stories on purpose?
 * Shocking stories attract attention and more followers.
-- They want to warn people about danger.
-- They think the stories are true.
-- They want to check the source first.
+- They want to warn people quickly during floods and storms.
+- They believe the stories are real and want to help others.
+- They want to see whether other websites report the same story.
 !! الفقرة 3: «Others create them on purpose, because shocking stories attract attention and more followers». (اللي يحسبها صحيحة هذا ينشرها بالغلط، مو يصنعها.)
 ?? What does the underlined word "mislead" in paragraph 3 mean?
 * make someone believe something that is not true
-- help someone understand the news
-- make someone laugh
-- make someone feel safe
+- help someone understand the news more clearly
+- make someone check the source of a story
+- make someone feel safe during an emergency
 !! mislead = يضلّل، يخلي الشخص يصدّق شي غلط. والكلام عن الأخبار الكاذبة.
 ?? The writer gives the example of a false message about a popular product to show that fake news can ______.
 * cause unnecessary fear
@@ -520,7 +520,7 @@
 !! reliable = موثوق، تقدر تثق فيه، زي المواقع الإخبارية المعروفة. وعكسها «an unknown page».
 ?? Why should readers look carefully at the date of a story?
 * Old stories are sometimes shared again as if they were new.
-- New stories are always fake.
+- New stories are always fake, so you should not share them.
 - Official accounts do not write the date.
 - Old stories are more reliable than new ones.
 !! الفقرة 4: «look carefully at the date, because old stories are sometimes shared again as if they were new».
@@ -538,9 +538,9 @@
 4. Even in modern Saudi Arabia, where most people travel by car, camels remain an important part of the culture. Camel milk is popular because it is healthy and contains a lot of vitamin C. Camel racing is a well-known sport, and in beauty competitions, judges look at features such as the shape of the camel's head and hump. One of the largest of these events is the King Abdulaziz Camel Festival, which takes place every year and attracts visitors from Saudi Arabia and other countries.
 ?? According to paragraph 1, what did caravans of camels do in the past?
 * They connected towns and markets that were far apart.
-- They carried cars across the desert.
-- They took part in races in the cities.
-- They brought water to the markets.
+- They carried cars and planes across the huge deserts.
+- They took part in races between towns and markets.
+- They protected towns and markets from strong sandstorms.
 !! الفقرة 1: «caravans of camels connected towns and markets that were hundreds of kilometres apart».
 ?? Which product that families got from camels does the writer NOT mention?
 * cheese
@@ -592,9 +592,9 @@
 !! الفقرة 4: «Camel milk is popular because it is healthy and contains a lot of vitamin C».
 ?? What is the main idea of the passage?
 * Camels are well suited to the desert and are still important in Saudi culture.
-- Camels are no longer useful in modern Saudi Arabia.
-- Camels store water in their humps for the hot summer.
-- Camel racing is the most popular sport in Saudi Arabia.
+- Camels are no longer useful or important in modern Saudi Arabia.
+- Camels store water in their humps, so they can live in the desert.
+- Camel racing is the most popular sport in Saudi Arabia today.
 !! الفقرة 2 و3 تشرح كيف جسم الجمل مناسب للصحراء، والفقرة 4: «camels remain an important part of the culture».
 
 ## 10 | Recycling at Home
@@ -670,9 +670,9 @@
 4. Physical stores offer things that a screen cannot. Shoppers can ask staff for advice, check the quality of a product with their own eyes and take _it_ home immediately. For many Saudi families, a visit to the mall is also a social activity: they walk around together, eat at a restaurant and meet friends. For these reasons, most people do not choose only one option. Instead, they shop online for some things and visit stores for others, depending on what they need.
 ?? According to paragraph 1, why has online shopping grown so quickly?
 * Delivery services became faster and more common.
-- Many shops and malls closed.
-- Phones became much cheaper.
-- Prices online are always lower.
+- Many shops and malls closed and lost their customers.
+- Phones and computers became much cheaper than before.
+- Prices online became lower than prices in all stores.
 !! الفقرة 1: «Online shopping has grown very quickly, especially since delivery services became faster and more common».
 ?? The writer says that shops and malls are still full of customers, which shows that ______.
 * both ways of shopping have something to offer
@@ -694,9 +694,9 @@
 !! «find a better deal» = تلقى سعر أو عرض أحسن، والجملة عن مقارنة الأسعار.
 ?? Why are customer reviews useful?
 * They let you learn about other buyers' experiences.
-- They make products cheaper.
-- They help you return items quickly.
-- They protect your card details.
+- They let you return the wrong sizes quickly and easily.
+- They protect your card details on websites you do not know.
+- They let you get your orders delivered much faster.
 !! الفقرة 2: «they allow you to learn about other buyers' experiences before you decide».
 ?? Why do clothes and shoes sometimes arrive in the wrong size?
 * Shoppers cannot touch them or try them on.
@@ -742,9 +742,9 @@
 !! الفقرة 1: «they depend on restaurants, fast food and delivery apps».
 ?? What are the two disadvantages of eating out every day?
 * It is expensive, and the meals often have too much oil, salt and sugar.
-- It is slow, and the food often arrives cold.
-- It is boring, and the portions are too small.
-- It is expensive, and restaurants are far from university.
+- It is slow, and the food often arrives at your home cold.
+- It is boring, and the portions are usually too small for students.
+- It is expensive, and most restaurants are far from the university.
 !! الفقرة 1: «eating out every day is expensive, and second, many restaurant meals contain more oil, salt and sugar than our bodies need».
 ?? What does the underlined word "ingredients" in paragraph 2 mean?
 * the foods you use to make a dish
@@ -802,9 +802,9 @@
 4. Before applying for a job, students should think carefully about their timetable and their goals. If possible, they should choose work that is connected to their major. For example, a student who studies computer science could work in a computer shop, while a nursing student might find a job in a pharmacy. In this way, the job does not only pay the bills; it also helps _them_ prepare for their future career. With good planning, a part-time job can be a valuable part of university life.
 ?? According to paragraph 1, why do some students work?
 * They need money for transport, books, or personal needs.
-- Their university asks them to work.
-- They want to stop studying.
-- They have already graduated.
+- Their university asks all students to find a job.
+- They want to stop studying and start working.
+- They have already graduated from university.
 !! الفقرة 1: «Some students work because they need money for transport, books, or personal needs» ← يحتاجون فلوس للمواصلات والكتب واحتياجاتهم.
 ?? Which skill does the writer NOT mention?
 * speaking a foreign language
@@ -868,9 +868,9 @@
 4. Fortunately, a healthy breakfast does not have to take a long time. In Saudi Arabia, many families enjoy traditional choices such as eggs, beans, cheese, and bread, which give the body protein and keep you full for longer. Yogurt with fruit or a bowl of oats with milk are also quick options. If you are in a hurry, you can take a banana and a handful of nuts with you. The important thing is to give your body something good before the day begins.
 ?? According to paragraph 1, why do some people skip breakfast?
 * They wake up late and do not have time.
-- Breakfast is too expensive.
-- Their doctors tell them to.
-- They eat a big dinner.
+- Breakfast is too expensive for them to buy.
+- Their doctors tell them not to eat in the morning.
+- They always eat a big dinner the night before.
 !! الفقرة 1: «Some of them wake up late and do not have time» ← يصحون متأخر وما عندهم وقت.
 ?? According to paragraph 1, a few people believe that skipping breakfast ______.
 * is a good way to lose weight
@@ -892,9 +892,9 @@
 !! الفقرة 2 ذكرت: «concentrate better in class, remember information more easily, and feel less tired during morning lectures». النوم الأحسن بالليل ما انذكر.
 ?? What do teachers notice about hungry students?
 * They are more likely to lose interest in the lesson.
-- They ask more questions in class.
-- They finish their work faster.
-- They eat breakfast at school.
+- They are more likely to ask questions in the lesson.
+- They usually finish their class work faster than others.
+- They usually bring breakfast to eat during the lesson.
 !! الفقرة 2: «Teachers also notice that hungry students are more likely to lose interest in the lesson».
 ?? What does the underlined word "they" in paragraph 3 refer to?
 * people who miss the morning meal
@@ -922,9 +922,9 @@
 !! الفقرة 4: «traditional choices such as eggs, beans, cheese, and bread, which give the body protein and keep you full for longer» ← الفطور التقليدي يشبّعك لوقت أطول.
 ?? What is the main idea of the passage?
 * Breakfast gives us energy, and a healthy one can be quick and easy.
-- Skipping breakfast is the best way to lose weight.
-- Students should eat lunch instead of breakfast.
-- Fast food is the main reason for weight problems.
+- Skipping breakfast is the best and fastest way to lose weight.
+- Students should eat a big lunch instead of eating breakfast.
+- A healthy breakfast always takes a long time to prepare at home.
 !! الفقرة 2 تقول إن الفطور يعطي طاقة، والفقرة 4: «a healthy breakfast does not have to take a long time» ← الفطور مهم والصحي منه سريع وسهل.
 
 ## 15 | AlUla: A Window to the Past
@@ -934,9 +934,9 @@
 4. In recent years, AlUla has also become a centre for culture and events. During the winter season, it hosts music concerts, art _exhibitions_, and festivals, and its unusual concert hall, Maraya, is covered with mirrors. At the same time, the government is working hard to protect the old sites while it develops tourism. For example, visitors must book a tour to enter Hegra, so the number of people at the site at one time is limited. If you ever travel around the Kingdom, AlUla is a place you should not miss.
 ?? Why have people lived in the AlUla valley for thousands of years?
 * It had water and was on an important trade road.
-- It was close to the city of Petra.
-- It had many tall buildings.
-- It had a large university.
+- It had tall buildings and a large concert hall.
+- It had a large university and many famous libraries.
+- It was far from the desert and had cool weather.
 !! الفقرة 1: «People have lived in this valley for thousands of years, because it had water and was on an important trade road».
 ?? Which of these does the writer NOT mention as something AlUla is famous for?
 * its beaches
@@ -958,9 +958,9 @@
 !! الفقرة 2: «More than 100 tombs were cut into the rocks, and many of them have beautiful decorations above their doors» ← them = المقابر (tombs).
 ?? What happened in 2008?
 * Hegra was added to UNESCO's World Heritage List.
-- Hegra was built by the Nabataeans.
-- Maraya hosted its first concert.
-- Elephant Rock was discovered.
+- Hegra was first built by the Nabataeans in the valley.
+- Maraya hosted its first winter music concert.
+- Elephant Rock was discovered by visitors on a hike.
 !! الفقرة 2: «In 2008, Hegra became the first place in Saudi Arabia to be added to UNESCO's World Heritage List».
 ?? Why do some people call Jabal Ikmah an "open library"?
 * It is covered with ancient writings.
@@ -1000,9 +1000,9 @@
 4. However, having a pet is a big _responsibility_. Pets need food, fresh water, a clean place to live, and regular visits to the vet. They also need attention every day, even when their owners are busy or tired. Before getting a pet, families should think carefully about whether they have enough time, space, and money. A pet is not a toy that you can forget about; it is a living creature that depends on you.
 ?? According to paragraph 1, why do most people get a pet?
 * They love animals and enjoy their company.
-- Their doctors tell them to.
-- Pets are cheap to buy.
-- Scientists ask them to.
+- Their doctors tell them it is good for their health.
+- Pets are cheap to buy and easy to look after.
+- Scientists ask them to take part in their research.
 !! الفقرة 1: «Most people get a pet simply because they love animals and enjoy their company».
 ?? The writer says that pets are ______.
 * not a cure for every problem
@@ -1054,9 +1054,9 @@
 !! الفقرة 4 ذكرت: «food, fresh water, a clean place to live, and regular visits to the vet» و«attention every day». الألعاب ما انذكرت (الكاتب قال إن الحيوان «not a toy» بس).
 ?? What is the main idea of the passage?
 * Pets can be good for our health, but they need a lot of care.
-- Pets are the best cure for every illness.
-- Only older people should keep pets.
-- Families should not keep pets at home.
+- Pets are the best cure for every illness that people have.
+- Only older people who live alone should keep pets at home.
+- Families should not keep pets because they cost too much money.
 !! الفقرة 2 و3 عن فوائد الحيوانات الأليفة للصحة، والفقرة 4: «having a pet is a big responsibility» ← مفيدة بس تحتاج اهتمام.
 
 ## 17 | Robots in Our Daily Lives
@@ -1066,15 +1066,15 @@
 4. However, not everyone is happy about this change. Many workers are worried that robots will take their jobs, and their fear is understandable. Experts agree that robots will replace some jobs, especially simple and repetitive ones. At the same time, robots will create new jobs for people who design, program, and repair them. For this reason, many experts _encourage_ young people to learn technology skills now, so that they will be ready for the jobs of the future.
 ?? When people hear the word "robot", they often think of ______.
 * the machines in science fiction films
-- robot vacuum cleaners
-- doctors in hospitals
-- cars in large factories
+- the robot vacuum cleaners in their homes
+- the doctors who work in large hospitals
+- the cars that are built in large factories
 !! الفقرة 1: «they often think of the metal machines in science fiction films».
 ?? Why are robots expected to become more common?
 * Technology is improving and becoming cheaper.
-- People prefer machines to humans.
-- Factories are closing.
-- Robots never make mistakes.
+- People prefer machines to human workers.
+- Many factories are closing down every year.
+- More people are watching science fiction films.
 !! الفقرة 1: «As technology improves and becomes cheaper, robots are expected to become even more common».
 ?? Which kind of factory job does the writer NOT say robots do?
 * creative jobs
@@ -1150,9 +1150,9 @@
 !! الفقرة 2: «Seawater is cleaned in special factories called desalination plants, which remove the salt».
 ?? Why does every litre of wasted water have a real cost?
 * Desalination is expensive and uses a lot of energy.
-- Water is only sold in shops.
-- Leaking taps are hard to repair.
-- Plants need more water in summer.
+- Drinking water is only sold in shops and restaurants.
+- Leaking taps are expensive and hard to repair.
+- Plants need more water during the long, hot summers.
 !! الفقرة 2: «this process is expensive and uses a lot of energy, so every litre that is wasted has a real cost».
 ?? Which way of saving water at home does the writer NOT mention?
 * using the washing machine less often
@@ -1174,9 +1174,9 @@
 !! reduce = يقلّل. الأجهزة تقلّل كمية الماي اللي تطلع من الحنفية.
 ?? The writer gives the example of washing the car with a bucket to show that ______.
 * there are simple ways to save water outside the house
-- cars need a lot of water
-- hoses are better than buckets
-- people should not wash their cars
+- hoses are better than buckets for washing a car
+- people should not wash their cars at all in summer
+- it is better to wash cars at a car wash than at home
 !! الفقرة 4 تبدأ بـ«Water can also be saved outside the house» ومثال السطل: «washing the car with a bucket uses far less water than using a hose».
 ?? What does the underlined word "precious" in paragraph 4 mean?
 * very valuable
@@ -1194,7 +1194,7 @@
 ## 19 | Libraries Are Changing
 1. In the past, libraries were quiet buildings full of shelves of books, where people went to borrow novels or study in silence. Today, some people believe that libraries are no longer needed, because almost any information can be found online in seconds. However, libraries have not disappeared. Instead, many of them are changing in order to meet the needs of modern visitors.
 2. Modern libraries offer much more than books. Most of them provide computers, free Wi-Fi, and comfortable areas where students can work together on group projects. Some libraries also have "maker spaces", where visitors can use 3D printers and other tools to build their own designs. Others run free courses in languages, computer skills, and writing, which are especially useful for people who want to improve their CV.
-3. Libraries have also become important community centres. They organize activities for children, such as story time and reading competitions, which help children develop a love of reading. They also hold talks with writers and workshops for adults. For families who cannot _afford_ computers or many books, the library gives _them_ free access to knowledge. This is why some cities are building new libraries instead of closing old ones.
+3. Libraries have also become important community centres. They organise activities for children, such as story time and reading competitions, which help children develop a love of reading. They also hold talks with writers and workshops for adults. For families who cannot _afford_ computers or many books, the library gives _them_ free access to knowledge. This is why some cities are building new libraries instead of closing old ones.
 4. Of course, books are still at the heart of every library, but the way people read is changing. Many libraries now lend e-books and audiobooks, so members can read or listen on their phones wherever they are. Librarians have also taken on a new role: they teach visitors how to find _reliable_ information and how to recognise false stories online. In a world full of information, this skill may be one of the most valuable services that libraries offer.
 ?? Why do some people believe that libraries are no longer needed?
 * Almost any information can be found online in seconds.
@@ -1264,9 +1264,9 @@
 4. Photography can also bring people together. Many photographers share their work online or join local photography clubs, where members go on trips and give each other advice. Some even enter competitions and win prizes for their best pictures. However, experts remind photographers to ask permission before taking photos of people, because not everyone wants _their_ picture to be taken or shared. Whether you prefer nature, buildings, or food, photography is a creative way to express yourself and keep special memories.
 ?? Why can anyone become a photographer today?
 * Almost everyone carries a smartphone with a high-quality camera.
-- Cameras have become free.
-- Photography classes are free for everyone.
-- People no longer need light to take photos.
+- Expensive cameras have become free for everyone to use.
+- Photography clubs now give free cameras to all members.
+- People no longer need good light to take beautiful photos.
 !! الفقرة 1: «almost everyone carries a smartphone with a high-quality camera, so anyone can become a photographer».
 ?? The writer says that when you take photos regularly, you begin to notice ______.
 * small details
@@ -1282,15 +1282,15 @@
 !! patient = صبور، يقدر ينتظر بهدوء بدون ما يزهق. الفقرة 2: «Many photographers also say that their hobby has made them more patient».
 ?? The writer gives the example of a bird landing on a tree to show that ______.
 * photographers sometimes wait a long time for the perfect moment
-- birds are the best subject for photos
-- photographers prefer nature to buildings
-- it is easy to take a good photo
+- birds are the best and most popular subject for photos
+- photographers usually prefer nature to buildings and food
+- it is quick and easy to take a perfect photo of a bird
 !! الفقرة 2: «they sometimes have to wait a long time for the perfect moment, for example for a bird to land on a tree».
 ?? When is usually the best time to take photos outside?
 * early in the morning or just before sunset
-- at noon
-- at midnight
-- in the middle of the afternoon
+- at noon, when the sun is high and strong
+- late at night, after the sun has gone down
+- in the middle of the afternoon, when it is hot
 !! الفقرة 3: «Outside, the best time is usually early in the morning or just before sunset, when the light is soft and warm».
 ?? What does the underlined word "gently" in paragraph 3 mean?
 * softly and carefully
@@ -1306,9 +1306,9 @@
 !! الفقرة 4 ذكرت: المشاركة أونلاين، والنوادي، والمسابقات. التدريس في المدارس ما انذكر.
 ?? Why should photographers ask permission before taking photos of people?
 * Not everyone wants their picture to be taken or shared.
-- It is the best way to win prizes.
-- People always pay for their photos.
-- Photography clubs ask them to.
+- Asking permission is the best way to win competition prizes.
+- People always pay photographers for the photos they take.
+- Photography clubs ask all their members to do this.
 !! الفقرة 4: «ask permission before taking photos of people, because not everyone wants their picture to be taken or shared».
 ?? What does the underlined word "their" in paragraph 4 refer to?
 * the people in the photos
@@ -1318,9 +1318,9 @@
 !! الفقرة 4: «before taking photos of people, because not everyone wants their picture to be taken» ← their = الناس اللي ينصوّرون.
 ?? What is the main idea of the passage?
 * Photography is a popular hobby with many benefits, and anyone can do it.
-- Photography is too expensive for most people.
-- Only professionals can take good photos.
-- Smartphones are bad for photography.
+- Photography is too expensive a hobby for most people today.
+- Only professionals with special cameras can take good photos.
+- Smartphones are bad for photography and should not be used.
 !! الفقرة 1: «anyone can become a photographer»، والقطعة تذكر فوائد التصوير (الفقرة 2 و4) ونصائح له (الفقرة 3).
 
 ## 21 | Talent or Teamwork?
@@ -1331,15 +1331,15 @@
 5. The lesson is relevant far beyond sport. Companies, hospitals, and research groups also tend to hire "stars" and expect excellent results to follow automatically. However, the evidence from sport suggests that the way people work together may matter as much as how talented each person is. A group's performance, in other words, is not simply the sum of its members' abilities.
 ?? What can we understand from paragraph 1?
 * Spending a lot of money on famous players does not guarantee success.
-- Modest teams usually beat expensive teams.
-- Clubs rarely spend money on famous players.
-- Fans do not care about individual players.
+- Modest teams usually beat expensive teams in most sports.
+- Clubs rarely spend large sums of money on famous players.
+- Fans do not care much about the individual players in a team.
 !! الفقرة 1: «history is full of expensive teams that failed and modest teams that won» ← يعني الفلوس والأسماء الكبيرة ما تضمن الفوز. (وخيار usually beat غلط لأنه ما قال إنها تفوز غالباً).
 ?? Why did the same pattern NOT appear in baseball?
 * Baseball players act on their own more than they depend on each other.
-- Baseball teams have fewer star players.
-- Baseball players train together for many years.
-- Baseball teams spend less money on players.
+- Baseball teams usually have fewer star players than other teams.
+- Baseball players train together for many more years than others.
+- Baseball teams spend less money on their players than football teams.
 !! الفقرة 2: «in baseball, where players spend much of the game acting on their own rather than depending on one another».
 ?? What does the underlined word "glamorous" in paragraph 2 mean?
 * attractive and exciting
@@ -1379,15 +1379,15 @@
 !! الفقرة 4: «This does not mean that talent is unimportant… The real question is balance» ← الموهبة مهمة بس لازم توازن مع روح الفريق.
 ?? What is the writer's main purpose in paragraph 5?
 * to show that the lesson from sport also applies to other workplaces
-- to criticize the way hospitals treat their workers
-- to explain how companies choose their managers
-- to prove that research groups do not need stars
+- to criticize the way hospitals and companies treat their best workers
+- to explain how companies and research groups choose their managers
+- to prove that companies and hospitals should never hire star workers
 !! الفقرة 5: «The lesson is relevant far beyond sport» وبعدها ذكر الشركات والمستشفيات ومجموعات البحث ← الدرس ينطبق برا الرياضة بعد.
 ?? What is the best title for the passage?
 * Why the Best Players Don't Always Make the Best Team
-- How to Become a Star Player
-- The History of Expensive Football Clubs
-- The Differences Between Basketball and Baseball
+- How to Become a Star Player in Any Team Sport
+- The History of the World's Most Expensive Football Clubs
+- Why Baseball Is Different From Basketball and Football
 !! القطعة كلها تشرح إن جمع أفضل اللاعبين ما يكفي، وإن التعاون والتوازن مهمين مثل الموهبة.
 
 ## 22 | Choosing a Major: Passion or Practicality?
@@ -1398,9 +1398,9 @@
 5. Finally, it is worth remembering that a major does not decide a person's whole future. Many graduates work in fields that are only loosely connected to what they studied, because skills such as writing clearly, solving problems, and working with others are useful in almost any job. Choosing a major is important, but it is a starting point rather than a final destination. Students who keep learning after graduation will have opportunities that their degree alone could not give them.
 ?? According to paragraph 1, the second piece of advice tells students to ______.
 * choose a subject that leads to a well-paid, secure job
-- study what they love
-- follow the advice of their friends
-- choose the easiest subject
+- study what they love, and success will come
+- follow the advice of their friends and teachers
+- choose the easiest subject at their university
 !! الفقرة 1: «The second is more practical: choose a subject that leads to a well-paid, secure job».
 ?? What does the underlined word "they" in paragraph 1 refer to?
 * the two approaches
@@ -1428,9 +1428,9 @@
 !! الفقرة 3: «passion often develops after people become skilled at something, rather than existing before they start» ← لما تتقن الشي ممكن تحبه بعدين.
 ?? What does the underlined word "evidence" in paragraph 4 mean?
 * information that shows what is true
-- a final decision
-- an introductory course
-- a high salary
+- a final decision about your future
+- a short introductory course at university
+- a high salary from a secure job
 !! evidence = دليل/معلومات تثبت الشي. الطالب يجمع معلومات من الخريجين وغيرهم عشان يعرف الجواب الصحيح لأسئلته.
 ?? According to paragraph 4, which subject is usually a safer choice?
 * one that scores reasonably well on all three questions
@@ -1452,9 +1452,9 @@
 !! الكاتب عرض فايدة الشغف في الفقرة 2: «a strong interest is not a luxury but an important practical advantage»، وانتقاده في الفقرة 3: «passion can be unreliable»، وبعدين اقترح «treat the decision as a combination of three questions» ← الشغف له قيمة حقيقية بس مو العامل الوحيد.
 ?? What is the writer's main purpose in the passage?
 * to compare two kinds of advice and suggest a balanced way to choose a major
-- to persuade students to choose well-paid majors only
-- to explain why students change their major after the first year
-- to describe the courses in different university majors
+- to persuade students to choose well-paid majors only and ignore their interests
+- to explain why so many students change their major after the first year
+- to describe the courses that students take in different university majors
 !! القطعة تقارن بين «follow your passion» والاختيار العملي، وبعدين تقترح الطريقة المتوازنة: «A more balanced approach may be…».
 
 ## 23 | Smart Cities: Promise and Problems
@@ -1489,9 +1489,9 @@
 !! الفقرة 3: «If this information is not carefully protected, it could be misused or stolen by criminals».
 ?? What do many experts argue cities should do with data?
 * collect only the data they need and be open about how it is used
-- collect as much data as possible and keep it secret
-- sell the data to private companies to pay for projects
-- stop using cameras and sensors completely
+- collect as much data as possible and never explain how it is used
+- sell the data to private companies to help pay for new projects
+- stop using cameras and sensors completely and collect no data at all
 !! الفقرة 3: «cities should collect only the data they genuinely need and should be open with residents about how it is used».
 ?? What does the underlined word "vulnerable" in paragraph 4 mean?
 * easily harmed or damaged
@@ -1501,15 +1501,15 @@
 !! vulnerable = معرّض للضرر وسهل يتأذى. السياق: إذا تعطلت الأنظمة كلها مرة وحدة المدينة تتضرر.
 ?? The writer mentions wider pavements and more frequent buses to show that ______.
 * some money could be spent on basic services instead of expensive technology
-- smart technology is cheaper than building pavements
-- buses are the most important part of a smart city
-- planners do not want people to use cars
+- smart technology is cheaper to install than wider pavements and buses
+- buses are the most important part of every smart city transport system
+- planners want people to stop using cars and walk on the pavements
 !! الفقرة 4: «money spent on impressive technology might be better spent on basic services such as wider pavements or more frequent buses».
 ?? What can we understand from paragraph 5?
 * A city that depends only on apps may leave some residents behind.
-- Elderly people never use technology.
-- Young people do not need city services.
-- Smart cities should stop using smartphone apps.
+- Elderly people never use technology or smartphone apps in cities.
+- Young people do not need any of the services that cities offer.
+- Smart cities should stop using smartphone apps for their services.
 !! الفقرة 5: الخدمات اللي تعتمد على التطبيقات «difficult for elderly residents or people who cannot afford the latest devices» ← فيه ناس ممكن ينحرمون منها.
 ?? What does the underlined word "substitute" in paragraph 5 mean?
 * a replacement
@@ -1519,9 +1519,9 @@
 !! substitute = بديل. يعني التقنية لازم تساعد التخطيط الجيد، مو تصير بديل عنه.
 ?? What is the writer's opinion about smart cities?
 * They have real benefits, but their problems must be taken seriously.
-- Smart city projects should be stopped.
-- Technology will solve every problem in cities.
-- Privacy is not an important issue.
+- They are too expensive and risky, so all projects should be stopped.
+- Technology in smart cities will solve every problem that people face.
+- Their benefits are so great that privacy is not an important issue.
 !! الكاتب ذكر الفوايد («the benefits are easiest to see») وبعدها المخاوف (الخصوصية، التكلفة، العدالة) ← يشوف فيها فايدة بس لازم ننتبه لمشاكلها.
 
 ## 24 | Why We Need Bees
@@ -1599,9 +1599,9 @@
 5. Finally, good time management is as much about deciding what not to do as about doing more. Students who try to accept every invitation and complete every task perfectly often end up _exhausted_. Setting priorities, by asking which tasks are truly important and which can wait, allows people to use their limited energy where it matters most. Sleep, too, should be treated as a priority rather than a luxury, since a tired mind works slowly and remembers less.
 ?? According to paragraph 1, research suggests that ______.
 * how we spend time on a task matters more than how long we spend
-- students should work longer hours
-- busy people are always productive
-- studying late at night is the best method
+- students should work longer hours if they want to manage time well
+- busy people are always more productive than people who are not busy
+- studying late at night is the best method for most students
 !! الفقرة 1: «the amount of time we spend on a task matters less than how we spend it».
 ?? What does the underlined word "them" in paragraph 2 refer to?
 * two demanding tasks
@@ -1629,9 +1629,9 @@
 !! الفقرة 3: «tasks that make them feel anxious, bored, or unsure where to start» ← إن الموعد النهائي لسه بعيد ما انذكر.
 ?? What does the underlined word "overwhelming" in paragraph 3 mean?
 * too big or difficult to deal with
-- enjoyable and relaxing
-- unimportant
-- quick and simple
+- enjoyable and relaxing to work on
+- too unimportant to think about
+- quick and simple to start and finish
 !! overwhelming = شي كبير ومرهق تحس إنك ما تقدر عليه. عشان كذا الكاتب ينصح تقسم المهمة لخطوات صغيرة.
 ?? The writer gives the example of studying for twenty-five minutes with the phone in another room to show ______.
 * how working in focused blocks can be done

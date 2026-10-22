@@ -390,9 +390,9 @@ window.LISTENING = [
 "q": "What is the advantage of the more expensive phone?",
 "o": [
 "It takes excellent photos, even at night.",
-"It has a bigger battery.",
-"It comes with a free case.",
-"It is lighter."
+"It has a bigger battery that lasts all day.",
+"It has a stronger screen and a longer guarantee.",
+"It is lighter and much cheaper than the other."
 ]
 },
 {
@@ -452,7 +452,7 @@ window.LISTENING = [
 {
 "q": "Why doesn't Huda buy screen protection?",
 "o": [
-"The free case is strong, and she is usually careful.",
+"She is usually careful with her phone.",
 "It is too expensive for her student budget.",
 "Her new phone already has a strong screen.",
 "The seller says that she doesn't really need it."
@@ -515,9 +515,9 @@ window.LISTENING = [
 "q": "Why will the class be in a different place?",
 "o": [
 "Students will practise listening and need computers with headphones.",
-"Room 214 is being painted this week.",
-"The professor is sick and can't come.",
-"There are too many students for the room."
+"Room 214 is being painted, so students can't use it this week.",
+"Students will take a grammar test on computers in the lab.",
+"There are too many students now, and Room 214 is too small."
 ]
 },
 {
@@ -864,7 +864,7 @@ window.LISTENING = [
 "o": [
 "A free box of dates",
 "A shopping bag",
-"Free delivery",
+"A free cake from the bakery",
 "Twenty percent off"
 ]
 },
@@ -873,7 +873,7 @@ window.LISTENING = [
 "o": [
 "For orders over one hundred riyals",
 "For all orders",
-"For orders over two hundred riyals",
+"For orders over fifty riyals",
 "Only on Saturday"
 ]
 }
@@ -1090,9 +1090,9 @@ window.LISTENING = [
 "q": "What is optics?",
 "o": [
 "The science of light and how we see",
-"The science of medicine",
-"The study of mathematics",
-"The study of stars"
+"The science of the body and how we heal",
+"The study of stars and how they move",
+"The study of numbers and how we count"
 ]
 },
 {
@@ -1540,18 +1540,18 @@ window.LISTENING = [
 "q": "Why did Yousef miss the exam?",
 "o": [
 "He was in the hospital with his father.",
-"He was sick with a high temperature.",
-"He forgot the date of the exam.",
-"He was late because of the traffic."
+"He was in the hospital because he was sick.",
+"He had to drive his father to the airport.",
+"His father needed his help at work."
 ]
 },
 {
 "q": "What happened to Yousef's father?",
 "o": [
 "He had a car accident and broke his arm.",
-"He fell at home.",
-"He had a heart problem.",
-"He broke his leg at work."
+"He fell at home and hurt his back.",
+"He had a heart problem at work.",
+"He broke his leg in a car accident."
 ]
 },
 {
@@ -1806,7 +1806,7 @@ window.LISTENING = [
 ],
 [
 "Neighbour",
-"Ha, don't worry. I love hearing children playing. By the way, my wife made some dates cake today. Please take some for your family."
+"Ha, don't worry. I love hearing children playing. By the way, my wife made some date cake today. Please take some for your family."
 ],
 [
 "Majed",
@@ -1854,52 +1854,52 @@ window.LISTENING = [
 "q": "Why can't Majed sleep well?",
 "o": [
 "He has to wake up at six for work.",
-"He is sick.",
-"His children are noisy.",
-"His bed is uncomfortable."
+"His children wake him up late at night.",
+"He works at night and sleeps during the day.",
+"His bed is old and very uncomfortable."
 ]
 },
 {
-"q": "Who is making the noise?",
+"q": "How long is Ibrahim's brother staying with them?",
 "o": [
-"Ibrahim's brother",
-"Ibrahim's children",
-"Ibrahim's wife",
-"Majed's children"
+"This month",
+"One night",
+"One week",
+"The whole year"
 ]
 },
 {
 "q": "Why does Ibrahim's brother stay up late?",
 "o": [
 "He likes to watch football matches.",
-"He works at night.",
-"He studies late.",
-"He plays video games."
+"He works at night in a hospital.",
+"He studies late for his exams.",
+"He likes to play video games online."
 ]
 },
 {
 "q": "What is Ibrahim's solution?",
 "o": [
 "His brother can use headphones after eleven o'clock.",
-"They will move to another apartment.",
-"They will stop watching TV.",
-"Majed should close his windows."
+"They will move the TV to another room.",
+"His brother will watch football at a friend's house.",
+"Majed should close his windows at night."
 ]
 },
 {
 "q": "What should Majed do if the noise happens again?",
 "o": [
 "Knock on Ibrahim's door or send him a message.",
-"Call the police.",
-"Talk to the building manager.",
-"Play loud music too."
+"Call the police or talk to the building manager.",
+"Ask Ibrahim's brother to turn the music down.",
+"Play loud music too, early in the morning."
 ]
 },
 {
 "q": "What does Ibrahim give Majed?",
 "o": [
-"Some dates cake",
-"His phone",
+"Some date cake",
+"Some coffee",
 "Headphones",
 "A book"
 ]
@@ -2014,9 +2014,9 @@ window.LISTENING = [
 "q": "What will the first-place team in each sport get?",
 "o": [
 "A trophy and a gift card worth five hundred riyals",
-"A free T-shirt and nothing else",
-"Five hundred riyals in cash each",
-"A trip abroad to watch a final"
+"A medal and a voucher for the food trucks",
+"Five hundred riyals in cash for each player",
+"A trip abroad to watch a football final"
 ]
 },
 {
@@ -2250,9 +2250,9 @@ window.LISTENING = [
 "q": "What is the host's name?",
 "o": [
 "Lina",
-"Lama",
-"Lana",
-"Layla"
+"Sara",
+"Noura",
+"Reem"
 ]
 },
 {
@@ -2268,18 +2268,18 @@ window.LISTENING = [
 "q": "What should you write in your vocabulary notebook?",
 "o": [
 "The word, its meaning and an example sentence",
-"Only the translation in Arabic",
-"Only the word and its spelling",
-"A long story about each word"
+"Only the translation of the word in Arabic",
+"Only the word and how to spell it correctly",
+"A long story that uses each new word"
 ]
 },
 {
 "q": "Why does the host suggest learning words in groups?",
 "o": [
 "Your brain remembers words better when they are connected.",
-"It is faster to write them in a notebook.",
-"Teachers prefer students to study that way.",
-"You need fewer notebooks and less paper."
+"You can write them in your notebook much faster.",
+"Teachers usually test words in groups in the exam.",
+"You can learn fifty new words in one day that way."
 ]
 },
 {
@@ -2402,9 +2402,9 @@ window.LISTENING = [
 "q": "What is wrong with the woman's husband?",
 "o": [
 "He has a sore throat and a high temperature.",
-"He has a headache and a cough.",
-"He has a stomach ache.",
-"He has an earache."
+"He has a bad headache and a dry cough.",
+"He has a stomach ache and feels sick.",
+"He has an earache and a blocked nose."
 ]
 },
 {
@@ -2756,9 +2756,9 @@ window.LISTENING = [
 "q": "Why does Hind want to take computer skills?",
 "o": [
 "It's useful for any job and has no exams, only projects.",
-"Her sister took it and recommended it.",
-"It's easy to get a place in the course.",
-"It has a lot of interesting reading."
+"Her sister took it last year and really enjoyed it.",
+"It's easy to get a place because it isn't popular.",
+"It has a lot of interesting reading every week."
 ]
 },
 {
@@ -2831,9 +2831,9 @@ window.LISTENING = [
 "q": "What happened about twenty minutes ago?",
 "o": [
 "A small accident between two cars",
-"A big fire",
-"A bus broke down",
-"It started to rain"
+"A large fire in an office building",
+"A bus broke down near the tower",
+"Heavy rain started to fall"
 ]
 },
 {
@@ -2978,9 +2978,9 @@ window.LISTENING = [
 "q": "Why should dry countries choose local kinds of trees?",
 "o": [
 "They can survive with very little water.",
-"They grow faster.",
-"They are cheaper to buy.",
-"They give more shade."
+"They grow much faster than other trees.",
+"They are cheaper to buy and to plant.",
+"They give more shade in the summer."
 ]
 },
 {
@@ -3023,9 +3023,9 @@ window.LISTENING = [
 "q": "According to the speaker, why is cooling cities important?",
 "o": [
 "In extreme heat, it can be a matter of health and even life.",
-"It helps cities attract more tourists in summer.",
-"It makes the streets look cleaner and more beautiful.",
-"It makes new buildings much cheaper to build."
+"It helps cities attract many more tourists during the hot summer.",
+"It makes the streets look cleaner and more beautiful for everyone.",
+"It makes new buildings much cheaper and quicker to build."
 ]
 }
 ]
@@ -3091,9 +3091,9 @@ window.LISTENING = [
 "q": "What is the main topic of the discussion?",
 "o": [
 "Whether online learning is as effective as classroom learning",
-"How to find a part-time job",
-"Why engineering is a difficult subject",
-"How teachers prepare their lectures"
+"How students can find part-time jobs at university",
+"Why engineering is harder to study than education",
+"How teachers prepare their lectures for the classroom"
 ]
 },
 {
@@ -3216,9 +3216,9 @@ window.LISTENING = [
 "q": "What is the main question of the lecture?",
 "o": [
 "Whether having too many choices can make us less happy",
-"How supermarkets choose their prices",
-"Why people prefer sweet food",
-"How to become a psychologist"
+"How supermarkets decide the prices of their products",
+"Why most people prefer sweet food such as jam",
+"How students can train to become psychologists"
 ]
 },
 {
@@ -3270,9 +3270,9 @@ window.LISTENING = [
 "q": "How does regret affect people who have many choices?",
 "o": [
 "They are less satisfied with the choice they made.",
-"They make decisions more quickly.",
-"They always return what they bought.",
-"They become better at comparing."
+"They make decisions more quickly and feel happier.",
+"They always return what they bought to the shop.",
+"They become better at comparing all the options."
 ]
 },
 {
@@ -3392,9 +3392,9 @@ window.LISTENING = [
 "q": "What is coral bleaching?",
 "o": [
 "Corals turning white after losing their algae",
-"Corals being cleaned by divers",
-"Corals growing too quickly",
-"Corals changing colour at night"
+"Corals being cleaned by divers and tourists",
+"Corals growing too quickly in warm water",
+"Corals changing colour at night to stay safe"
 ]
 },
 {
@@ -3494,9 +3494,9 @@ window.LISTENING = [
 "q": "What is the main topic of the talk?",
 "o": [
 "How much sugar we eat, and how to reduce it",
-"How to cook healthy desserts",
-"Why fruit is bad for us",
-"How food companies make sweets"
+"How to cook healthy desserts without any sugar",
+"Why fruit and milk are bad for our health",
+"How food companies make sweets and soft drinks"
 ]
 },
 {
@@ -3509,7 +3509,7 @@ window.LISTENING = [
 ]
 },
 {
-"q": "About how many teaspoons are twenty-five grams of sugar?",
+"q": "About how many teaspoons is twenty-five grams of sugar?",
 "o": [
 "About six",
 "About nine",
@@ -3575,9 +3575,9 @@ window.LISTENING = [
 "q": "What does the speaker say can happen after a few weeks with less sugar?",
 "o": [
 "Very sweet foods may start to taste too sweet.",
-"People want even more sugar.",
-"People lose a lot of weight.",
-"People stop enjoying food."
+"People start to want even more sugar than before.",
+"People lose a lot of weight very quickly.",
+"People stop enjoying their food completely."
 ]
 }
 ]
