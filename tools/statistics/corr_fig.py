@@ -2,7 +2,7 @@ import numpy as np, matplotlib, sys
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 rng=np.random.default_rng(7)
-OUT=sys.argv[1]; C='#1f2f8f'
+OUT=sys.argv[1]; C='#08154f'
 n=1000
 def rot(x,y,t): c,s=np.cos(t),np.sin(t); return x*c-y*s, x*s+y*c
 row1=[];
@@ -28,7 +28,7 @@ fig,axs=plt.subplots(3,7,figsize=(14,6.6),dpi=300)
 for i,row in enumerate([row1,row2,row3]):
     for j,(x,y,lab,lim) in enumerate(row):
         ax=axs[i][j]
-        ax.scatter(x,y,s=1.2,c=C,linewidths=0,alpha=0.9)
+        ax.scatter(x,y,s=1.5,c=C,linewidths=0,alpha=1)
         if lim: ax.set_xlim(-lim,lim); ax.set_ylim(-lim,lim)
         else:
             mx=max(np.ptp(x),np.ptp(y))/2*1.1; cx=(x.max()+x.min())/2; cy=(y.max()+y.min())/2
