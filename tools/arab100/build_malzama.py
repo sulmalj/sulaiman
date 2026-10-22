@@ -589,6 +589,8 @@ def stray_marks(page):
     ink = a > 40
     band = ink[int((BOT - 8 - y0) * z):, :]   # آخر 8pt + تحت الحد (الحركة الشاردة ممكن تطلع لين 6pt فوق الحد)
     above = ink[: int((BOT - 8 - y0) * z), :]
+    lines = [l["bbox"] for blk in page.get_text("dict", clip=pymupdf.Rect(0, y0 - 40, W, y1))["blocks"]
+             for l in blk.get("lines", [])]
     out, cols = [], np.nonzero(band.any(0))[0]
     if not len(cols):
         return out
@@ -598,9 +600,27 @@ def stray_marks(page):
             groups.append((start, c0)); start = c1
     groups.append((start, cols[-1]))
     for g0, g1 in groups:
-        if g1 - g0 > 14 * z or above[:, max(0, g0 - 2 * z): g1 + 2 * z].any():
+        if g1 - g0 > 14 * z:
             continue  # جزء من سطر حقيقي
-        out.append(pymupdf.Rect(g0 / z - 2, BOT - 10, g1 / z + 2, y1))
+        cols = ink[:, max(0, g0 - 2 * z): g1 + 2 * z]
+        rows = np.nonzero(cols.any(1))[0]
+        top = int((BOT - 8 - y0) * z)
+        mark = rows[rows >= top]
+        if not len(mark):
+            continue
+        m0 = mark.min()
+        upper = rows[rows < m0]
+        # فوقها كلام لاصق فيها (أقل من 2pt فراغ) = جزء من حرف حقيقي؛ وإلا حركة شاردة
+        if len(upper) and m0 - upper.max() < 2 * z:
+            continue
+        if (mark.max() - m0) > 6 * z:
+            continue
+        r = pymupdf.Rect(g0 / z - 2, y0 + m0 / z - 1, g1 / z + 2, y1)
+        # حركة تحت حرف في سطر حقيقي (كسرة/تنوين) تكون داخل مربع سطرها — ما نغطيها
+        if any(pymupdf.Rect(b).intersects(r) and b[3] >= r.y0 + 1.5 and b[1] < r.y0
+               for b in lines if b[3] <= BOT + 4):
+            continue
+        out.append(r)
     return out
 
 
