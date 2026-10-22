@@ -101,14 +101,14 @@ window.READING = [
 "e": "الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر."
 },
 {
-"q": "What did the accounting professor do every five or ten minutes?",
+"q": "According to paragraph 1, students who laugh more ______.",
 "o": [
-"He told the students a joke.",
-"He gave the students a short test.",
-"He showed the students a funny video.",
-"He let the students play games."
+"complete their homework more quickly",
+"take fewer tests at school",
+"sleep better at night",
+"talk more in class"
 ],
-"e": "الفقرة 3: «he told the students a joke every five or ten minutes»."
+"e": "الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly»."
 }
 ]
 },
@@ -205,9 +205,9 @@ window.READING = [
 "q": "What does Alex do before he starts work?",
 "o": [
 "He has some coffee and takes a short walk.",
-"He drives to his office.",
-"He answers emails in the park.",
-"He goes to a meditation class."
+"He drives to his office in the city centre.",
+"He reads the news on his phone in bed.",
+"He goes to an online meditation class."
 ],
 "e": "الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park»."
 },
@@ -258,7 +258,7 @@ window.READING = [
 "o": [
 "more work",
 "more time",
-"more useful",
+"more rest",
 "more fun"
 ],
 "e": "الفقرة 3: «Carefully planned solutions can feel like more work for employees»."
@@ -316,7 +316,7 @@ window.READING = [
 {
 "q": "What happens when employees get sick often or quit?",
 "o": [
-"Employers must use time and resources to find and train new employees.",
+"Employers must find and train new employees.",
 "Employers must build more game rooms.",
 "Employees must take more meditation classes.",
 "Employees must work longer hours."
@@ -349,9 +349,9 @@ window.READING = [
 "q": "According to the writer, students who build friendships during their first year ______.",
 "o": [
 "are less likely to leave their studies early",
-"choose different universities",
-"move to a new city",
-"never feel lonely at all"
+"are more likely to leave their studies early",
+"usually choose to study at different universities",
+"never feel lonely at any time during the year"
 ],
 "e": "الفقرة 1: «students who build friendships during their first year usually feel happier, and they are also less likely to leave their studies early» ← احتمال إنهم يتركون الدراسة بدري أقل."
 },
@@ -378,12 +378,12 @@ window.READING = [
 {
 "q": "What does the underlined word \"gradually\" in paragraph 2 mean?",
 "o": [
-"slowly, over a period of time",
+"slowly",
 "suddenly",
 "rarely",
 "without any effort"
 ],
-"e": "«they gradually get to know each other» = يتعرفون على بعض شوي شوي مع الوقت ← slowly, over a period of time."
+"e": "«they gradually get to know each other» = يتعرفون على بعض شوي شوي مع الوقت ← slowly."
 },
 {
 "q": "What does the underlined word \"encourage\" in paragraph 3 mean?",
@@ -393,15 +393,15 @@ window.READING = [
 "force and order",
 "blame and punish"
 ],
-"e": "«Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise and give confidence to."
+"e": "«Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise and support."
 },
 {
 "q": "What small step does the writer suggest for shy students?",
 "o": [
 "Arriving early and saying hello to the person next to them",
-"Joining many clubs in the first week",
-"Waiting for a big chance to talk",
-"Asking the teacher a question in every class"
+"Joining as many clubs as possible in the first week",
+"Waiting for a big chance to talk to a large group",
+"Asking the teacher a difficult question in every class"
 ],
 "e": "الفقرة 3: «They can arrive at class a few minutes early and say hello to the person sitting next to them»."
 },
@@ -439,9 +439,9 @@ window.READING = [
 "q": "What is the best title for the passage?",
 "o": [
 "Making friends in your first year at university",
-"Why shy students leave university",
-"The best clubs at university",
-"How to study for exams in groups"
+"Why shy students leave university in their first year",
+"The best sports and photography clubs at university",
+"How to study for difficult exams in groups"
 ],
 "e": "القطعة كلها عن طرق تكوين صداقات في أول سنة بالجامعة (الأندية، مجموعات المذاكرة، خطوات صغيرة للخجولين، الصبر)."
 }
@@ -458,14 +458,14 @@ window.READING = [
 ],
 "qs": [
 {
-"q": "Why is collecting such a popular hobby, according to the writer?",
+"q": "According to paragraph 1, people who want to collect things ______.",
 "o": [
-"Almost anyone can start it.",
-"It always makes people rich.",
-"It needs special skills.",
-"It is a very new hobby."
+"can begin at any age with only a few items",
+"must begin when they are very young",
+"need expensive equipment to begin",
+"must first learn some special skills"
 ],
-"e": "الفقرة 1: «What makes this hobby so popular is that almost anyone can start it»."
+"e": "الفقرة 1: «You do not need special skills or expensive equipment, and you can begin at any age with only a few items»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 1 refer to?",
@@ -490,7 +490,7 @@ window.READING = [
 {
 "q": "According to the writer, a person who collects coins often ______.",
 "o": [
-"reads about the history of the countries that produced them",
+"reads about the history of those countries",
 "travels to many different countries",
 "makes a lot of money from them",
 "prints new coins at home"
@@ -505,7 +505,7 @@ window.READING = [
 "repair",
 "hide"
 ],
-"e": "«they exchange items» = يتبادلون القطع، يعطي قطعة وياخذ بدالها ← give one thing and get another thing back."
+"e": "«they exchange items» = يتبادلون القطع، يعطي قطعة وياخذ بدالها ← swap (give one thing and get another back)."
 },
 {
 "q": "The writer gives the example of a stamp to show that ______.",
@@ -642,12 +642,12 @@ window.READING = [
 {
 "q": "What does the underlined word \"obstacles\" in paragraph 4 mean?",
 "o": [
-"problems that stop progress",
+"difficulties",
 "useful methods",
 "small mistakes",
 "good chances"
 ],
-"e": "الخوف من الغلط وعدم الكلام «one of the biggest obstacles to progress» = من أكبر العوائق اللي توقف التقدم ← problems that stop progress."
+"e": "الخوف من الغلط وعدم الكلام «one of the biggest obstacles to progress» = من أكبر العوائق اللي توقف التقدم ← difficulties."
 },
 {
 "q": "The writer uses the words \"Nobody learns to swim without getting wet\" to show that ______.",
@@ -725,9 +725,9 @@ window.READING = [
 "q": "Why do some shy students prefer online classes?",
 "o": [
 "They feel more comfortable asking questions in a chat box.",
-"They do not need to ask any questions.",
-"Their classes are smaller.",
-"They can watch lectures with their families."
+"They do not need to ask any questions in online classes.",
+"Their online classes are much smaller than classes on campus.",
+"They can watch the recorded lectures together with their families."
 ],
 "e": "الفقرة 2: «Some shy students say they feel more comfortable asking questions in a chat box than raising their hand»."
 },
@@ -775,9 +775,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Online classes and classrooms both have advantages and disadvantages.",
-"Online classes will soon replace all classrooms.",
-"Classrooms are always better than online classes.",
-"Shy students should only study online."
+"Online classes will soon replace all traditional classrooms at university.",
+"Traditional classrooms are always better than online classes for every student.",
+"Shy students should only take online classes and never go to campus."
 ],
 "e": "الكاتب ذكر مميزات الأونلاين (الفقرة 2) وعيوبه (الفقرة 3)، وقال «it depends on the student»."
 }
@@ -806,12 +806,12 @@ window.READING = [
 {
 "q": "What does the underlined word \"affect\" in paragraph 1 mean?",
 "o": [
-"have an effect on",
+"change",
 "protect",
 "check",
 "forget"
 ],
-"e": "«can seriously affect our health» = يأثّر على صحتنا تأثير كبير ← have an effect on."
+"e": "«can seriously affect our health» = يأثّر على صحتنا تأثير كبير ← change (affect)."
 },
 {
 "q": "According to the writer, salt, sugar and fat ______.",
@@ -837,9 +837,9 @@ window.READING = [
 "q": "Why does fast food fill the stomach without giving the body what it needs?",
 "o": [
 "It contains few vitamins and little fibre.",
-"It is eaten too quickly.",
-"It contains too much water.",
-"It is cooked at home."
+"It is usually eaten too quickly by busy students.",
+"It contains too much water and too little salt.",
+"It is usually cooked at home with fresh food."
 ],
 "e": "الفقرة 2: «these meals usually contain few vitamins and little fibre, so they fill the stomach without giving the body what it really needs»."
 },
@@ -887,9 +887,9 @@ window.READING = [
 "q": "What is the best title for the passage?",
 "o": [
 "Fast food: why we eat it and how to eat less",
-"The history of fast food",
-"Delivery apps in Saudi Arabia",
-"How to cook a healthy meal"
+"The long history of fast food restaurants",
+"Delivery apps and how they work in Saudi Arabia",
+"How to cook a healthy meal at home"
 ],
 "e": "القطعة عن أضرار الوجبات السريعة، وليش ناكلها كثير، وكيف نقلل منها."
 }
@@ -979,9 +979,9 @@ window.READING = [
 "q": "What does the underlined word \"they\" in paragraph 4 refer to?",
 "o": [
 "fruit and vegetables",
-"experts",
-"families",
-"opinions"
+"the experts' opinions",
+"families on a budget",
+"ordinary products"
 ],
 "e": "«eating plenty of fruit and vegetables matters more than whether they are organic or not» ← they = الفواكه والخضار."
 },
@@ -989,16 +989,16 @@ window.READING = [
 "q": "What do some experts recommend for families with a limited budget?",
 "o": [
 "Buying organic versions only of the foods they eat most often",
-"Buying only organic food, whatever the price",
-"Growing all their own vegetables at home",
-"Eating fewer vegetables to save money"
+"Buying organic versions of all foods, whatever the price",
+"Growing all of their own vegetables at home",
+"Eating fewer vegetables so that they can save money"
 ],
 "e": "الفقرة 4: «buy organic versions only of the foods you eat most often, and choose ordinary products for everything else»."
 },
 {
 "q": "What is the main idea of the passage?",
 "o": [
-"Organic food has some benefits, but it is expensive, so people should choose carefully.",
+"Organic food has benefits, but it is expensive.",
 "Organic food is always much healthier than ordinary food.",
 "Organic farming is bad for the environment.",
 "Supermarkets should stop selling ordinary food."
@@ -1041,9 +1041,9 @@ window.READING = [
 "q": "Why do many families gather at the grandparents' house?",
 "o": [
 "Showing respect to older family members is an important value.",
-"The grandparents' house is the biggest one.",
-"The grandparents' house is close to the mosque.",
-"The grandparents cook kabsa for everyone."
+"The grandparents' house is the biggest one in the family.",
+"The grandparents' house is always the closest one to the mosque.",
+"The grandparents ask everyone to come and help with the cooking."
 ],
 "e": "الفقرة 2: «because showing respect to older members of the family is an important value»."
 },
@@ -1078,7 +1078,7 @@ window.READING = [
 "e": "«distribute the meat among relatives, neighbours and people in need» = يوزّعون اللحم على الأقارب والجيران والمحتاجين ← give out to different people."
 },
 {
-"q": "According to the writer, sharing the meat reminds everyone that Eid is ______.",
+"q": "According to paragraph 3, the custom of sacrificing a sheep reminds everyone that Eid is ______.",
 "o": [
 "also about sharing with others",
 "only about personal happiness",
@@ -1207,7 +1207,7 @@ window.READING = [
 "expensive",
 "slow and late"
 ],
-"e": "«Buses and trains are usually cheap and reliable» = تقدر تعتمد عليها وتوصلك في وقتها ← that you can trust and depend on."
+"e": "«Buses and trains are usually cheap and reliable» = تقدر تعتمد عليها وتوصلك في وقتها ← trustworthy (you can trust and depend on them)."
 },
 {
 "q": "What does the underlined word \"they\" in paragraph 4 refer to?",
@@ -1223,9 +1223,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "With good planning, people can travel without spending a lot of money.",
-"Travelling is always too expensive for students.",
-"Hotels are better than apartments.",
-"Public transport is the best way to see a city."
+"Travelling is always too expensive for students, even with good planning.",
+"Hotels are always better and cheaper than apartments for people on a budget.",
+"Taking taxis is the best way to save money when visiting a new city."
 ],
 "e": "الفقرة 1: «it is possible to visit interesting places without spending a fortune. The secret is careful planning»، وباقي القطعة نصائح للتوفير."
 }
@@ -1265,7 +1265,7 @@ window.READING = [
 "q": "According to the writer, sunlight helps the body ______.",
 "o": [
 "produce vitamin D",
-"sleep better at night",
+"stay awake longer",
 "lose weight",
 "move faster"
 ],
@@ -1315,9 +1315,9 @@ window.READING = [
 "q": "According to the study in England, people who spent at least two hours a week in green places ______.",
 "o": [
 "were more likely to say that their health was good",
-"never got sick",
-"lived near the mountains or the sea",
-"spent less time in front of screens"
+"never got sick during the whole year",
+"usually lived near the mountains or the sea",
+"spent much less time in front of their screens"
 ],
 "e": "الفقرة 4: «people who spent at least two hours a week in green places were more likely to say that their health was good»."
 },
@@ -1509,9 +1509,9 @@ window.READING = [
 "q": "Which problem does the writer NOT mention in paragraph 2?",
 "o": [
 "paying the internet bill",
-"cleaning",
-"noise",
-"sharing food"
+"cleaning the kitchen",
+"noise late at night",
+"eating the other's food"
 ],
 "e": "الفقرة 2 ذكرت التنظيف «cleaning» والإزعاج «Noise» والأكل «Sharing food»، وفاتورة الإنترنت ما انذكرت."
 },
@@ -1529,9 +1529,9 @@ window.READING = [
 "q": "According to paragraph 3, a cleaning schedule means that ______.",
 "o": [
 "each person is responsible for certain jobs on certain days",
-"one roommate does all the cleaning",
-"the kitchen is cleaned only during exams",
-"a cleaner comes to the apartment every week"
+"one roommate does all the cleaning in the apartment every day",
+"the kitchen is cleaned only during the exam period",
+"both roommates clean the whole apartment together once a month"
 ],
 "e": "الفقرة 3: «so that each person is responsible for certain jobs on certain days»."
 },
@@ -1549,9 +1549,9 @@ window.READING = [
 "q": "What do experts suggest when something bothers you?",
 "o": [
 "speaking to your roommate calmly and directly",
-"complaining to other friends",
-"waiting until the end of the year",
-"moving to another apartment"
+"complaining about your roommate to other friends",
+"waiting until the end of the year to say something",
+"moving to another apartment as soon as possible"
 ],
 "e": "الفقرة 4: «experts suggest speaking to your roommate calmly and directly instead of complaining to other friends»."
 },
@@ -1591,9 +1591,9 @@ window.READING = [
 "q": "According to the writer, breaking a habit is hard because habits ______.",
 "o": [
 "happen automatically, without much thinking",
-"are good for our health",
-"take only a few days to form",
-"are always about food"
+"are good for our health in many ways",
+"take only a few days to form and break",
+"are always about food and sugary drinks"
 ],
 "e": "الفقرة 1: «because habits happen automatically, without much thinking»."
 },
@@ -1620,7 +1620,7 @@ window.READING = [
 {
 "q": "What does the underlined word \"gradually\" in paragraph 2 mean?",
 "o": [
-"slowly, little by little",
+"little by little",
 "suddenly",
 "completely",
 "happily"
@@ -1703,9 +1703,9 @@ window.READING = [
 "q": "What does the underlined word \"dependent\" in paragraph 1 mean?",
 "o": [
 "needing something so much that it is hard to live without it",
-"not interested in something and rarely using it",
-"afraid of something and trying to avoid it",
-"good at using something in many different ways"
+"not interested in something and rarely using it during the day",
+"afraid of something and always trying to stay away from it",
+"good at using something in many different and useful ways"
 ],
 "e": "«so dependent on their phones that their behaviour is similar to an addiction» ← dependent = معتمد عليه لدرجة ما يقدر يستغني عنه."
 },
@@ -1805,9 +1805,9 @@ window.READING = [
 "q": "Why do many students sleep less?",
 "o": [
 "They think it gives them more hours to get things done.",
-"Their doctors advise them to sleep less.",
-"They feel irritable at night.",
-"They drink too much coffee."
+"Their doctors advise them to sleep less during exams.",
+"They feel more relaxed when they sleep only a few hours.",
+"They drink too much coffee and energy drinks at night."
 ],
 "e": "الفقرة 1: «They think that sleeping less gives them more hours to get things done»."
 },
@@ -1865,9 +1865,9 @@ window.READING = [
 "q": "According to some studies, tired people ______.",
 "o": [
 "feel hungrier and choose more sugary food",
-"lose weight very quickly",
-"eat less than other people",
-"sleep better at weekends"
+"lose weight quickly because they move more",
+"eat less and choose healthier food",
+"sleep much better at weekends"
 ],
 "e": "الفقرة 3: «Some studies also suggest that tired people feel hungrier and choose more sugary food»."
 },
@@ -1916,12 +1916,12 @@ window.READING = [
 {
 "q": "What does the underlined word \"logical\" in paragraph 1 mean?",
 "o": [
-"reasonable; making sense",
+"reasonable",
 "funny",
 "dangerous",
 "impossible"
 ],
-"e": "«It seems logical that exercise would make a tired person even more tired» = يبان منطقي ومعقول ← reasonable; making sense."
+"e": "«It seems logical that exercise would make a tired person even more tired» = يبان منطقي ومعقول ← reasonable."
 },
 {
 "q": "What does research suggest?",
@@ -1937,9 +1937,9 @@ window.READING = [
 "q": "According to the writer, when your heart and lungs become stronger, ______.",
 "o": [
 "your body can carry oxygen to your muscles more efficiently",
-"the brain stops releasing chemicals",
-"you feel more tired after a walk",
-"you need a gym membership"
+"the brain stops releasing the chemicals that improve mood",
+"you feel more tired after walking or climbing stairs",
+"you need a gym membership and expensive equipment"
 ],
 "e": "الفقرة 2: «your heart and lungs become stronger, so your body can carry oxygen to your muscles more efficiently»."
 },
@@ -2059,9 +2059,9 @@ window.READING = [
 "q": "According to many doctors, a balanced diet ______.",
 "o": [
 "usually provides all the vitamins the body needs",
-"never gives enough vitamin C",
-"should be replaced by vitamin pills",
-"is only important for older people"
+"never gives the body enough vitamin C or D",
+"should be replaced by vitamin pills every morning",
+"is only important for older people and pregnant women"
 ],
 "e": "الفقرة 2: «a balanced diet… usually provides all the vitamins the body needs»."
 },
@@ -2088,7 +2088,7 @@ window.READING = [
 {
 "q": "Why may people who spend most of the day indoors not get enough vitamin D?",
 "o": [
-"Our skin makes vitamin D when it is exposed to sunlight.",
+"Their skin is not exposed to much sunlight.",
 "They eat too many eggs.",
 "They take too many vitamin pills.",
 "Vitamin D is found only in meat."
@@ -2119,9 +2119,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Most healthy people can get their vitamins from food, and pills are needed only in some cases.",
-"Everyone should take vitamin pills every day, even if they feel healthy.",
-"Vitamin pills are always dangerous, so nobody should ever take them.",
-"Fresh food is too expensive, so most people need pills instead."
+"Everyone should take vitamin pills every day, even healthy people who already eat a balanced diet.",
+"Vitamin pills are always dangerous, so nobody should ever take them, even when a doctor suggests them.",
+"Fresh food is too expensive for most families, so most people need to take vitamin pills instead."
 ],
 "e": "الفقرة 2: الأكل المتوازن «usually provides all the vitamins the body needs»، والفقرة 3: «some groups of people may benefit from extra vitamins»."
 }
@@ -2161,9 +2161,9 @@ window.READING = [
 "q": "Some researchers have compared the effect of loneliness on health to ______.",
 "o": [
 "smoking around fifteen cigarettes a day",
-"eating fast food every day",
-"not sleeping for a week",
-"working too many hours"
+"eating fast food around fifteen times a week",
+"not sleeping at all for a whole week",
+"working too many hours every single day"
 ],
 "e": "الفقرة 2: «compared its effect on health to that of smoking around fifteen cigarettes a day»."
 },
@@ -2181,9 +2181,9 @@ window.READING = [
 "q": "According to paragraph 2, why do some lonely patients make more visits?",
 "o": [
 "The visit gives them a chance to talk to someone.",
-"They are always seriously ill.",
-"They are asked to come every week.",
-"They want to stop smoking."
+"They are always seriously ill and need medicine.",
+"Their doctors ask them to come every week.",
+"They want help to stop smoking cigarettes."
 ],
 "e": "الفقرة 2: «not always because they are ill, but because the visit gives them a chance to talk to someone»."
 },
@@ -2201,9 +2201,9 @@ window.READING = [
 "q": "In a home-share programme, the student ______.",
 "o": [
 "pays a very low rent and spends time with the older person",
-"pays no rent and never helps in the house",
-"lives in a university dormitory",
-"organises weekly reading groups"
+"pays no rent at all and never helps with jobs in the house",
+"lives in a university dormitory near the older person's house",
+"organises weekly reading groups at the neighbourhood centre"
 ],
 "e": "الفقرة 3: «a student lives with an older person for a very low rent and, in return, spends time with them and helps with jobs around the house»."
 },
@@ -2211,9 +2211,9 @@ window.READING = [
 "q": "Why does the writer suggest showing an older relative how to make video calls?",
 "o": [
 "So that they can see family members who live far away",
-"So that they can work from home",
-"So that they can watch films",
-"So that they can call their doctors"
+"So that they can work from home after they retire",
+"So that they can watch films with their grandchildren",
+"So that they can call their doctors more often"
 ],
 "e": "الفقرة 4: «show an older relative how to make video calls so that they can see family members who live far away»."
 },
@@ -2221,11 +2221,11 @@ window.READING = [
 "q": "What do the underlined words \"check on\" in paragraph 4 mean?",
 "o": [
 "visit or call to see if someone is fine",
-"pay for someone's shopping",
-"forget about someone completely",
-"complain about someone to others"
+"pay for someone's shopping every week",
+"forget about someone completely and never call",
+"complain about someone to friends and neighbours"
 ],
-"e": "«we will also hope that someone remembers to check on us» = يسأل عنّا ويتطمّن علينا ← visit or call to see if someone is all right."
+"e": "«we will also hope that someone remembers to check on us» = يسأل عنّا ويتطمّن علينا ← visit or call to see if someone is fine."
 },
 {
 "q": "What is the best title for the passage?",
@@ -2294,9 +2294,9 @@ window.READING = [
 "q": "According to paragraph 3, the \"first and last mile\" is ______.",
 "o": [
 "the trip between the station and home or the final destination",
-"the distance between two metro stations",
-"the first and last train of the day",
-"the road between Riyadh and other cities"
+"the distance between two metro stations on the same line",
+"the first and last train that runs every day of the week",
+"the road between Riyadh and the other cities in the Kingdom"
 ],
 "e": "الفقرة 3 شرحتها بين قوسين: «the trip from home to the station and from the station to the final destination»."
 },
@@ -2304,21 +2304,21 @@ window.READING = [
 "q": "Why does the writer say that \"new roads tend to attract even more traffic\"?",
 "o": [
 "To explain why building wider roads is not a long-term solution",
-"To show that the metro costs too much money",
-"To prove that few passengers use the metro",
-"To show that Riyadh has stopped growing"
+"To show that the metro costs too much money to build and run",
+"To prove that very few passengers have used the metro so far",
+"To show that Riyadh has stopped growing and needs no new roads"
 ],
 "e": "الفقرة 4: «cannot simply keep building wider roads, because new roads tend to attract even more traffic» ← الكاتب يوضح إن توسيع الطرق مو حل على المدى البعيد، عشان كذا المترو مشروع طويل المدى."
 },
 {
 "q": "What does the underlined word \"cluster\" in paragraph 5 mean?",
 "o": [
-"gather closely together",
+"gather together",
 "close down",
 "move away",
 "grow smaller"
 ],
-"e": "cluster = تتجمّع قريب من بعض. «encouraging homes, shops and workplaces to cluster around stations» = البيوت والمحلات تتجمّع حول المحطات ← gather closely together."
+"e": "cluster = تتجمّع قريب من بعض. «encouraging homes, shops and workplaces to cluster around stations» = البيوت والمحلات تتجمّع حول المحطات ← gather together."
 },
 {
 "q": "Which statement would the writer most likely agree with?",
@@ -2334,9 +2334,9 @@ window.READING = [
 "q": "How would you describe the writer's attitude toward the metro?",
 "o": [
 "hopeful, but aware of its challenges",
-"completely negative",
-"sure that it will fail",
-"not interested"
+"completely negative about its future",
+"sure that it will fail very soon",
+"not interested in the project at all"
 ],
 "e": "الكاتب يمدحه: «The system is impressive by any standard» ويقول «it could gradually reshape how the city grows»، بس يذكر الصعوبات: «If not, it may remain an impressive system that many residents admire but rarely use» ← متفائل بس واقعي، ومو متأكد إنه بيفشل."
 },
@@ -2344,9 +2344,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "The metro is impressive, but its success depends on whether people change their habits.",
-"The metro has already solved Riyadh's traffic problems.",
-"Riyadh should stop spending money on public transport.",
-"Driverless trains are more comfortable than buses."
+"The metro has already solved all of Riyadh's traffic and air problems.",
+"Riyadh should stop spending money on public transport and focus on cars.",
+"Driverless trains are more comfortable and cheaper to use than buses."
 ],
 "e": "القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour»."
 }
@@ -2406,7 +2406,7 @@ window.READING = [
 {
 "q": "The writer gives the example of short visits to care homes or hospitals to show that ______.",
 "o": [
-"some volunteering helps the volunteers more than the people it is meant to help",
+"some visits help the volunteers more than the people there",
 "care homes and hospitals do not accept volunteers",
 "volunteers should visit hospitals more often",
 "short visits are the best kind of volunteering"
@@ -2490,9 +2490,9 @@ window.READING = [
 "q": "According to paragraph 1, many parents and teachers blame video games for ______.",
 "o": [
 "poor grades, lack of sleep and aggressive behaviour",
-"poor eyesight, headaches and back pain",
-"high costs and arguments in the family",
-"weak attention and poor planning skills"
+"poor eyesight, headaches and serious back pain",
+"high costs, arguments and problems in the family",
+"weak attention, poor planning and lack of patience"
 ],
 "e": "الفقرة 1: «responsible for poor grades, lack of sleep and aggressive behaviour»."
 },
@@ -2500,9 +2500,9 @@ window.READING = [
 "q": "What does the underlined word \"short-lived\" in paragraph 2 mean?",
 "o": [
 "lasting only a short time",
-"very strong",
-"easy to notice",
-"dangerous"
+"very strong and serious",
+"easy to notice at once",
+"dangerous for a long time"
 ],
 "e": "short-lived = ما يدوم إلا وقت قصير. والجملة تقول الشعور بالعدوانية يكون «immediately after playing» ويكون صغير ومؤقت."
 },
@@ -2510,9 +2510,9 @@ window.READING = [
 "q": "What have larger studies that follow young people over several years generally found?",
 "o": [
 "There is no strong link between gaming and serious violence.",
-"Violent games make most young people violent.",
-"Players feel more aggressive for many years.",
-"Family life is not important."
+"Violent games make most young people violent in later life.",
+"Players feel much more aggressive for many years after playing.",
+"Family life is much less important than the games people play."
 ],
 "e": "الفقرة 2: «Larger studies that follow young people over several years have generally failed to find a strong link between gaming and serious violence»."
 },
@@ -2530,9 +2530,9 @@ window.READING = [
 "q": "What can we understand from paragraph 3?",
 "o": [
 "A skill learned in a game may not help much with schoolwork.",
-"Action games make students better at exams.",
-"Strategy games do not need any planning.",
-"Team games stop players from communicating."
+"Becoming skilled at action games makes students better at exams.",
+"Puzzle and strategy games do not require any planning or patience.",
+"Online team games stop players from communicating with each other."
 ],
 "e": "الفقرة 3: «these benefits are often limited to tasks similar to the game itself. Becoming skilled at a fast-moving game does not necessarily make someone better at studying for an exam» ← المهارة من اللعبة ما تفيد بالضرورة في الدراسة."
 },
@@ -2540,9 +2540,9 @@ window.READING = [
 "q": "According to paragraph 4, for most players the real risk is that games ______.",
 "o": [
 "can take time away from sleep, exercise and conversation",
-"cause a serious medical condition",
-"make them violent",
-"are too difficult to play"
+"cause a serious medical condition that they cannot control",
+"make them violent and aggressive towards other people",
+"are too difficult and too expensive to play"
 ],
 "e": "الفقرة 4: «For most people, the real risk is simply that games… can push out other activities such as sleep, exercise and face-to-face conversation». أما «gaming disorder» فالكاتب يقول «affects only a small minority of players»."
 },
@@ -2593,9 +2593,9 @@ window.READING = [
 "q": "According to paragraph 1, plants in a vertical farm often grow ______.",
 "o": [
 "with their roots in water rich in nutrients",
-"in open fields under the sun",
-"in large areas of soil",
-"without any light"
+"in open fields under the summer sun",
+"in large areas of soil rich in nutrients",
+"without any kind of light or water at all"
 ],
 "e": "الفقرة 1: «the plants often grow with their roots in water rich in nutrients rather than in soil»."
 },
@@ -2613,9 +2613,9 @@ window.READING = [
 "q": "Why are few or no pesticides needed in a vertical farm?",
 "o": [
 "Insects can hardly get into a closed building.",
-"The plants grow without water.",
-"The LED lights kill insects.",
-"The farms are far from cities."
+"The plants grow without any water at all.",
+"The LED lights are strong enough to kill insects.",
+"The farms are built far away from cities."
 ],
 "e": "الفقرة 2: «since insects can hardly get into a closed building, few or no pesticides are needed» ← الحشرات ما تقدر تدخل المبنى المقفل تقريباً."
 },
@@ -2663,9 +2663,9 @@ window.READING = [
 "q": "What can we understand from paragraph 4?",
 "o": [
 "Vertical farms are unlikely to provide most of the world's wheat and rice.",
-"Lettuce needs large areas and long growing periods.",
-"Wheat grows faster than herbs.",
-"Traditional farms will soon disappear."
+"Lettuce and herbs need large areas and long growing periods.",
+"Wheat and rice grow faster indoors than lettuce and herbs do.",
+"Traditional farms will soon disappear because of vertical farms."
 ],
 "e": "الفقرة 4: القمح والرز «need large areas and long growing periods, and producing them indoors is currently far too costly» ← فالمزارع العمودية ما راح توفر أغلب القمح والرز."
 },
@@ -2716,9 +2716,9 @@ window.READING = [
 "q": "According to studies of the \"pretesting effect\", trying to answer a question before being told the answer ______.",
 "o": [
 "often helps people remember the correct information better",
-"always leads people to the correct answer",
-"makes people forget the correct information",
-"is only useful when the answer is correct"
+"always leads people to the correct answer the first time",
+"makes people forget the correct information more quickly",
+"is only useful when the person's first answer is correct"
 ],
 "e": "الفقرة 2: «trying to answer a question, even unsuccessfully, before being told the answer often helps people remember the correct information better later»."
 },
@@ -2736,9 +2736,9 @@ window.READING = [
 "q": "According to the idea of a \"growth mindset\", abilities ______.",
 "o": [
 "can be developed through effort and good strategies",
-"are fixed from birth",
-"cannot be changed after school",
-"are the same in every student"
+"are fixed from birth and cannot be developed",
+"cannot be changed after students leave school",
+"are the same in every student, whatever they do"
 ],
 "e": "الفقرة 3: «the belief that abilities can be developed through effort and good strategies, rather than being fixed from birth»."
 },
@@ -2786,9 +2786,9 @@ window.READING = [
 "q": "Which statement would the writer most likely agree with?",
 "o": [
 "Asking why an answer was wrong is more useful than just noticing it.",
-"Students should try to avoid all mistakes.",
-"Effort alone always leads to better grades.",
-"Correct answers always teach more than wrong ones."
+"Students should try to avoid all mistakes in their homework and tests.",
+"Effort alone always leads to better grades, whatever method students use.",
+"Correct answers always teach students more than wrong answers do."
 ],
 "e": "الفقرة 5: «Simply noticing that an answer was wrong is less useful than asking why it was wrong and what should be done differently next time»."
 },

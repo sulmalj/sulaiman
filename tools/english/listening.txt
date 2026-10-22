@@ -35,9 +35,9 @@ Receptionist: You're welcome. I'll email you to confirm the changes.
 - To complain about his room
 ?? Why does he want to arrive one day earlier?
 * His business meeting has been moved to Monday morning.
-- His flight was cancelled.
-- He wants to spend a day at the beach.
-- The hotel asked him to change the date.
+- His flight was cancelled, so he has to travel on Sunday.
+- He wants to spend a free day at the beach before work.
+- The hotel asked him to change the date of his booking.
 ?? How many nights will he stay now?
 * Four
 - Three
@@ -48,11 +48,11 @@ Receptionist: You're welcome. I'll email you to confirm the changes.
 - It is too expensive.
 - It is too small for working.
 - It has no internet.
-?? Why doesn't he want the standard room for the first night?
+?? Why doesn't he accept the receptionist's first offer?
 * He doesn't want to change rooms in the middle of his stay.
-- It doesn't include breakfast.
-- It is on the ground floor.
-- It is more expensive than the suite.
+- He doesn't want to pay more than ninety-five dollars a night.
+- He thinks the standard room is too small for his work.
+- The standard room is on the ground floor, next to reception.
 ?? How much will he pay per night for the family suite?
 * One hundred and twenty dollars
 - One hundred and forty dollars
@@ -70,12 +70,12 @@ Receptionist: You're welcome. I'll email you to confirm the changes.
 - In the afternoon
 ?? When should he call the hotel?
 * If he thinks he'll arrive after one in the morning
-- If he wants breakfast in his room
-- If he needs a taxi from the airport
-- If his flight lands earlier than eleven at night
+- If he wants breakfast to be ready in his room on Monday
+- If he needs the hotel to send a taxi to the airport
+- If he wants to pay for his room when he arrives
 ?? What happens if he cancels less than forty-eight hours before he arrives?
 * He pays the price of the first night.
-- He pays the price of all four nights.
+- He pays the price of all his nights.
 - He pays nothing.
 - He pays half the price of one night.
 
@@ -195,9 +195,9 @@ Patient: Thank you, doctor. That's really helpful.
 - It contains too much sugar.
 ?? Why shouldn't he stop drinking coffee suddenly?
 * The headaches might get worse for a few days.
-- He might feel very hungry.
-- He might not be able to sleep.
-- His eyes might become dry.
+- He might feel very hungry for about a week.
+- He might not be able to sleep for a few nights.
+- He might need to take painkillers every day.
 ?? What does the doctor say about painkillers?
 * Taking them too often can cause more headaches.
 - He should take them every day.
@@ -212,10 +212,10 @@ Patient: Thank you, doctor. That's really helpful.
 ## 4 | A Message About the Weekend Trip | monologue
 @ Sara=af_sarah
 Sara: Hi Emma, it's Sara. I'm calling about our trip to the mountains this weekend. I tried to call you twice, but your phone was off, so I'm leaving a message.
-Sara: There are a few changes to the plan. First, we're not leaving on Friday evening any more. Ahmed has to work late on Friday, so we're leaving on Saturday morning instead. We'll meet at the train station at seven fifteen. The train leaves at seven forty, so please don't be late!
+Sara: There are a few changes to the plan. First, we're not leaving on Friday evening any more. Dana has to work late on Friday, so we're leaving on Saturday morning instead. We'll meet at the train station at seven fifteen. The train leaves at seven forty, so please don't be late!
 Sara: Second, the weather forecast says it's going to be cold and rainy on Saturday, so bring a warm jacket and good walking boots. Sunday should be sunny, though.
 Sara: We're staying at a small guest house near the lake, not at the hotel we talked about. It's cheaper, only forty dollars each for the two nights, and breakfast is included. You can pay me when you see me.
-Sara: There will be five of us now. My cousin Nora is coming too, so that's you, me, Ahmed, Khalid and Nora.
+Sara: There will be five of us now. My cousin Nora is coming too, so that's you, me, Dana, Huda and Nora.
 Sara: Oh, and one more thing. Could you bring your camera? Mine is broken. I'll bring the sandwiches and drinks for the train.
 Sara: OK, call me back when you get this message. My number is the same as before. Bye!
 ?? Why is Sara leaving a message?
@@ -224,7 +224,7 @@ Sara: OK, call me back when you get this message. My number is the same as befor
 - Sara's phone is broken.
 - Emma is on the train.
 ?? Why did they change the day of the trip?
-* Ahmed has to work late on Friday.
+* Dana has to work late on Friday.
 - The train on Friday is full.
 - The weather is bad on Friday.
 - Nora can't come on Friday.
@@ -261,7 +261,7 @@ Sara: OK, call me back when you get this message. My number is the same as befor
 ?? Who is Nora?
 * Sara's cousin
 - Sara's sister
-- Ahmed's wife
+- Dana's sister
 - Emma's friend from work
 ?? What does Sara ask Emma to bring?
 * Her camera
@@ -303,10 +303,10 @@ Faisal: That's a lovely idea. He'll keep it forever.
 - It rained all evening.
 - He arrived very late.
 ?? What does Mona suggest as a compromise?
-* A family dinner with a few of his old friends invited secretly
+* A family dinner with a few old friends as a surprise
 - A big surprise party with all his colleagues
 - A quiet dinner with only their parents
-- A trip to another city
+- A weekend trip with the family to another city
 ?? About how many people will come?
 * Around twenty
 - Around fifteen
@@ -350,9 +350,9 @@ Speaker: Finally, on Wednesday afternoon there will be a campus tour for all new
 Speaker: Thank you for listening, and I hope you enjoy your time here.
 ?? Who is the speaker?
 * The head of the Student Services Office
-- A new student
-- The head of the library
-- A sports teacher
+- A new student who is starting at the university
+- The head of the library in Building A
+- A sports teacher at the sports centre
 ?? Where can students collect their ID cards?
 * In Building C, on the ground floor
 - In Building A, next to the library
@@ -360,9 +360,9 @@ Speaker: Thank you for listening, and I hope you enjoy your time here.
 - In the sports centre
 ?? What do students need to bring to get their ID card?
 * A passport or national ID and one photo
-- Two photos and ten dollars
-- Their timetable and a photo
-- A letter from their advisor
+- Two photos and a letter from their advisor
+- Their timetable and their library card
+- A bank card and a copy of their timetable
 ?? What is the ID card NOT needed for, according to the speaker?
 * Eating at the restaurant
 - Entering the library
@@ -439,27 +439,27 @@ Amal: Good. And if he says yes, you should call the owner quickly, before someon
 - It had a big kitchen.
 - It had a garden.
 - It was the cheapest.
-?? How long would it take Majed to walk from the third flat to the university?
-* Ten minutes
-- Forty minutes
-- Five minutes
-- Twenty minutes
+?? How much was the rent for the third flat?
+* Six hundred and fifty dollars
+- Five hundred dollars
+- Seven hundred dollars
+- Nine hundred dollars
 ?? What was different about the last place?
 * It was a house with a garden.
 - It was in the city centre.
 - It was on the top floor.
 - It had three bedrooms.
-?? How does Majed get from the house to the university?
-* It takes forty minutes by bus.
-- It takes ten minutes on foot.
-- It takes twenty minutes by car.
-- It takes forty minutes by bicycle.
-?? What does Amal suggest?
-* Sharing the house with a friend
-- Buying a car
-- Taking the flat in the city centre
-- Living with his family
-?? How much would each person pay if Majed shares the house?
+?? How long does it take to get from the last place to the university?
+* Forty minutes by bus
+- Ten minutes on foot
+- Twenty minutes by car
+- Forty minutes by train
+?? What does Amal say Majed could buy?
+* A bicycle
+- A car
+- A motorbike
+- A bus pass
+?? How much would each person pay if Majed and a friend shared the last place?
 * Three hundred and fifty dollars
 - Seven hundred dollars
 - Four hundred dollars
@@ -547,11 +547,11 @@ Rayan: That's fair. Thanks for all your help.
 - He is moving to Canada for the rest of his life.
 - His old jacket is broken.
 - He is going on a skiing holiday.
-?? What is the disadvantage of the first jacket?
-* It isn't waterproof.
-- It is very heavy.
-- It isn't very warm.
-- It doesn't come in black.
+?? What is good about the first jacket?
+* It is very light and warm.
+- It is completely waterproof.
+- It is good in heavy rain.
+- It is made for wet snow.
 ?? What is special about the hood of the second jacket?
 * You can remove it.
 - It is filled with feathers.
@@ -842,9 +842,9 @@ Noor: Thanks, Huda. I think this is going to be a really interesting project.
 - Noor
 ?? Where will they meet?
 * In a study room in the library
-- In the classroom
-- In a café
-- At Huda's house
+- In the classroom after their class
+- In a café near the university
+- At Huda's house near the campus
 ?? What time will they meet on Tuesday?
 * At half past four
 - At four o'clock
@@ -872,9 +872,9 @@ Librarian: If you need help finding a book, just ask any of us. That's what we'r
 - On the top floor
 ?? What is on the second floor?
 * Books about history, art and languages
-- Science and medicine books
-- The silent study area
-- The newspapers
+- Books about science and medicine
+- The silent study area for students
+- The computers and the newspapers
 ?? What must you do on the top floor?
 * Not talk at all and turn off the sound on your phone
 - Talk quietly and only about your studies
@@ -931,9 +931,9 @@ Officer: From eight until six on weekdays. But bags are only kept here for two w
 Woman: I'll come this afternoon. Thank you so much.
 ?? Why is the woman especially worried about her bag?
 * Her laptop with her work from the last month is in it.
-- It was a present from her sister.
-- It cost a lot of money.
-- Her passport is in it.
+- It was an expensive present from her sister last year.
+- Her passport and her train tickets for next week are in it.
+- It cost her a lot of money when she bought it last month.
 ?? How did she leave the bag on the train?
 * She fell asleep and got off in a hurry.
 - She was talking on the phone.
@@ -946,9 +946,9 @@ Woman: I'll come this afternoon. Thank you so much.
 - At her sister's house
 ?? What does her bag look like?
 * It is dark blue with a long strap and a small white star.
-- It is black with a red star.
-- It is brown leather with a short strap.
-- It is dark blue with her name on the front.
+- It is a black backpack with a short strap and a white star.
+- It is brown leather with a short strap and her name on the front.
+- It is light blue with a long strap and a small black star.
 ?? Why did she stay at her sister's house last night?
 * Her house keys were in the bag.
 - She missed the last train.
@@ -976,9 +976,9 @@ Woman: I'll come this afternoon. Thank you so much.
 - The receipt for her laptop
 ?? What happens to bags after two weeks?
 * They are sent to the main office in the city centre.
-- They are given to charity.
-- They are thrown away.
-- They are returned to the train company.
+- They are given to a charity shop in the city.
+- They are thrown away if nobody comes for them.
+- They are returned to the train company's office.
 
 ## 16 | Tips for a Healthy Life | monologue
 @ Speaker=am_michael
@@ -1036,9 +1036,9 @@ Speaker: Remember, you don't have to change everything at once. Start with one t
 - Thirty minutes
 ?? What is the doctor's final advice?
 * Start with one tip and add another one next week.
-- Change everything at once.
-- Go to the gym every day.
-- Stop eating everything you love.
+- Try to change everything in your life at once.
+- Go to the gym every day and run a marathon.
+- Stop eating everything you love, starting this week.
 
 ## 17 | Choosing a Film for the Weekend | dialogue
 @ Reem=af_bella Sami=am_michael
@@ -1069,9 +1069,9 @@ Reem: Then let's meet at ten past six at the entrance.
 - A group of children at school
 ?? What do the reviews say about the animated film?
 * It is funny and teaches children about nature.
-- It is too long for children.
-- Some scenes are scary.
-- It is boring for adults.
+- It is too long and too boring for children.
+- It has a few scenes that are scary for children.
+- It is boring for adults and too short for children.
 ?? How long is the adventure film?
 * Nearly two and a half hours
 - An hour and a half
@@ -1210,9 +1210,9 @@ Agent: Of course, they're free. Please bring your licence and a credit card. We'
 - Twelve dollars
 ?? With the basic insurance, what would the customer pay after an accident?
 * The first five hundred dollars of the repairs
-- Nothing at all
-- The full cost of the repairs
-- Two hundred dollars
+- Nothing at all, because insurance is included in the price
+- The full cost of all the repairs to the car
+- Two hundred dollars, which is taken from the deposit
 ?? Why does the customer choose full insurance?
 * The mountain roads are narrow.
 - It is free for families.
@@ -1225,9 +1225,9 @@ Agent: Of course, they're free. Please bring your licence and a credit card. We'
 - Nothing happens.
 ?? Why can't his brother drive the car?
 * He has had his licence for less than two years.
-- He is under twenty-one.
-- He doesn't have a credit card.
-- Extra drivers are never allowed.
+- He is under twenty-one and too young to rent.
+- He doesn't have a credit card to pay the charge.
+- Extra drivers are never allowed on mountain roads.
 ?? How old is his brother?
 * Twenty-four
 - Twenty-one
@@ -1308,9 +1308,9 @@ Adviser: Yes, but it's free and it only takes forty minutes. You can do it onlin
 - By joining the morning group instead of the evening one
 ?? What will happen after he does the level test online?
 * The school will call him tomorrow with the results.
-- He will start classes tomorrow.
-- He will get his results immediately.
-- He will receive a certificate by email.
+- He will start the evening classes tomorrow night.
+- He will get his results on the screen immediately.
+- The school will email him a certificate next week.
 
 ## 21 | A Lecture on Memory | monologue
 @ Lecturer=bm_george
@@ -1358,9 +1358,9 @@ Lecturer: So, what's the practical lesson here? Don't panic when you forget thin
 - It protects us from bad memories.
 ?? What does the brain seem to do during deep sleep?
 * It replays the day's experiences and decides which to keep.
-- It deletes all new information.
-- It rests completely and does nothing.
-- It creates new emotional memories.
+- It deletes all the new information from that day.
+- It rests completely and stops working until morning.
+- It creates new emotional memories for the next day.
 ?? What does the lecturer suggest about staying up all night before an exam?
 * Students may remember less, not more.
 - It is a good way to review everything.
@@ -1387,9 +1387,9 @@ Sara: I would, but I'd tell them to start with a trial of a few months and to ta
 Presenter: Thank you both.
 ?? What is the main topic of the discussion?
 * Whether companies should move to a four-day working week
-- How to find a better job
-- Why people feel stressed at work
-- How small companies can find new clients
+- How companies can pay their workers higher salaries
+- Why people feel more stressed at work than before
+- How small design companies can find new clients
 ?? How many companies took part in the trial in Britain?
 * Around sixty
 - Around ninety
@@ -1412,14 +1412,14 @@ Presenter: Thank you both.
 - They took fewer holidays.
 ?? Why did Sara's company lose an important client?
 * The client felt the company wasn't available enough.
-- The designers made serious mistakes.
-- The company's prices were too high.
-- The client moved to another country.
+- The designers made serious mistakes in their work.
+- The company's prices were too high for the client.
+- The client moved its business to another country.
 ?? What compromise did Sara's company find?
 * Half the team takes Thursday off and the other half takes Sunday off.
-- Everyone went back to working five days.
-- Everyone works longer days from Sunday to Wednesday.
-- The company hired new staff to work on Thursdays.
+- Everyone went back to working five days a week, from Sunday to Thursday.
+- Everyone works longer days from Sunday to Wednesday and rests on Thursday.
+- The company hired new staff to answer client emails on Thursdays.
 ?? According to Dr. Nasser, where does a four-day week work best?
 * In office jobs where results can be measured
 - In hospitals and schools
@@ -1427,9 +1427,9 @@ Presenter: Thank you both.
 - In jobs where people work outside
 ?? What is Dr. Nasser's overall opinion?
 * It is a promising idea, but it is not for everyone.
-- It should be introduced in all jobs.
-- It is a bad idea for the economy.
-- It only works in Britain.
+- It should be introduced in all jobs, including hospitals.
+- It is a bad idea that will damage the economy.
+- It only works in Britain, not in other countries.
 ?? What does Sara wish she had done?
 * Started with a trial and talked to her clients first
 - Kept the five-day week for the whole company
@@ -1447,14 +1447,14 @@ Speaker: Interestingly, second-hand shopping, which used to be seen as something
 Speaker: In the end, the most sustainable piece of clothing is the one that's already in your wardrobe. Thank you.
 ?? What is the speaker's main purpose?
 * To explain the hidden costs of fast fashion and suggest some changes
-- To advertise a new clothing shop
-- To teach people how to design clothes
+- To advertise a new clothing shop and its cheap summer collection
+- To teach people how to design and make their own clothes
 - To ask everyone to stop buying clothes completely
 ?? What is fast fashion, according to the speaker?
 * Producing large amounts of cheap, trendy clothing very quickly
-- Expensive clothes made by famous designers
-- Clothes made only from natural materials
-- Clothes that are sold online only
+- Producing small amounts of expensive clothing by famous designers
+- Making clothes slowly and only from natural materials
+- Selling used clothes cheaply through apps on the internet
 ?? What did the study find about the period between two thousand and two thousand fourteen?
 * People bought more clothes but kept them for a shorter time.
 - People bought fewer clothes but kept them longer.
@@ -1477,9 +1477,9 @@ Speaker: In the end, the most sustainable piece of clothing is the one that's al
 - People become ill from wearing cheap clothes.
 ?? What is the speaker's attitude towards buying new clothes?
 * People don't need to stop, but they should buy more carefully.
-- Everyone should stop buying new clothes immediately.
-- Buying new clothes is never a problem.
-- Only rich people should buy new clothes.
+- Everyone should stop buying new clothes immediately and completely.
+- Buying new clothes is never a problem if they are cheap.
+- Only rich people should buy new clothes from expensive shops.
 ?? What question does she suggest asking before buying something?
 * Will I wear it at least thirty times?
 - Is it the cheapest one in the shop?
@@ -1526,20 +1526,20 @@ Speaker: So, what can we do? We can't stop our brains from making quick judgemen
 - It made people less sure.
 - It made people kinder.
 ?? Why were quick judgements useful for people in the past?
-* They had to decide immediately whether a stranger was a friend or a threat.
-- They had to find food before other groups found it.
-- They were not allowed to speak to strangers at all.
-- They lived in very large groups and met many people.
+* They had to decide quickly if a stranger was a friend or a threat.
+- They had to find food quickly before other groups of people found it.
+- They were not allowed to speak to strangers until they knew them well.
+- They lived in very large groups and had to remember many new faces.
 ?? What is the halo effect?
 * Believing a person has other good qualities because we notice one
-- Remembering only the bad things people do
-- Judging people only by their voice
-- Trusting people who agree with us
+- Remembering only the bad things that a person has done to us
+- Judging people mainly by their voice and the way they speak
+- Trusting people more when they agree with our opinions
 ?? What does confirmation bias make us do?
 * Look for information that supports our first impression
-- Change our opinion very often
-- Ask other people what they think
-- Forget our first impression quickly
+- Change our first opinion every time we get new information
+- Ask other people what they think before we decide
+- Forget our first impression after we get to know someone
 ?? Why does the speaker mention a colleague who didn't say hello?
 * To give an example of confirmation bias
 - To show that most colleagues are unfriendly
@@ -1547,14 +1547,14 @@ Speaker: So, what can we do? We can't stop our brains from making quick judgemen
 - To describe a typical job interview
 ?? According to research, which interviewers make fairer decisions?
 * Those who ask every candidate the same planned questions
-- Those who have a relaxed conversation
-- Those who trust their feelings
-- Those who finish the interview quickly
+- Those who have a relaxed conversation with each candidate
+- Those who trust their feelings about each candidate
+- Those who finish every interview as quickly as possible
 ?? What is the speaker's main advice?
 * Treat quick judgements as a first guess, not a final decision.
-- Stop making quick judgements completely.
-- Always trust your first impression.
-- Avoid meeting new people.
+- Stop making quick judgements about people completely.
+- Always trust your first impression because it is usually right.
+- Ask your friends for their opinion before you judge someone.
 
 ## 25 | Artificial Intelligence in Hospitals | dialogue
 @ Host=af_sarah Faris=am_michael
@@ -1577,9 +1577,9 @@ Faris: Learn how these tools work, but never stop thinking for yourself.
 - He is a medical student.
 ?? What does the AI program do before Dr. Faris looks at a scan?
 * It marks any areas that might be worrying.
-- It writes the final report.
-- It talks to the patient.
-- It takes the X-ray.
+- It writes the final report for the doctor.
+- It explains the results to the patient.
+- It takes the X-ray and sends it to him.
 ?? Who makes the final decision?
 * A doctor
 - The computer program
@@ -1587,9 +1587,9 @@ Faris: Learn how these tools work, but never stop thinking for yourself.
 - The hospital manager
 ?? What does Dr. Faris say about the program's mistakes?
 * It sometimes marks normal things, and occasionally misses something.
-- It never makes mistakes, even with difficult scans.
-- It makes more mistakes than doctors usually do.
-- It only makes mistakes when the images are old.
+- It never makes mistakes, even with very small or difficult details.
+- It only makes mistakes when the images are old or not very clear.
+- It misses things often, so doctors don't trust its marks at all.
 ?? According to Dr. Faris, what are the main benefits of the program?
 * Speed and consistency
 - Lower costs and fewer staff
@@ -1607,16 +1607,16 @@ Faris: Learn how these tools work, but never stop thinking for yourself.
 - It calls the patients at home.
 ?? What does Dr. Faris believe about AI and doctors' jobs?
 * Doctors who use AI will gradually replace doctors who don't.
-- AI will soon replace all doctors.
-- AI will never be used in hospitals.
-- Only young doctors will keep their jobs.
+- AI will soon replace all doctors who read medical images.
+- AI will never be good enough to be used in hospitals.
+- Only young doctors will keep their jobs in the future.
 ?? Why must a program be tested on local patients?
 * It may work less well for people it wasn't trained on.
-- Local patients have more diseases.
-- The program's company requires it.
-- Local hospitals have better images.
+- Local patients usually have more serious diseases than others.
+- The company that made the program requires it by law.
+- Local hospitals take better and clearer images than others.
 ?? What is his advice to medical students?
 * Learn how these tools work, but keep thinking for yourself.
-- Avoid using AI tools.
+- Avoid using AI tools until they are completely safe.
 - Study computer science instead of medicine.
-- Trust the computer more than yourself.
+- Trust the computer more than your own opinion.

@@ -168,9 +168,9 @@ Huda: No, thanks. The free case is quite strong, and I'm usually careful with my
 - She works for a newspaper.
 ?? What is the advantage of the more expensive phone?
 * It takes excellent photos, even at night.
-- It has a bigger battery.
-- It comes with a free case.
-- It is lighter.
+- It has a bigger battery that lasts all day.
+- It has a stronger screen and a longer guarantee.
+- It is lighter and much cheaper than the other.
 ?? How much does the cheaper phone cost?
 * Two thousand one hundred riyals
 - Three thousand two hundred riyals
@@ -202,7 +202,7 @@ Huda: No, thanks. The free case is quite strong, and I'm usually careful with my
 - Problems with the camera
 - Any problems in the first year
 ?? Why doesn't Huda buy screen protection?
-* The free case is strong, and she is usually careful.
+* She is usually careful with her phone.
 - It is too expensive for her student budget.
 - Her new phone already has a strong screen.
 - The seller says that she doesn't really need it.
@@ -227,9 +227,9 @@ Professor: Good luck with your studies, and see you on Monday.
 - In the library on the first floor
 ?? Why will the class be in a different place?
 * Students will practise listening and need computers with headphones.
-- Room 214 is being painted this week.
-- The professor is sick and can't come.
-- There are too many students for the room.
+- Room 214 is being painted, so students can't use it this week.
+- Students will take a grammar test on computers in the lab.
+- There are too many students now, and Room 214 is too small.
 ?? When is the final exam?
 * On Thursday the twenty-second
 - On Monday the twenty-second
@@ -387,12 +387,12 @@ Voice: Fresh Market. Fresh food, fresh prices. See you on Saturday!
 ?? What do customers get for purchases over two hundred riyals?
 * A free box of dates
 - A shopping bag
-- Free delivery
+- A free cake from the bakery
 - Twenty percent off
 ?? When is delivery free?
 * For orders over one hundred riyals
 - For all orders
-- For orders over two hundred riyals
+- For orders over fifty riyals
 - Only on Saturday
 
 ## 7 | Opening a Bank Account | dialogue
@@ -479,9 +479,9 @@ Student: I chose him for my presentation because he teaches us something importa
 - The old city of Basra and its people
 ?? What is optics?
 * The science of light and how we see
-- The science of medicine
-- The study of mathematics
-- The study of stars
+- The science of the body and how we heal
+- The study of stars and how they move
+- The study of numbers and how we count
 ?? Where was Ibn al-Haytham born?
 * In Basra, in Iraq
 - In Cairo, in Egypt
@@ -672,14 +672,14 @@ Student: Thank you so much for understanding, Doctor.
 Professor: You're welcome. Take care of your father, and good luck with your studying.
 ?? Why did Yousef miss the exam?
 * He was in the hospital with his father.
-- He was sick with a high temperature.
-- He forgot the date of the exam.
-- He was late because of the traffic.
+- He was in the hospital because he was sick.
+- He had to drive his father to the airport.
+- His father needed his help at work.
 ?? What happened to Yousef's father?
 * He had a car accident and broke his arm.
-- He fell at home.
-- He had a heart problem.
-- He broke his leg at work.
+- He fell at home and hurt his back.
+- He had a heart problem at work.
+- He broke his leg in a car accident.
 ?? Which exam did Yousef miss?
 * The history exam
 - The English exam
@@ -793,7 +793,7 @@ Neighbour: Of course. I'll talk to him tonight. He can use headphones after elev
 Majed: That would be great. Thank you for understanding.
 Neighbour: No problem at all. And please, if it happens again, just knock on my door or send me a message. Here's my number.
 Majed: Thank you. And if my children are too noisy during the day, please tell me too.
-Neighbour: Ha, don't worry. I love hearing children playing. By the way, my wife made some dates cake today. Please take some for your family.
+Neighbour: Ha, don't worry. I love hearing children playing. By the way, my wife made some date cake today. Please take some for your family.
 Majed: That's very kind of you. Thank you, Ibrahim.
 ?? Where does Majed live?
 * In the apartment upstairs
@@ -817,32 +817,32 @@ Majed: That's very kind of you. Thank you, Ibrahim.
 - At six in the evening
 ?? Why can't Majed sleep well?
 * He has to wake up at six for work.
-- He is sick.
-- His children are noisy.
-- His bed is uncomfortable.
-?? Who is making the noise?
-* Ibrahim's brother
-- Ibrahim's children
-- Ibrahim's wife
-- Majed's children
+- His children wake him up late at night.
+- He works at night and sleeps during the day.
+- His bed is old and very uncomfortable.
+?? How long is Ibrahim's brother staying with them?
+* This month
+- One night
+- One week
+- The whole year
 ?? Why does Ibrahim's brother stay up late?
 * He likes to watch football matches.
-- He works at night.
-- He studies late.
-- He plays video games.
+- He works at night in a hospital.
+- He studies late for his exams.
+- He likes to play video games online.
 ?? What is Ibrahim's solution?
 * His brother can use headphones after eleven o'clock.
-- They will move to another apartment.
-- They will stop watching TV.
-- Majed should close his windows.
+- They will move the TV to another room.
+- His brother will watch football at a friend's house.
+- Majed should close his windows at night.
 ?? What should Majed do if the noise happens again?
 * Knock on Ibrahim's door or send him a message.
-- Call the police.
-- Talk to the building manager.
-- Play loud music too.
+- Call the police or talk to the building manager.
+- Ask Ibrahim's brother to turn the music down.
+- Play loud music too, early in the morning.
 ?? What does Ibrahim give Majed?
-* Some dates cake
-- His phone
+* Some date cake
+- Some coffee
 - Headphones
 - A book
 
@@ -893,9 +893,9 @@ Speaker: We hope to see you all there. Let's make this the best Sports Day ever!
 - Two
 ?? What will the first-place team in each sport get?
 * A trophy and a gift card worth five hundred riyals
-- A free T-shirt and nothing else
-- Five hundred riyals in cash each
-- A trip abroad to watch a final
+- A medal and a voucher for the food trucks
+- Five hundred riyals in cash for each player
+- A trip abroad to watch a football final
 ?? What will all participants get?
 * A free T-shirt and a certificate
 - A trophy for each person
@@ -991,9 +991,9 @@ Host: Remember, don't try to learn fifty words in one day. Learning ten words a 
 - Every Day English
 ?? What is the host's name?
 * Lina
-- Lama
-- Lana
-- Layla
+- Sara
+- Noura
+- Reem
 ?? How many tips does the host give?
 * Five
 - Three
@@ -1001,14 +1001,14 @@ Host: Remember, don't try to learn fifty words in one day. Learning ten words a 
 - Fifty
 ?? What should you write in your vocabulary notebook?
 * The word, its meaning and an example sentence
-- Only the translation in Arabic
-- Only the word and its spelling
-- A long story about each word
+- Only the translation of the word in Arabic
+- Only the word and how to spell it correctly
+- A long story that uses each new word
 ?? Why does the host suggest learning words in groups?
 * Your brain remembers words better when they are connected.
-- It is faster to write them in a notebook.
-- Teachers prefer students to study that way.
-- You need fewer notebooks and less paper.
+- You can write them in your notebook much faster.
+- Teachers usually test words in groups in the exam.
+- You can learn fifty new words in one day that way.
 ?? How much new information do we forget in one day if we don't review it?
 * About half
 - About ten percent
@@ -1054,9 +1054,9 @@ Woman: I'll tell him. Thank you so much for explaining everything.
 Pharmacist: You're welcome. I hope he feels better soon.
 ?? What is wrong with the woman's husband?
 * He has a sore throat and a high temperature.
-- He has a headache and a cough.
-- He has a stomach ache.
-- He has an earache.
+- He has a bad headache and a dry cough.
+- He has a stomach ache and feels sick.
+- He has an earache and a blocked nose.
 ?? Why can't the pharmacist give her antibiotics?
 * She doesn't have a prescription from a doctor.
 - They are out of stock.
@@ -1220,9 +1220,9 @@ Lama: OK, I'll register tonight. Thanks, Hind!
 - It's in the afternoon.
 ?? Why does Hind want to take computer skills?
 * It's useful for any job and has no exams, only projects.
-- Her sister took it and recommended it.
-- It's easy to get a place in the course.
-- It has a lot of interesting reading.
+- Her sister took it last year and really enjoyed it.
+- It's easy to get a place because it isn't popular.
+- It has a lot of interesting reading every week.
 ?? How many places were there in computer skills last semester?
 * Only thirty
 - Only thirteen
@@ -1250,9 +1250,9 @@ Reporter: That's all for now. Our next traffic report will be at eight fifteen. 
 - On Airport Road
 ?? What happened about twenty minutes ago?
 * A small accident between two cars
-- A big fire
-- A bus broke down
-- It started to rain
+- A large fire in an office building
+- A bus broke down near the tower
+- Heavy rain started to fall
 ?? How many lanes are closed on King Fahd Road?
 * Two
 - One
@@ -1320,9 +1320,9 @@ Speaker: Cooling our cities isn't only about comfort. In extreme heat, it can be
 - They reflect the sunlight.
 ?? Why should dry countries choose local kinds of trees?
 * They can survive with very little water.
-- They grow faster.
-- They are cheaper to buy.
-- They give more shade.
+- They grow much faster than other trees.
+- They are cheaper to buy and to plant.
+- They give more shade in the summer.
 ?? What is the difference between dark and light-coloured surfaces?
 * Dark ones absorb most sunlight, while light ones reflect much of it.
 - Light ones absorb most sunlight, while dark ones reflect much of it.
@@ -1345,9 +1345,9 @@ Speaker: Cooling our cities isn't only about comfort. In extreme heat, it can be
 - They are less useful than modern technology.
 ?? According to the speaker, why is cooling cities important?
 * In extreme heat, it can be a matter of health and even life.
-- It helps cities attract more tourists in summer.
-- It makes the streets look cleaner and more beautiful.
-- It makes new buildings much cheaper to build.
+- It helps cities attract many more tourists during the hot summer.
+- It makes the streets look cleaner and more beautiful for everyone.
+- It makes new buildings much cheaper and quicker to build.
 
 ## 22 | Campus Voices | dialogue
 @ Host=af_heart Ahmed=am_michael Noura=af_bella
@@ -1365,9 +1365,9 @@ Noura: I don't think so. The best solution is probably a mix, which we call blen
 Ahmed: That would be ideal for me.
 ?? What is the main topic of the discussion?
 * Whether online learning is as effective as classroom learning
-- How to find a part-time job
-- Why engineering is a difficult subject
-- How teachers prepare their lectures
+- How students can find part-time jobs at university
+- Why engineering is harder to study than education
+- How teachers prepare their lectures for the classroom
 ?? What does Ahmed study?
 * Engineering
 - Education
@@ -1424,9 +1424,9 @@ Lecturer: I should add that later studies haven't always found such strong effec
 Lecturer: Next time, we'll look at how companies use these ideas when they design their websites.
 ?? What is the main question of the lecture?
 * Whether having too many choices can make us less happy
-- How supermarkets choose their prices
-- Why people prefer sweet food
-- How to become a psychologist
+- How supermarkets decide the prices of their products
+- Why most people prefer sweet food such as jam
+- How students can train to become psychologists
 ?? Where did the famous study take place?
 * In a supermarket in California
 - In a university library
@@ -1454,9 +1454,9 @@ Lecturer: Next time, we'll look at how companies use these ideas when they desig
 - We don't have enough time.
 ?? How does regret affect people who have many choices?
 * They are less satisfied with the choice they made.
-- They make decisions more quickly.
-- They always return what they bought.
-- They become better at comparing.
+- They make decisions more quickly and feel happier.
+- They always return what they bought to the shop.
+- They become better at comparing all the options.
 ?? What do satisficers do?
 * They choose the first option that's good enough.
 - They compare every option carefully.
@@ -1504,9 +1504,9 @@ Maha: Because reefs are home to about a quarter of all sea life, they protect co
 - Clean water
 ?? What is coral bleaching?
 * Corals turning white after losing their algae
-- Corals being cleaned by divers
-- Corals growing too quickly
-- Corals changing colour at night
+- Corals being cleaned by divers and tourists
+- Corals growing too quickly in warm water
+- Corals changing colour at night to stay safe
 ?? According to Maha, what is the biggest threat to coral reefs?
 * Rising sea temperatures
 - Fishing nets
@@ -1549,15 +1549,15 @@ Speaker: Why does this matter? Eating too much sugar over many years is linked t
 Speaker: I'm not suggesting that you should never eat anything sweet again. That isn't realistic, and enjoying food is part of a healthy life. Instead, start by reading food labels. Replace soft drinks with water most of the time. And remember that your taste can change: after a few weeks with less sugar, many people find that very sweet foods actually taste too sweet.
 ?? What is the main topic of the talk?
 * How much sugar we eat, and how to reduce it
-- How to cook healthy desserts
-- Why fruit is bad for us
-- How food companies make sweets
+- How to cook healthy desserts without any sugar
+- Why fruit and milk are bad for our health
+- How food companies make sweets and soft drinks
 ?? According to the World Health Organization, what is the ideal limit for free sugars?
 * Less than five percent of daily energy
 - Less than ten grams a day
 - Less than twenty-five percent of daily energy
 - No sugar at all
-?? About how many teaspoons are twenty-five grams of sugar?
+?? About how many teaspoons is twenty-five grams of sugar?
 * About six
 - About nine
 - About two
@@ -1594,6 +1594,6 @@ Speaker: I'm not suggesting that you should never eat anything sweet again. That
 - Type two diabetes
 ?? What does the speaker say can happen after a few weeks with less sugar?
 * Very sweet foods may start to taste too sweet.
-- People want even more sugar.
-- People lose a lot of weight.
-- People stop enjoying food.
+- People start to want even more sugar than before.
+- People lose a lot of weight very quickly.
+- People stop enjoying their food completely.

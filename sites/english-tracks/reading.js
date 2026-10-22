@@ -101,14 +101,14 @@ window.READING = [
 "e": "الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر."
 },
 {
-"q": "What did the accounting professor do every five or ten minutes?",
+"q": "According to paragraph 1, students who laugh more ______.",
 "o": [
-"He told the students a joke.",
-"He gave the students a short test.",
-"He showed the students a funny video.",
-"He let the students play games."
+"complete their homework more quickly",
+"take fewer tests at school",
+"sleep better at night",
+"talk more in class"
 ],
-"e": "الفقرة 3: «he told the students a joke every five or ten minutes»."
+"e": "الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly»."
 }
 ]
 },
@@ -205,9 +205,9 @@ window.READING = [
 "q": "What does Alex do before he starts work?",
 "o": [
 "He has some coffee and takes a short walk.",
-"He drives to his office.",
-"He answers emails in the park.",
-"He goes to a meditation class."
+"He drives to his office in the city centre.",
+"He reads the news on his phone in bed.",
+"He goes to an online meditation class."
 ],
 "e": "الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park»."
 },
@@ -258,7 +258,7 @@ window.READING = [
 "o": [
 "more work",
 "more time",
-"more useful",
+"more rest",
 "more fun"
 ],
 "e": "الفقرة 3: «Carefully planned solutions can feel like more work for employees»."
@@ -316,7 +316,7 @@ window.READING = [
 {
 "q": "What happens when employees get sick often or quit?",
 "o": [
-"Employers must use time and resources to find and train new employees.",
+"Employers must find and train new employees.",
 "Employers must build more game rooms.",
 "Employees must take more meditation classes.",
 "Employees must work longer hours."
@@ -349,9 +349,9 @@ window.READING = [
 "q": "According to paragraph 1, many students reach the end of the month ______.",
 "o": [
 "with an empty wallet and no idea where their money went",
-"with enough money to buy new books",
-"with a lot of savings in the bank",
-"with more help from their families"
+"with enough money left to buy their books for next term",
+"with a lot of money saved in the bank for the next month",
+"with extra help from their families and some money to spare"
 ],
 "e": "الفقرة 1: «a lot of students reach the end of the month with an empty wallet and no idea where their money went» ← يخلص الشهر وجيبهم فاضي وما يدرون وين راحت فلوسهم."
 },
@@ -359,9 +359,9 @@ window.READING = [
 "q": "What does the underlined word \"budget\" in paragraph 2 mean?",
 "o": [
 "a plan for the money you receive and spend",
-"a list of the books you need",
-"a type of bank account",
-"a monthly university allowance"
+"a list of the books you need for the semester",
+"a type of bank account for students who save",
+"the monthly allowance that the university pays you"
 ],
 "e": "الفقرة 2 تشرح الكلمة: «This is a simple plan that shows how much money you receive each month and how you are going to spend it»."
 },
@@ -389,11 +389,11 @@ window.READING = [
 "q": "Which way of reducing costs does the writer NOT mention?",
 "o": [
 "Walking to university instead of driving",
-"Bringing lunch from home",
-"Buying used textbooks",
-"Cancelling app subscriptions"
+"Bringing lunch from home a few times a week",
+"Borrowing textbooks from the library",
+"Cancelling some of your app subscriptions"
 ],
-"e": "الفقرة 3 ذكرت الغداء من البيت، والكتب المستعملة، وإلغاء اشتراكات التطبيقات. أما المشي للجامعة بدل السيارة ما انذكر."
+"e": "الفقرة 3 ذكرت الغداء من البيت، واستعارة الكتب من المكتبة، وإلغاء اشتراكات التطبيقات. أما المشي للجامعة بدل السيارة ما انذكر."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -439,9 +439,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Students can save money with a plan and a few good habits.",
-"Students need a bigger income to save money.",
-"University textbooks are too expensive for students.",
-"Students should never buy coffee or snacks."
+"Students need a bigger monthly income before they can save money.",
+"University textbooks are too expensive for most students to buy.",
+"Students should never buy coffee or snacks at university."
 ],
 "e": "الفقرة 1: «It mainly needs a plan and a few good habits»، وباقي القطعة تشرح هذي العادات (الميزانية، تقليل المصاريف، التوفير أول ما يجي المال)."
 }
@@ -491,9 +491,9 @@ window.READING = [
 "q": "The writer says that the story of Kaldi ______.",
 "o": [
 "may not be true, but it is still told",
-"is supported by all historians",
-"was written by Kaldi himself",
-"is only told in Ethiopia"
+"is supported by all historians of coffee",
+"was written down by Kaldi himself",
+"is only told to children in Ethiopia"
 ],
 "e": "الفقرة 2: «Nobody knows if the story is true, but it is still told in many countries»."
 },
@@ -583,9 +583,9 @@ window.READING = [
 "q": "What does the underlined word \"encourage\" in paragraph 1 mean?",
 "o": [
 "give support so that people want to do something",
-"make something difficult for people",
-"stop people from doing something",
-"complain about something"
+"make something difficult for people to do",
+"stop people from doing something they want",
+"complain to people about something they do"
 ],
 "e": "encourage = يشجّع، يعني يخلّي الناس يبون يسوون الشي. الفقرة 1: «Many governments encourage people to buy these cars»."
 },
@@ -663,9 +663,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Electric cars have benefits and problems, but they will probably become more common.",
-"Electric cars are too expensive for most people.",
-"Petrol cars will disappear from the roads very soon.",
-"There are not enough charging stations in big cities."
+"Electric cars are too expensive, so most people will never buy them.",
+"Petrol cars will disappear from the roads in the next few years.",
+"There are not enough charging stations, so electric cars have no future."
 ],
 "e": "الفقرة 2 المميزات، والفقرة 3 العيوب، والفقرة 4: «electric cars will soon become the normal choice for new drivers». (وقالت إن سيارات البنزين بتبقى وقت طويل، فما بتختفي قريب.)"
 }
@@ -765,9 +765,9 @@ window.READING = [
 "q": "The writer gives the example of a student to show that ______.",
 "o": [
 "people may choose a different kind of book for different situations",
-"e-books are better than paper books for exams",
-"students do not use printed books anymore",
-"paper books are too expensive for students"
+"e-books are always better than paper books for serious study",
+"students no longer use printed books, even before their exams",
+"e-books are too slow for students who need to search for information"
 ],
 "e": "الفقرة 4: «The answer probably depends on the reader and the situation. A student might use an e-book to search quickly for information, but choose a printed book for serious study» ← يختار حسب الموقف."
 },
@@ -797,9 +797,9 @@ window.READING = [
 "q": "According to paragraph 1, how did people find out the news in the past?",
 "o": [
 "They watched the news on TV or bought a newspaper.",
-"They used apps on their phones.",
-"They asked journalists directly.",
-"They followed official accounts."
+"They used social media apps on their phones.",
+"They asked journalists to tell them the news.",
+"They followed official accounts on the internet."
 ],
 "e": "الفقرة 1: «people waited for the evening news on TV or bought a newspaper in the morning»."
 },
@@ -837,9 +837,9 @@ window.READING = [
 "q": "Why do some people create fake stories on purpose?",
 "o": [
 "Shocking stories attract attention and more followers.",
-"They want to warn people about danger.",
-"They think the stories are true.",
-"They want to check the source first."
+"They want to warn people quickly during floods and storms.",
+"They believe the stories are real and want to help others.",
+"They want to see whether other websites report the same story."
 ],
 "e": "الفقرة 3: «Others create them on purpose, because shocking stories attract attention and more followers». (اللي يحسبها صحيحة هذا ينشرها بالغلط، مو يصنعها.)"
 },
@@ -847,9 +847,9 @@ window.READING = [
 "q": "What does the underlined word \"mislead\" in paragraph 3 mean?",
 "o": [
 "make someone believe something that is not true",
-"help someone understand the news",
-"make someone laugh",
-"make someone feel safe"
+"help someone understand the news more clearly",
+"make someone check the source of a story",
+"make someone feel safe during an emergency"
 ],
 "e": "mislead = يضلّل، يخلي الشخص يصدّق شي غلط. والكلام عن الأخبار الكاذبة."
 },
@@ -877,7 +877,7 @@ window.READING = [
 "q": "Why should readers look carefully at the date of a story?",
 "o": [
 "Old stories are sometimes shared again as if they were new.",
-"New stories are always fake.",
+"New stories are always fake, so you should not share them.",
 "Official accounts do not write the date.",
 "Old stories are more reliable than new ones."
 ],
@@ -909,9 +909,9 @@ window.READING = [
 "q": "According to paragraph 1, what did caravans of camels do in the past?",
 "o": [
 "They connected towns and markets that were far apart.",
-"They carried cars across the desert.",
-"They took part in races in the cities.",
-"They brought water to the markets."
+"They carried cars and planes across the huge deserts.",
+"They took part in races between towns and markets.",
+"They protected towns and markets from strong sandstorms."
 ],
 "e": "الفقرة 1: «caravans of camels connected towns and markets that were hundreds of kilometres apart»."
 },
@@ -999,9 +999,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Camels are well suited to the desert and are still important in Saudi culture.",
-"Camels are no longer useful in modern Saudi Arabia.",
-"Camels store water in their humps for the hot summer.",
-"Camel racing is the most popular sport in Saudi Arabia."
+"Camels are no longer useful or important in modern Saudi Arabia.",
+"Camels store water in their humps, so they can live in the desert.",
+"Camel racing is the most popular sport in Saudi Arabia today."
 ],
 "e": "الفقرة 2 و3 تشرح كيف جسم الجمل مناسب للصحراء، والفقرة 4: «camels remain an important part of the culture»."
 }
@@ -1133,9 +1133,9 @@ window.READING = [
 "q": "According to paragraph 1, why has online shopping grown so quickly?",
 "o": [
 "Delivery services became faster and more common.",
-"Many shops and malls closed.",
-"Phones became much cheaper.",
-"Prices online are always lower."
+"Many shops and malls closed and lost their customers.",
+"Phones and computers became much cheaper than before.",
+"Prices online became lower than prices in all stores."
 ],
 "e": "الفقرة 1: «Online shopping has grown very quickly, especially since delivery services became faster and more common»."
 },
@@ -1173,9 +1173,9 @@ window.READING = [
 "q": "Why are customer reviews useful?",
 "o": [
 "They let you learn about other buyers' experiences.",
-"They make products cheaper.",
-"They help you return items quickly.",
-"They protect your card details."
+"They let you return the wrong sizes quickly and easily.",
+"They protect your card details on websites you do not know.",
+"They let you get your orders delivered much faster."
 ],
 "e": "الفقرة 2: «they allow you to learn about other buyers' experiences before you decide»."
 },
@@ -1255,9 +1255,9 @@ window.READING = [
 "q": "What are the two disadvantages of eating out every day?",
 "o": [
 "It is expensive, and the meals often have too much oil, salt and sugar.",
-"It is slow, and the food often arrives cold.",
-"It is boring, and the portions are too small.",
-"It is expensive, and restaurants are far from university."
+"It is slow, and the food often arrives at your home cold.",
+"It is boring, and the portions are usually too small for students.",
+"It is expensive, and most restaurants are far from the university."
 ],
 "e": "الفقرة 1: «eating out every day is expensive, and second, many restaurant meals contain more oil, salt and sugar than our bodies need»."
 },
@@ -1357,9 +1357,9 @@ window.READING = [
 "q": "According to paragraph 1, why do some students work?",
 "o": [
 "They need money for transport, books, or personal needs.",
-"Their university asks them to work.",
-"They want to stop studying.",
-"They have already graduated."
+"Their university asks all students to find a job.",
+"They want to stop studying and start working.",
+"They have already graduated from university."
 ],
 "e": "الفقرة 1: «Some students work because they need money for transport, books, or personal needs» ← يحتاجون فلوس للمواصلات والكتب واحتياجاتهم."
 },
@@ -1469,9 +1469,9 @@ window.READING = [
 "q": "According to paragraph 1, why do some people skip breakfast?",
 "o": [
 "They wake up late and do not have time.",
-"Breakfast is too expensive.",
-"Their doctors tell them to.",
-"They eat a big dinner."
+"Breakfast is too expensive for them to buy.",
+"Their doctors tell them not to eat in the morning.",
+"They always eat a big dinner the night before."
 ],
 "e": "الفقرة 1: «Some of them wake up late and do not have time» ← يصحون متأخر وما عندهم وقت."
 },
@@ -1509,9 +1509,9 @@ window.READING = [
 "q": "What do teachers notice about hungry students?",
 "o": [
 "They are more likely to lose interest in the lesson.",
-"They ask more questions in class.",
-"They finish their work faster.",
-"They eat breakfast at school."
+"They are more likely to ask questions in the lesson.",
+"They usually finish their class work faster than others.",
+"They usually bring breakfast to eat during the lesson."
 ],
 "e": "الفقرة 2: «Teachers also notice that hungry students are more likely to lose interest in the lesson»."
 },
@@ -1559,9 +1559,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Breakfast gives us energy, and a healthy one can be quick and easy.",
-"Skipping breakfast is the best way to lose weight.",
-"Students should eat lunch instead of breakfast.",
-"Fast food is the main reason for weight problems."
+"Skipping breakfast is the best and fastest way to lose weight.",
+"Students should eat a big lunch instead of eating breakfast.",
+"A healthy breakfast always takes a long time to prepare at home."
 ],
 "e": "الفقرة 2 تقول إن الفطور يعطي طاقة، والفقرة 4: «a healthy breakfast does not have to take a long time» ← الفطور مهم والصحي منه سريع وسهل."
 }
@@ -1581,9 +1581,9 @@ window.READING = [
 "q": "Why have people lived in the AlUla valley for thousands of years?",
 "o": [
 "It had water and was on an important trade road.",
-"It was close to the city of Petra.",
-"It had many tall buildings.",
-"It had a large university."
+"It had tall buildings and a large concert hall.",
+"It had a large university and many famous libraries.",
+"It was far from the desert and had cool weather."
 ],
 "e": "الفقرة 1: «People have lived in this valley for thousands of years, because it had water and was on an important trade road»."
 },
@@ -1621,9 +1621,9 @@ window.READING = [
 "q": "What happened in 2008?",
 "o": [
 "Hegra was added to UNESCO's World Heritage List.",
-"Hegra was built by the Nabataeans.",
-"Maraya hosted its first concert.",
-"Elephant Rock was discovered."
+"Hegra was first built by the Nabataeans in the valley.",
+"Maraya hosted its first winter music concert.",
+"Elephant Rock was discovered by visitors on a hike."
 ],
 "e": "الفقرة 2: «In 2008, Hegra became the first place in Saudi Arabia to be added to UNESCO's World Heritage List»."
 },
@@ -1693,9 +1693,9 @@ window.READING = [
 "q": "According to paragraph 1, why do most people get a pet?",
 "o": [
 "They love animals and enjoy their company.",
-"Their doctors tell them to.",
-"Pets are cheap to buy.",
-"Scientists ask them to."
+"Their doctors tell them it is good for their health.",
+"Pets are cheap to buy and easy to look after.",
+"Scientists ask them to take part in their research."
 ],
 "e": "الفقرة 1: «Most people get a pet simply because they love animals and enjoy their company»."
 },
@@ -1783,9 +1783,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Pets can be good for our health, but they need a lot of care.",
-"Pets are the best cure for every illness.",
-"Only older people should keep pets.",
-"Families should not keep pets at home."
+"Pets are the best cure for every illness that people have.",
+"Only older people who live alone should keep pets at home.",
+"Families should not keep pets because they cost too much money."
 ],
 "e": "الفقرة 2 و3 عن فوائد الحيوانات الأليفة للصحة، والفقرة 4: «having a pet is a big responsibility» ← مفيدة بس تحتاج اهتمام."
 }
@@ -1805,9 +1805,9 @@ window.READING = [
 "q": "When people hear the word \"robot\", they often think of ______.",
 "o": [
 "the machines in science fiction films",
-"robot vacuum cleaners",
-"doctors in hospitals",
-"cars in large factories"
+"the robot vacuum cleaners in their homes",
+"the doctors who work in large hospitals",
+"the cars that are built in large factories"
 ],
 "e": "الفقرة 1: «they often think of the metal machines in science fiction films»."
 },
@@ -1815,9 +1815,9 @@ window.READING = [
 "q": "Why are robots expected to become more common?",
 "o": [
 "Technology is improving and becoming cheaper.",
-"People prefer machines to humans.",
-"Factories are closing.",
-"Robots never make mistakes."
+"People prefer machines to human workers.",
+"Many factories are closing down every year.",
+"More people are watching science fiction films."
 ],
 "e": "الفقرة 1: «As technology improves and becomes cheaper, robots are expected to become even more common»."
 },
@@ -1947,9 +1947,9 @@ window.READING = [
 "q": "Why does every litre of wasted water have a real cost?",
 "o": [
 "Desalination is expensive and uses a lot of energy.",
-"Water is only sold in shops.",
-"Leaking taps are hard to repair.",
-"Plants need more water in summer."
+"Drinking water is only sold in shops and restaurants.",
+"Leaking taps are expensive and hard to repair.",
+"Plants need more water during the long, hot summers."
 ],
 "e": "الفقرة 2: «this process is expensive and uses a lot of energy, so every litre that is wasted has a real cost»."
 },
@@ -1987,9 +1987,9 @@ window.READING = [
 "q": "The writer gives the example of washing the car with a bucket to show that ______.",
 "o": [
 "there are simple ways to save water outside the house",
-"cars need a lot of water",
-"hoses are better than buckets",
-"people should not wash their cars"
+"hoses are better than buckets for washing a car",
+"people should not wash their cars at all in summer",
+"it is better to wash cars at a car wash than at home"
 ],
 "e": "الفقرة 4 تبدأ بـ«Water can also be saved outside the house» ومثال السطل: «washing the car with a bucket uses far less water than using a hose»."
 },
@@ -2021,7 +2021,7 @@ window.READING = [
 "text": [
 "1. In the past, libraries were quiet buildings full of shelves of books, where people went to borrow novels or study in silence. Today, some people believe that libraries are no longer needed, because almost any information can be found online in seconds. However, libraries have not disappeared. Instead, many of them are changing in order to meet the needs of modern visitors.",
 "2. Modern libraries offer much more than books. Most of them provide computers, free Wi-Fi, and comfortable areas where students can work together on group projects. Some libraries also have \"maker spaces\", where visitors can use 3D printers and other tools to build their own designs. Others run free courses in languages, computer skills, and writing, which are especially useful for people who want to improve their CV.",
-"3. Libraries have also become important community centres. They organize activities for children, such as story time and reading competitions, which help children develop a love of reading. They also hold talks with writers and workshops for adults. For families who cannot _afford_ computers or many books, the library gives _them_ free access to knowledge. This is why some cities are building new libraries instead of closing old ones.",
+"3. Libraries have also become important community centres. They organise activities for children, such as story time and reading competitions, which help children develop a love of reading. They also hold talks with writers and workshops for adults. For families who cannot _afford_ computers or many books, the library gives _them_ free access to knowledge. This is why some cities are building new libraries instead of closing old ones.",
 "4. Of course, books are still at the heart of every library, but the way people read is changing. Many libraries now lend e-books and audiobooks, so members can read or listen on their phones wherever they are. Librarians have also taken on a new role: they teach visitors how to find _reliable_ information and how to recognise false stories online. In a world full of information, this skill may be one of the most valuable services that libraries offer."
 ],
 "qs": [
@@ -2141,9 +2141,9 @@ window.READING = [
 "q": "Why can anyone become a photographer today?",
 "o": [
 "Almost everyone carries a smartphone with a high-quality camera.",
-"Cameras have become free.",
-"Photography classes are free for everyone.",
-"People no longer need light to take photos."
+"Expensive cameras have become free for everyone to use.",
+"Photography clubs now give free cameras to all members.",
+"People no longer need good light to take beautiful photos."
 ],
 "e": "الفقرة 1: «almost everyone carries a smartphone with a high-quality camera, so anyone can become a photographer»."
 },
@@ -2171,9 +2171,9 @@ window.READING = [
 "q": "The writer gives the example of a bird landing on a tree to show that ______.",
 "o": [
 "photographers sometimes wait a long time for the perfect moment",
-"birds are the best subject for photos",
-"photographers prefer nature to buildings",
-"it is easy to take a good photo"
+"birds are the best and most popular subject for photos",
+"photographers usually prefer nature to buildings and food",
+"it is quick and easy to take a perfect photo of a bird"
 ],
 "e": "الفقرة 2: «they sometimes have to wait a long time for the perfect moment, for example for a bird to land on a tree»."
 },
@@ -2181,9 +2181,9 @@ window.READING = [
 "q": "When is usually the best time to take photos outside?",
 "o": [
 "early in the morning or just before sunset",
-"at noon",
-"at midnight",
-"in the middle of the afternoon"
+"at noon, when the sun is high and strong",
+"late at night, after the sun has gone down",
+"in the middle of the afternoon, when it is hot"
 ],
 "e": "الفقرة 3: «Outside, the best time is usually early in the morning or just before sunset, when the light is soft and warm»."
 },
@@ -2211,9 +2211,9 @@ window.READING = [
 "q": "Why should photographers ask permission before taking photos of people?",
 "o": [
 "Not everyone wants their picture to be taken or shared.",
-"It is the best way to win prizes.",
-"People always pay for their photos.",
-"Photography clubs ask them to."
+"Asking permission is the best way to win competition prizes.",
+"People always pay photographers for the photos they take.",
+"Photography clubs ask all their members to do this."
 ],
 "e": "الفقرة 4: «ask permission before taking photos of people, because not everyone wants their picture to be taken or shared»."
 },
@@ -2231,9 +2231,9 @@ window.READING = [
 "q": "What is the main idea of the passage?",
 "o": [
 "Photography is a popular hobby with many benefits, and anyone can do it.",
-"Photography is too expensive for most people.",
-"Only professionals can take good photos.",
-"Smartphones are bad for photography."
+"Photography is too expensive a hobby for most people today.",
+"Only professionals with special cameras can take good photos.",
+"Smartphones are bad for photography and should not be used."
 ],
 "e": "الفقرة 1: «anyone can become a photographer»، والقطعة تذكر فوائد التصوير (الفقرة 2 و4) ونصائح له (الفقرة 3)."
 }
@@ -2254,9 +2254,9 @@ window.READING = [
 "q": "What can we understand from paragraph 1?",
 "o": [
 "Spending a lot of money on famous players does not guarantee success.",
-"Modest teams usually beat expensive teams.",
-"Clubs rarely spend money on famous players.",
-"Fans do not care about individual players."
+"Modest teams usually beat expensive teams in most sports.",
+"Clubs rarely spend large sums of money on famous players.",
+"Fans do not care much about the individual players in a team."
 ],
 "e": "الفقرة 1: «history is full of expensive teams that failed and modest teams that won» ← يعني الفلوس والأسماء الكبيرة ما تضمن الفوز. (وخيار usually beat غلط لأنه ما قال إنها تفوز غالباً)."
 },
@@ -2264,9 +2264,9 @@ window.READING = [
 "q": "Why did the same pattern NOT appear in baseball?",
 "o": [
 "Baseball players act on their own more than they depend on each other.",
-"Baseball teams have fewer star players.",
-"Baseball players train together for many years.",
-"Baseball teams spend less money on players."
+"Baseball teams usually have fewer star players than other teams.",
+"Baseball players train together for many more years than others.",
+"Baseball teams spend less money on their players than football teams."
 ],
 "e": "الفقرة 2: «in baseball, where players spend much of the game acting on their own rather than depending on one another»."
 },
@@ -2334,9 +2334,9 @@ window.READING = [
 "q": "What is the writer's main purpose in paragraph 5?",
 "o": [
 "to show that the lesson from sport also applies to other workplaces",
-"to criticize the way hospitals treat their workers",
-"to explain how companies choose their managers",
-"to prove that research groups do not need stars"
+"to criticize the way hospitals and companies treat their best workers",
+"to explain how companies and research groups choose their managers",
+"to prove that companies and hospitals should never hire star workers"
 ],
 "e": "الفقرة 5: «The lesson is relevant far beyond sport» وبعدها ذكر الشركات والمستشفيات ومجموعات البحث ← الدرس ينطبق برا الرياضة بعد."
 },
@@ -2344,9 +2344,9 @@ window.READING = [
 "q": "What is the best title for the passage?",
 "o": [
 "Why the Best Players Don't Always Make the Best Team",
-"How to Become a Star Player",
-"The History of Expensive Football Clubs",
-"The Differences Between Basketball and Baseball"
+"How to Become a Star Player in Any Team Sport",
+"The History of the World's Most Expensive Football Clubs",
+"Why Baseball Is Different From Basketball and Football"
 ],
 "e": "القطعة كلها تشرح إن جمع أفضل اللاعبين ما يكفي، وإن التعاون والتوازن مهمين مثل الموهبة."
 }
@@ -2367,9 +2367,9 @@ window.READING = [
 "q": "According to paragraph 1, the second piece of advice tells students to ______.",
 "o": [
 "choose a subject that leads to a well-paid, secure job",
-"study what they love",
-"follow the advice of their friends",
-"choose the easiest subject"
+"study what they love, and success will come",
+"follow the advice of their friends and teachers",
+"choose the easiest subject at their university"
 ],
 "e": "الفقرة 1: «The second is more practical: choose a subject that leads to a well-paid, secure job»."
 },
@@ -2417,9 +2417,9 @@ window.READING = [
 "q": "What does the underlined word \"evidence\" in paragraph 4 mean?",
 "o": [
 "information that shows what is true",
-"a final decision",
-"an introductory course",
-"a high salary"
+"a final decision about your future",
+"a short introductory course at university",
+"a high salary from a secure job"
 ],
 "e": "evidence = دليل/معلومات تثبت الشي. الطالب يجمع معلومات من الخريجين وغيرهم عشان يعرف الجواب الصحيح لأسئلته."
 },
@@ -2457,9 +2457,9 @@ window.READING = [
 "q": "What is the writer's main purpose in the passage?",
 "o": [
 "to compare two kinds of advice and suggest a balanced way to choose a major",
-"to persuade students to choose well-paid majors only",
-"to explain why students change their major after the first year",
-"to describe the courses in different university majors"
+"to persuade students to choose well-paid majors only and ignore their interests",
+"to explain why so many students change their major after the first year",
+"to describe the courses that students take in different university majors"
 ],
 "e": "القطعة تقارن بين «follow your passion» والاختيار العملي، وبعدين تقترح الطريقة المتوازنة: «A more balanced approach may be…»."
 }
@@ -2520,9 +2520,9 @@ window.READING = [
 "q": "What do many experts argue cities should do with data?",
 "o": [
 "collect only the data they need and be open about how it is used",
-"collect as much data as possible and keep it secret",
-"sell the data to private companies to pay for projects",
-"stop using cameras and sensors completely"
+"collect as much data as possible and never explain how it is used",
+"sell the data to private companies to help pay for new projects",
+"stop using cameras and sensors completely and collect no data at all"
 ],
 "e": "الفقرة 3: «cities should collect only the data they genuinely need and should be open with residents about how it is used»."
 },
@@ -2540,9 +2540,9 @@ window.READING = [
 "q": "The writer mentions wider pavements and more frequent buses to show that ______.",
 "o": [
 "some money could be spent on basic services instead of expensive technology",
-"smart technology is cheaper than building pavements",
-"buses are the most important part of a smart city",
-"planners do not want people to use cars"
+"smart technology is cheaper to install than wider pavements and buses",
+"buses are the most important part of every smart city transport system",
+"planners want people to stop using cars and walk on the pavements"
 ],
 "e": "الفقرة 4: «money spent on impressive technology might be better spent on basic services such as wider pavements or more frequent buses»."
 },
@@ -2550,9 +2550,9 @@ window.READING = [
 "q": "What can we understand from paragraph 5?",
 "o": [
 "A city that depends only on apps may leave some residents behind.",
-"Elderly people never use technology.",
-"Young people do not need city services.",
-"Smart cities should stop using smartphone apps."
+"Elderly people never use technology or smartphone apps in cities.",
+"Young people do not need any of the services that cities offer.",
+"Smart cities should stop using smartphone apps for their services."
 ],
 "e": "الفقرة 5: الخدمات اللي تعتمد على التطبيقات «difficult for elderly residents or people who cannot afford the latest devices» ← فيه ناس ممكن ينحرمون منها."
 },
@@ -2570,9 +2570,9 @@ window.READING = [
 "q": "What is the writer's opinion about smart cities?",
 "o": [
 "They have real benefits, but their problems must be taken seriously.",
-"Smart city projects should be stopped.",
-"Technology will solve every problem in cities.",
-"Privacy is not an important issue."
+"They are too expensive and risky, so all projects should be stopped.",
+"Technology in smart cities will solve every problem that people face.",
+"Their benefits are so great that privacy is not an important issue."
 ],
 "e": "الكاتب ذكر الفوايد («the benefits are easiest to see») وبعدها المخاوف (الخصوصية، التكلفة، العدالة) ← يشوف فيها فايدة بس لازم ننتبه لمشاكلها."
 }
@@ -2706,9 +2706,9 @@ window.READING = [
 "q": "According to paragraph 1, research suggests that ______.",
 "o": [
 "how we spend time on a task matters more than how long we spend",
-"students should work longer hours",
-"busy people are always productive",
-"studying late at night is the best method"
+"students should work longer hours if they want to manage time well",
+"busy people are always more productive than people who are not busy",
+"studying late at night is the best method for most students"
 ],
 "e": "الفقرة 1: «the amount of time we spend on a task matters less than how we spend it»."
 },
@@ -2756,9 +2756,9 @@ window.READING = [
 "q": "What does the underlined word \"overwhelming\" in paragraph 3 mean?",
 "o": [
 "too big or difficult to deal with",
-"enjoyable and relaxing",
-"unimportant",
-"quick and simple"
+"enjoyable and relaxing to work on",
+"too unimportant to think about",
+"quick and simple to start and finish"
 ],
 "e": "overwhelming = شي كبير ومرهق تحس إنك ما تقدر عليه. عشان كذا الكاتب ينصح تقسم المهمة لخطوات صغيرة."
 },

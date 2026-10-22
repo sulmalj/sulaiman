@@ -26,7 +26,7 @@ Research | Verb | يبحث (بحثاً علمياً) | Scientists **research** t
 Result | Noun | نتيجة | I got my test **results** today. | استلمت نتائج فحوصاتي اليوم.
 Routine | Noun | روتين | Exercise is part of my daily **routine**. | الرياضة جزء من روتيني اليومي.
 Skill | Noun | مهارة | Writing is an important **skill**. | الكتابة مهارة مهمة.
-Solve | Verb | يحُل | Can you **solve** this problem? | هل تستطيع حل هذه المشكلة؟
+Solve | Verb | يحُلّ | Can you **solve** this problem? | هل تستطيع حل هذه المشكلة؟
 Success | Noun | نجاح | Hard work is the key to **success**. | العمل الجاد هو مفتاح النجاح.
 Team | Noun | فريق | Our **team** won the game. | فريقنا فاز بالمباراة.
 Avoid | Verb | يتجنَّب | Try to **avoid** sugar and fast food. | حاول أن تتجنب السكر والوجبات السريعة.

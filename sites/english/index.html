@@ -182,6 +182,16 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 .lvlbox>b{display:block;color:var(--accent);font-size:16.5px;margin-bottom:4px}
 .lvlbox ul{margin:0;padding-inline-start:20px}
 .lvlbox li{margin:3px 0}
+.s-m{--c:var(--v);--cs:var(--v-soft)}
+.opts.ar .opt{direction:rtl;text-align:right;font-family:var(--f-body);font-size:16.5px}
+.qcard.s-m .qtext b{font-size:1.25em;color:var(--v)}
+.mnote{margin:-6px 0 14px;font-size:13.5px;font-weight:700;color:var(--gold-ink);background:var(--gold-soft);border-radius:8px;padding:6px 10px;line-height:1.6}
+.vtabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.vpick{display:grid;gap:6px;text-align:start;cursor:pointer;border-inline-start:5px solid var(--c);padding:16px 18px}
+.vpick b{font-size:18px;color:var(--c)}
+.vpick small{color:var(--ink);font-size:15px;line-height:1.7}
+.vpick .mwarn{font-size:14px;font-weight:700;color:var(--gold-ink);background:var(--gold-soft);border-radius:8px;padding:6px 10px;line-height:1.6}
+.vpick .meta{color:var(--muted);font-size:13.5px}
 .cnote{margin:12px 0 0;font-size:14px;color:var(--muted)}
 /* تكنيكات الحل */
 .tipsel{display:grid;gap:12px;grid-template-columns:1fr 1fr}
@@ -199,7 +209,7 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 .tips .step ul,.tips .step ol{margin:4px 0 6px;padding-inline-start:22px}
 .tips .step ol li{margin-bottom:4px}
 .tips .ex{background:var(--sunk);border-radius:8px;padding:8px 12px;margin:6px 0 0;font-size:14.5px}
-.tips .en{direction:ltr;unicode-bidi:isolate;font-family:var(--f-en)}
+.tips .en{direction:ltr;unicode-bidi:isolate;font-family:var(--f-en);display:inline-block;max-width:100%;text-align:left}   /* الجملة الإنجليزية ما تنقسم بين سطرين بالعكس */
 .tips .num{direction:ltr;unicode-bidi:isolate;white-space:nowrap}
 .tips table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
 .tips td,.tips th{border:1px solid var(--line);padding:6px 10px;text-align:start}
@@ -333,6 +343,7 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
   <!-- قائمة قسم (القواعد / مجموعات الكلمات / القطع / المقاطع) -->
   <section id="list" hidden>
     <div class="qtop"><div class="ttl" id="lTitle"></div><button class="btn btn-sec btn-sm" data-home type="button">→ الرئيسية</button></div>
+    <div class="vtabs" id="lTabs" hidden></div>
     <div class="lvlbox" id="lLevel" hidden></div>
     <div class="items" id="lItems"></div>
     <p class="rights-mini">© ملازم عدل · موقع خاص بالمشتركين، ولا نُحلّل نشر الموقع أو محتواه لغير المشتركين.</p>
@@ -411,6 +422,7 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
 
 <script src="grammar.js"></script>
 <script src="vocab.js"></script>
+<script src="meanings.js"></script>
 <script src="reading.js"></script>
 <script src="listening.js"></script>
 <script>
@@ -427,6 +439,7 @@ const EXAM_PLAYS = 2;                                  // عدد مرات سما
 const SEC = {
   g: { ar: 'قواعد', en: 'Grammar', ic: '📐' },
   v: { ar: 'كلمات', en: 'Vocabulary', ic: '🔤' },
+  m: { ar: 'حفظ معاني الكلمات', en: 'Vocabulary', ic: '🧠' },   // تدريب مساعد للحفظ (مو في الاختبار التجريبي)
   r: { ar: 'قطعة', en: 'Reading', ic: '📖' },
   l: { ar: 'استماع', en: 'Listening', ic: '🎧' }
 };
@@ -440,9 +453,10 @@ const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { c
 const secName = s => `${SEC[s].ar} (${SEC[s].en})`;
 
 /* ── البيانات ── */
-const GR = window.GRAMMAR || [], VO = window.VOCAB || [], RE = window.READING || [], LI = window.LISTENING || [];
+const GR = window.GRAMMAR || [], VO = window.VOCAB || [], RE = window.READING || [], LI = window.LISTENING || [], ME = window.MEANINGS || [];
 const QS = [];
 GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, code: `G${ri + 1}-${k + 1}` })));
+ME.forEach((m, i) => QS.push({ id: 'm-' + hash(m.w), sec: 'm', grp: Math.floor(i / VOCAB_SET), q: m.w, o: m.o, e: m.e, code: `M-${i + 1}` }));
 VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, e: v.e, code: `V-${i + 1}` }));
 RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
 LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
@@ -450,7 +464,7 @@ const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const ofSec = s => QS.filter(q => q.sec === s);
 const ofGrp = (s, g) => QS.filter(q => q.sec === s && q.grp === g);
 const vocabSets = Math.ceil(VO.length / VOCAB_SET);
-const grpCount = s => ({ g: GR.length, v: vocabSets, r: RE.length, l: LI.length }[s]);
+const grpCount = s => ({ g: GR.length, v: vocabSets, m: Math.ceil(ME.length / VOCAB_SET), r: RE.length, l: LI.length }[s]);
 const LEVEL = n => n > 20 ? 'B2' : 'B1';   // القطع والمقاطع 1–20 = B1، و21–25 = B2
 const repBtn = q => '';   // زر «بلّغ عن خطأ» محذوف (طلب المستخدم: الموقع للمشتركين)
 
@@ -481,10 +495,10 @@ const rich = s => esc(s).replace(/_([^_]+)_/g, '<u>$1</u>');   // _كلمة_ = �
 const paraHTML = t => { const m = t.match(/^(\d+)\.\s*(.*)$/); return m ? `<p><b class="pn">${m[1]}.</b> ${rich(m[2])}</p>` : `<p>${rich(t)}</p>`; };
 const bidiRun = t => t.replace(/[A-Za-z][A-Za-z0-9'’ +\/.\-]*[A-Za-z0-9]|[A-Za-z]/g, m => `<bdi class="en">${m}</bdi>`);
 const bidiEn = s => esc(s).split(/(«[^»]*»)/).filter(part => !/^[\s.]*$/.test(part)).map(part => part.startsWith('«') ? `<q class="en" dir="ltr">${part.slice(1, -1)}</q>` : bidiRun(part)).join('');   // الكلمات الإنجليزية داخل الشرح العربي
-const explHTML = q => q.e ? `<div class="expl"><b>${q.sec === 'v' ? '⚠️ تنويه' : q.sec === 'r' ? '📘 التوضيح' : '📘 شرح القاعدة'}:</b> <span>${bidiEn(q.e)}</span></div>` : '';
+const explHTML = q => q.e ? `<div class="expl"><b>${q.sec === 'm' ? '📘 مثال على الكلمة' : q.sec === 'v' ? '⚠️ تنويه' : q.sec === 'r' ? '📘 التوضيح' : '📘 شرح القاعدة'}:</b> <span>${bidiEn(q.e)}</span></div>` : '';
 const needConf = q => q.sec === 'r' || q.sec === 'l';   // القطع والاستماع: التصحيح بعد «تأكيد»
 const confHTML = (id, sel) => `<div class="conf-row"><button class="btn btn-pri btn-sm" type="button" data-conf="${id}" ${sel === undefined ? 'disabled' : ''}>تأكيد الإجابة ✓</button><span class="hint">${sel === undefined ? 'اختر إجابتك أول' : 'تقدر تغيّر اختيارك قبل ما تأكّد'}</span></div>`;
-const qHTML = (q, fill) => q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
+const qHTML = (q, fill) => q.sec === 'm' ? `What does “<b>${esc(q.q)}</b>” mean?` : q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
 
 /* ── التنقل ── */
 let view = 'home';
@@ -528,12 +542,38 @@ function renderHome() {
     (LI.length ? `كل مقطع صوتي في الاختبار تقدر تسمعه ${EXAM_PLAYS === 2 ? 'مرتين' : EXAM_PLAYS + ' مرات'} بس.` : '');
   $('startExam').disabled = !total;
 }
-$('secs').addEventListener('click', e => { const b = e.target.closest('[data-sec]'); if (b && !b.disabled) openList(b.dataset.sec); });
+$('secs').addEventListener('click', e => { const b = e.target.closest('[data-sec]'); if (b && !b.disabled) { if (b.dataset.sec === 'v') openVocab(); else openList(b.dataset.sec); } });
 
 /* ── قائمة القسم ── */
 let curList = null;
+/* ── الكلمات: قائمتين (بنفس طريقة الاختبار / للمساعدة على الحفظ) ── */
+const MNOTE = '<p class="mnote">⚠️ هذا السؤال للمساعدة على حفظ المعنى بس — في الاختبار ما يجي كذا، يجي جملة فيها فراغ وتختار الكلمة المناسبة.</p>';
+const VMODES = {
+  v: { t: 'تدريب بنفس طريقة الاختبار', d: 'جملة فيها فراغ، وتختار الكلمة المناسبة من 4 خيارات — نفس شكل أسئلة الاختبار بالضبط.' },
+  m: { t: 'تدريبات تساعدك تحفظ الكلمات', d: 'تطلع لك الكلمة بالإنجليزي وتختار معناها بالعربي — تمر على كل كلمات القائمة عشان تحفظ معانيها.' }
+};
+const vcount = s => s === 'v' ? `${VO.length} سؤال` : `${ME.length} كلمة`;
+const vtabsHTML = s => ['v', 'm'].map(k => `<button class="btn btn-sm ${k === s ? 'btn-pri' : 'btn-sec'}" type="button" data-vmode="${k}">${VMODES[k].t}</button>`).join('');
+function openVocab() {
+  curList = 'V';
+  $('lTitle').innerHTML = `${secName('v')}<small>اختر نوع التدريب</small>`;
+  $('lTabs').hidden = true; $('lLevel').hidden = true;
+  $('lItems').innerHTML = ['v', 'm'].map(k => {
+    const list = ofSec(k), done = list.filter(q => q.id in LS.ans).length;
+    return `<button class="card vpick s-${k}" type="button" data-vmode="${k}"><b>${k === 'v' ? '1' : '2'}. ${VMODES[k].t}</b><small>${VMODES[k].d}</small>` +
+      (k === 'm' ? '<span class="mwarn">⚠️ للحفظ بس — الاختبار ما يجي بهالطريقة، يجي مثل القائمة الأولى (جملة فيها فراغ).</span>' : '') +
+      `<span class="meta">${vcount(k)} · جاوبت ${done}</span></button>`;
+  }).join('');
+  show('list');
+}
+$('lTabs').addEventListener('click', e => { const b = e.target.closest('[data-vmode]'); if (b) openList(b.dataset.vmode); });
+
 // خانة «مستوى الأسئلة» في أول صفحة القطع والاستماع (طلب المستخدم)
 const LEVEL_NOTE = {
+  m: `<b>⚠️ انتبه: هذي الأسئلة للمساعدة على حفظ معاني الكلمات بس</b><ul>
+    <li>في الاختبار <b>ما يجيك</b> «وش معنى الكلمة؟».</li>
+    <li>يجيك <b>جملة فيها فراغ</b> وتختار الكلمة المناسبة — مثل قائمة «تدريب بنفس طريقة الاختبار».</li>
+    <li>فاحفظ المعاني هنا أول، وبعدها تدرّب على طريقة الاختبار هناك.</li></ul>`,
   l: `<b>🎧 مستوى الاستماع في الموقع — قريب من الاختبار</b><ul>
     <li>المقاطع <span class="num">1–20</span> مستواها <span class="en">B1</span>: <b>قريب من مستوى الاختبار</b>، وبنفس فكرة أسئلته (أرقام، أوقات، أسعار، أماكن، أسباب…).</li>
     <li>المقاطع <span class="num">21–25</span> مستواها <span class="en">B2</span>: <b>أصعب شوي من الاختبار</b> — للتدريب الزيادة ورفع المستوى، خلّها آخر شي.</li>
@@ -545,8 +585,9 @@ const LEVEL_NOTE = {
 };
 function openList(s) {
   curList = s;
-  $('lTitle').innerHTML = `${secName(s)}<small>${{ g: 'اختر القاعدة', v: 'كل مجموعة فيها ' + VOCAB_SET + ' سؤال', r: 'كل قطعة عليها 10 أسئلة', l: 'كل مقطع عليه 10 أسئلة — اسمع وجاوب' }[s]}</small>`;
+  $('lTitle').innerHTML = `${secName(s)}<small>${{ g: 'اختر القاعدة', v: 'جملة فيها فراغ وتختار الكلمة — كل مجموعة فيها ' + VOCAB_SET + ' سؤال', m: 'الكلمة بالإنجليزي وتختار معناها — كل مجموعة فيها ' + VOCAB_SET + ' كلمة', r: 'كل قطعة عليها 10 أسئلة', l: 'كل مقطع عليه 10 أسئلة — اسمع وجاوب' }[s]}</small>`;
   const n = grpCount(s);
+  $('lTabs').hidden = !(s === 'v' || s === 'm'); $('lTabs').innerHTML = vtabsHTML(s);
   $('lLevel').hidden = !LEVEL_NOTE[s]; $('lLevel').innerHTML = LEVEL_NOTE[s] || '';
   $('lItems').innerHTML = Array.from({ length: n }, (_, g) => {
     const list = ofGrp(s, g), done = list.filter(q => q.id in LS.ans).length;
@@ -554,6 +595,7 @@ function openList(s) {
     let title, sub;
     if (s === 'g') { title = esc(GR[g].rule); sub = list.length + ' سؤال'; }
     if (s === 'v') { const a = g * VOCAB_SET + 1, b = Math.min(VO.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الأسئلة ${a}–${b}`; }
+    if (s === 'm') { const a = g * VOCAB_SET + 1, b = Math.min(ME.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الكلمات ${a}–${b}`; }
     if (s === 'r') { title = `<span class="en">${esc(RE[g].title)}</span>`; sub = `القطعة ${RE[g].n} · المستوى <span class="en">${LEVEL(RE[g].n)}</span>`; }
     if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · المستوى <span class="en">${LEVEL(c.n)}</span> · ${c.kind === 'dialogue' ? (new Set(c.lines.map(l => l[0])).size > 2 ? 'نقاش بين ' + new Set(c.lines.map(l => l[0])).size + ' أشخاص' : 'حوار بين شخصين') : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
     const st = done === list.length ? `<span class="st done">✓ ${right}/${list.length}</span>` : done ? `<span class="st">${done}/${list.length}</span>` : '';
@@ -562,6 +604,7 @@ function openList(s) {
   show('list');
 }
 $('lItems').addEventListener('click', e => {
+  const vm = e.target.closest('[data-vmode]'); if (vm) { openList(vm.dataset.vmode); return; }
   const b = e.target.closest('[data-g]'); if (!b) return;
   const g = +b.dataset.g;
   if (curList === 'r' || curList === 'l') openGroup(curList, g); else startQuiz(curList, g);
@@ -593,7 +636,7 @@ function ctxHTML(q, open) {   // للمراجعة و«ارجع لها لاحقً
 function renderQ() {
   const q = BY_ID[P.ids[P.i]], opts = options(q), picked = P.picked[q.id], sel = needConf(q) ? P.sel[q.id] : undefined;
   const isRev = P.kind !== 'set';
-  const where = q.sec === 'g' ? esc(GR[q.grp].rule) : q.sec === 'v' ? `المجموعة ${q.grp + 1}` : '';
+  const where = q.sec === 'g' ? esc(GR[q.grp].rule) : q.sec === 'v' || q.sec === 'm' ? `المجموعة ${q.grp + 1}` : '';
   $('qTitle').innerHTML = isRev
     ? `${P.kind === 'later' ? 'ارجع لها لاحقًا' : 'راجع أخطاءك'}<small>${secName(q.sec)} · سؤال ${P.i + 1} من ${P.ids.length}</small>`
     : `${secName(q.sec)}<small>${where} · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
@@ -604,14 +647,14 @@ function renderQ() {
   $('qCard').className = 'card qcard s-' + q.sec;
   $('qCard').innerHTML = (isRev ? ctxHTML(q, P.kind === 'later') : '') +
     `<div class="qmeta"><span class="k">${SEC[q.sec].en}</span><span class="qcode">${q.code}</span>${markBtn(q)}${repBtn(q)}</div>
-    <p class="qtext en">${qHTML(q, done ? right : null)}</p>
-    <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">` +
+    <p class="qtext en">${qHTML(q, done ? right : null)}</p>${q.sec === 'm' ? MNOTE : ''}
+    <div class="opts ${q.sec === 'm' ? 'ar ' : ''}${opts.every(o => o.txt.length < 22) ? 'two' : ''}">` +
     opts.map((o, i) => {
       let cls = '';
       if (done) { if (o.ok) cls = 'ok'; else if (i === picked) cls = 'no'; } else if (i === sel) cls = 'sel';
       return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
     }).join('') + `</div>` + (!done && needConf(q) ? confHTML(q.id, sel) : '') +
-    (done ? `<div class="fb ${opts[picked].ok ? 'ok' : 'no'}">${opts[picked].ok ? '✓ إجابة صحيحة' : `✗ إجابة خاطئة — الإجابة الصحيحة: <span class="en">${esc(right)}</span>`}</div>` + explHTML(q) : '');
+    (done ? `<div class="fb ${opts[picked].ok ? 'ok' : 'no'}">${opts[picked].ok ? '✓ إجابة صحيحة' : `✗ إجابة خاطئة — الإجابة الصحيحة: ${q.sec === 'm' ? `<b>${esc(right)}</b>` : `<span class="en">${esc(right)}</span>`}`}</div>` + explHTML(q) : '');
   if (keepA) $('qCard').querySelector('.ctx audio').replaceWith(keepA);
   $('qPrev').disabled = P.i === 0;
   $('qNext').textContent = P.i === P.ids.length - 1 ? (P.kind === 'review' ? 'خلّصت المراجعة ✓' : 'خلّصت ✓') : (!done && P.kind === 'set' && !(q.id in LS.ans) ? 'تخطَّ ←' : 'التالي ←');
@@ -829,7 +872,7 @@ $('rRev').onclick = startReview;
 
 
 /* ── تكنيكات الحل (طلب المستخدم) ── */
-const st = (n, h, body) => `<div class="card step"><h3>${n !== '' ? `<span class="n">${n}</span>` : ''}${h}</h3>${body}</div>`;
+const st = (n, h, body) => `<div class="card step"><h3>${n !== '' ? `<span class="n">${n}</span>` : ''}<span class="ht">${h}</span></h3>${body}</div>`;
 const en = t => `<span class="en">${t}</span>`;
 const TIPS = {
   l: {
@@ -838,7 +881,7 @@ const TIPS = {
       st(1, 'قبل ما تشغّل: اقرأ الأسئلة العشر', `<p><b>ليش؟</b> لأنك لو شغّلت المقطع وأنت ما تدري وش الأسئلة، بيمر الجواب وأنت ما انتبهت له. لكن لو تعرف السؤال قبل، أول ما تسمع الجواب بتعرفه.</p>
         <p><b>كيف تسويها خطوة خطوة:</b></p>
         <ol><li>اقرأ السؤال الأول، وحدّد <b>كلمة السؤال</b> (مثل ${en('When')} أو ${en('How much')}، تشوف معانيها في الخطوة الجاية).</li>
-        <li>حدّد <b>الكلمة المهمة</b> في السؤال: الشي اللي يسأل عنه. مثلاً في ${en('What time does the train leave?')} الكلمات المهمة: ${en('time')} (وقت) و${en('train')} (القطار).</li>
+        <li>حدّد <b>الكلمة المهمة</b> في السؤال: الشي اللي يسأل عنه. مثلاً في ${en('What time does the train leave?')} الكلمات المهمة: ${en('time')} (وقت) و ${en('train')} (القطار).</li>
         <li>مرّ على <b>الخيارات</b> بسرعة: إذا كانت كلها أوقات ${en('(7:15 / 7:40 / 7:50…)')} تعرف إنك بتسمع أوقات، وغالباً بتسمع <b>أكثر من وقت</b> في المقطع، وواحد بس هو جواب السؤال.</li>
         <li>سوّ نفس الشي لكل الأسئلة العشر.</li></ol>
         <p>إذا فيه كلمة ما تعرف معناها في السؤال، لا توقف عندها: ركّز على كلمة السؤال والكلمة اللي تعرفها.</p>`) +
@@ -866,8 +909,8 @@ const TIPS = {
         <li>بعد ما يخلص المقطع، جاوب على أي سؤال باقي (شوف الخطوة 7).</li></ol>`) +
       st(5, 'انتبه للفخاخ (أهم شي)', `<p>اللي يحطّون الاختبار يحطّون أشياء تلخبط عمداً. إذا عرفتها ما تطيح فيها:</p>
         <ul>
-        <li><b>المتحدث يغيّر كلامه:</b> أحياناً يقول معلومة وبعدين يصحّحها. إذا سمعت ${en('Actually…')} (في الحقيقة) أو ${en('Sorry, I mean…')} (آسف، قصدي) أو ${en('No, wait…')} (لا، لحظة) أو ${en('My mistake…')} (غلطتي)، فـ<b>المعلومة الأخيرة هي الصح</b>.<br>مثل نموذج القسم: ${en('two… no wait… three')} ← الجواب ${en('three')}، و${en('No, not the 13th, the 12th')} ← الجواب ${en('the 12th')}.</li>
-        <li><b>الأرقام اللي أصواتها متشابهة:</b> ${en('fifteen')} (15) و${en('fifty')} (50)، ${en('thirteen')} (13) و${en('thirty')} (30)، ${en('eighteen')} (18) و${en('eighty')} (80). الفرق في الضغط: في ${en('fifteen')} الضغط على آخر الكلمة ${en('(fif-TEEN)')}، وفي ${en('fifty')} على أولها ${en('(FIF-ty)')}.</li>
+        <li><b>المتحدث يغيّر كلامه:</b> أحياناً يقول معلومة وبعدين يصحّحها. إذا سمعت ${en('Actually…')} (في الحقيقة) أو ${en('Sorry, I mean…')} (آسف، قصدي) أو ${en('No, wait…')} (لا، لحظة) أو ${en('My mistake…')} (غلطتي)، فـ<b>المعلومة الأخيرة هي الصح</b>.<br>مثل نموذج القسم: ${en('two… no wait… three')} ← الجواب ${en('three')}، و ${en('No, not the 13th, the 12th')} ← الجواب ${en('the 12th')}.</li>
+        <li><b>الأرقام اللي أصواتها متشابهة:</b> ${en('fifteen')} (15) و ${en('fifty')} (50)، ${en('thirteen')} (13) و ${en('thirty')} (30)، ${en('eighteen')} (18) و ${en('eighty')} (80). الفرق في الضغط: في ${en('fifteen')} الضغط على آخر الكلمة ${en('(fif-TEEN)')}، وفي ${en('fifty')} على أولها ${en('(FIF-ty)')}.</li>
         <li><b>أكثر من رقم في نفس المقطع:</b> مثلاً يذكر السعر قبل الخصم وبعده، أو الموعد القديم والجديد. لا تختار أول رقم سمعته: ارجع للسؤال وشوف وش يسأل بالضبط (السعر بعد الخصم؟ الموعد الجديد؟).</li>
         <li><b>الكلمة اللي سمعتها مو دايماً الجواب:</b> الخيار الغلط كثير يكون فيه كلمة انقالت في المقطع فعلاً، بس عن شي ثاني. اختار الخيار اللي يجاوب السؤال، مو اللي فيه كلمة سمعتها.</li>
         <li><b>سؤال ${en('NOT')}:</b> مثل ${en('Which … does the speaker NOT mention?')} يعني: أي واحد <b>ما</b> ذكره المتحدث؟ هنا كل شي تسمعه من الخيارات شطبه، واللي يبقى هو الجواب.</li>
@@ -909,7 +952,7 @@ const TIPS = {
         <p class="ex"><b>مثال من القطعة 1:</b> ${en('Laughter also helps people forget about their pain and <u>facilitates</u> learning.')}<br>الخيارات: ${en('helps / remembers / stops / slows down')}<br>جرّب: ${en('laughter … stops learning')}؟ الجملة كلها عن فوايد الضحك، فما تمشي. ${en('laughter … helps learning')}؟ تمشي ← الجواب ${en('helps')}.</p>
         <p class="ex"><b>مثال من القطعة 3:</b> ${en('spontaneously')}: الجملة اللي بعدها تقارن بين الحلول ${en('Carefully planned')} (المخطط لها بعناية) والحلول ${en('that happen in the moment')} (اللي تصير بوقتها) ← ${en('spontaneously = without planning')} (بدون تخطيط).</p>
         <p>وكثير تجي <b>عبارة من كلمتين أو ثلاث</b> وما تنفهم من كل كلمة لحالها، بس من الجملة كاملة: ${en('heading to = going to')} (رايح لـ)، ${en('spring for = pay for')} (يدفع حق)، ${en('give a boost = help')} (يساعد).</p>`) +
-      st(3, 'الضمير اللي تحته خط (they / it / them …)', `<p><b>وش الضمير؟</b> كلمة تجي بدل اسم انذكر قبل، عشان ما يتكرر الاسم. أشهرها:</p>
+      st(3, 'الضمير اللي تحته خط <span class="en">(they / it / them …)</span>', `<p><b>وش الضمير؟</b> كلمة تجي بدل اسم انذكر قبل، عشان ما يتكرر الاسم. أشهرها:</p>
         <table><tr><th>الضمير</th><th>يرجع لـ</th></tr>
         <tr><td>${en('it')}</td><td>شي واحد (مفرد): هو / هي لغير الإنسان</td></tr>
         <tr><td>${en('they / them')}</td><td>أكثر من واحد (جمع): هم / هن</td></tr>
@@ -924,9 +967,9 @@ const TIPS = {
         <p class="ex"><b>مثال من القطعة 1:</b> ${en('hospitals can tell visitors how helpful laughter is. <u>They</u> should try to make the patients they\'re visiting laugh.')}<br>الخيارات: ${en('visitors / videos / hospitals / patients')}<br>جرّب: هل ${en('hospitals')} (المستشفيات) تزور المرضى؟ لا. هل ${en('patients')} (المرضى) يزورون المرضى؟ لا. هل ${en('videos')} تزور؟ لا. ${en('visitors')} (الزوار) هم اللي يزورون المرضى ← الجواب ${en('visitors')}.</p>
         <p><b>انتبه:</b> أقرب اسم للضمير مو دايماً هو الجواب. المعنى هو اللي يحدد.</p>
         <p class="ex"><b>مثال من القطعة 3:</b> ${en('thinking about the problems in their lives, and it\'s hard to stop thinking about <u>them</u>')} ← ${en('them = the problems')} (المشاكل)، مو ${en('lives')} (حياتهم)، مع إن ${en('lives')} أقرب، لأن اللي يصعب توقف تفكر فيه هو المشاكل.</p>`) +
-      st(4, 'إكمال الجملة: The writer says … ______', `<p><b>شكل السؤال:</b> جملة ناقصة فيها خط فاضي ${en('______')} وأنت تختار الكلمات اللي تكمّلها. مثل: ${en('The writer says it\'s ______ for employees to focus while working.')} يعني: الكاتب يقول إنه ______ على الموظفين يركزون وهم يشتغلون.</p>
+      st(4, 'إكمال الجملة: <span class="en">The writer says … ______</span>', `<p><b>شكل السؤال:</b> جملة ناقصة فيها خط فاضي ${en('______')} وأنت تختار الكلمات اللي تكمّلها. مثل: ${en('The writer says it\'s ______ for employees to focus while working.')} يعني: الكاتب يقول إنه ______ على الموظفين يركزون وهم يشتغلون.</p>
         <p><b>كيف تحلّه خطوة خطوة:</b></p>
-        <ol><li>اختر من السؤال <b>كلمة مميزة</b>: كلمة واضحة تقدر تلقاها بسهولة في القطعة (اسم أو فعل، مو كلمات عامة مثل ${en('the')} و${en('is')}).</li>
+        <ol><li>اختر من السؤال <b>كلمة مميزة</b>: كلمة واضحة تقدر تلقاها بسهولة في القطعة (اسم أو فعل، مو كلمات عامة مثل ${en('the')} و ${en('is')}).</li>
         <li><b>دوّر عليها في القطعة بعينك بسرعة</b>، بدون ما تقرأ كل شي (هذا اسمه ${en('scanning')}: تمسح القطعة بعينك وتدوّر على كلمة معيّنة).</li>
         <li>أول ما تلقاها، اقرأ <b>الجملة كاملة</b>.</li>
         <li>قارن الجملة بالخيارات واختر اللي يطابقها.</li></ol>
@@ -934,29 +977,29 @@ const TIPS = {
       st(5, 'الجواب الصح غالباً بكلمات ثانية', `<p>كثير الجواب الصح ما يكون نفس كلمات القطعة بالضبط، يكون <b>نفس المعنى بكلمات ثانية</b>. فلا تدوّر بس على نفس الكلمات، دوّر على نفس المعنى.</p>
         <p class="ex"><b>مثال من القطعة 1:</b> ليش الكاتب يشوف إن الأساتذة لازم يضحّكون الطلاب؟ القطعة تقول: ${en('They also remembered the lessons more')} (وتذكروا الدروس أكثر)، والجواب: ${en('Students will remember more from the lessons.')} نفس المعنى بكلمات مختلفة.</p>`) +
       st(6, 'فخ الكلمات المنسوخة', `<p>الخيار الغلط كثير يكون <b>فيه كلمات من القطعة نفسها</b>، بس من مكان ثاني أو عن شي ثاني. الطالب يشوف كلمات يعرفها من القطعة ويختارها بسرعة. لا تختار الخيار لأنك شفت كلماته في القطعة، اختاره لأنه <b>يجاوب السؤال</b>.</p>
-        <p class="ex"><b>مثال من القطعة 1:</b> ${en('People laugh the most when they\'re ______.')} (الناس يضحكون أكثر شي لما يكونون ______)<br>الخيارات: ${en('around other people / in stressful situations / watching funny videos / not in pain or at school')}<br>${en('watching funny videos')} موجودة في القطعة، و${en('stressful situations')} بعد، بس الجملة اللي تجاوب السؤال: ${en('people laugh the most when they\'re around other people')} ← الجواب ${en('around other people')} (لما يكونون مع ناس).</p>`) +
+        <p class="ex"><b>مثال من القطعة 1:</b> ${en('People laugh the most when they\'re ______.')} (الناس يضحكون أكثر شي لما يكونون ______)<br>الخيارات: ${en('around other people / in stressful situations / watching funny videos / not in pain or at school')}<br>${en('watching funny videos')} موجودة في القطعة، و ${en('stressful situations')} بعد، بس الجملة اللي تجاوب السؤال: ${en('people laugh the most when they\'re around other people')} ← الجواب ${en('around other people')} (لما يكونون مع ناس).</p>`) +
       st(7, 'انتبه للكلمات المطلقة', `<p>فيه كلمات قوية مثل ${en('never')} (أبداً)، ${en('always')} (دايماً)، ${en('all / every')} (كل)، ${en('only')} (بس). الخيار اللي فيه وحدة منها <b>غالباً يكون غلط</b>، إلا إذا القطعة قالتها بنفس القوة.</p>
         <p class="ex"><b>مثال من القطعة 1:</b> الخيار ${en('Students never complete their homework quickly.')} (الطلاب أبداً ما يخلّصون واجباتهم بسرعة) غلط، لأن القطعة ما قالت كذا أبداً.</p>`) +
-      st(8, 'لماذا (Why) و«ليش ذكر الكاتب كذا؟»', `<p><b>شكل السؤال:</b> ${en('Why …?')} (ليش؟). الجواب سبب، فدوّر على كلمات السبب في القطعة: ${en('because')} (لأن)، ${en('so')} (عشان كذا)، ${en('since')} (بما إن)، ${en('to + فعل')} (عشان يسوي)، ${en('that\'s why')} (وعشان كذا).</p>
+      st(8, 'لماذا <span class="en">(Why)</span> و«ليش ذكر الكاتب كذا؟»', `<p><b>شكل السؤال:</b> ${en('Why …?')} (ليش؟). الجواب سبب، فدوّر على كلمات السبب في القطعة: ${en('because')} (لأن)، ${en('so')} (عشان كذا)، ${en('since')} (بما إن)، ${en('to + فعل')} (عشان يسوي)، ${en('that\'s why')} (وعشان كذا).</p>
         <p>وفيه نوع ثاني: ${en('Why does the writer mention …?')} يعني: ليش الكاتب ذكر هالشي؟ هنا السؤال مو عن المعلومة نفسها، السؤال: <b>وش الفكرة اللي يبي يوصلها الكاتب بهالكلام؟</b> اقرأ الجملة اللي قبله وشوف وش الموضوع.</p>
         <p class="ex"><b>مثال من القطعة 2:</b> ليش ذكر الكاتب إن الشركات ما تحتاج توفر أماكن راحة للموظفين؟ الفقرة كانت تتكلم عن إن الشغل من البيت ${en('saves money')} (يوفّر فلوس) للشركات ← الجواب ${en('To show how employers save money')} (عشان يوضّح كيف الشركات توفّر فلوس).</p>`) +
-      st(9, 'The writer gives an example to show …', `<p><b>شكل السؤال:</b> ${en('The writer gives an example to show how ______.')} يعني: الكاتب عطى مثال عشان يوضّح إن ______.</p>
-        <p><b>كيف تحلّه:</b> لقِ المثال (غالباً يجي بعد ${en('for example')} أو ${en('for instance')} (على سبيل المثال)، أو ${en('such as')} و${en('like')} (مثل)). اقرأ المثال والجملة اللي قبله، واسأل نفسك: <b>وش يثبت هذا المثال؟</b> وانتبه للخيارات اللي فيها نفس الكلمات بس مقلوبة (مين أحسن من مين).</p>
+      st(9, '<span class="en">The writer gives an example to show …</span>', `<p><b>شكل السؤال:</b> ${en('The writer gives an example to show how ______.')} يعني: الكاتب عطى مثال عشان يوضّح إن ______.</p>
+        <p><b>كيف تحلّه:</b> لقِ المثال (غالباً يجي بعد ${en('for example')} أو ${en('for instance')} (على سبيل المثال)، أو ${en('such as')} و ${en('like')} (مثل)). اقرأ المثال والجملة اللي قبله، واسأل نفسك: <b>وش يثبت هذا المثال؟</b> وانتبه للخيارات اللي فيها نفس الكلمات بس مقلوبة (مين أحسن من مين).</p>
         <p class="ex"><b>مثال من القطعة 3:</b> الكاتب قال بدل ما تخطط لحفلة أو تبني غرفة ألعاب، كون جاهز للأفكار اللي تجي فجأة: واحد يقول «ودي أجرب كل كيك في هالكافيه»، والمدير يقول «يلا نروح الحين!» ← الجواب ${en('trying cakes together can be better than building a game room')} (تجربة الكيك مع بعض ممكن تكون أحسن من بناء غرفة ألعاب)، والخيار المقلوب ${en('building a game room can be better than trying cakes')} غلط.</p>`) +
-      st(10, 'Which … does the writer NOT mention?', `<p><b>شكل السؤال:</b> ${en('Which idea … does the writer NOT mention?')} يعني: أي فكرة الكاتب <b>ما</b> ذكرها؟ يعني ثلاث خيارات مذكورة في القطعة، وواحد بس مو مذكور، وهو الجواب.</p>
+      st(10, '<span class="en">Which … does the writer NOT mention?</span>', `<p><b>شكل السؤال:</b> ${en('Which idea … does the writer NOT mention?')} يعني: أي فكرة الكاتب <b>ما</b> ذكرها؟ يعني ثلاث خيارات مذكورة في القطعة، وواحد بس مو مذكور، وهو الجواب.</p>
         <p><b>كيف تحلّه خطوة خطوة:</b></p>
         <ol><li>خذ الخيارات وحدة وحدة، ودوّر عليها في القطعة.</li>
         <li>اللي تلقاه مذكور، شطبه.</li>
         <li>انتبه: الأشياء ممكن تكون في أكثر من فقرة، فدوّر في القطعة كلها.</li>
         <li>اللي يبقى بدون شطب هو الجواب.</li></ol>
-        <p class="ex"><b>مثال من القطعة 3:</b> الخيارات: ${en('buying plants / buying lunches / buying gifts / buying books')}<br>${en('plants')} (نباتات) و${en('lunches')} (وجبات غدا) في الفقرة 2، و${en('gifts')} (هدايا) في الفقرة 4 ← اللي ما انذكر: ${en('buying books')} (شراء كتب).</p>
+        <p class="ex"><b>مثال من القطعة 3:</b> الخيارات: ${en('buying plants / buying lunches / buying gifts / buying books')}<br>${en('plants')} (نباتات) و ${en('lunches')} (وجبات غدا) في الفقرة 2، و ${en('gifts')} (هدايا) في الفقرة 4 ← اللي ما انذكر: ${en('buying books')} (شراء كتب).</p>
         <p>وممكن يجي بصيغة ${en('Which … is NOT true?')} يعني: أي جملة <b>مو صحيحة</b>؟ هنا شطب الجمل اللي القطعة تقولها، والجواب هو اللي يخالف القطعة.</p>`) +
       st(11, 'العنوان والفكرة الرئيسية: خلّها آخر شي', `<p><b>شكل السؤال:</b> ${en('What is the best title for the passage?')} (وش أفضل عنوان للقطعة؟) أو ${en('What is the main idea of the passage?')} (وش الفكرة الرئيسية؟).</p>
         <p><b>كيف تحلّه:</b></p>
         <ol><li>خلّه آخر سؤال تحله، لأنك بعد ما تحل الباقي بتكون فاهم القطعة.</li>
         <li>العنوان الصح يغطي <b>القطعة كلها</b>، مو فقرة وحدة بس.</li>
         <li>يساعدك: اقرأ أول جملة من كل فقرة، وآخر جملة في الفقرة الأولى وفي آخر فقرة، لأن الكاتب غالباً يقول فكرته هناك.</li></ol>
-        <p class="ex"><b>مثال من القطعة 1:</b> الخيارات: ${en('Two places that need more laughter / Patients and laughter / Students and laughter / The main reasons of laughter')}<br>القطعة تتكلم عن مكانين: المستشفيات (الفقرة 2) والمدارس (الفقرة 3) ← الجواب ${en('Two places that need more laughter')} (مكانين يحتاجون ضحك أكثر). أما ${en('Patients and laughter')} (المرضى والضحك) فيغطي الفقرة 2 بس، و${en('Students and laughter')} (الطلاب والضحك) يغطي الفقرة 3 بس.</p>`) +
+        <p class="ex"><b>مثال من القطعة 1:</b> الخيارات: ${en('Two places that need more laughter / Patients and laughter / Students and laughter / The main reasons of laughter')}<br>القطعة تتكلم عن مكانين: المستشفيات (الفقرة 2) والمدارس (الفقرة 3) ← الجواب ${en('Two places that need more laughter')} (مكانين يحتاجون ضحك أكثر). أما ${en('Patients and laughter')} (المرضى والضحك) فيغطي الفقرة 2 بس، و ${en('Students and laughter')} (الطلاب والضحك) يغطي الفقرة 3 بس.</p>`) +
       st(12, 'كيف تتدرّب في الموقع', `<ul><li>ابدأ بالقطع <b><span class="num">1–3</span></b>، لأنها جات في اختبارات سابقة، وبعدها كمّل الباقي.</li>
         <li>اختر جوابك وتقدر تغيّره، والتصحيح يطلع لما تضغط «تأكيد الإجابة».</li>
         <li>بعد كل سؤال يطلع «التوضيح»: الجملة اللي فيها الجواب بالضبط. اقرأه حتى لو جاوبت صح، عشان تتعوّد وين يختبي الجواب.</li>
