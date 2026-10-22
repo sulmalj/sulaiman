@@ -175,6 +175,30 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 .listen h2{margin:0;font-weight:600;font-size:19px;line-height:1.4;flex:1;min-width:0}
 .listen audio{width:100%;display:block}
 .listen .tip{margin:10px 0 0;color:var(--muted);font-size:13.5px}
+/* القطع والاستماع: يختار ثم «تأكيد» (طلب المستخدم) */
+.conf-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:10px}
+.conf-row .hint{font-size:13px;color:var(--muted)}
+.cnote{margin:12px 0 0;font-size:14px;color:var(--muted)}
+/* تكنيكات الحل */
+.tipsel{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media (max-width:640px){.tipsel{grid-template-columns:1fr}}
+.tipsel .card{text-align:start;cursor:pointer;display:flex;gap:12px;align-items:center;border-inline-start:4px solid var(--c)}
+.tipsel .card:hover{border-color:var(--c)}
+.tipsel .ic{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;background:var(--cs);color:var(--c);font-family:var(--f-en);font-weight:700;font-size:20px}
+.tipsel b{display:block;font-size:17px}
+.tipsel small{display:block;color:var(--muted);font-size:13.5px;line-height:1.6}
+.tips .lead{background:var(--gold-soft);color:var(--gold-ink);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);border-radius:var(--r-ctl);padding:12px 14px;margin:0 0 12px;font-size:15px}
+.tips .step{margin-bottom:10px}
+.tips .step h3{margin:0 0 6px;font-size:17px;display:flex;gap:10px;align-items:center}
+.tips .step h3 .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:14px;font-family:var(--f-en)}
+.tips .step p,.tips .step li{font-size:15px;line-height:1.8;margin:0 0 6px}
+.tips .step ul{margin:4px 0 0;padding-inline-start:20px}
+.tips .ex{background:var(--sunk);border-radius:8px;padding:8px 12px;margin:6px 0 0;font-size:14.5px}
+.tips .en{direction:ltr;unicode-bidi:isolate;font-family:var(--f-en)}
+.tips table{width:100%;border-collapse:collapse;font-size:14.5px;margin-top:6px}
+.tips td,.tips th{border:1px solid var(--line);padding:6px 10px;text-align:start}
+.tips th{background:var(--sunk)}
+.tiptabs{display:flex;gap:8px;margin:0 0 12px}
 .kind{font-size:12.5px;font-weight:700;border-radius:6px;padding:1px 9px;background:var(--l-soft);color:var(--l)}
 .xplayer{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .xplayer .pbtn{width:52px;height:52px;border-radius:50%;border:0;background:var(--l);color:#fff;font-size:20px;display:grid;place-items:center;flex:none}
@@ -265,6 +289,12 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
     <h2 class="sec-title">الأقسام</h2>
     <div class="secs" id="secs"></div>
 
+    <h2 class="sec-title">تكنيكات الحل</h2>
+    <div class="tipsel">
+      <button class="card s-l" type="button" data-tips="l"><span class="ic" aria-hidden="true">L</span><span><b>تكنيكات الاستماع</b><small>كيف تستفيد من سماع المقطع مرتين بس، وأهم الفخاخ</small></span></button>
+      <button class="card s-r" type="button" data-tips="r"><span class="ic" aria-hidden="true">R</span><span><b>تكنيكات القطعة</b><small>طريقة حل كل نوع سؤال، من قطع الاختبارات السابقة</small></span></button>
+    </div>
+
     <h2 class="sec-title">جهّز نفسك للاختبار</h2>
     <div class="duo">
       <div class="card">
@@ -325,6 +355,14 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
       <button class="btn btn-sec" id="gPrev" type="button">→ السابق</button>
       <button class="btn btn-pri" id="gNext" type="button">التالي ←</button>
     </div>
+    <p class="rights-mini">© ملازم عدل · موقع خاص بالمشتركين، ولا نُحلّل نشر الموقع أو محتواه لغير المشتركين.</p>
+  </section>
+
+  <!-- تكنيكات الاستماع والقطعة -->
+  <section id="tips" hidden>
+    <div class="qtop"><div class="ttl" id="tTitle"></div><button class="btn btn-sec btn-sm" data-home type="button">→ الرئيسية</button></div>
+    <div class="tiptabs"><button class="btn btn-sec btn-sm" type="button" data-tips="l">🎧 الاستماع</button><button class="btn btn-sec btn-sm" type="button" data-tips="r">📖 القطعة</button></div>
+    <div class="tips" id="tBody"></div>
     <p class="rights-mini">© ملازم عدل · موقع خاص بالمشتركين، ولا نُحلّل نشر الموقع أو محتواه لغير المشتركين.</p>
   </section>
 
@@ -406,6 +444,7 @@ const ofSec = s => QS.filter(q => q.sec === s);
 const ofGrp = (s, g) => QS.filter(q => q.sec === s && q.grp === g);
 const vocabSets = Math.ceil(VO.length / VOCAB_SET);
 const grpCount = s => ({ g: GR.length, v: vocabSets, r: RE.length, l: LI.length }[s]);
+const LEVEL = n => n > 20 ? 'B2' : 'B1';   // القطع والمقاطع 1–20 = B1، و21–25 = B2
 const repBtn = q => '';   // زر «بلّغ عن خطأ» محذوف (طلب المستخدم: الموقع للمشتركين)
 
 /* ── الحفظ في المتصفح ── */
@@ -436,13 +475,15 @@ const paraHTML = t => { const m = t.match(/^(\d+)\.\s*(.*)$/); return m ? `<p><b
 const bidiRun = t => t.replace(/[A-Za-z][A-Za-z0-9'’ +\/.\-]*[A-Za-z0-9]|[A-Za-z]/g, m => `<bdi class="en">${m}</bdi>`);
 const bidiEn = s => esc(s).split(/(«[^»]*»)/).filter(part => !/^[\s.]*$/.test(part)).map(part => part.startsWith('«') ? `<q class="en" dir="ltr">${part.slice(1, -1)}</q>` : bidiRun(part)).join('');   // الكلمات الإنجليزية داخل الشرح العربي
 const explHTML = q => q.e ? `<div class="expl"><b>${q.sec === 'v' ? '⚠️ تنويه' : q.sec === 'r' ? '📘 التوضيح' : '📘 شرح القاعدة'}:</b> <span>${bidiEn(q.e)}</span></div>` : '';
+const needConf = q => q.sec === 'r' || q.sec === 'l';   // القطع والاستماع: التصحيح بعد «تأكيد»
+const confHTML = (id, sel) => `<div class="conf-row"><button class="btn btn-pri btn-sm" type="button" data-conf="${id}" ${sel === undefined ? 'disabled' : ''}>تأكيد الإجابة ✓</button><span class="hint">${sel === undefined ? 'اختر إجابتك أول' : 'تقدر تغيّر اختيارك قبل ما تأكّد'}</span></div>`;
 const qHTML = (q, fill) => q.sec === 'g' || q.sec === 'v' ? blankify(q.q, fill) : esc(q.q);
 
 /* ── التنقل ── */
 let view = 'home';
 function show(v) {
   view = v;
-  ['home', 'list', 'quiz', 'group', 'exam', 'report'].forEach(s => $(s).hidden = s !== v);
+  ['home', 'list', 'quiz', 'group', 'exam', 'report', 'tips'].forEach(s => $(s).hidden = s !== v);
   if (v !== 'group' && v !== 'exam') stopAudio();
   window.scrollTo(0, 0);
 }
@@ -494,8 +535,8 @@ function openList(s) {
     let title, sub;
     if (s === 'g') { title = esc(GR[g].rule); sub = list.length + ' سؤال'; }
     if (s === 'v') { const a = g * VOCAB_SET + 1, b = Math.min(VO.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الأسئلة ${a}–${b}`; }
-    if (s === 'r') { title = `<span class="en">${esc(RE[g].title)}</span>`; sub = `القطعة ${RE[g].n}`; }
-    if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · ${c.kind === 'dialogue' ? 'حوار بين شخصين' : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
+    if (s === 'r') { title = `<span class="en">${esc(RE[g].title)}</span>`; sub = `القطعة ${RE[g].n} · المستوى <span class="en">${LEVEL(RE[g].n)}</span>`; }
+    if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · المستوى <span class="en">${LEVEL(c.n)}</span> · ${c.kind === 'dialogue' ? (new Set(c.lines.map(l => l[0])).size > 2 ? 'نقاش بين ' + new Set(c.lines.map(l => l[0])).size + ' أشخاص' : 'حوار بين شخصين') : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
     const st = done === list.length ? `<span class="st done">✓ ${right}/${list.length}</span>` : done ? `<span class="st">${done}/${list.length}</span>` : '';
     return `<button class="card item s-${s}" type="button" data-g="${g}"><span class="no">${s === 'r' || s === 'l' ? (s === 'r' ? RE[g].n : LI[g].n) : g + 1}</span><span class="tx"><b>${title}</b><small>${sub}</small></span>${st}</button>`;
   }).join('');
@@ -512,17 +553,17 @@ let P = null; // {kind:'set'|'review'|'later', s, g, ids, i, picked}
 function startQuiz(s, g) {
   const ids = ofGrp(s, g).map(q => q.id);
   const first = ids.findIndex(id => !(id in LS.ans));
-  P = { kind: 'set', s, g, ids, i: first < 0 ? 0 : first, picked: {} };
+  P = { kind: 'set', s, g, ids, i: first < 0 ? 0 : first, picked: {}, sel: {} };
   show('quiz'); renderQ();
 }
 function startReview() {
   const ids = weakIds(); if (!ids.length) return;
-  P = { kind: 'review', ids, i: 0, picked: {} };
+  P = { kind: 'review', ids, i: 0, picked: {}, sel: {} };
   show('quiz'); renderQ();
 }
 function startLater() {
   const ids = laterIds(); if (!ids.length) return;
-  P = { kind: 'later', ids, i: 0, picked: {} };
+  P = { kind: 'later', ids, i: 0, picked: {}, sel: {} };
   show('quiz'); renderQ();
 }
 function ctxHTML(q, open) {   // للمراجعة و«ارجع لها لاحقًا»: يعرض القطعة أو المقطع مع السؤال
@@ -531,7 +572,7 @@ function ctxHTML(q, open) {   // للمراجعة و«ارجع لها لاحقً
   return '';
 }
 function renderQ() {
-  const q = BY_ID[P.ids[P.i]], opts = options(q), picked = P.picked[q.id];
+  const q = BY_ID[P.ids[P.i]], opts = options(q), picked = P.picked[q.id], sel = needConf(q) ? P.sel[q.id] : undefined;
   const isRev = P.kind !== 'set';
   const where = q.sec === 'g' ? esc(GR[q.grp].rule) : q.sec === 'v' ? `المجموعة ${q.grp + 1}` : '';
   $('qTitle').innerHTML = isRev
@@ -548,9 +589,9 @@ function renderQ() {
     <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">` +
     opts.map((o, i) => {
       let cls = '';
-      if (done) { if (o.ok) cls = 'ok'; else if (i === picked) cls = 'no'; }
+      if (done) { if (o.ok) cls = 'ok'; else if (i === picked) cls = 'no'; } else if (i === sel) cls = 'sel';
       return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
-    }).join('') + `</div>` +
+    }).join('') + `</div>` + (!done && needConf(q) ? confHTML(q.id, sel) : '') +
     (done ? `<div class="fb ${opts[picked].ok ? 'ok' : 'no'}">${opts[picked].ok ? '✓ إجابة صحيحة' : `✗ إجابة خاطئة — الإجابة الصحيحة: <span class="en">${esc(right)}</span>`}</div>` + explHTML(q) : '');
   if (keepA) $('qCard').querySelector('.ctx audio').replaceWith(keepA);
   $('qPrev').disabled = P.i === 0;
@@ -558,8 +599,12 @@ function renderQ() {
 }
 $('qCard').addEventListener('click', e => {
   const m = e.target.closest('[data-mark]'); if (m) { toggleMark(m.dataset.mark); renderQ(); return; }
-  const b = e.target.closest('.opt'); if (!b || b.disabled) return;
-  const q = BY_ID[P.ids[P.i]], i = +b.dataset.i;
+  const c = e.target.closest('[data-conf]');
+  const b = c ? null : e.target.closest('.opt'); if (!c && (!b || b.disabled)) return;
+  if (c && c.disabled) return;
+  const q = BY_ID[P.ids[P.i]];
+  if (b && needConf(q)) { P.sel[q.id] = +b.dataset.i; renderQ(); return; }   // اختيار بدون تصحيح
+  const i = c ? P.sel[q.id] : +b.dataset.i;
   P.picked[q.id] = i; record(q, options(q)[i].ok);
   if (P.kind === 'later') { delete LS.later[q.id]; save(); }
   renderQ();
@@ -575,7 +620,7 @@ $('qBack').onclick = quizBack;
 
 /* ── قطعة / مقطع: 10 أسئلة في صفحة وحدة مع تصحيح فوري ── */
 let G = null; // {s, g, picked}
-function openGroup(s, g) { G = { s, g, picked: {} }; show('group'); renderGroup(); }
+function openGroup(s, g) { G = { s, g, picked: {}, sel: {} }; show('group'); renderGroup(); }
 function headHTML(s, g, exam) {
   if (s === 'r') { const p = RE[g]; return `<div class="card passage en"><h2>${esc(p.title)}</h2>${p.text.map(paraHTML).join('')}</div>`; }
   const c = LI[g];
@@ -583,12 +628,12 @@ function headHTML(s, g, exam) {
     ? `<div class="xplayer" id="xp"><button class="pbtn" type="button" id="xpBtn" aria-label="تشغيل">▶</button><span class="pb"><i id="xpBar"></i></span><span class="pt" id="xpTime">0:00</span><span class="pc" id="xpCount"></span><audio id="xpAudio" preload="auto" src="${c.audio}"></audio></div>`
     : `<audio controls preload="metadata" src="${c.audio}"></audio>`;
   return `<div class="card listen s-l"><div class="hd"><span class="kind">${c.kind === 'dialogue' ? 'حوار' : 'متحدث واحد'}</span><h2 class="en">${exam ? 'Listening' : esc(c.title)}</h2></div>${player}
-    ${exam ? '' : '<p class="tip">🎧 اسمع المقطع وجاوب على الأسئلة. تقدر تعيده كم مرة تبغى.</p>'}</div>`;
+    ${exam ? '' : '<p class="tip">🎧 اسمع المقطع وجاوب على الأسئلة. تقدر تعيده كم مرة تبغى، والتصحيح ما يطلع إلا لما تضغط «تأكيد الإجابة».</p>'}</div>`;
 }
 function renderGroup() {
   const { s, g } = G, list = ofGrp(s, g), item = s === 'r' ? RE[g] : LI[g];
   $('gTitle').innerHTML = `${secName(s)}<small>${s === 'r' ? 'القطعة' : 'المقطع'} ${item.n} من ${grpCount(s)}</small>`;
-  $('gHead').innerHTML = headHTML(s, g, false);
+  $('gHead').innerHTML = headHTML(s, g, false) + (s === 'r' ? '<p class="cnote">📖 اختر إجابتك وتقدر تغيّرها، والتصحيح يطلع لما تضغط «تأكيد الإجابة».</p>' : '');
   renderGroupQs();
   $('gPrev').disabled = g === 0;
   gNextLabel();
@@ -600,14 +645,15 @@ function gNextLabel() {   // فيه أسئلة ما جاوبها ← «تخطَ�
 function renderGroupQs() {
   const { s, g } = G, list = ofGrp(s, g);
   $('gList').innerHTML = list.map((q, k) => {
-    const opts = options(q), p = G.picked[q.id], done = p !== undefined;
+    const opts = options(q), p = G.picked[q.id], done = p !== undefined, sel = G.sel[q.id];
     return `<div class="card gq s-${s}" data-q="${q.id}">
       <div class="qmeta mtop">${markBtn(q)}</div>
       <p class="qtext en"><span class="n">${k + 1}.</span><span>${esc(q.q)}</span></p>
       <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => {
-        let cls = ''; if (done) { if (o.ok) cls = 'ok'; else if (i === p) cls = 'no'; }
+        let cls = ''; if (done) { if (o.ok) cls = 'ok'; else if (i === p) cls = 'no'; } else if (i === sel) cls = 'sel';
         return `<button class="opt ${cls}" type="button" data-i="${i}" ${done ? 'disabled' : ''}><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`;
       }).join('')}</div>
+      ${done ? '' : confHTML(q.id, sel)}
       ${done ? `<div class="fb ${opts[p].ok ? 'ok' : 'no'}">${opts[p].ok ? '✓ صح' : `✗ غلط — الصحيح: <span class="en">${esc(q.o[0])}</span>`}</div>` + explHTML(q) : ''}
       <div class="qmeta"><span class="qcode">${q.code}</span>${repBtn(q)}</div>
     </div>`;
@@ -621,9 +667,15 @@ function renderGroupQs() {
 }
 $('gList').addEventListener('click', e => {
   const m = e.target.closest('[data-mark]'); if (m) { toggleMark(m.dataset.mark); const y = window.scrollY; renderGroupQs(); window.scrollTo(0, y); return; }
-  const b = e.target.closest('.opt'); if (!b || b.disabled) return;
-  const q = BY_ID[b.closest('[data-q]').dataset.q], i = +b.dataset.i;
-  G.picked[q.id] = i; record(q, options(q)[i].ok);
+  const c = e.target.closest('[data-conf]');
+  if (c) {   // «تأكيد الإجابة» ← يطلع التصحيح
+    if (c.disabled) return;
+    const q = BY_ID[c.dataset.conf], i = G.sel[q.id];
+    G.picked[q.id] = i; record(q, options(q)[i].ok);
+  } else {
+    const b = e.target.closest('.opt'); if (!b || b.disabled) return;
+    G.sel[b.closest('[data-q]').dataset.q] = +b.dataset.i;   // اختيار بدون تصحيح
+  }
   const y = window.scrollY; renderGroupQs(); gNextLabel(); window.scrollTo(0, y);
 });
 $('gPrev').onclick = () => { if (G.g > 0) openGroup(G.s, G.g - 1); };
@@ -678,18 +730,18 @@ function renderE() {
   $('ePrev').disabled = E.t === 0;
   $('eNext').textContent = E.t === E.parts.length - 1 ? 'إنهاء وتصحيح ✓' : 'القسم التالي ←';
 }
-function bindPlayer(P) {   // مشغّل الاختبار: بدون تقديم، وعدد مرات محدود
+function bindPlayer(P) {   // مشغّل الاختبار: بدون تقديم ولا إيقاف (مثل الاختبار الحقيقي: «once you click start, it cannot be paused»)، وعدد مرات محدود
   const a = $('xpAudio'), btn = $('xpBtn'), bar = $('xpBar'), time = $('xpTime'), cnt = $('xpCount');
   const upd = () => {
     if (!E) return;
     const left = EXAM_PLAYS - P.plays;
-    cnt.textContent = a.paused && (a.currentTime === 0 || a.ended) ? (left > 0 ? `تقدر تسمع المقطع ${left === 2 ? 'مرتين' : 'مرة وحدة'} بعد` : 'خلّصت مرات السماع المسموحة') : `سماع ${P.plays} من ${EXAM_PLAYS}`;
-    btn.textContent = a.paused ? '▶' : '❚❚';
-    btn.disabled = a.paused && (a.currentTime === 0 || a.ended) && left <= 0;
+    cnt.textContent = a.paused && (a.currentTime === 0 || a.ended) ? (left > 0 ? `تقدر تسمع المقطع ${left === 2 ? 'مرتين' : 'مرة وحدة'} بعد` : 'خلّصت مرات السماع المسموحة') : `سماع ${P.plays} من ${EXAM_PLAYS} — المقطع ما يتوقف لين يخلص`;
+    btn.textContent = a.paused ? '▶' : '🔊';
+    btn.disabled = !a.paused || ((a.currentTime === 0 || a.ended) && left <= 0);
   };
   btn.onclick = () => {
     if (!E) return;
-    if (!a.paused) { a.pause(); return; }
+    if (!a.paused) return;   // ما فيه إيقاف بعد ما يبدأ
     if (a.currentTime === 0 || a.ended) { if (P.plays >= EXAM_PLAYS) return; P.plays++; a.currentTime = 0; }
     a.play().catch(() => {});
   };
@@ -755,6 +807,96 @@ function finishExam(timeUp) {
 }
 $('rAgain').onclick = startExam;
 $('rRev').onclick = startReview;
+
+
+/* ── تكنيكات الحل (طلب المستخدم) ── */
+const st = (n, h, body) => `<div class="card step"><h3>${n !== '' ? `<span class="n">${n}</span>` : ''}${h}</h3>${body}</div>`;
+const en = t => `<span class="en">${t}</span>`;
+const TIPS = {
+  l: {
+    t: 'تكنيكات الاستماع',
+    html: `<p class="lead">في الاختبار تسمع كل مقطع <b>مرتين بس</b>، و<b>أول ما تضغط تشغيل ما تقدر توقفه</b> (مكتوب كذا في دليل الميد الرسمي)، وعلى المقطع <b>10 أسئلة</b> اختيار من متعدد. يعني لازم تدخل المقطع وأنت جاهز. هذي الطريقة اللي تخليك تطلع بأعلى درجة من المرتين:</p>` +
+      st(1, 'قبل ما تشغّل: اقرأ الأسئلة العشر', `<p>قبل ما تضغط تشغيل أول مرة، اقرأ الأسئلة العشر، وحدّد الكلمة المهمة في كل سؤال: اسم، رقم، وقت، مكان، سبب.</p><p>ومرّ على الخيارات بسرعة: إذا كانت كلها أرقام أو تواريخ، تعرف إنك بتسمع أرقام. كذا تعرف وش تنتظر تسمع، وما تضيع وأنت تسمع.</p>`) +
+      st(2, 'توقّع نوع الجواب من كلمة السؤال', `<table><tr><th>السؤال يبدأ بـ</th><th>انتظر تسمع</th></tr>
+        <tr><td>${en('How much')}</td><td>سعر أو كمية (${en('riyals, dollars, litres')})</td></tr>
+        <tr><td>${en('How many / How long')}</td><td>عدد / مدة (${en('three nights, two weeks')})</td></tr>
+        <tr><td>${en('When / What time')}</td><td>وقت أو يوم أو تاريخ (${en('at seven forty, on Thursday, January 12th')})</td></tr>
+        <tr><td>${en('Where')}</td><td>مكان (${en('next to, opposite, on the second floor')})</td></tr>
+        <tr><td>${en('Why')}</td><td>سبب، غالباً بعد ${en('because / so / that\'s why')}</td></tr>
+        <tr><td>${en('What does … suggest / advise')}</td><td>نصيحة، غالباً بعد ${en('you should / I\'d recommend / try to')}</td></tr></table>`) +
+      st(3, 'السماع الأول: جاوب اللي واضح وكمّل', `<p>الأسئلة غالباً تمشي <b>بنفس ترتيب المقطع</b>. إذا فاتك سؤال لا توقف عنده، انتقل للي بعده على طول، لأنك لو وقفت بيفوتك اللي بعده بعد.</p><p>خلّ في بالك أرقام الأسئلة اللي ما تأكدت منها (وفي الموقع تقدر تعلّمها بزر 🔖).</p>`) +
+      st(4, 'السماع الثاني: للأسئلة الناقصة بس', `<p>لا تسمع من جديد وكأنك أول مرة. ركّز على الأسئلة اللي ما جاوبتها أو شاك فيها، وتأكد من <b>الأرقام والأسماء والتواريخ</b> بالذات، لأنها أكثر شي يلخبط.</p>`) +
+      st(5, 'انتبه للفخاخ (أهم شي)', `<ul>
+        <li><b>المتحدث يغيّر كلامه:</b> إذا سمعت ${en('Actually… / Sorry, I mean… / No, wait… / My mistake… / not … but …')} فالمعلومة الأخيرة هي الصح. مثل نموذج القسم: ${en('two… no wait… three')} ← الجواب ${en('three')}، و${en('No, not the 13th, the 12th')} ← الجواب ${en('the 12th')}.</li>
+        <li><b>الأرقام المتشابهة:</b> ${en('fifteen / fifty')}، ${en('thirteen / thirty')}، ${en('eighteen / eighty')}. في ${en('fifteen')} الضغط على آخر الكلمة (${en('fif-TEEN')})، وفي ${en('fifty')} على أولها (${en('FIF-ty')}).</li>
+        <li><b>أكثر من رقم في نفس المقطع:</b> المقطع يذكر السعر قبل الخصم وبعده، والموعد القديم والجديد، عشان يلخبطك. ارجع للسؤال: وش يسأل بالضبط؟</li>
+        <li><b>الكلمة اللي سمعتها مو دايماً الجواب:</b> الخيار الغلط كثير يكون فيه كلمة انقالت في المقطع، بس في مكان ثاني أو بمعنى ثاني.</li>
+        <li><b>سؤال ${en('NOT')}:</b> مثل ${en('Which … does the speaker NOT mention?')}، شطب كل خيار انذكر، والباقي هو الجواب.</li>
+        <li><b>حسبة بسيطة:</b> أحياناً تحسب عدد الليالي (من الوصول للمغادرة)، أو تجمع سعرين، أو تطرح الخصم.</li></ul>`) +
+      st(6, 'كلمات تنبهك إن الجواب جاي', `<p>${en('but, however, the problem is, the main reason, so, because, I\'d recommend, don\'t forget, make sure, the good news is')}</p><p>أول ما تسمع وحدة منها ركّز: المعلومة اللي بعدها غالباً عليها سؤال.</p>`) +
+      st(7, 'لا تخلّي سؤال بدون إجابة', `<p>إذا ما عرفت، شطب الخيارات اللي متأكد إنها غلط، واختر من الباقي. السؤال الفاضي أكيد ما له درجة.</p>`) +
+      st(8, 'كيف تتدرّب في الموقع', `<ul>
+        <li>في التدريب تقدر تعيد المقطع كم مرة تبي، واختيارك ما يتصحّح إلا لما تضغط «تأكيد الإجابة»، فتقدر تتأكد قبل.</li>
+        <li>بس عشان تتعوّد على جو الاختبار، حاول تسمع المقطع <b>مرتين بس</b> وجاوب، وبعدها شوف التصحيح.</li>
+        <li>في <b>الاختبار التجريبي</b> كل مقطع يشتغل مرتين بس، ومثل الاختبار الحقيقي ما تقدر توقفه بعد ما يبدأ.</li>
+        <li>المقاطع 1–20 مستواها ${en('B1')}، و21–25 ${en('B2')} (أصعب) — خلّها آخر شي عشان ترفع مستواك.</li>
+        <li>بعد ما تخلص الأسئلة، اقرأ <b>نص المقطع</b> وأنت تسمعه: أفضل طريقة تتعود فيها على النطق.</li></ul>`)
+  },
+  r: {
+    t: 'تكنيكات القطعة',
+    html: `<p class="lead">حلّلنا القطع الثلاث اللي جات في اختبارات سابقة (القطع <b>1–3</b> في الموقع). الأسئلة الأصلية اللي وصلتنا منها <b>19 سؤال</b>، وكمّلنا كل قطعة لعشرة بنفس الطريقة. وكل قطع الموقع مبنية على نفس طريقة الأسئلة. هذا توزيع الأسئلة الأصلية، وطريقة حل كل نوع:</p>` +
+      st('', 'أنواع الأسئلة في الاختبارات السابقة', `<table><tr><th>نوع السؤال</th><th>كم مرة جا (من 19)</th></tr>
+        <tr><td>إكمال جملة (${en('The writer says … ______')})</td><td>7</td></tr>
+        <tr><td>معنى كلمة تحتها خط</td><td>4</td></tr>
+        <tr><td>الضمير اللي تحته خط (${en('they / it / them')})</td><td>2</td></tr>
+        <tr><td>لماذا (${en('Why')})</td><td>2</td></tr>
+        <tr><td>تفاصيل (${en('How much time…?')})</td><td>1</td></tr>
+        <tr><td>العنوان / الفكرة الرئيسية</td><td>1</td></tr>
+        <tr><td>${en('Which … does the writer NOT mention?')}</td><td>1</td></tr>
+        <tr><td>${en('The writer gives an example to show …')}</td><td>1</td></tr></table>
+        <p style="margin-top:8px">وفي كل قطعة أصلية تقريباً <b>4 كلمات أو ضمائر تحتها خط</b>، يعني قريب من 4 أسئلة من كل 10. وهذي درجات سهلة إذا عرفت طريقتها. وأكثر نوع جا هو <b>إكمال الجملة</b>.</p>`) +
+      st(1, 'رتّب شغلك: الأسئلة أول، بعدين القطعة', `<p>لا تقرأ القطعة كلمة كلمة من أولها. الطريقة: <b>اقرأ الأسئلة</b> (بدون الخيارات) ← <b>اقرأ القطعة قراءة سريعة</b> عشان تعرف وش تتكلم عنه كل فقرة ← <b>جاوب سؤال سؤال</b> وارجع للجملة اللي فيها الجواب.</p><p>انتبه: الأسئلة <b>مو دايماً بترتيب القطعة</b>. في قطع الاختبارات السابقة جات مخلوطة (مثلاً في القطعة 1: أول سؤال جوابه في الفقرة 3، والثاني في الفقرة 2). فلا تعتمد على الترتيب: اعتمد على <b>رقم الفقرة</b> إذا السؤال ذكره، وعلى <b>الكلمة المميزة</b> في السؤال.</p>`) +
+      st(2, 'معنى الكلمة اللي تحتها خط', `<p>السؤال يقولك رقم الفقرة، روح لها على طول. اقرأ <b>الجملة اللي فيها الكلمة، واللي قبلها واللي بعدها</b>، وبعدين <b>عوّض كل خيار مكان الكلمة</b>: اللي يخلّي الجملة منطقية هو الجواب.</p>
+        <p class="ex">من القطعة 1: ${en('Laughter also helps people forget about their pain and <u>facilitates</u> learning')} ← ${en('facilitates = helps')}</p>
+        <p class="ex">من القطعة 3: القرينة في الجملة اللي بعد الكلمة: ${en('Carefully planned solutions…')} عكس ${en('those that happen in the moment')} ← ${en('spontaneously = without planning')}</p>
+        <p>وكثير تجي <b>عبارة من كلمتين أو ثلاث</b>، وما تنفهم من كل كلمة لحالها، بس من الجملة:</p>
+        <p class="ex">${en('heading to = going to')} · ${en('spring for = pay for')} · ${en('give a boost = help')}</p>`) +
+      st(3, 'الضمير اللي تحته خط (they / it / them / those …)', `<ul><li>ارجع <b>لورا</b>: الضمير يرجع لاسم قبله، في نفس الجملة أو اللي قبلها.</li>
+        <li>طابق العدد: ${en('it')} مفرد، و${en('they / them / those')} جمع.</li>
+        <li>عوّض الخيار مكان الضمير واقرأ الجملة: هل تمشي بالمعنى؟</li></ul>
+        <p class="ex">من القطعة 1: ${en('hospitals can tell visitors how helpful laughter is. <u>They</u> should try to make the patients they\'re visiting laugh.')} ← ${en('They = visitors')}، مو ${en('hospitals')}، لأن الزوار هم اللي يزورون المرضى.</p>
+        <p>وانتبه: أقرب اسم مو دايماً هو الجواب، المعنى هو اللي يحدد.</p>
+        <p class="ex">من القطعة 3: ${en('thinking about the problems in their lives, and it\'s hard to stop thinking about <u>them</u>')} ← ${en('them = the problems')}، مو ${en('lives')}، مع إن ${en('lives')} أقرب.</p>`) +
+      st(4, 'إكمال الجملة: The writer says … ______', `<p>هذا أكثر نوع يجي. خذ <b>كلمة مميزة</b> من السؤال ودوّرها في القطعة بعينك بسرعة (هذا اسمه ${en('scanning')})، واقرأ الجملة كاملة.</p>
+        <p class="ex">${en('The writer says it\'s ______ for employees to focus while working.')} ← دوّر على ${en('focus')}: ${en('The stress of modern jobs can make it challenging for employees to focus')} ← ${en('challenging')}</p>`) +
+      st(5, 'الجواب الصح غالباً بكلمات ثانية', `<p>الجواب كثير يكون نفس معنى القطعة بس بكلمات ثانية، فدوّر على المعنى مو على نفس الكلمات.</p>
+        <p class="ex">من القطعة 1: القطعة تقول ${en('They also remembered the lessons more')}، والجواب ${en('Students will remember more from the lessons.')}</p>`) +
+      st(6, 'فخ الكلمات المنسوخة', `<p>الخيار الغلط كثير يكون <b>فيه كلمات من القطعة نفسها</b>، بس من مكان ثاني أو بمعنى ثاني. لا تختار الخيار لأنك شفت كلماته في القطعة، اختاره لأنه يجاوب السؤال.</p>
+        <p class="ex">من القطعة 1: ${en('People laugh the most when they\'re ______.')} ← الجواب ${en('around other people')}. وخيار ${en('watching funny videos')} مذكور في القطعة، بس مو هو اللي يخلّي الناس يضحكون أكثر.</p>`) +
+      st(7, 'انتبه للكلمات المطلقة', `<p>الخيار اللي فيه كلمات مثل ${en('never, always, all, every, only')} غالباً يكون غلط، إلا إذا القطعة قالتها بنفس القوة.</p>
+        <p class="ex">من القطعة 1: ${en('Students never complete their homework quickly.')} غلط، لأن القطعة ما قالت كذا أبداً.</p>`) +
+      st(8, 'لماذا (Why) و«ليش ذكر الكاتب كذا؟»', `<p>دوّر على ${en('because, so, since, to + فعل, that\'s why')}. وإذا السؤال ${en('Why does the writer mention …?')} فهو يسألك: <b>وش الفكرة اللي يدعمها هذا الكلام؟</b></p>
+        <p class="ex">من القطعة 2: ليش ذكر إن الشركات ما تحتاج توفر أماكن راحة للموظفين؟ ← ${en('To show how employers save money')}</p>`) +
+      st(9, 'The writer gives an example to show …', `<p>المثال يجي غالباً بعد ${en('for example / for instance / such as / like')}. اقرأ المثال والجملة اللي قبله، واسأل نفسك: <b>وش يثبت هذا المثال؟</b> وانتبه للخيارات اللي فيها نفس الكلمات بس مقلوبة (مين أحسن من مين).</p>
+        <p class="ex">من القطعة 3: بدل ما يبنون غرفة ألعاب، المدير قال: «يلا نروح نجرب الكيك الحين» ← الجواب ${en('trying cakes together can be better than building a game room')}، والخيار المقلوب ${en('building a game room can be better than trying cakes')} غلط.</p>`) +
+      st(10, 'Which … does the writer NOT mention?', `<p>دوّر على كل خيار في القطعة، وشطب اللي تلقاه مذكور. انتبه: الأشياء ممكن تكون في أكثر من فقرة. اللي يبقى هو الجواب.</p>
+        <p class="ex">من القطعة 3: ${en('plants')} و${en('lunches')} في الفقرة 2، و${en('gifts')} في الفقرة 4 ← اللي ما انذكر: ${en('buying books')}</p>
+        <p>وممكن يجي بصيغة ${en('Which … is NOT true?')}: هنا شطب اللي القطعة تقوله، والجواب هو اللي يخالف القطعة.</p>`) +
+      st(11, 'العنوان والفكرة الرئيسية: خلّها آخر شي', `<p>بعد ما تحل كل الأسئلة بتكون فاهم القطعة. العنوان الصح يغطي <b>القطعة كلها</b> مو فقرة وحدة. يساعدك: اقرأ أول جملة من كل فقرة، وآخر جملة في الفقرة الأولى وفي آخر فقرة.</p>
+        <p class="ex">من القطعة 1: ${en('Two places that need more laughter')} ← لأن القطعة عن المستشفيات والمدارس. أما ${en('Patients and laughter')} و${en('Students and laughter')} فكل واحد يغطي فقرة وحدة بس.</p>`) +
+      st(12, 'كيف تتدرّب في الموقع', `<ul><li>ابدأ بالقطع <b>1–3</b>، لأنها جات في اختبارات سابقة، وبعدها كمّل الباقي.</li>
+        <li>اختر جوابك وتقدر تغيّره، والتصحيح يطلع لما تضغط «تأكيد الإجابة».</li>
+        <li>بعد كل سؤال يطلع «التوضيح»: الجملة اللي فيها الجواب بالضبط. اقرأه حتى لو جاوبت صح، عشان تتعوّد وين يختبي الجواب.</li>
+        <li>القطع 1–20 مستواها ${en('B1')} (قريب من مستوى الاختبار)، و21–25 ${en('B2')} أصعب، للي يبي يرفع مستواه.</li></ul>`)
+  }
+};
+function openTips(k) {
+  $('tTitle').innerHTML = TIPS[k].t + `<small>${k === 'l' ? 'الاستماع (Listening)' : 'القطعة (Reading)'}</small>`;
+  $('tBody').innerHTML = TIPS[k].html;
+  document.querySelectorAll('.tiptabs [data-tips]').forEach(b => b.className = 'btn btn-sm ' + (b.dataset.tips === k ? 'btn-pri' : 'btn-sec'));
+  show('tips');
+}
+document.querySelectorAll('[data-tips]').forEach(b => b.onclick = () => openTips(b.dataset.tips));
 
 /* ── عام ── */
 function goHome() {
