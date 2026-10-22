@@ -6,178 +6,166 @@ window.LISTENING = [
 "title": "Booking a Dentist Appointment",
 "kind": "dialogue",
 "audio": "audio/L01.mp3",
-"dur": 84,
+"dur": 106,
 "lines": [
 [
 "Receptionist",
-"Good morning, Smile Dental Clinic. This is Rana speaking. How can I help you?"
+"Good morning, Smile Dental Clinic. How can I help you?"
 ],
 [
 "Faisal",
-"Good morning. I'd like to make an appointment with a dentist, please. I have a terrible toothache."
+"Good morning. I've had a terrible toothache since last night, on the left side at the bottom. I could hardly sleep. Is there any chance I could see a dentist today?"
 ],
 [
 "Receptionist",
-"I'm sorry to hear that. How long have you had the pain?"
+"I'm sorry to hear that. Let me check. Doctor Amal is fully booked today, but Doctor Yousef has a cancellation at twenty past four this afternoon. Would that suit you?"
 ],
 [
 "Faisal",
-"Since Saturday, so about three days now. It hurts more when I drink something cold."
+"I finish work at four, and the clinic is only about five minutes from my office, so that should be fine."
 ],
 [
 "Receptionist",
-"I see. Have you visited our clinic before?"
+"Good. Have you visited us before?"
 ],
 [
 "Faisal",
-"No, this is my first time. My friend Majed recommended you."
+"No, this is my first time. My usual dentist moved to another city."
 ],
 [
 "Receptionist",
-"Great. Doctor Hassan has a free appointment tomorrow at eleven thirty in the morning. Is that OK for you?"
+"In that case, please come ten minutes early to fill in a form about your medical history. Do you have health insurance?"
 ],
 [
 "Faisal",
-"Hmm, I have a class at eleven. Is there anything in the afternoon?"
+"Yes, I'm with Gulf Health."
 ],
 [
 "Receptionist",
-"Let me check. Yes, there's an appointment at four fifteen with Doctor Laila."
+"We work with them, but your insurance only covers part of the cost. The first examination and the X-ray are fully covered, but if you need a filling, you'll pay twenty percent of the price yourself."
 ],
 [
 "Faisal",
-"Four fifteen is perfect. How much does the first visit cost?"
+"OK, that's fine. Is there anything I can do for the pain until then?"
 ],
 [
 "Receptionist",
-"The first check-up is one hundred and fifty riyals. If you need an X-ray, it's an extra fifty riyals."
+"You can take a normal painkiller, but please don't take more than the box says. Also, avoid very hot or very cold drinks, and try not to chew on that side."
 ],
 [
 "Faisal",
-"OK, no problem. Can I pay by card?"
+"My face is a little swollen too. Is that a bad sign?"
 ],
 [
 "Receptionist",
-"Yes, of course. Can I have your full name, please?"
+"It might mean there's an infection, so it's good that you're coming today. If the swelling gets much worse, or you get a fever before your appointment, go straight to the hospital emergency department."
 ],
 [
 "Faisal",
-"Faisal Al-Harbi."
+"I will. Can I pay by card?"
 ],
 [
 "Receptionist",
-"And your phone number?"
+"Yes, of course. Could I have your full name and mobile number?"
 ],
 [
 "Faisal",
-"It's oh five five, three two one, eight seven six four."
+"Faisal Al-Otaibi. Oh five five, three two one, eight eight four zero."
 ],
 [
 "Receptionist",
-"Thank you, Faisal. Please come ten minutes early to fill in a form. And please bring your ID card."
-],
-[
-"Faisal",
-"Sure. Where exactly is the clinic?"
-],
-[
-"Receptionist",
-"We're on Prince Sultan Street, on the second floor, above the pharmacy."
-],
-[
-"Faisal",
-"Thank you very much. See you tomorrow."
+"Thank you. We'll send you a text message with the address. See you at twenty past four."
 ]
 ],
 "qs": [
 {
-"q": "Why does Faisal want to see a dentist?",
+"q": "Since when has Faisal had a toothache?",
 "o": [
-"He has a terrible toothache.",
-"He wants to clean his teeth.",
-"He broke his tooth.",
-"His friend asked him to go."
-]
-},
-{
-"q": "How long has Faisal had the pain?",
-"o": [
-"About three days",
-"About a week",
+"Since last night",
+"Since last week",
 "Since this morning",
-"About three weeks"
+"For two days"
 ]
 },
 {
-"q": "When does the pain get worse?",
+"q": "Where is the pain?",
 "o": [
-"When he drinks something cold",
-"When he eats something sweet",
-"When he sleeps",
-"When he drinks hot tea"
+"On the left side at the bottom",
+"On the right side at the top",
+"In his front teeth",
+"On both sides"
 ]
 },
 {
-"q": "Who recommended the clinic?",
+"q": "Which dentist will Faisal see?",
 "o": [
-"His friend Majed",
-"His brother",
-"Doctor Hassan",
-"His teacher"
+"Doctor Yousef",
+"Doctor Amal",
+"His usual dentist",
+"Doctor Faisal"
 ]
 },
 {
-"q": "Why can't Faisal go at eleven thirty?",
+"q": "What time is his appointment?",
 "o": [
-"He has a class at eleven.",
-"He has to work.",
-"The clinic is closed.",
-"He has another appointment."
+"At twenty past four",
+"At four o'clock",
+"At a quarter past four",
+"At ten past four"
 ]
 },
 {
-"q": "What time is Faisal's appointment?",
+"q": "Why is Faisal going to a new dentist?",
 "o": [
-"At four fifteen",
-"At eleven thirty",
-"At four fifty",
-"At eleven o'clock"
+"His usual dentist moved to another city.",
+"His usual dentist was too expensive.",
+"He didn't like his usual dentist.",
+"His insurance company changed."
 ]
 },
 {
-"q": "Which doctor will Faisal see?",
+"q": "Why should he come ten minutes early?",
 "o": [
-"Doctor Laila",
-"Doctor Hassan",
-"Doctor Rana",
-"Doctor Majed"
+"To fill in a form about his medical history",
+"To have an X-ray",
+"To pay for the appointment",
+"To meet the dentist before the examination"
 ]
 },
 {
-"q": "How much does the first check-up cost?",
+"q": "What does his insurance fully cover?",
 "o": [
-"One hundred and fifty riyals",
-"Fifty riyals",
-"Two hundred riyals",
-"One hundred riyals"
+"The first examination and the X-ray",
+"Everything, including fillings",
+"Only the X-ray",
+"Twenty percent of the price"
 ]
 },
 {
-"q": "Why should Faisal come ten minutes early?",
+"q": "Which advice about the pain does the receptionist NOT give?",
 "o": [
-"To fill in a form",
-"To pay the money",
-"To take an X-ray",
-"To meet the doctor"
+"Put ice on his face",
+"Take a normal painkiller",
+"Avoid very hot or very cold drinks",
+"Try not to chew on that side"
 ]
 },
 {
-"q": "Where is the clinic?",
+"q": "According to the receptionist, what might the swelling mean?",
 "o": [
-"On the second floor, above the pharmacy",
-"On the ground floor, next to the pharmacy",
-"On the second floor, next to the bank",
-"Behind the pharmacy"
+"There might be an infection.",
+"He has broken a tooth.",
+"He took too many painkillers.",
+"He is allergic to something."
+]
+},
+{
+"q": "When should he go to the hospital emergency department?",
+"o": [
+"If the swelling gets much worse or he gets a fever",
+"If he arrives late for his appointment",
+"If the painkiller doesn't work in one hour",
+"If he can't sleep tonight"
 ]
 }
 ]
@@ -291,9 +279,9 @@ window.LISTENING = [
 "q": "Where does the tour finish?",
 "o": [
 "At the main restaurant, near the gift shop",
-"At the bird house",
-"At the main gate",
-"At the reptile house"
+"At the bird house, near the entrance",
+"At the main gate, where the tour started",
+"At the reptile house, next to the café"
 ]
 },
 {
@@ -312,166 +300,162 @@ window.LISTENING = [
 "title": "Buying a New Phone",
 "kind": "dialogue",
 "audio": "audio/L03.mp3",
-"dur": 77,
+"dur": 102,
 "lines": [
 [
 "Seller",
-"Good evening. Welcome to Tech World. How can I help you?"
+"Good evening. Can I help you?"
 ],
 [
 "Huda",
-"Hi. I'm looking for a new phone. My old one is four years old, and the battery dies very quickly."
+"Yes, please. I'm looking for a new phone. My old one is four years old, and the battery hardly lasts until lunchtime."
 ],
 [
 "Seller",
-"OK. What do you use your phone for most?"
+"That's a common problem with older phones. What do you mainly use your phone for?"
 ],
 [
 "Huda",
-"Mostly for taking photos and for my university work. I also watch videos a lot."
+"I'm a university student, so I use it for studying and messages, but I also take a lot of photos. I'm in the photography club."
 ],
 [
 "Seller",
-"Then you need a phone with a good camera and a big screen. How much would you like to spend?"
+"Then I'd suggest one of these two models. This one has the best camera in the shop. It takes excellent photos, even at night, and it has a lot of storage. But it's quite expensive: three thousand two hundred riyals."
 ],
 [
 "Huda",
-"Not more than two thousand riyals."
+"That's a lot more than I planned to spend. What about the other one?"
 ],
 [
 "Seller",
-"I have two good choices for you. This one is the Nova Five. It has a great camera and a battery that lasts two days. It's one thousand eight hundred riyals."
+"This one costs two thousand one hundred. The camera is very good in daylight, but not as good in the dark. On the other hand, its battery is bigger, so it easily lasts a full day, even if you use it a lot."
 ],
 [
 "Huda",
-"And the other one?"
+"Most of my photos are taken outdoors during the day, and the battery is my biggest problem at the moment. I think the cheaper one makes more sense."
 ],
 [
 "Seller",
-"This is the Star X. It has a bigger screen, but the camera is not as good. It's one thousand five hundred riyals."
+"I agree. Would you like to trade in your old phone? We'd take two hundred riyals off the price."
 ],
 [
 "Huda",
-"Hmm. Photos are very important to me, so I'll take the Nova Five. Does it come in other colours?"
+"Only two hundred? My brother said I could sell it online for more."
 ],
 [
 "Seller",
-"Yes, it comes in black, silver and blue. But we only have black and blue in the shop today."
+"You probably could, maybe three or four hundred. But you'd have to deal with the buyers yourself. Trading it in here is quicker."
 ],
 [
 "Huda",
-"Blue, please. Do I get a cover with it?"
+"I think I'll try selling it myself first. Can I pay monthly?"
 ],
 [
 "Seller",
-"The cover isn't included, but this week we have an offer. If you buy the phone, you get a cover and a screen protector for free."
+"Yes. You can pay over twelve months with no extra charge, or pay the full price today and get a free phone case."
 ],
 [
 "Huda",
-"That's great. And is there a warranty?"
+"I'll pay today, then. Is there a guarantee?"
 ],
 [
 "Seller",
-"Yes, there's a two-year warranty. If anything goes wrong, just bring it back with the receipt."
+"Two years, but it doesn't cover water damage or a broken screen. For an extra one hundred and fifty riyals, you can add screen protection for one year."
 ],
 [
 "Huda",
-"Perfect. Can I pay in cash?"
-],
-[
-"Seller",
-"Of course. That's one thousand eight hundred riyals, please."
+"No, thanks. The free case is quite strong, and I'm usually careful with my phone."
 ]
 ],
 "qs": [
 {
-"q": "Why does Huda want a new phone?",
+"q": "Why does Huda need a new phone?",
 "o": [
-"The battery of her old phone dies very quickly.",
-"She broke her old phone.",
+"Her old phone's battery doesn't last long.",
+"Her old phone's screen is broken.",
 "She lost her old phone.",
-"Her old phone has no camera."
+"She needs more storage for her studies."
 ]
 },
 {
-"q": "How old is Huda's old phone?",
+"q": "Why are photos important to Huda?",
 "o": [
-"Four years old",
-"Two years old",
-"One year old",
-"Five years old"
+"She is in the photography club.",
+"She studies photography at university.",
+"She sells her photos online.",
+"She works for a newspaper."
 ]
 },
 {
-"q": "What does Huda use her phone for most?",
+"q": "What is the advantage of the more expensive phone?",
 "o": [
-"Taking photos and university work",
-"Playing games",
-"Calling her family",
-"Listening to music"
+"It takes excellent photos, even at night.",
+"It has a bigger battery.",
+"It comes with a free case.",
+"It is lighter."
 ]
 },
 {
-"q": "What is the most Huda wants to spend?",
+"q": "How much does the cheaper phone cost?",
 "o": [
+"Two thousand one hundred riyals",
+"Three thousand two hundred riyals",
 "Two thousand riyals",
-"One thousand five hundred riyals",
-"One thousand eight hundred riyals",
-"Three thousand riyals"
+"One thousand nine hundred riyals"
 ]
 },
 {
-"q": "How long does the Nova Five battery last?",
+"q": "Why does Huda choose the cheaper phone?",
 "o": [
-"Two days",
-"One day",
-"Two weeks",
-"Twelve hours"
+"Most of her photos are taken in daylight, and the battery is her biggest problem.",
+"She doesn't take many photos, so the camera isn't important to her.",
+"The expensive phone was sold out, and the shop had no more.",
+"Her brother told her that the cheaper phone was better."
 ]
 },
 {
-"q": "What is the problem with the Star X?",
+"q": "How much would the shop take off for her old phone?",
 "o": [
-"The camera is not as good.",
-"The screen is too small.",
-"It is too expensive.",
-"The battery is weak."
+"Two hundred riyals",
+"Three hundred riyals",
+"Four hundred riyals",
+"One hundred and fifty riyals"
 ]
 },
 {
-"q": "Why does Huda choose the Nova Five?",
+"q": "Why doesn't Huda trade in her old phone?",
 "o": [
-"Photos are very important to her.",
-"It is the cheapest phone.",
-"It has the biggest screen.",
-"Her friend has the same phone."
+"She thinks she can sell it online for more.",
+"The shop doesn't accept old phones.",
+"She wants to give it to her brother.",
+"She wants to keep it as a second phone."
 ]
 },
 {
-"q": "Which colour does Huda choose?",
+"q": "What does she get for paying the full price today?",
 "o": [
-"Blue",
-"Black",
-"Silver",
-"Red"
+"A free phone case",
+"Two hundred riyals off",
+"A longer guarantee",
+"Free screen protection"
 ]
 },
 {
-"q": "What does Huda get for free this week?",
+"q": "What doesn't the guarantee cover?",
 "o": [
-"A cover and a screen protector",
-"Headphones",
-"A charger",
-"A second phone"
+"Water damage or a broken screen",
+"Problems with the battery",
+"Problems with the camera",
+"Any problems in the first year"
 ]
 },
 {
-"q": "How does Huda pay?",
+"q": "Why doesn't Huda buy screen protection?",
 "o": [
-"In cash",
-"By card",
-"Online",
-"In two payments"
+"The free case is strong, and she is usually careful.",
+"It is too expensive for her student budget.",
+"Her new phone already has a strong screen.",
+"The seller says that she doesn't really need it."
 ]
 }
 ]
@@ -522,18 +506,18 @@ window.LISTENING = [
 "q": "Where will the class be on Monday?",
 "o": [
 "In the computer lab in Building 5",
-"In Room 214",
-"In Room 110",
-"In the library"
+"In Room 214, as usual",
+"In Room 110 in Building 2",
+"In the library on the first floor"
 ]
 },
 {
 "q": "Why will the class be in a different place?",
 "o": [
 "Students will practise listening and need computers with headphones.",
-"Room 214 is being painted.",
-"The professor is sick.",
-"There are too many students."
+"Room 214 is being painted this week.",
+"The professor is sick and can't come.",
+"There are too many students for the room."
 ]
 },
 {
@@ -606,162 +590,166 @@ window.LISTENING = [
 "title": "Planning a Desert Camping Trip",
 "kind": "dialogue",
 "audio": "audio/L05.mp3",
-"dur": 79,
+"dur": 107,
 "lines": [
 [
 "Sami",
-"Fahad, the weather is perfect now. Why don't we go camping in the desert this weekend?"
+"Fahad, about our camping trip this weekend. Have you seen the weather forecast?"
 ],
 [
 "Fahad",
-"Great idea! Where should we go? Last time we went to the red sand dunes near Riyadh."
+"No, why? Is something wrong?"
 ],
 [
 "Sami",
-"Yes, but it was very crowded. What about a place a bit farther? My cousin says there's a quiet place about two hours north of the city."
+"They're expecting strong winds and sandstorms on Thursday and Friday. Camping in a sandstorm would be awful, and driving would be dangerous too."
 ],
 [
 "Fahad",
-"Two hours is fine. Who else is coming?"
+"That's a shame. Everyone was so excited. Should we cancel?"
 ],
 [
 "Sami",
-"I asked Omar and Nasser. Omar said yes, but Nasser has to work on Friday. So it's just the three of us."
+"Not cancel, just postpone. The forecast for next weekend looks perfect: clear skies and around twenty-two degrees during the day."
 ],
 [
 "Fahad",
-"OK. Should we leave on Thursday evening or Friday morning?"
+"Next weekend is fine for me, but Omar has exams then. He'll be disappointed."
 ],
 [
 "Sami",
-"Thursday after work, at about five. Then we can arrive before it gets dark and put up the tent."
+"I've already spoken to him. He said he'd rather we went without him than cancelled the whole trip. He'll join us next time."
 ],
 [
 "Fahad",
-"Good. What do we need to take? I have a big tent that's good for four people."
+"OK. So that's four of us now, instead of five. Do we still need two cars?"
 ],
 [
 "Sami",
-"Perfect. I'll bring the barbecue and the chicken. Omar can bring the drinks and the fruit."
+"Yes, we do. The place we're going to is about two hours from the city, and the last part is soft sand. It's always safer to have two cars in the desert, in case one gets stuck."
 ],
 [
 "Fahad",
-"And I'll bring the blankets. The desert gets very cold at night, even if the day is warm."
+"Good point. What about equipment? I've got a big tent that sleeps four, and a gas cooker."
 ],
 [
 "Sami",
-"That's true. Don't forget your power bank, too. There's no electricity there, and the phone signal is weak."
+"Great. Then we don't need my small tent. I'll bring the firewood, the lights and a first-aid kit. Majed said he'd bring the food, and Turki has a portable fridge."
 ],
 [
 "Fahad",
-"Good point. Should we take my car or yours?"
+"What about water?"
 ],
 [
 "Sami",
-"Let's take yours. It's bigger, and it's better for driving on sand. I'll pay for the petrol."
+"We should take at least five litres per person per day. People always underestimate how much they need, even when it isn't very hot."
 ],
 [
 "Fahad",
-"Deal. When do we come back?"
+"And phone signal? Last time we had none at all."
 ],
 [
 "Sami",
-"On Saturday afternoon. I have to study for my exam on Sunday."
+"That's another reason for two cars. Also, I'll send our exact location to my brother before we leave, and tell him we'll call him on Saturday evening when we're back in the city. If he doesn't hear from us by nine, he'll know something is wrong."
 ],
 [
 "Fahad",
-"OK, sounds like a great plan!"
+"You've really thought of everything."
+],
+[
+"Sami",
+"Well, the desert is beautiful, but it's not a place to take risks."
 ]
 ],
 "qs": [
 {
-"q": "Why does Sami suggest going camping this weekend?",
+"q": "What is the problem with this weekend?",
 "o": [
-"The weather is perfect now.",
-"It is a holiday.",
-"His cousin invited them.",
-"They have no exams."
+"Strong winds and sandstorms are expected.",
+"It will be too hot.",
+"Two of their friends have exams.",
+"Their cars are not available."
 ]
 },
 {
-"q": "Why don't they want to go to the red sand dunes again?",
-"o": [
-"It was very crowded.",
-"It was too far.",
-"It was too hot.",
-"It was too expensive."
-]
-},
-{
-"q": "How far is the new place from the city?",
+"q": "How far is the camping place from the city?",
 "o": [
 "About two hours",
-"About twenty minutes",
-"About half an hour",
-"About five hours"
+"About one hour",
+"About three hours",
+"About thirty minutes"
 ]
 },
 {
-"q": "Why isn't Nasser coming?",
+"q": "What will the weather be like next weekend?",
 "o": [
-"He has to work on Friday.",
-"He is sick.",
+"Clear skies and around twenty-two degrees",
+"Windy and around thirty degrees",
+"Cloudy with some rain",
+"Cold, at around twelve degrees"
+]
+},
+{
+"q": "Why can't Omar go next weekend?",
+"o": [
+"He has exams.",
+"He is travelling.",
 "He doesn't like camping.",
-"He has an exam."
+"His car is broken."
 ]
 },
 {
-"q": "How many people are going on the trip?",
+"q": "How many people will go on the trip now?",
 "o": [
-"Three",
-"Two",
 "Four",
-"Five"
+"Five",
+"Three",
+"Six"
 ]
 },
 {
-"q": "When will they leave?",
+"q": "Why do they need two cars?",
 "o": [
-"On Thursday at about five",
-"On Friday morning",
-"On Thursday morning",
-"On Saturday afternoon"
+"It is safer, in case one gets stuck.",
+"They have too much equipment for one car.",
+"They live in different parts of the city.",
+"One car is too small for all of them."
 ]
 },
 {
-"q": "What will Sami bring?",
+"q": "What will Fahad bring?",
 "o": [
-"The barbecue and the chicken",
-"The tent",
-"The blankets",
-"The drinks and the fruit"
+"A big tent and a gas cooker",
+"The food and a fridge",
+"Firewood and lights",
+"A first-aid kit"
 ]
 },
 {
-"q": "Why does Fahad bring blankets?",
+"q": "Who will bring the food?",
 "o": [
-"The desert gets very cold at night.",
-"The tent is small.",
-"They will sleep outside.",
-"It will rain."
+"Majed",
+"Turki",
+"Sami",
+"Fahad"
 ]
 },
 {
-"q": "Why will they take Fahad's car?",
+"q": "How much water should they take per person per day?",
 "o": [
-"It is bigger and better for driving on sand.",
-"Sami's car is broken.",
-"Fahad's car uses less petrol.",
-"Sami can't drive."
+"At least five litres",
+"At least two litres",
+"At least ten litres",
+"About three litres"
 ]
 },
 {
-"q": "Why does Sami want to come back on Saturday?",
+"q": "What will Sami's brother understand if he doesn't hear from them by nine?",
 "o": [
-"He has to study for his exam on Sunday.",
-"He has to work on Saturday.",
-"His family is visiting.",
-"The weather will change."
+"That something is wrong",
+"That they decided to stay another night",
+"That their phones have no battery",
+"That they went to a different place"
 ]
 }
 ]
@@ -896,166 +884,162 @@ window.LISTENING = [
 "title": "Opening a Bank Account",
 "kind": "dialogue",
 "audio": "audio/L07.mp3",
-"dur": 76,
+"dur": 106,
 "lines": [
 [
 "Employee",
-"Good morning. Please have a seat. How can I help you today?"
+"Good morning. How can I help you today?"
 ],
 [
 "Student",
-"Good morning. I'm a new student at the university, and I'd like to open a bank account."
+"Good morning. I've just started university here, and I'd like to open a bank account. My scholarship payments have to go into a local account."
 ],
 [
 "Employee",
-"Of course. We have a special account for students. There's no monthly fee, and you get a free bank card."
+"Certainly. We have two options that might suit you. The student account has no monthly fee, but you can only take out up to three thousand riyals a day. The standard account has a fee of fifteen riyals a month, but it has a higher daily limit and comes with a credit card."
 ],
 [
 "Student",
-"That sounds good. What do I need to open it?"
+"I don't really need a credit card, and I won't be taking out large amounts. The student account sounds better."
 ],
 [
 "Employee",
-"I need your national ID card and your student card. And a phone number, so we can send you messages."
+"I think so too. Did you bring the documents we need?"
 ],
 [
 "Student",
-"Here they are. How long does it take?"
+"I've got my passport and my university acceptance letter."
 ],
 [
 "Employee",
-"About twenty minutes. I'll enter your information now, and you'll get your card today."
+"That's good, but we also need a document showing your address in the city, such as a rental contract or a letter from your university accommodation."
 ],
 [
 "Student",
-"Great. Can I use the card to shop online?"
+"Oh, I didn't know that. I live in the university housing. Can I bring the letter tomorrow?"
 ],
 [
 "Employee",
-"Yes, you can. You can also use our app to check your balance, pay bills and send money to your friends."
+"Of course. I can start the application now, and you can bring the letter tomorrow. The account will be opened once we've checked it, usually within one working day."
 ],
 [
 "Student",
-"Is there a limit on how much I can take out from the ATM?"
+"And when will I get my bank card?"
 ],
 [
 "Employee",
-"Yes. With the student account, you can take out up to five thousand riyals a day."
+"It'll be sent to your address within five to seven days. If you need money before then, you can go to any of our branches with your passport."
 ],
 [
 "Student",
-"That's more than enough! What if I lose my card?"
+"OK. Can I use the account on my phone?"
 ],
 [
 "Employee",
-"Call us immediately on our free number, or stop the card from the app. We'll send you a new one in three days."
+"Yes, you can download our app. You'll be able to check your balance, transfer money and pay bills. For security, you'll receive a code by text message every time you log in from a new device."
 ],
 [
 "Student",
-"OK. And does the bank give students any discounts?"
+"That's great. One more question: my family sometimes sends me money from abroad. Is there a charge for that?"
 ],
 [
 "Employee",
-"Yes. With our card, you get ten percent off at some bookshops and restaurants near the university. Here's a list."
+"There's a fee of twenty-five riyals for each international transfer you receive. So it's better if your family sends larger amounts less often."
 ],
 [
 "Student",
-"Thank you! You've been very helpful."
-],
-[
-"Employee",
-"You're welcome. Please sign here, and here. And your card is ready."
+"That's useful to know. Thank you."
 ]
 ],
 "qs": [
 {
-"q": "Why does the student want to open a bank account?",
+"q": "Why does the student need a local bank account?",
 "o": [
-"He is a new student at the university.",
-"He got a new job.",
-"He lost his old card.",
-"He wants to buy a car."
+"To receive his scholarship payments",
+"To receive his salary from a new job",
+"To save money to buy a car",
+"Because his family asked him to open one"
 ]
 },
 {
-"q": "What is special about the student account?",
+"q": "What is the advantage of the student account?",
 "o": [
-"There's no monthly fee, and you get a free card.",
-"It gives you free money every month.",
-"You can only use it at the university.",
-"It has a high monthly fee."
+"It has no monthly fee.",
+"It comes with a credit card.",
+"It has a higher daily limit.",
+"It can be opened without documents."
 ]
 },
 {
-"q": "What does the student NOT need to open the account?",
+"q": "How much is the monthly fee for the standard account?",
 "o": [
-"His passport",
-"His national ID card",
+"Fifteen riyals",
+"Twenty-five riyals",
+"Fifty riyals",
+"Three thousand riyals"
+]
+},
+{
+"q": "Why does the student choose the student account?",
+"o": [
+"He doesn't need a credit card or large amounts of cash.",
+"It is the only account that new students can open.",
+"The employee says that all students must choose it.",
+"It has a higher daily limit than the standard account."
+]
+},
+{
+"q": "What other document does the bank need from him?",
+"o": [
+"A document showing his address in the city",
 "His student card",
-"A phone number"
+"A letter from his family",
+"A copy of his scholarship contract"
 ]
 },
 {
-"q": "How long does it take to open the account?",
+"q": "Where does the student live?",
 "o": [
-"About twenty minutes",
-"About two hours",
-"Three days",
-"One week"
+"In university housing",
+"In a rented flat",
+"With his family",
+"In a hotel"
 ]
 },
 {
-"q": "When will the student get his card?",
+"q": "After he brings the letter, how long does it usually take to open the account?",
 "o": [
-"Today",
-"In three days",
-"Next week",
-"Tomorrow"
+"Within one working day",
+"Within five to seven days",
+"Within one hour",
+"Within two weeks"
 ]
 },
 {
-"q": "What can the student do with the app?",
+"q": "How can he get money before his card arrives?",
 "o": [
-"Check his balance, pay bills and send money",
-"Take out money without a card",
-"Get a free phone",
-"Open a second account"
+"By going to any branch with his passport",
+"By using the app",
+"By asking the employee for cash now",
+"By using his university card"
 ]
 },
 {
-"q": "How much can the student take out from the ATM each day?",
+"q": "When will he receive a code by text message?",
 "o": [
-"Up to five thousand riyals",
-"Up to five hundred riyals",
-"Up to one thousand riyals",
-"Up to fifty thousand riyals"
+"Every time he logs in from a new device",
+"Every time he pays a bill",
+"Once a month",
+"Only when he transfers money abroad"
 ]
 },
 {
-"q": "What should he do if he loses his card?",
+"q": "Why is it better for his family to send larger amounts less often?",
 "o": [
-"Call the free number or stop the card from the app",
-"Go to the police",
-"Open a new account",
-"Wait for three days"
-]
-},
-{
-"q": "How long does it take to get a new card?",
-"o": [
-"Three days",
-"Twenty minutes",
-"One day",
-"Two weeks"
-]
-},
-{
-"q": "What discount does the card give near the university?",
-"o": [
-"Ten percent off at some bookshops and restaurants",
-"Twenty percent off at all shops",
-"Free food at restaurants",
-"Free books"
+"There is a fee for each international transfer.",
+"Small transfers are not allowed.",
+"Large transfers arrive faster.",
+"The bank gives a discount for large amounts."
 ]
 }
 ]
@@ -1097,9 +1081,9 @@ window.LISTENING = [
 "q": "What is the presentation about?",
 "o": [
 "A famous scientist called Ibn al-Haytham",
-"The history of Cairo",
-"How to do experiments",
-"The city of Basra"
+"The history of the city of Cairo",
+"How to do simple science experiments",
+"The old city of Basra and its people"
 ]
 },
 {
@@ -1187,165 +1171,165 @@ window.LISTENING = [
 },
 {
 "n": 9,
-"title": "Asking for Directions",
+"title": "Talking About a Film",
 "kind": "dialogue",
 "audio": "audio/L09.mp3",
-"dur": 70,
+"dur": 91,
 "lines": [
 [
-"Tourist",
-"Excuse me. I'm sorry to bother you, but I think I'm lost. Can you help me?"
+"Nora",
+"Reem, did you finally watch that film everyone's talking about, The Silent River?"
 ],
 [
-"Woman",
-"Of course. Where do you want to go?"
+"Reem",
+"I did, last weekend. Honestly, I'm not sure what I think about it."
 ],
 [
-"Tourist",
-"I'm looking for the National Museum."
+"Nora",
+"Really? I loved it! I thought it was the best film I've seen this year."
 ],
 [
-"Woman",
-"Oh, it's not far. You can walk there in about ten minutes. Go straight along this street until you reach the traffic lights."
+"Reem",
+"Well, the acting was fantastic, especially the actress who played the grandmother. And the music was beautiful. But I found the story quite slow. Nothing really happened for the first hour."
 ],
 [
-"Tourist",
-"Straight to the traffic lights. OK."
+"Nora",
+"I know what you mean, but I think that was on purpose. The director wanted us to understand how lonely life in the village was before the dam was built."
 ],
 [
-"Woman",
-"At the traffic lights, turn left. You'll see a big mosque on your right. Walk past the mosque, and the museum is next to the park, on the left side of the street."
+"Reem",
+"Maybe. But two hours and forty minutes is too long. My brother fell asleep halfway through."
 ],
 [
-"Tourist",
-"So, turn left at the traffic lights, walk past the mosque, and it's next to the park."
+"Nora",
+"Ha! Did you read the book before watching it?"
 ],
 [
-"Woman",
-"That's right. It's a big white building with a garden in front of it. You can't miss it."
+"Reem",
+"No, I didn't know it was based on a book."
 ],
 [
-"Tourist",
-"Thank you so much. Is there a place to eat near the museum? I haven't had lunch yet."
+"Nora",
+"Yes, it was written about twenty years ago. I read it in high school. The book is actually even slower, so I think the director did a good job of making it more exciting. Although he changed the ending."
 ],
 [
-"Woman",
-"Yes. There's a nice café inside the museum, on the ground floor. Or, if you want a real meal, there's a traditional restaurant opposite the museum, behind the bus stop."
+"Reem",
+"What happens in the book?"
 ],
 [
-"Tourist",
-"Great. And do you know what time the museum closes?"
+"Nora",
+"I won't tell you, in case you want to read it. But in the book, the ending is much sadder. I think the director wanted people to leave the cinema feeling hopeful."
 ],
 [
-"Woman",
-"I think it closes at eight in the evening, but on Fridays it opens only in the afternoon, from four."
+"Reem",
+"I prefer it when films stay close to the book. Otherwise, why use the same story?"
 ],
 [
-"Tourist",
-"Today is Wednesday, so that's fine. Is the museum free?"
+"Nora",
+"I disagree. A film and a book are different. What works on paper doesn't always work on screen."
 ],
 [
-"Woman",
-"Yes, it's free for everyone."
+"Reem",
+"That's true, I suppose. Anyway, would you recommend the book?"
 ],
 [
-"Tourist",
-"Wonderful. Thank you again!"
+"Nora",
+"Definitely. You can borrow my copy. But be patient with the first chapters."
 ],
 [
-"Woman",
-"You're welcome. Enjoy your visit!"
+"Reem",
+"OK, I'll give it a try. Maybe I'll understand the film better afterwards."
 ]
 ],
 "qs": [
 {
-"q": "Where does the tourist want to go?",
+"q": "What is Nora's opinion of the film?",
 "o": [
-"The National Museum",
-"The big mosque",
-"The park",
-"A traditional restaurant"
+"She loved it.",
+"She thought it was too slow.",
+"She didn't finish watching it.",
+"She thought it was too long."
 ]
 },
 {
-"q": "How long does it take to walk there?",
+"q": "What did Reem like about the film?",
 "o": [
-"About ten minutes",
-"About two minutes",
-"About thirty minutes",
-"About an hour"
+"The acting and the music",
+"The story and the ending",
+"Its length",
+"The special effects"
 ]
 },
 {
-"q": "What should the tourist do at the traffic lights?",
+"q": "What was Reem's main problem with the film?",
 "o": [
-"Turn left",
-"Turn right",
-"Go straight",
-"Cross the bridge"
+"The story was quite slow.",
+"The acting was poor.",
+"The music was too loud.",
+"The ending was too sad."
 ]
 },
 {
-"q": "What will the tourist see on his right after turning?",
+"q": "According to Nora, why was the first hour slow?",
 "o": [
-"A big mosque",
-"A park",
-"A bus stop",
-"A café"
+"The director wanted to show how lonely life in the village was.",
+"The director didn't have enough money for more action scenes.",
+"The director wanted the film to be exactly like the book.",
+"The actors needed more time to show their characters."
 ]
 },
 {
-"q": "Where is the museum?",
+"q": "How long is the film?",
 "o": [
-"Next to the park, on the left side of the street",
-"Next to the mosque, on the right",
-"Behind the bus stop",
-"Opposite the traffic lights"
+"Two hours and forty minutes",
+"Two hours",
+"One hour and forty minutes",
+"Three hours"
 ]
 },
 {
-"q": "What does the museum look like?",
+"q": "What happened to Reem's brother?",
 "o": [
-"A big white building with a garden in front of it",
-"A small red building",
-"A tall glass tower",
-"An old building behind a park"
+"He fell asleep halfway through.",
+"He left the cinema early.",
+"He loved the film.",
+"He read the book first."
 ]
 },
 {
-"q": "Where is the café?",
+"q": "When did Nora read the book?",
 "o": [
-"Inside the museum, on the ground floor",
-"Opposite the museum",
-"Next to the mosque",
-"Behind the bus stop"
+"In high school",
+"Last weekend",
+"After watching the film",
+"When it was first written"
 ]
 },
 {
-"q": "Where is the traditional restaurant?",
+"q": "What did the director change?",
 "o": [
-"Opposite the museum, behind the bus stop",
-"Inside the museum",
-"Next to the traffic lights",
-"In front of the mosque"
+"The ending",
+"The title",
+"The main character",
+"The place where the story happens"
 ]
 },
 {
-"q": "What time does the museum close?",
+"q": "How did the director want people to feel when they left the cinema?",
 "o": [
-"At eight in the evening",
-"At four in the afternoon",
-"At six in the evening",
-"At ten at night"
+"Hopeful",
+"Sad",
+"Surprised",
+"Confused"
 ]
 },
 {
-"q": "How much does it cost to visit the museum?",
+"q": "What does Nora offer to do?",
 "o": [
-"It is free.",
-"Ten riyals",
-"Twenty riyals",
-"It is free on Fridays only."
+"Lend Reem her copy of the book",
+"Watch the film again with Reem",
+"Buy Reem the book",
+"Tell Reem how the book ends"
 ]
 }
 ]
@@ -1481,601 +1465,9 @@ window.LISTENING = [
 },
 {
 "n": 11,
-"title": "Talking About a Film",
-"kind": "dialogue",
-"audio": "audio/L11.mp3",
-"dur": 73,
-"lines": [
-[
-"Nora",
-"Reem, did you watch the new film, The Long Road, last night?"
-],
-[
-"Reem",
-"Yes! I went with my sisters. Did you see it too?"
-],
-[
-"Nora",
-"I saw it on Tuesday. What did you think?"
-],
-[
-"Reem",
-"I loved it! The story was really exciting. I didn't know what was going to happen until the very end."
-],
-[
-"Nora",
-"Me too. But I thought it was a bit too long. It's almost three hours!"
-],
-[
-"Reem",
-"That's true. The middle part was slow. But the ending was amazing. I cried a little!"
-],
-[
-"Nora",
-"Ha! So did my brother, and he never cries. Who was your favourite character?"
-],
-[
-"Reem",
-"The young doctor, Adam. He was so brave. He helped all those people in the village, even when he was sick himself."
-],
-[
-"Nora",
-"I liked the old teacher more. She was very funny, and she gave great advice."
-],
-[
-"Reem",
-"Oh yes, she was great. And the music was beautiful, too."
-],
-[
-"Nora",
-"I agree. I already downloaded the songs on my phone. What about the cinema? Where did you watch it?"
-],
-[
-"Reem",
-"At the new cinema in the mall. The seats were very comfortable, but the tickets were expensive, sixty-five riyals each."
-],
-[
-"Nora",
-"Wow! I paid forty-five at the cinema near the university. But the screen there is smaller."
-],
-[
-"Reem",
-"Well, it was worth it. I think I'll watch it again next month with my cousins."
-],
-[
-"Nora",
-"You should! I'd give it eight out of ten."
-],
-[
-"Reem",
-"For me, it's nine out of ten."
-]
-],
-"qs": [
-{
-"q": "What is the name of the film?",
-"o": [
-"The Long Road",
-"The Lost Road",
-"The Long Night",
-"The Young Doctor"
-]
-},
-{
-"q": "Who did Reem watch the film with?",
-"o": [
-"Her sisters",
-"Her brother",
-"Her cousins",
-"Nora"
-]
-},
-{
-"q": "When did Nora see the film?",
-"o": [
-"On Tuesday",
-"Last night",
-"On Thursday",
-"Last month"
-]
-},
-{
-"q": "What did Nora NOT like about the film?",
-"o": [
-"It was too long.",
-"The music was bad.",
-"The ending was boring.",
-"The story was not exciting."
-]
-},
-{
-"q": "How long is the film?",
-"o": [
-"Almost three hours",
-"About two hours",
-"One and a half hours",
-"More than four hours"
-]
-},
-{
-"q": "Who was Reem's favourite character?",
-"o": [
-"The young doctor, Adam",
-"The old teacher",
-"Nora's brother",
-"A child in the village"
-]
-},
-{
-"q": "Why did Nora like the old teacher?",
-"o": [
-"She was very funny and gave great advice.",
-"She was very brave.",
-"She helped people in the village.",
-"She was a doctor."
-]
-},
-{
-"q": "How much were the tickets at the new cinema in the mall?",
-"o": [
-"Sixty-five riyals each",
-"Forty-five riyals each",
-"Fifty-five riyals each",
-"Sixty riyals each"
-]
-},
-{
-"q": "What is the problem with the cinema near the university?",
-"o": [
-"The screen is smaller.",
-"The tickets are more expensive.",
-"The seats are uncomfortable.",
-"It is very far."
-]
-},
-{
-"q": "What score does Reem give the film?",
-"o": [
-"Nine out of ten",
-"Eight out of ten",
-"Ten out of ten",
-"Seven out of ten"
-]
-}
-]
-},
-{
-"n": 12,
-"title": "My New Job",
-"kind": "monologue",
-"audio": "audio/L12.mp3",
-"dur": 77,
-"lines": [
-[
-"Ahmed",
-"Hi, my name is Ahmed, and I want to tell you about my new job. Three months ago, I started working as a tour guide in Jeddah. Before that, I was an English teacher for five years."
-],
-[
-"Ahmed",
-"Why did I change jobs? I loved teaching, but I always dreamed of a job where I could meet people from different countries and show them my city. When I saw that a travel company needed guides who speak English, I applied immediately."
-],
-[
-"Ahmed",
-"My day usually starts at eight in the morning. I meet the tourists at their hotel, and then we travel by bus to different places. The most popular place is the old part of Jeddah, called Al-Balad. It has old houses made of coral stone, with beautiful wooden windows. Tourists love taking photos there."
-],
-[
-"Ahmed",
-"After that, we usually have lunch at a traditional restaurant, and in the evening, we walk along the Corniche by the Red Sea."
-],
-[
-"Ahmed",
-"The job is not always easy. I work long hours, sometimes ten hours a day, and I have to stay patient when tourists ask the same questions again and again. But I love it. Every day is different, and I learn something new from every group."
-],
-[
-"Ahmed",
-"My advice to anyone choosing a job is this: do something you really enjoy. Then work never feels like work."
-]
-],
-"qs": [
-{
-"q": "What is Ahmed's new job?",
-"o": [
-"A tour guide",
-"An English teacher",
-"A bus driver",
-"A hotel manager"
-]
-},
-{
-"q": "When did Ahmed start his new job?",
-"o": [
-"Three months ago",
-"Five years ago",
-"Three years ago",
-"Last week"
-]
-},
-{
-"q": "What was Ahmed's job before?",
-"o": [
-"An English teacher",
-"A tour guide",
-"A photographer",
-"A cook"
-]
-},
-{
-"q": "Why did Ahmed change jobs?",
-"o": [
-"He wanted to meet people from different countries and show them his city.",
-"He didn't like teaching.",
-"He wanted more money.",
-"His school closed."
-]
-},
-{
-"q": "What time does Ahmed's day usually start?",
-"o": [
-"At eight in the morning",
-"At ten in the morning",
-"At seven in the morning",
-"At noon"
-]
-},
-{
-"q": "What is Al-Balad?",
-"o": [
-"The old part of Jeddah",
-"A new shopping mall",
-"A restaurant",
-"A beach"
-]
-},
-{
-"q": "What are the old houses in Al-Balad made of?",
-"o": [
-"Coral stone",
-"Wood only",
-"Glass",
-"Mud"
-]
-},
-{
-"q": "What do they do in the evening?",
-"o": [
-"Walk along the Corniche by the Red Sea",
-"Go shopping",
-"Visit a museum",
-"Go back to the hotel"
-]
-},
-{
-"q": "What is difficult about Ahmed's job?",
-"o": [
-"He works long hours and must stay patient.",
-"He doesn't speak English well.",
-"He doesn't like tourists.",
-"The pay is very low."
-]
-},
-{
-"q": "What is Ahmed's advice?",
-"o": [
-"Do something you really enjoy.",
-"Always work long hours.",
-"Choose a job with a high salary.",
-"Never change your job."
-]
-}
-]
-},
-{
-"n": 13,
-"title": "Ordering Food by Phone",
-"kind": "dialogue",
-"audio": "audio/L13.mp3",
-"dur": 84,
-"lines": [
-[
-"Worker",
-"Hello, Pizza Palace. Would you like to order for delivery or pick-up?"
-],
-[
-"Customer",
-"Delivery, please."
-],
-[
-"Worker",
-"Sure. What would you like?"
-],
-[
-"Customer",
-"I'd like two large pizzas, please. One chicken pizza and one vegetable pizza."
-],
-[
-"Worker",
-"Would you like extra cheese on them?"
-],
-[
-"Customer",
-"Yes, on the chicken pizza, but not on the vegetable one."
-],
-[
-"Worker",
-"OK. Anything else?"
-],
-[
-"Customer",
-"Yes, a large salad and four bottles of orange juice."
-],
-[
-"Worker",
-"I'm sorry, we don't have orange juice today. We have apple juice or lemon juice."
-],
-[
-"Customer",
-"Then apple juice, please. Four bottles."
-],
-[
-"Worker",
-"OK. So that's two large pizzas, one with extra cheese, one large salad, and four apple juices. That comes to one hundred and twenty riyals."
-],
-[
-"Customer",
-"Is there a delivery charge?"
-],
-[
-"Worker",
-"Delivery is usually ten riyals, but it's free for orders over one hundred riyals. So yours is free."
-],
-[
-"Customer",
-"Great. How long will it take?"
-],
-[
-"Worker",
-"About forty-five minutes. We're very busy tonight because there's a football match."
-],
-[
-"Customer",
-"Oh, OK. Can I pay when the food arrives?"
-],
-[
-"Worker",
-"Yes, you can pay the driver in cash or by card. Can I have your address, please?"
-],
-[
-"Customer",
-"It's building number twelve, Al-Yasmin Street, apartment five, on the third floor."
-],
-[
-"Worker",
-"Thank you. Your order will arrive soon. Enjoy your meal!"
-]
-],
-"qs": [
-{
-"q": "How does the customer want to get the food?",
-"o": [
-"Delivery",
-"Pick-up",
-"Eat at the restaurant",
-"She hasn't decided"
-]
-},
-{
-"q": "What pizzas does the customer order?",
-"o": [
-"One chicken pizza and one vegetable pizza",
-"Two chicken pizzas",
-"Two vegetable pizzas",
-"One cheese pizza and one meat pizza"
-]
-},
-{
-"q": "Which pizza has extra cheese?",
-"o": [
-"The chicken pizza",
-"The vegetable pizza",
-"Both pizzas",
-"Neither pizza"
-]
-},
-{
-"q": "Why can't the customer get orange juice?",
-"o": [
-"The restaurant doesn't have it today.",
-"It is too expensive.",
-"She changed her mind.",
-"It is only for children."
-]
-},
-{
-"q": "How many bottles of juice does she order?",
-"o": [
-"Four",
-"Two",
-"Three",
-"One"
-]
-},
-{
-"q": "How much is the order?",
-"o": [
-"One hundred and twenty riyals",
-"One hundred and ten riyals",
-"One hundred riyals",
-"One hundred and thirty riyals"
-]
-},
-{
-"q": "Why is delivery free?",
-"o": [
-"The order is over one hundred riyals.",
-"It's her first order.",
-"It's a holiday.",
-"She lives near the restaurant."
-]
-},
-{
-"q": "How long will the delivery take?",
-"o": [
-"About forty-five minutes",
-"About fifteen minutes",
-"About thirty minutes",
-"About an hour and a half"
-]
-},
-{
-"q": "Why is the restaurant very busy tonight?",
-"o": [
-"There's a football match.",
-"It's the weekend.",
-"It's a new restaurant.",
-"There's a holiday."
-]
-},
-{
-"q": "Which floor does the customer live on?",
-"o": [
-"The third floor",
-"The fifth floor",
-"The twelfth floor",
-"The ground floor"
-]
-}
-]
-},
-{
-"n": 14,
-"title": "Rules of the Swimming Class",
-"kind": "monologue",
-"audio": "audio/L14.mp3",
-"dur": 70,
-"lines": [
-[
-"Coach",
-"Good evening, everyone, and welcome to your first swimming class. My name is Coach Turki, and I'll be your teacher for the next eight weeks."
-],
-[
-"Coach",
-"Our class meets twice a week, on Mondays and Wednesdays, from six to seven in the evening. Please try to arrive ten minutes early, so you have time to change and take a shower before you enter the pool."
-],
-[
-"Coach",
-"Now, some important rules. First, everyone must take a shower before swimming. This keeps the water clean for everyone. Second, you must wear a swimming cap. If you don't have one, you can buy one at reception for fifteen riyals."
-],
-[
-"Coach",
-"Third, no running near the pool. The floor is very wet and slippery, and many accidents happen because people run. Fourth, please don't eat for at least one hour before the class, because swimming on a full stomach can make you feel sick."
-],
-[
-"Coach",
-"In today's class, we'll start in the shallow end of the pool, where the water is only one metre deep. We'll practise breathing and floating. Don't worry if you can't swim yet. By the end of the course, everyone will be able to swim at least twenty-five metres."
-],
-[
-"Coach",
-"Finally, if you feel tired or have any problem in the water, raise your hand, and I'll come to help you immediately. Safety is the most important thing. OK, let's begin!"
-]
-],
-"qs": [
-{
-"q": "What is the coach's name?",
-"o": [
-"Coach Turki",
-"Coach Tariq",
-"Coach Talal",
-"Coach Tamer"
-]
-},
-{
-"q": "How long is the course?",
-"o": [
-"Eight weeks",
-"Two weeks",
-"Eight months",
-"Six weeks"
-]
-},
-{
-"q": "When does the class meet?",
-"o": [
-"On Mondays and Wednesdays, from six to seven",
-"On Sundays and Tuesdays, from six to seven",
-"On Mondays and Wednesdays, from seven to eight",
-"Every day from six to seven"
-]
-},
-{
-"q": "Why should students arrive ten minutes early?",
-"o": [
-"To have time to change and take a shower",
-"To pay for the class",
-"To buy a swimming cap",
-"To talk to the coach"
-]
-},
-{
-"q": "Why must everyone take a shower before swimming?",
-"o": [
-"To keep the water clean for everyone",
-"Because the water is cold",
-"To practise breathing",
-"Because it's relaxing"
-]
-},
-{
-"q": "How much does a swimming cap cost at reception?",
-"o": [
-"Fifteen riyals",
-"Fifty riyals",
-"Five riyals",
-"It's free"
-]
-},
-{
-"q": "Why is running near the pool not allowed?",
-"o": [
-"The floor is wet and slippery.",
-"It makes too much noise.",
-"It disturbs other swimmers.",
-"It makes the water dirty."
-]
-},
-{
-"q": "How long should students not eat before the class?",
-"o": [
-"At least one hour",
-"At least thirty minutes",
-"Two hours",
-"All day"
-]
-},
-{
-"q": "How deep is the water in the shallow end?",
-"o": [
-"One metre",
-"Two metres",
-"Twenty-five metres",
-"Half a metre"
-]
-},
-{
-"q": "What should students do if they have a problem in the water?",
-"o": [
-"Raise their hand.",
-"Shout loudly.",
-"Get out of the pool.",
-"Call reception."
-]
-}
-]
-},
-{
-"n": 15,
 "title": "Missing an Exam",
 "kind": "dialogue",
-"audio": "audio/L15.mp3",
+"audio": "audio/L11.mp3",
 "dur": 70,
 "lines": [
 [
@@ -2148,9 +1540,9 @@ window.LISTENING = [
 "q": "Why did Yousef miss the exam?",
 "o": [
 "He was in the hospital with his father.",
-"He was sick.",
-"He forgot the date.",
-"He was late."
+"He was sick with a high temperature.",
+"He forgot the date of the exam.",
+"He was late because of the traffic."
 ]
 },
 {
@@ -2193,18 +1585,18 @@ window.LISTENING = [
 "q": "Where will Yousef take the exam?",
 "o": [
 "In the professor's office, Room 305",
-"In the exam hall",
-"In Room 350",
-"In the library"
+"In the big exam hall on the ground floor",
+"In Room 350, next to the library",
+"In the library's study room"
 ]
 },
 {
 "q": "Will it be the same exam?",
 "o": [
 "No, it will be a different exam on the same chapters.",
-"Yes, exactly the same.",
-"No, it will be on new chapters.",
-"He doesn't need to take it."
+"Yes, it will be exactly the same exam.",
+"No, it will be on new chapters from the book.",
+"He doesn't need to take any exam at all."
 ]
 },
 {
@@ -2237,433 +1629,135 @@ window.LISTENING = [
 ]
 },
 {
-"n": 16,
-"title": "University Sports Day",
+"n": 12,
+"title": "Rules of the Swimming Class",
 "kind": "monologue",
-"audio": "audio/L16.mp3",
-"dur": 112,
+"audio": "audio/L12.mp3",
+"dur": 70,
 "lines": [
 [
-"Speaker",
-"Hello, students! This is an announcement from the Student Activities Office about our annual Sports Day."
+"Coach",
+"Good evening, everyone, and welcome to your first swimming class. My name is Coach Turki, and I'll be your teacher for the next eight weeks."
 ],
 [
-"Speaker",
-"Sports Day will be next Thursday, from eight in the morning until four in the afternoon, at the university stadium. All students and staff are welcome, and entry is free."
+"Coach",
+"Our class meets twice a week, on Mondays and Wednesdays, from six to seven in the evening. Please try to arrive ten minutes early, so you have time to change and take a shower before you enter the pool."
 ],
 [
-"Speaker",
-"There will be many competitions this year, including football, basketball, volleyball, running and table tennis. If you want to take part, you must register by this Sunday. You can register online on the university website or at the Student Activities Office in Building 3."
+"Coach",
+"Now, some important rules. First, everyone must take a shower before swimming. This keeps the water clean for everyone. Second, you must wear a swimming cap. If you don't have one, you can buy one at reception for fifteen riyals."
 ],
 [
-"Speaker",
-"Each student can take part in a maximum of two sports. Football and basketball teams must have at least seven players, so ask your friends to join you."
+"Coach",
+"Third, no running near the pool. The floor is very wet and slippery, and many accidents happen because people run. Fourth, please don't eat for at least one hour before the class, because swimming on a full stomach can make you feel sick."
 ],
 [
-"Speaker",
-"There will be prizes for the winners. The first-place team in each sport will get a trophy and a gift card worth five hundred riyals. All participants will get a free T-shirt and a certificate."
+"Coach",
+"In today's class, we'll start in the shallow end of the pool, where the water is only one metre deep. We'll practise breathing and floating. Don't worry if you can't swim yet. By the end of the course, everyone will be able to swim at least twenty-five metres."
 ],
 [
-"Speaker",
-"Food trucks will be at the stadium all day, selling sandwiches, snacks and cold drinks. We also have a special area with free water and fruit for all players."
-],
-[
-"Speaker",
-"Please wear sports clothes and comfortable shoes. Don't forget to bring a hat and sunscreen, because it will be sunny and hot."
-],
-[
-"Speaker",
-"We hope to see you all there. Let's make this the best Sports Day ever!"
+"Coach",
+"Finally, if you feel tired or have any problem in the water, raise your hand, and I'll come to help you immediately. Safety is the most important thing. OK, let's begin!"
 ]
 ],
 "qs": [
 {
-"q": "Who is making the announcement?",
+"q": "What is the coach's name?",
 "o": [
-"The Student Activities Office",
-"The football coach",
-"The university president",
-"The Sports Club"
+"Coach Turki",
+"Coach Tariq",
+"Coach Talal",
+"Coach Tamer"
 ]
 },
 {
-"q": "When is Sports Day?",
+"q": "How long is the course?",
 "o": [
-"Next Thursday",
-"This Sunday",
-"Next Monday",
-"This Thursday"
+"Eight weeks",
+"Two weeks",
+"Eight months",
+"Six weeks"
 ]
 },
 {
-"q": "Where will Sports Day be?",
+"q": "When does the class meet?",
 "o": [
-"At the university stadium",
-"In Building 3",
-"At the city park",
-"In the sports hall"
+"On Mondays and Wednesdays, from six to seven",
+"On Sundays and Tuesdays, from six to seven",
+"On Mondays and Wednesdays, from seven to eight",
+"Every day from six to seven"
 ]
 },
 {
-"q": "Which sport does the speaker NOT mention?",
+"q": "Why should students arrive ten minutes early?",
 "o": [
-"swimming",
-"football",
-"volleyball",
-"table tennis"
+"To have time to change and take a shower",
+"To pay for the class at the front desk",
+"To buy a swimming cap from the shop",
+"To talk to the coach about their level"
 ]
 },
 {
-"q": "When must students register?",
+"q": "Why must everyone take a shower before swimming?",
 "o": [
-"By this Sunday",
-"By next Thursday",
-"On Sports Day",
-"By the end of the month"
+"To keep the water clean for everyone",
+"Because the water is cold",
+"To practise breathing",
+"Because it's relaxing"
 ]
 },
 {
-"q": "How many sports can each student take part in?",
+"q": "How much does a swimming cap cost at reception?",
 "o": [
-"A maximum of two",
-"Only one",
-"Three",
-"As many as they want"
-]
-},
-{
-"q": "How many players must football and basketball teams have, at least?",
-"o": [
-"Seven",
-"Five",
-"Eleven",
-"Two"
-]
-},
-{
-"q": "What will the first-place team in each sport get?",
-"o": [
-"A trophy and a gift card worth five hundred riyals",
-"A free T-shirt only",
-"Five hundred riyals in cash",
-"A trip abroad"
-]
-},
-{
-"q": "What will all participants get?",
-"o": [
-"A free T-shirt and a certificate",
-"A trophy",
-"A gift card",
-"Free lunch"
-]
-},
-{
-"q": "Why should students bring a hat and sunscreen?",
-"o": [
-"It will be sunny and hot.",
-"It's a rule of the competition.",
-"There will be no shade at all.",
-"They will get a prize."
-]
-}
-]
-},
-{
-"n": 17,
-"title": "Returning a Broken Item",
-"kind": "dialogue",
-"audio": "audio/L17.mp3",
-"dur": 67,
-"lines": [
-[
-"Customer",
-"Hello. I bought this coffee machine here last week, but it's not working."
-],
-[
-"Assistant",
-"I'm sorry to hear that. What's the problem with it?"
-],
-[
-"Customer",
-"When I turn it on, the light comes on, but the water doesn't get hot. I tried it three times."
-],
-[
-"Assistant",
-"I see. Do you have the receipt?"
-],
-[
-"Customer",
-"Yes, here it is. I bought it on the fifth."
-],
-[
-"Assistant",
-"Thank you. So you bought it eight days ago. That's fine. You can return items within fourteen days. Would you like a new machine, or your money back?"
-],
-[
-"Customer",
-"Hmm. Do you have the same machine in stock?"
-],
-[
-"Assistant",
-"Let me check. I'm sorry, we don't have the same model right now. We'll get more next week. But we have a similar model, the Café Pro, which is a bit better."
-],
-[
-"Customer",
-"How much is it?"
-],
-[
-"Assistant",
-"It's three hundred and fifty riyals. Your machine was three hundred, so you would need to pay fifty riyals more."
-],
-[
-"Customer",
-"What's the difference between them?"
-],
-[
-"Assistant",
-"The Café Pro can also make milk foam for cappuccino, and it has a two-year warranty instead of one year."
-],
-[
-"Customer",
-"That sounds good. OK, I'll take the Café Pro and pay the difference."
-],
-[
-"Assistant",
-"Great choice. Can I see your card, please? And I'll give you a new receipt. Please keep it in a safe place."
-],
-[
-"Customer",
-"I will. Thanks for your help."
-]
-],
-"qs": [
-{
-"q": "What did the customer buy?",
-"o": [
-"A coffee machine",
-"A kettle",
-"A phone",
-"A toaster"
-]
-},
-{
-"q": "When did the customer buy it?",
-"o": [
-"Last week",
-"Yesterday",
-"Last month",
-"Two weeks ago"
-]
-},
-{
-"q": "What is the problem?",
-"o": [
-"The water doesn't get hot.",
-"The light doesn't come on.",
-"It makes a loud noise.",
-"It's leaking water."
-]
-},
-{
-"q": "How many times did the customer try it?",
-"o": [
-"Three times",
-"Once",
-"Twice",
-"Five times"
-]
-},
-{
-"q": "How many days ago did he buy it?",
-"o": [
-"Eight days ago",
-"Five days ago",
-"Fourteen days ago",
-"Three days ago"
-]
-},
-{
-"q": "Within how many days can customers return items?",
-"o": [
-"Fourteen",
-"Seven",
-"Eight",
-"Thirty"
-]
-},
-{
-"q": "Why can't the customer get the same machine?",
-"o": [
-"The shop doesn't have the same model right now.",
-"It's too expensive.",
-"The model is broken.",
-"He doesn't want it."
-]
-},
-{
-"q": "How much is the Café Pro?",
-"o": [
-"Three hundred and fifty riyals",
-"Three hundred riyals",
+"Fifteen riyals",
 "Fifty riyals",
-"Four hundred riyals"
+"Five riyals",
+"It's free"
 ]
 },
 {
-"q": "What can the Café Pro do that the old machine can't?",
+"q": "Why is running near the pool not allowed?",
 "o": [
-"Make milk foam for cappuccino",
-"Make tea",
-"Make cold drinks",
-"Work without electricity"
+"The floor is wet and slippery.",
+"It makes too much noise.",
+"It disturbs other swimmers.",
+"It makes the water dirty."
 ]
 },
 {
-"q": "How long is the warranty on the Café Pro?",
+"q": "How long should students not eat before the class?",
 "o": [
-"Two years",
-"One year",
-"Fourteen days",
-"Three years"
+"At least one hour",
+"At least thirty minutes",
+"Two hours",
+"All day"
+]
+},
+{
+"q": "How deep is the water in the shallow end?",
+"o": [
+"One metre",
+"Two metres",
+"Twenty-five metres",
+"Half a metre"
+]
+},
+{
+"q": "What should students do if they have a problem in the water?",
+"o": [
+"Raise their hand.",
+"Shout loudly.",
+"Get out of the pool.",
+"Call reception."
 ]
 }
 ]
 },
 {
-"n": 18,
-"title": "Tips for Learning New Words",
-"kind": "monologue",
-"audio": "audio/L18.mp3",
-"dur": 79,
-"lines": [
-[
-"Host",
-"Welcome back to English Every Day, the podcast for English learners. I'm your host, Lina. Today, I want to share five tips to help you learn and remember new English words."
-],
-[
-"Host",
-"Tip number one: keep a vocabulary notebook. Every time you learn a new word, write it down with its meaning and an example sentence. Don't just write the translation in your language. A sentence helps you remember how to use the word."
-],
-[
-"Host",
-"Tip number two: learn words in groups. For example, learn food words together, or words about the weather together. Your brain remembers words better when they are connected."
-],
-[
-"Host",
-"Tip number three: review your words again and again. Studies show that we forget about half of new information in one day if we don't review it. So look at your notebook for ten minutes every day, especially before you sleep."
-],
-[
-"Host",
-"Tip number four: use the new words. Try to use them when you speak or write. For example, write three sentences every day using your new words, or send a message to a friend in English."
-],
-[
-"Host",
-"And tip number five: read and listen a lot. When you read stories or watch videos in English, you see words in real situations. Choose things that are not too difficult, so you can enjoy them."
-],
-[
-"Host",
-"Remember, don't try to learn fifty words in one day. Learning ten words a day and remembering them is much better. That's all for today. See you next week!"
-]
-],
-"qs": [
-{
-"q": "What is the name of the podcast?",
-"o": [
-"English Every Day",
-"English Words",
-"Learn English Now",
-"Every Day English"
-]
-},
-{
-"q": "What is the host's name?",
-"o": [
-"Lina",
-"Lama",
-"Lana",
-"Layla"
-]
-},
-{
-"q": "How many tips does the host give?",
-"o": [
-"Five",
-"Three",
-"Ten",
-"Fifty"
-]
-},
-{
-"q": "What should you write in your vocabulary notebook?",
-"o": [
-"The word, its meaning and an example sentence",
-"Only the translation",
-"Only the word",
-"A long story"
-]
-},
-{
-"q": "Why does the host suggest learning words in groups?",
-"o": [
-"Your brain remembers words better when they are connected.",
-"It's faster to write them.",
-"Teachers like it.",
-"You need fewer notebooks."
-]
-},
-{
-"q": "How much new information do we forget in one day if we don't review it?",
-"o": [
-"About half",
-"About ten percent",
-"All of it",
-"Almost nothing"
-]
-},
-{
-"q": "When does the host say it is especially good to review?",
-"o": [
-"Before you sleep",
-"In the morning",
-"After lunch",
-"During class"
-]
-},
-{
-"q": "How many sentences does the host suggest writing every day?",
-"o": [
-"Three",
-"Ten",
-"Five",
-"One"
-]
-},
-{
-"q": "What kind of things should you read and watch?",
-"o": [
-"Things that are not too difficult",
-"Only very difficult things",
-"Only the news",
-"Only grammar books"
-]
-},
-{
-"q": "How many words a day does the host suggest learning?",
-"o": [
-"Ten",
-"Fifty",
-"Five",
-"Twenty"
-]
-}
-]
-},
-{
-"n": 19,
+"n": 13,
 "title": "A Problem with the Neighbours",
 "kind": "dialogue",
-"audio": "audio/L19.mp3",
+"audio": "audio/L13.mp3",
 "dur": 74,
 "lines": [
 [
@@ -2813,10 +1907,594 @@ window.LISTENING = [
 ]
 },
 {
-"n": 20,
+"n": 14,
+"title": "University Sports Day",
+"kind": "monologue",
+"audio": "audio/L14.mp3",
+"dur": 112,
+"lines": [
+[
+"Speaker",
+"Hello, students! This is an announcement from the Student Activities Office about our annual Sports Day."
+],
+[
+"Speaker",
+"Sports Day will be next Thursday, from eight in the morning until four in the afternoon, at the university stadium. All students and staff are welcome, and entry is free."
+],
+[
+"Speaker",
+"There will be many competitions this year, including football, basketball, volleyball, running and table tennis. If you want to take part, you must register by this Sunday. You can register online on the university website or at the Student Activities Office in Building 3."
+],
+[
+"Speaker",
+"Each student can take part in a maximum of two sports. Football and basketball teams must have at least seven players, so ask your friends to join you."
+],
+[
+"Speaker",
+"There will be prizes for the winners. The first-place team in each sport will get a trophy and a gift card worth five hundred riyals. All participants will get a free T-shirt and a certificate."
+],
+[
+"Speaker",
+"Food trucks will be at the stadium all day, selling sandwiches, snacks and cold drinks. We also have a special area with free water and fruit for all players."
+],
+[
+"Speaker",
+"Please wear sports clothes and comfortable shoes. Don't forget to bring a hat and sunscreen, because it will be sunny and hot."
+],
+[
+"Speaker",
+"We hope to see you all there. Let's make this the best Sports Day ever!"
+]
+],
+"qs": [
+{
+"q": "Who is making the announcement?",
+"o": [
+"The Student Activities Office",
+"The football coach",
+"The university president",
+"The Sports Club"
+]
+},
+{
+"q": "When is Sports Day?",
+"o": [
+"Next Thursday",
+"This Sunday",
+"Next Monday",
+"This Thursday"
+]
+},
+{
+"q": "Where will Sports Day be?",
+"o": [
+"At the university stadium",
+"In Building 3",
+"At the city park",
+"In the sports hall"
+]
+},
+{
+"q": "Which sport does the speaker NOT mention?",
+"o": [
+"swimming",
+"football",
+"volleyball",
+"table tennis"
+]
+},
+{
+"q": "When must students register?",
+"o": [
+"By this Sunday",
+"By next Thursday",
+"On Sports Day",
+"By the end of the month"
+]
+},
+{
+"q": "How many sports can each student take part in?",
+"o": [
+"A maximum of two",
+"Only one",
+"Three",
+"As many as they want"
+]
+},
+{
+"q": "How many players must football and basketball teams have, at least?",
+"o": [
+"Seven",
+"Five",
+"Eleven",
+"Two"
+]
+},
+{
+"q": "What will the first-place team in each sport get?",
+"o": [
+"A trophy and a gift card worth five hundred riyals",
+"A free T-shirt and nothing else",
+"Five hundred riyals in cash each",
+"A trip abroad to watch a final"
+]
+},
+{
+"q": "What will all participants get?",
+"o": [
+"A free T-shirt and a certificate",
+"A trophy for each person",
+"A gift card worth fifty riyals",
+"A free lunch and a cap"
+]
+},
+{
+"q": "Why should students bring a hat and sunscreen?",
+"o": [
+"It will be sunny and hot.",
+"It's a rule of the competition.",
+"There will be no shade at all.",
+"They will get a prize."
+]
+}
+]
+},
+{
+"n": 15,
+"title": "Booking a Desert Tour",
+"kind": "dialogue",
+"audio": "audio/L15.mp3",
+"dur": 108,
+"lines": [
+[
+"Agent",
+"Good afternoon, Golden Sands Tours. How can I help you?"
+],
+[
+"Tourist",
+"Hello. My wife and I are visiting Riyadh next week, and we'd like to book a desert tour. But my wife has a bad back, so we need something that isn't too physically demanding."
+],
+[
+"Agent",
+"Thank you for telling me. That helps me choose the right tour. Our most popular tour includes dune bashing, which means driving fast up and down the sand dunes. I wouldn't recommend that one for your wife; it can be very bumpy."
+],
+[
+"Tourist",
+"No, that doesn't sound like a good idea at all."
+],
+[
+"Agent",
+"We also have a sunset tour that's much more relaxing. We pick you up at three in the afternoon and drive slowly through the desert to a camp. There, you can try a short camel ride, which is optional, watch the sunset, and have a traditional dinner. We bring you back at around nine."
+],
+[
+"Tourist",
+"That sounds perfect. How much is it?"
+],
+[
+"Agent",
+"Three hundred and fifty riyals per person, including dinner and drinks. If you'd like a private car rather than sharing with other guests, it's an extra two hundred for the car."
+],
+[
+"Tourist",
+"Is the shared car comfortable?"
+],
+[
+"Agent",
+"It's a large car with seven seats, and there are usually five or six guests. The seats are fine, but if your wife needs to stretch or stop often, the private car might be better, because the driver can stop whenever you like."
+],
+[
+"Tourist",
+"Then we'll take the private car. Which days are available?"
+],
+[
+"Agent",
+"Tuesday and Thursday. We don't run tours on Wednesday."
+],
+[
+"Tourist",
+"Thursday, please. We fly home on Friday afternoon, so that works well."
+],
+[
+"Agent",
+"Great. Just remember that at this time of year the desert gets cold after sunset, sometimes below ten degrees, so bring warm clothes. And please wear closed shoes, not sandals, because the sand can be very hot in the afternoon."
+],
+[
+"Tourist",
+"Thanks for the advice. Can I pay when we're picked up?"
+],
+[
+"Agent",
+"For private tours, we need the full payment online at least twenty-four hours before."
+]
+],
+"qs": [
+{
+"q": "Why does the tourist need a tour that isn't physically demanding?",
+"o": [
+"His wife has a bad back.",
+"He has a bad back.",
+"They are travelling with small children.",
+"They have just had an operation."
+]
+},
+{
+"q": "Why doesn't the agent recommend the most popular tour?",
+"o": [
+"It can be very bumpy.",
+"It is too expensive.",
+"It is fully booked.",
+"It finishes too late."
+]
+},
+{
+"q": "What time does the sunset tour pick people up?",
+"o": [
+"At three in the afternoon",
+"At nine in the evening",
+"At five in the afternoon",
+"At noon"
+]
+},
+{
+"q": "What is true about the camel ride?",
+"o": [
+"It is optional.",
+"It is very long.",
+"It costs extra.",
+"It is only for children."
+]
+},
+{
+"q": "How much is the sunset tour per person?",
+"o": [
+"Three hundred and fifty riyals",
+"Two hundred riyals",
+"Five hundred and fifty riyals",
+"Three hundred riyals"
+]
+},
+{
+"q": "Why might the private car be better for the tourist's wife?",
+"o": [
+"The driver can stop whenever they like.",
+"It is faster than the shared car.",
+"It has more seats.",
+"It includes a better dinner."
+]
+},
+{
+"q": "How much will the couple pay in total for the tour?",
+"o": [
+"Nine hundred riyals",
+"Five hundred and fifty riyals",
+"Seven hundred riyals",
+"Seven hundred and fifty riyals"
+]
+},
+{
+"q": "Which day will they go on the tour?",
+"o": [
+"Thursday",
+"Tuesday",
+"Wednesday",
+"Friday"
+]
+},
+{
+"q": "Why should they wear closed shoes?",
+"o": [
+"The sand can be very hot in the afternoon.",
+"There are many insects in the desert.",
+"They will walk a long way.",
+"It gets cold after sunset."
+]
+},
+{
+"q": "When must they pay for the private tour?",
+"o": [
+"Online, at least twenty-four hours before",
+"When the driver picks them up",
+"After the tour has finished",
+"At their hotel's reception desk"
+]
+}
+]
+},
+{
+"n": 16,
+"title": "Tips for Learning New Words",
+"kind": "monologue",
+"audio": "audio/L16.mp3",
+"dur": 79,
+"lines": [
+[
+"Host",
+"Welcome back to English Every Day, the podcast for English learners. I'm your host, Lina. Today, I want to share five tips to help you learn and remember new English words."
+],
+[
+"Host",
+"Tip number one: keep a vocabulary notebook. Every time you learn a new word, write it down with its meaning and an example sentence. Don't just write the translation in your language. A sentence helps you remember how to use the word."
+],
+[
+"Host",
+"Tip number two: learn words in groups. For example, learn food words together, or words about the weather together. Your brain remembers words better when they are connected."
+],
+[
+"Host",
+"Tip number three: review your words again and again. Studies show that we forget about half of new information in one day if we don't review it. So look at your notebook for ten minutes every day, especially before you sleep."
+],
+[
+"Host",
+"Tip number four: use the new words. Try to use them when you speak or write. For example, write three sentences every day using your new words, or send a message to a friend in English."
+],
+[
+"Host",
+"And tip number five: read and listen a lot. When you read stories or watch videos in English, you see words in real situations. Choose things that are not too difficult, so you can enjoy them."
+],
+[
+"Host",
+"Remember, don't try to learn fifty words in one day. Learning ten words a day and remembering them is much better. That's all for today. See you next week!"
+]
+],
+"qs": [
+{
+"q": "What is the name of the podcast?",
+"o": [
+"English Every Day",
+"English Words",
+"Learn English Now",
+"Every Day English"
+]
+},
+{
+"q": "What is the host's name?",
+"o": [
+"Lina",
+"Lama",
+"Lana",
+"Layla"
+]
+},
+{
+"q": "How many tips does the host give?",
+"o": [
+"Five",
+"Three",
+"Ten",
+"Fifty"
+]
+},
+{
+"q": "What should you write in your vocabulary notebook?",
+"o": [
+"The word, its meaning and an example sentence",
+"Only the translation in Arabic",
+"Only the word and its spelling",
+"A long story about each word"
+]
+},
+{
+"q": "Why does the host suggest learning words in groups?",
+"o": [
+"Your brain remembers words better when they are connected.",
+"It is faster to write them in a notebook.",
+"Teachers prefer students to study that way.",
+"You need fewer notebooks and less paper."
+]
+},
+{
+"q": "How much new information do we forget in one day if we don't review it?",
+"o": [
+"About half",
+"About ten percent",
+"All of it",
+"Almost nothing"
+]
+},
+{
+"q": "When does the host say it is especially good to review?",
+"o": [
+"Before you sleep",
+"In the morning",
+"After lunch",
+"During class"
+]
+},
+{
+"q": "How many sentences does the host suggest writing every day?",
+"o": [
+"Three",
+"Ten",
+"Five",
+"One"
+]
+},
+{
+"q": "What kind of things should you read and watch?",
+"o": [
+"Things that are not too difficult",
+"Only very difficult things",
+"Only the news",
+"Only grammar books"
+]
+},
+{
+"q": "How many words a day does the host suggest learning?",
+"o": [
+"Ten",
+"Fifty",
+"Five",
+"Twenty"
+]
+}
+]
+},
+{
+"n": 17,
+"title": "At the Pharmacy",
+"kind": "dialogue",
+"audio": "audio/L17.mp3",
+"dur": 108,
+"lines": [
+[
+"Pharmacist",
+"Good evening. How can I help you?"
+],
+[
+"Woman",
+"Hi. My husband has had a sore throat and a high temperature since yesterday. He asked me to get some antibiotics for him."
+],
+[
+"Pharmacist",
+"I'm sorry, but I can't give you antibiotics without a prescription from a doctor. Also, most sore throats are caused by viruses, and antibiotics don't work against viruses at all."
+],
+[
+"Woman",
+"Oh, I didn't know that. So what can he take?"
+],
+[
+"Pharmacist",
+"For the temperature and the pain, I'd recommend this paracetamol. He can take two tablets every six hours, but no more than eight tablets in twenty-four hours. Does he take any other medicine regularly?"
+],
+[
+"Woman",
+"Yes, he takes something for his blood pressure every morning."
+],
+[
+"Pharmacist",
+"That's fine with paracetamol. But I'd avoid cold medicines that contain decongestants, because they can raise blood pressure. Is he allergic to anything?"
+],
+[
+"Woman",
+"I don't think so. Well, he once had a rash after taking a certain antibiotic, but I can't remember its name."
+],
+[
+"Pharmacist",
+"That's important. If he does see a doctor, he must tell them about it. For his throat, these lozenges are good. He can have one every three hours. And warm drinks with honey will help too."
+],
+[
+"Woman",
+"How much is all that?"
+],
+[
+"Pharmacist",
+"The paracetamol is twelve riyals and the lozenges are eighteen, so thirty riyals altogether."
+],
+[
+"Woman",
+"OK. How long will it take before he feels better?"
+],
+[
+"Pharmacist",
+"A sore throat caused by a virus usually gets better in about a week. But if his temperature is still above thirty-nine after three days, or if he finds it difficult to swallow or breathe, he should see a doctor immediately."
+],
+[
+"Woman",
+"I'll tell him. Thank you so much for explaining everything."
+],
+[
+"Pharmacist",
+"You're welcome. I hope he feels better soon."
+]
+],
+"qs": [
+{
+"q": "What is wrong with the woman's husband?",
+"o": [
+"He has a sore throat and a high temperature.",
+"He has a headache and a cough.",
+"He has a stomach ache.",
+"He has an earache."
+]
+},
+{
+"q": "Why can't the pharmacist give her antibiotics?",
+"o": [
+"She doesn't have a prescription from a doctor.",
+"They are out of stock.",
+"The pharmacy has closed for the night.",
+"They are too expensive."
+]
+},
+{
+"q": "According to the pharmacist, what causes most sore throats?",
+"o": [
+"Viruses",
+"Cold drinks",
+"Allergies",
+"Dry air"
+]
+},
+{
+"q": "What is the largest number of paracetamol tablets he can take in twenty-four hours?",
+"o": [
+"Eight",
+"Two",
+"Six",
+"Four"
+]
+},
+{
+"q": "What does her husband take every morning?",
+"o": [
+"Medicine for his blood pressure",
+"Vitamins for his energy",
+"Paracetamol for headaches",
+"Antibiotics for his throat"
+]
+},
+{
+"q": "Why should he avoid cold medicines with decongestants?",
+"o": [
+"They can raise blood pressure.",
+"They make people sleepy.",
+"They don't work on sore throats.",
+"They contain antibiotics."
+]
+},
+{
+"q": "What happened when her husband took a certain antibiotic?",
+"o": [
+"He had a rash.",
+"He felt very sleepy.",
+"His temperature went up.",
+"He couldn't swallow."
+]
+},
+{
+"q": "How often can he have a lozenge?",
+"o": [
+"Every three hours",
+"Every six hours",
+"Once a day",
+"Every hour"
+]
+},
+{
+"q": "How much does the woman pay altogether?",
+"o": [
+"Thirty riyals",
+"Twelve riyals",
+"Eighteen riyals",
+"Twenty-four riyals"
+]
+},
+{
+"q": "When should her husband see a doctor immediately?",
+"o": [
+"If he finds it difficult to swallow or breathe",
+"If he still has a sore throat tomorrow",
+"If two paracetamol tablets don't help",
+"If he starts coughing at night"
+]
+}
+]
+},
+{
+"n": 18,
 "title": "Recycling on Campus",
 "kind": "monologue",
-"audio": "audio/L20.mp3",
+"audio": "audio/L18.mp3",
 "dur": 72,
 "lines": [
 [
@@ -2912,9 +2590,9 @@ window.LISTENING = [
 "q": "What will the winning building get?",
 "o": [
 "A new garden area with seats and shade",
-"Free lunch for a month",
-"New computers",
-"A trophy"
+"Free lunch for a month for everyone",
+"New computers for every classroom",
+"A trophy and a certificate"
 ]
 },
 {
@@ -2938,469 +2616,167 @@ window.LISTENING = [
 ]
 },
 {
-"n": 21,
-"title": "Booking a Desert Tour",
+"n": 19,
+"title": "Choosing Courses for Next Semester",
 "kind": "dialogue",
-"audio": "audio/L21.mp3",
-"dur": 82,
+"audio": "audio/L19.mp3",
+"dur": 78,
 "lines": [
 [
-"Agent",
-"Good afternoon, Golden Sands Tours. How can I help you?"
+"Hind",
+"Lama, have you chosen your courses for next semester yet? Registration closes on Thursday."
 ],
 [
-"Tourist",
-"Hello. I'm visiting Riyadh with my wife, and we'd like to book a desert tour."
+"Lama",
+"Not yet. I'm still thinking. I have to take four courses, and two of them must be English and math."
 ],
 [
-"Agent",
-"Wonderful! We have two tours. The short tour is four hours, and the full-day tour is ten hours."
+"Hind",
+"Me too. Which English course are you taking? English 2 or English for Business?"
 ],
 [
-"Tourist",
-"What's included in the short tour?"
+"Lama",
+"English 2. I need it before I can take English for Business next year."
 ],
 [
-"Agent",
-"We pick you up from your hotel at three in the afternoon. We drive to the red sand dunes, where you can ride camels and try sandboarding. Then you watch the sunset and have dinner in a traditional tent. We bring you back at about seven."
+"Hind",
+"OK. I'll take English 2 too, so we can study together. There are two groups: one on Sunday and Tuesday mornings, and one on Monday and Wednesday afternoons."
 ],
 [
-"Tourist",
-"That sounds great. How much is it?"
+"Lama",
+"The morning group is better for me. I work at the library in the afternoons."
 ],
 [
-"Agent",
-"It's three hundred riyals for each person. Children under twelve pay half price."
+"Hind",
+"Great, the morning group then. What about the other two courses?"
 ],
 [
-"Tourist",
-"It's just the two of us. And the full-day tour?"
+"Lama",
+"I'm thinking about psychology. My sister took it last year, and she said it was really interesting."
 ],
 [
-"Agent",
-"The full-day tour also visits an old village and a farm. It costs five hundred and fifty riyals each, and lunch is included."
+"Hind",
+"I heard the psychology professor is excellent, but there's a lot of reading. You have to read one chapter every week."
 ],
 [
-"Tourist",
-"Hmm, I think the short tour is better for us. My wife doesn't like long trips in the car."
+"Lama",
+"That's fine, I like reading. What are you taking?"
 ],
 [
-"Agent",
-"No problem. Which day would you like?"
+"Hind",
+"I want to take computer skills. It's useful for any job, and there are no exams, only projects."
 ],
 [
-"Tourist",
-"Is Friday possible?"
+"Lama",
+"No exams? That sounds perfect! Maybe I'll take it too, as my fourth course."
 ],
 [
-"Agent",
-"I'm sorry, Friday is full. But we have places on Saturday."
+"Hind",
+"Then we'll have three courses together! But be quick, because computer skills fills up very fast. Last semester, there were only thirty places."
 ],
 [
-"Tourist",
-"Saturday is fine. What should we bring?"
-],
-[
-"Agent",
-"Bring comfortable shoes, sunglasses and a jacket. It gets cold in the desert after sunset. Water is free on the bus."
-],
-[
-"Tourist",
-"Great. Can I pay at the hotel?"
-],
-[
-"Agent",
-"You can pay online now, or pay the driver in cash when he picks you up."
-],
-[
-"Tourist",
-"I'll pay the driver. Thank you!"
+"Lama",
+"OK, I'll register tonight. Thanks, Hind!"
 ]
 ],
 "qs": [
 {
-"q": "Who is the tourist visiting Riyadh with?",
+"q": "When does registration close?",
 "o": [
-"His wife",
-"His children",
-"His friends",
-"His brother"
+"On Thursday",
+"On Sunday",
+"Tonight",
+"Next week"
 ]
 },
 {
-"q": "How long is the short tour?",
+"q": "How many courses does Lama have to take?",
 "o": [
-"Four hours",
-"Ten hours",
-"Three hours",
-"Seven hours"
+"Four",
+"Two",
+"Three",
+"Five"
 ]
 },
 {
-"q": "What time does the short tour pick people up?",
+"q": "Which two courses must Lama take?",
 "o": [
-"At three in the afternoon",
-"At four in the afternoon",
-"At seven in the evening",
-"At ten in the morning"
+"English and math",
+"English and psychology",
+"Math and computer skills",
+"Psychology and computer skills"
 ]
 },
 {
-"q": "Which activity is NOT part of the short tour?",
+"q": "Why does Lama take English 2?",
 "o": [
-"Visiting an old village",
-"Riding camels",
-"Sandboarding",
-"Watching the sunset"
+"She needs it before English for Business.",
+"It's easier than English for Business.",
+"Her sister took it.",
+"It has no exams."
 ]
 },
 {
-"q": "How much is the short tour for each person?",
+"q": "When does the morning group meet?",
 "o": [
-"Three hundred riyals",
-"Five hundred and fifty riyals",
-"One hundred and fifty riyals",
-"Six hundred riyals"
+"On Sunday and Tuesday mornings",
+"On Monday and Wednesday mornings",
+"On Sunday and Tuesday afternoons",
+"Every morning"
 ]
 },
 {
-"q": "Who pays half price?",
+"q": "Why is the morning group better for Lama?",
 "o": [
-"Children under twelve",
-"Students",
-"Old people",
-"Groups of four"
+"She works at the library in the afternoons.",
+"She has math in the afternoons.",
+"She likes waking up early.",
+"Her sister is in the morning group."
 ]
 },
 {
-"q": "Why does the tourist choose the short tour?",
+"q": "Why is Lama thinking about psychology?",
 "o": [
-"His wife doesn't like long trips in the car.",
-"It includes lunch.",
-"It's on Friday.",
-"The full-day tour is full."
+"Her sister said it was really interesting.",
+"It is the easiest course in the university.",
+"Her professor told her it was useful.",
+"Hind is taking it next semester."
 ]
 },
 {
-"q": "Which day will they go?",
+"q": "What is difficult about the psychology course?",
 "o": [
-"Saturday",
-"Friday",
-"Thursday",
-"Sunday"
+"There's a lot of reading.",
+"The professor is not good.",
+"There are many exams.",
+"It's in the afternoon."
 ]
 },
 {
-"q": "Why should they bring a jacket?",
+"q": "Why does Hind want to take computer skills?",
 "o": [
-"It gets cold in the desert after sunset.",
-"It will rain.",
-"The bus has air conditioning.",
-"The tent is cold."
+"It's useful for any job and has no exams, only projects.",
+"Her sister took it and recommended it.",
+"It's easy to get a place in the course.",
+"It has a lot of interesting reading."
 ]
 },
 {
-"q": "How will the tourist pay?",
+"q": "How many places were there in computer skills last semester?",
 "o": [
-"In cash to the driver",
-"Online now",
-"At the hotel reception",
-"By bank transfer"
+"Only thirty",
+"Only thirteen",
+"Fifty",
+"Three hundred"
 ]
 }
 ]
 },
 {
-"n": 22,
-"title": "My Favourite Season",
-"kind": "monologue",
-"audio": "audio/L22.mp3",
-"dur": 64,
-"lines": [
-[
-"Speaker",
-"Hi, I'm Dana, and today I want to talk about my favourite season, which is winter. Many people prefer summer, but for me, winter in Saudi Arabia is the best time of the year."
-],
-[
-"Speaker",
-"In summer, it's very hot here. The temperature can be more than forty-five degrees, so most people stay inside with the air conditioner on. But in winter, from December to February, the weather is cool and pleasant. During the day, it's usually around twenty degrees, and at night it can go down to eight or nine."
-],
-[
-"Speaker",
-"Winter is the season of going outside. On weekends, my family and I often go to the desert. We sit around a fire, drink Arabic coffee and tea, and my father tells us stories from when he was young. These are my favourite memories."
-],
-[
-"Speaker",
-"In some years, if it rains a lot, the desert becomes green, and small flowers grow everywhere. It's really beautiful, and many families go out to see it."
-],
-[
-"Speaker",
-"Winter also has special food. My grandmother makes a hot dish called marqooq, with vegetables and meat. It's perfect on a cold evening."
-],
-[
-"Speaker",
-"The only thing I don't like about winter is that it's too short! Before you know it, summer comes again. But I always look forward to the next winter."
-]
-],
-"qs": [
-{
-"q": "What is the speaker's favourite season?",
-"o": [
-"Winter",
-"Summer",
-"Spring",
-"Autumn"
-]
-},
-{
-"q": "How hot can it get in summer?",
-"o": [
-"More than forty-five degrees",
-"About thirty degrees",
-"About twenty degrees",
-"More than fifty-five degrees"
-]
-},
-{
-"q": "When is winter in Saudi Arabia, according to the speaker?",
-"o": [
-"From December to February",
-"From June to August",
-"From March to May",
-"From October to December"
-]
-},
-{
-"q": "What is the temperature usually during the day in winter?",
-"o": [
-"Around twenty degrees",
-"Around eight degrees",
-"Around forty-five degrees",
-"Around thirty degrees"
-]
-},
-{
-"q": "Where does Dana's family often go on weekends in winter?",
-"o": [
-"To the desert",
-"To the beach",
-"To the mall",
-"To another country"
-]
-},
-{
-"q": "What does Dana's father do around the fire?",
-"o": [
-"He tells stories from when he was young.",
-"He cooks marqooq.",
-"He sings songs.",
-"He reads books."
-]
-},
-{
-"q": "What happens to the desert when it rains a lot?",
-"o": [
-"It becomes green, and small flowers grow.",
-"It becomes very hot.",
-"It becomes dangerous.",
-"It turns into a lake."
-]
-},
-{
-"q": "Who makes marqooq?",
-"o": [
-"Dana's grandmother",
-"Dana's mother",
-"Dana's father",
-"Dana"
-]
-},
-{
-"q": "What is marqooq made with?",
-"o": [
-"Vegetables and meat",
-"Rice and fish",
-"Dates and milk",
-"Bread and cheese"
-]
-},
-{
-"q": "What doesn't Dana like about winter?",
-"o": [
-"It is too short.",
-"It is too cold.",
-"It rains too much.",
-"There is nothing to do."
-]
-}
-]
-},
-{
-"n": 23,
-"title": "At the Pharmacy",
-"kind": "dialogue",
-"audio": "audio/L23.mp3",
-"dur": 71,
-"lines": [
-[
-"Pharmacist",
-"Good evening. How can I help you?"
-],
-[
-"Woman",
-"Good evening. My son has a fever and a cough. Do you have something for him?"
-],
-[
-"Pharmacist",
-"How old is he?"
-],
-[
-"Woman",
-"He's six years old."
-],
-[
-"Pharmacist",
-"And how high is his temperature?"
-],
-[
-"Woman",
-"It was thirty-eight and a half this afternoon."
-],
-[
-"Pharmacist",
-"OK. For the fever, I recommend this syrup. It's for children between two and twelve years old. Give him five millilitres every six hours, but not more than four times a day."
-],
-[
-"Woman",
-"Five millilitres every six hours. Should he take it before or after food?"
-],
-[
-"Pharmacist",
-"It's better after food. And for the cough, this honey syrup is good and natural. He can take one spoon in the morning and one before he sleeps."
-],
-[
-"Woman",
-"Great. How much are they?"
-],
-[
-"Pharmacist",
-"The fever syrup is twenty-two riyals, and the cough syrup is eighteen riyals. So that's forty riyals in total."
-],
-[
-"Woman",
-"OK. Is there anything else I should do?"
-],
-[
-"Pharmacist",
-"Yes. Make sure he drinks a lot of water and gets plenty of rest. If the fever doesn't go down in two days, or if it goes higher than thirty-nine, please take him to a doctor."
-],
-[
-"Woman",
-"I will. Thank you so much."
-],
-[
-"Pharmacist",
-"You're welcome. I hope he feels better soon."
-]
-],
-"qs": [
-{
-"q": "What is wrong with the woman's son?",
-"o": [
-"He has a fever and a cough.",
-"He has a stomach ache.",
-"He has a headache.",
-"He broke his arm."
-]
-},
-{
-"q": "How old is her son?",
-"o": [
-"Six years old",
-"Two years old",
-"Twelve years old",
-"Eight years old"
-]
-},
-{
-"q": "What was his temperature this afternoon?",
-"o": [
-"Thirty-eight and a half",
-"Thirty-nine",
-"Thirty-seven and a half",
-"Forty"
-]
-},
-{
-"q": "Who is the fever syrup for?",
-"o": [
-"Children between two and twelve years old",
-"Babies under two",
-"Adults only",
-"Children over twelve"
-]
-},
-{
-"q": "How often should he take the fever syrup?",
-"o": [
-"Every six hours",
-"Every two hours",
-"Every twelve hours",
-"Once a day"
-]
-},
-{
-"q": "When should he take the fever syrup?",
-"o": [
-"After food",
-"Before food",
-"Only at night",
-"With milk"
-]
-},
-{
-"q": "What is the cough syrup made with?",
-"o": [
-"Honey",
-"Lemon",
-"Sugar",
-"Milk"
-]
-},
-{
-"q": "How much is the cough syrup?",
-"o": [
-"Eighteen riyals",
-"Twenty-two riyals",
-"Forty riyals",
-"Eight riyals"
-]
-},
-{
-"q": "What else should the boy do?",
-"o": [
-"Drink a lot of water and get plenty of rest.",
-"Go to school.",
-"Eat a lot of sweets.",
-"Play outside."
-]
-},
-{
-"q": "When should the woman take her son to a doctor?",
-"o": [
-"If the fever doesn't go down in two days or goes higher than thirty-nine",
-"Tomorrow morning",
-"If he stops coughing",
-"After one week"
-]
-}
-]
-},
-{
-"n": 24,
+"n": 20,
 "title": "Morning Traffic Report",
 "kind": "monologue",
-"audio": "audio/L24.mp3",
+"audio": "audio/L20.mp3",
 "dur": 73,
 "lines": [
 [
@@ -3526,158 +2902,682 @@ window.LISTENING = [
 ]
 },
 {
-"n": 25,
-"title": "Choosing Courses for Next Semester",
-"kind": "dialogue",
-"audio": "audio/L25.mp3",
-"dur": 78,
+"n": 21,
+"title": "A Talk About City Life in Summer",
+"kind": "monologue",
+"audio": "audio/L21.mp3",
+"dur": 106,
 "lines": [
 [
-"Hind",
-"Lama, have you chosen your courses for next semester yet? Registration closes on Thursday."
+"Speaker",
+"Good evening, everyone. As summers become hotter, one question is becoming more and more urgent for cities in our region: how can we keep our streets and homes cool without using even more electricity?"
 ],
 [
-"Lama",
-"Not yet. I'm still thinking. I have to take four courses, and two of them must be English and math."
+"Speaker",
+"First, it helps to understand a problem known as the urban heat island. Cities are often several degrees hotter than the countryside around them, especially at night. This is because materials like asphalt and concrete absorb heat during the day and release it slowly after sunset. Cars, air conditioners and factories add even more heat."
 ],
 [
-"Hind",
-"Me too. Which English course are you taking? English 2 or English for Business?"
+"Speaker",
+"One of the simplest solutions is also one of the oldest: trees. A tree doesn't just provide shade. It also releases water through its leaves, which cools the air around it. Studies in several cities have found that streets with plenty of trees can be noticeably cooler than streets without them. However, trees need water, so in dry countries it's important to choose local species that can survive with very little."
 ],
 [
-"Lama",
-"English 2. I need it before I can take English for Business next year."
+"Speaker",
+"A second solution is to change the colour of our surfaces. Dark roofs and roads absorb most of the sunlight that hits them, while light-coloured surfaces reflect much of it. Some cities are now painting roofs white or using light-coloured materials on roads and car parks."
 ],
 [
-"Hind",
-"OK. I'll take English 2 too, so we can study together. There are two groups: one on Sunday and Tuesday mornings, and one on Monday and Wednesday afternoons."
+"Speaker",
+"Interestingly, many ideas that modern planners recommend were used by our grandparents. Traditional houses in the Gulf often had thick walls, small windows and wind towers, which caught the breeze and directed it into the rooms. Old neighbourhoods had narrow streets, so the buildings shaded each other."
 ],
 [
-"Lama",
-"The morning group is better for me. I work at the library in the afternoons."
+"Speaker",
+"Of course, we can't simply rebuild our cities the way they were a hundred years ago. But we can learn from them. New buildings can be designed to catch the wind and avoid direct sun, and new neighbourhoods can include shaded walkways and green spaces."
 ],
 [
-"Hind",
-"Great, the morning group then. What about the other two courses?"
-],
-[
-"Lama",
-"I'm thinking about psychology. My sister took it last year, and she said it was really interesting."
-],
-[
-"Hind",
-"I heard the psychology professor is excellent, but there's a lot of reading. You have to read one chapter every week."
-],
-[
-"Lama",
-"That's fine, I like reading. What are you taking?"
-],
-[
-"Hind",
-"I want to take computer skills. It's useful for any job, and there are no exams, only projects."
-],
-[
-"Lama",
-"No exams? That sounds perfect! Maybe I'll take it too, as my fourth course."
-],
-[
-"Hind",
-"Then we'll have three courses together! But be quick, because computer skills fills up very fast. Last semester, there were only thirty places."
-],
-[
-"Lama",
-"OK, I'll register tonight. Thanks, Hind!"
+"Speaker",
+"Cooling our cities isn't only about comfort. In extreme heat, it can be a matter of health, and even life. The good news is that many of the solutions are simple, and some of them we've known for centuries."
 ]
 ],
 "qs": [
 {
-"q": "When does registration close?",
+"q": "What is the main question of the talk?",
 "o": [
-"On Thursday",
-"On Sunday",
-"Tonight",
-"Next week"
+"How cities can stay cool without using more electricity",
+"Why summers are getting hotter",
+"How to build cheaper air conditioners",
+"Why people prefer to live in the countryside"
 ]
 },
 {
-"q": "How many courses does Lama have to take?",
+"q": "What is an urban heat island?",
 "o": [
-"Four",
-"Two",
-"Three",
-"Five"
+"A city that is hotter than the countryside around it",
+"An island where the sea water is very warm",
+"A green park in the middle of a busy city",
+"A building that has no air conditioning inside"
 ]
 },
 {
-"q": "Which two courses must Lama take?",
+"q": "Why do cities stay hot at night?",
 "o": [
-"English and math",
-"English and psychology",
-"Math and computer skills",
-"Psychology and computer skills"
+"Asphalt and concrete release heat slowly after sunset.",
+"There is less wind at night.",
+"People use more electricity at night.",
+"Hot air from the countryside moves into the city."
 ]
 },
 {
-"q": "Why does Lama take English 2?",
+"q": "Apart from giving shade, how do trees cool the air?",
 "o": [
-"She needs it before English for Business.",
-"It's easier than English for Business.",
-"Her sister took it.",
-"It has no exams."
+"They release water through their leaves.",
+"They block the wind.",
+"They take heat from the ground.",
+"They reflect the sunlight."
 ]
 },
 {
-"q": "When does the morning group meet?",
+"q": "Why should dry countries choose local kinds of trees?",
 "o": [
-"On Sunday and Tuesday mornings",
-"On Monday and Wednesday mornings",
-"On Sunday and Tuesday afternoons",
-"Every morning"
+"They can survive with very little water.",
+"They grow faster.",
+"They are cheaper to buy.",
+"They give more shade."
 ]
 },
 {
-"q": "Why is the morning group better for Lama?",
+"q": "What is the difference between dark and light-coloured surfaces?",
 "o": [
-"She works at the library in the afternoons.",
-"She has math in the afternoons.",
-"She likes waking up early.",
-"Her sister is in the morning group."
+"Dark ones absorb most sunlight, while light ones reflect much of it.",
+"Light ones absorb most sunlight, while dark ones reflect much of it.",
+"Dark ones last longer, while light ones need painting more often.",
+"Both absorb the same amount of sunlight, so there is no real difference."
 ]
 },
 {
-"q": "Why is Lama thinking about psychology?",
+"q": "Which feature of traditional Gulf houses does the speaker NOT mention?",
 "o": [
-"Her sister said it was really interesting.",
-"It has no exams.",
-"It's useful for any job.",
-"Hind is taking it."
+"Large gardens",
+"Thick walls",
+"Small windows",
+"Wind towers"
 ]
 },
 {
-"q": "What is difficult about the psychology course?",
+"q": "According to the speaker, what was the advantage of the narrow streets in old neighbourhoods?",
 "o": [
-"There's a lot of reading.",
-"The professor is not good.",
-"There are many exams.",
-"It's in the afternoon."
+"The buildings shaded each other.",
+"People could walk to the market quickly.",
+"There was no space for cars.",
+"They protected people from sandstorms."
 ]
 },
 {
-"q": "Why does Hind want to take computer skills?",
+"q": "What is the speaker's view of traditional cities?",
 "o": [
-"It's useful for any job and has no exams, only projects.",
-"Her sister recommended it.",
-"It's easy to get a place.",
-"It has a lot of reading."
+"We can't rebuild them, but we can learn from them.",
+"We should rebuild our cities exactly as they were.",
+"They were not suitable for hot weather.",
+"They are less useful than modern technology."
 ]
 },
 {
-"q": "How many places were there in computer skills last semester?",
+"q": "According to the speaker, why is cooling cities important?",
 "o": [
-"Only thirty",
-"Only thirteen",
-"Fifty",
-"Three hundred"
+"In extreme heat, it can be a matter of health and even life.",
+"It helps cities attract more tourists in summer.",
+"It makes the streets look cleaner and more beautiful.",
+"It makes new buildings much cheaper to build."
+]
+}
+]
+},
+{
+"n": 22,
+"title": "Campus Voices",
+"kind": "dialogue",
+"audio": "audio/L22.mp3",
+"dur": 123,
+"lines": [
+[
+"Host",
+"Good evening, and welcome to Campus Voices. Many students are asking whether learning from home is really as effective as sitting in a classroom. With me tonight are Ahmed, a third-year engineering student, and Doctor Noura Saleh, who teaches education at our university. Ahmed, you've taken several online courses. What's your experience?"
+],
+[
+"Ahmed",
+"Mostly positive. The biggest advantage for me is flexibility. I work part-time in the evenings, so being able to watch lectures whenever I want has made a huge difference. I can also pause and replay difficult parts, which you can't do in a live lecture."
+],
+[
+"Host",
+"Are there any disadvantages?"
+],
+[
+"Ahmed",
+"Definitely. You need a lot of self-discipline. In my first online course, I kept postponing the lectures, and two weeks before the exam, I had fifteen hours of videos to watch. I almost failed. Now I plan my week in advance, like a normal timetable."
+],
+[
+"Host",
+"Doctor Noura, does research support Ahmed's experience?"
+],
+[
+"Noura",
+"In many ways, yes. Studies generally show that well-designed online courses can be as effective as classroom courses for students who are motivated and organised. The problem is that students who struggle in class often struggle even more online, because there's no teacher noticing when they're falling behind."
+],
+[
+"Host",
+"What about the social side of university?"
+],
+[
+"Noura",
+"That's what worries me most. University isn't only about information. Students learn a great deal from discussing ideas, working in groups and simply chatting after class. Online, those moments are much harder to create. Many students in our surveys said they felt lonely and less connected to their classmates."
+],
+[
+"Ahmed",
+"I agree. I've never met most of the people from my online courses."
+],
+[
+"Host",
+"So what's the answer? Should universities go back to classrooms only?"
+],
+[
+"Noura",
+"I don't think so. The best solution is probably a mix, which we call blended learning: lectures online, so students can watch them at their own speed, and discussions, labs and group work on campus."
+],
+[
+"Ahmed",
+"That would be ideal for me."
+]
+],
+"qs": [
+{
+"q": "What is the main topic of the discussion?",
+"o": [
+"Whether online learning is as effective as classroom learning",
+"How to find a part-time job",
+"Why engineering is a difficult subject",
+"How teachers prepare their lectures"
+]
+},
+{
+"q": "What does Ahmed study?",
+"o": [
+"Engineering",
+"Education",
+"Business",
+"Medicine"
+]
+},
+{
+"q": "What is the biggest advantage of online courses for Ahmed?",
+"o": [
+"Flexibility",
+"Lower prices",
+"Better teachers",
+"Easier exams"
+]
+},
+{
+"q": "What does Ahmed do in the evenings?",
+"o": [
+"He works part-time.",
+"He watches live lectures.",
+"He goes to the gym.",
+"He looks after his younger brothers."
+]
+},
+{
+"q": "What happened in Ahmed's first online course?",
+"o": [
+"He kept postponing the lectures and almost failed.",
+"He got the highest mark in the whole class.",
+"He couldn't open the videos on his laptop.",
+"The course was cancelled after two weeks."
+]
+},
+{
+"q": "How does Ahmed organise his online studying now?",
+"o": [
+"He plans his week in advance.",
+"He only takes classroom courses.",
+"He studies with a friend.",
+"He watches all the videos in one day."
+]
+},
+{
+"q": "According to Dr. Noura, which students may struggle even more online?",
+"o": [
+"Students who already struggle in class",
+"Students who are motivated and organised",
+"Students who take many courses",
+"Students who live on campus"
+]
+},
+{
+"q": "What worries Dr. Noura most about online learning?",
+"o": [
+"The lack of social contact",
+"The cost of technology",
+"The quality of the videos",
+"Students cheating in exams"
+]
+},
+{
+"q": "What did many students say in the surveys?",
+"o": [
+"They felt lonely and less connected to their classmates.",
+"They preferred taking their exams online at home.",
+"They wanted longer lectures with more examples.",
+"They learned more online than they did in class."
+]
+},
+{
+"q": "What solution does Dr. Noura suggest?",
+"o": [
+"A mix of online lectures and activities on campus",
+"Going back to classroom learning only",
+"Moving all university courses online",
+"Making university courses much shorter"
+]
+}
+]
+},
+{
+"n": 23,
+"title": "A Psychology Lecture",
+"kind": "monologue",
+"audio": "audio/L23.mp3",
+"dur": 119,
+"lines": [
+[
+"Lecturer",
+"Good afternoon. Today's question may sound strange at first: can having too many choices make us less happy? Most of us assume that more choice is always better. After all, with more options, we're more likely to find exactly what we want. But psychologists have found that the reality is more complicated."
+],
+[
+"Lecturer",
+"One of the most famous studies took place in a supermarket in California. Researchers set up a table where shoppers could taste different jams. On some days, the table offered twenty-four flavours; on other days, only six. The large display attracted more people: about sixty percent of passing shoppers stopped, compared with forty percent for the small one. However, when it came to actually buying, the results were reversed. Only about three percent of the people who stopped at the twenty-four jams bought one, while around thirty percent of those who stopped at the six did."
+],
+[
+"Lecturer",
+"Why would this happen? One explanation is that too many options make decisions feel difficult and tiring, so we often avoid deciding at all. Another explanation is regret. With so many alternatives, we keep wondering whether a different choice would have been better, and this makes us less satisfied with the one we made."
+],
+[
+"Lecturer",
+"The psychologist Barry Schwartz describes two kinds of people. Maximisers try to find the very best option, so they compare everything carefully. Satisficers choose the first option that's good enough for their needs. Surprisingly, research suggests that maximisers often feel less happy with their decisions."
+],
+[
+"Lecturer",
+"I should add that later studies haven't always found such strong effects, so the jam study shouldn't be seen as the final word. But the general idea is useful. When you face an important decision, such as choosing a university or a phone, decide in advance what really matters to you, limit yourself to a few options, and once you've decided, stop looking at the alternatives."
+],
+[
+"Lecturer",
+"Next time, we'll look at how companies use these ideas when they design their websites."
+]
+],
+"qs": [
+{
+"q": "What is the main question of the lecture?",
+"o": [
+"Whether having too many choices can make us less happy",
+"How supermarkets choose their prices",
+"Why people prefer sweet food",
+"How to become a psychologist"
+]
+},
+{
+"q": "Where did the famous study take place?",
+"o": [
+"In a supermarket in California",
+"In a university library",
+"In a restaurant in London",
+"In an online shop"
+]
+},
+{
+"q": "How many flavours did the large display offer?",
+"o": [
+"Twenty-four",
+"Six",
+"Sixty",
+"Thirty"
+]
+},
+{
+"q": "Which display made more shoppers stop?",
+"o": [
+"The large display",
+"The small display",
+"Both displays made the same number stop",
+"Neither display made anyone stop"
+]
+},
+{
+"q": "About what percentage of the people at the small display bought a jam?",
+"o": [
+"About thirty percent",
+"About three percent",
+"About sixty percent",
+"About forty percent"
+]
+},
+{
+"q": "According to the lecturer, why might many options stop us from deciding?",
+"o": [
+"Decisions feel difficult and tiring.",
+"The prices are higher.",
+"We don't trust the shop.",
+"We don't have enough time."
+]
+},
+{
+"q": "How does regret affect people who have many choices?",
+"o": [
+"They are less satisfied with the choice they made.",
+"They make decisions more quickly.",
+"They always return what they bought.",
+"They become better at comparing."
+]
+},
+{
+"q": "What do satisficers do?",
+"o": [
+"They choose the first option that's good enough.",
+"They compare every option carefully.",
+"They never make a decision.",
+"They always choose the most expensive option."
+]
+},
+{
+"q": "What does the lecturer say about later studies?",
+"o": [
+"They haven't always found such strong effects.",
+"They proved that the jam study was wrong.",
+"They found even stronger effects.",
+"There haven't been any later studies."
+]
+},
+{
+"q": "What advice does the lecturer give for important decisions?",
+"o": [
+"Decide what matters, limit your options, and stop looking once you've decided.",
+"Compare as many options as possible before you make any decision.",
+"Ask your friends and family to make the final decision for you.",
+"Choose the cheapest option, so you won't regret spending too much."
+]
+}
+]
+},
+{
+"n": 24,
+"title": "The Coral Reefs of the Red Sea",
+"kind": "dialogue",
+"audio": "audio/L24.mp3",
+"dur": 120,
+"lines": [
+[
+"Presenter",
+"Today on Science Hour, we're talking about coral reefs. My guest is Doctor Maha Al-Harbi, a marine biologist who has studied the reefs of the Red Sea for over fifteen years. Maha, welcome. Many people think corals are plants or rocks. What are they, really?"
+],
+[
+"Maha",
+"That's a very common mistake. Corals are actually animals, tiny animals that live together in huge groups. They build hard skeletons, and over hundreds of years, these skeletons form the reefs we see. Inside the corals live very small algae, which give them food and their beautiful colours."
+],
+[
+"Presenter",
+"We often hear that coral reefs around the world are in danger. Why is that?"
+],
+[
+"Maha",
+"The biggest threat is rising sea temperatures. When the water becomes too warm for too long, the corals push out the algae living inside them. Without the algae, they turn white, which we call bleaching, and if the water doesn't cool down, they can die."
+],
+[
+"Presenter",
+"Is the same thing happening in the Red Sea?"
+],
+[
+"Maha",
+"Partly, but the Red Sea is a special case. Research suggests that corals in the northern Red Sea can survive higher temperatures than corals in many other places. One theory is that, thousands of years ago, they had to pass through the very warm waters in the south of the Red Sea to reach the north, so only the strongest survived."
+],
+[
+"Presenter",
+"That sounds like good news."
+],
+[
+"Maha",
+"It is, but we shouldn't be too optimistic. Even strong corals have limits. And temperature isn't the only problem. Pollution, careless tourism and fishing with nets near the reef all cause damage."
+],
+[
+"Presenter",
+"What can ordinary people do to help?"
+],
+[
+"Maha",
+"Quite a lot, actually. If you go snorkelling or diving, never touch or stand on the coral, and use sunscreen that's safe for reefs. Don't buy souvenirs made from coral. And support local projects that protect marine areas."
+],
+[
+"Presenter",
+"Finally, why should people who never go to the beach care about reefs?"
+],
+[
+"Maha",
+"Because reefs are home to about a quarter of all sea life, they protect coasts from waves, and they provide food and jobs for millions of people. Their health affects all of us."
+]
+],
+"qs": [
+{
+"q": "How long has Dr. Maha studied the reefs of the Red Sea?",
+"o": [
+"Over fifteen years",
+"Over five years",
+"Over fifty years",
+"About ten years"
+]
+},
+{
+"q": "What common mistake do people make about corals?",
+"o": [
+"They think corals are plants or rocks.",
+"They think corals live alone.",
+"They think corals are dangerous.",
+"They think corals live only in cold water."
+]
+},
+{
+"q": "What do the algae inside corals give them?",
+"o": [
+"Food and colour",
+"Protection from fish",
+"Hard skeletons",
+"Clean water"
+]
+},
+{
+"q": "What is coral bleaching?",
+"o": [
+"Corals turning white after losing their algae",
+"Corals being cleaned by divers",
+"Corals growing too quickly",
+"Corals changing colour at night"
+]
+},
+{
+"q": "According to Maha, what is the biggest threat to coral reefs?",
+"o": [
+"Rising sea temperatures",
+"Fishing nets",
+"Tourism",
+"Pollution from ships"
+]
+},
+{
+"q": "What is special about corals in the northern Red Sea?",
+"o": [
+"They can survive higher temperatures than many other corals.",
+"They are older than any other corals in the world.",
+"They can live without any algae inside them.",
+"They grow much faster than corals in the south."
+]
+},
+{
+"q": "How does one theory explain this?",
+"o": [
+"Only the strongest corals survived the very warm water in the south.",
+"Scientists moved the strongest corals from the south to the north.",
+"The water in the north has become colder over thousands of years.",
+"The northern corals are a completely different kind of animal."
+]
+},
+{
+"q": "What is Maha's attitude to the good news about the Red Sea?",
+"o": [
+"People shouldn't be too optimistic.",
+"The reefs are now completely safe.",
+"The news is not true.",
+"Nothing more needs to be done."
+]
+},
+{
+"q": "Which advice does Maha NOT give?",
+"o": [
+"Swim only in the early morning",
+"Never touch or stand on the coral",
+"Use sunscreen that is safe for reefs",
+"Don't buy souvenirs made from coral"
+]
+},
+{
+"q": "Why should people who never go to the beach care about reefs?",
+"o": [
+"Reefs support sea life, protect coasts, and provide food and jobs.",
+"Reefs make the weather cooler in cities near the coast.",
+"Reefs produce most of the oxygen that people breathe.",
+"Reefs are popular places for holidays and photography."
+]
+}
+]
+},
+{
+"n": 25,
+"title": "A Talk About Our Food",
+"kind": "monologue",
+"audio": "audio/L25.mp3",
+"dur": 100,
+"lines": [
+[
+"Speaker",
+"Hello, and thanks for coming. Tonight I want to talk about something most of us eat every single day, often without realising it: sugar."
+],
+[
+"Speaker",
+"Let me start with a recommendation from the World Health Organization. It advises that adults should get less than ten percent of their daily energy from what it calls free sugars, and ideally less than five percent. For an average adult, five percent is about twenty-five grams, or roughly six teaspoons a day."
+],
+[
+"Speaker",
+"That might sound like quite a lot, until you look at what we actually eat. A single can of soft drink can contain around nine teaspoons of sugar, which is already more than the ideal amount for a whole day."
+],
+[
+"Speaker",
+"It's important to understand what free sugars are. They don't include the sugar naturally found in whole fruit or plain milk. They are the sugars added to food and drinks, plus the sugar in honey, syrups and fruit juices. This surprises many people, because fruit juice has a healthy image. But when fruit is turned into juice, much of the fibre is lost, and the sugar enters your blood more quickly. So eating an orange is better than drinking a glass of orange juice."
+],
+[
+"Speaker",
+"Another problem is hidden sugar. It's not only in sweets and cakes. It's added to foods we don't think of as sweet, such as bread, tomato ketchup, sauces and many flavoured yoghurts. Food companies add it because it improves the taste and helps products last longer."
+],
+[
+"Speaker",
+"Why does this matter? Eating too much sugar over many years is linked to weight gain, tooth decay and a higher risk of type two diabetes."
+],
+[
+"Speaker",
+"I'm not suggesting that you should never eat anything sweet again. That isn't realistic, and enjoying food is part of a healthy life. Instead, start by reading food labels. Replace soft drinks with water most of the time. And remember that your taste can change: after a few weeks with less sugar, many people find that very sweet foods actually taste too sweet."
+]
+],
+"qs": [
+{
+"q": "What is the main topic of the talk?",
+"o": [
+"How much sugar we eat, and how to reduce it",
+"How to cook healthy desserts",
+"Why fruit is bad for us",
+"How food companies make sweets"
+]
+},
+{
+"q": "According to the World Health Organization, what is the ideal limit for free sugars?",
+"o": [
+"Less than five percent of daily energy",
+"Less than ten grams a day",
+"Less than twenty-five percent of daily energy",
+"No sugar at all"
+]
+},
+{
+"q": "About how many teaspoons are twenty-five grams of sugar?",
+"o": [
+"About six",
+"About nine",
+"About two",
+"About twenty-five"
+]
+},
+{
+"q": "How much sugar can one can of soft drink contain?",
+"o": [
+"Around nine teaspoons",
+"Around six teaspoons",
+"Around three teaspoons",
+"Around twenty teaspoons"
+]
+},
+{
+"q": "Which of these is NOT a free sugar?",
+"o": [
+"The sugar in whole fruit",
+"The sugar in fruit juice",
+"The sugar in honey",
+"Sugar added to drinks"
+]
+},
+{
+"q": "Why is eating an orange better than drinking orange juice?",
+"o": [
+"Juice loses much of the fibre, so the sugar enters the blood more quickly.",
+"Oranges contain more sugar, so they give the body more energy.",
+"Juice usually contains added colours that are bad for the body.",
+"Oranges are cheaper than juice, and they are easier to carry."
+]
+},
+{
+"q": "Which food does the speaker mention as containing hidden sugar?",
+"o": [
+"Tomato ketchup",
+"Rice",
+"Eggs",
+"Fish"
+]
+},
+{
+"q": "Why do food companies add sugar to products?",
+"o": [
+"It improves the taste and helps products last longer.",
+"The law in many countries requires them to add it.",
+"It makes the products much cheaper to produce.",
+"It makes the products healthier for children."
+]
+},
+{
+"q": "Which health problem does the speaker NOT mention?",
+"o": [
+"High blood pressure",
+"Weight gain",
+"Tooth decay",
+"Type two diabetes"
+]
+},
+{
+"q": "What does the speaker say can happen after a few weeks with less sugar?",
+"o": [
+"Very sweet foods may start to taste too sweet.",
+"People want even more sugar.",
+"People lose a lot of weight.",
+"People stop enjoying food."
 ]
 }
 ]

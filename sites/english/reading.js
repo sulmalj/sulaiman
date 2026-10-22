@@ -339,111 +339,111 @@ window.READING = [
 "n": 4,
 "title": "Making Friends at University",
 "text": [
-"1. Starting university is exciting, but it can also be difficult. Many new students move to a new city and leave their old friends behind. For the first few weeks, they may feel _lonely_. However, studies show that students who make friends early are happier and get better grades.",
-"2. So, how can new students make friends? The first idea is to join a club. Most universities have clubs for sports, art, photography, and many other hobbies. In a club, you meet people who are interested in the same things as you, so it is easy to start a conversation. Another idea is to study with classmates. When you study in a group, you help each other and get to know each other at the same time.",
-"3. Some students are shy, and talking to new people is hard for _them_. For these students, small steps can help. For example, they can say hello to the person sitting next to them in class, or ask a simple question about the homework. These small conversations can _gradually_ become real friendships.",
-"4. Finally, it is important to be patient. Real friendships don't happen in one day. A friendly smile and a little effort every day can make a big difference."
+"1. Starting university is an exciting step, but for many young people it is also a lonely time. Some students move to a new city and leave their families and old friends behind, while others simply find that their school friends have chosen different universities. Although these feelings are normal, they should not be ignored. Research suggests that students who build friendships during their first year usually feel happier, and they are also less likely to leave their studies early.",
+"2. One of the easiest ways to meet people is to join a student club. Most universities have clubs for sports, volunteering, photography and many other interests. Because members already share a hobby, conversations start naturally and nobody has to search for something to say. Study groups are another good choice. When classmates prepare for an exam together, they help each other with difficult lessons, and they _gradually_ get to know each other as well.",
+"3. However, for shy students, even a short conversation can feel difficult. Experts _encourage_ these students to begin with small steps instead of waiting for a big chance. They can arrive at class a few minutes early and say hello to the person sitting next to them, or they can ask a classmate a simple question about the homework. Faisal, a second-year student, says that this worked for him. \"In my first month, I didn't know anyone,\" he explains. \"Then I started asking the student next to me about our assignments. Now _he_ is my closest friend.\"",
+"4. Finally, new students should remember that real friendships need time. It is common to feel disappointed when a friendship does not grow quickly, but this is not a reason to give up. A friendly smile, a little effort every day and some patience can turn a group of strangers into friends for life."
 ],
 "qs": [
 {
-"q": "According to the writer, new students may feel ______ in the first few weeks.",
+"q": "According to the writer, students who build friendships during their first year ______.",
 "o": [
-"lonely",
-"famous",
-"crowded",
-"angry"
+"are less likely to leave their studies early",
+"choose different universities",
+"move to a new city",
+"never feel lonely at all"
 ],
-"e": "الفقرة 1: «For the first few weeks, they may feel lonely»."
+"e": "الفقرة 1: «students who build friendships during their first year usually feel happier, and they are also less likely to leave their studies early» ← احتمال إنهم يتركون الدراسة بدري أقل."
 },
 {
-"q": "Students who make friends early ______.",
+"q": "Why do conversations start naturally in a student club?",
 "o": [
-"are happier and get better grades",
-"don't need to join clubs",
-"always move to a new city",
-"study less than other students"
+"Members already share a hobby.",
+"Members are all in the same class.",
+"Members prepare for exams together.",
+"The club gives members topics to talk about."
 ],
-"e": "الفقرة 1: «students who make friends early are happier and get better grades»."
-},
-{
-"q": "Why is it easy to start a conversation in a club?",
-"o": [
-"People in the club are interested in the same things.",
-"Clubs are always quiet.",
-"Teachers help students talk.",
-"People in clubs are never shy."
-],
-"e": "الفقرة 2: «you meet people who are interested in the same things as you, so it is easy to start a conversation»."
+"e": "الفقرة 2: «Because members already share a hobby, conversations start naturally» ← لأن الأعضاء عندهم نفس الهواية."
 },
 {
 "q": "Which club does the writer NOT mention?",
 "o": [
-"cooking",
-"sports",
 "art",
+"sports",
+"volunteering",
 "photography"
 ],
-"e": "الفقرة 2 ذكرت «sports, art, photography»، والطبخ (cooking) ما انذكر."
+"e": "الفقرة 2 ذكرت «clubs for sports, volunteering, photography» — نادي الفن (art) ما انذكر."
 },
 {
-"q": "What does the underlined word \"lonely\" in paragraph 1 mean?",
+"q": "What does the underlined word \"gradually\" in paragraph 2 mean?",
 "o": [
-"sad because you are alone",
-"happy with many friends",
-"very tired",
-"very busy"
-],
-"e": "lonely = تحس إنك وحيد وحزين لأن ما عندك أحد. والجملة عن طلاب تركوا أصحابهم."
-},
-{
-"q": "What does the underlined word \"them\" in paragraph 3 refer to?",
-"o": [
-"shy students",
-"new people",
-"clubs",
-"classmates"
-],
-"e": "«Some students are shy, and talking to new people is hard for them» ← them = الطلاب الخجولين."
-},
-{
-"q": "What does the underlined word \"gradually\" in paragraph 3 mean?",
-"o": [
-"slowly, step by step",
+"slowly, over a period of time",
 "suddenly",
-"never",
-"quickly"
+"rarely",
+"without any effort"
 ],
-"e": "«can gradually become real friendships» = شوي شوي ← slowly, step by step."
+"e": "«they gradually get to know each other» = يتعرفون على بعض شوي شوي مع الوقت ← slowly, over a period of time."
+},
+{
+"q": "What does the underlined word \"encourage\" in paragraph 3 mean?",
+"o": [
+"advise and support",
+"stop and prevent",
+"force and order",
+"blame and punish"
+],
+"e": "«Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise and give confidence to."
 },
 {
 "q": "What small step does the writer suggest for shy students?",
 "o": [
-"Saying hello to the person next to them in class",
-"Joining three clubs at the same time",
-"Moving to a new city",
-"Talking to the professor every day"
+"Arriving early and saying hello to the person next to them",
+"Joining many clubs in the first week",
+"Waiting for a big chance to talk",
+"Asking the teacher a question in every class"
 ],
-"e": "الفقرة 3: «they can say hello to the person sitting next to them in class»."
+"e": "الفقرة 3: «They can arrive at class a few minutes early and say hello to the person sitting next to them»."
 },
 {
-"q": "The writer says that real friendships ______.",
+"q": "What does the underlined word \"he\" in paragraph 3 refer to?",
 "o": [
-"need time and patience",
-"happen in one day",
-"start only in clubs",
-"are not important"
+"the student next to Faisal",
+"Faisal, the second-year student",
+"an expert on shy students",
+"a teacher in Faisal's class"
 ],
-"e": "الفقرة 4: «Real friendships don't happen in one day… be patient»."
+"e": "فيصل قال: «Then I started asking the student next to me about our assignments. Now he is my closest friend» ← he = الطالب اللي كان جنبه."
+},
+{
+"q": "The writer gives the example of Faisal to show that ______.",
+"o": [
+"small steps can turn into real friendships",
+"shy students should change universities",
+"study groups are better than clubs",
+"second-year students have more friends"
+],
+"e": "الفقرة 3: بعد ما ذكر الخطوات الصغيرة قال «Faisal, a second-year student, says that this worked for him» ← بدأ بسؤال بسيط وصار صاحبه الأقرب."
+},
+{
+"q": "According to paragraph 4, what should students do when a friendship does not grow quickly?",
+"o": [
+"Be patient and keep trying.",
+"Look for new friends immediately.",
+"Join a different club.",
+"Talk to their families about it."
+],
+"e": "الفقرة 4: «this is not a reason to give up» و«some patience can turn a group of strangers into friends for life» ← يصبرون وما يستسلمون."
 },
 {
 "q": "What is the best title for the passage?",
 "o": [
-"How to make friends at university",
-"Why university is difficult",
+"Making friends in your first year at university",
+"Why shy students leave university",
 "The best clubs at university",
-"How to get better grades"
+"How to study for exams in groups"
 ],
-"e": "القطعة كلها عن طرق تكوين صداقات في الجامعة."
+"e": "القطعة كلها عن طرق تكوين صداقات في أول سنة بالجامعة (الأندية، مجموعات المذاكرة، خطوات صغيرة للخجولين، الصبر)."
 }
 ]
 },
@@ -451,111 +451,111 @@ window.READING = [
 "n": 5,
 "title": "Collecting Things",
 "text": [
-"1. Many people around the world have a hobby of collecting things. Some people collect stamps or coins. Others collect toys, shoes, or even old bottles. Collecting is one of the most popular hobbies because anyone can do _it_, at any age.",
-"2. Why do people collect things? For some people, collecting is relaxing. Looking for new items and organizing their collection helps them forget about stress. For others, collecting is a way to learn. A person who collects coins, for example, learns a lot about the history of different countries. Collecting can also help people make friends, because collectors often meet at clubs and _events_ to buy, sell, and share their items.",
-"3. Some collections are very unusual. One man in England has more than 8,000 rubber ducks. A woman in the United States collects keys, and she has over 3,000 of them. Some collections can also be very valuable. Old coins, rare stamps, and famous paintings can be worth thousands of dollars.",
-"4. However, collecting can become a problem if people spend too much money on it. Experts say collectors should _set_ a budget and follow it. That way, their hobby stays fun and doesn't become a source of stress."
+"1. Collecting is one of the oldest and most common hobbies in the world. People collect stamps, coins, old cameras, football shirts, and even pens from hotels they have stayed in. What makes this hobby so popular is that almost anyone can start _it_. You do not need special skills or expensive equipment, and you can begin at any age with only a few items.",
+"2. People collect things for different reasons. For some, the hobby is a way to relax. Searching for a new item and organising a collection can help them forget the pressures of work or study. For others, collecting is a way to learn. A person who collects coins, for example, often reads about the history of the countries that produced them. Collecting can also be social. Collectors meet at clubs, markets and online groups, where they _exchange_ items and share advice with people who have the same interest.",
+"3. Some collections become surprisingly valuable. A stamp that cost very little when it was printed may be worth a great deal today if only a few copies still exist. However, most experts say that people should not start collecting only to make money. The value of an item can rise or fall, and it is rarely possible to predict which objects will become popular in the future. In their opinion, the real reward of collecting is the enjoyment it brings.",
+"4. Although collecting has many benefits, it can also cause problems. Some collectors spend more money than they can afford, while others keep so many objects that their homes become full and untidy. To avoid this, experts suggest setting a monthly budget and deciding on a clear theme, such as coins from one region or books by one writer. This keeps the collection _manageable_ and the hobby enjoyable."
 ],
 "qs": [
 {
-"q": "Why is collecting one of the most popular hobbies?",
+"q": "Why is collecting such a popular hobby, according to the writer?",
 "o": [
-"Anyone can do it, at any age.",
-"It is always very cheap.",
-"It makes people rich.",
-"It is easy to sell items."
+"Almost anyone can start it.",
+"It always makes people rich.",
+"It needs special skills.",
+"It is a very new hobby."
 ],
-"e": "الفقرة 1: «anyone can do it, at any age»."
+"e": "الفقرة 1: «What makes this hobby so popular is that almost anyone can start it»."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 1 refer to?",
 "o": [
-"collecting",
-"the world",
-"a bottle",
-"a toy"
+"the hobby of collecting",
+"expensive equipment",
+"a hotel",
+"a football shirt"
 ],
-"e": "«Collecting is one of the most popular hobbies because anyone can do it» ← it = collecting."
+"e": "«What makes this hobby so popular is that almost anyone can start it» ← it = هواية الجمع."
 },
 {
-"q": "According to the passage, how can collecting coins help people?",
+"q": "Which item does the writer NOT mention?",
 "o": [
-"They learn about the history of different countries.",
-"They become famous.",
-"They forget about their friends.",
-"They travel to England."
-],
-"e": "الفقرة 2: «A person who collects coins… learns a lot about the history of different countries»."
-},
-{
-"q": "Collectors often meet at clubs and events to ______.",
-"o": [
-"buy, sell, and share their items",
-"learn how to cook",
-"play sports together",
-"write about history"
-],
-"e": "الفقرة 2: «collectors often meet at clubs and events to buy, sell, and share their items»."
-},
-{
-"q": "What does the underlined word \"events\" in paragraph 2 mean?",
-"o": [
-"planned activities where people meet",
-"old coins",
-"small shops",
-"problems"
-],
-"e": "events = مناسبات وفعاليات منظّمة يجتمع فيها الناس."
-},
-{
-"q": "How many keys does the woman in the United States have?",
-"o": [
-"Over 3,000",
-"More than 8,000",
-"About 300",
-"Exactly 1,000"
-],
-"e": "الفقرة 3: «she has over 3,000 of them». أما 8,000 فهي البطّات حق الرجل."
-},
-{
-"q": "What does the man in England collect?",
-"o": [
-"rubber ducks",
-"keys",
+"toys",
 "stamps",
-"paintings"
+"football shirts",
+"old cameras"
 ],
-"e": "الفقرة 3: «One man in England has more than 8,000 rubber ducks»."
+"e": "الفقرة 1 ذكرت «stamps, coins, old cameras, football shirts, and even pens» — الألعاب (toys) ما انذكرت."
 },
 {
-"q": "Collecting can become a problem when people ______.",
+"q": "According to the writer, a person who collects coins often ______.",
 "o": [
-"spend too much money on it",
-"meet other collectors",
-"learn about history",
-"organize their collection"
+"reads about the history of the countries that produced them",
+"travels to many different countries",
+"makes a lot of money from them",
+"prints new coins at home"
 ],
-"e": "الفقرة 4: «collecting can become a problem if people spend too much money on it»."
+"e": "الفقرة 2: «A person who collects coins, for example, often reads about the history of the countries that produced them»."
 },
 {
-"q": "What does the underlined word \"set\" in paragraph 4 mean?",
+"q": "What does the underlined word \"exchange\" in paragraph 2 mean?",
 "o": [
-"decide on",
-"break",
-"forget",
-"spend"
+"swap",
+"throw away",
+"repair",
+"hide"
 ],
-"e": "«set a budget» = يحدد ميزانية ← decide on."
+"e": "«they exchange items» = يتبادلون القطع، يعطي قطعة وياخذ بدالها ← give one thing and get another thing back."
+},
+{
+"q": "The writer gives the example of a stamp to show that ______.",
+"o": [
+"some collections can become very valuable",
+"collectors should only buy new stamps",
+"most collectors want to make money",
+"old stamps are easy to find"
+],
+"e": "الفقرة 3 تبدأ: «Some collections become surprisingly valuable» وبعدها مثال الطابع اللي صار يسوى كثير."
+},
+{
+"q": "Why do experts say people should not start collecting only to make money?",
+"o": [
+"The value of an item can rise or fall.",
+"Collectors cannot sell their items.",
+"Most collections have no value.",
+"Collecting costs too much at the start."
+],
+"e": "الفقرة 3: «The value of an item can rise or fall, and it is rarely possible to predict which objects will become popular»."
+},
+{
+"q": "Which problem of collecting does the writer mention?",
+"o": [
+"Homes can become full and untidy.",
+"Collectors lose their friends.",
+"Collectors stop working or studying.",
+"Collected items break easily."
+],
+"e": "الفقرة 4: «others keep so many objects that their homes become full and untidy»."
+},
+{
+"q": "What does the underlined word \"manageable\" in paragraph 4 mean?",
+"o": [
+"easy to control",
+"very expensive",
+"very large",
+"boring"
+],
+"e": "الميزانية والموضوع الواضح يخلون المجموعة «manageable» = سهل التحكم فيها وما تكبر زيادة ← easy to control."
 },
 {
 "q": "What is the main idea of the passage?",
 "o": [
-"Collecting is a popular hobby with many benefits, but people should be careful with money.",
-"Collecting is a waste of money.",
-"Only rich people can collect things.",
-"Rubber ducks are the most valuable items to collect."
+"Collecting is an enjoyable hobby with many benefits, but collectors should plan carefully.",
+"Collecting is the best way to make a lot of money quickly.",
+"Only people with special skills and a lot of money can collect things.",
+"Stamps are the most valuable items, so everyone should collect them."
 ],
-"e": "القطعة تذكر فوائد الجمع، وفي الأخير تنبّه على صرف الفلوس."
+"e": "القطعة تذكر فوائد الجمع (الاسترخاء، التعلم، الناس)، وبعدين تنبّه على المشاكل وتنصح بميزانية وموضوع واضح."
 }
 ]
 },
@@ -563,111 +563,111 @@ window.READING = [
 "n": 6,
 "title": "Learning a Foreign Language",
 "text": [
-"1. Today, more and more people want to learn a foreign language. Some learn for their jobs, some for travel, and some just for fun. Learning a new language is not easy, but it has many _benefits_.",
-"2. First, speaking another language can help you get a better job. Many companies want employees who can communicate with customers from other countries. Second, learning a language is good for your brain. Studies show that people who speak two languages have better memories and can solve problems more easily. Third, a new language helps you understand other cultures. When you travel, you can talk to local people, read signs, and order food without help.",
-"3. So, what is the best way to learn? Experts say that practice is the most important thing. You should try to use the language every day, even for just fifteen minutes. You can watch movies, listen to songs, or download apps that make learning fun. It is also helpful to find a language partner, someone who speaks the language well and wants to learn your language. You can meet online and help each other.",
-"4. Finally, don't be afraid of making mistakes. Everyone makes mistakes when they learn something new. Mistakes are a normal part of learning, and _they_ help you improve."
+"1. In today's connected world, more and more people are learning a foreign language. Some learn for work, others for travel or study abroad, and some simply enjoy the challenge. Although learning a language takes time and effort, most people who do it say that the benefits are worth it.",
+"2. The most obvious advantage is a practical one. Many companies prefer to hire employees who can communicate with customers and partners in other countries, so a second language can open the door to better jobs. A new language also helps people understand other cultures. When travellers can read signs, order food and chat with local people, their trip becomes much richer. In addition, some research suggests that learning a language can improve concentration and problem-solving skills, even for older adults.",
+"3. So what is the best way to learn? Most teachers agree that regular practice is more _effective_ than long but rare study sessions. Spending twenty minutes a day with the language is usually better than studying for three hours once a week. Learners can watch films with subtitles, listen to podcasts on the way to university, or use apps that turn lessons into games. Another popular method is finding a language partner: someone who speaks the language well and wants to learn yours. _They_ can meet online and correct each other's mistakes.",
+"4. Many learners, however, are afraid of making mistakes, so they avoid speaking. This is one of the biggest _obstacles_ to progress. Mistakes are a normal part of learning, and people who speak often, even with errors, usually improve faster than those who wait until they feel perfect. As one teacher puts it, \"Nobody learns to swim without getting wet.\" Learners should therefore be brave and use every opportunity to practise the language they are studying."
 ],
 "qs": [
 {
-"q": "What does the underlined word \"benefits\" in paragraph 1 mean?",
+"q": "According to the writer, most people who learn a foreign language say that ______.",
 "o": [
-"good results",
-"problems",
-"costs",
-"mistakes"
+"the benefits are worth the effort",
+"it is quick and easy",
+"it is only useful for travel",
+"they learn it only for work"
 ],
-"e": "benefits = فوائد ← good results."
+"e": "الفقرة 1: «Although learning a language takes time and effort, most people who do it say that the benefits are worth it»."
 },
 {
-"q": "Why do many companies want employees who speak another language?",
+"q": "Why can a second language help people get better jobs?",
 "o": [
-"To communicate with customers from other countries",
-"To teach other employees",
-"To travel less",
-"To write books"
+"Many companies prefer employees who can communicate with people in other countries.",
+"Many companies now pay their employees to study abroad for a year.",
+"Employees must teach foreign languages to their customers at work.",
+"Most good jobs are now in other countries, not in our own country."
 ],
-"e": "الفقرة 2: «companies want employees who can communicate with customers from other countries»."
+"e": "الفقرة 2: «Many companies prefer to hire employees who can communicate with customers and partners in other countries»."
 },
 {
-"q": "According to studies, people who speak two languages ______.",
+"q": "Which benefit of learning a language does the writer NOT mention?",
 "o": [
-"have better memories",
-"are always rich",
-"don't need to study",
-"forget things easily"
+"saving money when travelling",
+"understanding other cultures",
+"getting better jobs",
+"improving concentration"
 ],
-"e": "الفقرة 2: «people who speak two languages have better memories»."
+"e": "الفقرة 2 ذكرت الوظائف الأفضل وفهم الثقافات و«improve concentration»، أما توفير الفلوس في السفر ما انذكر."
 },
 {
-"q": "How does a new language help you when you travel?",
+"q": "According to the writer, which way of studying is usually better?",
 "o": [
-"You can talk to local people and read signs.",
-"You can travel for free.",
-"You don't need a passport.",
-"You can find a job in the airport."
+"twenty minutes every day",
+"three hours once a week",
+"one long session every month",
+"studying only before exams"
 ],
-"e": "الفقرة 2: «you can talk to local people, read signs, and order food without help»."
+"e": "الفقرة 3: «Spending twenty minutes a day with the language is usually better than studying for three hours once a week»."
 },
 {
-"q": "Experts say that the most important thing in learning a language is ______.",
+"q": "What does the underlined word \"effective\" in paragraph 3 mean?",
 "o": [
-"practice",
-"money",
-"talent",
-"age"
+"giving good results",
+"expensive",
+"boring",
+"difficult"
 ],
-"e": "الفقرة 3: «Experts say that practice is the most important thing»."
+"e": "«regular practice is more effective» = التدريب المنتظم يجيب نتيجة أفضل ← giving good results."
 },
 {
-"q": "How long should you use the language every day, according to the writer?",
+"q": "What does the underlined word \"They\" in paragraph 3 refer to?",
 "o": [
-"Even just fifteen minutes",
-"At least three hours",
-"Exactly one hour",
-"Fifty minutes"
+"the learner and the partner",
+"the teachers who give lessons",
+"the apps that turn lessons into games",
+"the podcasts on the way to university"
 ],
-"e": "الفقرة 3: «use the language every day, even for just fifteen minutes»."
+"e": "قبلها: «finding a language partner: someone who speaks the language well and wants to learn yours. They can meet online» ← They = المتعلم وشريكه في اللغة."
 },
 {
-"q": "What is a language partner?",
+"q": "Why do many learners avoid speaking?",
 "o": [
-"Someone who speaks the language well and wants to learn your language",
-"A teacher who works at a school",
-"A person who travels with you",
-"An app that teaches languages"
+"They are afraid of making mistakes.",
+"They do not have a language partner.",
+"They prefer to use apps.",
+"Their teachers do not allow it."
 ],
-"e": "الفقرة 3: «someone who speaks the language well and wants to learn your language»."
+"e": "الفقرة 4: «Many learners, however, are afraid of making mistakes, so they avoid speaking»."
 },
 {
-"q": "What does the underlined word \"they\" in paragraph 4 refer to?",
+"q": "What does the underlined word \"obstacles\" in paragraph 4 mean?",
 "o": [
-"mistakes",
-"people",
-"languages",
-"partners"
+"problems that stop progress",
+"useful methods",
+"small mistakes",
+"good chances"
 ],
-"e": "«Mistakes are a normal part of learning, and they help you improve» ← they = الأخطاء."
+"e": "الخوف من الغلط وعدم الكلام «one of the biggest obstacles to progress» = من أكبر العوائق اللي توقف التقدم ← problems that stop progress."
 },
 {
-"q": "Which way of learning does the writer NOT mention?",
+"q": "The writer uses the words \"Nobody learns to swim without getting wet\" to show that ______.",
 "o": [
-"reading newspapers",
-"watching movies",
-"listening to songs",
-"using apps"
+"you cannot learn a language without making mistakes",
+"swimming is a good hobby for language learners",
+"learners should study near water",
+"mistakes should always be avoided"
 ],
-"e": "الفقرة 3 ذكرت movies و songs و apps، والجرايد (newspapers) ما انذكرت."
+"e": "الفقرة 4: الجملة جات بعد «Mistakes are a normal part of learning» ← مثل ما ما تتعلم السباحة بدون ما تتبلل، ما تتعلم لغة بدون أغلاط."
 },
 {
-"q": "What is the writer's advice about mistakes?",
+"q": "What is the best title for the passage?",
 "o": [
-"Don't be afraid of them; they are a normal part of learning.",
-"Try never to make them.",
-"Stop learning if you make many mistakes.",
-"Only make mistakes with your teacher."
+"Why and how to learn a foreign language",
+"The best apps for learning languages",
+"Finding a job in another country",
+"Learning to swim as an adult"
 ],
-"e": "الفقرة 4: «don't be afraid of making mistakes… Mistakes are a normal part of learning»."
+"e": "القطعة تذكر فوائد تعلم اللغة (الفقرة 2) وطريقة تعلمها (الفقرة 3 و4)."
 }
 ]
 },
@@ -675,111 +675,111 @@ window.READING = [
 "n": 7,
 "title": "Online Classes or Classrooms?",
 "text": [
-"1. In the past, students had to go to a classroom to learn. Today, many students take classes online. They can watch lectures, do tests, and talk to their teachers from home. Some people think online classes are the future of education, while others believe traditional classrooms are still better.",
-"2. Online classes have many advantages. Students can study at any time and in any place. This is _convenient_ for people who work or have children. Online classes are also often cheaper, because students don't need to pay for transportation or housing near the campus. In addition, students who are shy may feel more comfortable asking questions online.",
-"3. However, online classes also have disadvantages. Some students find it hard to stay focused at home. There are many distractions, like their phones, the TV, or family members. Students also miss the chance to meet classmates face to face. For many people, making friends is an important part of university life.",
-"4. So, which is better? The answer _depends on_ the student. Students who are organized and can manage their time well often do well online. Students who need more support may prefer a classroom. Many universities now offer both, so students can choose what works best for _them_."
+"1. Not long ago, studying at university meant sitting in a lecture hall at a fixed time. Today, a growing number of students take some or all of their courses online. They watch recorded lectures, join live discussions and submit assignments from home. This change has started a debate: some people believe online learning is the future of education, while others think traditional classrooms are still the better choice.",
+"2. Supporters of online classes point to their flexibility. Students can study at any time and in any place, which is especially _convenient_ for people who have a job or children to look after. Online courses can also be cheaper, because students save money on transport and do not need to rent a room near the campus. Some shy students say they feel more comfortable asking questions in a chat box than raising their hand in front of a large class.",
+"3. On the other hand, online learning has clear disadvantages. Studying at home requires a lot of self-discipline, and many students find it hard to stay focused when their phones, the television or family members are nearby. Technical problems, such as a weak internet connection, can also interrupt lessons. In addition, students who learn only online miss the chance to meet classmates face to face, and for many young people these friendships are one of the most valuable parts of university life.",
+"4. So which is better? The honest answer is that it _depends on_ the student. Learners who are organised and good at managing their time often do well online, while those who need more support and structure usually prefer a classroom. For this reason, many universities now offer \"blended\" courses, which combine online lessons with regular meetings on campus. This allows students to enjoy the advantages of both methods and choose what suits _them_ best."
 ],
 "qs": [
 {
-"q": "According to paragraph 1, what can students do in online classes?",
+"q": "According to paragraph 1, students who take courses online ______.",
 "o": [
-"Watch lectures, do tests, and talk to their teachers",
-"Meet their classmates face to face",
-"Live near the campus",
-"Go to the library every day"
+"submit assignments from home",
+"sit in a lecture hall at a fixed time",
+"never watch lectures",
+"meet their teachers on campus every day"
 ],
-"e": "الفقرة 1: «They can watch lectures, do tests, and talk to their teachers from home»."
+"e": "الفقرة 1: «They watch recorded lectures, join live discussions and submit assignments from home»."
+},
+{
+"q": "According to their supporters, what is the main advantage of online classes?",
+"o": [
+"flexibility",
+"friendships",
+"self-discipline",
+"a strong internet connection"
+],
+"e": "الفقرة 2: «Supporters of online classes point to their flexibility» ← المرونة."
 },
 {
 "q": "What does the underlined word \"convenient\" in paragraph 2 mean?",
 "o": [
 "easy and suitable",
 "expensive",
-"difficult",
-"boring"
+"boring",
+"dangerous"
 ],
-"e": "convenient = مريح ومناسب، لأن الطالب يدرس بأي وقت وأي مكان."
+"e": "الدراسة في أي وقت ومكان «convenient» للي عنده دوام أو أطفال = مريحة ومناسبة لظروفه ← easy and suitable."
 },
 {
-"q": "Why are online classes often cheaper?",
+"q": "Why can online courses be cheaper?",
 "o": [
-"Students don't pay for transportation or housing near the campus.",
-"Teachers work for free.",
-"Students don't need computers.",
-"The classes are shorter."
+"Students save money on transport and rent.",
+"Teachers are paid less money.",
+"Books are free for online students.",
+"Universities give online students laptops."
 ],
-"e": "الفقرة 2: «students don't need to pay for transportation or housing near the campus»."
+"e": "الفقرة 2: «students save money on transport and do not need to rent a room near the campus»."
 },
 {
-"q": "Who may feel more comfortable asking questions online?",
+"q": "Why do some shy students prefer online classes?",
 "o": [
-"Shy students",
-"Teachers",
-"Parents",
-"Organized students"
+"They feel more comfortable asking questions in a chat box.",
+"They do not need to ask any questions.",
+"Their classes are smaller.",
+"They can watch lectures with their families."
 ],
-"e": "الفقرة 2: «students who are shy may feel more comfortable asking questions online»."
+"e": "الفقرة 2: «Some shy students say they feel more comfortable asking questions in a chat box than raising their hand»."
 },
 {
-"q": "Which distraction does the writer NOT mention?",
+"q": "Which disadvantage of online learning does the writer NOT mention?",
 "o": [
-"noisy neighbours",
-"phones",
-"the TV",
-"family members"
+"the high cost of computers",
+"technical problems",
+"distractions at home",
+"fewer chances to meet classmates"
 ],
-"e": "الفقرة 3 ذكرت «their phones, the TV, or family members»، والجيران (neighbours) ما انذكروا."
-},
-{
-"q": "What do students miss in online classes?",
-"o": [
-"The chance to meet classmates face to face",
-"The chance to study at any time",
-"The chance to save money",
-"The chance to watch lectures"
-],
-"e": "الفقرة 3: «Students also miss the chance to meet classmates face to face»."
+"e": "الفقرة 3 ذكرت الملهيات (الجوال والتلفزيون والأهل)، و«Technical problems»، و«miss the chance to meet classmates» — غلاء الأجهزة ما انذكر."
 },
 {
 "q": "What do the underlined words \"depends on\" in paragraph 4 mean?",
 "o": [
-"is decided by",
-"is better than",
-"is far from",
-"is the same as"
+"changes according to",
+"is the same for",
+"is bad for",
+"has nothing to do with"
 ],
-"e": "«The answer depends on the student» = الجواب يتحدد حسب الطالب ← is decided by."
+"e": "«it depends on the student» = الجواب يختلف حسب الطالب، بعدها الكاتب وضّح مين ينفع له أونلاين ومين ينفع له الفصل ← changes according to."
 },
 {
 "q": "Which students often do well online?",
 "o": [
-"Students who are organized and manage their time well",
-"Students who need more support",
-"Students who like to meet friends",
-"Students who live near the campus"
+"organised students who manage their time well",
+"students who need more support and structure",
+"students who prefer a classroom",
+"students who live near the campus"
 ],
-"e": "الفقرة 4: «Students who are organized and can manage their time well often do well online»."
+"e": "الفقرة 4: «Learners who are organised and good at managing their time often do well online»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 4 refer to?",
 "o": [
 "students",
 "universities",
-"classes",
-"teachers"
+"blended courses",
+"regular meetings"
 ],
-"e": "«so students can choose what works best for them» ← them = الطلاب."
+"e": "«This allows students to enjoy the advantages of both methods and choose what suits them best» ← them = الطلاب."
 },
 {
 "q": "What is the main idea of the passage?",
 "o": [
 "Online classes and classrooms both have advantages and disadvantages.",
-"Online classes are always better than classrooms.",
-"Classrooms will disappear in the future.",
-"Students should never study online."
+"Online classes will soon replace all classrooms.",
+"Classrooms are always better than online classes.",
+"Shy students should only study online."
 ],
-"e": "القطعة تذكر مميزات وعيوب الدراسة أونلاين، وتقول الأفضل يعتمد على الطالب."
+"e": "الكاتب ذكر مميزات الأونلاين (الفقرة 2) وعيوبه (الفقرة 3)، وقال «it depends on the student»."
 }
 ]
 },
@@ -787,111 +787,111 @@ window.READING = [
 "n": 8,
 "title": "Fast Food and Our Health",
 "text": [
-"1. Fast food is popular all over the world. It is cheap, quick, and easy to find. Many people eat burgers, fries, and pizza several times a week. But eating too much fast food can be bad for our health.",
-"2. Most fast food has a lot of salt, sugar, and fat. These things make the food taste delicious, but they can cause serious health problems. People who eat fast food often are more likely to become _overweight_. They also have a higher risk of heart disease. In addition, fast food usually doesn't have many vitamins, so it is not very _nutritious_.",
-"3. Why do people eat so much fast food? One reason is time. Many people are busy with work and school, and they don't have time to cook. Another reason is cost. In some places, a fast food meal is cheaper than a healthy meal. Advertising is also a reason. Fast food companies spend a lot of money on ads, especially ads for children.",
-"4. The good news is that small changes can help. You don't need to stop eating fast food completely. Instead, try to eat _it_ only once a week. When you do eat fast food, choose healthier options, like grilled chicken instead of fried chicken, and water instead of soda. You can also prepare simple meals at home. They are often cheaper and healthier."
+"1. Fast food is part of daily life in many countries, including Saudi Arabia. It is quick, cheap and easy to find, and delivery apps now bring burgers, pizza and fried chicken to our doors in minutes. For busy students and workers, this is very attractive. However, doctors warn that eating fast food too often can seriously _affect_ our health.",
+"2. The main problem is what fast food contains. Most meals are high in salt, sugar and fat, which make the food taste good but can cause problems if we eat them regularly. People who eat fast food several times a week are more likely to become overweight and to develop heart disease or diabetes later in life. In addition, these meals usually contain few vitamins and little fibre, so they fill the stomach without giving the body what it really needs. Large soft drinks, which are often included in meal deals, add even more sugar.",
+"3. If fast food is so unhealthy, why do people eat so much of it? One reason is time: many people finish work or classes late and feel too tired to cook. Another reason is price, because a fast food meal is sometimes cheaper than a healthy one. Advertising also plays an important role. Fast food companies spend huge amounts of money on adverts, and many of _them_ are designed to attract children and teenagers.",
+"4. The good news is that we do not have to give up fast food completely. Experts suggest treating it as an _occasional_ meal rather than a daily habit. When we do order, we can choose grilled chicken instead of fried, a salad instead of fries, and water instead of soda. Cooking simple meals at home, even two or three times a week, is another good idea. Home-made food is usually healthier, and it is often cheaper too."
 ],
 "qs": [
 {
-"q": "According to paragraph 1, why is fast food popular?",
+"q": "According to paragraph 1, delivery apps ______.",
 "o": [
-"It is cheap, quick, and easy to find.",
-"It is very healthy.",
-"It has many vitamins.",
-"It is only sold to children."
+"bring fast food to people's doors in minutes",
+"make fast food healthier",
+"are used only by students",
+"are more expensive than restaurants"
 ],
-"e": "الفقرة 1: «It is cheap, quick, and easy to find»."
+"e": "الفقرة 1: «delivery apps now bring burgers, pizza and fried chicken to our doors in minutes»."
 },
 {
-"q": "What makes fast food taste delicious?",
+"q": "What does the underlined word \"affect\" in paragraph 1 mean?",
 "o": [
-"salt, sugar, and fat",
-"fresh vegetables",
-"vitamins",
-"water"
+"have an effect on",
+"protect",
+"check",
+"forget"
 ],
-"e": "الفقرة 2: «a lot of salt, sugar, and fat. These things make the food taste delicious»."
+"e": "«can seriously affect our health» = يأثّر على صحتنا تأثير كبير ← have an effect on."
 },
 {
-"q": "What does the underlined word \"overweight\" in paragraph 2 mean?",
+"q": "According to the writer, salt, sugar and fat ______.",
 "o": [
-"heavier than is healthy",
-"very thin",
-"very tall",
-"very strong"
+"make the food taste good",
+"give the body the vitamins it needs",
+"are found only in soft drinks",
+"help people lose weight"
 ],
-"e": "overweight = وزنه زايد عن الطبيعي ← heavier than is healthy."
+"e": "الفقرة 2: «salt, sugar and fat, which make the food taste good but can cause problems»."
 },
 {
-"q": "What does the underlined word \"nutritious\" in paragraph 2 mean?",
+"q": "Which health problem does the writer NOT mention?",
 "o": [
-"good for your body",
-"delicious",
-"expensive",
-"fast"
+"poor eyesight",
+"heart disease",
+"diabetes",
+"becoming overweight"
 ],
-"e": "nutritious = مغذّي ومفيد للجسم. والجملة تقول إن الأكل السريع ما فيه فيتامينات كثيرة."
+"e": "الفقرة 2 ذكرت «become overweight and to develop heart disease or diabetes» — ضعف النظر ما انذكر."
 },
 {
-"q": "Which reason for eating fast food does the writer NOT mention?",
+"q": "Why does fast food fill the stomach without giving the body what it needs?",
 "o": [
-"People don't know how to cook.",
-"People don't have time to cook.",
-"Fast food can be cheaper.",
-"Fast food companies have many ads."
+"It contains few vitamins and little fibre.",
+"It is eaten too quickly.",
+"It contains too much water.",
+"It is cooked at home."
 ],
-"e": "الفقرة 3 ذكرت الوقت والسعر والإعلانات، وما ذكرت إن الناس ما يعرفون يطبخون."
+"e": "الفقرة 2: «these meals usually contain few vitamins and little fibre, so they fill the stomach without giving the body what it really needs»."
 },
 {
-"q": "Fast food companies spend a lot of money on ads, especially for ______.",
+"q": "How many reasons does the writer give in paragraph 3 for why people eat so much fast food?",
 "o": [
-"children",
-"doctors",
-"old people",
-"students"
+"three",
+"two",
+"four",
+"five"
 ],
-"e": "الفقرة 3: «Fast food companies spend a lot of money on ads, especially ads for children»."
+"e": "الفقرة 3 فيها ثلاث أسباب: الوقت «One reason is time»، والسعر «Another reason is price»، والإعلانات «Advertising also plays an important role»."
 },
 {
-"q": "How often does the writer suggest eating fast food?",
+"q": "What does the underlined word \"them\" in paragraph 3 refer to?",
 "o": [
-"Only once a week",
-"Every day",
-"Never",
-"Three times a week"
+"adverts",
+"fast food companies",
+"children and teenagers",
+"healthy meals"
 ],
-"e": "الفقرة 4: «try to eat it only once a week»."
+"e": "«Fast food companies spend huge amounts of money on adverts, and many of them are designed to attract children» ← them = الإعلانات."
 },
 {
-"q": "What does the underlined word \"it\" in paragraph 4 refer to?",
+"q": "What does the underlined word \"occasional\" in paragraph 4 mean?",
 "o": [
-"fast food",
-"the good news",
-"a week",
-"soda"
+"happening sometimes, not often",
+"happening every day",
+"very large",
+"very cheap"
 ],
-"e": "«You don't need to stop eating fast food completely. Instead, try to eat it» ← it = fast food."
+"e": "«an occasional meal rather than a daily habit» = وجبة بين فترة وفترة مو كل يوم ← happening sometimes, not often."
 },
 {
-"q": "Which is a healthier option, according to the writer?",
+"q": "According to paragraph 4, home-made food is usually ______.",
 "o": [
-"Grilled chicken instead of fried chicken",
-"Soda instead of water",
-"Fries instead of salad",
-"Pizza instead of burgers"
+"healthier and often cheaper",
+"healthier but more expensive",
+"cheaper but less healthy",
+"quicker to make than fast food"
 ],
-"e": "الفقرة 4: «grilled chicken instead of fried chicken, and water instead of soda»."
+"e": "الفقرة 4: «Home-made food is usually healthier, and it is often cheaper too»."
 },
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Fast food: problems and simple solutions",
-"How to make a burger at home",
+"Fast food: why we eat it and how to eat less",
 "The history of fast food",
-"Why children love ads"
+"Delivery apps in Saudi Arabia",
+"How to cook a healthy meal"
 ],
-"e": "القطعة تشرح مشاكل الأكل السريع، وفي الأخير حلول بسيطة."
+"e": "القطعة عن أضرار الوجبات السريعة، وليش ناكلها كثير، وكيف نقلل منها."
 }
 ]
 },
@@ -899,111 +899,111 @@ window.READING = [
 "n": 9,
 "title": "Organic Food",
 "text": [
-"1. In many supermarkets today, you can find a special section for organic food. Organic fruit, vegetables, meat, and dairy products are grown or produced without chemicals. Farmers who grow organic food don't use chemical sprays to kill insects, and their animals don't get unnecessary medicines.",
-"2. Many people choose organic food because they think it is healthier. Some studies show that organic fruit and vegetables have slightly more vitamins. Organic farming is also better for the environment. Without chemicals, the soil, the water, and the animals that live near the farms stay cleaner and _safer_.",
-"3. However, organic food has one big problem: it is expensive. Organic food can cost 20 to 100 percent more than normal food. This is because organic farming needs more workers and more time. Also, organic farms usually produce less food than normal farms, so the _supply_ is smaller.",
-"4. Is organic food worth the extra money? Experts have different opinions. Some say that eating a lot of fruit and vegetables is more important than choosing organic ones. In other words, eating normal vegetables is much better than eating no vegetables at all. If you want to buy organic food but have a small budget, experts suggest buying organic only for the fruit and vegetables that you eat most often."
+"1. Walk into almost any large supermarket today and you will probably find a section for organic food. Organic fruit, vegetables, meat and dairy products are produced without most artificial chemicals. Organic farmers do not use chemical sprays to kill insects or weeds, and their animals are not given medicines unless they are really ill. Instead, farmers use natural methods, such as moving crops to different fields each year to keep the soil healthy.",
+"2. Many shoppers choose organic products because they believe these products are healthier. Some studies suggest that organic fruit and vegetables contain slightly more of certain nutrients, although scientists still disagree about how important this difference is. Many people also buy organic food because it is better for the environment. Since fewer chemicals are used, the soil, rivers and wild animals near organic farms are less likely to be _harmed_.",
+"3. However, organic food has one major disadvantage: its price. Organic products can cost from 20 to 100 percent more than ordinary ones. There are several reasons for this. Organic farming needs more workers, because jobs like removing weeds are often done by hand. Organic farms also usually produce smaller harvests, so the _supply_ is lower, and when something is limited, its price tends to rise.",
+"4. So, is organic food worth the extra money? Experts have different opinions, but most of them agree on one point: eating plenty of fruit and vegetables matters more than whether _they_ are organic or not. In other words, a person who eats ordinary vegetables every day is doing much better than someone who rarely eats vegetables at all. For families with a limited budget, some experts recommend a simple approach: buy organic versions only of the foods you eat most often, and choose ordinary products for everything else."
 ],
 "qs": [
 {
-"q": "What is organic food?",
+"q": "According to paragraph 1, organic farmers ______.",
 "o": [
-"Food that is grown or produced without chemicals",
-"Food that is sold only in small shops",
-"Food that has a lot of sugar",
-"Food that comes from other countries"
+"do not use chemical sprays to kill insects",
+"never give their animals any medicine",
+"grow crops in the same field every year",
+"use more chemicals than other farmers"
 ],
-"e": "الفقرة 1: «grown or produced without chemicals»."
+"e": "الفقرة 1: «Organic farmers do not use chemical sprays to kill insects or weeds». والحيوانات تاخذ دواء إذا مرضت فعلاً «unless they are really ill»."
 },
 {
-"q": "Organic farmers don't use chemical sprays to ______.",
+"q": "Why do organic farmers move crops to different fields each year?",
 "o": [
-"kill insects",
-"grow bigger fruit",
-"feed their animals",
-"clean the water"
+"to keep the soil healthy",
+"to kill insects",
+"to grow bigger harvests",
+"to save money on workers"
 ],
-"e": "الفقرة 1: «don't use chemical sprays to kill insects»."
+"e": "الفقرة 1: «moving crops to different fields each year to keep the soil healthy»."
 },
 {
-"q": "According to some studies, organic fruit and vegetables have ______.",
+"q": "What do scientists still disagree about?",
 "o": [
-"slightly more vitamins",
-"much more sugar",
-"fewer vitamins",
-"a lot of chemicals"
+"how important the difference in nutrients is",
+"whether organic food is more expensive",
+"whether organic farms use chemical sprays",
+"how many supermarkets sell organic food"
 ],
-"e": "الفقرة 2: «organic fruit and vegetables have slightly more vitamins»."
+"e": "الفقرة 2: «scientists still disagree about how important this difference is» ← الفرق في العناصر الغذائية."
 },
 {
-"q": "Why is organic farming better for the environment?",
+"q": "What does the underlined word \"harmed\" in paragraph 2 mean?",
 "o": [
-"The soil, water, and animals stay cleaner and safer.",
-"It uses more chemicals.",
-"It produces more food.",
-"It needs fewer workers."
+"hurt or damaged",
+"helped",
+"cleaned",
+"moved"
 ],
-"e": "الفقرة 2: «the soil, the water, and the animals… stay cleaner and safer»."
+"e": "«are less likely to be harmed» = احتمال إنها تتضرر أقل ← hurt or damaged."
 },
 {
-"q": "What does the underlined word \"safer\" in paragraph 2 mean?",
+"q": "According to the writer, organic products can cost ______ more than ordinary ones.",
 "o": [
-"more protected from danger",
-"more expensive",
-"more crowded",
-"more dangerous"
+"20 to 100 percent",
+"exactly 20 percent",
+"100 to 200 percent",
+"less than 10 percent"
 ],
-"e": "safer = أكثر أماناً، يعني محمية من الخطر."
+"e": "الفقرة 3: «Organic products can cost from 20 to 100 percent more than ordinary ones»."
 },
 {
-"q": "How much more can organic food cost than normal food?",
+"q": "Why does organic farming need more workers?",
 "o": [
-"20 to 100 percent more",
-"2 to 10 percent more",
-"200 percent more",
-"The same price"
+"Jobs like removing weeds are often done by hand.",
+"Organic farms are much bigger.",
+"The animals need more medicine.",
+"Workers must sell the food in supermarkets."
 ],
-"e": "الفقرة 3: «Organic food can cost 20 to 100 percent more»."
-},
-{
-"q": "Which is a reason why organic food is expensive?",
-"o": [
-"It needs more workers and more time.",
-"It is always imported.",
-"It has more chemicals.",
-"Supermarkets don't like it."
-],
-"e": "الفقرة 3: «organic farming needs more workers and more time»."
+"e": "الفقرة 3: «Organic farming needs more workers, because jobs like removing weeds are often done by hand»."
 },
 {
 "q": "What does the underlined word \"supply\" in paragraph 3 mean?",
 "o": [
-"the amount that is available",
-"the price",
-"the taste",
-"the farmers"
+"the amount of something that is available",
+"the price of something",
+"the number of people who want to buy something",
+"the taste of something"
 ],
-"e": "supply = الكمية المتوفرة. والمزارع العضوية تنتج أقل، فالكمية أقل."
+"e": "المزارع تنتج محصول أقل «so the supply is lower» = الكمية المتوفرة أقل ← the amount of something that is available."
 },
 {
-"q": "According to some experts, what is more important than choosing organic food?",
+"q": "What does the underlined word \"they\" in paragraph 4 refer to?",
 "o": [
-"Eating a lot of fruit and vegetables",
-"Buying food from big supermarkets",
-"Eating only meat and dairy",
-"Spending more money on food"
+"fruit and vegetables",
+"experts",
+"families",
+"opinions"
 ],
-"e": "الفقرة 4: «eating a lot of fruit and vegetables is more important than choosing organic ones»."
+"e": "«eating plenty of fruit and vegetables matters more than whether they are organic or not» ← they = الفواكه والخضار."
 },
 {
-"q": "What do experts suggest for people with a small budget?",
+"q": "What do some experts recommend for families with a limited budget?",
 "o": [
-"Buy organic only for the fruit and vegetables they eat most often.",
-"Never buy organic food.",
-"Buy only organic meat.",
-"Stop eating vegetables."
+"Buying organic versions only of the foods they eat most often",
+"Buying only organic food, whatever the price",
+"Growing all their own vegetables at home",
+"Eating fewer vegetables to save money"
 ],
-"e": "الفقرة 4: «buying organic only for the fruit and vegetables that you eat most often»."
+"e": "الفقرة 4: «buy organic versions only of the foods you eat most often, and choose ordinary products for everything else»."
+},
+{
+"q": "What is the main idea of the passage?",
+"o": [
+"Organic food has some benefits, but it is expensive, so people should choose carefully.",
+"Organic food is always much healthier than ordinary food.",
+"Organic farming is bad for the environment.",
+"Supermarkets should stop selling ordinary food."
+],
+"e": "القطعة ذكرت فوائد الأغذية العضوية (الفقرة 2) وغلاها (الفقرة 3)، ونصائح للي ميزانيته محدودة (الفقرة 4)."
 }
 ]
 },
@@ -1011,111 +1011,111 @@ window.READING = [
 "n": 10,
 "title": "Celebrating Eid",
 "text": [
-"1. Eid is one of the most important celebrations for Muslims around the world. There are two Eids every year: Eid al-Fitr, which comes after the month of Ramadan, and Eid al-Adha, which comes during the time of Hajj. Both are happy times for families and friends.",
-"2. In Saudi Arabia, Eid starts early in the morning with the Eid prayer. People wear new clothes and go to the mosque or to open areas for the prayer. After that, families visit each other. Children are very excited, because adults give _them_ money or small gifts called \"Eidiya\".",
-"3. Food is an important part of the celebration. Families prepare traditional dishes like kabsa, and they serve Arabic coffee, dates, and sweets to their guests. In many homes, the table is full of food from the morning until the evening. Sharing food with neighbours and people in need is also a beautiful _tradition_.",
-"4. Many cities also organize events during Eid, like fireworks, festivals, and shows for children. Parks and malls become very _crowded_ because many families go out to have fun. For most people, the best thing about Eid is spending time with the people they love."
+"1. Eid is one of the happiest times of the year for Muslims around the world, and in Saudi Arabia it is a special time for families. There are two Eids every year. Eid al-Fitr comes at the end of Ramadan, the month of fasting, while Eid al-Adha comes during the season of Hajj. Although the two celebrations are different in some ways, both bring people together and fill the streets with a joyful atmosphere.",
+"2. On the morning of Eid, people wake up early, put on new clothes and go to the mosque or to large open areas for the Eid prayer. Afterwards, they greet each other with phrases such as \"Eid Mubarak\" and begin visiting relatives. In many families, everyone gathers at the house of the grandparents, because showing respect to older members of the family is an important value. Children especially look forward to this day, since adults give _them_ money or small gifts known as \"Eidiya\".",
+"3. Food plays a central role in the celebration. Hosts serve Arabic coffee, dates and sweets to every guest, and large meals of traditional dishes such as kabsa are prepared for lunch. During Eid al-Adha, many families also sacrifice a sheep and _distribute_ the meat among relatives, neighbours and people in need. This custom reminds everyone that Eid is not only about personal happiness but also about sharing with others.",
+"4. In recent years, Eid celebrations in Saudi cities have become even more varied. Many cities organise fireworks, festivals and shows for children, and parks, malls and seafronts become extremely _crowded_ in the evenings. Some families now prefer to travel during the Eid holiday, either inside the Kingdom or abroad. However, for most people, the heart of Eid has not changed: it is still about spending time with the people they love."
 ],
 "qs": [
 {
-"q": "How many Eids are there every year?",
-"o": [
-"Two",
-"One",
-"Three",
-"Four"
-],
-"e": "الفقرة 1: «There are two Eids every year»."
-},
-{
 "q": "When does Eid al-Fitr come?",
 "o": [
-"After the month of Ramadan",
-"During the time of Hajj",
-"At the beginning of the year",
-"In the summer only"
+"at the end of Ramadan",
+"during the season of Hajj",
+"at the start of Ramadan",
+"in the middle of the summer"
 ],
-"e": "الفقرة 1: «Eid al-Fitr, which comes after the month of Ramadan»."
+"e": "الفقرة 1: «Eid al-Fitr comes at the end of Ramadan». أما موسم الحج فهو لعيد الأضحى."
 },
 {
-"q": "How does Eid start in Saudi Arabia?",
+"q": "Where do people go for the Eid prayer?",
 "o": [
-"With the Eid prayer early in the morning",
-"With fireworks at night",
-"With a big lunch",
-"With a trip to the mall"
+"to the mosque or large open areas",
+"to the grandparents' house",
+"to parks and malls",
+"to the seafront"
 ],
-"e": "الفقرة 2: «Eid starts early in the morning with the Eid prayer»."
+"e": "الفقرة 2: «go to the mosque or to large open areas for the Eid prayer»."
 },
 {
-"q": "Why are children very excited on Eid?",
+"q": "Why do many families gather at the grandparents' house?",
 "o": [
-"Adults give them money or small gifts.",
-"They don't have to wear new clothes.",
-"They go to school.",
-"They cook traditional dishes."
+"Showing respect to older family members is an important value.",
+"The grandparents' house is the biggest one.",
+"The grandparents' house is close to the mosque.",
+"The grandparents cook kabsa for everyone."
 ],
-"e": "الفقرة 2: «adults give them money or small gifts called \"Eidiya\"»."
+"e": "الفقرة 2: «because showing respect to older members of the family is an important value»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 2 refer to?",
 "o": [
 "children",
 "adults",
-"families",
-"clothes"
+"relatives",
+"grandparents"
 ],
-"e": "«Children are very excited, because adults give them…» ← them = الأطفال."
+"e": "«Children especially look forward to this day, since adults give them money» ← them = الأطفال."
 },
 {
 "q": "Which food does the writer NOT mention?",
 "o": [
-"fish",
-"kabsa",
+"soup",
 "dates",
-"sweets"
+"sweets",
+"kabsa"
 ],
-"e": "الفقرة 3 ذكرت kabsa و dates و sweets، والسمك (fish) ما انذكر."
+"e": "الفقرة 3 ذكرت «Arabic coffee, dates and sweets» و«kabsa» — الشوربة (soup) ما انذكرت."
 },
 {
-"q": "What does the underlined word \"tradition\" in paragraph 3 mean?",
+"q": "What does the underlined word \"distribute\" in paragraph 3 mean?",
 "o": [
-"something people have done for a long time",
-"a new idea",
-"a kind of food",
-"a problem"
+"give out to different people",
+"sell",
+"cook",
+"keep for yourself"
 ],
-"e": "tradition = عادة يسويها الناس من زمان."
+"e": "«distribute the meat among relatives, neighbours and people in need» = يوزّعون اللحم على الأقارب والجيران والمحتاجين ← give out to different people."
+},
+{
+"q": "According to the writer, sharing the meat reminds everyone that Eid is ______.",
+"o": [
+"also about sharing with others",
+"only about personal happiness",
+"a time for travelling abroad",
+"about eating large meals"
+],
+"e": "الفقرة 3: «This custom reminds everyone that Eid is not only about personal happiness but also about sharing with others»."
 },
 {
 "q": "What does the underlined word \"crowded\" in paragraph 4 mean?",
 "o": [
 "full of people",
 "empty",
-"closed",
-"quiet"
+"quiet",
+"closed"
 ],
-"e": "crowded = مزدحم ومليان ناس."
+"e": "«parks, malls and seafronts become extremely crowded» لأن الناس كلها تطلع ← full of people (زحمة)."
 },
 {
-"q": "Which event do cities organize during Eid, according to the passage?",
+"q": "According to the writer, what has NOT changed about Eid?",
 "o": [
-"fireworks",
-"football matches",
-"car races",
-"exams"
+"It is still about spending time with loved ones.",
+"Families still stay at home during the holiday.",
+"Cities still have no special events.",
+"Everyone still travels abroad."
 ],
-"e": "الفقرة 4: «events during Eid, like fireworks, festivals, and shows for children»."
+"e": "الفقرة 4: «the heart of Eid has not changed: it is still about spending time with the people they love»."
 },
 {
-"q": "What is the best thing about Eid for most people, according to the writer?",
+"q": "What is the best title for the passage?",
 "o": [
-"Spending time with the people they love",
-"Getting new clothes",
-"Going to the mall",
-"Eating sweets"
+"How people celebrate Eid in Saudi Arabia",
+"The history of Hajj",
+"Travelling during the holidays",
+"Traditional Saudi dishes"
 ],
-"e": "آخر جملة: «the best thing about Eid is spending time with the people they love»."
+"e": "القطعة كلها عن احتفال العيد في السعودية: الصلاة والزيارات والعيدية والأكل والفعاليات."
 }
 ]
 },
@@ -1123,41 +1123,31 @@ window.READING = [
 "n": 11,
 "title": "Travelling on a Small Budget",
 "text": [
-"1. Many people love to travel, but they think it is too expensive. In fact, you can travel to many interesting places without spending a lot of money. You just need to make good plans before you go.",
-"2. The first tip is to choose the right time to travel. Flights and hotels are usually more expensive during holidays and in the summer. If you travel at other times of the year, you can save a lot of money. It is also a good idea to book your tickets early, because prices often _increase_ close to the travel date.",
-"3. The second tip is about accommodation. Instead of staying in an expensive hotel, you can stay in a small guest house or rent an apartment with friends. Apartments often have a kitchen, so you can prepare some of your meals. This is much cheaper than eating at restaurants every day.",
-"4. The third tip is to look for free activities. Many cities have free museums, beautiful parks, and interesting markets. Walking tours are also a great way to go sightseeing. Local guides show you the most famous places, and you only pay what you want at the end. Finally, use _public transportation_ instead of taxis. Buses and trains are cheap, and _they_ help you see the city like the local people do."
+"1. Many people dream of travelling but believe they cannot afford it. They imagine expensive flights, luxury hotels and costly restaurants. In reality, it is possible to visit interesting places without spending a fortune. The secret is careful planning, and travellers who prepare well can often spend much less than others on a similar trip.",
+"2. The first and most important step is choosing when to travel. Flights and hotels are usually most expensive during school holidays and public holidays, when many families travel at the same time. Travelling in the quieter months of the year can reduce costs a lot. It is also wise to book tickets early, because prices often _increase_ as the travel date gets closer. Many travellers use price-comparison websites and set alerts so that they know when a ticket becomes cheaper.",
+"3. Accommodation is usually the second biggest cost of a trip. Instead of staying in an expensive hotel, travellers can choose a small guesthouse or rent an apartment with friends and share the cost. Apartments have another advantage: most of them have a kitchen. Preparing breakfast or a simple dinner is much cheaper than eating every meal in a restaurant, and visiting local supermarkets can be an interesting experience in itself.",
+"4. Finally, travellers should look for activities that cost little or nothing. Many cities have free museums, public parks and lively markets, and walking around a new neighbourhood is often the best way to discover it. Using public transport instead of taxis also saves money. Buses and trains are usually cheap and _reliable_, and _they_ allow visitors to see how local people really live. With a little research, a small budget does not have to mean a boring holiday."
 ],
 "qs": [
 {
-"q": "What do many people think about travelling?",
+"q": "According to the writer, the secret of travelling on a small budget is ______.",
 "o": [
-"It is too expensive.",
-"It is boring.",
-"It is dangerous.",
-"It is easy."
+"careful planning",
+"staying in luxury hotels",
+"travelling alone",
+"eating in restaurants"
 ],
-"e": "الفقرة 1: «they think it is too expensive»."
+"e": "الفقرة 1: «The secret is careful planning»."
 },
 {
-"q": "When are flights and hotels usually more expensive?",
+"q": "Why are flights and hotels most expensive during school holidays?",
 "o": [
-"During holidays and in the summer",
-"In the winter only",
-"On weekdays",
-"Early in the morning"
+"Many families travel at the same time.",
+"Airlines have fewer planes.",
+"Many hotels are closed.",
+"The weather is better."
 ],
-"e": "الفقرة 2: «Flights and hotels are usually more expensive during holidays and in the summer»."
-},
-{
-"q": "Why should you book your tickets early?",
-"o": [
-"Prices often increase close to the travel date.",
-"Airlines give free meals.",
-"You can choose a bigger hotel.",
-"Tickets are only sold early."
-],
-"e": "الفقرة 2: «prices often increase close to the travel date»."
+"e": "الفقرة 2: «during school holidays and public holidays, when many families travel at the same time»."
 },
 {
 "q": "What does the underlined word \"increase\" in paragraph 2 mean?",
@@ -1167,67 +1157,77 @@ window.READING = [
 "stay the same",
 "disappear"
 ],
-"e": "increase = يزيد ويرتفع ← go up."
+"e": "«prices often increase as the travel date gets closer» = الأسعار ترتفع كل ما قرب موعد السفر ← go up."
 },
 {
-"q": "According to paragraph 3, why is renting an apartment a good idea?",
+"q": "Why do many travellers set alerts on price-comparison websites?",
 "o": [
-"You can prepare some of your meals in the kitchen.",
-"It is always near the airport.",
-"It has a swimming pool.",
-"It includes free tours."
+"to know when a ticket becomes cheaper",
+"to book a cheap hotel",
+"to find free museums",
+"to rent an apartment with friends"
 ],
-"e": "الفقرة 3: «Apartments often have a kitchen, so you can prepare some of your meals»."
+"e": "الفقرة 2: «set alerts so that they know when a ticket becomes cheaper»."
 },
 {
-"q": "Which free activity does the writer NOT mention?",
+"q": "According to the writer, accommodation is usually ______.",
+"o": [
+"the second biggest cost of a trip",
+"the biggest cost of a trip",
+"the smallest cost of a trip",
+"free in most cities"
+],
+"e": "الفقرة 3: «Accommodation is usually the second biggest cost of a trip»."
+},
+{
+"q": "What advantage of apartments does the writer mention?",
+"o": [
+"Most of them have a kitchen.",
+"They are always near the airport.",
+"They include free tours of the city.",
+"They are cheaper than guesthouses."
+],
+"e": "الفقرة 3: «Apartments have another advantage: most of them have a kitchen»."
+},
+{
+"q": "Which cheap activity does the writer NOT mention?",
 "o": [
 "going to the beach",
-"visiting museums",
-"walking in parks",
+"visiting free museums",
+"walking around a new neighbourhood",
 "visiting markets"
 ],
-"e": "الفقرة 4 ذكرت museums و parks و markets، والبحر (beach) ما انذكر."
+"e": "الفقرة 4 ذكرت «free museums, public parks and lively markets» والمشي في حي جديد — البحر (the beach) ما انذكر."
 },
 {
-"q": "How do you pay for a walking tour?",
+"q": "What does the underlined word \"reliable\" in paragraph 4 mean?",
 "o": [
-"You pay what you want at the end.",
-"You pay a fixed price before you start.",
-"You don't pay anything.",
-"You pay the hotel."
+"trustworthy",
+"dangerous",
+"expensive",
+"slow and late"
 ],
-"e": "الفقرة 4: «you only pay what you want at the end»."
-},
-{
-"q": "What do the underlined words \"public transportation\" in paragraph 4 mean?",
-"o": [
-"buses and trains that everyone can use",
-"private cars",
-"taxis",
-"planes"
-],
-"e": "public transportation = المواصلات العامة، والكاتب يقول «Buses and trains»."
+"e": "«Buses and trains are usually cheap and reliable» = تقدر تعتمد عليها وتوصلك في وقتها ← that you can trust and depend on."
 },
 {
 "q": "What does the underlined word \"they\" in paragraph 4 refer to?",
 "o": [
 "buses and trains",
-"local guides",
+"visitors",
 "taxis",
-"markets"
+"local people"
 ],
-"e": "«Buses and trains are cheap, and they help you see the city» ← they = الباصات والقطارات."
+"e": "«Buses and trains are usually cheap and reliable, and they allow visitors to see how local people really live» ← they = الباصات والقطارات."
 },
 {
 "q": "What is the main idea of the passage?",
 "o": [
-"With good plans, you can travel without spending a lot of money.",
-"Travelling is only for rich people.",
+"With good planning, people can travel without spending a lot of money.",
+"Travelling is always too expensive for students.",
 "Hotels are better than apartments.",
-"You should always travel in the summer."
+"Public transport is the best way to see a city."
 ],
-"e": "الفقرة 1: «You just need to make good plans before you go»."
+"e": "الفقرة 1: «it is possible to visit interesting places without spending a fortune. The secret is careful planning»، وباقي القطعة نصائح للتوفير."
 }
 ]
 },
@@ -1235,111 +1235,111 @@ window.READING = [
 "n": 12,
 "title": "Spending Time in Nature",
 "text": [
-"1. Many people today spend most of their time indoors. They work in offices, study in classrooms, and relax at home in front of screens. Some studies say that the average person spends about 90 percent of their time inside buildings. However, experts believe that spending time outdoors is very important for our health.",
-"2. Being in nature can reduce stress. One study found that people who walked in a park for 90 minutes felt calmer and more positive than people who walked in a busy city street. Nature is also good for our bodies. When we are outside, we usually move more. We walk, run, ride bikes, or play sports. Sunlight also helps our bodies make vitamin D, which keeps our bones strong.",
-"3. Nature can even help us think better. Students who take short breaks outdoors often _concentrate_ better when they return to class. Some schools in Europe now have \"forest classes,\" where children learn outside for part of the day.",
-"4. You don't need to live near the mountains or the sea to enjoy nature. A small park, a garden, or even a few plants at home can help. Experts suggest spending at least two hours a week in nature. You can take a walk after dinner, have a picnic on the weekend, or simply sit under a tree and read a book. These small _habits_ can make a big difference to your health."
+"1. Modern life keeps most of us indoors. We study in classrooms, work in offices and spend our free time at home in front of screens. Some researchers believe that people in many countries spend around 90 percent of their time inside buildings or cars. Although this lifestyle is comfortable, a growing amount of research suggests that we are missing something important: regular contact with nature.",
+"2. One of the clearest benefits of nature is its effect on our mood. In several studies, people who walked in a park said they felt calmer and more positive than people who walked the same distance along a busy street. Being outdoors also makes us move more. In a garden or a park, we naturally walk, play or ride a bike instead of sitting still. In addition, sunlight helps the body produce vitamin D, which is important for strong bones.",
+"3. Nature may even help us think more clearly. Teachers have noticed that students who spend their break outdoors often _concentrate_ better when they return to class. For this reason, some schools in countries such as Denmark and Germany run \"forest schools\", where children spend part of the school day learning outside, whatever the weather. Supporters say that these children become more confident and more curious about the world around _them_.",
+"4. The good news is that we do not need to live near mountains or the sea to enjoy these benefits. A study in England found that people who spent at least two hours a week in green places were more likely to say that their health was good. This time does not have to come all at once; it can be _divided_ into short visits. A walk after dinner, a weekend picnic or simply reading under a tree all count. Even looking after a few plants on a balcony can help."
 ],
 "qs": [
 {
-"q": "About how much of their time does the average person spend inside buildings?",
+"q": "According to some researchers, people in many countries spend around ______ of their time inside buildings or cars.",
 "o": [
 "90 percent",
 "50 percent",
-"19 percent",
-"9 percent"
+"9 percent",
+"20 percent"
 ],
-"e": "الفقرة 1: «spends about 90 percent of their time inside buildings»."
+"e": "الفقرة 1: «spend around 90 percent of their time inside buildings or cars»."
 },
 {
-"q": "How did people feel after walking in a park for 90 minutes?",
+"q": "In the studies in paragraph 2, people who walked in a park ______.",
 "o": [
-"Calmer and more positive",
-"More tired",
-"More stressed",
-"Hungrier"
+"felt calmer and more positive",
+"walked a longer distance",
+"walked faster",
+"felt more tired"
 ],
-"e": "الفقرة 2: «felt calmer and more positive»."
+"e": "الفقرة 2: «people who walked in a park said they felt calmer and more positive». والمسافة كانت نفسها «the same distance»."
 },
 {
-"q": "Why do we usually move more when we are outside?",
+"q": "According to the writer, sunlight helps the body ______.",
 "o": [
-"We walk, run, ride bikes, or play sports.",
-"We sleep more.",
-"We watch more screens.",
-"We eat more food."
+"produce vitamin D",
+"sleep better at night",
+"lose weight",
+"move faster"
 ],
-"e": "الفقرة 2: «We walk, run, ride bikes, or play sports»."
+"e": "الفقرة 2: «sunlight helps the body produce vitamin D, which is important for strong bones»."
 },
 {
-"q": "What does sunlight help our bodies make?",
+"q": "Which benefit of nature does the writer NOT mention?",
 "o": [
-"vitamin D",
-"vitamin C",
-"sugar",
-"water"
+"better sleep",
+"a better mood",
+"more movement",
+"stronger bones"
 ],
-"e": "الفقرة 2: «Sunlight also helps our bodies make vitamin D»."
+"e": "الفقرة 2 ذكرت المزاج «effect on our mood» والحركة والعظام القوية «strong bones» — النوم ما انذكر."
 },
 {
 "q": "What does the underlined word \"concentrate\" in paragraph 3 mean?",
 "o": [
-"focus",
-"sleep",
-"play",
-"forget"
+"pay attention",
+"relax",
+"forget",
+"play"
 ],
-"e": "concentrate = يركّز ← focus."
+"e": "«students who spend their break outdoors often concentrate better» = يركزون أكثر في الدرس ← pay attention."
 },
 {
-"q": "What are \"forest classes\"?",
+"q": "What happens in \"forest schools\"?",
 "o": [
-"Classes where children learn outside for part of the day",
-"Classes about how to plant trees",
-"Classes for adults in the mountains",
-"Online classes about nature"
+"Children spend part of the school day learning outside.",
+"Children study outside only when the weather is good.",
+"Children plant trees instead of studying.",
+"Children learn about forests online."
 ],
-"e": "الفقرة 3: «where children learn outside for part of the day»."
+"e": "الفقرة 3: «children spend part of the school day learning outside, whatever the weather» ← يعني حتى لو الجو مو حلو."
 },
 {
-"q": "Where do some schools have \"forest classes\"?",
+"q": "What does the underlined word \"them\" in paragraph 3 refer to?",
 "o": [
-"In Europe",
-"In Asia",
-"In Africa",
-"In America"
+"the children",
+"the supporters",
+"the teachers",
+"the countries"
 ],
-"e": "الفقرة 3: «Some schools in Europe now have \"forest classes,\"»."
+"e": "«these children become more confident and more curious about the world around them» ← them = الأطفال."
 },
 {
-"q": "How much time in nature do experts suggest each week?",
+"q": "According to the study in England, people who spent at least two hours a week in green places ______.",
 "o": [
-"At least two hours",
-"At least ninety minutes a day",
-"Ten hours",
-"Thirty minutes"
+"were more likely to say that their health was good",
+"never got sick",
+"lived near the mountains or the sea",
+"spent less time in front of screens"
 ],
-"e": "الفقرة 4: «spending at least two hours a week in nature»."
+"e": "الفقرة 4: «people who spent at least two hours a week in green places were more likely to say that their health was good»."
 },
 {
-"q": "What does the underlined word \"habits\" in paragraph 4 mean?",
+"q": "What does the underlined word \"divided\" in paragraph 4 mean?",
 "o": [
-"things you do regularly",
-"problems",
-"plants",
-"trips"
+"split into parts",
+"added together",
+"doubled",
+"forgotten"
 ],
-"e": "habits = عادات تسويها بشكل منتظم."
+"e": "«it can be divided into short visits» = الساعتين ممكن تتقسم على زيارات قصيرة ← split into parts."
 },
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Why we need to spend time in nature",
-"How to build a garden",
-"The best parks in Europe",
-"Why offices are bad"
+"Why we should spend more time in nature",
+"Forest schools in Europe",
+"How to grow plants on a balcony",
+"Life in big cities"
 ],
-"e": "القطعة كلها عن فوائد الطبيعة وأهمية قضاء وقت فيها."
+"e": "القطعة كلها عن فوائد الطبيعة (المزاج، الحركة، التركيز، الصحة) وإننا لازم نطلع لها أكثر."
 }
 ]
 },
@@ -1347,111 +1347,111 @@ window.READING = [
 "n": 13,
 "title": "The Student Housing Problem",
 "text": [
-"1. Every year, thousands of students move to big cities to study at university. Finding a place to live is one of the first challenges they face. In many cities, there is a _shortage_ of student housing, and the rent is very high.",
-"2. Why is housing so expensive? One reason is demand. When many students want to live near the campus, landlords can ask for more money. Another reason is that universities are growing quickly, but new buildings are not built fast enough. As a result, some students have to live far from the university and spend a lot of time on public transportation every day.",
-"3. Students have found different ways to solve this problem. Many students share an apartment with roommates. In this way, they can divide the rent and the bills. Others live with a family in exchange for help with housework or taking care of children. Some universities have also started building more dormitories, which are usually cheaper than private apartments.",
-"4. Before choosing a place to live, students should think about a few things. Location is important. A cheap apartment is not a good choice if it takes two hours to get to class. The condition of the apartment is also important. Students should check that _it_ is clean, safe, and not too noisy. Finally, students should read the contract carefully and ask the landlord about any extra costs, like electricity and internet."
+"1. Every year, thousands of young people leave their hometowns and move to big cities to study at university. For many, finding a place to live is the first real challenge, and it often begins weeks before classes start. In most large cities, there is a _shortage_ of student housing, which means there are not enough rooms for everyone who needs one. As a result, rents near the campus have risen quickly.",
+"2. Why is student housing so expensive? The main reason is demand. When hundreds of students want to live in the same small area, landlords know that someone will always pay, so they can ask for more money. Another reason is that universities accept more students every year, but new buildings take a long time to build. Because of this, some students have to rent rooms far away from the university. _They_ may spend up to two hours on buses every day, which leaves them tired and with less time to study.",
+"3. Students have found different ways to deal with the problem. The most common solution is to share an apartment with one or two roommates, so that they can divide the rent and the bills. Others prefer to live with a relative in the city, although this means following the family's rules. Some universities are also building new dormitories, which are usually cheaper than private apartments and much closer to classes. However, places in these dormitories are limited, so students should apply as early as possible.",
+"4. Before signing a contract, students should consider a few things. Location comes first: a cheap room is not a good _bargain_ if it takes two hours to reach the campus. Students should also visit the apartment and check that it is clean, safe and quiet enough for studying. Finally, they should read the contract carefully and ask the landlord about extra costs such as electricity, water and internet. A little research early can save a lot of money and stress."
 ],
 "qs": [
 {
-"q": "What is one of the first challenges students face when they move to a big city?",
+"q": "According to the writer, the search for a place to live often begins ______.",
 "o": [
-"Finding a place to live",
-"Finding a job",
-"Making friends",
-"Learning a language"
+"weeks before classes start",
+"on the first day of classes",
+"after the first exam",
+"in the last year of university"
 ],
-"e": "الفقرة 1: «Finding a place to live is one of the first challenges they face»."
+"e": "الفقرة 1: «it often begins weeks before classes start» ← البحث عن سكن يبدأ قبل الدراسة بأسابيع."
 },
 {
 "q": "What does the underlined word \"shortage\" in paragraph 1 mean?",
 "o": [
-"not enough of something",
-"too much of something",
-"a high price",
-"a small room"
+"not having enough of something",
+"a very high price",
+"a short visit",
+"a large number of rooms"
 ],
-"e": "shortage = نقص، يعني ما فيه سكن كافي للطلاب."
+"e": "نفس الجملة تشرحها: «which means there are not enough rooms for everyone who needs one» ← shortage = نقص (ما فيه كفاية)."
 },
 {
-"q": "According to paragraph 2, why can landlords ask for more money?",
+"q": "Why can landlords ask for more money?",
 "o": [
-"Many students want to live near the campus.",
-"Students are rich.",
-"Apartments are very big.",
-"Universities pay the rent."
+"Many students want to live in the same small area.",
+"Universities pay the rent for the students.",
+"The buildings near the campus are all new.",
+"Students prefer to live far from the campus."
 ],
-"e": "الفقرة 2: «When many students want to live near the campus, landlords can ask for more money»."
+"e": "الفقرة 2: «When hundreds of students want to live in the same small area, landlords know that someone will always pay» ← الطلب كثير فيرفعون السعر."
 },
 {
-"q": "What happens to students who live far from the university?",
+"q": "What does the underlined word \"They\" in paragraph 2 refer to?",
 "o": [
-"They spend a lot of time on public transportation.",
-"They don't need to pay rent.",
-"They live with their professors.",
-"They study online."
+"students living far from the university",
+"landlords who ask for more money",
+"universities that accept more students",
+"new buildings that take a long time"
 ],
-"e": "الفقرة 2: «spend a lot of time on public transportation every day»."
+"e": "الجملة قبلها: «some students have to rent rooms far away from the university. They may spend up to two hours on buses» ← They = الطلاب اللي يسكنون بعيد."
 },
 {
-"q": "How do roommates save money?",
+"q": "According to paragraph 2, long bus journeys every day can leave people ______.",
 "o": [
-"They divide the rent and the bills.",
-"They don't pay for electricity.",
-"They live in dormitories.",
-"They work for the landlord."
+"tired and with less time to study",
+"with more money to spend",
+"closer to their friends",
+"relaxed and ready for class"
 ],
-"e": "الفقرة 3: «they can divide the rent and the bills»."
+"e": "الفقرة 2: «which leaves them tired and with less time to study»."
 },
 {
-"q": "Some students live with a family in exchange for ______.",
+"q": "What is the most common solution to the housing problem?",
 "o": [
-"help with housework or taking care of children",
-"free food",
-"English lessons",
-"a car"
+"sharing an apartment with roommates",
+"living with a relative in the city",
+"moving into a new dormitory",
+"renting a room far from the campus"
 ],
-"e": "الفقرة 3: «in exchange for help with housework or taking care of children»."
+"e": "الفقرة 3: «The most common solution is to share an apartment with one or two roommates» ← الحلول الثانية موجودة بس مو هي الأشهر."
 },
 {
-"q": "Dormitories are usually ______ than private apartments.",
+"q": "Why should students apply for a dormitory as early as possible?",
 "o": [
-"cheaper",
-"bigger",
-"noisier",
-"farther"
+"Places in the dormitories are limited.",
+"Dormitories are more expensive than apartments.",
+"Dormitories are far from classes.",
+"Students must follow the family's rules there."
 ],
-"e": "الفقرة 3: «dormitories, which are usually cheaper than private apartments»."
+"e": "الفقرة 3: «places in these dormitories are limited, so students should apply as early as possible» ← الأماكن محدودة."
 },
 {
-"q": "Why is a cheap apartment not always a good choice?",
+"q": "What does the underlined word \"bargain\" in paragraph 4 mean?",
 "o": [
-"It might take two hours to get to class.",
-"It is always dirty.",
-"It has no landlord.",
-"It is too big."
+"something good for the money you pay",
+"a long trip to the campus",
+"a written agreement",
+"a quiet place to study"
 ],
-"e": "الفقرة 4: «A cheap apartment is not a good choice if it takes two hours to get to class»."
+"e": "«a cheap room is not a good bargain if it takes two hours to reach the campus» ← bargain = صفقة تستاهل فلوسها؛ يعني الرخيص البعيد ما يستاهل."
 },
 {
-"q": "What does the underlined word \"it\" in paragraph 4 refer to?",
+"q": "Which extra cost does the writer NOT mention?",
 "o": [
-"the apartment",
-"the location",
-"the class",
-"the contract"
-],
-"e": "«check that it is clean, safe, and not too noisy» ← it = الشقة."
-},
-{
-"q": "Which extra cost does the writer mention?",
-"o": [
+"furniture",
 "electricity",
-"food",
-"books",
-"transportation"
+"water",
+"internet"
 ],
-"e": "الفقرة 4: «extra costs, like electricity and internet»."
+"e": "الفقرة 4 ذكرت «extra costs such as electricity, water and internet»، والأثاث (furniture) ما انذكر."
+},
+{
+"q": "What is the best title for the passage?",
+"o": [
+"Finding a place to live as a student",
+"Why universities accept more students",
+"Life in a university dormitory",
+"How landlords choose their tenants"
+],
+"e": "القطعة كلها عن مشكلة سكن الطلاب: أسبابها، وحلولها، ووش يفكر فيه الطالب قبل ما يختار."
 }
 ]
 },
@@ -1459,111 +1459,111 @@ window.READING = [
 "n": 14,
 "title": "Living With a Roommate",
 "text": [
-"1. Sharing an apartment with a roommate is common among university students. It can save money, and it can be fun to live with a friend. However, living with someone else can also cause problems if you are not careful.",
-"2. One of the most common problems is cleaning. Some people are very neat, while others are messy. If one roommate always washes the dishes and the other never does, the neat roommate will soon feel angry. Noise is another problem. One roommate may want to study or sleep, while the other wants to listen to music or invite friends over.",
-"3. To avoid these problems, roommates should talk about their rules before they move in together. For example, they can make a cleaning _schedule_ so that each person cleans on certain days. They can also agree on quiet hours, such as after 11 p.m. on weekdays. It is also a good idea to discuss how to share the costs of food and bills.",
-"4. Good communication is the key to a happy home. If something is bothering you, talk to your roommate _politely_ instead of getting angry. Remember that your roommate is also learning how to live with another person. With respect and patience, a roommate can become one of your closest friends."
+"1. For many university students, sharing an apartment or a dormitory room is a normal part of student life. Living with a roommate has clear benefits. It reduces the cost of rent and bills, and it means you are _rarely_ alone when you come home after a long day. However, sharing a small space with another person is not always easy, especially if you have never lived away from your family before. Small problems can quickly grow into big arguments.",
+"2. The most common problem is cleaning. Some people are very _tidy_, while others leave their clothes and dirty dishes everywhere. If one roommate always cleans the kitchen and the other never does, the first one will soon feel angry. Noise is another common complaint. One roommate may want to sleep early before a morning class, while the other likes to watch films late at night or invite friends over. Sharing food can also cause trouble, for example when one person eats something that the other bought.",
+"3. The best way to avoid these problems is to talk about rules before moving in together. Roommates can make a cleaning schedule, so that each person is responsible for certain jobs on certain days. They can also agree on quiet hours, such as after 11 p.m. on weekdays, and decide whether guests are allowed during the exam period. Money should be discussed too. Some roommates put a fixed amount of money into a shared box every month and use _it_ to buy things they both need, like soap and rice.",
+"4. Even with clear rules, problems will sometimes happen. When something bothers you, experts suggest speaking to your roommate calmly and directly instead of complaining to other friends or waiting until you explode. It also helps to remember that your roommate is probably learning to live with someone else for the first time, just like you. With patience and respect, many roommates become close friends who stay in touch long after graduation."
 ],
 "qs": [
 {
-"q": "According to paragraph 1, what are two good things about having a roommate?",
+"q": "According to the writer, living with a roommate reduces ______.",
 "o": [
-"It saves money, and it can be fun.",
-"It is quiet, and it is clean.",
-"It is safe, and it is free.",
-"You don't need to cook or clean."
+"the cost of rent and bills",
+"the time you spend studying",
+"the number of arguments",
+"the noise in the apartment"
 ],
-"e": "الفقرة 1: «It can save money, and it can be fun to live with a friend»."
+"e": "الفقرة 1: «It reduces the cost of rent and bills»."
 },
 {
-"q": "What happens when one roommate never washes the dishes?",
+"q": "What does the underlined word \"rarely\" in paragraph 1 mean?",
 "o": [
-"The neat roommate will soon feel angry.",
-"The landlord will be happy.",
-"They will save money.",
-"The messy roommate will move out."
+"not often",
+"always",
+"usually",
+"quickly"
 ],
-"e": "الفقرة 2: «the neat roommate will soon feel angry»."
+"e": "«you are rarely alone when you come home» = نادراً تكون لحالك ← not often."
 },
 {
-"q": "What is another common problem, besides cleaning?",
+"q": "The writer says that sharing a small space is especially hard for people who ______.",
 "o": [
-"noise",
-"food",
-"the internet",
-"transportation"
+"have never lived away from their family before",
+"have lived with roommates for many years",
+"prefer to live alone",
+"clean their room every day"
 ],
-"e": "الفقرة 2: «Noise is another problem»."
+"e": "الفقرة 1: «especially if you have never lived away from your family before»."
 },
 {
-"q": "When should roommates talk about their rules?",
+"q": "What does the underlined word \"tidy\" in paragraph 2 mean?",
 "o": [
-"Before they move in together",
-"After they finish university",
-"Only when there is a problem",
-"At the end of every month"
+"clean and well organized",
+"noisy and busy",
+"tired and angry",
+"kind and friendly"
 ],
-"e": "الفقرة 3: «roommates should talk about their rules before they move in together»."
+"e": "الجملة تقارن: «Some people are very tidy, while others leave their clothes and dirty dishes everywhere» ← tidy عكس الفوضوي = مرتّب ونظيف."
 },
 {
-"q": "What does the underlined word \"schedule\" in paragraph 3 mean?",
+"q": "Which problem does the writer NOT mention in paragraph 2?",
 "o": [
-"a plan that shows when things happen",
-"a type of cleaning product",
-"a small room",
-"a bill"
-],
-"e": "schedule = جدول يوضّح مين ينظّف في أي يوم."
-},
-{
-"q": "What example of quiet hours does the writer give?",
-"o": [
-"After 11 p.m. on weekdays",
-"After 9 p.m. every day",
-"Before 7 a.m. on weekends",
-"During lunch time"
-],
-"e": "الفقرة 3: «quiet hours, such as after 11 p.m. on weekdays»."
-},
-{
-"q": "According to the writer, what is the key to a happy home?",
-"o": [
-"Good communication",
-"A big apartment",
-"Expensive furniture",
-"Living alone"
-],
-"e": "الفقرة 4: «Good communication is the key to a happy home»."
-},
-{
-"q": "What does the underlined word \"politely\" in paragraph 4 mean?",
-"o": [
-"in a kind and respectful way",
-"in an angry way",
-"very quickly",
-"very loudly"
-],
-"e": "politely = بأدب واحترام، وهو عكس «getting angry» اللي في نفس الجملة."
-},
-{
-"q": "Which topic does the writer NOT suggest roommates discuss?",
-"o": [
-"which university to choose",
+"paying the internet bill",
 "cleaning",
-"quiet hours",
-"sharing costs"
+"noise",
+"sharing food"
 ],
-"e": "الفقرة 3 ذكرت التنظيف والهدوء والمصاريف، واختيار الجامعة ما انذكر."
+"e": "الفقرة 2 ذكرت التنظيف «cleaning» والإزعاج «Noise» والأكل «Sharing food»، وفاتورة الإنترنت ما انذكرت."
+},
+{
+"q": "The writer gives the example of one roommate sleeping early while the other watches films late at night to show ______.",
+"o": [
+"how noise can become a problem",
+"why cleaning is important",
+"how roommates can save money",
+"why guests are not allowed"
+],
+"e": "الفقرة 2: «Noise is another common complaint. One roommate may want to sleep early… while the other likes to watch films late at night» ← المثال عن مشكلة الإزعاج."
+},
+{
+"q": "According to paragraph 3, a cleaning schedule means that ______.",
+"o": [
+"each person is responsible for certain jobs on certain days",
+"one roommate does all the cleaning",
+"the kitchen is cleaned only during exams",
+"a cleaner comes to the apartment every week"
+],
+"e": "الفقرة 3: «so that each person is responsible for certain jobs on certain days»."
+},
+{
+"q": "What does the underlined word \"it\" in paragraph 3 refer to?",
+"o": [
+"the money in the shared box",
+"the cleaning schedule",
+"the exam period",
+"quiet hours"
+],
+"e": "«put a fixed amount of money into a shared box every month and use it to buy things» ← it = الفلوس اللي في الصندوق المشترك."
+},
+{
+"q": "What do experts suggest when something bothers you?",
+"o": [
+"speaking to your roommate calmly and directly",
+"complaining to other friends",
+"waiting until the end of the year",
+"moving to another apartment"
+],
+"e": "الفقرة 4: «experts suggest speaking to your roommate calmly and directly instead of complaining to other friends»."
 },
 {
 "q": "What is the main idea of the passage?",
 "o": [
-"Roommates can avoid problems by making rules and communicating well.",
-"Students should never live with roommates.",
-"Neat people and messy people can't live together.",
-"Roommates should not share costs."
+"Living with a roommate has benefits, but it needs clear rules and good communication.",
+"Students should always live alone, because roommates cause problems.",
+"Roommates never become close friends, even after living together for years.",
+"Cleaning is the only problem that roommates have, so they need a cleaner."
 ],
-"e": "القطعة كلها عن كيف يتجنب الساكنين مع بعض المشاكل، بالقوانين والتفاهم."
+"e": "القطعة تبدأ بفوائد السكن مع شخص، وبعدها المشاكل، وبعدها الحل: «talk about rules before moving in together» والكلام بهدوء."
 }
 ]
 },
@@ -1571,111 +1571,111 @@ window.READING = [
 "n": 15,
 "title": "Breaking Bad Habits",
 "text": [
-"1. Everyone has some bad habits. Some people eat too much junk food, some stay up too late, and others spend hours on their phones. Bad habits can be hard to break, but experts say that it is possible if you use the right _strategies_.",
-"2. First, you need to understand why you have the habit. Most habits have a \"trigger\", something that makes you start the behavior. For example, some people eat sweets when they feel stressed. Others check their phones as soon as they feel bored. When you know your trigger, you can plan what to do instead.",
-"3. Second, replace the bad habit with a good one. Experts say this works better than just trying to stop. If you usually eat chips while watching TV, try eating fruit instead. If you always check your phone in bed, put _it_ in another room and read a book.",
-"4. Third, be patient. One study found that it takes an average of 66 days to form a new habit. Some days will be harder than others, and that is normal. If you fail one day, don't give up. Just start again the next day. Finally, tell a friend about your goal. Friends can support you and help you stay _motivated_."
+"1. Almost everyone has at least one bad habit. Some people drink too many sugary drinks, some stay up late scrolling on their phones, and others always leave their work until the last minute. Many of us have tried to stop these habits. However, breaking a habit is often much harder than we expect, because habits happen automatically, without much thinking. The good news is that a few practical steps can make the change easier.",
+"2. The first step is to start small. Many people fail because they try to change everything at once. For example, some people who drink five cans of soft drinks a day decide to stop completely overnight. After two or three days, _they_ usually feel tired and give up. It is more realistic to reduce the number _gradually_, perhaps to four cans a day in the first week and three in the second. Small successes make people feel confident and encourage them to continue.",
+"3. Another useful idea is to make the bad habit more difficult and the good habit easier. If you waste hours on social media, you can delete the apps from your phone and use them only on your computer. Some people also find it helpful to _replace_ a bad habit with a better one. Instead of checking their phone when they feel bored, for instance, they read a few pages of a book or go for a short walk.",
+"4. Finally, be patient with yourself. One well-known study found that it took people an average of 66 days to make a new behaviour automatic, although for some people it took much longer. During this time, you will probably make mistakes. If you fail one day, do not see it as the end; simply start again the next day. It can also help to tell a friend about your goal, because people who share their plans often feel more responsible for keeping them."
 ],
 "qs": [
 {
 "q": "Which bad habit does the writer NOT mention in paragraph 1?",
 "o": [
-"biting nails",
-"eating too much junk food",
-"staying up too late",
-"spending hours on phones"
+"eating fast food late at night",
+"drinking too many sugary drinks",
+"staying up late on their phones",
+"leaving work until the last minute"
 ],
-"e": "الفقرة 1 ذكرت junk food و stay up late و phones، وقضم الأظافر (biting nails) ما انذكر."
+"e": "الفقرة 1 ذكرت «drink too many sugary drinks» و«stay up late scrolling on their phones» و«leave their work until the last minute»، والأكل السريع بالليل ما انذكر."
 },
 {
-"q": "What does the underlined word \"strategies\" in paragraph 1 mean?",
+"q": "According to the writer, breaking a habit is hard because habits ______.",
 "o": [
-"plans or methods",
-"problems",
-"habits",
-"friends"
+"happen automatically, without much thinking",
+"are good for our health",
+"take only a few days to form",
+"are always about food"
 ],
-"e": "strategies = خطط وطرق."
+"e": "الفقرة 1: «because habits happen automatically, without much thinking»."
 },
 {
-"q": "What is a \"trigger\"?",
+"q": "Why do many people fail to break a bad habit?",
 "o": [
-"Something that makes you start the behavior",
-"A good habit",
-"A kind of food",
-"A type of phone"
+"They try to change everything at once.",
+"They start with very small steps.",
+"They tell their friends about their goal.",
+"They delete the apps from their phones."
 ],
-"e": "الفقرة 2: «a \"trigger\", something that makes you start the behavior»."
+"e": "الفقرة 2: «Many people fail because they try to change everything at once»."
 },
 {
-"q": "According to paragraph 2, what do some people do when they feel stressed?",
+"q": "What does the underlined word \"they\" in paragraph 2 refer to?",
 "o": [
-"They eat sweets.",
-"They read a book.",
-"They go to bed early.",
-"They call a friend."
+"people who drink five cans a day",
+"the small successes in the first week",
+"the cans of soft drinks they buy",
+"the first two or three days"
 ],
-"e": "الفقرة 2: «some people eat sweets when they feel stressed»."
+"e": "الجملة قبلها: «some people who drink five cans of soft drinks a day decide to stop completely… After two or three days, they usually feel tired» ← they = هالناس."
 },
 {
-"q": "Experts say that replacing a bad habit with a good one ______.",
+"q": "What does the underlined word \"gradually\" in paragraph 2 mean?",
 "o": [
-"works better than just trying to stop",
-"never works",
-"is too difficult",
-"takes only one day"
+"slowly, little by little",
+"suddenly",
+"completely",
+"happily"
 ],
-"e": "الفقرة 3: «this works better than just trying to stop»."
+"e": "المثال يوضّح: من خمس علب لأربع ثم ثلاث ← «reduce the number gradually» = شوي شوي."
 },
 {
-"q": "What does the underlined word \"it\" in paragraph 3 refer to?",
+"q": "The writer gives the example of deleting social media apps from your phone to show ______.",
 "o": [
-"your phone",
-"the TV",
-"the bed",
-"the book"
+"how to make a bad habit more difficult",
+"why computers are better than phones",
+"how to make new friends online",
+"why people feel bored"
 ],
-"e": "«If you always check your phone in bed, put it in another room» ← it = الجوال."
+"e": "الفقرة 3: «make the bad habit more difficult… you can delete the apps from your phone» ← المثال يوضّح كيف تصعّب العادة السيئة."
 },
 {
-"q": "How long does it take, on average, to form a new habit?",
+"q": "What does the underlined word \"replace\" in paragraph 3 mean?",
 "o": [
-"66 days",
-"6 days",
-"16 days",
-"6 months"
+"use something else instead of",
+"forget about completely",
+"repeat again and again",
+"buy again from the shop"
 ],
-"e": "الفقرة 4: «it takes an average of 66 days to form a new habit»."
+"e": "المثال بعدها: بدال ما يمسك الجوال يقرأ كتاب ← «replace a bad habit with a better one» = يحط شي مكان شي."
 },
 {
-"q": "What should you do if you fail one day?",
+"q": "According to the study in paragraph 4, ______.",
 "o": [
-"Don't give up and start again the next day.",
-"Stop trying.",
-"Choose a new habit.",
-"Ask a doctor."
+"on average, people needed 66 days to make a new behaviour automatic",
+"everyone needed exactly 66 days to make a new behaviour automatic",
+"people needed only one week to break a bad habit",
+"most people never managed to change their habits"
 ],
-"e": "الفقرة 4: «If you fail one day, don't give up. Just start again the next day»."
+"e": "الفقرة 4: «it took people an average of 66 days to make a new behaviour automatic, although for some people it took much longer» ← متوسط، مو للكل نفس المدة."
 },
 {
-"q": "What does the underlined word \"motivated\" in paragraph 4 mean?",
+"q": "Why can telling a friend about your goal help?",
 "o": [
-"wanting to do something and working hard for it",
-"tired and bored",
-"angry and stressed",
-"lonely and sad"
+"You may feel more responsible for keeping your plan.",
+"Your friend can do the hard work for you.",
+"Your friend will set the goal for you.",
+"It makes the new habit automatic sooner."
 ],
-"e": "motivated = عندك دافع وحماس تكمّل."
+"e": "الفقرة 4: «because people who share their plans often feel more responsible for keeping them»."
 },
 {
 "q": "What is the best title for the passage?",
 "o": [
-"How to break bad habits",
-"Why phones are dangerous",
-"The best healthy snacks",
-"How to sleep better"
+"Practical steps to break a bad habit",
+"Why sugary drinks are dangerous",
+"The problem with social media",
+"How to make new friends"
 ],
-"e": "القطعة كلها عن طرق التخلص من العادات السيئة."
+"e": "القطعة كلها خطوات عملية: «start small» وصعّب العادة السيئة، و«be patient with yourself»."
 }
 ]
 },
@@ -1683,111 +1683,111 @@ window.READING = [
 "n": 16,
 "title": "Addicted to Our Phones",
 "text": [
-"1. Today, almost everyone has a smartphone. We use our phones to call friends, check the news, play games, and watch videos. Phones are very useful, but many people now feel that they can't live without _them_. Some experts say that people can become addicted to their phones.",
-"2. A recent survey found that the average person checks their phone about 96 times a day, or once every ten minutes. Many people also look at their phones as soon as they wake up and just before they go to sleep. Spending too much time on our phones can cause problems. It can make it hard to sleep, hurt our eyes, and make us feel more stressed. It can also affect our relationships, because we spend less time talking to the people around us.",
-"3. So, what can we do? One simple idea is to turn off notifications for apps that are not important. Another idea is to have \"phone-free\" times, for example, during meals or the first hour after waking up. Some people also use apps that show how many hours they spend on their phones. When they see the _total_, they are often surprised and decide to use their phones less.",
-"4. Phones are not bad in themselves. The problem is how we use them. If we _control_ our phone use, we can enjoy the benefits of technology without letting it control our lives."
+"1. Today, it is hard to imagine life without a smartphone. We use our phones to talk to our families, read the news, pay for shopping, find our way around the city and even study for exams. Because phones are so useful, many people carry them everywhere and feel nervous when the battery is low. Some experts believe that certain people have become so _dependent_ on their phones that their behaviour is similar to an addiction.",
+"2. Surveys suggest that many people check their phones dozens of times a day, often without a clear reason. Some people reach for their phone the moment they wake up, and the last thing they see before sleeping is a bright screen. This habit can affect our health in several ways. Looking at a screen late at night can make it harder to fall asleep, and staring at small text for hours can make our eyes tired. Heavy phone use has also been linked to stress, because people feel they must answer every message immediately.",
+"3. Phones can also affect our relationships. In many homes and cafés, it is common to see a group of friends or family members sitting together while each person looks at their own screen. Although _they_ are in the same place, they are _hardly_ talking to each other. Some people even feel hurt when the person they are speaking to keeps checking messages. Over time, this can make relationships weaker, because real conversations need full attention.",
+"4. Fortunately, there are simple ways to take back control. One idea is to turn off notifications for apps that are not important. Another is to create phone-free times, such as during meals or the first hour after waking up. Many phones now show a daily report of screen time, and people are often surprised when they see the total. The aim is not to stop using phones completely, but to use them in a more balanced way."
 ],
 "qs": [
 {
-"q": "What does the underlined word \"them\" in paragraph 1 refer to?",
+"q": "Which use of phones does the writer NOT mention in paragraph 1?",
 "o": [
-"phones",
-"experts",
-"friends",
-"videos"
+"taking photos",
+"reading the news",
+"paying for shopping",
+"finding our way around the city"
 ],
-"e": "«many people now feel that they can't live without them» ← them = الجوالات."
+"e": "الفقرة 1 ذكرت «read the news, pay for shopping, find our way around the city»، والتصوير ما انذكر."
 },
 {
-"q": "How often does the average person check their phone, according to the survey?",
+"q": "What does the underlined word \"dependent\" in paragraph 1 mean?",
 "o": [
-"About 96 times a day",
-"About 69 times a day",
-"About 10 times a day",
-"About 96 times a week"
+"needing something so much that it is hard to live without it",
+"not interested in something and rarely using it",
+"afraid of something and trying to avoid it",
+"good at using something in many different ways"
 ],
-"e": "الفقرة 2: «checks their phone about 96 times a day»."
+"e": "«so dependent on their phones that their behaviour is similar to an addiction» ← dependent = معتمد عليه لدرجة ما يقدر يستغني عنه."
 },
 {
-"q": "Which problem of using phones too much does the writer NOT mention?",
+"q": "According to paragraph 2, looking at a screen late at night can ______.",
 "o": [
-"It makes us gain weight.",
-"It makes it hard to sleep.",
-"It hurts our eyes.",
-"It makes us feel more stressed."
+"make it harder to fall asleep",
+"make our eyes stronger",
+"reduce our stress",
+"improve our relationships"
 ],
-"e": "الفقرة 2 ذكرت النوم والعيون والتوتر، وزيادة الوزن ما انذكرت."
+"e": "الفقرة 2: «Looking at a screen late at night can make it harder to fall asleep»."
 },
 {
-"q": "Why can phones affect our relationships?",
+"q": "Why has heavy phone use been linked to stress?",
 "o": [
-"We spend less time talking to the people around us.",
-"Our friends don't have phones.",
-"Phones are too expensive.",
-"We call our friends too often."
+"People feel they must answer every message immediately.",
+"People read too many news stories.",
+"Phones are very expensive.",
+"People cannot find their way around the city."
 ],
-"e": "الفقرة 2: «we spend less time talking to the people around us»."
+"e": "الفقرة 2: «linked to stress, because people feel they must answer every message immediately»."
 },
 {
-"q": "What is one simple idea to use phones less?",
+"q": "What does the underlined word \"they\" in paragraph 3 refer to?",
 "o": [
-"Turn off notifications for apps that are not important.",
-"Buy a new phone.",
-"Play more games.",
-"Check the news more often."
+"friends or family sitting together",
+"the homes and cafés they visit",
+"the screens they look at",
+"the messages they keep checking"
 ],
-"e": "الفقرة 3: «turn off notifications for apps that are not important»."
+"e": "الجملة قبلها: «a group of friends or family members sitting together… Although they are in the same place» ← they = الأصحاب أو الأهل الجالسين مع بعض."
 },
 {
-"q": "When does the writer suggest having \"phone-free\" times?",
+"q": "What does the underlined word \"hardly\" in paragraph 3 mean?",
 "o": [
-"During meals or the first hour after waking up",
-"Only at work",
-"At night only",
-"During exams"
+"almost not",
+"very loudly",
+"very often",
+"happily"
 ],
-"e": "الفقرة 3: «during meals or the first hour after waking up»."
+"e": "«Although they are in the same place, they are hardly talking» ← مع إنهم مع بعض بالكاد يتكلمون = almost not."
 },
 {
-"q": "What does the underlined word \"total\" in paragraph 3 mean?",
+"q": "Why can phone use make relationships weaker over time?",
 "o": [
-"the complete number",
-"the phone",
-"the app",
-"the problem"
+"Real conversations need full attention.",
+"Friends only meet in cafés.",
+"Family members live in different cities.",
+"People turn off their notifications."
 ],
-"e": "total = المجموع الكامل لعدد الساعات."
+"e": "الفقرة 3: «this can make relationships weaker, because real conversations need full attention»."
 },
 {
-"q": "How do people often feel when they see how many hours they spend on their phones?",
+"q": "How do people often feel when they see their total screen time?",
 "o": [
 "surprised",
-"happy",
 "bored",
+"angry",
 "proud"
 ],
-"e": "الفقرة 3: «When they see the total, they are often surprised»."
+"e": "الفقرة 4: «people are often surprised when they see the total»."
 },
 {
-"q": "What does the underlined word \"control\" in paragraph 4 mean?",
+"q": "According to the writer, the aim is ______.",
 "o": [
-"manage or limit",
-"break",
-"increase",
-"forget"
+"to use phones in a more balanced way",
+"to stop using phones completely",
+"to buy a phone with a better battery",
+"to use phones only during meals"
 ],
-"e": "control = يتحكم ويحدد استخدامه ← manage or limit."
+"e": "الفقرة 4: «The aim is not to stop using phones completely, but to use them in a more balanced way»."
 },
 {
-"q": "What is the writer's opinion about phones?",
+"q": "What is the best title for the passage?",
 "o": [
-"Phones are not bad; the problem is how we use them.",
-"Phones are dangerous and we should stop using them.",
-"Phones are only useful for games.",
-"Everyone should have two phones."
+"How phones affect our lives and how to control our use",
+"The history of the smartphone and its first users",
+"How to choose a new phone that fits your budget",
+"Why phones have become much cheaper today"
 ],
-"e": "الفقرة 4: «Phones are not bad in themselves. The problem is how we use them»."
+"e": "القطعة عن تأثير الجوال على الصحة والعلاقات (الفقرة 2 و3)، وبعدها طرق «to take back control» (الفقرة 4)."
 }
 ]
 },
@@ -1795,111 +1795,111 @@ window.READING = [
 "n": 17,
 "title": "Why Sleep Matters",
 "text": [
-"1. Many students stay up late to study, watch videos, or chat with friends. They think that sleeping less gives them more time to do things. However, scientists say that sleep is one of the most important things for our health and our success at school.",
-"2. Adults need between seven and nine hours of sleep every night, and teenagers need even more, about eight to ten hours. But studies show that most teenagers sleep less than seven hours on school nights. When people don't get enough sleep, they feel tired and _run-down_. They also have problems paying attention, and their memory becomes weaker.",
-"3. Sleep is especially important for learning. While we sleep, our brain organizes the information we learned during the day and stores it in our memory. This is why students who sleep well before an exam often do better than students who study all night. In one study, students who slept eight hours remembered 30 percent more information than students who didn't sleep.",
-"4. To sleep better, experts suggest going to bed at the same time every night, even on weekends. It is also a good idea to avoid coffee and energy drinks in the evening. Finally, turn off your phone and other screens at least one hour before bed, because the light from _them_ makes it harder to fall asleep."
+"1. Many university students believe that sleep is a waste of time. During the exam period, especially, they stay up late to study, and at other times they stay awake chatting with friends or watching TV series. They think that sleeping less gives them more hours to get things done. However, a large amount of research shows the opposite: when we do not sleep enough, almost everything we do during the day becomes slower and more difficult.",
+"2. Health experts recommend that adults get seven to nine hours of sleep every night, while teenagers need around eight to ten. Many young people, however, sleep much less, particularly on weekdays. After just one short night, people often feel _irritable_ and get angry about small things that would not normally bother them. They also find it harder to concentrate in lectures, and they may make more mistakes in simple tasks. Driving when very tired is especially dangerous, because a sleepy driver reacts more slowly.",
+"3. Over a longer period, poor sleep can affect the body as well as the mind. People who regularly sleep too little tend to catch colds more often, because their bodies are less able to fight illness. Some studies also suggest that tired people feel hungrier and choose more sugary food, which can lead to weight gain. In other words, sleep is not a break from a healthy life; it is an important part of _it_.",
+"4. The good news is that most people can improve their sleep with a few simple changes. Experts suggest going to bed and getting up at the same time every day, even at weekends, so that the body gets used to a regular pattern. It is also _wise_ to avoid coffee, tea and energy drinks in the late afternoon and evening. Finally, screens should be turned off about an hour before bed, and the bedroom should be dark, quiet and comfortable."
 ],
 "qs": [
 {
-"q": "Why do many students stay up late?",
+"q": "Why do many students sleep less?",
 "o": [
-"To study, watch videos, or chat with friends",
-"Because they are not tired",
-"Because their parents tell them to",
-"To exercise"
+"They think it gives them more hours to get things done.",
+"Their doctors advise them to sleep less.",
+"They feel irritable at night.",
+"They drink too much coffee."
 ],
-"e": "الفقرة 1: «stay up late to study, watch videos, or chat with friends»."
+"e": "الفقرة 1: «They think that sleeping less gives them more hours to get things done»."
 },
 {
-"q": "How many hours of sleep do teenagers need?",
+"q": "According to the writer, how much sleep do teenagers need?",
 "o": [
-"About eight to ten hours",
-"About five to six hours",
-"Between seven and nine hours",
-"More than twelve hours"
-],
-"e": "الفقرة 2: «teenagers need even more, about eight to ten hours»."
-},
-{
-"q": "According to studies, most teenagers sleep ______ on school nights.",
-"o": [
+"around eight to ten hours",
+"seven to nine hours",
 "less than seven hours",
-"more than ten hours",
-"exactly eight hours",
-"about nine hours"
+"about five hours"
 ],
-"e": "الفقرة 2: «most teenagers sleep less than seven hours on school nights»."
+"e": "الفقرة 2: «while teenagers need around eight to ten» ← (سبع لتسع للكبار مو للمراهقين)."
 },
 {
-"q": "What does the underlined word \"run-down\" in paragraph 2 mean?",
+"q": "What does the underlined word \"irritable\" in paragraph 2 mean?",
 "o": [
-"tired and not healthy",
-"happy and full of energy",
-"angry",
-"very busy"
+"easily annoyed",
+"full of energy",
+"calm and relaxed",
+"very quiet"
 ],
-"e": "run-down = تعبان وصحته مو زينة. وفي الجملة «they feel tired and run-down»."
+"e": "الجملة نفسها توضّحها: «get angry about small things that would not normally bother them» ← irritable = سريع الانزعاج والعصبية."
 },
 {
-"q": "Which effect of not sleeping enough does the writer NOT mention?",
+"q": "Which effect of one short night does the writer NOT mention?",
 "o": [
-"gaining weight",
-"feeling tired",
-"problems paying attention",
-"weaker memory"
+"getting a headache",
+"getting angry about small things",
+"finding it harder to concentrate",
+"making more mistakes in simple tasks"
 ],
-"e": "الفقرة 2 ذكرت التعب وضعف التركيز وضعف الذاكرة، وزيادة الوزن ما انذكرت."
+"e": "الفقرة 2 ذكرت العصبية «get angry about small things» وضعف التركيز «harder to concentrate» والأخطاء «more mistakes in simple tasks»، والصداع ما انذكر."
 },
 {
-"q": "What does our brain do while we sleep?",
+"q": "Why is driving when very tired especially dangerous?",
 "o": [
-"It organizes information and stores it in our memory.",
-"It stops working completely.",
-"It forgets everything we learned.",
-"It makes us hungry."
+"A sleepy driver reacts more slowly.",
+"Tired drivers always drive too fast.",
+"The roads are dark at night.",
+"Tired drivers drink energy drinks."
 ],
-"e": "الفقرة 3: «our brain organizes the information we learned… and stores it in our memory»."
+"e": "الفقرة 2: «because a sleepy driver reacts more slowly»."
 },
 {
-"q": "In the study, students who slept eight hours ______.",
+"q": "The writer says that people who regularly sleep too little catch colds more often because ______.",
 "o": [
-"remembered 30 percent more information",
-"remembered 13 percent less information",
-"did not remember anything",
-"studied all night"
+"their bodies are less able to fight illness",
+"they eat more sugary food",
+"they go out late at night",
+"they drink coffee in the evening"
 ],
-"e": "الفقرة 3: «students who slept eight hours remembered 30 percent more information»."
+"e": "الفقرة 3: «tend to catch colds more often, because their bodies are less able to fight illness»."
 },
 {
-"q": "What do experts suggest about bedtime?",
+"q": "According to some studies, tired people ______.",
 "o": [
-"Go to bed at the same time every night, even on weekends.",
-"Go to bed late on weekends.",
-"Sleep only in the afternoon.",
-"Go to bed at a different time every night."
+"feel hungrier and choose more sugary food",
+"lose weight very quickly",
+"eat less than other people",
+"sleep better at weekends"
 ],
-"e": "الفقرة 4: «going to bed at the same time every night, even on weekends»."
+"e": "الفقرة 3: «Some studies also suggest that tired people feel hungrier and choose more sugary food»."
 },
 {
-"q": "What does the underlined word \"them\" in paragraph 4 refer to?",
+"q": "What does the underlined word \"it\" in paragraph 3 refer to?",
 "o": [
-"your phone and other screens",
-"coffee and energy drinks",
-"weekends",
-"experts"
+"a healthy life",
+"sleep",
+"the body",
+"weight gain"
 ],
-"e": "«turn off your phone and other screens… because the light from them» ← them = الجوال والشاشات."
+"e": "«sleep is not a break from a healthy life; it is an important part of it» ← النوم جزء مهم من الحياة الصحية، فـ it الثانية = a healthy life."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What does the underlined word \"wise\" in paragraph 4 mean?",
 "o": [
-"Getting enough sleep is very important for health and learning.",
-"Students should study all night before exams.",
-"Coffee helps students sleep better.",
-"Teenagers sleep too much."
+"sensible; a good idea",
+"very difficult",
+"not allowed",
+"expensive"
 ],
-"e": "القطعة كلها عن أهمية النوم للصحة والتعلّم."
+"e": "«It is also wise to avoid coffee… in the late afternoon» = من الحكمة / فكرة زينة ← sensible."
+},
+{
+"q": "What is the best title for the passage?",
+"o": [
+"Why we need enough sleep and how to get it",
+"How to study all night before an exam",
+"The dangers of energy drinks",
+"Why students like watching TV series"
+],
+"e": "القطعة عن أضرار قلة النوم (الفقرة 2 و3) وطرق تحسين النوم (الفقرة 4)."
 }
 ]
 },
@@ -1907,111 +1907,111 @@ window.READING = [
 "n": 18,
 "title": "Exercise and Energy",
 "text": [
-"1. Many people say they are too tired to exercise. They work or study all day, and when they get home, they just want to sit on the sofa. But surprisingly, regular exercise can actually give you more energy.",
-"2. When you exercise, your heart becomes stronger and your body gets more oxygen. This helps you feel more awake and active. One study found that people who did light exercise, like walking, three times a week for six weeks felt 20 percent more energetic than before. Exercise also improves your mood. During exercise, the brain produces chemicals that make you feel happy and _reduce_ stress.",
-"3. You don't need to go to a gym or spend a lot of money to exercise. Walking, running, and cycling are free, and you can do _them_ almost anywhere. You can also do simple exercises at home, like push-ups and sit-ups. Even household activities, like cleaning or working in the garden, count as exercise.",
-"4. Experts recommend at least 150 minutes of exercise every week. That is only about 30 minutes a day, five days a week. If that sounds like a lot, start with ten minutes a day and slowly increase the time. The most important thing is to choose an activity that you enjoy, so that you _stick with_ it."
+"1. Many people say they are simply too tired to exercise. After a long day at work or university, the last thing they want to do is go for a run; they would rather sit on the sofa and look at their phones. It seems _logical_ that exercise would make a tired person even more tired. Surprisingly, however, research suggests that the opposite is often true: regular physical activity can actually give people more energy.",
+"2. How does this happen? When you exercise regularly, your heart and lungs become stronger, so your body can carry oxygen to your muscles more efficiently. As a result, everyday activities such as climbing stairs or carrying shopping bags _require_ less effort. Exercise also has a positive effect on mood. During physical activity, the brain releases chemicals that help people feel happier and more relaxed, which is why many people say they feel fresh after a walk, even if they felt tired before _it_.",
+"3. You do not need expensive equipment or a gym membership to be active. Walking, running and cycling are free, and you can do them almost anywhere. In hot weather, some people in Saudi Arabia walk inside shopping malls, while others use the walking paths in their neighbourhood after sunset. At home, simple exercises like push-ups, squats and skipping with a rope can be done in a small space. Even household jobs such as cleaning and gardening count as physical activity.",
+"4. The World Health Organization recommends that adults do at least 150 minutes of moderate activity every week. That may sound like a lot, but it is only about 30 minutes a day, five days a week. Beginners can start with ten minutes a day and increase the time slowly. Experts also advise choosing an activity you really enjoy, whether it is football, swimming or walking with a friend. If you enjoy it, you are much more likely to continue for months instead of giving up after a week."
 ],
 "qs": [
 {
-"q": "Why do many people say they don't exercise?",
+"q": "What does the underlined word \"logical\" in paragraph 1 mean?",
 "o": [
-"They are too tired.",
-"They don't like sports.",
-"Gyms are too far.",
-"They have no shoes."
+"reasonable; making sense",
+"funny",
+"dangerous",
+"impossible"
 ],
-"e": "الفقرة 1: «Many people say they are too tired to exercise»."
+"e": "«It seems logical that exercise would make a tired person even more tired» = يبان منطقي ومعقول ← reasonable; making sense."
 },
 {
-"q": "According to the writer, what can regular exercise give you?",
+"q": "What does research suggest?",
 "o": [
-"more energy",
-"more stress",
-"less oxygen",
-"a weaker heart"
+"Regular physical activity can give people more energy.",
+"Exercise always makes tired people more tired.",
+"People should rest on the sofa after work.",
+"Only young people get energy from exercise."
 ],
-"e": "الفقرة 1: «regular exercise can actually give you more energy»."
+"e": "الفقرة 1: «research suggests that the opposite is often true: regular physical activity can actually give people more energy»."
 },
 {
-"q": "What happens to your heart when you exercise?",
+"q": "According to the writer, when your heart and lungs become stronger, ______.",
 "o": [
-"It becomes stronger.",
-"It becomes weaker.",
-"It stops for a moment.",
-"Nothing happens."
+"your body can carry oxygen to your muscles more efficiently",
+"the brain stops releasing chemicals",
+"you feel more tired after a walk",
+"you need a gym membership"
 ],
-"e": "الفقرة 2: «your heart becomes stronger»."
+"e": "الفقرة 2: «your heart and lungs become stronger, so your body can carry oxygen to your muscles more efficiently»."
 },
 {
-"q": "In the study, how did people feel after six weeks of light exercise?",
+"q": "What does the underlined word \"require\" in paragraph 2 mean?",
 "o": [
-"20 percent more energetic",
-"20 percent more tired",
-"6 percent happier",
-"The same as before"
+"need",
+"give",
+"avoid",
+"finish"
 ],
-"e": "الفقرة 2: «felt 20 percent more energetic than before»."
+"e": "«everyday activities… require less effort» = تحتاج مجهود أقل ← need."
 },
 {
-"q": "What does the underlined word \"reduce\" in paragraph 2 mean?",
+"q": "What does the underlined word \"it\" in paragraph 2 refer to?",
 "o": [
-"make less",
-"make more",
-"produce",
-"cause"
+"a walk",
+"the brain",
+"the heart",
+"mood"
 ],
-"e": "reduce stress = يقلّل التوتر ← make less."
+"e": "«they feel fresh after a walk, even if they felt tired before it» ← تعبانين قبل المشي ← it = a walk."
 },
 {
-"q": "What does the underlined word \"them\" in paragraph 3 refer to?",
+"q": "Which activity does the writer NOT mention in paragraph 3?",
 "o": [
-"walking, running, and cycling",
-"gyms",
-"push-ups and sit-ups",
-"household activities"
+"lifting weights",
+"push-ups",
+"skipping with a rope",
+"gardening"
 ],
-"e": "«Walking, running, and cycling are free, and you can do them» ← them = المشي والجري وركوب الدراجة."
+"e": "الفقرة 3 ذكرت «push-ups, squats and skipping with a rope» و«cleaning and gardening»، ورفع الأثقال ما انذكر."
 },
 {
-"q": "Which activity does the writer say counts as exercise?",
+"q": "The writer gives the example of people walking inside shopping malls to show that ______.",
 "o": [
-"working in the garden",
-"watching TV",
-"reading a book",
-"playing video games"
+"people can stay active even in hot weather",
+"shopping is a kind of exercise",
+"shopping malls are expensive",
+"people should only walk at night"
 ],
-"e": "الفقرة 3: «household activities, like cleaning or working in the garden, count as exercise»."
+"e": "الفقرة 3: «In hot weather, some people in Saudi Arabia walk inside shopping malls» ← حتى مع الحر تقدر تتحرك."
 },
 {
-"q": "How many minutes of exercise do experts recommend every week?",
+"q": "According to the World Health Organization, adults should do at least ______.",
 "o": [
-"At least 150 minutes",
-"At least 50 minutes",
-"At least 300 minutes",
-"At least 15 minutes"
+"150 minutes of moderate activity every week",
+"150 minutes of activity every day",
+"50 minutes of activity every week",
+"10 minutes of activity every week"
 ],
-"e": "الفقرة 4: «at least 150 minutes of exercise every week»."
+"e": "الفقرة 4: «adults do at least 150 minutes of moderate activity every week»."
 },
 {
-"q": "What do the underlined words \"stick with\" in paragraph 4 mean?",
+"q": "Why do experts advise choosing an activity you really enjoy?",
 "o": [
-"continue doing",
-"stop doing",
-"forget about",
-"look for"
+"You are much more likely to continue for months.",
+"It always costs less money.",
+"It burns more energy than other activities.",
+"You can do it only with a friend."
 ],
-"e": "stick with it = تستمر عليه ← continue doing."
+"e": "الفقرة 4: «If you enjoy it, you are much more likely to continue for months instead of giving up after a week»."
 },
 {
-"q": "What is the writer's advice for people who think 30 minutes a day is a lot?",
+"q": "What is the main idea of the passage?",
 "o": [
-"Start with ten minutes a day and slowly increase the time.",
-"Exercise for two hours once a week.",
-"Don't exercise at all.",
-"Go to an expensive gym."
+"Regular exercise can give you more energy, and it is easy to start.",
+"Tired people should never exercise, because it makes them more tired.",
+"Exercise is only possible in a gym with expensive equipment.",
+"Household jobs are better than sports for staying healthy."
 ],
-"e": "الفقرة 4: «start with ten minutes a day and slowly increase the time»."
+"e": "الفكرة في الفقرة 1: «regular physical activity can actually give people more energy»، وباقي القطعة يوضّح ليش وكيف تبدأ بسهولة."
 }
 ]
 },
@@ -2019,111 +2019,111 @@ window.READING = [
 "n": 19,
 "title": "Vitamins: Food or Pills?",
 "text": [
-"1. Vitamins are important for our health. They help our bodies grow, fight illness, and produce energy. Today, many people take vitamin pills every day because they think the pills will make them healthier. In some countries, more than half of all adults take vitamin _supplements_.",
-"2. But do we really need them? Many doctors say that most healthy people can get all the vitamins they need from food. Fruit and vegetables are full of vitamins. For example, oranges have a lot of vitamin C, carrots have vitamin A, and milk and eggs have vitamin D. A balanced diet with different kinds of food usually gives the body everything _it_ needs.",
-"3. However, some people may need extra vitamins. Pregnant women, older people, and people who don't get much sunlight sometimes need pills. Vegetarians may also need vitamin B12, because it is found mostly in meat, fish, and dairy products. In these cases, a doctor can do a blood test and suggest the right vitamins.",
-"4. Taking too many vitamin pills can actually be dangerous. Some vitamins, like A and D, stay in the body, and too much of them can cause health problems. Experts say that pills should not _replace_ healthy food. It is better to eat fresh fruit and vegetables every day and talk to a doctor before taking any supplements."
+"1. Vitamins are substances that our bodies need in small amounts to work _properly_. They help us grow, keep our bones and skin healthy, and protect us from illness. In recent years, vitamin pills have become very popular, and pharmacies now sell dozens of types. Many people take a pill every morning because they believe it will make them stronger or give them more energy, even if they already feel healthy.",
+"2. However, many doctors question whether healthy people really need these _supplements_. In their view, a balanced diet that includes fruit, vegetables, grains, milk products, and meat or fish usually provides all the vitamins the body needs. For example, oranges and strawberries are rich in vitamin C, carrots contain a substance that the body turns into vitamin A, and eggs and oily fish provide some vitamin D. Food also contains fibre and other useful things that a pill cannot offer.",
+"3. On the other hand, some groups of people may benefit from extra vitamins. Pregnant women are often advised to take folic acid, a B vitamin, and older people sometimes need vitamin D, especially if they rarely go outside. Our skin makes vitamin D when it is exposed to sunlight, so people who spend most of the day indoors may not get enough. People who do not eat any animal products may also need vitamin B12, because _it_ is found mainly in meat, fish, eggs and milk. In these cases, a doctor can do a blood test before suggesting the right amount.",
+"4. Also, more is not always better. Some vitamins, such as A and D, are stored in the body, so taking large amounts over a long time can be harmful. Vitamin pills can also be expensive, and the money might be better spent on fresh food. Most experts agree that pills should be used to support a good diet, not to replace it. Before taking supplements, it is best to talk to a doctor first."
 ],
 "qs": [
 {
-"q": "According to paragraph 1, what do vitamins help our bodies do?",
+"q": "What does the underlined word \"properly\" in paragraph 1 mean?",
 "o": [
-"grow, fight illness, and produce energy",
-"sleep and dream",
-"become heavier",
-"stop eating"
+"correctly",
+"slowly",
+"rarely",
+"quickly"
 ],
-"e": "الفقرة 1: «They help our bodies grow, fight illness, and produce energy»."
+"e": "«our bodies need in small amounts to work properly» = عشان الجسم يشتغل صح وبالشكل المطلوب ← correctly."
 },
 {
-"q": "What does the underlined word \"supplements\" in paragraph 1 mean?",
+"q": "Why do many people take a vitamin pill every morning?",
 "o": [
-"things you take to add to your diet",
-"kinds of fruit",
-"doctors",
-"illnesses"
+"They believe it will make them stronger or give them more energy.",
+"Their doctors tell them to take one with breakfast every day.",
+"They feel ill every morning and want to feel better.",
+"Pills are cheaper and easier to find than fresh food."
 ],
-"e": "supplements = مكمّلات، يعني شي تاخذه زيادة على أكلك (حبوب الفيتامين)."
+"e": "الفقرة 1: «because they believe it will make them stronger or give them more energy, even if they already feel healthy»."
 },
 {
-"q": "What do many doctors say about vitamins?",
+"q": "What does the underlined word \"supplements\" in paragraph 2 mean?",
 "o": [
-"Most healthy people can get all the vitamins they need from food.",
-"Everyone needs to take vitamin pills.",
-"Fruit doesn't have vitamins.",
-"Vitamins are not important."
+"extra vitamin pills",
+"fresh fruit and vegetables",
+"blood tests",
+"pharmacies"
 ],
-"e": "الفقرة 2: «most healthy people can get all the vitamins they need from food»."
+"e": "«whether healthy people really need these supplements» ← يقصد حبوب الفيتامين اللي تكلّم عنها في الفقرة 1 = مكمّلات تنأخذ زيادة على الأكل."
 },
 {
-"q": "Which food has a lot of vitamin C?",
+"q": "According to many doctors, a balanced diet ______.",
 "o": [
+"usually provides all the vitamins the body needs",
+"never gives enough vitamin C",
+"should be replaced by vitamin pills",
+"is only important for older people"
+],
+"e": "الفقرة 2: «a balanced diet… usually provides all the vitamins the body needs»."
+},
+{
+"q": "Which food does the writer NOT mention as a source of vitamins?",
+"o": [
+"bananas",
 "oranges",
 "carrots",
-"milk",
 "eggs"
 ],
-"e": "الفقرة 2: «oranges have a lot of vitamin C»."
+"e": "الفقرة 2 ذكرت «oranges and strawberries» و«carrots» و«eggs and oily fish»، والموز ما انذكر."
 },
 {
-"q": "What does the underlined word \"it\" in paragraph 2 refer to?",
+"q": "According to paragraph 2, what can food offer that a pill cannot?",
 "o": [
-"the body",
-"a balanced diet",
-"milk",
-"vitamin D"
+"fibre and other useful things",
+"more vitamin C than oranges",
+"vitamin D without any fish",
+"folic acid in large amounts"
 ],
-"e": "«A balanced diet… usually gives the body everything it needs» ← it = الجسم."
+"e": "الفقرة 2: «Food also contains fibre and other useful things that a pill cannot offer»."
 },
 {
-"q": "Which group of people does the writer NOT mention as needing extra vitamins?",
+"q": "Why may people who spend most of the day indoors not get enough vitamin D?",
 "o": [
-"teenagers who play sports",
-"pregnant women",
-"older people",
-"people who don't get much sunlight"
+"Our skin makes vitamin D when it is exposed to sunlight.",
+"They eat too many eggs.",
+"They take too many vitamin pills.",
+"Vitamin D is found only in meat."
 ],
-"e": "الفقرة 3 ذكرت الحوامل وكبار السن واللي ما يتعرضون للشمس والنباتيين. أما المراهقين الرياضيين فما انذكروا."
+"e": "الفقرة 3: «Our skin makes vitamin D when it is exposed to sunlight, so people who spend most of the day indoors may not get enough»."
 },
 {
-"q": "Why may vegetarians need vitamin B12?",
+"q": "What does the underlined word \"it\" in paragraph 3 refer to?",
 "o": [
-"It is found mostly in meat, fish, and dairy products.",
-"It is found only in fruit.",
-"They don't drink water.",
-"They don't get sunlight."
+"vitamin B12",
+"a blood test",
+"folic acid",
+"sunlight"
 ],
-"e": "الفقرة 3: «it is found mostly in meat, fish, and dairy products»."
+"e": "«may also need vitamin B12, because it is found mainly in meat, fish, eggs and milk» ← it = vitamin B12."
 },
 {
-"q": "How can a doctor decide which vitamins a person needs?",
+"q": "Why can taking large amounts of vitamins A and D be harmful?",
 "o": [
-"By doing a blood test",
-"By looking at their food",
-"By asking their friends",
-"By checking their weight"
+"They are stored in the body.",
+"They are very expensive.",
+"They are found only in fresh food.",
+"They make people hungry."
 ],
-"e": "الفقرة 3: «a doctor can do a blood test»."
+"e": "الفقرة 4: «Some vitamins, such as A and D, are stored in the body, so taking large amounts over a long time can be harmful»."
 },
 {
-"q": "What does the underlined word \"replace\" in paragraph 4 mean?",
+"q": "What is the main idea of the passage?",
 "o": [
-"take the place of",
-"add to",
-"make better",
-"cook"
+"Most healthy people can get their vitamins from food, and pills are needed only in some cases.",
+"Everyone should take vitamin pills every day, even if they feel healthy.",
+"Vitamin pills are always dangerous, so nobody should ever take them.",
+"Fresh food is too expensive, so most people need pills instead."
 ],
-"e": "«pills should not replace healthy food» = ما تاخذ مكان الأكل الصحي."
-},
-{
-"q": "Why can taking too many vitamin pills be dangerous?",
-"o": [
-"Some vitamins stay in the body and too much can cause health problems.",
-"Vitamin pills are very expensive.",
-"Vitamin pills have a lot of sugar.",
-"Vitamin pills make you hungry."
-],
-"e": "الفقرة 4: «Some vitamins… stay in the body, and too much of them can cause health problems»."
+"e": "الفقرة 2: الأكل المتوازن «usually provides all the vitamins the body needs»، والفقرة 3: «some groups of people may benefit from extra vitamins»."
 }
 ]
 },
@@ -2131,671 +2131,676 @@ window.READING = [
 "n": 20,
 "title": "Loneliness in Older People",
 "text": [
-"1. Loneliness is a growing problem around the world, especially among older people. As people get older, their children often move away, their friends may pass away, and they may stop working. As a result, many older people spend most of their day alone. In some countries, one in three people over the age of 65 feels lonely.",
-"2. Loneliness is not just a sad feeling. Doctors say it can be as harmful to our health as smoking 15 cigarettes a day. Lonely people are more likely to have heart problems, sleep badly, and lose their memory. They may also stop eating well and exercising.",
-"3. Many communities are now trying to solve this problem. In some cities, young volunteers visit older people every week to talk, play games, or help with shopping. Some universities have programs where students live with older people for free. _In return_, the students spend time with them and help around the house. Both groups benefit: the students save money on rent, and the older people have company.",
-"4. There are also simple things everyone can do. You can call your grandparents more often, invite an older neighbour for coffee, or teach an older person how to use video calls. A short conversation can make someone's day much brighter. Remember, one day we will all be old, and we will want someone to care about _us_ too."
+"1. Loneliness is becoming a serious problem in many parts of the world, and older people are among those most at risk. As people age, their children often move to other cities for work or study, and old friends may become ill or pass away. Retirement can also take away the daily contact that people used to have with their colleagues. As a result, many older people spend long hours alone at home, and some may go several days without a real conversation.",
+"2. Loneliness is more than a sad feeling. Some researchers have compared its effect on health to that of smoking around fifteen cigarettes a day. Lonely older people are more likely to suffer from heart disease and poor sleep, and they often lose interest in cooking healthy meals or going for walks. Doctors in some countries report that lonely patients visit _them_ more often, not always because they are ill, but because the visit gives them a chance to talk to someone.",
+"3. Many communities are now looking for ways to keep older people _connected_. Some neighbourhood centres organise weekly activities, such as reading groups, light exercise classes and shared meals. In a few countries, some universities run home-share programmes: a student lives with an older person for a very low rent and, in return, spends time with them and helps with jobs around the house. Both sides benefit, because the student saves money and the older person enjoys company and feels safer.",
+"4. There are also small things that each of us can do. We can call our grandparents regularly instead of only on special occasions, visit an elderly neighbour, or show an older relative how to make video calls so that they can see family members who live far away. These actions take little time, but they can make a huge difference to someone's day. After all, most of us will be old one day, and we will also hope that someone remembers to _check on_ us."
 ],
 "qs": [
 {
-"q": "According to paragraph 1, why do many older people spend most of their day alone?",
+"q": "Which reason for loneliness does the writer NOT mention in paragraph 1?",
 "o": [
-"Their children move away, their friends pass away, and they stop working.",
-"They don't like other people.",
-"They are always busy.",
-"They live in big cities."
+"moving to a new house",
+"children moving to other cities",
+"old friends becoming ill or passing away",
+"retirement"
 ],
-"e": "الفقرة 1: «their children often move away, their friends may pass away, and they may stop working»."
+"e": "الفقرة 1 ذكرت «their children often move to other cities» و«old friends may become ill or pass away» و«Retirement»، والانتقال لبيت جديد ما انذكر."
 },
 {
-"q": "In some countries, how many people over the age of 65 feel lonely?",
+"q": "According to the writer, retirement can take away ______.",
 "o": [
-"One in three",
-"One in five",
-"Two in three",
-"One in ten"
+"the daily contact people had with their colleagues",
+"the money people saved for their children",
+"people's homes",
+"people's interest in video calls"
 ],
-"e": "الفقرة 1: «one in three people over the age of 65 feels lonely»."
+"e": "الفقرة 1: «Retirement can also take away the daily contact that people used to have with their colleagues»."
 },
 {
-"q": "Doctors say loneliness can be as harmful as ______.",
+"q": "Some researchers have compared the effect of loneliness on health to ______.",
 "o": [
-"smoking 15 cigarettes a day",
+"smoking around fifteen cigarettes a day",
 "eating fast food every day",
-"sleeping 15 hours a day",
-"drinking too much coffee"
+"not sleeping for a week",
+"working too many hours"
 ],
-"e": "الفقرة 2: «as harmful to our health as smoking 15 cigarettes a day»."
+"e": "الفقرة 2: «compared its effect on health to that of smoking around fifteen cigarettes a day»."
 },
 {
-"q": "Which health problem of loneliness does the writer NOT mention?",
+"q": "What does the underlined word \"them\" in paragraph 2 refer to?",
 "o": [
-"problems with eyesight",
-"heart problems",
-"sleeping badly",
-"losing memory"
+"doctors",
+"lonely patients",
+"healthy meals",
+"cigarettes"
 ],
-"e": "الفقرة 2 ذكرت القلب والنوم والذاكرة، والنظر (eyesight) ما انذكر."
+"e": "«Doctors in some countries report that lonely patients visit them more often» ← المرضى يزورون الدكاترة ← them = doctors."
 },
 {
-"q": "What do young volunteers do in some cities?",
+"q": "According to paragraph 2, why do some lonely patients make more visits?",
 "o": [
-"They visit older people every week.",
-"They build new houses for older people.",
-"They give older people money.",
-"They teach older people how to drive."
+"The visit gives them a chance to talk to someone.",
+"They are always seriously ill.",
+"They are asked to come every week.",
+"They want to stop smoking."
 ],
-"e": "الفقرة 3: «young volunteers visit older people every week»."
+"e": "الفقرة 2: «not always because they are ill, but because the visit gives them a chance to talk to someone»."
 },
 {
-"q": "What do the underlined words \"In return\" in paragraph 3 mean?",
+"q": "What does the underlined word \"connected\" in paragraph 3 mean?",
 "o": [
-"as an exchange",
-"going back home",
-"arriving late",
-"saying no"
+"in contact with other people",
+"far away from other people",
+"living alone",
+"very busy with work"
 ],
-"e": "In return = مقابل ذلك، يعني الطالب يسكن مجاناً وبالمقابل يساعدهم."
+"e": "«keep older people connected» وبعدها أمثلة يقابلون فيها ناس ← connected = متواصلين مع غيرهم."
 },
 {
-"q": "How do students benefit from living with older people?",
+"q": "In a home-share programme, the student ______.",
 "o": [
-"They save money on rent.",
-"They get free cars.",
-"They don't have to study.",
-"They get better grades."
+"pays a very low rent and spends time with the older person",
+"pays no rent and never helps in the house",
+"lives in a university dormitory",
+"organises weekly reading groups"
 ],
-"e": "الفقرة 3: «the students save money on rent»."
+"e": "الفقرة 3: «a student lives with an older person for a very low rent and, in return, spends time with them and helps with jobs around the house»."
 },
 {
-"q": "Which simple thing does the writer suggest everyone can do?",
+"q": "Why does the writer suggest showing an older relative how to make video calls?",
 "o": [
-"Teach an older person how to use video calls.",
-"Move in with an older neighbour.",
-"Buy gifts for older people every day.",
-"Give up their jobs."
+"So that they can see family members who live far away",
+"So that they can work from home",
+"So that they can watch films",
+"So that they can call their doctors"
 ],
-"e": "الفقرة 4: «teach an older person how to use video calls»."
+"e": "الفقرة 4: «show an older relative how to make video calls so that they can see family members who live far away»."
 },
 {
-"q": "What does the underlined word \"us\" in paragraph 4 refer to?",
+"q": "What do the underlined words \"check on\" in paragraph 4 mean?",
 "o": [
-"all of us, when we are old",
-"the older neighbours",
-"the volunteers",
-"the doctors"
+"visit or call to see if someone is fine",
+"pay for someone's shopping",
+"forget about someone completely",
+"complain about someone to others"
 ],
-"e": "«one day we will all be old, and we will want someone to care about us» ← us = كلنا لما نكبر."
+"e": "«we will also hope that someone remembers to check on us» = يسأل عنّا ويتطمّن علينا ← visit or call to see if someone is all right."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Loneliness is a serious problem for older people, but there are ways to help.",
-"Older people prefer to live alone.",
-"Students should not live with older people.",
-"Loneliness is not harmful to health."
+"Loneliness in old age and how we can help",
+"How students can save money on rent",
+"The dangers of smoking",
+"Why older people should keep working"
 ],
-"e": "القطعة تشرح مشكلة الوحدة عند كبار السن، وتذكر طرق للمساعدة."
+"e": "القطعة عن أسباب وحدة كبار السن وأضرارها (الفقرة 1 و2)، وكيف المجتمع وكل واحد فينا يقدر يساعد (الفقرة 3 و4)."
 }
 ]
 },
 {
 "n": 21,
-"title": "The Riyadh Metro",
+"title": "Can a Metro Change a Car City?",
 "text": [
-"1. For many years, most people in Riyadh used cars to get around. The city is large, and public transportation was limited. As the population grew, traffic became a serious problem. Some people spent more than two hours a day in their cars. To solve this problem, the city built one of the largest metro systems in the world.",
-"2. The Riyadh Metro has six lines and about 85 stations. The trains are driverless, which means they are controlled by computers. The stations have modern designs, and some of them were designed by famous architects. The trains have three classes: first class, family class, and single class.",
-"3. The metro has many benefits. It is fast and affordable, and it helps people avoid traffic. It is also better for the environment, because fewer cars on the road means less air pollution. In addition, the metro connects important places like the airport, universities, hospitals, and shopping centres. This makes it easier for students and workers to reach their _destinations_ on time.",
-"4. Of course, changing people's habits takes time. Many people still prefer the comfort of their own cars, especially in the hot summer. However, the city is building more bus lines that connect to the metro, so people can travel from their homes to the stations easily. Experts believe that in the future, the metro will _change_ the way people live and move around the city."
+"1. For decades, Riyadh was designed around the car. Wide highways, cheap fuel and long distances between neighbourhoods meant that most families depended on private vehicles, and public transport played only a small role in daily life. As the population grew, this approach began to show its limits: traffic jams became longer, journeys became less predictable, and the city's air quality suffered. The Riyadh Metro, which opened to the public in stages from late 2024, is the city's most ambitious attempt to offer an alternative.",
+"2. The system is impressive by any standard. It has six lines and dozens of stations, and its trains are driverless, which allows _them_ to run frequently and reliably. Supporters argue that its value goes far beyond saving time. A single train can carry hundreds of passengers who would otherwise each drive a car, so a well-used metro could considerably reduce congestion and emissions. It may also give more independence to people who cannot or do not want to drive, such as many students and older residents.",
+"3. Nevertheless, building a metro is one thing; persuading people to _abandon_ their cars is another. Experience from other car-dependent cities suggests that habits change slowly. Many residents live far from the nearest station, and walking even a short distance in the summer heat is unpleasant. For these people, the metro only makes sense if the \"first and last mile\" (the trip from home to the station and from the station to the final destination) is easy. This is why planners have linked the metro to a large network of buses.",
+"4. There is also the question of cost. A metro is extremely expensive to build and to operate, and its success is often judged by how many passengers use it. If few people use it, critics may argue that the money could have been better spent. On the other hand, transport projects are usually designed for the long term. A city that is expected to keep growing for decades cannot simply keep building wider roads, because new roads tend to attract even more traffic.",
+"5. In the end, the metro's real test will not be its technology but people's behaviour. If it becomes a normal part of daily life, the way students reach their universities and employees reach their offices, it could gradually reshape how the city grows, encouraging homes, shops and workplaces to _cluster_ around stations. If not, it may remain an impressive system that many residents admire but rarely use. Either way, it represents a significant shift in how Riyadh thinks about moving people rather than simply moving cars."
 ],
 "qs": [
 {
-"q": "Why did traffic become a serious problem in Riyadh?",
+"q": "According to the writer, most families in Riyadh depended on cars because of ______.",
 "o": [
-"The population grew and most people used cars.",
-"The roads were closed.",
-"There were too many trains.",
-"People stopped driving."
+"wide highways, cheap fuel and long distances",
+"long traffic jams and poor air quality",
+"the opening of the Riyadh Metro",
+"the lack of private vehicles"
 ],
-"e": "الفقرة 1: «As the population grew, traffic became a serious problem»."
+"e": "الفقرة 1: «Wide highways, cheap fuel and long distances between neighbourhoods meant that most families depended on private vehicles». أما الزحمة وتلوّث الهوا فهي نتيجة (صارت بعدين) مو السبب."
 },
 {
-"q": "How many lines does the Riyadh Metro have?",
+"q": "What does the underlined word \"them\" in paragraph 2 refer to?",
 "o": [
-"Six",
-"Eight",
-"Four",
-"Eighty-five"
+"the trains",
+"the stations",
+"the lines",
+"the passengers"
 ],
-"e": "الفقرة 2: «The Riyadh Metro has six lines»."
+"e": "«its trains are driverless, which allows them to run frequently» ← اللي تمشي بشكل متكرر هي القطارات، فـ them = the trains."
 },
 {
-"q": "What does \"driverless\" mean, according to the passage?",
+"q": "Which benefit of the metro does the writer NOT mention?",
 "o": [
-"The trains are controlled by computers.",
-"The trains have two drivers.",
-"The trains don't move.",
-"Passengers drive the trains."
+"creating new jobs for residents",
+"reducing congestion",
+"reducing emissions",
+"giving more independence to people who do not drive"
 ],
-"e": "الفقرة 2: «The trains are driverless, which means they are controlled by computers»."
+"e": "الفقرة 2 ذكرت تقليل الزحمة والانبعاثات: «reduce congestion and emissions»، وذكرت الاستقلالية لمن ما يسوق: «give more independence to people who cannot or do not want to drive». أما الوظايف ما انذكرت أبداً."
 },
 {
-"q": "Which class on the trains does the writer NOT mention?",
+"q": "What does the underlined word \"abandon\" in paragraph 3 mean?",
 "o": [
-"business class",
-"first class",
-"family class",
-"single class"
+"give up",
+"repair",
+"share",
+"buy"
 ],
-"e": "الفقرة 2 ذكرت first class و family class و single class، وما فيه business class."
+"e": "abandon = يتخلّى عن الشي ويتركه. «persuading people to abandon their cars» = إقناع الناس يتركون سياراتهم ← give up."
 },
 {
-"q": "Why is the metro better for the environment?",
+"q": "According to paragraph 3, the \"first and last mile\" is ______.",
 "o": [
-"Fewer cars on the road means less air pollution.",
-"The trains use a lot of petrol.",
-"The stations have gardens.",
-"The metro is very fast."
+"the trip between the station and home or the final destination",
+"the distance between two metro stations",
+"the first and last train of the day",
+"the road between Riyadh and other cities"
 ],
-"e": "الفقرة 3: «fewer cars on the road means less air pollution»."
+"e": "الفقرة 3 شرحتها بين قوسين: «the trip from home to the station and from the station to the final destination»."
 },
 {
-"q": "Which place does the metro connect, according to the passage?",
+"q": "Why does the writer say that \"new roads tend to attract even more traffic\"?",
 "o": [
-"the airport",
-"the beach",
-"the zoo",
-"the mountains"
+"To explain why building wider roads is not a long-term solution",
+"To show that the metro costs too much money",
+"To prove that few passengers use the metro",
+"To show that Riyadh has stopped growing"
 ],
-"e": "الفقرة 3: «connects important places like the airport, universities, hospitals, and shopping centres»."
+"e": "الفقرة 4: «cannot simply keep building wider roads, because new roads tend to attract even more traffic» ← الكاتب يوضح إن توسيع الطرق مو حل على المدى البعيد، عشان كذا المترو مشروع طويل المدى."
 },
 {
-"q": "What does the underlined word \"destinations\" in paragraph 3 mean?",
+"q": "What does the underlined word \"cluster\" in paragraph 5 mean?",
 "o": [
-"the places where people are going",
-"tickets",
-"trains",
-"jobs"
+"gather closely together",
+"close down",
+"move away",
+"grow smaller"
 ],
-"e": "destinations = الأماكن اللي رايحين لها."
+"e": "cluster = تتجمّع قريب من بعض. «encouraging homes, shops and workplaces to cluster around stations» = البيوت والمحلات تتجمّع حول المحطات ← gather closely together."
 },
 {
-"q": "Why do many people still prefer their own cars?",
+"q": "Which statement would the writer most likely agree with?",
 "o": [
-"They like the comfort, especially in the hot summer.",
-"The metro is too expensive.",
-"The metro has no stations.",
-"Cars are better for the environment."
+"Changing people's habits is harder than building the metro.",
+"The metro's technology is its biggest weakness.",
+"Riyadh should build more highways instead of a metro.",
+"Walking to the stations is pleasant in the summer."
 ],
-"e": "الفقرة 4: «Many people still prefer the comfort of their own cars, especially in the hot summer»."
+"e": "الفقرة 3: «building a metro is one thing; persuading people to abandon their cars is another» ← يعني إقناع الناس يتركون سياراتهم أصعب من بناء المترو. والخيارات الباقية غلط: الكاتب يقول النظام «impressive by any standard»، و«cannot simply keep building wider roads»، والمشي في حر الصيف «unpleasant»."
 },
 {
-"q": "What is the city building to connect to the metro?",
+"q": "How would you describe the writer's attitude toward the metro?",
 "o": [
-"more bus lines",
-"more roads",
-"more car parks",
-"more airports"
+"hopeful, but aware of its challenges",
+"completely negative",
+"sure that it will fail",
+"not interested"
 ],
-"e": "الفقرة 4: «the city is building more bus lines that connect to the metro»."
+"e": "الكاتب يمدحه: «The system is impressive by any standard» ويقول «it could gradually reshape how the city grows»، بس يذكر الصعوبات: «If not, it may remain an impressive system that many residents admire but rarely use» ← متفائل بس واقعي، ومو متأكد إنه بيفشل."
 },
 {
-"q": "What does the underlined word \"change\" in paragraph 4 mean?",
+"q": "What is the main idea of the passage?",
 "o": [
-"make different",
-"keep the same",
-"stop",
-"pay for"
+"The metro is impressive, but its success depends on whether people change their habits.",
+"The metro has already solved Riyadh's traffic problems.",
+"Riyadh should stop spending money on public transport.",
+"Driverless trains are more comfortable than buses."
 ],
-"e": "«change the way people live» = يغيّر حياة الناس، يعني يخليها مختلفة."
+"e": "القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour»."
 }
 ]
 },
 {
 "n": 22,
-"title": "Volunteering in the Community",
+"title": "Does Volunteering Always Help?",
 "text": [
-"1. Volunteering means giving your time to help others without getting paid. Volunteers work in hospitals, schools, parks, and many other places. In Saudi Arabia, the number of volunteers has grown quickly in recent years, and the country hopes to have one million volunteers every year.",
-"2. There are many ways to volunteer. Some volunteers help clean beaches and parks. Others teach children to read, visit patients in hospitals, or help at big events like festivals and sports competitions. During Ramadan, many volunteers prepare and _distribute_ food to people in need.",
-"3. Volunteering is not only good for the community, but it is also good for the volunteers themselves. Studies show that people who volunteer feel happier and less stressed. Volunteering also helps young people learn new skills, like teamwork, communication, and leadership. These skills can help _them_ find a job in the future. Many companies like to hire people who have volunteer experience.",
-"4. If you want to start volunteering, you don't need special skills. First, think about what you enjoy. If you love animals, you can help at an animal shelter. If you are good at math, you can help students with their homework. You can find volunteer _opportunities_ on websites, at your university, or at local community centres. Even a few hours a month can make a big difference."
+"1. Volunteering, giving time and skills without payment, is usually seen as something entirely positive. In recent years it has grown considerably in Saudi Arabia, where national plans aim to reach one million volunteers a year. Universities encourage students to take part, and many employers say that they value volunteer experience when they hire new staff. Yet researchers and charity workers increasingly argue that volunteering is not automatically beneficial; its value depends largely on how it is organised.",
+"2. The benefits for volunteers themselves are well documented. Studies tend to find that people who volunteer regularly report greater life satisfaction and a stronger sense of purpose. Volunteering can also be a practical way to develop skills that are hard to learn in a classroom, such as managing a team, solving unexpected problems or communicating with people from different backgrounds. For a university student with little work experience, a well-chosen volunteer role can provide evidence of these abilities that a degree alone cannot.",
+"3. The picture becomes more complicated when we look at the people and organisations that volunteers are meant to help. Charities often explain that untrained volunteers who appear for a single afternoon can create extra work: someone must train _them_, supervise them and correct their mistakes. In the worst cases, short visits to care homes or hospitals may satisfy the volunteers' wish to feel useful more than the real needs of the people there. This is why many organisations prefer a smaller number of _committed_ volunteers to a large crowd who come once and never return.",
+"4. Motivation matters too. When students volunteer mainly to add a line to their CV, they may choose activities that look impressive rather than ones that match their skills or the community's needs. This does not mean that such volunteers do no good. However, research suggests that people whose motives are mainly about helping others tend to continue volunteering for longer, which benefits everyone involved.",
+"5. None of this is an argument against volunteering. Rather, it suggests a more thoughtful approach. Before signing up, volunteers could ask what the organisation actually needs, whether they can commit to it regularly, and how their particular skills might be used. Organisations, for their part, can make roles clearer and offer proper training. When both sides take these steps, volunteering is far more likely to be what most people assume it already is: a _genuine_ benefit for the community and the volunteer alike."
 ],
 "qs": [
 {
-"q": "What does volunteering mean?",
+"q": "According to the writer, the value of volunteering depends mainly on ______.",
 "o": [
-"Giving your time to help others without getting paid",
-"Working in a company for money",
-"Studying at a university",
-"Travelling to other countries"
+"how it is organised",
+"how many volunteers take part",
+"how much volunteers are paid",
+"where volunteers study"
 ],
-"e": "الفقرة 1: «giving your time to help others without getting paid»."
+"e": "الفقرة 1 آخر جملة: «its value depends largely on how it is organised»."
 },
 {
-"q": "How many volunteers does Saudi Arabia hope to have every year?",
+"q": "Which skill does the writer NOT mention?",
 "o": [
-"One million",
-"One hundred thousand",
-"Ten million",
-"One thousand"
+"writing reports",
+"managing a team",
+"solving unexpected problems",
+"communicating with people from different backgrounds"
 ],
-"e": "الفقرة 1: «the country hopes to have one million volunteers every year»."
+"e": "الفقرة 2 ذكرت: «managing a team, solving unexpected problems or communicating with people from different backgrounds»، وكتابة التقارير ما انذكرت."
 },
 {
-"q": "What does the underlined word \"distribute\" in paragraph 2 mean?",
+"q": "According to paragraph 2, people who volunteer regularly tend to report ______.",
 "o": [
-"give out to many people",
-"cook",
-"buy",
-"throw away"
+"greater life satisfaction and a stronger sense of purpose",
+"higher salaries and better jobs after university",
+"less stress during their studies and exams",
+"more free time and fewer problems at home"
 ],
-"e": "distribute food = يوزّع الأكل على ناس كثير."
-},
-{
-"q": "Which volunteer activity does the writer NOT mention?",
-"o": [
-"building houses",
-"cleaning beaches and parks",
-"teaching children to read",
-"visiting patients in hospitals"
-],
-"e": "الفقرة 2 ذكرت تنظيف الشواطئ وتعليم الأطفال وزيارة المرضى، وبناء البيوت ما انذكر."
-},
-{
-"q": "According to studies, how do people who volunteer feel?",
-"o": [
-"happier and less stressed",
-"more tired and lonely",
-"angry and bored",
-"the same as before"
-],
-"e": "الفقرة 3: «people who volunteer feel happier and less stressed»."
+"e": "الفقرة 2: «people who volunteer regularly report greater life satisfaction and a stronger sense of purpose»."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
 "o": [
-"young people",
-"skills",
-"companies",
-"volunteers in hospitals"
+"untrained volunteers",
+"charities",
+"care homes",
+"the people in hospitals"
 ],
-"e": "«young people learn new skills… These skills can help them» ← them = الشباب."
+"e": "«untrained volunteers who appear for a single afternoon can create extra work: someone must train them» ← اللي يحتاجون تدريب هم المتطوعين غير المدرّبين."
 },
 {
-"q": "Which skill does the writer say young people can learn from volunteering?",
+"q": "The writer gives the example of short visits to care homes or hospitals to show that ______.",
 "o": [
-"teamwork",
-"cooking",
-"driving",
-"swimming"
+"some volunteering helps the volunteers more than the people it is meant to help",
+"care homes and hospitals do not accept volunteers",
+"volunteers should visit hospitals more often",
+"short visits are the best kind of volunteering"
 ],
-"e": "الفقرة 3: «teamwork, communication, and leadership»."
+"e": "الفقرة 3: «short visits to care homes or hospitals may satisfy the volunteers' wish to feel useful more than the real needs of the people there» ← الزيارة القصيرة أحياناً تفيد المتطوع (يحس إنه مفيد) أكثر من الناس اللي هناك."
 },
 {
-"q": "Why do many companies like to hire people with volunteer experience?",
+"q": "What does the underlined word \"committed\" in paragraph 3 mean?",
 "o": [
-"They have useful skills like communication and leadership.",
-"They work for free.",
-"They don't need training.",
-"They are always older."
+"loyal and dedicated",
+"well-paid and famous",
+"untrained and new",
+"temporary and busy"
 ],
-"e": "الفقرة 3 تقول إن التطوع يعلّم مهارات تساعد في الوظيفة، و«Many companies like to hire people who have volunteer experience»."
+"e": "committed = ملتزم ومخلص. والجملة تقارنهم بـ«a large crowd who come once and never return» ← الملتزمين هم اللي يجون بانتظام."
 },
 {
-"q": "What does the underlined word \"opportunities\" in paragraph 4 mean?",
+"q": "What can we understand from paragraph 4?",
 "o": [
-"chances",
-"problems",
-"skills",
-"websites"
+"Students who volunteer mainly for their CV may not continue for long.",
+"Volunteers who want a better CV do no good at all.",
+"Employers are not interested in volunteer experience.",
+"Impressive activities always match the community's needs."
 ],
-"e": "opportunities = فرص."
+"e": "الفقرة 4: «people whose motives are mainly about helping others tend to continue volunteering for longer» ← نفهم إن اللي يتطوع عشان السيرة الذاتية بس ممكن ما يكمّل طويل. والفقرة نفسها تقول «This does not mean that such volunteers do no good»، فخيار (do no good at all) غلط."
 },
 {
-"q": "What does the writer suggest you think about first if you want to volunteer?",
+"q": "What does the underlined word \"genuine\" in paragraph 5 mean?",
 "o": [
-"What you enjoy",
-"How much money you can get",
-"Which company you want to work for",
-"How many hours you can work every day"
+"real",
+"small",
+"temporary",
+"expensive"
 ],
-"e": "الفقرة 4: «First, think about what you enjoy»."
+"e": "genuine = حقيقي. «a genuine benefit for the community» = فايدة حقيقية للمجتمع ← real."
+},
+{
+"q": "Which statement would the writer most likely agree with?",
+"o": [
+"Organisations should make volunteer roles clear and train volunteers properly.",
+"Volunteering is always helpful, however it is organised.",
+"Volunteers should choose activities that look impressive on a CV.",
+"Volunteering has no benefits for the volunteers themselves."
+],
+"e": "الفقرة 5: «Organisations, for their part, can make roles clearer and offer proper training». والخيارات الباقية عكس كلام الكاتب: قال إن التطوع «not automatically beneficial»، وإن الأنشطة اللي «look impressive» ممكن ما تناسب احتياج المجتمع، وإن فوائده للمتطوع «well documented»."
+},
+{
+"q": "What is the writer's main purpose in the passage?",
+"o": [
+"To argue that volunteering works best when it is planned carefully",
+"To persuade readers to stop volunteering",
+"To describe the history of volunteering in Saudi Arabia",
+"To compare paid jobs with volunteer work"
+],
+"e": "الفقرة 5: «None of this is an argument against volunteering. Rather, it suggests a more thoughtful approach» ← هدف الكاتب: التطوع ينجح أكثر لما يكون مخطط له زين، مو إنه يمنع التطوع."
 }
 ]
 },
 {
 "n": 23,
-"title": "Video Games: Good or Bad?",
+"title": "Video Games: Harmful Habit or Useful Tool?",
 "text": [
-"1. Video games are one of the most popular forms of entertainment in the world. More than three billion people play them on computers, phones, and game consoles. Many parents worry that their children spend too much time playing games. But are video games really bad?",
-"2. Some studies show that video games can have positive effects. Action games, for example, can improve players' attention and help them make decisions quickly. Puzzle and strategy games can improve problem-solving skills and memory. Some games are also designed to teach subjects like math, history, and languages. In addition, many games are played online with friends, which helps players _develop_ teamwork skills.",
-"3. However, playing too much can cause problems. Players who spend many hours in front of a screen may not get enough exercise or sleep. Some players also become addicted and find _it_ difficult to stop playing, even when they have homework or other responsibilities. Some games are also violent, and experts say they are not suitable for young children.",
-"4. The key is balance. Experts suggest that children should not play for more than one or two hours a day. Parents should check the age rating of games before buying them and talk to their children about the games they play. When video games are played in a healthy way, they can be both fun and _beneficial_."
+"1. Few forms of entertainment divide opinion as sharply as video games. For many parents and teachers, _they_ are a waste of time at best and a danger at worst, responsible for poor grades, lack of sleep and aggressive behaviour. For their supporters, games are a modern art form that can develop skills and bring people together. The evidence suggests that the truth lies somewhere between these two positions.",
+"2. The fear that violent games make young people violent has received a great deal of attention, yet research has not provided a clear answer. Some laboratory studies have found that players feel slightly more aggressive immediately after playing, but these effects tend to be small and _short-lived_. Larger studies that follow young people over several years have generally failed to find a strong link between gaming and serious violence. Many researchers therefore argue that other factors, such as family life and friendships, are far more important.",
+"3. On the positive side, a number of studies suggest that certain action games may improve visual attention, the ability to notice and follow several things on a screen at once. Puzzle and strategy games require planning and patience, and online team games can require players to communicate and cooperate under pressure. However, researchers are careful to point out that these benefits are often limited to tasks similar to the game itself. Becoming skilled at a fast-moving game does not necessarily make someone better at studying for an exam.",
+"4. A more serious concern is the amount of time some players spend gaming. In 2019, the World Health Organization recognised \"gaming disorder\" as a medical condition, describing it as a pattern of play that a person cannot control and that continues despite harmful consequences for their studies, work or relationships. It is important to note that this condition affects only a small minority of players. For most people, the real risk is simply that games, which are designed to be highly rewarding, can push out other activities such as sleep, exercise and face-to-face conversation.",
+"5. For this reason, many experts now focus less on whether games are good or bad and more on how they are used. Questions about what kind of game is being played, for how long, and at what cost to other parts of life are likely to be more useful than general _condemnation_. A teenager who plays with friends for an hour after finishing his homework is in a very different situation from one who plays alone until three in the morning. Treating both cases in the same way helps no one."
 ],
 "qs": [
 {
-"q": "How many people play video games, according to the passage?",
+"q": "What does the underlined word \"they\" in paragraph 1 refer to?",
 "o": [
-"More than three billion",
-"About three million",
-"Less than one billion",
-"More than thirty billion"
+"video games",
+"parents and teachers",
+"poor grades",
+"supporters"
 ],
-"e": "الفقرة 1: «More than three billion people play them»."
+"e": "«For many parents and teachers, they are a waste of time» ← اللي يعتبرونها مضيعة للوقت هي الألعاب، فـ they = video games."
 },
 {
-"q": "What do many parents worry about?",
+"q": "According to paragraph 1, many parents and teachers blame video games for ______.",
 "o": [
-"Their children spend too much time playing games.",
-"Video games are too expensive.",
-"Their children don't like games.",
-"Games are only played on phones."
+"poor grades, lack of sleep and aggressive behaviour",
+"poor eyesight, headaches and back pain",
+"high costs and arguments in the family",
+"weak attention and poor planning skills"
 ],
-"e": "الفقرة 1: «Many parents worry that their children spend too much time playing games»."
+"e": "الفقرة 1: «responsible for poor grades, lack of sleep and aggressive behaviour»."
 },
 {
-"q": "What can action games improve?",
+"q": "What does the underlined word \"short-lived\" in paragraph 2 mean?",
 "o": [
-"attention and quick decision-making",
-"spelling and grammar",
-"cooking skills",
-"running speed"
+"lasting only a short time",
+"very strong",
+"easy to notice",
+"dangerous"
 ],
-"e": "الفقرة 2: «Action games… can improve players' attention and help them make decisions quickly»."
+"e": "short-lived = ما يدوم إلا وقت قصير. والجملة تقول الشعور بالعدوانية يكون «immediately after playing» ويكون صغير ومؤقت."
 },
 {
-"q": "What can puzzle and strategy games improve?",
+"q": "What have larger studies that follow young people over several years generally found?",
 "o": [
-"problem-solving skills and memory",
-"eyesight",
-"sleep",
-"physical strength"
+"There is no strong link between gaming and serious violence.",
+"Violent games make most young people violent.",
+"Players feel more aggressive for many years.",
+"Family life is not important."
 ],
-"e": "الفقرة 2: «Puzzle and strategy games can improve problem-solving skills and memory»."
+"e": "الفقرة 2: «Larger studies that follow young people over several years have generally failed to find a strong link between gaming and serious violence»."
 },
 {
-"q": "What does the underlined word \"develop\" in paragraph 2 mean?",
+"q": "Which possible benefit of games does the writer NOT mention?",
 "o": [
-"build or improve",
-"forget",
-"stop",
-"buy"
+"learning a foreign language",
+"better visual attention",
+"planning and patience",
+"communicating and cooperating with others"
 ],
-"e": "develop teamwork skills = يطوّر ويبني المهارات."
+"e": "الفقرة 3 ذكرت: «improve visual attention» و«require planning and patience» و«communicate and cooperate under pressure»، وتعلّم لغة أجنبية ما انذكر."
 },
 {
-"q": "What does the underlined word \"it\" in paragraph 3 refer to?",
+"q": "What can we understand from paragraph 3?",
 "o": [
-"stopping playing",
-"homework",
-"the screen",
-"exercise"
+"A skill learned in a game may not help much with schoolwork.",
+"Action games make students better at exams.",
+"Strategy games do not need any planning.",
+"Team games stop players from communicating."
 ],
-"e": "«find it difficult to stop playing» ← it = إيقاف اللعب (to stop playing)."
+"e": "الفقرة 3: «these benefits are often limited to tasks similar to the game itself. Becoming skilled at a fast-moving game does not necessarily make someone better at studying for an exam» ← المهارة من اللعبة ما تفيد بالضرورة في الدراسة."
 },
 {
-"q": "Which problem of playing too much does the writer NOT mention?",
+"q": "According to paragraph 4, for most players the real risk is that games ______.",
 "o": [
-"spending too much money",
-"not getting enough exercise",
-"not getting enough sleep",
-"becoming addicted"
+"can take time away from sleep, exercise and conversation",
+"cause a serious medical condition",
+"make them violent",
+"are too difficult to play"
 ],
-"e": "الفقرة 3 ذكرت الرياضة والنوم والإدمان، وصرف الفلوس ما انذكر."
+"e": "الفقرة 4: «For most people, the real risk is simply that games… can push out other activities such as sleep, exercise and face-to-face conversation». أما «gaming disorder» فالكاتب يقول «affects only a small minority of players»."
 },
 {
-"q": "How long do experts suggest children should play each day?",
+"q": "What does the underlined word \"condemnation\" in paragraph 5 mean?",
 "o": [
-"No more than one or two hours",
-"At least three hours",
-"Only on weekends",
-"As long as they want"
+"strong criticism",
+"careful study",
+"public praise",
+"free time"
 ],
-"e": "الفقرة 4: «should not play for more than one or two hours a day»."
+"e": "condemnation = انتقاد شديد ورفض. الكاتب يقول الأسئلة المحددة أفيد من إنك تنتقد الألعاب كلها بشكل عام."
 },
 {
-"q": "What does the underlined word \"beneficial\" in paragraph 4 mean?",
+"q": "The writer gives the example of two teenagers to show that ______.",
 "o": [
-"helpful and good",
-"boring",
-"dangerous",
-"expensive"
+"different ways of playing should not be judged in the same way",
+"teenagers should never play after homework",
+"playing with friends is more dangerous than playing alone",
+"all teenagers who play games are addicted"
 ],
-"e": "beneficial = مفيد."
+"e": "الفقرة 5: اللي يلعب ساعة مع أصحابه بعد واجبه «is in a very different situation from one who plays alone until three in the morning. Treating both cases in the same way helps no one»."
 },
 {
-"q": "What is the writer's main point?",
+"q": "How would you describe the writer's attitude toward video games?",
 "o": [
-"Video games can be good if they are played in a balanced way.",
-"Video games are always bad for children.",
-"Children should play video games all day.",
-"Only adults should play video games."
+"balanced",
+"strongly negative",
+"strongly positive",
+"not interested"
 ],
-"e": "الفقرة 4: «The key is balance… When video games are played in a healthy way, they can be both fun and beneficial»."
+"e": "الكاتب يذكر الإيجابيات والسلبيات ويقول «the truth lies somewhere between these two positions»، وفي الأخير يركّز على طريقة الاستخدام: «focus less on whether games are good or bad and more on how they are used» ← رأيه متوازن."
 }
 ]
 },
 {
 "n": 24,
-"title": "A Famous Farm in the City",
+"title": "Farming Without Fields",
 "text": [
-"1. When people think of farms, they usually imagine large fields in the countryside. But in many big cities around the world, people are now growing food in unusual places, such as on the roofs of buildings. This is called \"urban farming\".",
-"2. One of the most famous examples is a rooftop farm in New York City. It is on top of a large building and covers about 6,000 square metres. Every year, the farm produces more than 20,000 kilograms of vegetables, including tomatoes, peppers, and lettuce. The vegetables are sold to local restaurants and at a weekly market. Because the food doesn't travel far, _it_ is very fresh when it reaches people's plates.",
-"3. Urban farms have many benefits. They make cities greener and help keep buildings cool in summer. They also teach people, especially children, where their food comes from. Many urban farms offer classes and tours for schools. In addition, they bring the community together, because neighbours often work on the farm as volunteers.",
-"4. However, urban farming also has challenges. Space in cities is limited and expensive. Rooftops must be strong enough to hold heavy soil and water. Farmers also need to deal with strong winds and very hot or cold weather. Despite these _difficulties_, the number of urban farms is growing, and many people believe they are an important part of the future of food."
+"1. When we imagine a farm, we usually picture open fields, tractors and long rows of crops under the sun. Yet a growing number of companies are trying something very different: growing vegetables indoors, on tall stacks of shelves inside buildings in the middle of cities. This approach, known as vertical farming, uses LED lights instead of sunlight, and the plants often grow with their roots in water rich in nutrients rather than in soil. Supporters describe it as the future of food; critics are less convinced.",
+"2. The arguments in its favour are attractive, particularly for countries with hot climates and limited water. Because the water in a vertical farm is collected and reused, supporters say that it can use far less water than traditional agriculture. Crops can be grown all year round, _regardless of_ the weather, and since insects can hardly get into a closed building, few or no pesticides are needed. Farms can also be built close to the people who will eat the food, which reduces the distance it has to travel and means that vegetables can reach shops fresher.",
+"3. The main problem is energy. Sunlight is free, whereas the lights, heating and air-conditioning in an indoor farm must be paid for, and electricity costs can make the food expensive to produce. If that electricity comes from fossil fuels, the environmental benefits may be considerably smaller than they first appear. In recent years, several well-known vertical-farming companies in Europe and North America have closed or faced serious financial difficulties, partly because of rising energy prices.",
+"4. There is also a limit to what can be grown. Leafy greens such as lettuce and herbs grow quickly and take up little space, so _they_ suit indoor farms well. Staple crops such as wheat and rice, on the other hand, need large areas and long growing periods, and producing them indoors is currently far too costly. Vertical farms are therefore unlikely to replace traditional farms; at most, they can _supplement_ them by supplying certain fresh products.",
+"5. For countries like Saudi Arabia, which imports a large share of its food and has very limited water, the technology remains interesting, and a number of indoor farms have already been built in the region. Its long-term success, however, is likely to depend on cheaper renewable energy, particularly solar power. If energy costs fall, vertical farming could become a sensible part of a sustainable food system. Until then, it is perhaps best seen not as a revolution in agriculture but as a promising experiment."
 ],
 "qs": [
 {
-"q": "Where do people in big cities grow food in \"urban farming\"?",
+"q": "According to paragraph 1, plants in a vertical farm often grow ______.",
 "o": [
-"In unusual places, such as on the roofs of buildings",
-"Only in large fields in the countryside",
-"Inside shopping malls",
-"In the sea"
+"with their roots in water rich in nutrients",
+"in open fields under the sun",
+"in large areas of soil",
+"without any light"
 ],
-"e": "الفقرة 1: «growing food in unusual places, such as on the roofs of buildings»."
+"e": "الفقرة 1: «the plants often grow with their roots in water rich in nutrients rather than in soil»."
 },
 {
-"q": "How big is the rooftop farm in New York City?",
+"q": "What do the underlined words \"regardless of\" in paragraph 2 mean?",
 "o": [
-"About 6,000 square metres",
-"About 600 square metres",
-"About 20,000 square metres",
-"About 60 square metres"
+"without being affected by",
+"because of",
+"only during",
+"in order to change"
 ],
-"e": "الفقرة 2: «covers about 6,000 square metres»."
+"e": "regardless of = بغض النظر عن. «Crops can be grown all year round, regardless of the weather» = يزرعون طول السنة والجو ما يأثّر ← without being affected by."
 },
 {
-"q": "How many kilograms of vegetables does the farm produce every year?",
+"q": "Why are few or no pesticides needed in a vertical farm?",
 "o": [
-"More than 20,000",
-"About 6,000",
-"Less than 2,000",
-"Exactly 200,000"
+"Insects can hardly get into a closed building.",
+"The plants grow without water.",
+"The LED lights kill insects.",
+"The farms are far from cities."
 ],
-"e": "الفقرة 2: «produces more than 20,000 kilograms of vegetables»."
+"e": "الفقرة 2: «since insects can hardly get into a closed building, few or no pesticides are needed» ← الحشرات ما تقدر تدخل المبنى المقفل تقريباً."
 },
 {
-"q": "Which vegetable does the writer NOT mention?",
+"q": "Which advantage of vertical farming does the writer NOT mention?",
 "o": [
-"potatoes",
-"tomatoes",
-"peppers",
-"lettuce"
+"cheaper vegetables for shoppers",
+"using less water",
+"growing crops all year round",
+"vegetables reaching shops fresher"
 ],
-"e": "الفقرة 2 ذكرت tomatoes و peppers و lettuce، والبطاطس (potatoes) ما انذكرت."
+"e": "الفقرة 2 ذكرت: «far less water» و«all year round» و«vegetables can reach shops fresher». أما الخضار الأرخص ما انذكرت كميزة، بالعكس الفقرة 3 تقول الطاقة «can make the food expensive to produce»."
 },
 {
-"q": "What does the underlined word \"it\" in paragraph 2 refer to?",
+"q": "Why does the writer mention that several vertical-farming companies have closed?",
 "o": [
-"the food",
-"the farm",
-"the market",
-"the building"
+"To show that the cost of energy is a real problem",
+"To show that vertical farms use too much water",
+"To prove that indoor farms in Saudi Arabia will close",
+"To explain why lettuce grows quickly"
 ],
-"e": "«Because the food doesn't travel far, it is very fresh» ← it = الأكل."
+"e": "الفقرة 3 تبدأ بـ«The main problem is energy» وتختم إن الشركات سكّرت أو تعثّرت «partly because of rising energy prices» ← المثال يوضّح إن غلاء الطاقة مشكلة حقيقية."
 },
 {
-"q": "Why is the food from the rooftop farm very fresh?",
+"q": "What does the underlined word \"they\" in paragraph 4 refer to?",
 "o": [
-"It doesn't travel far.",
-"It is kept in a fridge for a long time.",
-"It is grown with chemicals.",
-"It is sold only in winter."
+"leafy greens such as lettuce and herbs",
+"indoor farms",
+"staple crops such as wheat and rice",
+"traditional farms"
 ],
-"e": "الفقرة 2: «Because the food doesn't travel far, it is very fresh»."
+"e": "«Leafy greens such as lettuce and herbs grow quickly and take up little space, so they suit indoor farms well» ← اللي تناسب المزارع الداخلية هي الخضار الورقية."
 },
 {
-"q": "Which benefit of urban farms does the writer mention?",
+"q": "What does the underlined word \"supplement\" in paragraph 4 mean?",
 "o": [
-"They help keep buildings cool in summer.",
-"They make buildings taller.",
-"They make rent cheaper.",
-"They stop strong winds."
+"add to",
+"replace",
+"damage",
+"compete with"
 ],
-"e": "الفقرة 3: «They make cities greener and help keep buildings cool in summer»."
+"e": "supplement = يكمّل ويضيف. الجملة قبلها تقول «unlikely to replace traditional farms» ← ما تحل محلها، بس تضيف لها منتجات طازجة ← add to."
 },
 {
-"q": "Why do urban farms bring the community together?",
+"q": "What can we understand from paragraph 4?",
 "o": [
-"Neighbours often work on the farm as volunteers.",
-"They are very expensive.",
-"They are only for children.",
-"They sell food to restaurants."
+"Vertical farms are unlikely to provide most of the world's wheat and rice.",
+"Lettuce needs large areas and long growing periods.",
+"Wheat grows faster than herbs.",
+"Traditional farms will soon disappear."
 ],
-"e": "الفقرة 3: «neighbours often work on the farm as volunteers»."
+"e": "الفقرة 4: القمح والرز «need large areas and long growing periods, and producing them indoors is currently far too costly» ← فالمزارع العمودية ما راح توفر أغلب القمح والرز."
 },
 {
-"q": "What does the underlined word \"difficulties\" in paragraph 4 mean?",
+"q": "Which statement would the writer most likely agree with?",
 "o": [
-"problems",
-"benefits",
-"vegetables",
-"volunteers"
+"Cheaper renewable energy could make vertical farming more successful.",
+"Vertical farming has already replaced traditional agriculture.",
+"Countries with little water should not try indoor farming.",
+"Energy costs are not important for indoor farms."
 ],
-"e": "difficulties = صعوبات ومشاكل."
+"e": "الفقرة 5: «Its long-term success, however, is likely to depend on cheaper renewable energy… If energy costs fall, vertical farming could become a sensible part of a sustainable food system»."
 },
 {
-"q": "Which challenge of urban farming does the writer mention?",
+"q": "What is the best title for the passage?",
 "o": [
-"Rooftops must be strong enough to hold heavy soil and water.",
-"Vegetables don't grow on roofs.",
-"Nobody wants to buy the vegetables.",
-"Children are not allowed on the farms."
+"Vertical Farming: A Promising but Costly Idea",
+"How to Grow Wheat and Rice Indoors",
+"Why Traditional Farms Will Disappear",
+"The History of Farming in Saudi Arabia"
 ],
-"e": "الفقرة 4: «Rooftops must be strong enough to hold heavy soil and water»."
+"e": "القطعة تذكر مميزات المزارع العمودية ومشكلة غلاء الطاقة، وتختم: «it is perhaps best seen not as a revolution in agriculture but as a promising experiment» ← فكرة واعدة بس مكلفة."
 }
 ]
 },
 {
 "n": 25,
-"title": "Stress and Students",
+"title": "Can Mistakes Help Us Learn?",
 "text": [
-"1. University can be one of the best times of a person's life, but it can also be very stressful. Students have exams, projects, and deadlines. Many of them also work part-time or live away from their families for the first time. A recent survey found that about 60 percent of university students feel stressed most of the time.",
-"2. A little stress is normal and can even be helpful. It can make us work harder before an exam. But too much stress for a long time can be harmful. It can cause headaches, sleep problems, and lack of energy. It can also make it hard to concentrate, so students may get lower grades.",
-"3. Fortunately, there are many ways to _manage_ stress. One of the most effective ways is to plan your time. When students make a weekly plan and divide big tasks into small steps, they feel more in control. Exercise is also very helpful. A short walk or a game of football can clear your mind. Another good idea is to talk to someone, like a friend, a family member, or a university counsellor. Sharing your problems can make _them_ feel smaller.",
-"4. Finally, students should remember to take breaks and do things they enjoy. Spending time with friends, reading a book, or doing a hobby can help students relax. Studying all the time without rest is not a good strategy. A balanced life is the best way to stay healthy and _succeed_ at university."
+"1. Most students are taught, directly or indirectly, that mistakes are something to avoid. A wrong answer loses marks, and a low grade can feel like a judgement on a person's intelligence. Yet a large body of research in psychology and education suggests that making errors, and more importantly paying attention to them, is one of the most effective ways to learn.",
+"2. One reason is that mistakes show us exactly where our understanding is weak. A student who gets every question right on a practice test learns relatively little about what to study next, whereas one who gets several questions wrong has a clear map of the gaps in his knowledge. Studies of what is sometimes called the \"pretesting effect\" have found that trying to answer a question, even unsuccessfully, before being told the answer often helps people remember the correct information better later. In other words, the effort of struggling appears to prepare the brain to learn.",
+"3. Attitudes towards mistakes also matter. The psychologist Carol Dweck became famous for the idea of a \"growth mindset\": the belief that abilities can be developed through effort and good strategies, rather than being fixed from birth. According to this view, students who see a poor result as information, rather than as proof that they are \"not clever enough\", are more likely to keep trying and, eventually, to improve. The idea has been _enormously_ popular in schools around the world.",
+"4. However, the story is not as simple as it once seemed. Some large studies that tried to repeat the early research found that programmes designed to teach a growth mindset had, on average, only small effects on students' grades. Critics argue that the concept was sometimes reduced to slogans, such as telling children to \"try harder\", without teaching them how to study more effectively. Effort alone, _they_ point out, is not enough if a student keeps repeating the same unsuccessful method.",
+"5. What, then, should students take from this? The evidence suggests that mistakes are valuable only when they are examined. Simply noticing that an answer was wrong is less useful than asking why it was wrong and what should be done differently next time. A student who keeps a short list of errors from past homework and tests, and reviews it before an exam, is using mistakes in the way research recommends. Seen like this, a wrong answer is not a _setback_ but a piece of feedback, and often a more useful one than a correct answer."
 ],
 "qs": [
 {
-"q": "According to the survey, how many university students feel stressed most of the time?",
+"q": "According to paragraph 1, a low grade can feel like ______.",
 "o": [
-"About 60 percent",
-"About 16 percent",
-"About 6 percent",
-"About 90 percent"
+"a judgement on a person's intelligence",
+"a useful piece of feedback",
+"a clear map of what to study",
+"a reason to keep trying"
 ],
-"e": "الفقرة 1: «about 60 percent of university students feel stressed most of the time»."
+"e": "الفقرة 1: «a low grade can feel like a judgement on a person's intelligence» ← الطالب يحس الدرجة حكم على ذكائه."
 },
 {
-"q": "Which cause of stress does the writer NOT mention?",
+"q": "According to studies of the \"pretesting effect\", trying to answer a question before being told the answer ______.",
 "o": [
-"problems with roommates",
-"exams",
-"deadlines",
-"living away from family"
+"often helps people remember the correct information better",
+"always leads people to the correct answer",
+"makes people forget the correct information",
+"is only useful when the answer is correct"
 ],
-"e": "الفقرة 1 ذكرت الاختبارات والمواعيد والسكن بعيد عن الأهل، والمشاكل مع اللي ساكن معك ما انذكرت."
+"e": "الفقرة 2: «trying to answer a question, even unsuccessfully, before being told the answer often helps people remember the correct information better later»."
 },
 {
-"q": "How can a little stress be helpful?",
+"q": "The writer gives the example of two students and a practice test to show that ______.",
 "o": [
-"It can make us work harder before an exam.",
-"It can cause headaches.",
-"It can help us sleep more.",
-"It can make us forget our problems."
+"wrong answers show a student what he needs to study",
+"practice tests are a waste of time",
+"good students never make mistakes",
+"students should not take practice tests before exams"
 ],
-"e": "الفقرة 2: «It can make us work harder before an exam»."
+"e": "الفقرة 2: اللي جاوب كل شي صح «learns relatively little about what to study next»، واللي غلط في كم سؤال «has a clear map of the gaps in his knowledge» ← الأخطاء توضح له وش يذاكر."
 },
 {
-"q": "Which effect of too much stress does the writer mention?",
+"q": "According to the idea of a \"growth mindset\", abilities ______.",
 "o": [
-"sleep problems",
-"better grades",
-"more energy",
-"stronger memory"
+"can be developed through effort and good strategies",
+"are fixed from birth",
+"cannot be changed after school",
+"are the same in every student"
 ],
-"e": "الفقرة 2: «It can cause headaches, sleep problems, and lack of energy»."
+"e": "الفقرة 3: «the belief that abilities can be developed through effort and good strategies, rather than being fixed from birth»."
 },
 {
-"q": "What does the underlined word \"manage\" in paragraph 3 mean?",
+"q": "What does the underlined word \"enormously\" in paragraph 3 mean?",
 "o": [
-"control or deal with",
-"increase",
-"forget",
-"cause"
+"very greatly",
+"slightly",
+"rarely",
+"recently"
 ],
-"e": "manage stress = يتحكّم في التوتر ويتعامل معه."
+"e": "enormously = بشكل كبير جداً. «The idea has been enormously popular in schools around the world» = الفكرة انتشرت انتشار كبير جداً ← very greatly."
 },
 {
-"q": "Why do students feel more in control when they make a weekly plan?",
+"q": "What can we understand from paragraph 4?",
 "o": [
-"They divide big tasks into small steps.",
-"They don't have any tasks.",
-"They study all night.",
-"They stop going to class."
+"Early hopes for growth-mindset programmes were probably too high.",
+"Growth-mindset programmes greatly improved most students' grades.",
+"Growth-mindset programmes had no effect on any student.",
+"Nobody tried to repeat the early research."
 ],
-"e": "الفقرة 3: «divide big tasks into small steps, they feel more in control»."
+"e": "الفقرة 4: «the story is not as simple as it once seemed» والدراسات الكبيرة لقت «only small effects on students' grades» ← نفهم إن التوقعات الأولى كانت أكبر من النتيجة."
 },
 {
-"q": "What does the underlined word \"them\" in paragraph 3 refer to?",
+"q": "What does the underlined word \"they\" in paragraph 4 refer to?",
 "o": [
-"your problems",
-"friends",
-"family members",
-"counsellors"
+"critics",
+"students",
+"children",
+"large studies"
 ],
-"e": "«Sharing your problems can make them feel smaller» ← them = مشاكلك."
+"e": "«Critics argue that… Effort alone, they point out, is not enough» ← اللي يوضّحون هذا الكلام هم النقّاد (critics)."
 },
 {
-"q": "Who does the writer suggest talking to?",
+"q": "What does the underlined word \"setback\" in paragraph 5 mean?",
 "o": [
-"a friend, a family member, or a university counsellor",
-"only your professor",
-"people on social media",
-"nobody"
+"a problem that delays your progress",
+"a useful piece of information",
+"a correct answer",
+"a short list of errors"
 ],
-"e": "الفقرة 3: «a friend, a family member, or a university counsellor»."
+"e": "setback = انتكاسة أو عقبة تأخّرك. الكاتب يقول الغلط مو عقبة «but a piece of feedback» ← يعني setback عكس «a piece of feedback»، فخيار (a useful piece of information) غلط."
 },
 {
-"q": "What does the underlined word \"succeed\" in paragraph 4 mean?",
+"q": "Which statement would the writer most likely agree with?",
 "o": [
-"do well",
-"fail",
-"relax",
-"stop"
+"Asking why an answer was wrong is more useful than just noticing it.",
+"Students should try to avoid all mistakes.",
+"Effort alone always leads to better grades.",
+"Correct answers always teach more than wrong ones."
 ],
-"e": "succeed = ينجح ويتفوق ← do well."
+"e": "الفقرة 5: «Simply noticing that an answer was wrong is less useful than asking why it was wrong and what should be done differently next time»."
 },
 {
-"q": "What is the best title for the passage?",
+"q": "What is the writer's main purpose in the passage?",
 "o": [
-"How students can manage stress",
-"Why university is the best time of life",
-"How to get a part-time job",
-"The best hobbies for students"
+"To explain how students can learn from their mistakes",
+"To persuade teachers to stop giving grades",
+"To describe Carol Dweck's life",
+"To prove that the growth mindset does not work"
 ],
-"e": "القطعة كلها عن طرق تعامل الطلاب مع التوتر."
+"e": "القطعة توضح ليش الأخطاء مفيدة، والفقرة 5 تعطي الخلاصة للطالب: «mistakes are valuable only when they are examined». وما قالت إن الـgrowth mindset ما يشتغل، قالت تأثيره أقل من المتوقع."
 }
 ]
 }

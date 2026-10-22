@@ -7,79 +7,77 @@
 #   * الإجابة الصحيحة
 #   - خيار خطأ   (ثلاث خيارات خطأ)
 # البناء: python3 tools/english-tracks/build_listening.py --model kokoro.onnx --voices voices.bin
+# المستوى (2026-10-22، طلب المستخدم): المقاطع 1–20 = B1، والمقاطع 21–25 = B2.
 
 ## 1 | Booking a Dentist Appointment | dialogue
 @ Receptionist=af_bella Faisal=am_michael
-Receptionist: Good morning, Smile Dental Clinic. This is Rana speaking. How can I help you?
-Faisal: Good morning. I'd like to make an appointment with a dentist, please. I have a terrible toothache.
-Receptionist: I'm sorry to hear that. How long have you had the pain?
-Faisal: Since Saturday, so about three days now. It hurts more when I drink something cold.
-Receptionist: I see. Have you visited our clinic before?
-Faisal: No, this is my first time. My friend Majed recommended you.
-Receptionist: Great. Doctor Hassan has a free appointment tomorrow at eleven thirty in the morning. Is that OK for you?
-Faisal: Hmm, I have a class at eleven. Is there anything in the afternoon?
-Receptionist: Let me check. Yes, there's an appointment at four fifteen with Doctor Laila.
-Faisal: Four fifteen is perfect. How much does the first visit cost?
-Receptionist: The first check-up is one hundred and fifty riyals. If you need an X-ray, it's an extra fifty riyals.
-Faisal: OK, no problem. Can I pay by card?
-Receptionist: Yes, of course. Can I have your full name, please?
-Faisal: Faisal Al-Harbi.
-Receptionist: And your phone number?
-Faisal: It's oh five five, three two one, eight seven six four.
-Receptionist: Thank you, Faisal. Please come ten minutes early to fill in a form. And please bring your ID card.
-Faisal: Sure. Where exactly is the clinic?
-Receptionist: We're on Prince Sultan Street, on the second floor, above the pharmacy.
-Faisal: Thank you very much. See you tomorrow.
-?? Why does Faisal want to see a dentist?
-* He has a terrible toothache.
-- He wants to clean his teeth.
-- He broke his tooth.
-- His friend asked him to go.
-?? How long has Faisal had the pain?
-* About three days
-- About a week
+Receptionist: Good morning, Smile Dental Clinic. How can I help you?
+Faisal: Good morning. I've had a terrible toothache since last night, on the left side at the bottom. I could hardly sleep. Is there any chance I could see a dentist today?
+Receptionist: I'm sorry to hear that. Let me check. Doctor Amal is fully booked today, but Doctor Yousef has a cancellation at twenty past four this afternoon. Would that suit you?
+Faisal: I finish work at four, and the clinic is only about five minutes from my office, so that should be fine.
+Receptionist: Good. Have you visited us before?
+Faisal: No, this is my first time. My usual dentist moved to another city.
+Receptionist: In that case, please come ten minutes early to fill in a form about your medical history. Do you have health insurance?
+Faisal: Yes, I'm with Gulf Health.
+Receptionist: We work with them, but your insurance only covers part of the cost. The first examination and the X-ray are fully covered, but if you need a filling, you'll pay twenty percent of the price yourself.
+Faisal: OK, that's fine. Is there anything I can do for the pain until then?
+Receptionist: You can take a normal painkiller, but please don't take more than the box says. Also, avoid very hot or very cold drinks, and try not to chew on that side.
+Faisal: My face is a little swollen too. Is that a bad sign?
+Receptionist: It might mean there's an infection, so it's good that you're coming today. If the swelling gets much worse, or you get a fever before your appointment, go straight to the hospital emergency department.
+Faisal: I will. Can I pay by card?
+Receptionist: Yes, of course. Could I have your full name and mobile number?
+Faisal: Faisal Al-Otaibi. Oh five five, three two one, eight eight four zero.
+Receptionist: Thank you. We'll send you a text message with the address. See you at twenty past four.
+?? Since when has Faisal had a toothache?
+* Since last night
+- Since last week
 - Since this morning
-- About three weeks
-?? When does the pain get worse?
-* When he drinks something cold
-- When he eats something sweet
-- When he sleeps
-- When he drinks hot tea
-?? Who recommended the clinic?
-* His friend Majed
-- His brother
-- Doctor Hassan
-- His teacher
-?? Why can't Faisal go at eleven thirty?
-* He has a class at eleven.
-- He has to work.
-- The clinic is closed.
-- He has another appointment.
-?? What time is Faisal's appointment?
-* At four fifteen
-- At eleven thirty
-- At four fifty
-- At eleven o'clock
-?? Which doctor will Faisal see?
-* Doctor Laila
-- Doctor Hassan
-- Doctor Rana
-- Doctor Majed
-?? How much does the first check-up cost?
-* One hundred and fifty riyals
-- Fifty riyals
-- Two hundred riyals
-- One hundred riyals
-?? Why should Faisal come ten minutes early?
-* To fill in a form
-- To pay the money
-- To take an X-ray
-- To meet the doctor
-?? Where is the clinic?
-* On the second floor, above the pharmacy
-- On the ground floor, next to the pharmacy
-- On the second floor, next to the bank
-- Behind the pharmacy
+- For two days
+?? Where is the pain?
+* On the left side at the bottom
+- On the right side at the top
+- In his front teeth
+- On both sides
+?? Which dentist will Faisal see?
+* Doctor Yousef
+- Doctor Amal
+- His usual dentist
+- Doctor Faisal
+?? What time is his appointment?
+* At twenty past four
+- At four o'clock
+- At a quarter past four
+- At ten past four
+?? Why is Faisal going to a new dentist?
+* His usual dentist moved to another city.
+- His usual dentist was too expensive.
+- He didn't like his usual dentist.
+- His insurance company changed.
+?? Why should he come ten minutes early?
+* To fill in a form about his medical history
+- To have an X-ray
+- To pay for the appointment
+- To meet the dentist before the examination
+?? What does his insurance fully cover?
+* The first examination and the X-ray
+- Everything, including fillings
+- Only the X-ray
+- Twenty percent of the price
+?? Which advice about the pain does the receptionist NOT give?
+* Put ice on his face
+- Take a normal painkiller
+- Avoid very hot or very cold drinks
+- Try not to chew on that side
+?? According to the receptionist, what might the swelling mean?
+* There might be an infection.
+- He has broken a tooth.
+- He took too many painkillers.
+- He is allergic to something.
+?? When should he go to the hospital emergency department?
+* If the swelling gets much worse or he gets a fever
+- If he arrives late for his appointment
+- If the painkiller doesn't work in one hour
+- If he can't sleep tonight
 
 ## 2 | A Tour of the City Zoo | monologue
 @ Guide=af_heart
@@ -131,9 +129,9 @@ Guide: The tour finishes at half past twelve at the main restaurant, near the gi
 - The animals bite.
 ?? Where does the tour finish?
 * At the main restaurant, near the gift shop
-- At the bird house
-- At the main gate
-- At the reptile house
+- At the bird house, near the entrance
+- At the main gate, where the tour started
+- At the reptile house, next to the café
 ?? What is free for all visitors?
 * The train around the zoo
 - Lunch at the restaurant
@@ -142,73 +140,72 @@ Guide: The tour finishes at half past twelve at the main restaurant, near the gi
 
 ## 3 | Buying a New Phone | dialogue
 @ Seller=am_fenrir Huda=af_sarah
-Seller: Good evening. Welcome to Tech World. How can I help you?
-Huda: Hi. I'm looking for a new phone. My old one is four years old, and the battery dies very quickly.
-Seller: OK. What do you use your phone for most?
-Huda: Mostly for taking photos and for my university work. I also watch videos a lot.
-Seller: Then you need a phone with a good camera and a big screen. How much would you like to spend?
-Huda: Not more than two thousand riyals.
-Seller: I have two good choices for you. This one is the Nova Five. It has a great camera and a battery that lasts two days. It's one thousand eight hundred riyals.
-Huda: And the other one?
-Seller: This is the Star X. It has a bigger screen, but the camera is not as good. It's one thousand five hundred riyals.
-Huda: Hmm. Photos are very important to me, so I'll take the Nova Five. Does it come in other colours?
-Seller: Yes, it comes in black, silver and blue. But we only have black and blue in the shop today.
-Huda: Blue, please. Do I get a cover with it?
-Seller: The cover isn't included, but this week we have an offer. If you buy the phone, you get a cover and a screen protector for free.
-Huda: That's great. And is there a warranty?
-Seller: Yes, there's a two-year warranty. If anything goes wrong, just bring it back with the receipt.
-Huda: Perfect. Can I pay in cash?
-Seller: Of course. That's one thousand eight hundred riyals, please.
-?? Why does Huda want a new phone?
-* The battery of her old phone dies very quickly.
-- She broke her old phone.
+Seller: Good evening. Can I help you?
+Huda: Yes, please. I'm looking for a new phone. My old one is four years old, and the battery hardly lasts until lunchtime.
+Seller: That's a common problem with older phones. What do you mainly use your phone for?
+Huda: I'm a university student, so I use it for studying and messages, but I also take a lot of photos. I'm in the photography club.
+Seller: Then I'd suggest one of these two models. This one has the best camera in the shop. It takes excellent photos, even at night, and it has a lot of storage. But it's quite expensive: three thousand two hundred riyals.
+Huda: That's a lot more than I planned to spend. What about the other one?
+Seller: This one costs two thousand one hundred. The camera is very good in daylight, but not as good in the dark. On the other hand, its battery is bigger, so it easily lasts a full day, even if you use it a lot.
+Huda: Most of my photos are taken outdoors during the day, and the battery is my biggest problem at the moment. I think the cheaper one makes more sense.
+Seller: I agree. Would you like to trade in your old phone? We'd take two hundred riyals off the price.
+Huda: Only two hundred? My brother said I could sell it online for more.
+Seller: You probably could, maybe three or four hundred. But you'd have to deal with the buyers yourself. Trading it in here is quicker.
+Huda: I think I'll try selling it myself first. Can I pay monthly?
+Seller: Yes. You can pay over twelve months with no extra charge, or pay the full price today and get a free phone case.
+Huda: I'll pay today, then. Is there a guarantee?
+Seller: Two years, but it doesn't cover water damage or a broken screen. For an extra one hundred and fifty riyals, you can add screen protection for one year.
+Huda: No, thanks. The free case is quite strong, and I'm usually careful with my phone.
+?? Why does Huda need a new phone?
+* Her old phone's battery doesn't last long.
+- Her old phone's screen is broken.
 - She lost her old phone.
-- Her old phone has no camera.
-?? How old is Huda's old phone?
-* Four years old
-- Two years old
-- One year old
-- Five years old
-?? What does Huda use her phone for most?
-* Taking photos and university work
-- Playing games
-- Calling her family
-- Listening to music
-?? What is the most Huda wants to spend?
-* Two thousand riyals
-- One thousand five hundred riyals
-- One thousand eight hundred riyals
-- Three thousand riyals
-?? How long does the Nova Five battery last?
-* Two days
-- One day
-- Two weeks
-- Twelve hours
-?? What is the problem with the Star X?
-* The camera is not as good.
-- The screen is too small.
-- It is too expensive.
-- The battery is weak.
-?? Why does Huda choose the Nova Five?
-* Photos are very important to her.
-- It is the cheapest phone.
-- It has the biggest screen.
-- Her friend has the same phone.
-?? Which colour does Huda choose?
-* Blue
-- Black
-- Silver
-- Red
-?? What does Huda get for free this week?
-* A cover and a screen protector
-- Headphones
-- A charger
-- A second phone
-?? How does Huda pay?
-* In cash
-- By card
-- Online
-- In two payments
+- She needs more storage for her studies.
+?? Why are photos important to Huda?
+* She is in the photography club.
+- She studies photography at university.
+- She sells her photos online.
+- She works for a newspaper.
+?? What is the advantage of the more expensive phone?
+* It takes excellent photos, even at night.
+- It has a bigger battery.
+- It comes with a free case.
+- It is lighter.
+?? How much does the cheaper phone cost?
+* Two thousand one hundred riyals
+- Three thousand two hundred riyals
+- Two thousand riyals
+- One thousand nine hundred riyals
+?? Why does Huda choose the cheaper phone?
+* Most of her photos are taken in daylight, and the battery is her biggest problem.
+- She doesn't take many photos, so the camera isn't important to her.
+- The expensive phone was sold out, and the shop had no more.
+- Her brother told her that the cheaper phone was better.
+?? How much would the shop take off for her old phone?
+* Two hundred riyals
+- Three hundred riyals
+- Four hundred riyals
+- One hundred and fifty riyals
+?? Why doesn't Huda trade in her old phone?
+* She thinks she can sell it online for more.
+- The shop doesn't accept old phones.
+- She wants to give it to her brother.
+- She wants to keep it as a second phone.
+?? What does she get for paying the full price today?
+* A free phone case
+- Two hundred riyals off
+- A longer guarantee
+- Free screen protection
+?? What doesn't the guarantee cover?
+* Water damage or a broken screen
+- Problems with the battery
+- Problems with the camera
+- Any problems in the first year
+?? Why doesn't Huda buy screen protection?
+* The free case is strong, and she is usually careful.
+- It is too expensive for her student budget.
+- Her new phone already has a strong screen.
+- The seller says that she doesn't really need it.
 
 ## 4 | A Message from the Professor | monologue
 @ Professor=am_michael
@@ -225,14 +222,14 @@ Professor: Good luck with your studies, and see you on Monday.
 - Doctor Khalid Al-Qahtani
 ?? Where will the class be on Monday?
 * In the computer lab in Building 5
-- In Room 214
-- In Room 110
-- In the library
+- In Room 214, as usual
+- In Room 110 in Building 2
+- In the library on the first floor
 ?? Why will the class be in a different place?
 * Students will practise listening and need computers with headphones.
-- Room 214 is being painted.
-- The professor is sick.
-- There are too many students.
+- Room 214 is being painted this week.
+- The professor is sick and can't come.
+- There are too many students for the room.
 ?? When is the final exam?
 * On Thursday the twenty-second
 - On Monday the twenty-second
@@ -271,72 +268,73 @@ Professor: Good luck with your studies, and see you on Monday.
 
 ## 5 | Planning a Desert Camping Trip | dialogue
 @ Sami=am_puck Fahad=am_michael
-Sami: Fahad, the weather is perfect now. Why don't we go camping in the desert this weekend?
-Fahad: Great idea! Where should we go? Last time we went to the red sand dunes near Riyadh.
-Sami: Yes, but it was very crowded. What about a place a bit farther? My cousin says there's a quiet place about two hours north of the city.
-Fahad: Two hours is fine. Who else is coming?
-Sami: I asked Omar and Nasser. Omar said yes, but Nasser has to work on Friday. So it's just the three of us.
-Fahad: OK. Should we leave on Thursday evening or Friday morning?
-Sami: Thursday after work, at about five. Then we can arrive before it gets dark and put up the tent.
-Fahad: Good. What do we need to take? I have a big tent that's good for four people.
-Sami: Perfect. I'll bring the barbecue and the chicken. Omar can bring the drinks and the fruit.
-Fahad: And I'll bring the blankets. The desert gets very cold at night, even if the day is warm.
-Sami: That's true. Don't forget your power bank, too. There's no electricity there, and the phone signal is weak.
-Fahad: Good point. Should we take my car or yours?
-Sami: Let's take yours. It's bigger, and it's better for driving on sand. I'll pay for the petrol.
-Fahad: Deal. When do we come back?
-Sami: On Saturday afternoon. I have to study for my exam on Sunday.
-Fahad: OK, sounds like a great plan!
-?? Why does Sami suggest going camping this weekend?
-* The weather is perfect now.
-- It is a holiday.
-- His cousin invited them.
-- They have no exams.
-?? Why don't they want to go to the red sand dunes again?
-* It was very crowded.
-- It was too far.
-- It was too hot.
-- It was too expensive.
-?? How far is the new place from the city?
+Sami: Fahad, about our camping trip this weekend. Have you seen the weather forecast?
+Fahad: No, why? Is something wrong?
+Sami: They're expecting strong winds and sandstorms on Thursday and Friday. Camping in a sandstorm would be awful, and driving would be dangerous too.
+Fahad: That's a shame. Everyone was so excited. Should we cancel?
+Sami: Not cancel, just postpone. The forecast for next weekend looks perfect: clear skies and around twenty-two degrees during the day.
+Fahad: Next weekend is fine for me, but Omar has exams then. He'll be disappointed.
+Sami: I've already spoken to him. He said he'd rather we went without him than cancelled the whole trip. He'll join us next time.
+Fahad: OK. So that's four of us now, instead of five. Do we still need two cars?
+Sami: Yes, we do. The place we're going to is about two hours from the city, and the last part is soft sand. It's always safer to have two cars in the desert, in case one gets stuck.
+Fahad: Good point. What about equipment? I've got a big tent that sleeps four, and a gas cooker.
+Sami: Great. Then we don't need my small tent. I'll bring the firewood, the lights and a first-aid kit. Majed said he'd bring the food, and Turki has a portable fridge.
+Fahad: What about water?
+Sami: We should take at least five litres per person per day. People always underestimate how much they need, even when it isn't very hot.
+Fahad: And phone signal? Last time we had none at all.
+Sami: That's another reason for two cars. Also, I'll send our exact location to my brother before we leave, and tell him we'll call him on Saturday evening when we're back in the city. If he doesn't hear from us by nine, he'll know something is wrong.
+Fahad: You've really thought of everything.
+Sami: Well, the desert is beautiful, but it's not a place to take risks.
+?? What is the problem with this weekend?
+* Strong winds and sandstorms are expected.
+- It will be too hot.
+- Two of their friends have exams.
+- Their cars are not available.
+?? How far is the camping place from the city?
 * About two hours
-- About twenty minutes
-- About half an hour
-- About five hours
-?? Why isn't Nasser coming?
-* He has to work on Friday.
-- He is sick.
+- About one hour
+- About three hours
+- About thirty minutes
+?? What will the weather be like next weekend?
+* Clear skies and around twenty-two degrees
+- Windy and around thirty degrees
+- Cloudy with some rain
+- Cold, at around twelve degrees
+?? Why can't Omar go next weekend?
+* He has exams.
+- He is travelling.
 - He doesn't like camping.
-- He has an exam.
-?? How many people are going on the trip?
-* Three
-- Two
-- Four
+- His car is broken.
+?? How many people will go on the trip now?
+* Four
 - Five
-?? When will they leave?
-* On Thursday at about five
-- On Friday morning
-- On Thursday morning
-- On Saturday afternoon
-?? What will Sami bring?
-* The barbecue and the chicken
-- The tent
-- The blankets
-- The drinks and the fruit
-?? Why does Fahad bring blankets?
-* The desert gets very cold at night.
-- The tent is small.
-- They will sleep outside.
-- It will rain.
-?? Why will they take Fahad's car?
-* It is bigger and better for driving on sand.
-- Sami's car is broken.
-- Fahad's car uses less petrol.
-- Sami can't drive.
-?? Why does Sami want to come back on Saturday?
-* He has to study for his exam on Sunday.
-- He has to work on Saturday.
-- His family is visiting.
-- The weather will change.
+- Three
+- Six
+?? Why do they need two cars?
+* It is safer, in case one gets stuck.
+- They have too much equipment for one car.
+- They live in different parts of the city.
+- One car is too small for all of them.
+?? What will Fahad bring?
+* A big tent and a gas cooker
+- The food and a fridge
+- Firewood and lights
+- A first-aid kit
+?? Who will bring the food?
+* Majed
+- Turki
+- Sami
+- Fahad
+?? How much water should they take per person per day?
+* At least five litres
+- At least two litres
+- At least ten litres
+- About three litres
+?? What will Sami's brother understand if he doesn't hear from them by nine?
+* That something is wrong
+- That they decided to stay another night
+- That their phones have no battery
+- That they went to a different place
 
 ## 6 | Advert for a New Supermarket | monologue
 @ Voice=af_nicole
@@ -399,73 +397,72 @@ Voice: Fresh Market. Fresh food, fresh prices. See you on Saturday!
 
 ## 7 | Opening a Bank Account | dialogue
 @ Employee=af_bella Student=am_puck
-Employee: Good morning. Please have a seat. How can I help you today?
-Student: Good morning. I'm a new student at the university, and I'd like to open a bank account.
-Employee: Of course. We have a special account for students. There's no monthly fee, and you get a free bank card.
-Student: That sounds good. What do I need to open it?
-Employee: I need your national ID card and your student card. And a phone number, so we can send you messages.
-Student: Here they are. How long does it take?
-Employee: About twenty minutes. I'll enter your information now, and you'll get your card today.
-Student: Great. Can I use the card to shop online?
-Employee: Yes, you can. You can also use our app to check your balance, pay bills and send money to your friends.
-Student: Is there a limit on how much I can take out from the ATM?
-Employee: Yes. With the student account, you can take out up to five thousand riyals a day.
-Student: That's more than enough! What if I lose my card?
-Employee: Call us immediately on our free number, or stop the card from the app. We'll send you a new one in three days.
-Student: OK. And does the bank give students any discounts?
-Employee: Yes. With our card, you get ten percent off at some bookshops and restaurants near the university. Here's a list.
-Student: Thank you! You've been very helpful.
-Employee: You're welcome. Please sign here, and here. And your card is ready.
-?? Why does the student want to open a bank account?
-* He is a new student at the university.
-- He got a new job.
-- He lost his old card.
-- He wants to buy a car.
-?? What is special about the student account?
-* There's no monthly fee, and you get a free card.
-- It gives you free money every month.
-- You can only use it at the university.
-- It has a high monthly fee.
-?? What does the student NOT need to open the account?
-* His passport
-- His national ID card
+Employee: Good morning. How can I help you today?
+Student: Good morning. I've just started university here, and I'd like to open a bank account. My scholarship payments have to go into a local account.
+Employee: Certainly. We have two options that might suit you. The student account has no monthly fee, but you can only take out up to three thousand riyals a day. The standard account has a fee of fifteen riyals a month, but it has a higher daily limit and comes with a credit card.
+Student: I don't really need a credit card, and I won't be taking out large amounts. The student account sounds better.
+Employee: I think so too. Did you bring the documents we need?
+Student: I've got my passport and my university acceptance letter.
+Employee: That's good, but we also need a document showing your address in the city, such as a rental contract or a letter from your university accommodation.
+Student: Oh, I didn't know that. I live in the university housing. Can I bring the letter tomorrow?
+Employee: Of course. I can start the application now, and you can bring the letter tomorrow. The account will be opened once we've checked it, usually within one working day.
+Student: And when will I get my bank card?
+Employee: It'll be sent to your address within five to seven days. If you need money before then, you can go to any of our branches with your passport.
+Student: OK. Can I use the account on my phone?
+Employee: Yes, you can download our app. You'll be able to check your balance, transfer money and pay bills. For security, you'll receive a code by text message every time you log in from a new device.
+Student: That's great. One more question: my family sometimes sends me money from abroad. Is there a charge for that?
+Employee: There's a fee of twenty-five riyals for each international transfer you receive. So it's better if your family sends larger amounts less often.
+Student: That's useful to know. Thank you.
+?? Why does the student need a local bank account?
+* To receive his scholarship payments
+- To receive his salary from a new job
+- To save money to buy a car
+- Because his family asked him to open one
+?? What is the advantage of the student account?
+* It has no monthly fee.
+- It comes with a credit card.
+- It has a higher daily limit.
+- It can be opened without documents.
+?? How much is the monthly fee for the standard account?
+* Fifteen riyals
+- Twenty-five riyals
+- Fifty riyals
+- Three thousand riyals
+?? Why does the student choose the student account?
+* He doesn't need a credit card or large amounts of cash.
+- It is the only account that new students can open.
+- The employee says that all students must choose it.
+- It has a higher daily limit than the standard account.
+?? What other document does the bank need from him?
+* A document showing his address in the city
 - His student card
-- A phone number
-?? How long does it take to open the account?
-* About twenty minutes
-- About two hours
-- Three days
-- One week
-?? When will the student get his card?
-* Today
-- In three days
-- Next week
-- Tomorrow
-?? What can the student do with the app?
-* Check his balance, pay bills and send money
-- Take out money without a card
-- Get a free phone
-- Open a second account
-?? How much can the student take out from the ATM each day?
-* Up to five thousand riyals
-- Up to five hundred riyals
-- Up to one thousand riyals
-- Up to fifty thousand riyals
-?? What should he do if he loses his card?
-* Call the free number or stop the card from the app
-- Go to the police
-- Open a new account
-- Wait for three days
-?? How long does it take to get a new card?
-* Three days
-- Twenty minutes
-- One day
-- Two weeks
-?? What discount does the card give near the university?
-* Ten percent off at some bookshops and restaurants
-- Twenty percent off at all shops
-- Free food at restaurants
-- Free books
+- A letter from his family
+- A copy of his scholarship contract
+?? Where does the student live?
+* In university housing
+- In a rented flat
+- With his family
+- In a hotel
+?? After he brings the letter, how long does it usually take to open the account?
+* Within one working day
+- Within five to seven days
+- Within one hour
+- Within two weeks
+?? How can he get money before his card arrives?
+* By going to any branch with his passport
+- By using the app
+- By asking the employee for cash now
+- By using his university card
+?? When will he receive a code by text message?
+* Every time he logs in from a new device
+- Every time he pays a bill
+- Once a month
+- Only when he transfers money abroad
+?? Why is it better for his family to send larger amounts less often?
+* There is a fee for each international transfer.
+- Small transfers are not allowed.
+- Large transfers arrive faster.
+- The bank gives a discount for large amounts.
 
 ## 8 | A Famous Scientist: Ibn al-Haytham | monologue
 @ Student=af_heart
@@ -477,9 +474,9 @@ Student: Ibn al-Haytham was also one of the first scientists to use experiments 
 Student: I chose him for my presentation because he teaches us something important: don't just believe an idea because many people believe it. Test it yourself. Thank you for listening. Do you have any questions?
 ?? What is the presentation about?
 * A famous scientist called Ibn al-Haytham
-- The history of Cairo
-- How to do experiments
-- The city of Basra
+- The history of the city of Cairo
+- How to do simple science experiments
+- The old city of Basra and its people
 ?? What is optics?
 * The science of light and how we see
 - The science of medicine
@@ -526,74 +523,74 @@ Student: I chose him for my presentation because he teaches us something importa
 - He was very rich.
 - He wrote the most books in history.
 
-## 9 | Asking for Directions | dialogue
-@ Tourist=am_fenrir Woman=af_sarah
-Tourist: Excuse me. I'm sorry to bother you, but I think I'm lost. Can you help me?
-Woman: Of course. Where do you want to go?
-Tourist: I'm looking for the National Museum.
-Woman: Oh, it's not far. You can walk there in about ten minutes. Go straight along this street until you reach the traffic lights.
-Tourist: Straight to the traffic lights. OK.
-Woman: At the traffic lights, turn left. You'll see a big mosque on your right. Walk past the mosque, and the museum is next to the park, on the left side of the street.
-Tourist: So, turn left at the traffic lights, walk past the mosque, and it's next to the park.
-Woman: That's right. It's a big white building with a garden in front of it. You can't miss it.
-Tourist: Thank you so much. Is there a place to eat near the museum? I haven't had lunch yet.
-Woman: Yes. There's a nice café inside the museum, on the ground floor. Or, if you want a real meal, there's a traditional restaurant opposite the museum, behind the bus stop.
-Tourist: Great. And do you know what time the museum closes?
-Woman: I think it closes at eight in the evening, but on Fridays it opens only in the afternoon, from four.
-Tourist: Today is Wednesday, so that's fine. Is the museum free?
-Woman: Yes, it's free for everyone.
-Tourist: Wonderful. Thank you again!
-Woman: You're welcome. Enjoy your visit!
-?? Where does the tourist want to go?
-* The National Museum
-- The big mosque
-- The park
-- A traditional restaurant
-?? How long does it take to walk there?
-* About ten minutes
-- About two minutes
-- About thirty minutes
-- About an hour
-?? What should the tourist do at the traffic lights?
-* Turn left
-- Turn right
-- Go straight
-- Cross the bridge
-?? What will the tourist see on his right after turning?
-* A big mosque
-- A park
-- A bus stop
-- A café
-?? Where is the museum?
-* Next to the park, on the left side of the street
-- Next to the mosque, on the right
-- Behind the bus stop
-- Opposite the traffic lights
-?? What does the museum look like?
-* A big white building with a garden in front of it
-- A small red building
-- A tall glass tower
-- An old building behind a park
-?? Where is the café?
-* Inside the museum, on the ground floor
-- Opposite the museum
-- Next to the mosque
-- Behind the bus stop
-?? Where is the traditional restaurant?
-* Opposite the museum, behind the bus stop
-- Inside the museum
-- Next to the traffic lights
-- In front of the mosque
-?? What time does the museum close?
-* At eight in the evening
-- At four in the afternoon
-- At six in the evening
-- At ten at night
-?? How much does it cost to visit the museum?
-* It is free.
-- Ten riyals
-- Twenty riyals
-- It is free on Fridays only.
+## 9 | Talking About a Film | dialogue
+@ Nora=af_heart Reem=af_bella
+Nora: Reem, did you finally watch that film everyone's talking about, The Silent River?
+Reem: I did, last weekend. Honestly, I'm not sure what I think about it.
+Nora: Really? I loved it! I thought it was the best film I've seen this year.
+Reem: Well, the acting was fantastic, especially the actress who played the grandmother. And the music was beautiful. But I found the story quite slow. Nothing really happened for the first hour.
+Nora: I know what you mean, but I think that was on purpose. The director wanted us to understand how lonely life in the village was before the dam was built.
+Reem: Maybe. But two hours and forty minutes is too long. My brother fell asleep halfway through.
+Nora: Ha! Did you read the book before watching it?
+Reem: No, I didn't know it was based on a book.
+Nora: Yes, it was written about twenty years ago. I read it in high school. The book is actually even slower, so I think the director did a good job of making it more exciting. Although he changed the ending.
+Reem: What happens in the book?
+Nora: I won't tell you, in case you want to read it. But in the book, the ending is much sadder. I think the director wanted people to leave the cinema feeling hopeful.
+Reem: I prefer it when films stay close to the book. Otherwise, why use the same story?
+Nora: I disagree. A film and a book are different. What works on paper doesn't always work on screen.
+Reem: That's true, I suppose. Anyway, would you recommend the book?
+Nora: Definitely. You can borrow my copy. But be patient with the first chapters.
+Reem: OK, I'll give it a try. Maybe I'll understand the film better afterwards.
+?? What is Nora's opinion of the film?
+* She loved it.
+- She thought it was too slow.
+- She didn't finish watching it.
+- She thought it was too long.
+?? What did Reem like about the film?
+* The acting and the music
+- The story and the ending
+- Its length
+- The special effects
+?? What was Reem's main problem with the film?
+* The story was quite slow.
+- The acting was poor.
+- The music was too loud.
+- The ending was too sad.
+?? According to Nora, why was the first hour slow?
+* The director wanted to show how lonely life in the village was.
+- The director didn't have enough money for more action scenes.
+- The director wanted the film to be exactly like the book.
+- The actors needed more time to show their characters.
+?? How long is the film?
+* Two hours and forty minutes
+- Two hours
+- One hour and forty minutes
+- Three hours
+?? What happened to Reem's brother?
+* He fell asleep halfway through.
+- He left the cinema early.
+- He loved the film.
+- He read the book first.
+?? When did Nora read the book?
+* In high school
+- Last weekend
+- After watching the film
+- When it was first written
+?? What did the director change?
+* The ending
+- The title
+- The main character
+- The place where the story happens
+?? How did the director want people to feel when they left the cinema?
+* Hopeful
+- Sad
+- Surprised
+- Confused
+?? What does Nora offer to do?
+* Lend Reem her copy of the book
+- Watch the film again with Reem
+- Buy Reem the book
+- Tell Reem how the book ends
 
 ## 10 | Train Station Announcements | monologue
 @ Announcer=bm_george
@@ -655,207 +652,76 @@ Announcer: Food and drinks are available at the café near platform one. Thank y
 - On the first floor
 - Near platform five
 
-## 11 | Talking About a Film | dialogue
-@ Nora=af_heart Reem=af_bella
-Nora: Reem, did you watch the new film, The Long Road, last night?
-Reem: Yes! I went with my sisters. Did you see it too?
-Nora: I saw it on Tuesday. What did you think?
-Reem: I loved it! The story was really exciting. I didn't know what was going to happen until the very end.
-Nora: Me too. But I thought it was a bit too long. It's almost three hours!
-Reem: That's true. The middle part was slow. But the ending was amazing. I cried a little!
-Nora: Ha! So did my brother, and he never cries. Who was your favourite character?
-Reem: The young doctor, Adam. He was so brave. He helped all those people in the village, even when he was sick himself.
-Nora: I liked the old teacher more. She was very funny, and she gave great advice.
-Reem: Oh yes, she was great. And the music was beautiful, too.
-Nora: I agree. I already downloaded the songs on my phone. What about the cinema? Where did you watch it?
-Reem: At the new cinema in the mall. The seats were very comfortable, but the tickets were expensive, sixty-five riyals each.
-Nora: Wow! I paid forty-five at the cinema near the university. But the screen there is smaller.
-Reem: Well, it was worth it. I think I'll watch it again next month with my cousins.
-Nora: You should! I'd give it eight out of ten.
-Reem: For me, it's nine out of ten.
-?? What is the name of the film?
-* The Long Road
-- The Lost Road
-- The Long Night
-- The Young Doctor
-?? Who did Reem watch the film with?
-* Her sisters
-- Her brother
-- Her cousins
-- Nora
-?? When did Nora see the film?
-* On Tuesday
-- Last night
-- On Thursday
-- Last month
-?? What did Nora NOT like about the film?
-* It was too long.
-- The music was bad.
-- The ending was boring.
-- The story was not exciting.
-?? How long is the film?
-* Almost three hours
-- About two hours
-- One and a half hours
-- More than four hours
-?? Who was Reem's favourite character?
-* The young doctor, Adam
-- The old teacher
-- Nora's brother
-- A child in the village
-?? Why did Nora like the old teacher?
-* She was very funny and gave great advice.
-- She was very brave.
-- She helped people in the village.
-- She was a doctor.
-?? How much were the tickets at the new cinema in the mall?
-* Sixty-five riyals each
-- Forty-five riyals each
-- Fifty-five riyals each
-- Sixty riyals each
-?? What is the problem with the cinema near the university?
-* The screen is smaller.
-- The tickets are more expensive.
-- The seats are uncomfortable.
-- It is very far.
-?? What score does Reem give the film?
-* Nine out of ten
-- Eight out of ten
-- Ten out of ten
-- Seven out of ten
+## 11 | Missing an Exam | dialogue
+@ Student=am_michael Professor=af_sarah
+Student: Excuse me, Doctor Sara. Do you have a minute?
+Professor: Of course, Yousef. Come in. What's the matter?
+Student: I'm very sorry, but I missed the history exam yesterday.
+Professor: I noticed you weren't there. What happened?
+Student: I was in the hospital. My father had a car accident in the morning, and I went with him.
+Professor: Oh, I'm so sorry to hear that. Is he OK now?
+Student: Yes, thank God. He broke his arm, but he's at home now and feeling better.
+Professor: I'm glad to hear that. Don't worry about the exam. You can take it another day. But I need a paper from the hospital that shows you were there.
+Student: Yes, I have a report from the hospital. Here it is.
+Professor: Thank you. This is fine. You can take the exam next Tuesday at ten o'clock in my office, Room 305.
+Student: Next Tuesday at ten. Will it be the same exam?
+Professor: No, it will be a different exam, but it will cover the same chapters, from chapter four to chapter seven.
+Student: OK. How long will it be?
+Professor: One hour, like the original exam. And it will be worth twenty percent of your final grade.
+Student: Thank you so much for understanding, Doctor.
+Professor: You're welcome. Take care of your father, and good luck with your studying.
+?? Why did Yousef miss the exam?
+* He was in the hospital with his father.
+- He was sick with a high temperature.
+- He forgot the date of the exam.
+- He was late because of the traffic.
+?? What happened to Yousef's father?
+* He had a car accident and broke his arm.
+- He fell at home.
+- He had a heart problem.
+- He broke his leg at work.
+?? Which exam did Yousef miss?
+* The history exam
+- The English exam
+- The math exam
+- The science exam
+?? What does the professor need from Yousef?
+* A paper from the hospital
+- A letter from his father
+- His student ID
+- Money for the new exam
+?? When will Yousef take the exam?
+* Next Tuesday at ten o'clock
+- Tomorrow at ten o'clock
+- Next Thursday at two o'clock
+- Next Tuesday at three o'clock
+?? Where will Yousef take the exam?
+* In the professor's office, Room 305
+- In the big exam hall on the ground floor
+- In Room 350, next to the library
+- In the library's study room
+?? Will it be the same exam?
+* No, it will be a different exam on the same chapters.
+- Yes, it will be exactly the same exam.
+- No, it will be on new chapters from the book.
+- He doesn't need to take any exam at all.
+?? Which chapters will the exam cover?
+* From chapter four to chapter seven
+- From chapter one to chapter four
+- From chapter five to chapter seven
+- Only chapter seven
+?? How long will the exam be?
+* One hour
+- Two hours
+- Thirty minutes
+- Ninety minutes
+?? How much of the final grade is the exam worth?
+* Twenty percent
+- Ten percent
+- Thirty percent
+- Fifty percent
 
-## 12 | My New Job | monologue
-@ Ahmed=am_michael
-Ahmed: Hi, my name is Ahmed, and I want to tell you about my new job. Three months ago, I started working as a tour guide in Jeddah. Before that, I was an English teacher for five years.
-Ahmed: Why did I change jobs? I loved teaching, but I always dreamed of a job where I could meet people from different countries and show them my city. When I saw that a travel company needed guides who speak English, I applied immediately.
-Ahmed: My day usually starts at eight in the morning. I meet the tourists at their hotel, and then we travel by bus to different places. The most popular place is the old part of Jeddah, called Al-Balad. It has old houses made of coral stone, with beautiful wooden windows. Tourists love taking photos there.
-Ahmed: After that, we usually have lunch at a traditional restaurant, and in the evening, we walk along the Corniche by the Red Sea.
-Ahmed: The job is not always easy. I work long hours, sometimes ten hours a day, and I have to stay patient when tourists ask the same questions again and again. But I love it. Every day is different, and I learn something new from every group.
-Ahmed: My advice to anyone choosing a job is this: do something you really enjoy. Then work never feels like work.
-?? What is Ahmed's new job?
-* A tour guide
-- An English teacher
-- A bus driver
-- A hotel manager
-?? When did Ahmed start his new job?
-* Three months ago
-- Five years ago
-- Three years ago
-- Last week
-?? What was Ahmed's job before?
-* An English teacher
-- A tour guide
-- A photographer
-- A cook
-?? Why did Ahmed change jobs?
-* He wanted to meet people from different countries and show them his city.
-- He didn't like teaching.
-- He wanted more money.
-- His school closed.
-?? What time does Ahmed's day usually start?
-* At eight in the morning
-- At ten in the morning
-- At seven in the morning
-- At noon
-?? What is Al-Balad?
-* The old part of Jeddah
-- A new shopping mall
-- A restaurant
-- A beach
-?? What are the old houses in Al-Balad made of?
-* Coral stone
-- Wood only
-- Glass
-- Mud
-?? What do they do in the evening?
-* Walk along the Corniche by the Red Sea
-- Go shopping
-- Visit a museum
-- Go back to the hotel
-?? What is difficult about Ahmed's job?
-* He works long hours and must stay patient.
-- He doesn't speak English well.
-- He doesn't like tourists.
-- The pay is very low.
-?? What is Ahmed's advice?
-* Do something you really enjoy.
-- Always work long hours.
-- Choose a job with a high salary.
-- Never change your job.
-
-## 13 | Ordering Food by Phone | dialogue
-@ Worker=am_puck Customer=af_nicole
-Worker: Hello, Pizza Palace. Would you like to order for delivery or pick-up?
-Customer: Delivery, please.
-Worker: Sure. What would you like?
-Customer: I'd like two large pizzas, please. One chicken pizza and one vegetable pizza.
-Worker: Would you like extra cheese on them?
-Customer: Yes, on the chicken pizza, but not on the vegetable one.
-Worker: OK. Anything else?
-Customer: Yes, a large salad and four bottles of orange juice.
-Worker: I'm sorry, we don't have orange juice today. We have apple juice or lemon juice.
-Customer: Then apple juice, please. Four bottles.
-Worker: OK. So that's two large pizzas, one with extra cheese, one large salad, and four apple juices. That comes to one hundred and twenty riyals.
-Customer: Is there a delivery charge?
-Worker: Delivery is usually ten riyals, but it's free for orders over one hundred riyals. So yours is free.
-Customer: Great. How long will it take?
-Worker: About forty-five minutes. We're very busy tonight because there's a football match.
-Customer: Oh, OK. Can I pay when the food arrives?
-Worker: Yes, you can pay the driver in cash or by card. Can I have your address, please?
-Customer: It's building number twelve, Al-Yasmin Street, apartment five, on the third floor.
-Worker: Thank you. Your order will arrive soon. Enjoy your meal!
-?? How does the customer want to get the food?
-* Delivery
-- Pick-up
-- Eat at the restaurant
-- She hasn't decided
-?? What pizzas does the customer order?
-* One chicken pizza and one vegetable pizza
-- Two chicken pizzas
-- Two vegetable pizzas
-- One cheese pizza and one meat pizza
-?? Which pizza has extra cheese?
-* The chicken pizza
-- The vegetable pizza
-- Both pizzas
-- Neither pizza
-?? Why can't the customer get orange juice?
-* The restaurant doesn't have it today.
-- It is too expensive.
-- She changed her mind.
-- It is only for children.
-?? How many bottles of juice does she order?
-* Four
-- Two
-- Three
-- One
-?? How much is the order?
-* One hundred and twenty riyals
-- One hundred and ten riyals
-- One hundred riyals
-- One hundred and thirty riyals
-?? Why is delivery free?
-* The order is over one hundred riyals.
-- It's her first order.
-- It's a holiday.
-- She lives near the restaurant.
-?? How long will the delivery take?
-* About forty-five minutes
-- About fifteen minutes
-- About thirty minutes
-- About an hour and a half
-?? Why is the restaurant very busy tonight?
-* There's a football match.
-- It's the weekend.
-- It's a new restaurant.
-- There's a holiday.
-?? Which floor does the customer live on?
-* The third floor
-- The fifth floor
-- The twelfth floor
-- The ground floor
-
-## 14 | Rules of the Swimming Class | monologue
+## 12 | Rules of the Swimming Class | monologue
 @ Coach=am_fenrir
 Coach: Good evening, everyone, and welcome to your first swimming class. My name is Coach Turki, and I'll be your teacher for the next eight weeks.
 Coach: Our class meets twice a week, on Mondays and Wednesdays, from six to seven in the evening. Please try to arrive ten minutes early, so you have time to change and take a shower before you enter the pool.
@@ -880,9 +746,9 @@ Coach: Finally, if you feel tired or have any problem in the water, raise your h
 - Every day from six to seven
 ?? Why should students arrive ten minutes early?
 * To have time to change and take a shower
-- To pay for the class
-- To buy a swimming cap
-- To talk to the coach
+- To pay for the class at the front desk
+- To buy a swimming cap from the shop
+- To talk to the coach about their level
 ?? Why must everyone take a shower before swimming?
 * To keep the water clean for everyone
 - Because the water is cold
@@ -914,265 +780,7 @@ Coach: Finally, if you feel tired or have any problem in the water, raise your h
 - Get out of the pool.
 - Call reception.
 
-## 15 | Missing an Exam | dialogue
-@ Student=am_michael Professor=af_sarah
-Student: Excuse me, Doctor Sara. Do you have a minute?
-Professor: Of course, Yousef. Come in. What's the matter?
-Student: I'm very sorry, but I missed the history exam yesterday.
-Professor: I noticed you weren't there. What happened?
-Student: I was in the hospital. My father had a car accident in the morning, and I went with him.
-Professor: Oh, I'm so sorry to hear that. Is he OK now?
-Student: Yes, thank God. He broke his arm, but he's at home now and feeling better.
-Professor: I'm glad to hear that. Don't worry about the exam. You can take it another day. But I need a paper from the hospital that shows you were there.
-Student: Yes, I have a report from the hospital. Here it is.
-Professor: Thank you. This is fine. You can take the exam next Tuesday at ten o'clock in my office, Room 305.
-Student: Next Tuesday at ten. Will it be the same exam?
-Professor: No, it will be a different exam, but it will cover the same chapters, from chapter four to chapter seven.
-Student: OK. How long will it be?
-Professor: One hour, like the original exam. And it will be worth twenty percent of your final grade.
-Student: Thank you so much for understanding, Doctor.
-Professor: You're welcome. Take care of your father, and good luck with your studying.
-?? Why did Yousef miss the exam?
-* He was in the hospital with his father.
-- He was sick.
-- He forgot the date.
-- He was late.
-?? What happened to Yousef's father?
-* He had a car accident and broke his arm.
-- He fell at home.
-- He had a heart problem.
-- He broke his leg at work.
-?? Which exam did Yousef miss?
-* The history exam
-- The English exam
-- The math exam
-- The science exam
-?? What does the professor need from Yousef?
-* A paper from the hospital
-- A letter from his father
-- His student ID
-- Money for the new exam
-?? When will Yousef take the exam?
-* Next Tuesday at ten o'clock
-- Tomorrow at ten o'clock
-- Next Thursday at two o'clock
-- Next Tuesday at three o'clock
-?? Where will Yousef take the exam?
-* In the professor's office, Room 305
-- In the exam hall
-- In Room 350
-- In the library
-?? Will it be the same exam?
-* No, it will be a different exam on the same chapters.
-- Yes, exactly the same.
-- No, it will be on new chapters.
-- He doesn't need to take it.
-?? Which chapters will the exam cover?
-* From chapter four to chapter seven
-- From chapter one to chapter four
-- From chapter five to chapter seven
-- Only chapter seven
-?? How long will the exam be?
-* One hour
-- Two hours
-- Thirty minutes
-- Ninety minutes
-?? How much of the final grade is the exam worth?
-* Twenty percent
-- Ten percent
-- Thirty percent
-- Fifty percent
-
-## 16 | University Sports Day | monologue
-@ Speaker=af_nicole
-Speaker: Hello, students! This is an announcement from the Student Activities Office about our annual Sports Day.
-Speaker: Sports Day will be next Thursday, from eight in the morning until four in the afternoon, at the university stadium. All students and staff are welcome, and entry is free.
-Speaker: There will be many competitions this year, including football, basketball, volleyball, running and table tennis. If you want to take part, you must register by this Sunday. You can register online on the university website or at the Student Activities Office in Building 3.
-Speaker: Each student can take part in a maximum of two sports. Football and basketball teams must have at least seven players, so ask your friends to join you.
-Speaker: There will be prizes for the winners. The first-place team in each sport will get a trophy and a gift card worth five hundred riyals. All participants will get a free T-shirt and a certificate.
-Speaker: Food trucks will be at the stadium all day, selling sandwiches, snacks and cold drinks. We also have a special area with free water and fruit for all players.
-Speaker: Please wear sports clothes and comfortable shoes. Don't forget to bring a hat and sunscreen, because it will be sunny and hot.
-Speaker: We hope to see you all there. Let's make this the best Sports Day ever!
-?? Who is making the announcement?
-* The Student Activities Office
-- The football coach
-- The university president
-- The Sports Club
-?? When is Sports Day?
-* Next Thursday
-- This Sunday
-- Next Monday
-- This Thursday
-?? Where will Sports Day be?
-* At the university stadium
-- In Building 3
-- At the city park
-- In the sports hall
-?? Which sport does the speaker NOT mention?
-* swimming
-- football
-- volleyball
-- table tennis
-?? When must students register?
-* By this Sunday
-- By next Thursday
-- On Sports Day
-- By the end of the month
-?? How many sports can each student take part in?
-* A maximum of two
-- Only one
-- Three
-- As many as they want
-?? How many players must football and basketball teams have, at least?
-* Seven
-- Five
-- Eleven
-- Two
-?? What will the first-place team in each sport get?
-* A trophy and a gift card worth five hundred riyals
-- A free T-shirt only
-- Five hundred riyals in cash
-- A trip abroad
-?? What will all participants get?
-* A free T-shirt and a certificate
-- A trophy
-- A gift card
-- Free lunch
-?? Why should students bring a hat and sunscreen?
-* It will be sunny and hot.
-- It's a rule of the competition.
-- There will be no shade at all.
-- They will get a prize.
-
-## 17 | Returning a Broken Item | dialogue
-@ Customer=am_puck Assistant=af_bella
-Customer: Hello. I bought this coffee machine here last week, but it's not working.
-Assistant: I'm sorry to hear that. What's the problem with it?
-Customer: When I turn it on, the light comes on, but the water doesn't get hot. I tried it three times.
-Assistant: I see. Do you have the receipt?
-Customer: Yes, here it is. I bought it on the fifth.
-Assistant: Thank you. So you bought it eight days ago. That's fine. You can return items within fourteen days. Would you like a new machine, or your money back?
-Customer: Hmm. Do you have the same machine in stock?
-Assistant: Let me check. I'm sorry, we don't have the same model right now. We'll get more next week. But we have a similar model, the Café Pro, which is a bit better.
-Customer: How much is it?
-Assistant: It's three hundred and fifty riyals. Your machine was three hundred, so you would need to pay fifty riyals more.
-Customer: What's the difference between them?
-Assistant: The Café Pro can also make milk foam for cappuccino, and it has a two-year warranty instead of one year.
-Customer: That sounds good. OK, I'll take the Café Pro and pay the difference.
-Assistant: Great choice. Can I see your card, please? And I'll give you a new receipt. Please keep it in a safe place.
-Customer: I will. Thanks for your help.
-?? What did the customer buy?
-* A coffee machine
-- A kettle
-- A phone
-- A toaster
-?? When did the customer buy it?
-* Last week
-- Yesterday
-- Last month
-- Two weeks ago
-?? What is the problem?
-* The water doesn't get hot.
-- The light doesn't come on.
-- It makes a loud noise.
-- It's leaking water.
-?? How many times did the customer try it?
-* Three times
-- Once
-- Twice
-- Five times
-?? How many days ago did he buy it?
-* Eight days ago
-- Five days ago
-- Fourteen days ago
-- Three days ago
-?? Within how many days can customers return items?
-* Fourteen
-- Seven
-- Eight
-- Thirty
-?? Why can't the customer get the same machine?
-* The shop doesn't have the same model right now.
-- It's too expensive.
-- The model is broken.
-- He doesn't want it.
-?? How much is the Café Pro?
-* Three hundred and fifty riyals
-- Three hundred riyals
-- Fifty riyals
-- Four hundred riyals
-?? What can the Café Pro do that the old machine can't?
-* Make milk foam for cappuccino
-- Make tea
-- Make cold drinks
-- Work without electricity
-?? How long is the warranty on the Café Pro?
-* Two years
-- One year
-- Fourteen days
-- Three years
-
-## 18 | Tips for Learning New Words | monologue
-@ Host=af_heart
-Host: Welcome back to English Every Day, the podcast for English learners. I'm your host, Lina. Today, I want to share five tips to help you learn and remember new English words.
-Host: Tip number one: keep a vocabulary notebook. Every time you learn a new word, write it down with its meaning and an example sentence. Don't just write the translation in your language. A sentence helps you remember how to use the word.
-Host: Tip number two: learn words in groups. For example, learn food words together, or words about the weather together. Your brain remembers words better when they are connected.
-Host: Tip number three: review your words again and again. Studies show that we forget about half of new information in one day if we don't review it. So look at your notebook for ten minutes every day, especially before you sleep.
-Host: Tip number four: use the new words. Try to use them when you speak or write. For example, write three sentences every day using your new words, or send a message to a friend in English.
-Host: And tip number five: read and listen a lot. When you read stories or watch videos in English, you see words in real situations. Choose things that are not too difficult, so you can enjoy them.
-Host: Remember, don't try to learn fifty words in one day. Learning ten words a day and remembering them is much better. That's all for today. See you next week!
-?? What is the name of the podcast?
-* English Every Day
-- English Words
-- Learn English Now
-- Every Day English
-?? What is the host's name?
-* Lina
-- Lama
-- Lana
-- Layla
-?? How many tips does the host give?
-* Five
-- Three
-- Ten
-- Fifty
-?? What should you write in your vocabulary notebook?
-* The word, its meaning and an example sentence
-- Only the translation
-- Only the word
-- A long story
-?? Why does the host suggest learning words in groups?
-* Your brain remembers words better when they are connected.
-- It's faster to write them.
-- Teachers like it.
-- You need fewer notebooks.
-?? How much new information do we forget in one day if we don't review it?
-* About half
-- About ten percent
-- All of it
-- Almost nothing
-?? When does the host say it is especially good to review?
-* Before you sleep
-- In the morning
-- After lunch
-- During class
-?? How many sentences does the host suggest writing every day?
-* Three
-- Ten
-- Five
-- One
-?? What kind of things should you read and watch?
-* Things that are not too difficult
-- Only very difficult things
-- Only the news
-- Only grammar books
-?? How many words a day does the host suggest learning?
-* Ten
-- Fifty
-- Five
-- Twenty
-
-## 19 | A Problem with the Neighbours | dialogue
+## 13 | A Problem with the Neighbours | dialogue
 @ Majed=am_michael Neighbour=am_fenrir
 Majed: Good evening. Sorry to bother you. I'm Majed, from the apartment upstairs.
 Neighbour: Oh, hello Majed. Nice to meet you. I'm Ibrahim. Is everything OK?
@@ -1238,7 +846,264 @@ Majed: That's very kind of you. Thank you, Ibrahim.
 - Headphones
 - A book
 
-## 20 | Recycling on Campus | monologue
+## 14 | University Sports Day | monologue
+@ Speaker=af_nicole
+Speaker: Hello, students! This is an announcement from the Student Activities Office about our annual Sports Day.
+Speaker: Sports Day will be next Thursday, from eight in the morning until four in the afternoon, at the university stadium. All students and staff are welcome, and entry is free.
+Speaker: There will be many competitions this year, including football, basketball, volleyball, running and table tennis. If you want to take part, you must register by this Sunday. You can register online on the university website or at the Student Activities Office in Building 3.
+Speaker: Each student can take part in a maximum of two sports. Football and basketball teams must have at least seven players, so ask your friends to join you.
+Speaker: There will be prizes for the winners. The first-place team in each sport will get a trophy and a gift card worth five hundred riyals. All participants will get a free T-shirt and a certificate.
+Speaker: Food trucks will be at the stadium all day, selling sandwiches, snacks and cold drinks. We also have a special area with free water and fruit for all players.
+Speaker: Please wear sports clothes and comfortable shoes. Don't forget to bring a hat and sunscreen, because it will be sunny and hot.
+Speaker: We hope to see you all there. Let's make this the best Sports Day ever!
+?? Who is making the announcement?
+* The Student Activities Office
+- The football coach
+- The university president
+- The Sports Club
+?? When is Sports Day?
+* Next Thursday
+- This Sunday
+- Next Monday
+- This Thursday
+?? Where will Sports Day be?
+* At the university stadium
+- In Building 3
+- At the city park
+- In the sports hall
+?? Which sport does the speaker NOT mention?
+* swimming
+- football
+- volleyball
+- table tennis
+?? When must students register?
+* By this Sunday
+- By next Thursday
+- On Sports Day
+- By the end of the month
+?? How many sports can each student take part in?
+* A maximum of two
+- Only one
+- Three
+- As many as they want
+?? How many players must football and basketball teams have, at least?
+* Seven
+- Five
+- Eleven
+- Two
+?? What will the first-place team in each sport get?
+* A trophy and a gift card worth five hundred riyals
+- A free T-shirt and nothing else
+- Five hundred riyals in cash each
+- A trip abroad to watch a final
+?? What will all participants get?
+* A free T-shirt and a certificate
+- A trophy for each person
+- A gift card worth fifty riyals
+- A free lunch and a cap
+?? Why should students bring a hat and sunscreen?
+* It will be sunny and hot.
+- It's a rule of the competition.
+- There will be no shade at all.
+- They will get a prize.
+
+## 15 | Booking a Desert Tour | dialogue
+@ Agent=af_sarah Tourist=am_michael
+Agent: Good afternoon, Golden Sands Tours. How can I help you?
+Tourist: Hello. My wife and I are visiting Riyadh next week, and we'd like to book a desert tour. But my wife has a bad back, so we need something that isn't too physically demanding.
+Agent: Thank you for telling me. That helps me choose the right tour. Our most popular tour includes dune bashing, which means driving fast up and down the sand dunes. I wouldn't recommend that one for your wife; it can be very bumpy.
+Tourist: No, that doesn't sound like a good idea at all.
+Agent: We also have a sunset tour that's much more relaxing. We pick you up at three in the afternoon and drive slowly through the desert to a camp. There, you can try a short camel ride, which is optional, watch the sunset, and have a traditional dinner. We bring you back at around nine.
+Tourist: That sounds perfect. How much is it?
+Agent: Three hundred and fifty riyals per person, including dinner and drinks. If you'd like a private car rather than sharing with other guests, it's an extra two hundred for the car.
+Tourist: Is the shared car comfortable?
+Agent: It's a large car with seven seats, and there are usually five or six guests. The seats are fine, but if your wife needs to stretch or stop often, the private car might be better, because the driver can stop whenever you like.
+Tourist: Then we'll take the private car. Which days are available?
+Agent: Tuesday and Thursday. We don't run tours on Wednesday.
+Tourist: Thursday, please. We fly home on Friday afternoon, so that works well.
+Agent: Great. Just remember that at this time of year the desert gets cold after sunset, sometimes below ten degrees, so bring warm clothes. And please wear closed shoes, not sandals, because the sand can be very hot in the afternoon.
+Tourist: Thanks for the advice. Can I pay when we're picked up?
+Agent: For private tours, we need the full payment online at least twenty-four hours before.
+?? Why does the tourist need a tour that isn't physically demanding?
+* His wife has a bad back.
+- He has a bad back.
+- They are travelling with small children.
+- They have just had an operation.
+?? Why doesn't the agent recommend the most popular tour?
+* It can be very bumpy.
+- It is too expensive.
+- It is fully booked.
+- It finishes too late.
+?? What time does the sunset tour pick people up?
+* At three in the afternoon
+- At nine in the evening
+- At five in the afternoon
+- At noon
+?? What is true about the camel ride?
+* It is optional.
+- It is very long.
+- It costs extra.
+- It is only for children.
+?? How much is the sunset tour per person?
+* Three hundred and fifty riyals
+- Two hundred riyals
+- Five hundred and fifty riyals
+- Three hundred riyals
+?? Why might the private car be better for the tourist's wife?
+* The driver can stop whenever they like.
+- It is faster than the shared car.
+- It has more seats.
+- It includes a better dinner.
+?? How much will the couple pay in total for the tour?
+* Nine hundred riyals
+- Five hundred and fifty riyals
+- Seven hundred riyals
+- Seven hundred and fifty riyals
+?? Which day will they go on the tour?
+* Thursday
+- Tuesday
+- Wednesday
+- Friday
+?? Why should they wear closed shoes?
+* The sand can be very hot in the afternoon.
+- There are many insects in the desert.
+- They will walk a long way.
+- It gets cold after sunset.
+?? When must they pay for the private tour?
+* Online, at least twenty-four hours before
+- When the driver picks them up
+- After the tour has finished
+- At their hotel's reception desk
+
+## 16 | Tips for Learning New Words | monologue
+@ Host=af_heart
+Host: Welcome back to English Every Day, the podcast for English learners. I'm your host, Lina. Today, I want to share five tips to help you learn and remember new English words.
+Host: Tip number one: keep a vocabulary notebook. Every time you learn a new word, write it down with its meaning and an example sentence. Don't just write the translation in your language. A sentence helps you remember how to use the word.
+Host: Tip number two: learn words in groups. For example, learn food words together, or words about the weather together. Your brain remembers words better when they are connected.
+Host: Tip number three: review your words again and again. Studies show that we forget about half of new information in one day if we don't review it. So look at your notebook for ten minutes every day, especially before you sleep.
+Host: Tip number four: use the new words. Try to use them when you speak or write. For example, write three sentences every day using your new words, or send a message to a friend in English.
+Host: And tip number five: read and listen a lot. When you read stories or watch videos in English, you see words in real situations. Choose things that are not too difficult, so you can enjoy them.
+Host: Remember, don't try to learn fifty words in one day. Learning ten words a day and remembering them is much better. That's all for today. See you next week!
+?? What is the name of the podcast?
+* English Every Day
+- English Words
+- Learn English Now
+- Every Day English
+?? What is the host's name?
+* Lina
+- Lama
+- Lana
+- Layla
+?? How many tips does the host give?
+* Five
+- Three
+- Ten
+- Fifty
+?? What should you write in your vocabulary notebook?
+* The word, its meaning and an example sentence
+- Only the translation in Arabic
+- Only the word and its spelling
+- A long story about each word
+?? Why does the host suggest learning words in groups?
+* Your brain remembers words better when they are connected.
+- It is faster to write them in a notebook.
+- Teachers prefer students to study that way.
+- You need fewer notebooks and less paper.
+?? How much new information do we forget in one day if we don't review it?
+* About half
+- About ten percent
+- All of it
+- Almost nothing
+?? When does the host say it is especially good to review?
+* Before you sleep
+- In the morning
+- After lunch
+- During class
+?? How many sentences does the host suggest writing every day?
+* Three
+- Ten
+- Five
+- One
+?? What kind of things should you read and watch?
+* Things that are not too difficult
+- Only very difficult things
+- Only the news
+- Only grammar books
+?? How many words a day does the host suggest learning?
+* Ten
+- Fifty
+- Five
+- Twenty
+
+## 17 | At the Pharmacy | dialogue
+@ Pharmacist=am_fenrir Woman=af_nicole
+Pharmacist: Good evening. How can I help you?
+Woman: Hi. My husband has had a sore throat and a high temperature since yesterday. He asked me to get some antibiotics for him.
+Pharmacist: I'm sorry, but I can't give you antibiotics without a prescription from a doctor. Also, most sore throats are caused by viruses, and antibiotics don't work against viruses at all.
+Woman: Oh, I didn't know that. So what can he take?
+Pharmacist: For the temperature and the pain, I'd recommend this paracetamol. He can take two tablets every six hours, but no more than eight tablets in twenty-four hours. Does he take any other medicine regularly?
+Woman: Yes, he takes something for his blood pressure every morning.
+Pharmacist: That's fine with paracetamol. But I'd avoid cold medicines that contain decongestants, because they can raise blood pressure. Is he allergic to anything?
+Woman: I don't think so. Well, he once had a rash after taking a certain antibiotic, but I can't remember its name.
+Pharmacist: That's important. If he does see a doctor, he must tell them about it. For his throat, these lozenges are good. He can have one every three hours. And warm drinks with honey will help too.
+Woman: How much is all that?
+Pharmacist: The paracetamol is twelve riyals and the lozenges are eighteen, so thirty riyals altogether.
+Woman: OK. How long will it take before he feels better?
+Pharmacist: A sore throat caused by a virus usually gets better in about a week. But if his temperature is still above thirty-nine after three days, or if he finds it difficult to swallow or breathe, he should see a doctor immediately.
+Woman: I'll tell him. Thank you so much for explaining everything.
+Pharmacist: You're welcome. I hope he feels better soon.
+?? What is wrong with the woman's husband?
+* He has a sore throat and a high temperature.
+- He has a headache and a cough.
+- He has a stomach ache.
+- He has an earache.
+?? Why can't the pharmacist give her antibiotics?
+* She doesn't have a prescription from a doctor.
+- They are out of stock.
+- The pharmacy has closed for the night.
+- They are too expensive.
+?? According to the pharmacist, what causes most sore throats?
+* Viruses
+- Cold drinks
+- Allergies
+- Dry air
+?? What is the largest number of paracetamol tablets he can take in twenty-four hours?
+* Eight
+- Two
+- Six
+- Four
+?? What does her husband take every morning?
+* Medicine for his blood pressure
+- Vitamins for his energy
+- Paracetamol for headaches
+- Antibiotics for his throat
+?? Why should he avoid cold medicines with decongestants?
+* They can raise blood pressure.
+- They make people sleepy.
+- They don't work on sore throats.
+- They contain antibiotics.
+?? What happened when her husband took a certain antibiotic?
+* He had a rash.
+- He felt very sleepy.
+- His temperature went up.
+- He couldn't swallow.
+?? How often can he have a lozenge?
+* Every three hours
+- Every six hours
+- Once a day
+- Every hour
+?? How much does the woman pay altogether?
+* Thirty riyals
+- Twelve riyals
+- Eighteen riyals
+- Twenty-four riyals
+?? When should her husband see a doctor immediately?
+* If he finds it difficult to swallow or breathe
+- If he still has a sore throat tomorrow
+- If two paracetamol tablets don't help
+- If he starts coughing at night
+
+## 18 | Recycling on Campus | monologue
 @ Speaker=am_puck
 Speaker: Good morning, everyone. I'm Faris from the Green Campus Club. I'm here to tell you about our new recycling program, which starts next week.
 Speaker: Every year, our university produces more than two hundred tons of rubbish. Most of it is paper, plastic bottles and food waste. A lot of this can be recycled, but at the moment, almost everything goes to the landfill.
@@ -1283,9 +1148,9 @@ Speaker: If you want to join our club, we meet every Wednesday at one o'clock in
 - It's not allowed by law.
 ?? What will the winning building get?
 * A new garden area with seats and shade
-- Free lunch for a month
-- New computers
-- A trophy
+- Free lunch for a month for everyone
+- New computers for every classroom
+- A trophy and a certificate
 ?? Where are the free water machines?
 * On the ground floor of every building
 - In the library only
@@ -1297,205 +1162,74 @@ Speaker: If you want to join our club, we meet every Wednesday at one o'clock in
 - Every Wednesday at three o'clock
 - Every Monday at one o'clock
 
-## 21 | Booking a Desert Tour | dialogue
-@ Agent=af_sarah Tourist=am_michael
-Agent: Good afternoon, Golden Sands Tours. How can I help you?
-Tourist: Hello. I'm visiting Riyadh with my wife, and we'd like to book a desert tour.
-Agent: Wonderful! We have two tours. The short tour is four hours, and the full-day tour is ten hours.
-Tourist: What's included in the short tour?
-Agent: We pick you up from your hotel at three in the afternoon. We drive to the red sand dunes, where you can ride camels and try sandboarding. Then you watch the sunset and have dinner in a traditional tent. We bring you back at about seven.
-Tourist: That sounds great. How much is it?
-Agent: It's three hundred riyals for each person. Children under twelve pay half price.
-Tourist: It's just the two of us. And the full-day tour?
-Agent: The full-day tour also visits an old village and a farm. It costs five hundred and fifty riyals each, and lunch is included.
-Tourist: Hmm, I think the short tour is better for us. My wife doesn't like long trips in the car.
-Agent: No problem. Which day would you like?
-Tourist: Is Friday possible?
-Agent: I'm sorry, Friday is full. But we have places on Saturday.
-Tourist: Saturday is fine. What should we bring?
-Agent: Bring comfortable shoes, sunglasses and a jacket. It gets cold in the desert after sunset. Water is free on the bus.
-Tourist: Great. Can I pay at the hotel?
-Agent: You can pay online now, or pay the driver in cash when he picks you up.
-Tourist: I'll pay the driver. Thank you!
-?? Who is the tourist visiting Riyadh with?
-* His wife
-- His children
-- His friends
-- His brother
-?? How long is the short tour?
-* Four hours
-- Ten hours
-- Three hours
-- Seven hours
-?? What time does the short tour pick people up?
-* At three in the afternoon
-- At four in the afternoon
-- At seven in the evening
-- At ten in the morning
-?? Which activity is NOT part of the short tour?
-* Visiting an old village
-- Riding camels
-- Sandboarding
-- Watching the sunset
-?? How much is the short tour for each person?
-* Three hundred riyals
-- Five hundred and fifty riyals
-- One hundred and fifty riyals
-- Six hundred riyals
-?? Who pays half price?
-* Children under twelve
-- Students
-- Old people
-- Groups of four
-?? Why does the tourist choose the short tour?
-* His wife doesn't like long trips in the car.
-- It includes lunch.
-- It's on Friday.
-- The full-day tour is full.
-?? Which day will they go?
-* Saturday
-- Friday
-- Thursday
-- Sunday
-?? Why should they bring a jacket?
-* It gets cold in the desert after sunset.
-- It will rain.
-- The bus has air conditioning.
-- The tent is cold.
-?? How will the tourist pay?
-* In cash to the driver
-- Online now
-- At the hotel reception
-- By bank transfer
+## 19 | Choosing Courses for Next Semester | dialogue
+@ Hind=af_bella Lama=af_heart
+Hind: Lama, have you chosen your courses for next semester yet? Registration closes on Thursday.
+Lama: Not yet. I'm still thinking. I have to take four courses, and two of them must be English and math.
+Hind: Me too. Which English course are you taking? English 2 or English for Business?
+Lama: English 2. I need it before I can take English for Business next year.
+Hind: OK. I'll take English 2 too, so we can study together. There are two groups: one on Sunday and Tuesday mornings, and one on Monday and Wednesday afternoons.
+Lama: The morning group is better for me. I work at the library in the afternoons.
+Hind: Great, the morning group then. What about the other two courses?
+Lama: I'm thinking about psychology. My sister took it last year, and she said it was really interesting.
+Hind: I heard the psychology professor is excellent, but there's a lot of reading. You have to read one chapter every week.
+Lama: That's fine, I like reading. What are you taking?
+Hind: I want to take computer skills. It's useful for any job, and there are no exams, only projects.
+Lama: No exams? That sounds perfect! Maybe I'll take it too, as my fourth course.
+Hind: Then we'll have three courses together! But be quick, because computer skills fills up very fast. Last semester, there were only thirty places.
+Lama: OK, I'll register tonight. Thanks, Hind!
+?? When does registration close?
+* On Thursday
+- On Sunday
+- Tonight
+- Next week
+?? How many courses does Lama have to take?
+* Four
+- Two
+- Three
+- Five
+?? Which two courses must Lama take?
+* English and math
+- English and psychology
+- Math and computer skills
+- Psychology and computer skills
+?? Why does Lama take English 2?
+* She needs it before English for Business.
+- It's easier than English for Business.
+- Her sister took it.
+- It has no exams.
+?? When does the morning group meet?
+* On Sunday and Tuesday mornings
+- On Monday and Wednesday mornings
+- On Sunday and Tuesday afternoons
+- Every morning
+?? Why is the morning group better for Lama?
+* She works at the library in the afternoons.
+- She has math in the afternoons.
+- She likes waking up early.
+- Her sister is in the morning group.
+?? Why is Lama thinking about psychology?
+* Her sister said it was really interesting.
+- It is the easiest course in the university.
+- Her professor told her it was useful.
+- Hind is taking it next semester.
+?? What is difficult about the psychology course?
+* There's a lot of reading.
+- The professor is not good.
+- There are many exams.
+- It's in the afternoon.
+?? Why does Hind want to take computer skills?
+* It's useful for any job and has no exams, only projects.
+- Her sister took it and recommended it.
+- It's easy to get a place in the course.
+- It has a lot of interesting reading.
+?? How many places were there in computer skills last semester?
+* Only thirty
+- Only thirteen
+- Fifty
+- Three hundred
 
-## 22 | My Favourite Season | monologue
-@ Speaker=bf_emma
-Speaker: Hi, I'm Dana, and today I want to talk about my favourite season, which is winter. Many people prefer summer, but for me, winter in Saudi Arabia is the best time of the year.
-Speaker: In summer, it's very hot here. The temperature can be more than forty-five degrees, so most people stay inside with the air conditioner on. But in winter, from December to February, the weather is cool and pleasant. During the day, it's usually around twenty degrees, and at night it can go down to eight or nine.
-Speaker: Winter is the season of going outside. On weekends, my family and I often go to the desert. We sit around a fire, drink Arabic coffee and tea, and my father tells us stories from when he was young. These are my favourite memories.
-Speaker: In some years, if it rains a lot, the desert becomes green, and small flowers grow everywhere. It's really beautiful, and many families go out to see it.
-Speaker: Winter also has special food. My grandmother makes a hot dish called marqooq, with vegetables and meat. It's perfect on a cold evening.
-Speaker: The only thing I don't like about winter is that it's too short! Before you know it, summer comes again. But I always look forward to the next winter.
-?? What is the speaker's favourite season?
-* Winter
-- Summer
-- Spring
-- Autumn
-?? How hot can it get in summer?
-* More than forty-five degrees
-- About thirty degrees
-- About twenty degrees
-- More than fifty-five degrees
-?? When is winter in Saudi Arabia, according to the speaker?
-* From December to February
-- From June to August
-- From March to May
-- From October to December
-?? What is the temperature usually during the day in winter?
-* Around twenty degrees
-- Around eight degrees
-- Around forty-five degrees
-- Around thirty degrees
-?? Where does Dana's family often go on weekends in winter?
-* To the desert
-- To the beach
-- To the mall
-- To another country
-?? What does Dana's father do around the fire?
-* He tells stories from when he was young.
-- He cooks marqooq.
-- He sings songs.
-- He reads books.
-?? What happens to the desert when it rains a lot?
-* It becomes green, and small flowers grow.
-- It becomes very hot.
-- It becomes dangerous.
-- It turns into a lake.
-?? Who makes marqooq?
-* Dana's grandmother
-- Dana's mother
-- Dana's father
-- Dana
-?? What is marqooq made with?
-* Vegetables and meat
-- Rice and fish
-- Dates and milk
-- Bread and cheese
-?? What doesn't Dana like about winter?
-* It is too short.
-- It is too cold.
-- It rains too much.
-- There is nothing to do.
-
-## 23 | At the Pharmacy | dialogue
-@ Pharmacist=am_fenrir Woman=af_nicole
-Pharmacist: Good evening. How can I help you?
-Woman: Good evening. My son has a fever and a cough. Do you have something for him?
-Pharmacist: How old is he?
-Woman: He's six years old.
-Pharmacist: And how high is his temperature?
-Woman: It was thirty-eight and a half this afternoon.
-Pharmacist: OK. For the fever, I recommend this syrup. It's for children between two and twelve years old. Give him five millilitres every six hours, but not more than four times a day.
-Woman: Five millilitres every six hours. Should he take it before or after food?
-Pharmacist: It's better after food. And for the cough, this honey syrup is good and natural. He can take one spoon in the morning and one before he sleeps.
-Woman: Great. How much are they?
-Pharmacist: The fever syrup is twenty-two riyals, and the cough syrup is eighteen riyals. So that's forty riyals in total.
-Woman: OK. Is there anything else I should do?
-Pharmacist: Yes. Make sure he drinks a lot of water and gets plenty of rest. If the fever doesn't go down in two days, or if it goes higher than thirty-nine, please take him to a doctor.
-Woman: I will. Thank you so much.
-Pharmacist: You're welcome. I hope he feels better soon.
-?? What is wrong with the woman's son?
-* He has a fever and a cough.
-- He has a stomach ache.
-- He has a headache.
-- He broke his arm.
-?? How old is her son?
-* Six years old
-- Two years old
-- Twelve years old
-- Eight years old
-?? What was his temperature this afternoon?
-* Thirty-eight and a half
-- Thirty-nine
-- Thirty-seven and a half
-- Forty
-?? Who is the fever syrup for?
-* Children between two and twelve years old
-- Babies under two
-- Adults only
-- Children over twelve
-?? How often should he take the fever syrup?
-* Every six hours
-- Every two hours
-- Every twelve hours
-- Once a day
-?? When should he take the fever syrup?
-* After food
-- Before food
-- Only at night
-- With milk
-?? What is the cough syrup made with?
-* Honey
-- Lemon
-- Sugar
-- Milk
-?? How much is the cough syrup?
-* Eighteen riyals
-- Twenty-two riyals
-- Forty riyals
-- Eight riyals
-?? What else should the boy do?
-* Drink a lot of water and get plenty of rest.
-- Go to school.
-- Eat a lot of sweets.
-- Play outside.
-?? When should the woman take her son to a doctor?
-* If the fever doesn't go down in two days or goes higher than thirty-nine
-- Tomorrow morning
-- If he stops coughing
-- After one week
-
-## 24 | Morning Traffic Report | monologue
+## 20 | Morning Traffic Report | monologue
 @ Reporter=am_michael
 Reporter: Good morning, and here is the traffic report for Riyadh at seven forty-five.
 Reporter: Traffic is very heavy on King Fahd Road this morning, especially near the Kingdom Tower. There was a small accident between two cars about twenty minutes ago. Nobody was hurt, but two lanes are closed, so drivers should expect delays of up to thirty minutes. If you can, take Olaya Street instead.
@@ -1555,69 +1289,311 @@ Reporter: That's all for now. Our next traffic report will be at eight fifteen. 
 - At nine o'clock
 - At eight thirty
 
-## 25 | Choosing Courses for Next Semester | dialogue
-@ Hind=af_bella Lama=af_heart
-Hind: Lama, have you chosen your courses for next semester yet? Registration closes on Thursday.
-Lama: Not yet. I'm still thinking. I have to take four courses, and two of them must be English and math.
-Hind: Me too. Which English course are you taking? English 2 or English for Business?
-Lama: English 2. I need it before I can take English for Business next year.
-Hind: OK. I'll take English 2 too, so we can study together. There are two groups: one on Sunday and Tuesday mornings, and one on Monday and Wednesday afternoons.
-Lama: The morning group is better for me. I work at the library in the afternoons.
-Hind: Great, the morning group then. What about the other two courses?
-Lama: I'm thinking about psychology. My sister took it last year, and she said it was really interesting.
-Hind: I heard the psychology professor is excellent, but there's a lot of reading. You have to read one chapter every week.
-Lama: That's fine, I like reading. What are you taking?
-Hind: I want to take computer skills. It's useful for any job, and there are no exams, only projects.
-Lama: No exams? That sounds perfect! Maybe I'll take it too, as my fourth course.
-Hind: Then we'll have three courses together! But be quick, because computer skills fills up very fast. Last semester, there were only thirty places.
-Lama: OK, I'll register tonight. Thanks, Hind!
-?? When does registration close?
-* On Thursday
-- On Sunday
-- Tonight
-- Next week
-?? How many courses does Lama have to take?
-* Four
-- Two
-- Three
-- Five
-?? Which two courses must Lama take?
-* English and math
-- English and psychology
-- Math and computer skills
-- Psychology and computer skills
-?? Why does Lama take English 2?
-* She needs it before English for Business.
-- It's easier than English for Business.
-- Her sister took it.
-- It has no exams.
-?? When does the morning group meet?
-* On Sunday and Tuesday mornings
-- On Monday and Wednesday mornings
-- On Sunday and Tuesday afternoons
-- Every morning
-?? Why is the morning group better for Lama?
-* She works at the library in the afternoons.
-- She has math in the afternoons.
-- She likes waking up early.
-- Her sister is in the morning group.
-?? Why is Lama thinking about psychology?
-* Her sister said it was really interesting.
-- It has no exams.
-- It's useful for any job.
-- Hind is taking it.
-?? What is difficult about the psychology course?
-* There's a lot of reading.
-- The professor is not good.
-- There are many exams.
-- It's in the afternoon.
-?? Why does Hind want to take computer skills?
-* It's useful for any job and has no exams, only projects.
-- Her sister recommended it.
-- It's easy to get a place.
-- It has a lot of reading.
-?? How many places were there in computer skills last semester?
-* Only thirty
-- Only thirteen
-- Fifty
-- Three hundred
+## 21 | A Talk About City Life in Summer | monologue
+@ Speaker=bf_emma
+Speaker: Good evening, everyone. As summers become hotter, one question is becoming more and more urgent for cities in our region: how can we keep our streets and homes cool without using even more electricity?
+Speaker: First, it helps to understand a problem known as the urban heat island. Cities are often several degrees hotter than the countryside around them, especially at night. This is because materials like asphalt and concrete absorb heat during the day and release it slowly after sunset. Cars, air conditioners and factories add even more heat.
+Speaker: One of the simplest solutions is also one of the oldest: trees. A tree doesn't just provide shade. It also releases water through its leaves, which cools the air around it. Studies in several cities have found that streets with plenty of trees can be noticeably cooler than streets without them. However, trees need water, so in dry countries it's important to choose local species that can survive with very little.
+Speaker: A second solution is to change the colour of our surfaces. Dark roofs and roads absorb most of the sunlight that hits them, while light-coloured surfaces reflect much of it. Some cities are now painting roofs white or using light-coloured materials on roads and car parks.
+Speaker: Interestingly, many ideas that modern planners recommend were used by our grandparents. Traditional houses in the Gulf often had thick walls, small windows and wind towers, which caught the breeze and directed it into the rooms. Old neighbourhoods had narrow streets, so the buildings shaded each other.
+Speaker: Of course, we can't simply rebuild our cities the way they were a hundred years ago. But we can learn from them. New buildings can be designed to catch the wind and avoid direct sun, and new neighbourhoods can include shaded walkways and green spaces.
+Speaker: Cooling our cities isn't only about comfort. In extreme heat, it can be a matter of health, and even life. The good news is that many of the solutions are simple, and some of them we've known for centuries.
+?? What is the main question of the talk?
+* How cities can stay cool without using more electricity
+- Why summers are getting hotter
+- How to build cheaper air conditioners
+- Why people prefer to live in the countryside
+?? What is an urban heat island?
+* A city that is hotter than the countryside around it
+- An island where the sea water is very warm
+- A green park in the middle of a busy city
+- A building that has no air conditioning inside
+?? Why do cities stay hot at night?
+* Asphalt and concrete release heat slowly after sunset.
+- There is less wind at night.
+- People use more electricity at night.
+- Hot air from the countryside moves into the city.
+?? Apart from giving shade, how do trees cool the air?
+* They release water through their leaves.
+- They block the wind.
+- They take heat from the ground.
+- They reflect the sunlight.
+?? Why should dry countries choose local kinds of trees?
+* They can survive with very little water.
+- They grow faster.
+- They are cheaper to buy.
+- They give more shade.
+?? What is the difference between dark and light-coloured surfaces?
+* Dark ones absorb most sunlight, while light ones reflect much of it.
+- Light ones absorb most sunlight, while dark ones reflect much of it.
+- Dark ones last longer, while light ones need painting more often.
+- Both absorb the same amount of sunlight, so there is no real difference.
+?? Which feature of traditional Gulf houses does the speaker NOT mention?
+* Large gardens
+- Thick walls
+- Small windows
+- Wind towers
+?? According to the speaker, what was the advantage of the narrow streets in old neighbourhoods?
+* The buildings shaded each other.
+- People could walk to the market quickly.
+- There was no space for cars.
+- They protected people from sandstorms.
+?? What is the speaker's view of traditional cities?
+* We can't rebuild them, but we can learn from them.
+- We should rebuild our cities exactly as they were.
+- They were not suitable for hot weather.
+- They are less useful than modern technology.
+?? According to the speaker, why is cooling cities important?
+* In extreme heat, it can be a matter of health and even life.
+- It helps cities attract more tourists in summer.
+- It makes the streets look cleaner and more beautiful.
+- It makes new buildings much cheaper to build.
+
+## 22 | Campus Voices | dialogue
+@ Host=af_heart Ahmed=am_michael Noura=af_bella
+Host: Good evening, and welcome to Campus Voices. Many students are asking whether learning from home is really as effective as sitting in a classroom. With me tonight are Ahmed, a third-year engineering student, and Doctor Noura Saleh, who teaches education at our university. Ahmed, you've taken several online courses. What's your experience?
+Ahmed: Mostly positive. The biggest advantage for me is flexibility. I work part-time in the evenings, so being able to watch lectures whenever I want has made a huge difference. I can also pause and replay difficult parts, which you can't do in a live lecture.
+Host: Are there any disadvantages?
+Ahmed: Definitely. You need a lot of self-discipline. In my first online course, I kept postponing the lectures, and two weeks before the exam, I had fifteen hours of videos to watch. I almost failed. Now I plan my week in advance, like a normal timetable.
+Host: Doctor Noura, does research support Ahmed's experience?
+Noura: In many ways, yes. Studies generally show that well-designed online courses can be as effective as classroom courses for students who are motivated and organised. The problem is that students who struggle in class often struggle even more online, because there's no teacher noticing when they're falling behind.
+Host: What about the social side of university?
+Noura: That's what worries me most. University isn't only about information. Students learn a great deal from discussing ideas, working in groups and simply chatting after class. Online, those moments are much harder to create. Many students in our surveys said they felt lonely and less connected to their classmates.
+Ahmed: I agree. I've never met most of the people from my online courses.
+Host: So what's the answer? Should universities go back to classrooms only?
+Noura: I don't think so. The best solution is probably a mix, which we call blended learning: lectures online, so students can watch them at their own speed, and discussions, labs and group work on campus.
+Ahmed: That would be ideal for me.
+?? What is the main topic of the discussion?
+* Whether online learning is as effective as classroom learning
+- How to find a part-time job
+- Why engineering is a difficult subject
+- How teachers prepare their lectures
+?? What does Ahmed study?
+* Engineering
+- Education
+- Business
+- Medicine
+?? What is the biggest advantage of online courses for Ahmed?
+* Flexibility
+- Lower prices
+- Better teachers
+- Easier exams
+?? What does Ahmed do in the evenings?
+* He works part-time.
+- He watches live lectures.
+- He goes to the gym.
+- He looks after his younger brothers.
+?? What happened in Ahmed's first online course?
+* He kept postponing the lectures and almost failed.
+- He got the highest mark in the whole class.
+- He couldn't open the videos on his laptop.
+- The course was cancelled after two weeks.
+?? How does Ahmed organise his online studying now?
+* He plans his week in advance.
+- He only takes classroom courses.
+- He studies with a friend.
+- He watches all the videos in one day.
+?? According to Dr. Noura, which students may struggle even more online?
+* Students who already struggle in class
+- Students who are motivated and organised
+- Students who take many courses
+- Students who live on campus
+?? What worries Dr. Noura most about online learning?
+* The lack of social contact
+- The cost of technology
+- The quality of the videos
+- Students cheating in exams
+?? What did many students say in the surveys?
+* They felt lonely and less connected to their classmates.
+- They preferred taking their exams online at home.
+- They wanted longer lectures with more examples.
+- They learned more online than they did in class.
+?? What solution does Dr. Noura suggest?
+* A mix of online lectures and activities on campus
+- Going back to classroom learning only
+- Moving all university courses online
+- Making university courses much shorter
+
+## 23 | A Psychology Lecture | monologue
+@ Lecturer=bm_george
+Lecturer: Good afternoon. Today's question may sound strange at first: can having too many choices make us less happy? Most of us assume that more choice is always better. After all, with more options, we're more likely to find exactly what we want. But psychologists have found that the reality is more complicated.
+Lecturer: One of the most famous studies took place in a supermarket in California. Researchers set up a table where shoppers could taste different jams. On some days, the table offered twenty-four flavours; on other days, only six. The large display attracted more people: about sixty percent of passing shoppers stopped, compared with forty percent for the small one. However, when it came to actually buying, the results were reversed. Only about three percent of the people who stopped at the twenty-four jams bought one, while around thirty percent of those who stopped at the six did.
+Lecturer: Why would this happen? One explanation is that too many options make decisions feel difficult and tiring, so we often avoid deciding at all. Another explanation is regret. With so many alternatives, we keep wondering whether a different choice would have been better, and this makes us less satisfied with the one we made.
+Lecturer: The psychologist Barry Schwartz describes two kinds of people. Maximisers try to find the very best option, so they compare everything carefully. Satisficers choose the first option that's good enough for their needs. Surprisingly, research suggests that maximisers often feel less happy with their decisions.
+Lecturer: I should add that later studies haven't always found such strong effects, so the jam study shouldn't be seen as the final word. But the general idea is useful. When you face an important decision, such as choosing a university or a phone, decide in advance what really matters to you, limit yourself to a few options, and once you've decided, stop looking at the alternatives.
+Lecturer: Next time, we'll look at how companies use these ideas when they design their websites.
+?? What is the main question of the lecture?
+* Whether having too many choices can make us less happy
+- How supermarkets choose their prices
+- Why people prefer sweet food
+- How to become a psychologist
+?? Where did the famous study take place?
+* In a supermarket in California
+- In a university library
+- In a restaurant in London
+- In an online shop
+?? How many flavours did the large display offer?
+* Twenty-four
+- Six
+- Sixty
+- Thirty
+?? Which display made more shoppers stop?
+* The large display
+- The small display
+- Both displays made the same number stop
+- Neither display made anyone stop
+?? About what percentage of the people at the small display bought a jam?
+* About thirty percent
+- About three percent
+- About sixty percent
+- About forty percent
+?? According to the lecturer, why might many options stop us from deciding?
+* Decisions feel difficult and tiring.
+- The prices are higher.
+- We don't trust the shop.
+- We don't have enough time.
+?? How does regret affect people who have many choices?
+* They are less satisfied with the choice they made.
+- They make decisions more quickly.
+- They always return what they bought.
+- They become better at comparing.
+?? What do satisficers do?
+* They choose the first option that's good enough.
+- They compare every option carefully.
+- They never make a decision.
+- They always choose the most expensive option.
+?? What does the lecturer say about later studies?
+* They haven't always found such strong effects.
+- They proved that the jam study was wrong.
+- They found even stronger effects.
+- There haven't been any later studies.
+?? What advice does the lecturer give for important decisions?
+* Decide what matters, limit your options, and stop looking once you've decided.
+- Compare as many options as possible before you make any decision.
+- Ask your friends and family to make the final decision for you.
+- Choose the cheapest option, so you won't regret spending too much.
+
+## 24 | The Coral Reefs of the Red Sea | dialogue
+@ Presenter=am_puck Maha=af_heart
+Presenter: Today on Science Hour, we're talking about coral reefs. My guest is Doctor Maha Al-Harbi, a marine biologist who has studied the reefs of the Red Sea for over fifteen years. Maha, welcome. Many people think corals are plants or rocks. What are they, really?
+Maha: That's a very common mistake. Corals are actually animals, tiny animals that live together in huge groups. They build hard skeletons, and over hundreds of years, these skeletons form the reefs we see. Inside the corals live very small algae, which give them food and their beautiful colours.
+Presenter: We often hear that coral reefs around the world are in danger. Why is that?
+Maha: The biggest threat is rising sea temperatures. When the water becomes too warm for too long, the corals push out the algae living inside them. Without the algae, they turn white, which we call bleaching, and if the water doesn't cool down, they can die.
+Presenter: Is the same thing happening in the Red Sea?
+Maha: Partly, but the Red Sea is a special case. Research suggests that corals in the northern Red Sea can survive higher temperatures than corals in many other places. One theory is that, thousands of years ago, they had to pass through the very warm waters in the south of the Red Sea to reach the north, so only the strongest survived.
+Presenter: That sounds like good news.
+Maha: It is, but we shouldn't be too optimistic. Even strong corals have limits. And temperature isn't the only problem. Pollution, careless tourism and fishing with nets near the reef all cause damage.
+Presenter: What can ordinary people do to help?
+Maha: Quite a lot, actually. If you go snorkelling or diving, never touch or stand on the coral, and use sunscreen that's safe for reefs. Don't buy souvenirs made from coral. And support local projects that protect marine areas.
+Presenter: Finally, why should people who never go to the beach care about reefs?
+Maha: Because reefs are home to about a quarter of all sea life, they protect coasts from waves, and they provide food and jobs for millions of people. Their health affects all of us.
+?? How long has Dr. Maha studied the reefs of the Red Sea?
+* Over fifteen years
+- Over five years
+- Over fifty years
+- About ten years
+?? What common mistake do people make about corals?
+* They think corals are plants or rocks.
+- They think corals live alone.
+- They think corals are dangerous.
+- They think corals live only in cold water.
+?? What do the algae inside corals give them?
+* Food and colour
+- Protection from fish
+- Hard skeletons
+- Clean water
+?? What is coral bleaching?
+* Corals turning white after losing their algae
+- Corals being cleaned by divers
+- Corals growing too quickly
+- Corals changing colour at night
+?? According to Maha, what is the biggest threat to coral reefs?
+* Rising sea temperatures
+- Fishing nets
+- Tourism
+- Pollution from ships
+?? What is special about corals in the northern Red Sea?
+* They can survive higher temperatures than many other corals.
+- They are older than any other corals in the world.
+- They can live without any algae inside them.
+- They grow much faster than corals in the south.
+?? How does one theory explain this?
+* Only the strongest corals survived the very warm water in the south.
+- Scientists moved the strongest corals from the south to the north.
+- The water in the north has become colder over thousands of years.
+- The northern corals are a completely different kind of animal.
+?? What is Maha's attitude to the good news about the Red Sea?
+* People shouldn't be too optimistic.
+- The reefs are now completely safe.
+- The news is not true.
+- Nothing more needs to be done.
+?? Which advice does Maha NOT give?
+* Swim only in the early morning
+- Never touch or stand on the coral
+- Use sunscreen that is safe for reefs
+- Don't buy souvenirs made from coral
+?? Why should people who never go to the beach care about reefs?
+* Reefs support sea life, protect coasts, and provide food and jobs.
+- Reefs make the weather cooler in cities near the coast.
+- Reefs produce most of the oxygen that people breathe.
+- Reefs are popular places for holidays and photography.
+
+## 25 | A Talk About Our Food | monologue
+@ Speaker=am_fenrir
+Speaker: Hello, and thanks for coming. Tonight I want to talk about something most of us eat every single day, often without realising it: sugar.
+Speaker: Let me start with a recommendation from the World Health Organization. It advises that adults should get less than ten percent of their daily energy from what it calls free sugars, and ideally less than five percent. For an average adult, five percent is about twenty-five grams, or roughly six teaspoons a day.
+Speaker: That might sound like quite a lot, until you look at what we actually eat. A single can of soft drink can contain around nine teaspoons of sugar, which is already more than the ideal amount for a whole day.
+Speaker: It's important to understand what free sugars are. They don't include the sugar naturally found in whole fruit or plain milk. They are the sugars added to food and drinks, plus the sugar in honey, syrups and fruit juices. This surprises many people, because fruit juice has a healthy image. But when fruit is turned into juice, much of the fibre is lost, and the sugar enters your blood more quickly. So eating an orange is better than drinking a glass of orange juice.
+Speaker: Another problem is hidden sugar. It's not only in sweets and cakes. It's added to foods we don't think of as sweet, such as bread, tomato ketchup, sauces and many flavoured yoghurts. Food companies add it because it improves the taste and helps products last longer.
+Speaker: Why does this matter? Eating too much sugar over many years is linked to weight gain, tooth decay and a higher risk of type two diabetes.
+Speaker: I'm not suggesting that you should never eat anything sweet again. That isn't realistic, and enjoying food is part of a healthy life. Instead, start by reading food labels. Replace soft drinks with water most of the time. And remember that your taste can change: after a few weeks with less sugar, many people find that very sweet foods actually taste too sweet.
+?? What is the main topic of the talk?
+* How much sugar we eat, and how to reduce it
+- How to cook healthy desserts
+- Why fruit is bad for us
+- How food companies make sweets
+?? According to the World Health Organization, what is the ideal limit for free sugars?
+* Less than five percent of daily energy
+- Less than ten grams a day
+- Less than twenty-five percent of daily energy
+- No sugar at all
+?? About how many teaspoons are twenty-five grams of sugar?
+* About six
+- About nine
+- About two
+- About twenty-five
+?? How much sugar can one can of soft drink contain?
+* Around nine teaspoons
+- Around six teaspoons
+- Around three teaspoons
+- Around twenty teaspoons
+?? Which of these is NOT a free sugar?
+* The sugar in whole fruit
+- The sugar in fruit juice
+- The sugar in honey
+- Sugar added to drinks
+?? Why is eating an orange better than drinking orange juice?
+* Juice loses much of the fibre, so the sugar enters the blood more quickly.
+- Oranges contain more sugar, so they give the body more energy.
+- Juice usually contains added colours that are bad for the body.
+- Oranges are cheaper than juice, and they are easier to carry.
+?? Which food does the speaker mention as containing hidden sugar?
+* Tomato ketchup
+- Rice
+- Eggs
+- Fish
+?? Why do food companies add sugar to products?
+* It improves the taste and helps products last longer.
+- The law in many countries requires them to add it.
+- It makes the products much cheaper to produce.
+- It makes the products healthier for children.
+?? Which health problem does the speaker NOT mention?
+* High blood pressure
+- Weight gain
+- Tooth decay
+- Type two diabetes
+?? What does the speaker say can happen after a few weeks with less sugar?
+* Very sweet foods may start to taste too sweet.
+- People want even more sugar.
+- People lose a lot of weight.
+- People stop enjoying food.
