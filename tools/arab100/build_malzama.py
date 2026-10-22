@@ -153,6 +153,8 @@ table.t tr:last-child > :first-child {{ border-bottom-right-radius:9pt; }}
 table.t tr:last-child > :last-child {{ border-bottom-left-radius:9pt; }}
 table.t tr:first-child > td {{ border-top:1pt solid #d9c2b1 !important; }}
 table.t td.no {{ width:20pt; }}
+/* جداول الأخطاء الشائعة: عمودا الجملة أعرض شوي عشان ما تنزل كلمة وحدة لسطر (المراجعة النهائية) */
+table.t.err td:nth-child(2), table.t.err td:nth-child(3) {{ width:29%; }}
 /* خانة أمثلة فيها جمل: كل جملة كاملة في سطر لحالها (ما تنكسر نصين وتختلط باللي بعدها) */
 table.t td.sents {{ width:34%; }}
 table.t td.sents > span {{ display:block; white-space:nowrap; padding:2pt 0; }}
@@ -287,13 +289,23 @@ TIGHTEN_JS = """() => {
     for (const ws of [-0.3, -0.6]) steps.push([ws, 1]);
     // (مراجعة) التصغير كان ينلاحظ (لين 90%) — الحين بحد أقصى 3% بس
     for (const k of [0.985, 0.97]) for (const ws of [0, -0.6]) steps.push([ws, k]);
+    // (المراجعة النهائية) آخر حل: الصندوق/الفقرة يمتد شوي لجهة نهاية السطر (يسار) — مو للخلايا
+    const ml0 = getComputedStyle(el).marginLeft;
+    if (getComputedStyle(el).display !== 'table-cell' && !el.closest('td')) for (const ml of [-4, -8, -12]) steps.push([-0.6, 0.97, ml]);
     let ok = false;
-    for (const [ws, k] of steps) {
+    for (const [ws, k, ml] of steps) {
       el.style.wordSpacing = ws + 'pt';
       el.style.fontSize = (fs0 * k) + 'px';
+      if (ml !== undefined) el.style.marginLeft = `calc(${ml0} + ${ml}pt)`;
       if (lineInfo(el).length < n0) { ok = true; break; }
     }
-    if (!ok) { el.style.wordSpacing = ''; el.style.fontSize = ''; }
+    if (!ok) {
+      el.style.wordSpacing = ''; el.style.fontSize = ''; el.style.marginLeft = '';
+      // ما قدرنا نرجّع الكلمة لسطرها: نخلي المتصفح يوازن آخر الأسطر (كلمتين في آخر سطر بدل وحدة) بدون سطر زيادة
+      el.style.textWrap = 'pretty';
+      const r2 = lineInfo(el), l2 = r2[r2.length - 1];
+      if (r2.length > n0 || (l2.right - l2.left) <= (last.right - last.left) + 1) el.style.textWrap = '';
+    }
     else window.__fixed = (window.__fixed || 0) + 1;
   }
   return window.__fixed || 0;
@@ -302,10 +314,16 @@ TIGHTEN_JS = """() => {
 
 # «لًا / لّا»: إذا كانت الحركة بين اللام والألف، خط Readex ما يركّب «لا» ويطلع اللام لاصق بالألف (المستخدم: «مو واضح»).
 # نأخر الحركة بعد الألف عند الرسم بس (المصادر تبقى بحركات الكتاب) عشان تنرسم «لا» مركّبة والحركة فوقها.
-LAM_ALEF = re.compile("ل([\u064B-\u0652]+)([اأإآ])")
+LAM_ALEF = re.compile("ل([\u064B-\u0652]+)([اأإآ])(?![\u064B-\u0652])")
+
+
+# «لَأَنت / لَأَخوك»: حركة على اللام وحركة على همزة الألف — لو أخّرنا حركة اللام تتراكب فوق حركة الهمزة (تطلع تنوين).
+# Readex ما يقدر يرسمها مركّبة بالحركتين، فنرسم «لَأَ» بس بخط DejaVu (يركّب «لا» ويحط كل حركة على حرفها).
+LAM_HAMZA2 = re.compile("ل([\u064B-\u0652]+)([أإ])([\u064B-\u0652]+)")
 
 
 def fix_lam_alef(s):
+    s = LAM_HAMZA2.sub(lambda m: f'<span style="font-family:\'DejaVu Sans\';font-weight:700">{m.group(0)}</span>', s)
     return LAM_ALEF.sub(lambda m: "ل" + m.group(2) + m.group(1), s)
 
 
@@ -386,8 +404,8 @@ def head_break(pages, frac=0.85):
     page_of = {i: pi for pi, (m, _) in enumerate(pages) for _, i, k in m if k in "BHP"}
     for pi, (marks, _) in enumerate(pages[:-1]):
         for y, i, k in marks[1:]:
-            # P (ملف الحلول): سؤال قبل جدول حله — ينزل معه لو الجدول ما بدأ تحته (حتى لو في نص الصفحة)
-            if k not in "HP" or (y - TOP) < (0.45 if k == "P" else frac) * CAPH:
+            # P (ملف الحلول): سؤال قبل جدول حله الطويل — ينزل معه بس لو جا قرب آخر الصفحة (الجدول ينقسم ورأسه يتكرر)
+            if k not in "HP" or (y - TOP) < (0.78 if k == "P" else frac) * CAPH:
                 continue
             nxt = min((j for j in page_of if j > i), default=None)
             if nxt is None or page_of[nxt] > pi:
@@ -565,12 +583,14 @@ def stray_marks(page):
     آخر هذي الصفحة. نرجّع مستطيلاتها (اللي فوقها فاضي) عشان نغطيها بالخلفية."""
     import numpy as np
     z = 4
-    y0, y1 = BOT - 14, BOT + 6
+    y0, y1 = BOT - 20, BOT + 6
     pm = page.get_pixmap(clip=pymupdf.Rect(0, y0, W, y1), dpi=72 * z, alpha=True)
     a = np.frombuffer(pm.samples, dtype=np.uint8).reshape(pm.height, pm.width, pm.n)[:, :, 3]
     ink = a > 40
-    band = ink[int((BOT - 4 - y0) * z):, :]   # آخر 4pt + تحت الحد
-    above = ink[: int((BOT - 4 - y0) * z), :]
+    band = ink[int((BOT - 8 - y0) * z):, :]   # آخر 8pt + تحت الحد (الحركة الشاردة ممكن تطلع لين 6pt فوق الحد)
+    above = ink[: int((BOT - 8 - y0) * z), :]
+    lines = [l["bbox"] for blk in page.get_text("dict", clip=pymupdf.Rect(0, y0 - 40, W, y1))["blocks"]
+             for l in blk.get("lines", [])]
     out, cols = [], np.nonzero(band.any(0))[0]
     if not len(cols):
         return out
@@ -580,9 +600,27 @@ def stray_marks(page):
             groups.append((start, c0)); start = c1
     groups.append((start, cols[-1]))
     for g0, g1 in groups:
-        if g1 - g0 > 14 * z or above[:, max(0, g0 - 2 * z): g1 + 2 * z].any():
+        if g1 - g0 > 14 * z:
             continue  # جزء من سطر حقيقي
-        out.append(pymupdf.Rect(g0 / z - 2, BOT - 6, g1 / z + 2, y1))
+        cols = ink[:, max(0, g0 - 2 * z): g1 + 2 * z]
+        rows = np.nonzero(cols.any(1))[0]
+        top = int((BOT - 8 - y0) * z)
+        mark = rows[rows >= top]
+        if not len(mark):
+            continue
+        m0 = mark.min()
+        upper = rows[rows < m0]
+        # فوقها كلام لاصق فيها (أقل من 2pt فراغ) = جزء من حرف حقيقي؛ وإلا حركة شاردة
+        if len(upper) and m0 - upper.max() < 2 * z:
+            continue
+        if (mark.max() - m0) > 6 * z:
+            continue
+        r = pymupdf.Rect(g0 / z - 2, y0 + m0 / z - 1, g1 / z + 2, y1)
+        # حركة تحت حرف في سطر حقيقي (كسرة/تنوين) تكون داخل مربع سطرها — ما نغطيها
+        if any(pymupdf.Rect(b).intersects(r) and b[3] >= r.y0 + 1.5 and b[1] < r.y0
+               for b in lines if b[3] <= BOT + 4):
+            continue
+        out.append(r)
     return out
 
 
@@ -740,7 +778,15 @@ def solutions_html():
 def intro_link_rect(intro_pdf):
     pg = pymupdf.open(intro_pdf)[0]
     r = pg.search_for("هنا")
-    return r[0] if r else pymupdf.Rect(0, 0, 0, 0)
+    if not r:
+        return pymupdf.Rect(0, 0, 0, 0)
+    # الرابط على «(طريقة الدخول هنا)» كاملة: «هنا» + الكلمتين اللي قبلها في السطر نفسه (يمينها)
+    h = r[0]
+    line = sorted((w for w in pg.get_text("words") if abs(w[1] - h.y0) < 4 and w[0] >= h.x1 - 1), key=lambda w: w[0])
+    rect = pymupdf.Rect(h)
+    for w in line[:2]:
+        rect |= pymupdf.Rect(w[:4])
+    return rect + (-2, 0, 2, 0)
 
 
 def main():
