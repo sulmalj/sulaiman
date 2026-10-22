@@ -1,4 +1,4 @@
-# أسئلة القواعد (إنجليزي جميع المسارات باستثناء الإنساني — جزئية الميد) — قواعد ملزمة المستخدم (store/english-tracks/grammar-malzama.pdf) + القواعد الزيادة اللي طلبها المستخدم (Verbs + infinitives، a / an)
+# أسئلة القواعد (إنجليزي جميع المسارات باستثناء الإنساني — جزئية الميد) — قواعد ملزمة المستخدم (store/english-tracks/grammar-malzama.pdf) + القواعد الزيادة اللي طلبها المستخدم (Verbs + infinitives)
 # الصيغة:  ## اسم القاعدة   ثم:  السؤال || الصحيح | خطأ | خطأ | خطأ || الشرح
 # في كل قاعدة: تدريبات الملزمة + نماذج اختبار المستخدم (store/english-tracks/exam-samples/samples.txt) + أسئلة بنفس مستوى النماذج.
 # Simple present و Have / Has نفس أسئلة الميد (نفس القاعدة ونفس المستوى) + نموذج موقع جميع المسارات.
@@ -306,39 +306,3 @@ My friends like ..... football on Fridays. || to play | play | plays | to playin
 Lama ..... to travel to London next summer. || wants | want | to want | wanting || Lama = She ← wants + to + الفعل.
 I want ..... my English, so I practice every day. || to improve | improve | improving | improves || بعد want يجي to + الفعل الأساسي: want to improve.
 A: What does your brother need? B: He needs ..... new laptop for university. || a | to a | an | to || بعد need يجي اسم: a new laptop.
-
-## a / an
-My father has ..... in Jeddah. He's a businessman. || a famous restaurant | a famous | restaurant | famous restaurant || restaurant اسم مفرد، فلازم a قبله، والصفة قبل الاسم ← a famous restaurant.
-I ate ..... for breakfast. || an apple | a apple | apple | an apples || apple تبدأ بحرف علة (a) ← an apple، وتجي مع المفرد بس.
-She is ..... at King Saud University. || a student | an student | student | a students || student تبدأ بحرف ساكن (s) ← a student.
-Look! There's ..... in the zoo! || an elephant | a elephant | elephant | an elephants || elephant تبدأ بحرف علة (e) ← an elephant.
-I waited for ..... at the bus stop. || an hour | a hour | hour | an hours || hour الـ h ما تنطق، فالنطق يبدأ بصوت حرف علة ← an hour.
-My uncle is ..... man. He never lies. || an honest | a honest | honest | an honests || honest الـ h ما تنطق ← an honest.
-He is ..... student. || a university | an university | university | a universities || university تنطق (يو) مو حرف علة ← a university.
-I need ..... to cover my head. It's raining. || an umbrella | a umbrella | umbrella | an umbrellas || umbrella تبدأ بحرف علة (u) ← an umbrella.
-We have ..... English test tomorrow. || an | a | the an | a an || English تبدأ بحرف علة (E) ← an English test.
-It's ..... day for a picnic. || a beautiful | an beautiful | beautiful | a beautifuls || a تجي قبل الصفة إذا الصفة قبل الاسم، وbeautiful تبدأ بحرف ساكن ← a beautiful day.
-She has ..... cat. || an orange | a orange | orange | an oranges || orange تبدأ بحرف علة (o) ← an orange cat.
-He drives ..... car. It's more than twenty years old! || an old | a old | old | an olds || old تبدأ بحرف علة (o) ← an old car.
-They are ...... || good friends | a good friends | an good friends | a good friend || friends جمع ← ما نحط a / an.
-I bought ..... new phone yesterday. || a | an | the a | a an || new تبدأ بحرف ساكن (n) ← a new phone.
-My sister is ..... engineer. || an | a | the an | a an || engineer تبدأ بحرف علة (e) ← an engineer.
-That was ..... interesting movie! || an | a | the an | a an || interesting تبدأ بحرف علة (i) ← an interesting movie.
-I want to buy ..... car. || a cheap | an cheap | cheap | a cheaps || cheap تبدأ بحرف ساكن (ch) ← a cheap car.
-He is ..... very good doctor. || a | an | the an | a an || الكلمة اللي بعد a هي very (حرف ساكن) ← a very good doctor.
-This is ..... easy question. || an | a | the an | a an || easy تبدأ بحرف علة (e) ← an easy question.
-Khalid has ..... brothers. || two | a two | an two | a || brothers جمع ← ما نحط a / an.
-It's ..... extremely hot day. || an | a | the an | a an || الكلمة اللي بعدها extremely تبدأ بحرف علة (e) ← an extremely hot day.
-My grandmother lives in ..... small village. || a | an | the an | a an || small تبدأ بحرف ساكن (s) ← a small village.
-I have ..... idea! Let's go to the beach. || an | a | the an | a an || idea تبدأ بحرف علة (i) ← an idea.
-She works in ..... office in the city centre. || an | a | the an | a an || office تبدأ بحرف علة (o) ← an office.
-We saw ..... animals at the zoo. || many | a many | an many | an || animals جمع ← ما نحط a / an.
-He wants to be ..... pilot. || a | an | the an | a an || pilot تبدأ بحرف ساكن (p) ← a pilot.
-I read ..... article about bees yesterday. || an | a | the an | a an || article تبدأ بحرف علة (a) ← an article.
-Riyadh is ..... very big city. || a | an | the an | a an || الكلمة اللي بعدها very حرف ساكن ← a very big city.
-There's ..... ugly spider on the wall! || an | a | the an | a an || ugly تبدأ بحرف علة (u) ← an ugly spider.
-My friend gave me ..... useful book. || a | an | the an | a an || useful تنطق (يو) مو حرف علة ← a useful book.
-I don't have ..... car. I take the metro. || a | an | the an | a an || car تبدأ بحرف ساكن (c) ← a car.
-That's ..... amazing photo! || an | a | the an | a an || amazing تبدأ بحرف علة (a) ← an amazing photo.
-Can you give me ..... example? || an | a | the an | a an || example تبدأ بحرف علة (e) ← an example.
-My father bought ..... house near the beach. || a | an | the an | a an || house تبدأ بحرف ساكن (h تنطق) ← a house.
