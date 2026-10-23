@@ -221,7 +221,8 @@ def keep_groups(out):
     isbl = lambda h: h.startswith(('<div class="bl">', '<div class="item">')) or \
         re.match(r'<p class="ln">(?:[أبجدهو]|[١-٩][٠-٩]?)-\s', h) is not None
     # نوع البند: سطر مرقّم بحرف «أ-» ≠ سطر مرقّم برقم «١-» (سؤال) ≠ بند قائمة «•» (جواب)
-    kind = lambda h: ("let" if re.match(r'<p class="ln[^"]*">[أبجدهو]-', h) else "ln") if h.startswith('<p class="ln') else "bl"
+    kind = lambda h: ("let" if re.match(r'<p class="ln[^"]*">[أبجدهو]-', h) else "ln") if h.startswith('<p class="ln') else \
+        ("sub" if h.startswith('<div class="bl"><span class=subi>') else "bl")  # البنود الفرعية قائمة لحالها
     short = lambda h: len(re.sub(r"<[^>]+>", "", h)) < 220
     pieces, k = [], 0
     while k < len(out):
@@ -230,7 +231,10 @@ def keep_groups(out):
             while j < len(out) and isbl(out[j]) and kind(out[j]) == kind(out[k]):
                 j += 1
             run = out[k:j]
-            if len(run) <= 3:
+            if len(run) <= 3 and len(run) > 1 and re.sub(r"<[^>]+>", "", run[-1]).strip().endswith(":"):
+                # آخر بند عنوان لقائمة فرعية («٢ الجمل الداعمة:»): يمسك في قائمته مو في البنود اللي قبله
+                pieces += [["".join(run[:-1])], [run[-1]]]
+            elif len(run) <= 3:
                 pieces.append(["".join(run)])
             elif not all(short(x) for x in run):  # بنود طويلة (فقرات): كل بند لحاله عشان القائمة تنقسم وتعبّي الصفحة
                 # (المراجعة الثالثة) بس البند الأول/الأخير القصير ما يبقى لحاله آخر/أول الصفحة: يمسك في اللي جنبه
@@ -267,7 +271,7 @@ def keep_groups(out):
             return True
         if last.startswith('<p class="ln') and not isbl(last) and len(text(last)) < 220 and isbl(nxt) and kind(nxt) == "ln":
             return True  # سطر تمهيدي قصير («القضية: …») والسؤال المرقّم اللي بعده
-        if kind(last) != "bl" and isbl(last) and not multi(last) and nxt.startswith('<div class="bl">'):  # سؤال مرقّم «٢- …» وأجوبته
+        if kind(last) not in ("bl", "sub") and isbl(last) and not multi(last) and nxt.startswith('<div class="bl">'):  # سؤال مرقّم «٢- …» وأجوبته
             return True
         if nxt.startswith('<div class="passage">') and last.startswith(('<p class="ln">', '<div class="bl">')):  # المطلوب والنص اللي بعده
             return True
