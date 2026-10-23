@@ -176,8 +176,11 @@ def md_html(lines, lessons):
                 cells = [f'<td class="r">{inline(c)}</td>' for c in r]
                 if r and not r[0] and k > 0:
                     cells = cells[1:]
+                    if cells:  # صف تحت خلية مدموجة: أول خلية فيه مو طرف الجدول (ما ياخذ إطاره ولا زاويته)
+                        cells[0] = cells[0].replace('<td class="r">', '<td class="r cont">', 1)
                 elif span[k] > 1:
-                    cells[0] = f'<td class="r" rowspan="{span[k]}">{inline(r[0])}</td>'
+                    last = ' rlast' if k + span[k] == len(body) else ''  # الخلية المدموجة لين آخر صف تاخذ زاوية الجدول
+                    cells[0] = f'<td class="r{last}" rowspan="{span[k]}">{inline(r[0])}</td>'
                 t += (f'<tr class="z{par[k]}">' if any(s > 1 for s in span) else "<tr>") + "".join(cells) + "</tr>"
             out.append(t + "</table>")
             continue
@@ -194,13 +197,15 @@ def md_html(lines, lessons):
             k, _, v = s.partition(":")
             out.append(f'<div class="passage"><span class="pk">{inline(k)}:</span> {inline(v)}</div>')
         elif s.startswith("- ") or s.startswith("• "):
-            out.append(f'<div class="bl">{inline(s[2:])}</div>')
+            # بند فرعي مرقّم «- ١- …» تحت بند رئيسي: يدخل لجوّا بنقطة مفرّغة عشان يبان إنه تابع له
+            sub = re.match(r"[١-٩][٠-٩]?-\s", s[2:]) is not None
+            out.append(f'<div class="bl">{"<span class=subi></span>" if sub else ""}{inline(s[2:])}</div>')
         elif s.startswith("(") and s.endswith(")"):
             out.append(f'<p class="note">{inline(s[1:-1])}</p>')
         else:
             # الفقرة النموذجية (بعد «نموذج حل» / «الفقرة بعد التعديل»): مسافة بادئة أول السطر مثل شرط الكتاب للفقرة
             prev = re.sub(r"\*", "", lines[i - 1]).strip() if i else ""
-            ind = len(s) > 200 and (prev.startswith(("نموذج حل", "نموذج الحل", "الفقرة بعد التعديل", "النص بعد التعديل"))
+            ind = len(s) > 200 and (prev.startswith(("نموذج حل", "نموذج الحل", "الفقرة بعد التعديل", "النص بعد التعديل", "العنوان:"))
                                     or ("فقرة" in prev and prev.endswith(":")))
             out.append(f'<p class="ln{" ind" if ind else ""}">{inline(s)}</p>')
         i += 1
@@ -228,7 +233,13 @@ def keep_groups(out):
             if len(run) <= 3:
                 pieces.append(["".join(run)])
             elif not all(short(x) for x in run):  # بنود طويلة (فقرات): كل بند لحاله عشان القائمة تنقسم وتعبّي الصفحة
-                pieces += [[x] for x in run]
+                # (المراجعة الثالثة) بس البند الأول/الأخير القصير ما يبقى لحاله آخر/أول الصفحة: يمسك في اللي جنبه
+                a = 2 if short(run[0]) else 1
+                b = 2 if short(run[-1]) and len(run) - a >= 2 else (1 if len(run) > a else 0)
+                pieces.append(["".join(run[:a])])
+                pieces += [[x] for x in run[a:len(run) - b]]
+                if b:
+                    pieces.append(["".join(run[len(run) - b:])])
             else:
                 pieces.append(["".join(run[:2])])
                 pieces += [[x] for x in run[2:-2]]
@@ -296,6 +307,8 @@ def keep_groups(out):
 
 
 SOL_CSS = """
+table.t tr > td.cont:first-child{border-right:0!important;border-bottom-right-radius:0!important}
+table.t td.rlast{border-bottom-right-radius:9pt}
 .soltitle{text-align:center;font-weight:700;font-size:22pt;color:#89543d;margin:0 0 6pt;line-height:1.45}
 .soltitle small{display:block;font-size:12pt;color:#ad7c95;font-weight:600}
 .unit{position:relative;display:flex;align-items:center;gap:10pt;background:#603b28;color:#fff7ee;border-radius:24pt;padding:6pt 18pt 7pt;
@@ -331,6 +344,8 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 .passage .pk{color:#cc6e53;margin-left:5pt}
 .bl{position:relative;padding-right:14pt;margin:9pt 0;line-height:1.9;break-inside:avoid}
 .bl::before{content:'';position:absolute;right:2pt;top:8.5pt;width:6pt;height:6pt;border-radius:50%;background:#e3a594}
+.bl:has(>.subi){margin-right:16pt}
+.bl:has(>.subi)::before{background:none;border:1.2pt solid #e3a594;width:4.5pt;height:4.5pt}
 .note{font-size:10.6pt}
 table.t td{font-size:11pt}
 table.t.brk{break-inside:auto !important}
