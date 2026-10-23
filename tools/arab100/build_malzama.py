@@ -161,6 +161,8 @@ table.t td.sents > span {{ display:block; white-space:nowrap; padding:2pt 0; }}
 table.t td.sents > span + span {{ border-top:1pt dashed #e2cfc1; }}
 /* الخط تحت الكلمة كاملة (بدون ما يتقطع عند الياء) وينزل تحت نقاطها عشان ما يغطيها — طلب المستخدم */
 .u {{ text-decoration:underline; text-decoration-thickness:0.8pt; text-underline-offset:0.56em; text-decoration-skip-ink:none; }}
+.u1 {{ text-decoration:none; position:relative; }}
+.u1::after {{ content:''; position:absolute; left:-0.18em; right:-0.18em; bottom:-0.32em; border-bottom:0.8pt solid currentColor; }}
 /* السطر اللي فيه كلمة تحتها خط ياخذ مسافة أكبر شوي عشان الخط ما ينزل على السطر اللي تحته (طلب المستخدم) */
 td:has(.u), li:has(.u), .note:has(.u), .bul > div:has(.u), .ln:has(.u) {{ line-height:2.1; }}
 .note {{ border-right:4pt solid var(--blue); background:var(--hl); padding:6pt 10pt; margin:16pt 0; break-inside:avoid; border-radius:3pt; text-align:justify; text-align-last:right; }}
@@ -275,6 +277,22 @@ TIGHTEN_JS = """() => {
     rows.sort((a, b) => a.top - b.top);
     return rows;
   };
+  const lastSpaceTop = (el) => {
+    const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), nodes = [];
+    while (w.nextNode()) nodes.push(w.currentNode);
+    let seen = false;
+    for (let i = nodes.length - 1; i >= 0; i--) {
+      const t = nodes[i].data;
+      for (let j = t.length - 1; j >= 0; j--) {
+        if (!/\\s/.test(t[j])) { seen = true; continue; }
+        if (!seen) continue;
+        const r = document.createRange(); r.setStart(nodes[i], j); r.setEnd(nodes[i], j + 1);
+        const rc = [...r.getClientRects()];
+        return rc.length ? rc[0].top : Infinity;
+      }
+    }
+    return Infinity;
+  };
   // (.passage .bl .qq .op .why .item: عناصر ملف الحلول)
   const els = document.querySelectorAll('.ln, .note, .pill, .card, li, .bul > div, td, .box .qt, .box .fix, .passage, .bl, .qq, .op, .why, .item > div');
   for (const el of els) {
@@ -282,7 +300,8 @@ TIGHTEN_JS = """() => {
     if (rows.length < 2) continue;
     const full = Math.max(...rows.map(o => o.right - o.left));
     const last = rows[rows.length - 1];
-    if ((last.right - last.left) > full * 0.22) continue;
+    // (المراجعة الثالثة) في الأعمدة الضيقة كلمة وحدة أعرض من 22% — نعرفها بإن آخر مسافة في الكلام قبل آخر سطر
+    if ((last.right - last.left) > full * 0.22 && !(lastSpaceTop(el) < last.top - 2)) continue;
     const n0 = rows.length, fs0 = parseFloat(getComputedStyle(el).fontSize);
     const steps = [];
     // مسافة الكلمات تنقص شوي بس (أكثر من كذا تلتصق الكلمات العربية)، والباقي من حجم الخط
@@ -291,7 +310,8 @@ TIGHTEN_JS = """() => {
     for (const k of [0.985, 0.97]) for (const ws of [0, -0.6]) steps.push([ws, k]);
     // (المراجعة النهائية) آخر حل: الصندوق/الفقرة يمتد شوي لجهة نهاية السطر (يسار) — مو للخلايا
     const ml0 = getComputedStyle(el).marginLeft;
-    if (getComputedStyle(el).display !== 'table-cell' && !el.closest('td')) for (const ml of [-4, -8, -12]) steps.push([-0.6, 0.97, ml]);
+    // (المراجعة الثالثة) بطاقات «قبل أن تبدأ» والتصحيح داخل صندوق السؤال والخيار: الامتداد يطلعها عن إطارها/محاذاة اللي جنبها
+    if (getComputedStyle(el).display !== 'table-cell' && !el.closest('td') && !el.matches('.nc, .box .fix, .op')) for (const ml of [-4, -8, -12]) steps.push([-0.6, 0.97, ml]);
     let ok = false;
     for (const [ws, k, ml] of steps) {
       el.style.wordSpacing = ws + 'pt';
@@ -462,6 +482,8 @@ def balance_break(pages):
 
 def render(html_str, out_pdf, browser, spread=None, markers=False, brks=(), pad=None):
     html_str = fix_lam_alef(html_str)
+    # خط تحت حرف واحد (مثل «لمنزل»): قصير مرة وينقرأ كسرة ← يمتد شوي على جنبيه (u1)
+    html_str = re.sub(r'class="u">([^<\s]{1,2})</span>', r'class="u u1">\1</span>', html_str)
     # الشرطة «–» ما تبدأ سطر جديد (تبقى آخر السطر مع الكلمة اللي قبلها)
     html_str = html_str.replace(' – ', '\u00a0– ')
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
