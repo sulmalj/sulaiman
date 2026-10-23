@@ -182,8 +182,14 @@ def md_html(lines, lessons):
             out.append(t + "</table>")
             continue
         elif re.match(r"^\d+\.\s", s):
+            body = s.split(".", 1)[1]
+            if "←" in body:  # «سؤال ← جوابه»: الجواب بلون الأجوبة عشان يبان وين ينتهي السؤال
+                q_, _, a_ = body.partition("←")
+                body_html = f'{inline(q_)} ← <span class="ansr">{inline(a_)}</span>'
+            else:
+                body_html = inline(body)
             out.append(mcq(s) or (f'<div class="item"><span class="qn">{s.split(".", 1)[0]}</span>'
-                                  f'<div>{inline(s.split(".", 1)[1])}</div></div>'))
+                                  f'<div>{body_html}</div></div>'))
         elif re.match(r"^(النص|الفقرة)\s*:", s):
             k, _, v = s.partition(":")
             out.append(f'<div class="passage"><span class="pk">{inline(k)}:</span> {inline(v)}</div>')
@@ -329,6 +335,7 @@ body > .unit:first-child, body > .keep:first-child > .unit{margin-top:4pt}
 table.t td{font-size:11pt}
 table.t.brk{break-inside:auto !important}
 .ln.ind{text-indent:18pt}
+.item .ansr{color:#527c82;font-weight:600}
 table.t tr.z1 td{background:#fdf8f3} table.t tr.z0 td{background:#f6ece4}
 """
 
