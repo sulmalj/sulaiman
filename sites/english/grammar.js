@@ -1725,16 +1725,6 @@ window.GRAMMAR = [
 "e": "بعد need نحط to + الفعل الأساسي: need to put."
 },
 {
-"q": "I ..... to a dentist. I have a lot of pain in my teeth.",
-"o": [
-"should go",
-"should to go",
-"should going",
-"should to going"
-],
-"e": "بعد should يجي الفعل الأساسي مباشرة بدون to وبدون ing: should go."
-},
-{
 "q": "I want ..... my grandmother this weekend. She lives in Abha.",
 "o": [
 "to visit",
