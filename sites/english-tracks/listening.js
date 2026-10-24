@@ -5,7 +5,7 @@ window.LISTENING = [
 "n": 1,
 "title": "Booking a Dentist Appointment",
 "kind": "dialogue",
-"audio": "audio/L01.mp3",
+"audio": "audio/L01.mp3?v=f37d387d1851",
 "dur": 106,
 "lines": [
 [
@@ -174,7 +174,7 @@ window.LISTENING = [
 "n": 2,
 "title": "A Tour of the City Zoo",
 "kind": "monologue",
-"audio": "audio/L02.mp3",
+"audio": "audio/L02.mp3?v=1bb1e7a88f11",
 "dur": 75,
 "lines": [
 [
@@ -299,7 +299,7 @@ window.LISTENING = [
 "n": 3,
 "title": "Buying a New Phone",
 "kind": "dialogue",
-"audio": "audio/L03.mp3",
+"audio": "audio/L03.mp3?v=4ab04413cbb1",
 "dur": 102,
 "lines": [
 [
@@ -464,7 +464,7 @@ window.LISTENING = [
 "n": 4,
 "title": "A Message from the Professor",
 "kind": "monologue",
-"audio": "audio/L04.mp3",
+"audio": "audio/L04.mp3?v=fcaa87ffe0cb",
 "dur": 75,
 "lines": [
 [
@@ -589,7 +589,7 @@ window.LISTENING = [
 "n": 5,
 "title": "Planning a Desert Camping Trip",
 "kind": "dialogue",
-"audio": "audio/L05.mp3",
+"audio": "audio/L05.mp3?v=80b5314f697d",
 "dur": 107,
 "lines": [
 [
@@ -758,7 +758,7 @@ window.LISTENING = [
 "n": 6,
 "title": "Advert for a New Supermarket",
 "kind": "monologue",
-"audio": "audio/L06.mp3",
+"audio": "audio/L06.mp3?v=11015474c425",
 "dur": 103,
 "lines": [
 [
@@ -883,7 +883,7 @@ window.LISTENING = [
 "n": 7,
 "title": "Opening a Bank Account",
 "kind": "dialogue",
-"audio": "audio/L07.mp3",
+"audio": "audio/L07.mp3?v=afd86b124cf7",
 "dur": 106,
 "lines": [
 [
@@ -1048,7 +1048,7 @@ window.LISTENING = [
 "n": 8,
 "title": "A Famous Scientist: Ibn al-Haytham",
 "kind": "monologue",
-"audio": "audio/L08.mp3",
+"audio": "audio/L08.mp3?v=3a41fa54557c",
 "dur": 76,
 "lines": [
 [
@@ -1173,7 +1173,7 @@ window.LISTENING = [
 "n": 9,
 "title": "Talking About a Film",
 "kind": "dialogue",
-"audio": "audio/L09.mp3",
+"audio": "audio/L09.mp3?v=3cf756ec818a",
 "dur": 91,
 "lines": [
 [
@@ -1338,7 +1338,7 @@ window.LISTENING = [
 "n": 10,
 "title": "Train Station Announcements",
 "kind": "monologue",
-"audio": "audio/L10.mp3",
+"audio": "audio/L10.mp3?v=90a877d9f106",
 "dur": 74,
 "lines": [
 [
@@ -1467,7 +1467,7 @@ window.LISTENING = [
 "n": 11,
 "title": "Missing an Exam",
 "kind": "dialogue",
-"audio": "audio/L11.mp3",
+"audio": "audio/L11.mp3?v=a152583ab208",
 "dur": 70,
 "lines": [
 [
@@ -1632,7 +1632,7 @@ window.LISTENING = [
 "n": 12,
 "title": "Rules of the Swimming Class",
 "kind": "monologue",
-"audio": "audio/L12.mp3",
+"audio": "audio/L12.mp3?v=e21aa8e1092d",
 "dur": 70,
 "lines": [
 [
@@ -1757,7 +1757,7 @@ window.LISTENING = [
 "n": 13,
 "title": "A Problem with the Neighbours",
 "kind": "dialogue",
-"audio": "audio/L13.mp3",
+"audio": "audio/L13.mp3?v=c642d25ebad6",
 "dur": 74,
 "lines": [
 [
@@ -1910,7 +1910,7 @@ window.LISTENING = [
 "n": 14,
 "title": "University Sports Day",
 "kind": "monologue",
-"audio": "audio/L14.mp3",
+"audio": "audio/L14.mp3?v=d5058c6bc3a8",
 "dur": 112,
 "lines": [
 [
@@ -2043,7 +2043,7 @@ window.LISTENING = [
 "n": 15,
 "title": "Booking a Desert Tour",
 "kind": "dialogue",
-"audio": "audio/L15.mp3",
+"audio": "audio/L15.mp3?v=7154c097ae5d",
 "dur": 108,
 "lines": [
 [
@@ -2204,7 +2204,7 @@ window.LISTENING = [
 "n": 16,
 "title": "Tips for Learning New Words",
 "kind": "monologue",
-"audio": "audio/L16.mp3",
+"audio": "audio/L16.mp3?v=2c4154e14050",
 "dur": 79,
 "lines": [
 [
@@ -2333,7 +2333,7 @@ window.LISTENING = [
 "n": 17,
 "title": "At the Pharmacy",
 "kind": "dialogue",
-"audio": "audio/L17.mp3",
+"audio": "audio/L17.mp3?v=a069a8149235",
 "dur": 108,
 "lines": [
 [
@@ -2494,7 +2494,7 @@ window.LISTENING = [
 "n": 18,
 "title": "Recycling on Campus",
 "kind": "monologue",
-"audio": "audio/L18.mp3",
+"audio": "audio/L18.mp3?v=5bf5ec3bddf0",
 "dur": 72,
 "lines": [
 [
@@ -2619,7 +2619,7 @@ window.LISTENING = [
 "n": 19,
 "title": "Choosing Courses for Next Semester",
 "kind": "dialogue",
-"audio": "audio/L19.mp3",
+"audio": "audio/L19.mp3?v=02fed18b6477",
 "dur": 78,
 "lines": [
 [
@@ -2776,7 +2776,7 @@ window.LISTENING = [
 "n": 20,
 "title": "Morning Traffic Report",
 "kind": "monologue",
-"audio": "audio/L20.mp3",
+"audio": "audio/L20.mp3?v=834eab491abb",
 "dur": 73,
 "lines": [
 [
@@ -2905,7 +2905,7 @@ window.LISTENING = [
 "n": 21,
 "title": "A Talk About City Life in Summer",
 "kind": "monologue",
-"audio": "audio/L21.mp3",
+"audio": "audio/L21.mp3?v=4af0231c7e0d",
 "dur": 106,
 "lines": [
 [
@@ -3034,7 +3034,7 @@ window.LISTENING = [
 "n": 22,
 "title": "Campus Voices",
 "kind": "dialogue",
-"audio": "audio/L22.mp3",
+"audio": "audio/L22.mp3?v=c94f70c0c82d",
 "dur": 123,
 "lines": [
 [
@@ -3183,7 +3183,7 @@ window.LISTENING = [
 "n": 23,
 "title": "A Psychology Lecture",
 "kind": "monologue",
-"audio": "audio/L23.mp3",
+"audio": "audio/L23.mp3?v=c941c4f49889",
 "dur": 119,
 "lines": [
 [
@@ -3308,7 +3308,7 @@ window.LISTENING = [
 "n": 24,
 "title": "The Coral Reefs of the Red Sea",
 "kind": "dialogue",
-"audio": "audio/L24.mp3",
+"audio": "audio/L24.mp3?v=2c3ca2f7a48b",
 "dur": 120,
 "lines": [
 [
@@ -3457,7 +3457,7 @@ window.LISTENING = [
 "n": 25,
 "title": "A Talk About Our Food",
 "kind": "monologue",
-"audio": "audio/L25.mp3",
+"audio": "audio/L25.mp3?v=cf261e2b778a",
 "dur": 100,
 "lines": [
 [
