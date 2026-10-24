@@ -5,7 +5,7 @@ window.LISTENING = [
 "n": 1,
 "title": "Booking a Hotel Room",
 "kind": "dialogue",
-"audio": "audio/L01.mp3",
+"audio": "audio/L01.mp3?v=7eeb4bc7ed17",
 "dur": 110,
 "lines": [
 [
@@ -174,7 +174,7 @@ window.LISTENING = [
 "n": 2,
 "title": "A Visit to the City Museum",
 "kind": "monologue",
-"audio": "audio/L02.mp3",
+"audio": "audio/L02.mp3?v=373dcaf2e1e8",
 "dur": 76,
 "lines": [
 [
@@ -307,7 +307,7 @@ window.LISTENING = [
 "n": 3,
 "title": "At the Doctor's",
 "kind": "dialogue",
-"audio": "audio/L03.mp3",
+"audio": "audio/L03.mp3?v=f73db92da08b",
 "dur": 97,
 "lines": [
 [
@@ -472,7 +472,7 @@ window.LISTENING = [
 "n": 4,
 "title": "A Message About the Weekend Trip",
 "kind": "monologue",
-"audio": "audio/L04.mp3",
+"audio": "audio/L04.mp3?v=bd4769baa056",
 "dur": 62,
 "lines": [
 [
@@ -601,7 +601,7 @@ window.LISTENING = [
 "n": 5,
 "title": "Planning a Birthday Party",
 "kind": "dialogue",
-"audio": "audio/L05.mp3",
+"audio": "audio/L05.mp3?v=df8bb2679c0f",
 "dur": 102,
 "lines": [
 [
@@ -766,7 +766,7 @@ window.LISTENING = [
 "n": 6,
 "title": "Welcome to University",
 "kind": "monologue",
-"audio": "audio/L06.mp3",
+"audio": "audio/L06.mp3?v=a0f084b86b22",
 "dur": 126,
 "lines": [
 [
@@ -899,7 +899,7 @@ window.LISTENING = [
 "n": 7,
 "title": "Looking for a New Flat",
 "kind": "dialogue",
-"audio": "audio/L07.mp3",
+"audio": "audio/L07.mp3?v=b0f309d5f92d",
 "dur": 81,
 "lines": [
 [
@@ -1052,7 +1052,7 @@ window.LISTENING = [
 "n": 8,
 "title": "The Weather Forecast",
 "kind": "monologue",
-"audio": "audio/L08.mp3",
+"audio": "audio/L08.mp3?v=a6e6f2c6b6d2",
 "dur": 61,
 "lines": [
 [
@@ -1177,7 +1177,7 @@ window.LISTENING = [
 "n": 9,
 "title": "Shopping for a Winter Jacket",
 "kind": "dialogue",
-"audio": "audio/L09.mp3",
+"audio": "audio/L09.mp3?v=4c3bc788fc0c",
 "dur": 98,
 "lines": [
 [
@@ -1342,7 +1342,7 @@ window.LISTENING = [
 "n": 10,
 "title": "Announcements at the Airport",
 "kind": "monologue",
-"audio": "audio/L10.mp3",
+"audio": "audio/L10.mp3?v=d67c9209b270",
 "dur": 68,
 "lines": [
 [
@@ -1471,7 +1471,7 @@ window.LISTENING = [
 "n": 11,
 "title": "A Job Interview",
 "kind": "dialogue",
-"audio": "audio/L11.mp3",
+"audio": "audio/L11.mp3?v=45cae9c2b2a2",
 "dur": 79,
 "lines": [
 [
@@ -1640,7 +1640,7 @@ window.LISTENING = [
 "n": 12,
 "title": "Advert for a Sports Centre",
 "kind": "monologue",
-"audio": "audio/L12.mp3",
+"audio": "audio/L12.mp3?v=a7e8758dc1ad",
 "dur": 69,
 "lines": [
 [
@@ -1773,7 +1773,7 @@ window.LISTENING = [
 "n": 13,
 "title": "A Group Project",
 "kind": "dialogue",
-"audio": "audio/L13.mp3",
+"audio": "audio/L13.mp3?v=5525c1ccdfd2",
 "dur": 78,
 "lines": [
 [
@@ -1930,7 +1930,7 @@ window.LISTENING = [
 "n": 14,
 "title": "Library Rules",
 "kind": "monologue",
-"audio": "audio/L14.mp3",
+"audio": "audio/L14.mp3?v=fe95eb6d6094",
 "dur": 115,
 "lines": [
 [
@@ -2059,7 +2059,7 @@ window.LISTENING = [
 "n": 15,
 "title": "A Lost Bag at the Train Station",
 "kind": "dialogue",
-"audio": "audio/L15.mp3",
+"audio": "audio/L15.mp3?v=b69ec3164830",
 "dur": 98,
 "lines": [
 [
@@ -2224,7 +2224,7 @@ window.LISTENING = [
 "n": 16,
 "title": "Tips for a Healthy Life",
 "kind": "monologue",
-"audio": "audio/L16.mp3",
+"audio": "audio/L16.mp3?v=acb32023f168",
 "dur": 85,
 "lines": [
 [
@@ -2353,7 +2353,7 @@ window.LISTENING = [
 "n": 17,
 "title": "Choosing a Film for the Weekend",
 "kind": "dialogue",
-"audio": "audio/L17.mp3",
+"audio": "audio/L17.mp3?v=d7ba156040ed",
 "dur": 103,
 "lines": [
 [
@@ -2514,7 +2514,7 @@ window.LISTENING = [
 "n": 18,
 "title": "Talking About the Holidays",
 "kind": "dialogue",
-"audio": "audio/L18.mp3",
+"audio": "audio/L18.mp3?v=5352f775a3a4",
 "dur": 95,
 "lines": [
 [
@@ -2675,7 +2675,7 @@ window.LISTENING = [
 "n": 19,
 "title": "Renting a Car",
 "kind": "dialogue",
-"audio": "audio/L19.mp3",
+"audio": "audio/L19.mp3?v=4d4b6562823f",
 "dur": 100,
 "lines": [
 [
@@ -2836,7 +2836,7 @@ window.LISTENING = [
 "n": 20,
 "title": "Choosing an English Course",
 "kind": "dialogue",
-"audio": "audio/L20.mp3",
+"audio": "audio/L20.mp3?v=684d7420d46a",
 "dur": 101,
 "lines": [
 [
@@ -2997,7 +2997,7 @@ window.LISTENING = [
 "n": 21,
 "title": "A Lecture on Memory",
 "kind": "monologue",
-"audio": "audio/L21.mp3",
+"audio": "audio/L21.mp3?v=c1880847b82e",
 "dur": 119,
 "lines": [
 [
@@ -3126,7 +3126,7 @@ window.LISTENING = [
 "n": 22,
 "title": "Talking Points: Our Working Week",
 "kind": "dialogue",
-"audio": "audio/L22.mp3",
+"audio": "audio/L22.mp3?v=d1befee7d54b",
 "dur": 113,
 "lines": [
 [
@@ -3271,7 +3271,7 @@ window.LISTENING = [
 "n": 23,
 "title": "A Talk About Our Clothes",
 "kind": "monologue",
-"audio": "audio/L23.mp3",
+"audio": "audio/L23.mp3?v=e3f1bc33cd24",
 "dur": 110,
 "lines": [
 [
@@ -3400,7 +3400,7 @@ window.LISTENING = [
 "n": 24,
 "title": "Meeting New People",
 "kind": "monologue",
-"audio": "audio/L24.mp3",
+"audio": "audio/L24.mp3?v=32a847c8160b",
 "dur": 120,
 "lines": [
 [
@@ -3529,7 +3529,7 @@ window.LISTENING = [
 "n": 25,
 "title": "Artificial Intelligence in Hospitals",
 "kind": "dialogue",
-"audio": "audio/L25.mp3",
+"audio": "audio/L25.mp3?v=dacc3ceb9302",
 "dur": 128,
 "lines": [
 [

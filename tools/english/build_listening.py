@@ -105,7 +105,7 @@ def main():
     kokoro = None
     for c in clips:
         name = f'L{c["n"]:02}.mp3'; out = os.path.join(AUDIO, name)
-        h = clip_hash(c)
+        h = clip_hash(c); c['h'] = h
         entry = hashes.get(name)
         if os.path.exists(out) and entry and entry['h'] == h and c['n'] not in only:
             c['dur'] = entry['dur']; continue
@@ -116,7 +116,7 @@ def main():
         hashes[name] = {'h': h, 'dur': c['dur']}
         print(f'  ✓ {name}  {c["dur"] // 60}:{c["dur"] % 60:02}  {c["title"]}')
     json.dump(hashes, open(hp, 'w'), indent=1)
-    data = [{'n': c['n'], 'title': c['title'], 'kind': c['kind'], 'audio': f'audio/L{c["n"]:02}.mp3',
+    data = [{'n': c['n'], 'title': c['title'], 'kind': c['kind'], 'audio': f'audio/L{c["n"]:02}.mp3?v={c["h"]}',   # ?v= يتغيّر مع الصوت عشان الجوال ما يشغّل نسخة قديمة مخزّنة
              'dur': c['dur'], 'lines': c['lines'], 'qs': c['qs']} for c in clips]
     with open(os.path.join(SITE, 'listening.js'), 'w', encoding='utf-8') as f:
         f.write('/* قسم الاستماع — ملف مولّد من tools/english/listening.txt بالسكربت build_listening.py (لا تعدّله يدوياً)\n'
