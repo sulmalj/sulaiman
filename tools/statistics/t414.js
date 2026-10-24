@@ -13,14 +13,15 @@ const K=t=>katex.renderToString(t,{displayMode:true,output:'html'});
 const hd=['x_i','y_i','x_iy_i','x_i^{2}','y_i^{2}'].map(h=>`<th>${katex.renderToString(h,{output:'html'})}</th>`).join('');
 const table=`<table><tr>${hd}</tr>${rows.map(r=>`<tr>${r.map(v=>`<td>${v}</td>`).join('')}</tr>`).join('')}
 <tr class="s">${S.map(v=>`<td>Σ = ${v}</td>`).join('')}</tr></table>`;
-const L=[['r',String.raw`\dfrac{n\displaystyle\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\displaystyle\sum x_i^{2}-\left(\sum x_i\right)^{2}}\;\sqrt{n\displaystyle\sum y_i^{2}-\left(\sum y_i\right)^{2}}}`],
- ['',String.raw`\dfrac{${n}(${S[2]})-(${S[0]})(${S[1]})}{\sqrt{${n}(${S[3]})-(${S[0]})^{2}}\;\sqrt{${n}(${S[4]})-(${S[1]})^{2}}}`],
- ['',String.raw`\dfrac{${n*S[2]}-${S[0]*S[1]}}{\sqrt{${n*S[3]}-${S[0]**2}}\;\sqrt{${n*S[4]}-${S[1]**2}}}=\dfrac{${num}}{\sqrt{${dx}}\;\sqrt{${dy}}}=\dfrac{${num}}{${trunc(den,2)}}`],
- ['',String.raw`\fcolorbox{${BOX}}{transparent}{$\;${trunc(r,2)}\;$}`]];
-const sol=`<div class="eq">${L.map(([l,t])=>`<div>${K((l||"\\phantom{r}")+"="+t)}</div>`).join("")}</div><div class="ans"><span>ارتباط خطي طردي قوي</span></div>`;
+// سطر واحد أفقي: القانون = التعويض = … = الناتج
+const tex=String.raw`r=\dfrac{n\displaystyle\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\displaystyle\sum x_i^{2}-\left(\sum x_i\right)^{2}}\;\sqrt{n\displaystyle\sum y_i^{2}-\left(\sum y_i\right)^{2}}}
+=\dfrac{${n}(${S[2]})-(${S[0]})(${S[1]})}{\sqrt{${n}(${S[3]})-(${S[0]})^{2}}\;\sqrt{${n}(${S[4]})-(${S[1]})^{2}}}
+=\dfrac{${num}}{\sqrt{${dx}}\;\sqrt{${dy}}}=\dfrac{${num}}{${trunc(den,2)}}
+=\fcolorbox{${BOX}}{transparent}{$\;${trunc(r,2)}\;$}`;
+const sol=`<div class="eq">${K(tex)}</div><div class="ans"><span>ارتباط خطي طردي قوي</span></div>`;
 const css=`@font-face{font-family:Rx;src:url(file://${FONTS}/Readex-600.ttf)}
 html,body{margin:0;background:transparent}#w{display:inline-block;padding:16px 22px;color:${BR}}
-.katex{color:${BR};-webkit-text-stroke:0.9px ${BR}}.katex-display{margin:0}.katex [style*="transparent"],.katex [style*="transparent"] *{-webkit-text-stroke:0!important}.eq{font-size:40px;display:grid;grid-template-columns:auto;row-gap:34px;align-items:center;justify-content:start}.eq .katex-display{text-align:left}.eq .katex-display>.katex{text-align:left}
+.katex{color:${BR};-webkit-text-stroke:0.9px ${BR}}.katex-display{margin:0}.katex [style*="transparent"],.katex [style*="transparent"] *{-webkit-text-stroke:0!important}.eq{font-size:40px;text-align:center}.eq .katex-display{text-align:left}.eq .katex-display>.katex{text-align:left}
 .katex .fcolorbox{border-width:3.5px!important;border-radius:8px;padding:2px 6px!important}
 table{border-collapse:separate;border-spacing:0;margin:0 auto 34px;font:600 34px 'DejaVu Sans';color:${BR};border:3px solid ${BR};border-radius:16px;overflow:hidden;background:#fff}
 td,th{min-width:120px;height:66px;padding:0 14px;text-align:center;border-left:2px solid ${LINE};border-bottom:2px solid ${LINE}}
@@ -28,7 +29,7 @@ td:first-child,th:first-child{border-left:none} tr:last-child td{border-bottom:n
 th{background:${HEAD};font-size:36px} tr.s td{background:${HEAD};font-size:30px}
 .ans{text-align:center;margin-top:30px}.ans span{display:inline-block;direction:rtl;font:44px Rx;color:${BR};border:3.5px solid ${BOX};border-radius:12px;padding:8px 30px 14px}`;
 (async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({deviceScaleFactor:3});
-for(const [name,body] of [['كامل مع الجدول',table+sol],['الحل بدون جدول',sol]]){
+for(const [name,body] of [['أفقي مع الجدول',table+sol],['أفقي بدون جدول',sol]]){
  const f=`${OUT}/_t414.html`; fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${body}</div></body></html>`);
  await p.goto('file://'+f);
  await p.evaluate(()=>document.fonts.ready);
