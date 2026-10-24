@@ -13,10 +13,9 @@ const K=t=>katex.renderToString(t,{displayMode:true,output:'html'});
 const hd=['x_i','y_i','x_iy_i','x_i^{2}','y_i^{2}'].map(h=>`<th>${katex.renderToString(h,{output:'html'})}</th>`).join('');
 const table=`<table><tr>${hd}</tr>${rows.map(r=>`<tr>${r.map(v=>`<td>${v}</td>`).join('')}</tr>`).join('')}
 <tr class="s">${S.map(v=>`<td>Σ = ${v}</td>`).join('')}</tr></table>`;
-// سطر واحد أفقي: القانون = التعويض = … = الناتج
+// سطر واحد أفقي: القانون = التعويض = الناتج
 const tex=String.raw`r=\dfrac{n\displaystyle\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\displaystyle\sum x_i^{2}-\left(\sum x_i\right)^{2}}\;\sqrt{n\displaystyle\sum y_i^{2}-\left(\sum y_i\right)^{2}}}
 =\dfrac{${n}(${S[2]})-(${S[0]})(${S[1]})}{\sqrt{${n}(${S[3]})-(${S[0]})^{2}}\;\sqrt{${n}(${S[4]})-(${S[1]})^{2}}}
-=\dfrac{${num}}{\sqrt{${dx}}\;\sqrt{${dy}}}=\dfrac{${num}}{${trunc(den,2)}}
 =\fcolorbox{${BOX}}{transparent}{$\;${trunc(r,2)}\;$}`;
 const sol=`<div class="eq">${K(tex)}</div><div class="ans"><span>ارتباط خطي طردي قوي</span></div>`;
 const css=`@font-face{font-family:Rx;src:url(file://${FONTS}/Readex-600.ttf)}
