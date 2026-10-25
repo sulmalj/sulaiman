@@ -1,0 +1,15 @@
+# دفعة 2 من المستخدم (2026-10-25) — 10 أسئلة قواعد (موقع إنجليزي إنساني مد). الإجابة الصحيحة أول خيار.
+# أسئلة 5 و7 و8 وصلت بنص فيه تشوّه نسخ (كلام مقطوع من صور)؛ أعدت بناءها كذا (لازم أعلّم المستخدم):
+#   5: «I asked Hussain and Tariq to join me at the gym. ___ my friends from the neighborhood.»
+#   7: «Sameera ___ articles for the local newspaper, and she has a website about life in Riyadh.»
+#   8: «This ice cream store has new flavors on sale. You can try ___ all before you decide what you want.»
+1  || My brother doesn't like running in the morning. ___ makes him tired during the day. || It | She | These | They
+2  || I ___ the kids' store at Panorama Mall. It has many toys and books. || love | to love | be loving | loving
+3  || This ___ a shoe store. People come here to buy shoes and accessories. || is | be | am | are
+4  || He ___ from home. He goes to the office from Sunday to Thursday every week. || doesn't work | no work | don't work | not work
+5  || I asked Hussain and Tariq to join me at the gym. ___ my friends from the neighborhood. || They're | There | There's | Their
+6  || My brother plays football. ___ the best player on our school team. || He's | Him | His | He'd
+7  || Sameera ___ articles for the local newspaper, and she has a website about life in Riyadh. || writes | writing | write | writer
+8  || This ice cream store has new flavors on sale. You can try ___ all before you decide what you want. || them | her | they | him
+9  || My mother made some cookies this afternoon. She put ___ on the kitchen table. || them | him | her | they
+10 || Saleh ___ a science teacher. He works at Kingdom School in Riyadh. || is | are | am | be
