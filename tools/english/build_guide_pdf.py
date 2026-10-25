@@ -37,7 +37,8 @@ def qr_img(url, px):
             f'style="width:{px}px;height:{px}px;display:block;margin:0 auto 4px;image-rendering:pixelated">')
 
 
-def ad_page():
+def ad_page(extra=""):
+    """extra: سطر إضافي (اختياري) يطلع فوق صندوق المتجر — مثل «عندنا جميع مواد المسار الإنساني»."""
     qr = qr_img(STORE, 140)
     items = ["موقع للتدريب شامل كل الأقسام", "تدريب على القطع", "تدريب على الاستماع",
              "تدريب على الفوكاب", "تدريب على القواعد", "شرح كامل القواعد"]
@@ -66,6 +67,8 @@ li {{ font-size:21px; font-weight:700; color:var(--navy); display:flex; align-it
 .btn {{ display:inline-block; margin-top:10px; background:var(--rose); color:#fff; border-radius:12px; padding:11px 28px; font-size:24px; font-weight:700; font-family:'Lexend'; direction:ltr; }}
 .qr {{ flex:none; width:180px; text-align:center; font-size:14px; color:var(--muted); }}
 .qr svg {{ width:140px; height:140px; display:block; margin:0 auto 4px; }}
+.extra {{ text-align:center; font-size:23px; font-weight:800; color:#fff; background:var(--rose); border-radius:14px; padding:14px; line-height:1.5; }}
+.extra small {{ display:block; font-size:17px; font-weight:500; opacity:.95; }}
 </style></head><body><div class="pg">
 <a class="tg" href="{TELEGRAM}">قناتنا لمعرفة كل جديد <span class="lnk">t.me/mlazmadl</span></a>
 <div class="hero"><span class="brand">ملازم عدل</span><h1>دورة ملازم عدل للإنجليزي</h1></div>
@@ -75,7 +78,7 @@ li {{ font-size:21px; font-weight:700; color:var(--navy); display:flex; align-it
  <div class="chip"><b>✓</b>تصحيح تلقائي من الموقع</div>
 </div>
 <div class="note">(تم وضع مستوى الأسئلة في موقعنا على مستوى مشابه للاختبار)</div>
-<div class="buy">
+{extra}<div class="buy">
  <div class="txt"><div class="price">سعر الدورة في متناول اليد</div>
   <a class="btn" href="{STORE}">mtgradl.com</a></div>
  <a class="qr" href="{STORE}">{qr}امسح الباركود لزيارة المتجر</a>
