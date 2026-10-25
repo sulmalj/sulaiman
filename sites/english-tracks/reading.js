@@ -362,6 +362,129 @@ window.READING = [
 },
 {
 "n": 4,
+"k": 26,
+"title": "Apples in Washington State",
+"text": [
+"1. In most countries, people eat apples all the time. They're sweet, crunchy, and healthy. For this reason, they're a _beloved_ snack for both children and adults. People also love to use apples to make apple juice, apple pie, apple butter, and so on. But while apples are popular everywhere, the people who love apples most might live in Washington State, USA.",
+"2. Located next to the Pacific Ocean in the northwest of the United States, Washington State is famous for its biggest city, Seattle, and for its technology companies, like Amazon. But _it_ is also a great place to grow apples. The weather is usually sunny, but not too hot, in the summer. This is good because apple trees need at least six hours of sun every day when they're growing in the summer. The weather should be warm, but not too hot outside. However, apple trees also need the temperature to be cold sometimes. Every year, the trees should get between 500 and 1,000 hours between 0 and 5°C. Their flowers don't grow well if the weather isn't cold sometimes. That's fine because in Washington the winter temperatures are a little cold and it can rain 15 to 25 days each month. This would _cripple_ another fruit like an orange, but not apples. In Washington State, farmers grow more than 10 billion (that's 10,000,000,000) of _them_ every year.",
+"3. The people in Washington love to celebrate their fruit. Starting in the spring, there are Apple Blossom Festivals, where you can listen to music and enjoy the beautiful apple trees. Then, usually in October, there are festivals where you can do things like pick apples, try to win apple-eating contests, and drive around the farms. Many people in Washington think it's the best time of the year."
+],
+"qs": [
+{
+"q": "The writer says that people eat apples in ______.",
+"o": [
+"most countries",
+"diet classes",
+"the kitchen",
+"some states"
+],
+"e": "الفقرة 1 أول جملة: «In most countries, people eat apples all the time» ← الجواب most countries.",
+"x": 1
+},
+{
+"q": "Which technology company does the author mention?",
+"o": [
+"Amazon",
+"Starbucks",
+"Seattle",
+"Northwest"
+],
+"e": "الفقرة 2: «famous for its biggest city, Seattle, and for its technology companies, like Amazon» ← Seattle مدينة مو شركة، وNorthwest مكان (شمال غرب أمريكا).",
+"x": 1
+},
+{
+"q": "People in Washington celebrate apples by ______.",
+"o": [
+"listening to music",
+"cooking food",
+"selling flowers",
+"performing dances"
+],
+"e": "الفقرة 3: «there are Apple Blossom Festivals, where you can listen to music and enjoy the beautiful apple trees» ← يحتفلون بسماع الموسيقى.",
+"x": 1
+},
+{
+"q": "What does the underlined word \"it\" in paragraph 2 refer to?",
+"o": [
+"Washington State",
+"The United States",
+"the biggest city",
+"technology company"
+],
+"e": "الفقرة 2: «Washington State is famous for its biggest city, Seattle, and for its technology companies, like Amazon. But it is also a great place to grow apples» ← الكلام كله عن ولاية Washington، فـ it = Washington State.",
+"x": 1
+},
+{
+"q": "What does the underlined word \"them\" in paragraph 2 refer to?",
+"o": [
+"apples",
+"farmers",
+"trees",
+"oranges"
+],
+"e": "الفقرة 2 آخر جملة: «farmers grow more than 10 billion (that's 10,000,000,000) of them every year» ← المزارعين يزرعون أكثر من 10 مليار تفاحة، فـ them = apples.",
+"x": 1
+},
+{
+"q": "How is growing apples different from growing oranges?",
+"o": [
+"Apples need warm and cold weather.",
+"Oranges need extremely rainy weather.",
+"Apples need temperatures to always be cold.",
+"Oranges need six hours of sun every day."
+],
+"e": "الفقرة 2: التفاح يحتاج جو دافي في الصيف «The weather should be warm, but not too hot outside» ويحتاج برد أحيانًا «apple trees also need the temperature to be cold sometimes»، أما البرد والمطر فيضرون البرتقال: «This would cripple another fruit like an orange, but not apples».",
+"x": 1
+},
+{
+"q": "Which activity does the author NOT mention?",
+"o": [
+"learning the history of apples",
+"joining apple eating contests",
+"making apple juice",
+"driving around a farm"
+],
+"e": "الفقرة 1 ذكرت «apple juice»، والفقرة 3 ذكرت «try to win apple-eating contests, and drive around the farms». أما تعلّم تاريخ التفاح ما انذكر أبدًا.",
+"x": 1
+},
+{
+"q": "What does the word \"beloved\" in paragraph 1 mean?",
+"o": [
+"really liked",
+"a little liked",
+"sometimes eaten",
+"not eaten"
+],
+"e": "الفقرة 1: «They're sweet, crunchy, and healthy. For this reason, they're a beloved snack for both children and adults» ← حلو ومقرمش وصحي، فالكل يحبه كثير ← beloved = really liked.",
+"x": 1
+},
+{
+"q": "What does the word \"cripple\" in paragraph 2 mean?",
+"o": [
+"hurt badly or kill",
+"make sweet like sugar",
+"make grow large",
+"give a lot of water to"
+],
+"e": "الفقرة 2: البرد والمطر الكثير «This would cripple another fruit like an orange, but not apples» ← يضرون البرتقال كثير بس ما يضرون التفاح ← cripple = hurt badly or kill.",
+"x": 1
+},
+{
+"q": "What is the best title for the passage?",
+"o": [
+"Washington: The Best Place to Grow Apples",
+"The Biggest Types of Trees in USA",
+"How to Grow Apples in Warm Weather",
+"The Advantages of Eating Apples"
+],
+"e": "القطعة كلها عن التفاح في Washington: إنها «a great place to grow apples» (الفقرة 2)، وأهلها يحتفلون فيه (الفقرة 3) ← العنوان Washington: The Best Place to Grow Apples.",
+"x": 1
+}
+],
+"x": 1
+},
+{
+"n": 5,
 "k": 4,
 "title": "Saving Money as a Student",
 "text": [
@@ -474,7 +597,7 @@ window.READING = [
 ]
 },
 {
-"n": 5,
+"n": 6,
 "k": 5,
 "title": "The Story of Coffee",
 "text": [
@@ -587,7 +710,7 @@ window.READING = [
 ]
 },
 {
-"n": 6,
+"n": 7,
 "k": 6,
 "title": "Electric Cars",
 "text": [
@@ -700,7 +823,7 @@ window.READING = [
 ]
 },
 {
-"n": 7,
+"n": 8,
 "k": 7,
 "title": "Paper Books or E-books?",
 "text": [
@@ -813,7 +936,7 @@ window.READING = [
 ]
 },
 {
-"n": 8,
+"n": 9,
 "k": 8,
 "title": "Social Media and the News",
 "text": [
@@ -926,7 +1049,7 @@ window.READING = [
 ]
 },
 {
-"n": 9,
+"n": 10,
 "k": 9,
 "title": "Camels: Ships of the Desert",
 "text": [
@@ -1039,7 +1162,7 @@ window.READING = [
 ]
 },
 {
-"n": 10,
+"n": 11,
 "k": 10,
 "title": "Recycling at Home",
 "text": [
@@ -1152,7 +1275,7 @@ window.READING = [
 ]
 },
 {
-"n": 11,
+"n": 12,
 "k": 11,
 "title": "Shopping Online or in Stores?",
 "text": [
@@ -1265,7 +1388,7 @@ window.READING = [
 ]
 },
 {
-"n": 12,
+"n": 13,
 "k": 12,
 "title": "Learning to Cook",
 "text": [
@@ -1378,7 +1501,7 @@ window.READING = [
 ]
 },
 {
-"n": 13,
+"n": 14,
 "k": 13,
 "title": "Working Part-Time While Studying",
 "text": [
@@ -1491,7 +1614,7 @@ window.READING = [
 ]
 },
 {
-"n": 14,
+"n": 15,
 "k": 14,
 "title": "Don't Skip Breakfast",
 "text": [
@@ -1604,7 +1727,7 @@ window.READING = [
 ]
 },
 {
-"n": 15,
+"n": 16,
 "k": 15,
 "title": "AlUla: A Window to the Past",
 "text": [
@@ -1717,7 +1840,7 @@ window.READING = [
 ]
 },
 {
-"n": 16,
+"n": 17,
 "k": 16,
 "title": "Pets and Our Health",
 "text": [
@@ -1830,7 +1953,7 @@ window.READING = [
 ]
 },
 {
-"n": 17,
+"n": 18,
 "k": 17,
 "title": "Robots in Our Daily Lives",
 "text": [
@@ -1943,7 +2066,7 @@ window.READING = [
 ]
 },
 {
-"n": 18,
+"n": 19,
 "k": 18,
 "title": "Saving Water",
 "text": [
@@ -2056,7 +2179,7 @@ window.READING = [
 ]
 },
 {
-"n": 19,
+"n": 20,
 "k": 19,
 "title": "Libraries Are Changing",
 "text": [
@@ -2169,7 +2292,7 @@ window.READING = [
 ]
 },
 {
-"n": 20,
+"n": 21,
 "k": 20,
 "title": "Photography as a Hobby",
 "text": [
@@ -2282,7 +2405,7 @@ window.READING = [
 ]
 },
 {
-"n": 21,
+"n": 22,
 "k": 21,
 "title": "Talent or Teamwork?",
 "text": [
@@ -2396,7 +2519,7 @@ window.READING = [
 ]
 },
 {
-"n": 22,
+"n": 23,
 "k": 22,
 "title": "Choosing a Major: Passion or Practicality?",
 "text": [
@@ -2510,7 +2633,7 @@ window.READING = [
 ]
 },
 {
-"n": 23,
+"n": 24,
 "k": 23,
 "title": "Smart Cities: Promise and Problems",
 "text": [
@@ -2624,7 +2747,7 @@ window.READING = [
 ]
 },
 {
-"n": 24,
+"n": 25,
 "k": 24,
 "title": "Why We Need Bees",
 "text": [
@@ -2738,7 +2861,7 @@ window.READING = [
 ]
 },
 {
-"n": 25,
+"n": 26,
 "k": 25,
 "title": "Managing Your Time: Working Smarter, Not Longer",
 "text": [

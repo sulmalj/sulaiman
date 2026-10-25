@@ -23,3 +23,10 @@ G Zainab ______ all the cats in her neighborhood with food she buys at the local
 G You ______ the garbage out once it's full to avoid bad smells.
 G Mazin's hands always start sweating ______ nervous, so he puts them in his pockets.
 V Samir doesn't get paid for the work he does at the Hayat Children's Camp. He's a ______.
+# (2026-10-25) دفعة اختبار الإنساني — القطعة + قواعد Simple present بس (قواعد الضمائر مو من قواعد هذا الموقع، والكلمات للإنساني بس)
+R 26 1-10
+G Saleh ..... a science teacher. He works at Kingdom School in Riyadh.
+G I ..... the kids' store at Panorama Mall. It has many toys and books.
+G This ..... a shoe store. People come here to buy shoes and accessories.
+G He ..... from home. He goes to the office from Sunday to Thursday every week.
+G Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.

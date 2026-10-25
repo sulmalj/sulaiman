@@ -13,7 +13,7 @@ The university ..... a good place. || is | am | are | am not || The university �
 Where ..... the station? || is | am | are | am not || the station مفرد (It) ← في سؤال WH: WH + is + Subject.
 How old ..... your brother? || is | am | are | am not || your brother مفرد (He) ← How old + is + Subject.
 These books ..... very hard to understand. || are | is | am | am not || These books جمع (They) ← نستخدم are.
-Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | aren't | am || Saleh مفرد (He) ← نستخدم is.
+Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | am | be || Saleh مفرد (He) ← نستخدم is.
 Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is || She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's).
 Children usually ..... watching cartoons. || like | likes | likeing | does like || Children جمع (They) ← الفعل يبقى بدون s: like.
 In many countries, people ..... until they are sixty-five. || work | works | working | are work || people جمع (They) ← الفعل بدون s: work.
@@ -65,6 +65,11 @@ A: ..... your friends speak English? B: Yes, they do. They speak it very well. |
 My phone ..... very old. I want to buy a new one. || is | are | am | be || My phone = It ← نستخدم is.
 The baby ..... a lot at night, so her parents are always tired. || doesn't sleep | don't sleep | doesn't sleeps | isn't sleep || The baby = She ← doesn't + الفعل الأساسي sleep.
 Zainab ..... all the cats in her neighborhood with food she buys at the local pet store. || feeds | don't feed | feed | feeding || Zainab = She ← في الإثبات نضيف s للفعل: feeds.
+# ── نماذج اختبار (من دفعة 2026-10-25 للإنساني — قواعد Simple present بس) ──
+I ..... the kids' store at Panorama Mall. It has many toys and books. || love | to love | be loving | loving || I ← في المضارع البسيط الفعل يجي بصيغته الأساسية بدون to وبدون ing: I love.
+This ..... a shoe store. People come here to buy shoes and accessories. || is | be | am | are || This (شي واحد مفرد = It) ← نستخدم is.
+He ..... from home. He goes to the office from Sunday to Thursday every week. || doesn't work | no work | don't work | not work || He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع).
+Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh. || writes | writing | write | writer || Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.
 
 ## Simple past
 We ..... David in town a few days ago. || saw | seen | see | are see || «a few days ago» تدل على الماضي ← see فعل شاذ، ماضيه saw.
