@@ -48,13 +48,13 @@ html,body{margin:0;background:transparent}#w{display:inline-block;padding:14px 2
 .t tr>*:last-child{border-left:none}.t tr:last-child>*{border-bottom:none}
 .t th.h,.t tr.hd th{background:${HEAD};font:30px Rx7}.t td{font-size:31px}.t .katex{font-size:1.1em}
 .t tr.s td{background:${HEAD}}.t tr.s td[colspan]{background:transparent;border-left:2px solid ${LINE}}
-.n{font:600 26px 'DejaVu Sans';fill:${BR}}.ax{font:italic 700 30px 'DejaVu Serif';fill:${BR}}.sb{font-size:20px}
+.q{text-align:center}.g{margin-top:36px}.n{font:600 26px 'DejaVu Sans';fill:${BR}}.ax{font:italic 700 30px 'DejaVu Serif';fill:${BR}}.sb{font-size:20px}
 .eq{font-size:40px;text-align:center}.eq .katex{-webkit-text-stroke:0.9px ${BR}}
 .katex .fcolorbox{border-width:3.5px!important;border-radius:8px;padding:2px 6px!important}
 .ans{text-align:center;margin-top:26px}.ans span{display:inline-block;direction:rtl;font:42px Rx;color:${BR};border:3.5px solid ${BOX};border-radius:12px;padding:8px 30px 14px}`;
 (async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({deviceScaleFactor:3});
 const f=`${OUT}/_es.html`;
-for(const [name,body] of [['جدول البيانات',data],['الخطوة 1 - الرتب الأولية',step1],['الخطوة 2 - جدول الرتب',step2],
+for(const [name,body] of [['السؤال - الجدول مع اللوحة الفاضية',`<div class="q">${data}<div class="g">${grid(false)}</div></div>`],['جدول البيانات',data],['الخطوة 1 - الرتب الأولية',step1],['الخطوة 2 - جدول الرتب',step2],
   ['لوحة انتشار الرتب - فاضية',grid(false)],['لوحة انتشار الرتب - محلولة',grid(true)],['حساب معامل سبيرمان',sol]]){
  fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${body}</div></body></html>`);
  await p.goto('file://'+f); await p.evaluate(()=>document.fonts.ready);
