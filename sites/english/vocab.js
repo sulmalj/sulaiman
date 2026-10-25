@@ -2553,5 +2553,17 @@ window.VOCAB = [
 ],
 "e": "affordable = بسعر مناسب ← 3,000 ريال غالية، فيبي شي أرخص.",
 "x": 1
+},
+{
+"w": "Strong",
+"q": "Ahmed is very ...... He goes to the gym five times a week.",
+"o": [
+"strong",
+"lazy",
+"shy",
+"weak"
+],
+"e": "strong = قوي ← يروح النادي خمس مرات في الأسبوع، فهو قوي.",
+"x": 1
 }
 ];

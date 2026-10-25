@@ -62,3 +62,4 @@ V If you're not sure how to fix it, you should ask a/an ......
 V These sunglasses are 3,000 riyals! Can you show me something more ......?
 # قطعة My Family (تسريب 2026-10-25)
 R 27 1-10
+V Ahmed is very ...... He goes to the gym five times a week.
