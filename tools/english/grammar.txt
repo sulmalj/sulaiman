@@ -3,28 +3,8 @@
 # في كل قاعدة: تدريبات الملزمة + نماذج اختبار المستخدم (صور التليجرام) + أسئلة إضافية بنفس مستوى نماذج الاختبار (جملة فيها سياق، أو حوار A/B)
 
 ## Simple present
-Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not || Sulaiman and Fahad = شخصين (They) ← مع They نستخدم are.
-He ..... really intelligent. || is | am | are | am not || He ← مع He / She / It نستخدم is.
-The books ..... red and white. || are | is | am | am not || The books جمع (They) ← نستخدم are.
-Sara and Noof ..... friends. || are | is | am | am not || Sara and Noof = شخصين (They) ← نستخدم are.
-Badr and I ..... best friends. || are | is | am | am not || Badr and I = We ← مع We نستخدم are.
-The university ..... a good place. || is | am | are | am not || The university مفرد (It) ← نستخدم is.
-Where ..... the station? || is | am | are | am not || the station مفرد (It) ← في سؤال WH: WH + is + Subject.
-How old ..... your brother? || is | am | are | am not || your brother مفرد (He) ← How old + is + Subject.
-These books ..... very hard to understand. || are | is | am | am not || These books جمع (They) ← نستخدم are.
 Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | am | be || Saleh مفرد (He) ← نستخدم is.
 Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is || She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's).
-Children usually ..... watching cartoons. || like | likes | likeing | does like || Children جمع (They) ← الفعل يبقى بدون s: like.
-In many countries, people ..... until they are sixty-five. || work | works | working | are work || people جمع (They) ← الفعل بدون s: work.
-Betty is not very kind. She ..... help old people. || does not | do not | is not | are not || She ← النفي: doesn't / does not + الفعل الأساسي (help).
-She usually ..... a lot of time to choose her clothes. || spends | spending | spend | is spends || She ← في الإثبات نضيف s للفعل: spends.
-I always ..... my teacher's website to study English. || visit | is visit | visits | visiting || I ← الفعل بدون s: visit.
-Please ..... put your things on the teacher's table. || don't | doesn't | isn't | aren't || الأمر بالنفي: Don't + الفعل الأساسي (Please don't put…).
-..... you always wear the same uniform every day? || Do | Does | Is | Are || you ← سؤال Yes/No: Do + Subject + verb.
-Some teachers ..... much homework. || give | gives | giveing | are give || Some teachers جمع (They) ← الفعل بدون s: give.
-..... your parents let you go to bed late? || Do | Does | Is | Are || your parents جمع (They) ← Do + Subject + verb.
-How many books ..... you read in a year? || do | does | are | is || you ← WH + do + Subject: How many books do you read?
-..... your school have a big library? No, it ...... || Does / doesn't | Do / don't | Does / don't | Don't / Does || your school مفرد (It) ← Does في السؤال، والجواب No, it doesn't.
 He ..... much in class, but he gets A+ for the essays he writes. || doesn't talk | doesn't | not talk | don't talk || He ← النفي doesn't + الفعل الأساسي talk (بدون s).
 A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau. || Where do you want | Where do you wanting | Where does you wanting | Where does you want || you ← WH + do + Subject + الفعل الأساسي: Where do you want…?
 I ..... an Uber taxi at 7:00 every morning to be at work on time. || book | books | booking | is book || I ← الفعل بدون s: book.
@@ -75,11 +55,6 @@ He ..... very well, but he can write a lot of poems and songs. || doesn't sing |
 I ..... a photojournalist. I take photos for magazines like National Geographic. || am | are | is | be || I ← مع I نستخدم am: I am a photojournalist.
 
 ## Adjectives + Adverbs (a / an)
-It's ..... class. || a pretty interesting | pretty interesting | pretty a interesting | an pretty interesting || اسم مفرد (class) يبدأ بحرف ساكن ← a + Adverb + Adjective + Noun: a pretty interesting class.
-They are ...... || beautiful classes | a beautiful classes | an beautiful classes | classes beautiful || classes جمع ← ما نحط a / an، والصفة قبل الاسم: beautiful classes.
-I have ...... || smart students | a smart students | an smart students | smarts students || students جمع ← بدون a / an، والصفة ما تنجمع: smart students.
-It is ...... || a very safe school | very safe school | very a safe school | an very safe school || school اسم مفرد ← a + very + safe + school.
-This is ...... || an extremely quiet classroom | a extremely quiet classroom | extremely quiet classroom | extremely an quiet classroom || تبدأ بـ extremely (حرف علة e) ← an extremely quiet classroom.
 The ...... || building is really beautiful | building is a really beautiful | is building really beautiful | really building is beautiful || Subject + Verb be + Adverb + Adjective: The building is really beautiful (بدون a لأنه ما فيه اسم بعد الصفة).
 That is ..... idea! I've heard it's not safe to go there after dark. || a really bad | an extremely | a very | a bad really || اسم مفرد (idea) ← a + Adverb + Adjective + Noun، وأول كلمة really حرف ساكن ← a really bad.
 My teacher is kind and ...... If I don't understand my math lesson, she explains it to me again. || helpful | a helpful | a helpfuls | helpfuls || بعد Verb be صفة بدون اسم ← ما نحط a: kind and helpful. والصفة ما تنجمع.
@@ -112,12 +87,6 @@ The library is ..... during exams. There are no empty seats. || extremely crowde
 King Saud University is ..... university in Saudi Arabia. || a very famous | an very famous | very famous | a famous very || university مفرد وأول كلمة very حرف ساكن ← a very famous university.
 
 ## Have / Has
-He ..... a shower in the morning. || doesn't have | doesn't has | don't have | don't has || He ← في النفي نستخدم have دائماً: doesn't have.
-We ..... have time to play games. || don't | doesn't | are | is || We ← النفي don't + have.
-Noof ..... a car. || doesn't have | doesn't has | don't has | don't have || Noof = She ← doesn't + have (في النفي ما نقول has).
-..... you have a house? || Do | Does | Has | Are || you ← السؤال Do + you + have.
-Ahmed and Adnan ..... a big house. || have | has | are | is || Ahmed and Adnan = They ← have.
-What does he .....? || have | is | has | are || في السؤال بعد does نستخدم have: What does he have?
 Let's go to Riyadh Park. They ..... many different shops, restaurants, and movie theaters. || have | having | has | has had || They ← have.
 My sister ..... a new car. It's white and very fast. || has | have | is | haves || My sister = She ← has.
 A: ..... you have any brothers? B: Yes, I have two. || Do | Does | Are | Has || you ← السؤال Do + you + have.
@@ -148,12 +117,6 @@ A: Do you have a car? B: Yes, I ...... It's a small red car. || do | have | does
 My uncle ..... a big farm with cows and sheep. || has | have | is | haves || My uncle = He ← has.
 
 ## Subject and Object pronouns
-Jim drives ..... to work. || her | we | he | she || بعد الفعل (drives) نحط ضمير مفعول (Object) ← her.
-Look at .....! || me | she | they | he || بعد حرف الجر at نحط ضمير مفعول ← me.
-The books are heavy. I can't carry ...... || them | he | they | him || The books = They، وبعد الفعل carry نحط ضمير المفعول ← them.
-Your friends are waiting for ...... || us | they | him | he || بعد حرف الجر for نحط ضمير مفعول ← us.
-If you don't want to watch TV, please turn ..... off. || it | she | he | we || TV = it، وit نفسها في الفاعل والمفعول ← turn it off.
-I want to help ...... || you | she | he | we || بعد الفعل help نحط ضمير مفعول ← you.
 I enjoy playing computer games. ..... is a fun activity to do in my free time. || It | Those | They | These || playing computer games نشاط واحد (مفرد) ← It is (والفعل is يدل على المفرد).
 A: Did you bring the face masks with you? B: I'm sorry, I forgot ..... at home. || them | us | him | her || face masks جمع، وبعد الفعل forgot نحط ضمير مفعول ← them.
 My brother is very busy. I don't see ..... very often. || him | he | his | them || My brother = he، وبعد الفعل see نحط ضمير مفعول ← him.
@@ -193,12 +156,6 @@ Have you tasted Auntie Majda's kabsa? ..... the best cook in our family. || She'
 Where did you put the extra towels? I looked everywhere, but I can't find ...... || them | they | she | her || the extra towels جمع، وبعد الفعل find نحط ضمير مفعول ← them. (they فاعل، وshe/her للمفرد المؤنث.)
 
 ## Verbs + gerunds or infinitives
-I hope ..... the exam at the end of the course. || to pass | pass | pass to | passing || بعد hope نحط to + الفعل: hope to pass.
-I avoid ..... in fast food restaurants whenever possible. || eating | to eat | eat to | eat || بعد avoid نضيف ing للفعل: avoid eating.
-I dislike ..... in a hurry. || drinking | to drink | drink | drinks || بعد dislike نضيف ing للفعل: dislike drinking.
-I hate ..... early every day. || to get up | get up | to geting up | to gets up || بعد hate يجي to + الفعل أو الفعل + ing ← to get up (الخيارات الثانية غلط).
-She tried ..... her hair red, but it didn't suit her at all. || to dye | to dyes | dye | to dyeing || بعد try نحط to + الفعل الأساسي: tried to dye.
-I need ..... a stamp on this letter. || to put | to puting | put | to puts || بعد need نحط to + الفعل الأساسي: need to put.
 I want ..... my grandmother this weekend. She lives in Abha. || to visit | visit | visiting | to visiting || بعد want نحط to + الفعل الأساسي: want to visit.
 My brother enjoys ..... football with his friends every Friday. || playing | to play | play | plays || بعد enjoy نضيف ing للفعل: enjoys playing.
 You need ..... more water. It's very hot today. || to drink | drink | drinking | to drinking || بعد need نحط to + الفعل: need to drink.

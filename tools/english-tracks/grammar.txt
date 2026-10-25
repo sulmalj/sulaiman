@@ -4,28 +4,8 @@
 # Simple present و Have / Has نفس أسئلة الميد (نفس القاعدة ونفس المستوى) + نموذج موقع جميع المسارات.
 
 ## Simple present
-Sulaiman and Fahad ..... from Saudi Arabia. || are | is | am | am not || Sulaiman and Fahad = شخصين (They) ← مع They نستخدم are.
-He ..... really intelligent. || is | am | are | am not || He ← مع He / She / It نستخدم is.
-The books ..... red and white. || are | is | am | am not || The books جمع (They) ← نستخدم are.
-Sara and Noof ..... friends. || are | is | am | am not || Sara and Noof = شخصين (They) ← نستخدم are.
-Badr and I ..... best friends. || are | is | am | am not || Badr and I = We ← مع We نستخدم are.
-The university ..... a good place. || is | am | are | am not || The university مفرد (It) ← نستخدم is.
-Where ..... the station? || is | am | are | am not || the station مفرد (It) ← في سؤال WH: WH + is + Subject.
-How old ..... your brother? || is | am | are | am not || your brother مفرد (He) ← How old + is + Subject.
-These books ..... very hard to understand. || are | is | am | am not || These books جمع (They) ← نستخدم are.
 Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | am | be || Saleh مفرد (He) ← نستخدم is.
 Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is || She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's).
-Children usually ..... watching cartoons. || like | likes | likeing | does like || Children جمع (They) ← الفعل يبقى بدون s: like.
-In many countries, people ..... until they are sixty-five. || work | works | working | are work || people جمع (They) ← الفعل بدون s: work.
-Betty is not very kind. She ..... help old people. || does not | do not | is not | are not || She ← النفي: doesn't / does not + الفعل الأساسي (help).
-She usually ..... a lot of time to choose her clothes. || spends | spending | spend | is spends || She ← في الإثبات نضيف s للفعل: spends.
-I always ..... my teacher's website to study English. || visit | is visit | visits | visiting || I ← الفعل بدون s: visit.
-Please ..... put your things on the teacher's table. || don't | doesn't | isn't | aren't || الأمر بالنفي: Don't + الفعل الأساسي (Please don't put…).
-..... you always wear the same uniform every day? || Do | Does | Is | Are || you ← سؤال Yes/No: Do + Subject + verb.
-Some teachers ..... much homework. || give | gives | giveing | are give || Some teachers جمع (They) ← الفعل بدون s: give.
-..... your parents let you go to bed late? || Do | Does | Is | Are || your parents جمع (They) ← Do + Subject + verb.
-How many books ..... you read in a year? || do | does | are | is || you ← WH + do + Subject: How many books do you read?
-..... your school have a big library? No, it ...... || Does / doesn't | Do / don't | Does / don't | Don't / Does || your school مفرد (It) ← Does في السؤال، والجواب No, it doesn't.
 He ..... much in class, but he gets A+ for the essays he writes. || doesn't talk | doesn't | not talk | don't talk || He ← النفي doesn't + الفعل الأساسي talk (بدون s).
 A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau. || Where do you want | Where do you wanting | Where does you wanting | Where does you want || you ← WH + do + Subject + الفعل الأساسي: Where do you want…?
 I ..... an Uber taxi at 7:00 every morning to be at work on time. || book | books | booking | is book || I ← الفعل بدون s: book.
@@ -77,16 +57,6 @@ He ..... very well, but he can write a lot of poems and songs. || doesn't sing |
 I ..... a photojournalist. I take photos for magazines like National Geographic. || am | are | is | be || I ← مع I نستخدم am: I am a photojournalist.
 
 ## Simple past
-We ..... David in town a few days ago. || saw | seen | see | are see || «a few days ago» تدل على الماضي ← see فعل شاذ، ماضيه saw.
-I ..... to the cinema three times last week. || went | am went | go | am go || «last week» ماضي ← go فعل شاذ، ماضيه went.
-What ..... you ..... last weekend? || did / do | did / does | do / did | do / does || السؤال في الماضي: What + did + you + الفعل الأساسي (do).
-I ..... sleep very well last night. || didn't | don't | doesn't | am not || «last night» ماضي ← النفي: didn't + الفعل الأساسي.
-My friend and I ..... our teacher a question about the test. || asked | asking | are asked | asks || الماضي للفعل العادي نضيف ed: ask ← asked.
-She ..... a letter to her mother last night. || wrote | write | writed | writes || «last night» ماضي ← write فعل شاذ، ماضيه wrote.
-Growing up, I ..... basketball at the sports club on the weekends. My dad used to take me there. || played | play | playing | did play || «Growing up» و«used to» تدل على الماضي ← play + ed = played.
-Who ..... I forget to invite? || did | do | are | does || سؤال في الماضي: Who + did + I + الفعل الأساسي (forget).
-..... I do well on the test yesterday? || Did | Does | Am | Do || «yesterday» ماضي ← السؤال: Did + I + الفعل الأساسي.
-..... you move here from Saudi Arabia? || Did | Are | Does | Do || الانتقال صار في الماضي ← Did + you + الفعل الأساسي (move).
 I ..... to my brother's football match, so he was angry with me. || didn't go | gone | not go | doesn't go || أخوه زعل (was angry) يعني الكلام عن الماضي ← النفي: didn't + الفعل الأساسي go.
 In the 1900s, people ..... wood to make fires to stay warm. || burned | burns | burning | burn || «In the 1900s» زمن ماضي ← burn + ed = burned.
 I was very tired yesterday, so I ..... to bed at nine o'clock. || went | go | goes | going || «yesterday» ماضي ← go ماضيه went (فعل شاذ).
@@ -115,11 +85,6 @@ A: ..... your brother call you yesterday? B: Yes, he called me in the evening. |
 
 ## Should / Shouldn't
 You ...... || shouldn't smoke | should smoking | should smoke | should || التدخين شي مو زين ← shouldn't + الفعل الأساسي (smoke).
-You should ..... junk food. || stop | should stop | to stop | stoping || بعد should يجي الفعل الأساسي مباشرة بدون to وبدون ing: should stop.
-I ..... pay for this meal. You paid last time. || should | am | shouldn't | are || أنت دفعت المرة اللي فاتت، فالصح إني أنا أدفع ← should + pay.
-Those children ..... at school. || should be | shouldn't are | shouldn't be | be should || بعد should الفعل الأساسي، والأساسي لـ is / are هو be ← should be.
-What should he .....? || do | doing | does | did || What + should + Subject + الفعل الأساسي (do).
-Should he go home? Yes, ...... || he should | should he | he shouldn't | he does || الجواب المختصر بنفس الفعل: Yes, he should.
 You ..... the garbage out once it's full to avoid bad smells. || should throw | should | shouldn't | shouldn't throw || رمي الزبالة شي زين عشان ما تطلع ريحة ← should + الفعل الأساسي throw.
 You look very tired. You ..... go to bed early tonight. || should | shouldn't | should to | shoulds || النوم بدري شي زين للتعبان ← should + go.
 You ..... drink coffee before bed. It will keep you awake. || shouldn't | should | should not to | don't should || القهوة قبل النوم تسهّرك (شي مو زين) ← shouldn't + drink.
@@ -146,12 +111,6 @@ You ..... drink a lot of water in summer. || should | shouldn't | should to | sh
 A: Should I tell my parents the truth? B: Yes, you ...... || should | do | are | shoulds || الجواب المختصر: Yes, you should.
 
 ## It's + adjective + infinitive
-It's important ..... for the test. || to study | study | study to | studies || It's + صفة + to + الفعل الأساسي: It's important to study.
-It's ..... to drive fast. || dangerous | not dangerous | dangerous not | dangerousing || It's + صفة + to. والقيادة بسرعة خطيرة ← It's dangerous to drive fast.
-It's easy ..... the test. || to pass | pass | pass to | not pass || بعد الصفة يجي to + الفعل الأساسي: easy to pass.
-..... to say thank you. || It's polite | It's impolite | polite | polite It's || الترتيب: It's + صفة + to. وقول «شكراً» من الأدب ← It's polite.
-You know ..... to show the bottom of your feet in many countries. || it's not OK | it's OK to | it's OK | OK it's || النفي: It's + not + صفة + to. وإظهار باطن القدم ما يصلح في دول كثيرة ← it's not OK.
-It's normal to ..... your friends when you see them. || greet | greets | to greet | greeting || بعد to يجي الفعل الأساسي بدون إضافات: to greet.
 It's ..... new languages if you practice every day. || easy to learn | learn easy | easy learn | easy learn to || الترتيب: It's + صفة (easy) + to + الفعل (learn).
 It's ..... to eat a lot of fast food. || unhealthy | unhealthy not | to unhealthy | unhealthily || It's + صفة + to. والأكل السريع الكثير مو صحي ← It's unhealthy to eat…
 It's ..... to wear a seat belt in the car. || important | importantly | important not | to important || It's + صفة (important) + to + الفعل.
@@ -178,12 +137,6 @@ It's easy ..... lost in a big city. || to get | get | getting | gets || It's + e
 It's ..... to make mistakes when you learn a new language. || normal | normally | not normal to | to normal || الأخطاء طبيعية وقت التعلّم ← It's + normal + to + make.
 
 ## Be going to
-Sara is ..... have a baby next month. || going to | going | goes to | to going || be + going to + الفعل الأساسي: is going to have.
-..... you going to cook supper? || Are | Is | We | Am || السؤال: am / is / are + Subject + going to ← مع you نستخدم Are.
-What are you going to ..... this evening? || wear | wore | wear to | wearing || بعد going to يجي الفعل الأساسي: going to wear.
-Look at those clouds. It ...... || is going to rain | going to rain | is rain | is going rain || It + is + going to + الفعل الأساسي (rain).
-I am going to ..... Spanish next summer. || learn | will learn | learning | learn to || بعد going to الفعل الأساسي مباشرة: going to learn.
-..... this juice because it is too sweet. || I am not going to drink | I going to drink | I am not go to drink | I am not going drink || النفي: I + am + not + going to + الفعل الأساسي.
 He ..... spend three months in Canada to finish his research. || is going to | going to | is going | to going || He + is + going to + الفعل الأساسي (spend). لازم is ولازم to.
 We ..... visit our grandparents this weekend. We've already bought the tickets. || are going to | is going to | going to | are going || We + are + going to + الفعل.
 A: What ..... you going to do after graduation? B: I'm going to look for a job. || are | is | do | will || السؤال: What + are + you + going to + الفعل.
@@ -246,12 +199,6 @@ We were excited ..... were going to Disneyland. || because we | because us | bec
 My phone battery was dead, ..... I couldn't call you. || so | because | but | when || سبب (البطارية خلصت) + so + نتيجة (ما قدرت أتصل).
 
 ## Have / Has
-He ..... a shower in the morning. || doesn't have | doesn't has | don't have | don't has || He ← في النفي نستخدم have دائماً: doesn't have.
-We ..... have time to play games. || don't | doesn't | are | is || We ← النفي don't + have.
-Noof ..... a car. || doesn't have | doesn't has | don't has | don't have || Noof = She ← doesn't + have (في النفي ما نقول has).
-..... you have a house? || Do | Does | Has | Are || you ← السؤال Do + you + have.
-Ahmed and Adnan ..... a big house. || have | has | are | is || Ahmed and Adnan = They ← have.
-What does he .....? || have | is | has | are || في السؤال بعد does نستخدم have: What does he have?
 Let's go to Riyadh Park. They ..... many different shops, restaurants, and movie theaters. || have | having | has | has had || They ← have.
 My sister ..... a new car. It's white and very fast. || has | have | is | haves || My sister = She ← has.
 A: ..... you have any brothers? B: Yes, I have two. || Do | Does | Are | Has || you ← السؤال Do + you + have.
