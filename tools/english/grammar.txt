@@ -12,7 +12,7 @@ The university ..... a good place. || is | am | are | am not || The university �
 Where ..... the station? || is | am | are | am not || the station مفرد (It) ← في سؤال WH: WH + is + Subject.
 How old ..... your brother? || is | am | are | am not || your brother مفرد (He) ← How old + is + Subject.
 These books ..... very hard to understand. || are | is | am | am not || These books جمع (They) ← نستخدم are.
-Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | aren't | am || Saleh مفرد (He) ← نستخدم is.
+Saleh ..... a science teacher. He works at Kingdom School in Riyadh. || is | are | am | be || Saleh مفرد (He) ← نستخدم is.
 Look at this cake my sister made. ..... the best baker in our family. || She's | She'is | Shes' | She-is || She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's).
 Children usually ..... watching cartoons. || like | likes | likeing | does like || Children جمع (They) ← الفعل يبقى بدون s: like.
 In many countries, people ..... until they are sixty-five. || work | works | working | are work || people جمع (They) ← الفعل بدون s: work.
@@ -63,6 +63,11 @@ My grandfather ..... seventy years old, but he still walks every morning. || is 
 A: ..... your friends speak English? B: Yes, they do. They speak it very well. || Do | Does | Are | Is || your friends جمع (They) ← Do + they + verb، والجواب Yes, they do.
 My phone ..... very old. I want to buy a new one. || is | are | am | be || My phone = It ← نستخدم is.
 The baby ..... a lot at night, so her parents are always tired. || doesn't sleep | don't sleep | doesn't sleeps | isn't sleep || The baby = She ← doesn't + الفعل الأساسي sleep.
+# ── نماذج اختبار المستخدم (2026-10-25) ──
+I ..... the kids' store at Panorama Mall. It has many toys and books. || love | to love | be loving | loving || I ← في المضارع البسيط الفعل يجي بصيغته الأساسية بدون to وبدون ing: I love.
+This ..... a shoe store. People come here to buy shoes and accessories. || is | be | am | are || This (شي واحد مفرد = It) ← نستخدم is.
+He ..... from home. He goes to the office from Sunday to Thursday every week. || doesn't work | no work | don't work | not work || He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع).
+Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh. || writes | writing | write | writer || Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.
 
 ## Adjectives + Adverbs (a / an)
 It's ..... class. || a pretty interesting | pretty interesting | pretty a interesting | an pretty interesting || اسم مفرد (class) يبدأ بحرف ساكن ← a + Adverb + Adjective + Noun: a pretty interesting class.
@@ -173,6 +178,12 @@ Ahmed is very funny. Everybody likes ...... || him | he | his | them || Ahmed = 
 ..... is a beautiful city. Many tourists visit it every year. || It | They | Its | He || المدينة مفرد غير عاقل، والفاعل قبل is ← It.
 Please wait for ..... at the bus stop. We'll be there in five minutes. || us | we | our | them || بعد حرف الجر for، والمقصود (نحن) لأنه قال We'll be there ← us.
 My parents are coming tonight. I want to cook dinner for ...... || them | they | their | him || My parents = they، وبعد حرف الجر for ← them.
+# ── نماذج اختبار المستخدم (2026-10-25) ──
+My brother doesn't like running in the morning. ..... makes him tired during the day. || It | She | These | They || running in the morning شي واحد (مو شخص)، ونحتاج فاعل مفرد قبل makes ← It.
+I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood. || They're | There | There's | Their || Hussain and Tariq = They، ونحتاج فاعل + فعل be ← They're = They are. (There = هناك، Their = حقهم.)
+My brother plays football. ..... the best player on our school team. || He's | Him | His | He'd || My brother = He، ونحتاج فاعل + is ← He's = He is.
+This ice cream store has new flavors on sale. You can try ..... all before you decide what you want. || them | her | they | him || new flavors جمع، وبعد الفعل try نحط ضمير مفعول ← them.
+My mother made some cookies this afternoon. She put ..... on the kitchen table. || them | him | her | they || some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them.
 
 ## Verbs + gerunds or infinitives
 I hope ..... the exam at the end of the course. || to pass | pass | pass to | passing || بعد hope نحط to + الفعل: hope to pass.

@@ -81,8 +81,10 @@ def reading():
     out, q = [], None
     for n, l in r or []:
         if l.startswith('## '):
-            num, title = [x.strip() for x in l[3:].split('|')]
-            out.append({'n': int(num), 'title': title, 'text': [], 'qs': []}); q = None
+            num, title, *extra = [x.strip() for x in l[3:].split('|')]   # اختياري: key=N (يثبّت أرقام الأسئلة لو تغيّر الترتيب) و exam (قطعة اختبار سابق)
+            key = next((int(e[4:]) for e in extra if e.startswith('key=')), int(num))
+            out.append({'n': int(num), 'k': key, 'title': title, 'text': [], 'qs': []}); q = None
+            if 'exam' in extra: out[-1]['x'] = 1
         elif l.startswith('?? '):
             q = {'q': l[3:].strip(), 'o': []}; out[-1]['qs'].append(q)
         elif l.startswith('* ') or l.startswith('- '):
@@ -105,6 +107,8 @@ def reading():
                 if f'_{m.group(1)}_' not in para:
                     sys.exit(f'القطعة {p["n"]}: «{m.group(1)}» مو معلّمة بخط في الفقرة {m.group(2)}')
     nums = [p['n'] for p in out]
+    if len({p['k'] for p in out}) != len(out):
+        sys.exit('أرقام key مكررة في reading.txt')
     if nums != list(range(1, len(out) + 1)):
         sys.exit(f'أرقام القطع مو متسلسلة: {nums}')
     write('reading.js', 'READING', out, 'القطع (Reading) — كل قطعة مع أسئلتها')

@@ -99,8 +99,8 @@ window.GRAMMAR = [
 "o": [
 "is",
 "are",
-"aren't",
-"am"
+"am",
+"be"
 ],
 "e": "Saleh مفرد (He) ← نستخدم is."
 },
@@ -603,6 +603,46 @@ window.GRAMMAR = [
 "isn't sleep"
 ],
 "e": "The baby = She ← doesn't + الفعل الأساسي sleep."
+},
+{
+"q": "I ..... the kids' store at Panorama Mall. It has many toys and books.",
+"o": [
+"love",
+"to love",
+"be loving",
+"loving"
+],
+"e": "I ← في المضارع البسيط الفعل يجي بصيغته الأساسية بدون to وبدون ing: I love."
+},
+{
+"q": "This ..... a shoe store. People come here to buy shoes and accessories.",
+"o": [
+"is",
+"be",
+"am",
+"are"
+],
+"e": "This (شي واحد مفرد = It) ← نستخدم is."
+},
+{
+"q": "He ..... from home. He goes to the office from Sunday to Thursday every week.",
+"o": [
+"doesn't work",
+"no work",
+"don't work",
+"not work"
+],
+"e": "He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع)."
+},
+{
+"q": "Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.",
+"o": [
+"writes",
+"writing",
+"write",
+"writer"
+],
+"e": "Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes."
 }
 ]
 },
@@ -1658,6 +1698,56 @@ window.GRAMMAR = [
 "him"
 ],
 "e": "My parents = they، وبعد حرف الجر for ← them."
+},
+{
+"q": "My brother doesn't like running in the morning. ..... makes him tired during the day.",
+"o": [
+"It",
+"She",
+"These",
+"They"
+],
+"e": "running in the morning شي واحد (مو شخص)، ونحتاج فاعل مفرد قبل makes ← It."
+},
+{
+"q": "I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood.",
+"o": [
+"They're",
+"There",
+"There's",
+"Their"
+],
+"e": "Hussain and Tariq = They، ونحتاج فاعل + فعل be ← They're = They are. (There = هناك، Their = حقهم.)"
+},
+{
+"q": "My brother plays football. ..... the best player on our school team.",
+"o": [
+"He's",
+"Him",
+"His",
+"He'd"
+],
+"e": "My brother = He، ونحتاج فاعل + is ← He's = He is."
+},
+{
+"q": "This ice cream store has new flavors on sale. You can try ..... all before you decide what you want.",
+"o": [
+"them",
+"her",
+"they",
+"him"
+],
+"e": "new flavors جمع، وبعد الفعل try نحط ضمير مفعول ← them."
+},
+{
+"q": "My mother made some cookies this afternoon. She put ..... on the kitchen table.",
+"o": [
+"them",
+"him",
+"her",
+"they"
+],
+"e": "some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them."
 }
 ]
 },
