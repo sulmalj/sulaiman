@@ -2457,5 +2457,17 @@ window.VOCAB = [
 "stale"
 ],
 "x": 1
+},
+{
+"w": "Scene",
+"q": "Many police cars and ambulances were at the ..... of the accident. It made a terrible traffic jam.",
+"o": [
+"scene",
+"board",
+"menu",
+"habit"
+],
+"e": "scene هنا = مكان وقوع الحادث: «at the scene of the accident» = في موقع الحادث (ومعناها في القائمة: منظر/مشهد).",
+"x": 1
 }
 ];

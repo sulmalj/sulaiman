@@ -68,6 +68,9 @@ I ..... the kids' store at Panorama Mall. It has many toys and books. || love | 
 This ..... a shoe store. People come here to buy shoes and accessories. || is | be | am | are || This (شي واحد مفرد = It) ← نستخدم is.
 He ..... from home. He goes to the office from Sunday to Thursday every week. || doesn't work | no work | don't work | not work || He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع).
 Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh. || writes | writing | write | writer || Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.
+I ..... my room every weekend because I am very busy during the week. || clean | cleans | cleaning | cleaner || I ← في المضارع البسيط الفعل بدون s: I clean. (cleaner اسم = منظّف، وcleaning ما تجي بعد I لحالها.)
+I ..... to buy shoes from Granada Mall. It has many shoe stores. || want | wanting | to want | be wanting || I ← في المضارع البسيط الفعل بصيغته الأساسية: I want (to buy). wanting وto want وbe wanting ما تجي بعد I كفعل.
+Osama ..... every evening at 5:30 to relax, stay fit, and clear his mind. || swims | swim | swimming | swimmer || Osama = He ← في المضارع البسيط مع He / She / It نضيف s للفعل: swims. (swimmer اسم = سبّاح.)
 
 ## Adjectives + Adverbs (a / an)
 It's ..... class. || a pretty interesting | pretty interesting | pretty a interesting | an pretty interesting || اسم مفرد (class) يبدأ بحرف ساكن ← a + Adverb + Adjective + Noun: a pretty interesting class.
@@ -184,6 +187,7 @@ I asked Hussain and Tariq to join me at the gym. ..... my friends from the neigh
 My brother plays football. ..... the best player on our school team. || He's | Him | His | He'd || My brother = He، ونحتاج فاعل + is ← He's = He is.
 This ice cream store has new flavors on sale. You can try ..... all before you decide what you want. || them | her | they | him || new flavors جمع، وبعد الفعل try نحط ضمير مفعول ← them.
 My mother made some cookies this afternoon. She put ..... on the kitchen table. || them | him | her | they || some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them.
+Have you tasted Auntie Majda's kabsa? ..... the best cook in our family. || She's | Her | Hers | She'd || Auntie Majda = She، ونحتاج فاعل + is قبل the best cook ← She's = She is. (Her/Hers مو فاعل، وShe'd = She would/had.)
 
 ## Verbs + gerunds or infinitives
 I hope ..... the exam at the end of the course. || to pass | pass | pass to | passing || بعد hope نحط to + الفعل: hope to pass.

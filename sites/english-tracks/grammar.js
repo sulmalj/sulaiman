@@ -659,6 +659,39 @@ window.GRAMMAR = [
 ],
 "e": "Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.",
 "x": 1
+},
+{
+"q": "I ..... my room every weekend because I am very busy during the week.",
+"o": [
+"clean",
+"cleans",
+"cleaning",
+"cleaner"
+],
+"e": "I ← في المضارع البسيط الفعل بدون s: I clean. (cleaner اسم = منظّف، وcleaning ما تجي بعد I لحالها.)",
+"x": 1
+},
+{
+"q": "I ..... to buy shoes from Granada Mall. It has many shoe stores.",
+"o": [
+"want",
+"wanting",
+"to want",
+"be wanting"
+],
+"e": "I ← في المضارع البسيط الفعل بصيغته الأساسية: I want (to buy). wanting وto want وbe wanting ما تجي بعد I كفعل.",
+"x": 1
+},
+{
+"q": "Osama ..... every evening at 5:30 to relax, stay fit, and clear his mind.",
+"o": [
+"swims",
+"swim",
+"swimming",
+"swimmer"
+],
+"e": "Osama = He ← في المضارع البسيط مع He / She / It نضيف s للفعل: swims. (swimmer اسم = سبّاح.)",
+"x": 1
 }
 ]
 },
