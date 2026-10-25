@@ -1,0 +1,25 @@
+# أسئلة جاءت في اختبارات سابقة (من ملفات/صور المستخدم) — تطلع عليها شارة «جاء في اختبار سابق» في الموقع.
+# R <key القطعة> <أرقام الأسئلة>   |   G <نص سؤال القواعد>   |   V <نص سؤال الكلمات>
+# القطع 1–3 نفس قطع موقع الإنساني (الأسئلة الأصلية بس). القواعد والكلمات: store/english-tracks/exam-samples/samples.txt (سؤال a / an انشال مع قاعدته)
+R 1 1-9
+R 2 1-3
+R 3 1-7
+V World War I was the worst war in human ______ up to that time.
+V Rawda is very ______. She designed and decorated her sister's wedding cake all by herself!
+G My cousins and I are excited ______ are all going to try paragliding for the first time!
+V The room was decorated with ______ wallpaper with yellow flowers.
+G I ______ to my brother's football match, so he was angry with me.
+V I find studying chemistry to be easy; however, getting full marks on the exams is rather ______.
+V I didn't tell anyone because I was ______ of being punished.
+G It's ______ new languages if you practice every day.
+G He ______ spend three months in Canada to finish his research.
+G In the 1900s, people ______ wood to make fires to stay warm.
+V I hate watching football, but I ______ to enjoy it so I can spend time with my brothers.
+V I work for a large media ______. We have offices in Riyadh, Jeddah, and Dammam.
+V A great way to study vocabulary for your English exams is to ______ with flashcards.
+G You need ______ well on your exams if you want to get into college.
+V A: Do you know when Mona ______ from college? B: Yes, in June of next year.
+G Zainab ______ all the cats in her neighborhood with food she buys at the local pet store.
+G You ______ the garbage out once it's full to avoid bad smells.
+G Mazin's hands always start sweating ______ nervous, so he puts them in his pockets.
+V Samir doesn't get paid for the work he does at the Hayat Children's Camp. He's a ______.

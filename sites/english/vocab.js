@@ -2279,7 +2279,8 @@ window.VOCAB = [
 "fields",
 "hobbies",
 "uniforms"
-]
+],
+"x": 1
 },
 {
 "w": "Wear",
@@ -2289,7 +2290,8 @@ window.VOCAB = [
 "watch",
 "meet",
 "grow"
-]
+],
+"x": 1
 },
 {
 "w": "Celebrate",
@@ -2299,7 +2301,8 @@ window.VOCAB = [
 "promise",
 "transform",
 "express"
-]
+],
+"x": 1
 },
 {
 "w": "Feed",
@@ -2309,7 +2312,8 @@ window.VOCAB = [
 "interest",
 "affect",
 "measure"
-]
+],
+"x": 1
 },
 {
 "w": "Nature",
@@ -2319,7 +2323,8 @@ window.VOCAB = [
 "tradition",
 "scene",
 "memory"
-]
+],
+"x": 1
 },
 {
 "w": "Collect",
@@ -2329,7 +2334,8 @@ window.VOCAB = [
 "invites",
 "operates",
 "prepares"
-]
+],
+"x": 1
 },
 {
 "w": "Difficulty",
@@ -2339,7 +2345,8 @@ window.VOCAB = [
 "dishonesty",
 "confidence",
 "combination"
-]
+],
+"x": 1
 },
 {
 "w": "Delicious",
@@ -2349,7 +2356,8 @@ window.VOCAB = [
 "deliberate",
 "confusing",
 "spacious"
-]
+],
+"x": 1
 },
 {
 "w": "Famous",
@@ -2359,7 +2367,8 @@ window.VOCAB = [
 "poor",
 "clear",
 "unsafe"
-]
+],
+"x": 1
 },
 {
 "w": "Describe",
@@ -2369,7 +2378,8 @@ window.VOCAB = [
 "leave",
 "stream",
 "believe"
-]
+],
+"x": 1
 },
 {
 "w": "Watch",
@@ -2379,7 +2389,8 @@ window.VOCAB = [
 "entice",
 "remove",
 "knock"
-]
+],
+"x": 1
 },
 {
 "w": "Fresh",
@@ -2389,7 +2400,8 @@ window.VOCAB = [
 "heavy",
 "strong",
 "neat"
-]
+],
+"x": 1
 },
 {
 "w": "Outdoors",
@@ -2399,7 +2411,8 @@ window.VOCAB = [
 "underneath",
 "overland",
 "online"
-]
+],
+"x": 1
 },
 {
 "w": "Clothes",
@@ -2409,7 +2422,8 @@ window.VOCAB = [
 "sales",
 "goals",
 "bridges"
-]
+],
+"x": 1
 },
 {
 "w": "Reduce",
@@ -2419,7 +2433,8 @@ window.VOCAB = [
 "stir",
 "expect",
 "slam"
-]
+],
+"x": 1
 },
 {
 "w": "Strength",
@@ -2429,7 +2444,8 @@ window.VOCAB = [
 "blocks",
 "events",
 "controls"
-]
+],
+"x": 1
 },
 {
 "w": "Modern",
@@ -2439,6 +2455,7 @@ window.VOCAB = [
 "polite",
 "crowded",
 "stale"
-]
+],
+"x": 1
 }
 ];

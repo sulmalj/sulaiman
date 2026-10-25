@@ -79,7 +79,8 @@ window.VOCAB = [
 "delivers",
 "promotes",
 "requires"
-]
+],
+"x": 1
 },
 {
 "w": "Interview",
@@ -149,7 +150,8 @@ window.VOCAB = [
 "success",
 "career",
 "routine"
-]
+],
+"x": 1
 },
 {
 "w": "Creative",
@@ -421,7 +423,8 @@ window.VOCAB = [
 "ancient",
 "basic",
 "inferior"
-]
+],
+"x": 1
 },
 {
 "w": "Upset",
@@ -451,7 +454,8 @@ window.VOCAB = [
 "social",
 "natural",
 "hungry"
-]
+],
+"x": 1
 },
 {
 "w": "Calm",
@@ -601,7 +605,8 @@ window.VOCAB = [
 "optimistic",
 "hopeless",
 "confused"
-]
+],
+"x": 1
 },
 {
 "w": "Understand",
@@ -691,7 +696,8 @@ window.VOCAB = [
 "admire",
 "control",
 "compete"
-]
+],
+"x": 1
 },
 {
 "w": "Prevent",
@@ -941,7 +947,8 @@ window.VOCAB = [
 "forget",
 "repair",
 "destroy"
-]
+],
+"x": 1
 },
 {
 "w": "Repeat",
@@ -1111,7 +1118,8 @@ window.VOCAB = [
 "active",
 "nervous",
 "tricky"
-]
+],
+"x": 1
 },
 {
 "w": "Repair",
@@ -1151,7 +1159,8 @@ window.VOCAB = [
 "stranger",
 "tourist",
 "foreigner"
-]
+],
+"x": 1
 },
 {
 "w": "Attitude",
@@ -1342,7 +1351,8 @@ window.VOCAB = [
 "weight",
 "level",
 "mistake"
-]
+],
+"x": 1
 },
 {
 "w": "Level",

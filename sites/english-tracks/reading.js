@@ -19,7 +19,8 @@ window.READING = [
 "boring idea",
 "great idea"
 ],
-"e": "الفقرة 3 آخر جملة: «Simple ideas like this can make a big difference» ← الكاتب يعتبر فكرة النكت فكرة بسيطة (simple idea)."
+"e": "الفقرة 3 آخر جملة: «Simple ideas like this can make a big difference» ← الكاتب يعتبر فكرة النكت فكرة بسيطة (simple idea).",
+"x": 1
 },
 {
 "q": "People laugh the most when they're ______.",
@@ -29,7 +30,8 @@ window.READING = [
 "watching funny videos",
 "not in pain or at school"
 ],
-"e": "الفقرة 2: «people laugh the most when they're around other people»."
+"e": "الفقرة 2: «people laugh the most when they're around other people».",
+"x": 1
 },
 {
 "q": "Laughter helps people ______ their pain.",
@@ -39,7 +41,8 @@ window.READING = [
 "explain",
 "learn about"
 ],
-"e": "الفقرة 1: «Laughter also helps people forget about their pain»."
+"e": "الفقرة 1: «Laughter also helps people forget about their pain».",
+"x": 1
 },
 {
 "q": "Why does the writer think professors and teachers should try to make students laugh?",
@@ -49,7 +52,8 @@ window.READING = [
 "Professors rarely make great efforts.",
 "Classes are usually boring."
 ],
-"e": "الفقرة 3: الطلاب ضحكوا و«They also remembered the lessons more» ← يتذكرون الدروس أكثر."
+"e": "الفقرة 3: الطلاب ضحكوا و«They also remembered the lessons more» ← يتذكرون الدروس أكثر.",
+"x": 1
 },
 {
 "q": "What does the underlined word \"facilitates\" in paragraph 1 mean?",
@@ -59,7 +63,8 @@ window.READING = [
 "stops",
 "slows down"
 ],
-"e": "facilitates learning = يسهّل التعلّم ويساعد عليه ← helps."
+"e": "facilitates learning = يسهّل التعلّم ويساعد عليه ← helps.",
+"x": 1
 },
 {
 "q": "What does the underlined word \"prescribe\" in paragraph 2 mean?",
@@ -69,7 +74,8 @@ window.READING = [
 "watch",
 "use"
 ],
-"e": "«doctors prescribe drugs to patients» = الدكتور يعطي (يصرف) الدواء للمريض ← give."
+"e": "«doctors prescribe drugs to patients» = الدكتور يعطي (يصرف) الدواء للمريض ← give.",
+"x": 1
 },
 {
 "q": "What does the underlined word \"They\" in paragraph 2 refer to?",
@@ -79,7 +85,8 @@ window.READING = [
 "hospitals",
 "patients"
 ],
-"e": "الجملة قبلها: «hospitals can tell visitors how helpful laughter is. They should try…» ← They = الزوار (visitors)."
+"e": "الجملة قبلها: «hospitals can tell visitors how helpful laughter is. They should try…» ← They = الزوار (visitors).",
+"x": 1
 },
 {
 "q": "What does the underlined word \"They\" in paragraph 3 refer to?",
@@ -89,7 +96,8 @@ window.READING = [
 "The jokes",
 "The lessons"
 ],
-"e": "الجملة قبلها: «his students still laughed. They also remembered…» ← They = الطلاب."
+"e": "الجملة قبلها: «his students still laughed. They also remembered…» ← They = الطلاب.",
+"x": 1
 },
 {
 "q": "What is the best title for the passage?",
@@ -99,7 +107,8 @@ window.READING = [
 "Students and laughter",
 "The main reasons of laughter"
 ],
-"e": "الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر."
+"e": "الفقرة 1: «there are two areas where we should try to help people laugh more: hospitals and schools» ← مكانين يحتاجون ضحك أكثر.",
+"x": 1
 },
 {
 "q": "According to paragraph 1, students who laugh more ______.",
@@ -132,7 +141,8 @@ window.READING = [
 "10 to 20 minutes",
 "More than two hours"
 ],
-"e": "الفقرة 2: «In most countries, workers need 30 to 60 minutes to get to work»."
+"e": "الفقرة 2: «In most countries, workers need 30 to 60 minutes to get to work».",
+"x": 1
 },
 {
 "q": "Workers who take online meditation classes ______.",
@@ -142,7 +152,8 @@ window.READING = [
 "go to the office every day",
 "need more time to get to work"
 ],
-"e": "الفقرة 3: «Workers can do something quiet together that helps them improve their attention»."
+"e": "الفقرة 3: «Workers can do something quiet together that helps them improve their attention».",
+"x": 1
 },
 {
 "q": "In paragraph 2, why does the writer mention not needing to provide places for workers to relax?",
@@ -152,7 +163,8 @@ window.READING = [
 "To explain why workers feel stressed",
 "To show that offices are not safe"
 ],
-"e": "الفقرة 2 تتكلم عن توفير المال: «For employers, it saves money… They also don't need to… provide places like game rooms» ← المثال يوضّح كيف يوفّر صاحب العمل."
+"e": "الفقرة 2 تتكلم عن توفير المال: «For employers, it saves money… They also don't need to… provide places like game rooms» ← المثال يوضّح كيف يوفّر صاحب العمل.",
+"x": 1
 },
 {
 "q": "What do the underlined words \"heading to\" in paragraph 1 mean?",
@@ -246,7 +258,8 @@ window.READING = [
 "interesting",
 "relaxing"
 ],
-"e": "الفقرة 1: «The stress of modern jobs can make it challenging for employees to focus»."
+"e": "الفقرة 1: «The stress of modern jobs can make it challenging for employees to focus».",
+"x": 1
 },
 {
 "q": "Some employees don't like meditation classes because the classes ______.",
@@ -256,7 +269,8 @@ window.READING = [
 "take place during lunch",
 "make them miss work"
 ],
-"e": "الفقرة 2: «meditation doesn't support them at all and adds to their stress»."
+"e": "الفقرة 2: «meditation doesn't support them at all and adds to their stress».",
+"x": 1
 },
 {
 "q": "The writer says that carefully planned solutions feel like ______ for employees.",
@@ -266,7 +280,8 @@ window.READING = [
 "more rest",
 "more fun"
 ],
-"e": "الفقرة 3: «Carefully planned solutions can feel like more work for employees»."
+"e": "الفقرة 3: «Carefully planned solutions can feel like more work for employees».",
+"x": 1
 },
 {
 "q": "The writer gives an example to show how ______.",
@@ -276,7 +291,8 @@ window.READING = [
 "building a game room can be better than trying cakes",
 "planning a party can be better than trying cakes"
 ],
-"e": "الفقرة 4: بدل بناء غرفة ألعاب (building a game room)، المدير يقول «Let's all go do it right now!» ويروحون يجربون الكيك ← تجربة الكيك أحسن من بناء غرفة ألعاب."
+"e": "الفقرة 4: بدل بناء غرفة ألعاب (building a game room)، المدير يقول «Let's all go do it right now!» ويروحون يجربون الكيك ← تجربة الكيك أحسن من بناء غرفة ألعاب.",
+"x": 1
 },
 {
 "q": "Which idea for reducing stress does the writer NOT mention?",
@@ -286,7 +302,8 @@ window.READING = [
 "buying lunches",
 "buying gifts"
 ],
-"e": "الفقرة 2 ذكرت plants و lunches، والفقرة 4 ذكرت gifts. أما الكتب (books) ما انذكرت."
+"e": "الفقرة 2 ذكرت plants و lunches، والفقرة 4 ذكرت gifts. أما الكتب (books) ما انذكرت.",
+"x": 1
 },
 {
 "q": "What do the underlined words \"give a boost\" in paragraph 2 mean?",
@@ -296,7 +313,8 @@ window.READING = [
 "entertain",
 "stop"
 ],
-"e": "«they don't give a boost to everyone» = ما تساعد الكل ← help."
+"e": "«they don't give a boost to everyone» = ما تساعد الكل ← help.",
+"x": 1
 },
 {
 "q": "What does the underlined word \"spontaneously\" in paragraph 3 mean?",
@@ -306,7 +324,8 @@ window.READING = [
 "with careful thinking",
 "with a lot of work"
 ],
-"e": "الفقرة 3: الحلول «spontaneously» عكس «Carefully planned»، يعني تصير فجأة «in the moment» ← without planning."
+"e": "الفقرة 3: الحلول «spontaneously» عكس «Carefully planned»، يعني تصير فجأة «in the moment» ← without planning.",
+"x": 1
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 2 refer to?",

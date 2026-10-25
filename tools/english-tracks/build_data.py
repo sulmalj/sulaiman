@@ -28,6 +28,38 @@ def opts(s, where):
     return o
 
 
+import re
+def _norm(s):
+    return re.sub(r'\s+', ' ', re.sub(r'[._…]{3,}|_+', '___', s)).strip().lower().replace('’', "'")
+
+
+def load_past():
+    """past_exam.txt: أسئلة جاءت في اختبارات سابقة ← x=1 (شارة «جاء في اختبار سابق» في الموقع)"""
+    p = os.path.join(HERE, 'past_exam.txt'); out = {'R': {}, 'G': {}, 'V': {}}
+    if not os.path.exists(p):
+        return out
+    for n, l in enumerate(open(p, encoding='utf-8'), 1):
+        l = l.strip()
+        if not l or l.startswith('#'): continue
+        kind, rest = l.split(' ', 1)
+        if kind == 'R':
+            key, nums = rest.split()
+            for part in nums.split(','):
+                a, _, b = part.partition('-')
+                for i in range(int(a), int(b or a) + 1): out['R'][(int(key), i)] = 0
+        else:
+            out[kind][_norm(rest)] = 0
+    return out
+
+
+PAST = load_past()
+
+
+def mark_past(kind, k, item):
+    if k in PAST[kind]:
+        PAST[kind][k] += 1; item['x'] = 1
+
+
 def write(name, var, data, note):
     with open(os.path.join(SITE, name), 'w', encoding='utf-8') as f:
         f.write(f'/* {note} — ملف مولّد بالسكربت tools/english/build_data.py (لا تعدّله يدوياً)\n'
@@ -52,6 +84,7 @@ def vocab():
         item = {'w': w, 'q': q, 'o': opts(o, f'vocabulary.txt:{n}')}
         if len(parts) == 4:   # تنويه يطلع بعد الإجابة (مثل الكلمة اللي لها معنيين)
             item['e'] = parts[3]
+        mark_past('V', _norm(q), item)
         out.append(item)
     missing = [w for w in words if w not in {x['w'] for x in out}]
     if missing:
@@ -72,6 +105,7 @@ def grammar():
                 sys.exit(f'grammar.txt:{n}: لازم: السؤال || الخيارات || الشرح')
             q, o, e = parts
             out[-1]['qs'].append({'q': q, 'o': opts(o, f'grammar.txt:{n}'), 'e': e})
+            mark_past('G', _norm(q), out[-1]['qs'][-1])
     write('grammar.js', 'GRAMMAR', out, 'أسئلة القواعد (Grammar) مقسمة حسب القاعدة')
 
 
@@ -106,6 +140,8 @@ def reading():
                 para = next((t for t in p['text'] if t.startswith(m.group(2) + '.')), '')
                 if f'_{m.group(1)}_' not in para:
                     sys.exit(f'القطعة {p["n"]}: «{m.group(1)}» مو معلّمة بخط في الفقرة {m.group(2)}')
+    for p in out:
+        for i, qq in enumerate(p['qs'], 1): mark_past('R', (p['k'], i), qq)
     nums = [p['n'] for p in out]
     if len({p['k'] for p in out}) != len(out):
         sys.exit('أرقام key مكررة في reading.txt')
@@ -116,3 +152,7 @@ def reading():
 
 if __name__ == '__main__':
     vocab(); grammar(); reading()
+    bad = [(k, q) for k in PAST for q, c in PAST[k].items() if c != 1]
+    if bad:
+        sys.exit(f'past_exam.txt: أسئلة ما انلقت (أو انلقت أكثر من مرة): {bad}')
+    print('اختبارات سابقة:', {k: len(v) for k, v in PAST.items()})

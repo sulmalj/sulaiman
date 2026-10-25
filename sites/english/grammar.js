@@ -102,7 +102,8 @@ window.GRAMMAR = [
 "am",
 "be"
 ],
-"e": "Saleh مفرد (He) ← نستخدم is."
+"e": "Saleh مفرد (He) ← نستخدم is.",
+"x": 1
 },
 {
 "q": "Look at this cake my sister made. ..... the best baker in our family.",
@@ -112,7 +113,8 @@ window.GRAMMAR = [
 "Shes'",
 "She-is"
 ],
-"e": "She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's)."
+"e": "She's اختصار She is، والفاصلة العلوية مكان حرف i المحذوف (She + 's).",
+"x": 1
 },
 {
 "q": "Children usually ..... watching cartoons.",
@@ -232,7 +234,8 @@ window.GRAMMAR = [
 "not talk",
 "don't talk"
 ],
-"e": "He ← النفي doesn't + الفعل الأساسي talk (بدون s)."
+"e": "He ← النفي doesn't + الفعل الأساسي talk (بدون s).",
+"x": 1
 },
 {
 "q": "A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau.",
@@ -242,7 +245,8 @@ window.GRAMMAR = [
 "Where does you wanting",
 "Where does you want"
 ],
-"e": "you ← WH + do + Subject + الفعل الأساسي: Where do you want…?"
+"e": "you ← WH + do + Subject + الفعل الأساسي: Where do you want…?",
+"x": 1
 },
 {
 "q": "I ..... an Uber taxi at 7:00 every morning to be at work on time.",
@@ -252,7 +256,8 @@ window.GRAMMAR = [
 "booking",
 "is book"
 ],
-"e": "I ← الفعل بدون s: book."
+"e": "I ← الفعل بدون s: book.",
+"x": 1
 },
 {
 "q": "My brother ..... a doctor. He works at King Faisal Hospital in Riyadh.",
@@ -612,7 +617,8 @@ window.GRAMMAR = [
 "be loving",
 "loving"
 ],
-"e": "I ← في المضارع البسيط الفعل يجي بصيغته الأساسية بدون to وبدون ing: I love."
+"e": "I ← في المضارع البسيط الفعل يجي بصيغته الأساسية بدون to وبدون ing: I love.",
+"x": 1
 },
 {
 "q": "This ..... a shoe store. People come here to buy shoes and accessories.",
@@ -622,7 +628,8 @@ window.GRAMMAR = [
 "am",
 "are"
 ],
-"e": "This (شي واحد مفرد = It) ← نستخدم is."
+"e": "This (شي واحد مفرد = It) ← نستخدم is.",
+"x": 1
 },
 {
 "q": "He ..... from home. He goes to the office from Sunday to Thursday every week.",
@@ -632,7 +639,8 @@ window.GRAMMAR = [
 "don't work",
 "not work"
 ],
-"e": "He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع)."
+"e": "He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع).",
+"x": 1
 },
 {
 "q": "Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.",
@@ -642,7 +650,8 @@ window.GRAMMAR = [
 "write",
 "writer"
 ],
-"e": "Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes."
+"e": "Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.",
+"x": 1
 }
 ]
 },
@@ -717,7 +726,8 @@ window.GRAMMAR = [
 "a very",
 "a bad really"
 ],
-"e": "اسم مفرد (idea) ← a + Adverb + Adjective + Noun، وأول كلمة really حرف ساكن ← a really bad."
+"e": "اسم مفرد (idea) ← a + Adverb + Adjective + Noun، وأول كلمة really حرف ساكن ← a really bad.",
+"x": 1
 },
 {
 "q": "My teacher is kind and ...... If I don't understand my math lesson, she explains it to me again.",
@@ -727,7 +737,8 @@ window.GRAMMAR = [
 "a helpfuls",
 "helpfuls"
 ],
-"e": "بعد Verb be صفة بدون اسم ← ما نحط a: kind and helpful. والصفة ما تنجمع."
+"e": "بعد Verb be صفة بدون اسم ← ما نحط a: kind and helpful. والصفة ما تنجمع.",
+"x": 1
 },
 {
 "q": "We stayed at ..... hotel. The rooms were big and the staff were very kind.",
@@ -1072,7 +1083,8 @@ window.GRAMMAR = [
 "has",
 "has had"
 ],
-"e": "They ← have."
+"e": "They ← have.",
+"x": 1
 },
 {
 "q": "My sister ..... a new car. It's white and very fast.",
@@ -1417,7 +1429,8 @@ window.GRAMMAR = [
 "They",
 "These"
 ],
-"e": "playing computer games نشاط واحد (مفرد) ← It is (والفعل is يدل على المفرد)."
+"e": "playing computer games نشاط واحد (مفرد) ← It is (والفعل is يدل على المفرد).",
+"x": 1
 },
 {
 "q": "A: Did you bring the face masks with you? B: I'm sorry, I forgot ..... at home.",
@@ -1427,7 +1440,8 @@ window.GRAMMAR = [
 "him",
 "her"
 ],
-"e": "face masks جمع، وبعد الفعل forgot نحط ضمير مفعول ← them."
+"e": "face masks جمع، وبعد الفعل forgot نحط ضمير مفعول ← them.",
+"x": 1
 },
 {
 "q": "My brother is very busy. I don't see ..... very often.",
@@ -1707,7 +1721,8 @@ window.GRAMMAR = [
 "These",
 "They"
 ],
-"e": "running in the morning شي واحد (مو شخص)، ونحتاج فاعل مفرد قبل makes ← It."
+"e": "running in the morning شي واحد (مو شخص)، ونحتاج فاعل مفرد قبل makes ← It.",
+"x": 1
 },
 {
 "q": "I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood.",
@@ -1717,7 +1732,8 @@ window.GRAMMAR = [
 "There's",
 "Their"
 ],
-"e": "Hussain and Tariq = They، ونحتاج فاعل + فعل be ← They're = They are. (There = هناك، Their = حقهم.)"
+"e": "Hussain and Tariq = They، ونحتاج فاعل + فعل be ← They're = They are. (There = هناك، Their = حقهم.)",
+"x": 1
 },
 {
 "q": "My brother plays football. ..... the best player on our school team.",
@@ -1727,7 +1743,8 @@ window.GRAMMAR = [
 "His",
 "He'd"
 ],
-"e": "My brother = He، ونحتاج فاعل + is ← He's = He is."
+"e": "My brother = He، ونحتاج فاعل + is ← He's = He is.",
+"x": 1
 },
 {
 "q": "This ice cream store has new flavors on sale. You can try ..... all before you decide what you want.",
@@ -1737,7 +1754,8 @@ window.GRAMMAR = [
 "they",
 "him"
 ],
-"e": "new flavors جمع، وبعد الفعل try نحط ضمير مفعول ← them."
+"e": "new flavors جمع، وبعد الفعل try نحط ضمير مفعول ← them.",
+"x": 1
 },
 {
 "q": "My mother made some cookies this afternoon. She put ..... on the kitchen table.",
@@ -1747,7 +1765,8 @@ window.GRAMMAR = [
 "her",
 "they"
 ],
-"e": "some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them."
+"e": "some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them.",
+"x": 1
 }
 ]
 },

@@ -1,0 +1,46 @@
+# أسئلة جاءت في اختبارات سابقة (من ملفات/صور المستخدم) — تطلع عليها شارة «جاء في اختبار سابق» في الموقع.
+# R <key القطعة> <أرقام الأسئلة>   |   G <نص سؤال القواعد>   |   V <نص سؤال الكلمات>   (الفراغ ..... أو ___ نفس الشي)
+# القطع: Laughter (1–9 أصلية، 10 مكمّلة)، Working From Home (1–3)، Stress at Work (1–7)، Apples (كلها) — store/english/reading-sample-*.pdf و exam-samples-2
+R 1 1-9
+R 2 1-3
+R 3 1-7
+R 26 1-10
+# قواعد: صور التليجرام (2026-10-14)
+G Look at this cake my sister made. ..... the best baker in our family.
+G Saleh ..... a science teacher. He works at Kingdom School in Riyadh.
+G I enjoy playing computer games. ..... is a fun activity to do in my free time.
+G That is ..... idea! I've heard it's not safe to go there after dark.
+G A: Did you bring the face masks with you? B: I'm sorry, I forgot ..... at home.
+G My teacher is kind and ...... If I don't understand my math lesson, she explains it to me again.
+G He ..... much in class, but he gets A+ for the essays he writes.
+G Let's go to Riyadh Park. They ..... many different shops, restaurants, and movie theaters.
+G A: ..... to go tonight? B: Let's go to an art gallery first and then have dinner at Le Chateau.
+G I ..... an Uber taxi at 7:00 every morning to be at work on time.
+# قواعد: store/english/exam-samples-2/batch2-grammar.txt (2026-10-25)
+G My brother doesn't like running in the morning. ..... makes him tired during the day.
+G I ..... the kids' store at Panorama Mall. It has many toys and books.
+G This ..... a shoe store. People come here to buy shoes and accessories.
+G He ..... from home. He goes to the office from Sunday to Thursday every week.
+G I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood.
+G My brother plays football. ..... the best player on our school team.
+G Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.
+G This ice cream store has new flavors on sale. You can try ..... all before you decide what you want.
+G My mother made some cookies this afternoon. She put ..... on the kitchen table.
+# كلمات: صور التليجرام + store/english/exam-samples-2/batch3-vocab.txt
+V I don't know what to do for my art project. Can you give me some .....?
+V In the summer, when the weather gets hot, I ..... only cotton shirts.
+V You finally got the promotion that you worked so hard for. How do you want to .....?
+V That's a lot of food! It can easily ..... twenty people.
+V I enjoy going to the park because it has beautiful flowers and trees. I love being in ......
+V My sister ..... shoes. She has 15 pairs of them.
+V He has ..... reading. It takes him a long time to read just a few words.
+V I drank a ..... mango smoothie after practice, which helped me cool down.
+V Have you ever met a/an ..... football player in real life, like Mohamed Salah or Cristiano Ronaldo?
+V I don't have a picture of my school, but I can ..... it to you. It's a tall yellow building.
+V My brother loves to ..... science videos on YouTube. He wants to start his own channel one day.
+V I think food tastes better when I cook with ..... vegetables from my garden.
+V I like this weather because it's perfect for a family get together ..... like a picnic or a barbecue.
+V These days, many people buy their ..... and other items from online stores instead of going to the mall.
+V I think I need to ..... the time I am on the computer. The screen hurts my eyes, and I am having trouble sleeping.
+V One of his ..... is that he has a good attitude no matter what happens in his life.
+V I need to move soon. I'm looking for a new furnished home with ..... appliances.

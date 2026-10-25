@@ -612,7 +612,8 @@ window.GRAMMAR = [
 "feed",
 "feeding"
 ],
-"e": "Zainab = She ← في الإثبات نضيف s للفعل: feeds."
+"e": "Zainab = She ← في الإثبات نضيف s للفعل: feeds.",
+"x": 1
 }
 ]
 },
@@ -727,7 +728,8 @@ window.GRAMMAR = [
 "not go",
 "doesn't go"
 ],
-"e": "أخوه زعل (was angry) يعني الكلام عن الماضي ← النفي: didn't + الفعل الأساسي go."
+"e": "أخوه زعل (was angry) يعني الكلام عن الماضي ← النفي: didn't + الفعل الأساسي go.",
+"x": 1
 },
 {
 "q": "In the 1900s, people ..... wood to make fires to stay warm.",
@@ -737,7 +739,8 @@ window.GRAMMAR = [
 "burning",
 "burn"
 ],
-"e": "«In the 1900s» زمن ماضي ← burn + ed = burned."
+"e": "«In the 1900s» زمن ماضي ← burn + ed = burned.",
+"x": 1
 },
 {
 "q": "I was very tired yesterday, so I ..... to bed at nine o'clock.",
@@ -1042,7 +1045,8 @@ window.GRAMMAR = [
 "shouldn't",
 "shouldn't throw"
 ],
-"e": "رمي الزبالة شي زين عشان ما تطلع ريحة ← should + الفعل الأساسي throw."
+"e": "رمي الزبالة شي زين عشان ما تطلع ريحة ← should + الفعل الأساسي throw.",
+"x": 1
 },
 {
 "q": "You look very tired. You ..... go to bed early tonight.",
@@ -1347,7 +1351,8 @@ window.GRAMMAR = [
 "easy learn",
 "easy learn to"
 ],
-"e": "الترتيب: It's + صفة (easy) + to + الفعل (learn)."
+"e": "الترتيب: It's + صفة (easy) + to + الفعل (learn).",
+"x": 1
 },
 {
 "q": "It's ..... to eat a lot of fast food.",
@@ -1652,7 +1657,8 @@ window.GRAMMAR = [
 "is going",
 "to going"
 ],
-"e": "He + is + going to + الفعل الأساسي (spend). لازم is ولازم to."
+"e": "He + is + going to + الفعل الأساسي (spend). لازم is ولازم to.",
+"x": 1
 },
 {
 "q": "We ..... visit our grandparents this weekend. We've already bought the tickets.",
@@ -1897,7 +1903,8 @@ window.GRAMMAR = [
 "because us",
 "because them"
 ],
-"e": "بعد because جملة كاملة تبدأ بفاعل (Subject)، والفاعل هنا «My cousins and I» = we ← because we."
+"e": "بعد because جملة كاملة تبدأ بفاعل (Subject)، والفاعل هنا «My cousins and I» = we ← because we.",
+"x": 1
 },
 {
 "q": "Mazin's hands always start sweating ..... nervous, so he puts them in his pockets.",
@@ -1907,7 +1914,8 @@ window.GRAMMAR = [
 "when he",
 "when is"
 ],
-"e": "when + جملة عادية بترتيب الخبر: Subject + Verb ← when he is (مو when is he)."
+"e": "when + جملة عادية بترتيب الخبر: Subject + Verb ← when he is (مو when is he).",
+"x": 1
 },
 {
 "q": "Sara did not go to school ..... she was sick.",
@@ -2587,7 +2595,8 @@ window.GRAMMAR = [
 "doing",
 "do"
 ],
-"e": "بعد need يجي to + الفعل الأساسي: need to do."
+"e": "بعد need يجي to + الفعل الأساسي: need to do.",
+"x": 1
 },
 {
 "q": "I like ..... people. That's why I want to be a nurse.",
