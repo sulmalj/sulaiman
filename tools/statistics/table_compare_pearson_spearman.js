@@ -23,14 +23,17 @@ ${R.map(([a,b,c])=>`<tr><th class="h">${a}</th><td>${b}</td><td>${c}</td></tr>`)
 const css=`@font-face{font-family:Rx;src:url(file://${FONTS}/Readex-500.ttf)}@font-face{font-family:Rx7;src:url(file://${FONTS}/Readex-700.ttf)}
 html,body{margin:0;background:transparent}#w{display:inline-block;padding:10px}
 .katex{color:${BR};direction:ltr;unicode-bidi:isolate;font-size:1.05em}
-table{direction:rtl;border-collapse:separate;border-spacing:0;font:25px/1.6 Rx;color:${BR};border:3px solid ${BR};border-radius:16px;overflow:hidden;background:#fff}
-td,th{padding:14px 20px;text-align:center;vertical-align:middle;border-left:2px solid ${LINE};border-bottom:2px solid ${LINE};font-weight:normal}
+table{direction:rtl;border-collapse:separate;border-spacing:0;font:34px/1.6 Rx;color:${BR};border:3px solid ${BR};border-radius:16px;overflow:hidden;background:#fff}
+td,th{padding:var(--pv,26px) 22px;text-align:center;vertical-align:middle;border-left:2px solid ${LINE};border-bottom:2px solid ${LINE};font-weight:normal}
 tr>*:last-child{border-left:none} tr:last-child>*{border-bottom:none}
-tr:first-child th{background:${HEAD};font:27px Rx7;padding:18px 20px}
-th.h{background:${HEAD};font-family:Rx7;width:250px}
-td{width:470px;text-wrap:balance}th.h{text-wrap:balance}`;
-(async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({deviceScaleFactor:3});
+tr:first-child th{background:${HEAD};font:36px Rx7;padding:30px 20px}
+th.h{background:${HEAD};font-family:Rx7;width:250px;font-size:35px}
+td{width:520px;text-wrap:balance}th.h{text-wrap:balance}`;
+(async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({deviceScaleFactor:3,viewport:{width:2400,height:1400}});
 const f=`${OUT}/_tc.html`; fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${table}</div></body></html>`);
 await p.goto('file://'+f); await p.evaluate(()=>document.fonts.ready);
+ for(let i=0;i<30;i++){const {w,h}=await p.evaluate(()=>{const r=document.querySelector('table').getBoundingClientRect();return {w:r.width,h:r.height}});
+  const need=w*Math.SQRT2-h; if(Math.abs(need)<4) break;
+  await p.evaluate(d=>{const pv=parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pv'))||26;document.documentElement.style.setProperty('--pv',Math.max(10,pv+d/26)+'px')},need);}
 await (await p.$('#w')).screenshot({path:`${OUT}/جدول المقارنة بين بيرسون وسبيرمان.png`,omitBackground:true});
 fs.unlinkSync(f); await b.close();})();
