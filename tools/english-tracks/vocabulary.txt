@@ -1,169 +1,169 @@
 # أسئلة الكلمات (جميع المسارات باستثناء الإنساني) — سؤال لكل كلمة من store/english-tracks/vocabulary-list.txt
 # الصيغة: الكلمة (من القائمة) || الجملة وفيها ..... || الإجابة الصحيحة | خطأ | خطأ | خطأ [|| تنويه يطلع بعد الإجابة — اختياري]
 # الكلمات اللي لها نموذج من اختبار المستخدم: سؤالها هو النموذج نفسه (Graduate, Company, Tough, Afraid, Talented, Pretend, Practice, Pretty, Volunteer, History)
-Advertising || The company spends a lot of money on ....., so you can see its ads on TV and social media every day. || advertising | requirement | pollution | treatment
-Application || If you want this job, you must fill in an ..... form and send it with your resume. || application | attitude | emotion | insect
-Assistant || The manager is very busy, so his ..... answers the phone and organizes his meetings. || assistant | consumer | tourist | athlete
-Basic || This English course is for beginners. It teaches ..... words like hello, thank you and goodbye. || basic | ancient | complex | physical
-Career || My brother wants a ..... in medicine. He hopes to work as a doctor for the rest of his life. || career | crowd | survey | section
-Degree || After four years at university, she got a ..... in computer science. || degree | rate | trend | weight
-Employee || The company has more than 500 ....., and they all work in the same building. || employees | customers | tourists | insects
+Advertising || The company spends millions on ..... every year. You can see its ads on TV and Snapchat. || advertising | pollution | gardening | geography
+Application || I want to work at this bank. First, I need to fill in an ..... online. || application | emotion | orchestra | umbrella
+Assistant || The manager is too busy to answer calls. His ..... organizes his meetings and replies to emails. || assistant | tourist | landlord | passenger
+Basic || This English course is for beginners. It only teaches ..... words like hello and thank you. || basic | talented | fragile | rusty
+Career || My brother wants a long ..... in medicine. He hopes to work as a doctor all his life. || career | crowd | survey | puzzle
+Degree || After four years of hard study, my sister got a ..... in computer science from King Saud University. || degree | trend | pillow | ladder
+Employee || Our company is growing fast. It now has more than 500 ..... working in three offices. || employees | tourists | athletes | pebbles
 Graduate || A: Do you know when Mona ..... from college? B: Yes, in June of next year. || graduates | delivers | promotes | requires
-Interview || I have a job ..... tomorrow at 10 a.m. The manager will ask me some questions about my experience. || interview | debate | survey | bargain
-Major || A: What is your .....? B: I'm studying business at King Saud University. || major | career | routine | section
-Manager || If you have a problem with your order, please talk to the ..... of the restaurant. || manager | tourist | athlete | insect
-Organized || Sara is very ....., she always plans her day and keeps her desk neat. || organized | confused | upset | nervous
-Requirement || Speaking English well is a ..... for this job. You can't get it without good English. || requirement | reaction | treatment | trend
-Resume || Before you apply for a job, you should write a ..... that shows your education and work experience. || resume | survey | debate | routine
+Interview || I have a job ..... tomorrow morning. The manager will ask me questions about my experience. || interview | bargain | blanket | recipe
+Major || My ..... at university is business. I'm going to graduate next year and work in a bank. || major | routine | furniture | neighbour
+Manager || There is a problem with my order. Can I speak to the ..... of this restaurant, please? || manager | tourist | athlete | cushion
+Organized || Sara is very ...... She plans her day carefully and always keeps her desk clean and tidy. || organized | confused | hungry | jealous
+Requirement || Good English is a ..... for this job. The company won't accept anyone without it. || requirement | reaction | disaster | souvenir
+Resume || Before you apply for the job, update your ...... It should show your education and work experience. || resume | survey | routine | luggage
 Company || I work for a large media ...... We have offices in Riyadh, Jeddah, and Dammam. || company | success | career | routine
-Creative || My sister is very ....., she always has new ideas for drawings and stories. || creative | calm | average | traditional
-Data || The scientists collected ..... from 1,000 students to study their sleeping habits. || data | crowd | weight | emotion
-Decision || Choosing a university is a big ...... Think carefully before you choose. || decision | trend | reaction | crowd
-Event || The music festival is the biggest ..... in the city this year. Thousands of people will go. || event | effort | goal | treatment
-Flexible || My working hours are very ....., I can start work at 8 or at 10, it's my choice. || flexible | serious | ancient | physical
-Match || These shoes don't ..... my dress. The colours are too different. || match | repair | shake | destroy
-Plan || We ..... to visit our grandparents next weekend. We've already bought the tickets. || plan | pretend | escape | interrupt
-Research || Dr. Sara and her team ..... how sleep affects students' memory. They have studied this topic for three years. || research | pretend | interrupt | repair || كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23) — وهو المقصود في هذا السؤال: فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41): اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»
-Result || I studied very hard, and the ..... was great: I got 98 in the exam. || result | mistake | attitude | crowd
-Routine || My morning ..... is always the same: I wake up, pray, have breakfast and go to work. || routine | trend | debate | bargain
-Skill || Communication is an important ..... for any job, especially for managers. || skill | insect | weight | crowd
-Solve || This math problem is very difficult. Can you help me ..... it? || solve | destroy | shake | escape
-Success || Hard work is the key to ...... If you study every day, you will pass. || success | pollution | weight | crowd
-Team || Our school football ..... won the match 3–1. || team | crowd | section | survey
-Avoid || You should ..... eating too much sugar if you want to stay healthy. || avoid | improve | increase | provide
-Certain || I'm ..... that I locked the door. I checked it twice. || certain | confused | upset | embarrassed
-Combination || Good health is a ..... of healthy food, exercise and enough sleep. || combination | population | pollution | reaction
-Complex || The instructions were very ....., nobody understood them. || complex | simple | basic | calm
-Confused || I was ..... by the question, so I asked the teacher to explain it again. || confused | certain | calm | talented
-Die || If you don't water the plants, they will ...... || die | improve | compete | repeat
-Difficulty || He has ..... reading small words, so he needs glasses. || difficulty | ability | benefit | success
-Increase || The price of petrol will ..... next month, from 2 riyals to 2.5 riyals. || increase | reduce | prevent | destroy
-Mistake || Don't worry, everyone makes .....! Just try again. || mistakes | decisions | efforts | choices
-Optimistic || Ali is always ....., he believes that good things will happen. || optimistic | upset | nervous | confused
-Positive || Try to be ..... and think about the good things in your life. || positive | nervous | upset | embarrassed
-Research || Scientists are doing ..... to find a new medicine for this disease. || research | pollution | population | advertising || كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23): فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41) — وهو المقصود في هذا السؤال: اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»
+Creative || My little sister is very ...... She always comes up with new ideas for drawings and stories. || creative | calm | lazy | strict
+Data || The scientists collected ..... from 1,000 students. Then they studied it to learn about their sleeping habits. || data | weight | traffic | furniture
+Decision || Choosing a university is a big ...... Take your time and think carefully before you choose. || decision | crowd | reaction | rumour
+Event || The book fair is the biggest ..... in Riyadh this year. Thousands of people are going to attend. || event | effort | treatment | accident
+Flexible || My working hours are very ...... I can start at eight or ten; it's my choice. || flexible | ancient | narrow | delicious
+Match || These shoes don't ..... my dress. The colours are completely different, so I need another pair. || match | repair | swallow | whisper
+Plan || We ..... to visit our grandparents in Abha next weekend. We've already booked the flight tickets. || plan | pretend | refuse | hesitate
+Research || My cousin is a scientist at a university. She ..... new ways to treat diabetes in children. || researches | pretends | interrupts | borrows || كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23) — وهو المقصود في هذا السؤال: فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41): اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»
+Result || I studied hard for weeks, and the ..... was amazing: I got 98 in the final exam. || result | mistake | crowd | rumour
+Routine || My morning ..... never changes. I wake up, pray Fajr, have breakfast and then drive to work. || routine | debate | bargain | headline
+Skill || Communication is a very important ..... for managers. They need to talk clearly to their teams. || skill | insect | weight | souvenir
+Solve || This math problem is really difficult. Can you help me ..... it before the class starts? || solve | destroy | shake | swallow
+Success || Hard work is the key to ...... If you study every day, you will pass all your exams. || success | pollution | weight | boredom
+Team || Our university football ..... won the final match 3–1. All the players celebrated with the fans. || team | crowd | section | stadium
+Avoid || You should ..... eating too much sugar. It's bad for your teeth and your health. || avoid | improve | practice | enjoy
+Certain || I'm ..... that I locked the door before we left. I checked it twice. || certain | confused | jealous | curious
+Combination || Good health is a ..... of three things: healthy food, regular exercise and enough sleep. || combination | population | rumour | shortage
+Complex || The instructions for this new machine are very ...... Nobody in the office understands them. || complex | basic | polite | cheerful
+Confused || I was ..... by the last question in the exam, so I asked the teacher to explain it. || confused | talented | delighted | generous
+Die || Don't forget to water the plants while I'm away. If they don't get water, they will ...... || die | compete | repeat | giggle
+Difficulty || My grandfather has ..... reading small letters, so he always wears his glasses when he reads. || difficulty | benefit | luggage | humour
+Increase || The price of this phone will ..... next month. It will go from 2,000 riyals to 2,500 riyals. || increase | reduce | collapse | vanish
+Mistake || Don't feel bad about your English. Everyone makes ..... when they learn a new language. || mistakes | treatments | blankets | castles
+Optimistic || Ali is always ...... Even when things go wrong, he believes that tomorrow will be better. || optimistic | upset | nervous | stubborn
+Positive || Try to stay ..... during hard times. Think about the good things in your life, not the bad. || positive | nervous | embarrassed | jealous
+Research || The university lab is doing new ..... on diabetes. The scientists hope to find a better medicine. || research | pollution | advertising | furniture || كلمة Research جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 23): فعل بمعنى (يبحث بحثاً علمياً)، مثل: «Scientists research the causes of cancer.» المعنى الثاني (رقم 41) — وهو المقصود في هذا السؤال: اسم بمعنى (بحث علمي)، مثل: «New research shows that sleep is important.»
 Tough || I find studying chemistry to be easy; however, getting full marks on the exams is rather ...... || tough | ancient | basic | inferior
-Upset || She was ..... because she lost her new phone. || upset | optimistic | calm | talented
-Area || This ..... of the city is very quiet. There are no shops or traffic. || area | crowd | trend | survey
+Upset || Noura was very ..... yesterday because she lost her new phone at the mall. || upset | optimistic | delighted | grateful
+Area || We live in a quiet ..... of the city. There are no shops, and there is little traffic. || area | crowd | trend | ceiling
 Afraid || I didn't tell anyone because I was ..... of being punished. || afraid | social | natural | hungry
-Calm || Please stay ..... during the test. Don't panic, just read the questions slowly. || calm | nervous | upset | confused
-Communicate || Doctors must ..... clearly with their patients so that they understand their illness. || communicate | compete | interrupt | escape
-Debate || Our class had a ..... about social media. Half the students said it was good, and half said it was bad. || debate | bargain | routine | treatment
-Describe || Can you ..... the man you saw? Was he tall or short? || describe | destroy | prevent | repair
-Emotion || Fear is a strong ....., it can make your heart beat faster. || emotion | insect | product | section
-Facial expression || His ..... showed that he was happy. He was smiling from ear to ear. || facial expression | population | technology | advertising
-However || The test was very hard. ....., I passed it with a good grade. || However | Probably | According to | In order to
-Imagine || ..... that you are on a beautiful beach. Close your eyes and listen to the sea. || Imagine | Interrupt | Destroy | Repeat
-Investigate a crime || The police came to ..... the crime. They asked questions and looked for evidence. || investigate | repair | shake | prepare
-Lie || Always tell the truth. Don't ..... to your parents. || lie | trust | respect | lead
-Move || My family is going to ..... to a bigger house in Jeddah next month. || move | shake | store | rest
-Observe || Scientists ..... the animals carefully to learn how they live. || observe | interrupt | destroy | pretend
-Probably || It's very cloudy. It will ..... rain this afternoon. || probably | however | among | several
-Professional || He isn't just a good player. He is a ..... football player; he plays for a big team and gets paid. || professional | traditional | natural | ancient
+Calm || Please stay ..... during the exam. Don't panic; just breathe slowly and read each question carefully. || calm | nervous | noisy | clumsy
+Communicate || Doctors must ..... clearly with their patients. Patients need to understand their illness and treatment. || communicate | compete | escape | wander
+Debate || Our class had a ..... about social media. Half of us said it was good, and half disagreed. || debate | bargain | routine | souvenir
+Describe || Can you ..... the man who took your bag? Was he tall or short, young or old? || describe | destroy | repair | borrow
+Emotion || Fear is a very strong ...... It can make your heart beat faster and your hands shake. || emotion | insect | product | vitamin
+Facial expression || I knew he was happy from his ...... He was smiling from ear to ear. || facial expression | shopping list | population | technology
+However || The test was very hard, and many students failed. ....., I passed it with a good grade. || However | Therefore | Except for | For example
+Imagine || Close your eyes and ..... that you are on a beautiful beach. Can you hear the sea? || imagine | interrupt | borrow | refuse
+Investigate a crime || Someone stole money from the bank last night. Today, two detectives are coming to ..... the crime. || investigate | repair | prepare | decorate
+Lie || Always tell your parents the truth. Never ..... to them, even when you make a mistake. || lie | lead | rest | belong
+Move || My family is going to ..... to a bigger house in Jeddah next month. We need more space. || move | shake | store | whisper
+Observe || Scientists ..... the animals carefully for months. They want to learn how the animals live together. || observe | interrupt | pretend | swallow
+Probably || Look at those dark clouds. It will ..... rain this afternoon, so take an umbrella. || probably | however | among | rarely
+Professional || Faisal plays for a big club and gets paid well. He is a ..... football player. || professional | traditional | wooden | similar
 Talented || Rawda is very ...... She designed and decorated her sister's wedding cake all by herself! || talented | optimistic | hopeless | confused
-Understand || I don't ..... this word. Can you explain it to me? || understand | interrupt | repair | escape
-Wrong || Your answer is ....., the correct answer is 25, not 52. || wrong | certain | similar | whole
-Ability || Birds have the ..... to fly, but people don't. || ability | difficulty | benefit | attitude
-Effect || Too much screen time can have a bad ..... on your eyes. || effect | effort | goal | level
-Embarrassed || I felt so ..... when I fell down in front of the whole class. || embarrassed | optimistic | certain | talented
-Expect || I studied hard, so I ..... to get a good grade. || expect | pretend | interrupt | destroy
-Natural || These juices have no sugar or chemicals added. They are 100% ...... || natural | social | professional | complex
-Nervous || Mazin always feels ..... before exams, so his hands start sweating. || nervous | calm | optimistic | certain
+Understand || I don't ..... this word in the text. Can you explain its meaning to me, please? || understand | interrupt | repair | lend
+Wrong || Sorry, your answer is ...... The correct answer is 25, not 52. Please try again. || wrong | certain | natural | polite
+Ability || Some birds have the ..... to fly very long distances without stopping. They can fly for days. || ability | difficulty | attitude | luggage
+Effect || Too much screen time can have a bad ..... on your eyes. Try to take short breaks. || effect | effort | goal | souvenir
+Embarrassed || I felt so ..... when I fell down in front of the whole class. Everyone laughed at me. || embarrassed | optimistic | proud | relaxed
+Expect || The weather app says it will be 45 degrees tomorrow. We ..... a very hot day. || expect | pretend | refuse | borrow
+Natural || These juices have no sugar or chemicals added. They are 100% ..... and very healthy. || natural | social | artificial | dangerous
+Nervous || Mazin always feels ..... before exams. His hands start sweating and he can't sleep well. || nervous | calm | optimistic | cheerful
 Pretend || I hate watching football, but I ..... to enjoy it so I can spend time with my brothers. || pretend | admire | control | compete
-Prevent || Washing your hands often can ..... illness. || prevent | increase | produce | promote
-Protect || Wear sunglasses to ..... your eyes from the sun. || protect | destroy | interrupt | shake
-Rate || The unemployment ..... in the city went down from 10% to 7% this year. || rate | crowd | section | goal
-Score || Our team won the game with a ..... of 3–0. || score | rate | trend | level
-Serious || This is a ..... problem. We need to solve it immediately. || serious | pretty | exciting | enjoyable
-Social || Humans are ..... animals, we need to spend time with other people. || social | ancient | physical | wrong
-Whole || I was so hungry that I ate the ..... pizza by myself! || whole | several | average | basic
-Active || My grandfather is 80, but he is still very ....., he walks every morning. || active | nervous | upset | confused
-Coach || The football ..... trains the team three times a week. || coach | consumer | customer | tourist
-Escape || The bird tried to ..... from its cage, but the door was closed. || escape | repair | observe | store
-Except for || Everyone came to the party ..... Ahmed. He was sick. || except for | according to | in order to | among
-Exciting || The football match was really ....., both teams scored in the last minute! || exciting | basic | ancient | average
-Forget || Don't ..... to bring your passport to the airport! || forget | repeat | prevent | interrupt
-Patient || Be .....! The bus will come in five minutes. || patient | nervous | upset | professional
-Reaction || When I told my mother the good news, her ..... was amazing; she started crying with happiness. || reaction | requirement | treatment | trend
-Some kind of || I don't know what it is, but it's ..... insect with long legs. || some kind of | according to | in order to | except for
-Traditional || Kabsa is a ..... Saudi dish. People have cooked it for hundreds of years. || traditional | professional | complex | flexible
-According to || ..... the weather forecast, it will rain tomorrow. || According to | However | Except for | Among
-Activity || Swimming is my favourite summer ...... || activity | attitude | effect | purpose
-Attention || Please pay ..... to the teacher. This information will be in the exam. || attention | effort | trust | weight
-Connect || You can ..... your phone to the TV and watch videos on a big screen. || connect | interrupt | escape | shake
-Focus || Turn off your phone so you can ..... on your homework. || focus | rest | lie | lead
-Human || The ..... brain is very complex. Scientists still don't understand everything about it. || human | ancient | local | traditional
-Interrupt || Please don't ..... me while I'm talking. Wait until I finish. || interrupt | observe | protect | respect
+Prevent || Washing your hands often can ..... many illnesses. Do it before you eat and after you cough. || prevent | increase | produce | spread
+Protect || Always wear sunglasses in the summer. They ..... your eyes from the strong sun. || protect | destroy | interrupt | decorate
+Rate || The unemployment ..... in our city went down this year. It fell from 10% to 7%. || rate | crowd | goal | ceiling
+Score || Our team won the final match with a ..... of 3–0. The fans were very happy. || score | trend | crowd | recipe
+Serious || This is a ..... problem, and we can't ignore it. We need to solve it immediately. || serious | pretty | exciting | delicious
+Social || Humans are ..... animals. We need to spend time with family and friends to feel happy. || social | ancient | lonely | rusty
+Whole || I was so hungry after the football match that I ate the ..... pizza by myself! || whole | several | empty | brave
+Active || My grandfather is 80 years old, but he is still very ...... He walks five kilometres every morning. || active | nervous | lazy | confused
+Coach || Our football ..... trains the players three times a week. He also teaches them new skills. || coach | consumer | tourist | landlord
+Escape || The bird tried to ..... from its cage, but the door was closed, so it couldn't get out. || escape | repair | observe | borrow
+Except for || Everyone in my class came on the trip ..... Ahmed. He stayed at home because he was sick. || except for | according to | in order to | as well as
+Exciting || The football match was really ...... Both teams scored in the last minute, and everyone was shouting. || exciting | basic | ancient | polite
+Forget || Don't ..... to bring your passport to the airport. You can't travel without it! || forget | repeat | prevent | deserve
+Patient || Please be ..... and wait in line. The doctor will see you in a few minutes. || patient | nervous | upset | rude
+Reaction || When I told my mother the good news, her ..... was amazing. She started crying with happiness. || reaction | requirement | treatment | luggage
+Some kind of || I found a strange creature in the garden. It was ..... insect with long green legs. || some kind of | according to | in order to | instead of
+Traditional || Kabsa is a ..... Saudi dish. Our grandparents cooked it, and their grandparents cooked it too. || traditional | professional | modern | flexible
+According to || ..... the weather forecast, it will rain tomorrow. So don't forget your umbrella. || According to | However | Except for | Instead of
+Activity || Swimming is my favourite summer ...... I go to the pool with my friends every weekend. || activity | attitude | purpose | vegetable
+Attention || Please pay ..... to the teacher now. This information is going to be in the final exam. || attention | effort | weight | kindness
+Connect || You can ..... your phone to the TV with this cable and watch videos on a big screen. || connect | interrupt | escape | lend
+Focus || Turn off your phone while you study. Then you can ..... on your homework better. || focus | rest | lie | insist
+Human || An adult ..... has 206 bones in the body. Babies are born with about 300 bones. || human | insect | pebble | vegetable
+Interrupt || Please don't ..... me while I'm talking. Wait until I finish, and then you can speak. || interrupt | protect | observe | borrow
 Practice || A great way to study vocabulary for your English exams is to ..... with flashcards. || practice | forget | repair | destroy
-Repeat || I didn't hear you. Can you ..... the question, please? || repeat | destroy | escape | shake
-Require || This job ..... a university degree and two years of experience. || requires | prevents | destroys | escapes
-Several || I called him ..... times, but he didn't answer. || several | whole | average | basic
-Store || You should ..... the milk in the fridge, or it will go bad. || store | shake | lead | rest
-Task || My first ..... at work today is to answer all the emails. || task | trend | crowd | weight
-Technology || Modern ....., like smartphones and computers, has changed our lives. || technology | pollution | population | history
-Ancient || The pyramids in Egypt are very ....., they were built more than 4,000 years ago. || ancient | local | similar | flexible
-Dangerous || Don't swim here. The sea is ..... today because of the big waves. || dangerous | enjoyable | similar | calm
-Destroy || The strong storm ..... many houses in the village. || destroyed | repaired | protected | prepared
-Enjoyable || We had a very ..... trip. Everyone had fun. || enjoyable | dangerous | serious | complex
-Insect || A bee is a small ..... that makes honey. || insect | athlete | consumer | product
-Lead || The captain will ..... the team onto the field. || lead | rest | store | lie
-Local || We buy fresh vegetables from the ..... farm near our village. || local | ancient | professional | complex
-Pollution || Cars and factories cause air ..... in big cities. || pollution | population | combination | solution
-Population || The ..... of Riyadh is more than seven million people. || population | pollution | weight | level
-Prepare || My mother is in the kitchen. She is ..... dinner for the guests. || preparing | repairing | destroying | escaping
+Repeat || Sorry, I didn't hear you because of the noise. Can you ..... the question, please? || repeat | destroy | escape | swallow
+Require || This job ..... a university degree and two years of experience. Without them, you can't apply. || requires | prevents | destroys | borrows
+Several || I called my brother ..... times this morning, but he didn't answer. Maybe he was sleeping. || several | whole | average | rare
+Store || You should ..... the milk in the fridge. If you leave it outside, it will go bad. || store | shake | lead | boil
+Task || My first ..... at work today is answering the emails. Then I have a meeting at ten. || task | trend | crowd | salary
+Technology || Modern ....., like smartphones and laptops, has changed the way we study and work. || technology | pollution | population | furniture
+Ancient || The tombs in AlUla are very ...... People built them about 2,000 years ago. || ancient | local | flexible | modern
+Dangerous || Don't swim in the sea today. It's ..... because the waves are very big and strong. || dangerous | enjoyable | calm | shallow
+Destroy || The strong storm ..... many houses in the village last night. Now the families need new homes. || destroyed | repaired | protected | decorated
+Enjoyable || Our trip to Abha was very ...... Everyone had fun, and we want to go again next year. || enjoyable | dangerous | serious | painful
+Insect || A bee is a small ..... that makes honey. It has six legs and can fly. || insect | athlete | product | vegetable
+Lead || Our captain will ..... the team onto the field. All the players will walk behind him. || lead | rest | store | swallow
+Local || We buy fresh vegetables from a ..... farm. It's only five minutes from our house. || local | professional | foreign | jealous
+Pollution || Cars and factories cause a lot of air ..... in big cities. It makes breathing difficult. || pollution | population | combination | gravity
+Population || The ..... of Riyadh is more than six million people, and the city is still growing. || population | pollution | weight | climate
+Prepare || My mother is busy in the kitchen. She is ..... dinner for our guests tonight. || preparing | repairing | destroying | borrowing
 Pretty || The room was decorated with ..... wallpaper with yellow flowers. || pretty | active | nervous | tricky
-Repair || My car is broken. I need to take it to a garage to ..... it. || repair | destroy | prevent | compete
-Shake || When you meet someone for the first time, you should ..... hands with them. || shake | lead | store | rest
-Tourist || Many ..... visit AlUla every year to see the old tombs. || tourists | employees | athletes | insects
+Repair || My car broke down on the highway. I need to take it to a garage to ..... it. || repair | destroy | prevent | admire
+Shake || When you meet someone for the first time, smile and ..... hands with them. It's polite. || shake | lead | store | fold
+Tourist || Many ..... visit Riyadh Season every year. They come from different countries to enjoy the shows. || tourists | insects | resumes | pillows
 Volunteer || Samir doesn't get paid for the work he does at the Hayat Children's Camp. He's a ...... || volunteer | stranger | tourist | foreigner
-Attitude || She has a positive ..... about life, she always smiles and never gives up. || attitude | population | pollution | requirement
-Average || I got an A in most of my courses, so my ..... this semester is 4.6 out of 5. || average | weight | bargain | trend || كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117) — وهو المقصود في هذا السؤال: اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141): صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»
-Benefit || One ..... of walking every day is that it makes your heart stronger. || benefit | mistake | difficulty | requirement
-Compete || Ten teams will ..... in the football tournament this year. || compete | communicate | interrupt | repeat
-Control || He couldn't ..... the car on the wet road, and it hit a tree. || control | produce | provide | reduce
-Discover || Scientists hope to ..... a cure for the disease soon. || discover | destroy | pretend | interrupt
-Improve || If you want to ..... your English, practice speaking every day. || improve | reduce | destroy | escape
-Is/are likely to || Look at those dark clouds. It ..... rain this afternoon. || is likely to | according to | in order to | except for
-Produce || This factory ..... 1,000 cars every month. || produces | reduces | prevents | escapes
-Provide || The hotel ..... free breakfast for all guests. || provides | reduces | prevents | destroys
-Reduce || Turn off the lights when you leave the room to ..... the electricity bill. || reduce | increase | produce | promote
-Rest || You look tired. You should ..... for a while before you continue working. || rest | lead | compete | escape
-Solution || We have a problem with the noise. Does anyone have a .....? || solution | pollution | population | combination
-Among || Ahmed was ..... the best students in the class this year. || among | except for | according to | in order to
-Athlete || Cristiano Ronaldo is a famous ..... who trains every day to stay fit. || athlete | consumer | tourist | assistant
-Effort || She put a lot of ..... into her project, and she got full marks. || effort | effect | weight | rate
-Form || Please fill in this ..... with your name, address and phone number. || form | trend | crowd | score
-Goal || My ..... is to become a pilot one day. || goal | trend | crowd | weight
+Attitude || My sister has a positive ..... about life. She always smiles and never gives up. || attitude | population | weight | blanket
+Average || I got A's in most of my courses this semester. My ..... is 4.6 out of 5. || average | bargain | trend | hobby || كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117) — وهو المقصود في هذا السؤال: اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141): صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»
+Benefit || One ..... of walking every day is that it makes your heart stronger and healthier. || benefit | mistake | difficulty | danger
+Compete || Twelve teams will ..... in the university football tournament this year. Only one team will win the cup. || compete | communicate | interrupt | apologize
+Control || He was driving too fast in the rain. He couldn't ..... the car and hit a tree. || control | produce | provide | decorate
+Discover || Scientists hope to ..... a cure for this disease soon. They have been working on it for years. || discover | destroy | pretend | ignore
+Improve || If you want to ..... your English, practice speaking it every day with your friends. || improve | reduce | destroy | abandon
+Is/are likely to || Traffic is very heavy at this time. If you leave now, you ..... be late for work. || are likely to | according to | in order to | are proud of
+Produce || This factory ..... 5,000 bottles of water every day. Most of them are sold in Riyadh. || produces | reduces | prevents | borrows
+Provide || The hotel ..... free breakfast for all its guests. You don't have to pay for it. || provides | reduces | prevents | refuses
+Reduce || Turn off the lights when you leave the room. It will help you ..... your electricity bill. || reduce | increase | produce | decorate
+Rest || You look very tired. You should ..... for a while before you continue working on your project. || rest | lead | compete | argue
+Solution || There is too much noise near the library. Does anyone have a ..... to this problem? || solution | pollution | combination | ladder
+Among || Ahmed was ..... the best students in our class this year. He got high marks in every subject. || among | except for | according to | despite
+Athlete || My cousin is a professional ...... She runs every morning and competes in races around the world. || athlete | consumer | tourist | landlord
+Effort || She put a lot of ..... into her final project, so she got full marks. || effort | effect | pollution | gossip
+Form || Let's ..... a study group for the final exam. We can meet in the library every Monday. || form | escape | deserve | swallow
+Goal || My ..... is to become a pilot one day. I'm studying hard to make my dream come true. || goal | trend | crowd | habit
 History || World War I was the worst war in human ..... up to that time. || history | weight | level | mistake
-Level || This English class is for students at an advanced ...... || level | rate | weight | trend
-Physical || Doctors say that ..... activity, like running or swimming, keeps your body strong. || physical | ancient | traditional | local
-Similar || The two sisters look very ....., many people think they are twins. || similar | whole | average | wrong
-Training || The football team has ..... three times a week to prepare for the big match. || training | pollution | advertising | research
-Weight || He wants to lose ....., so he eats less and exercises every day. || weight | level | rate | score
-A little bit || The soup is ..... cold. Can you heat it for me? || a little bit | some kind of | according to | in order to
-Average || The ..... temperature in Riyadh in July is about 43 degrees. || average | whole | basic | similar || كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117): اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141) — وهو المقصود في هذا السؤال: صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»
-Bargain || This jacket was only 50 riyals instead of 200. What a .....! || bargain | debate | survey | trend
-Behavior || The teacher was happy with the students' good ..... in class. || behavior | pollution | population | weight
-Consumer || Companies do surveys to find out what ..... want to buy. || consumers | athletes | insects | coaches
-Crowd || There was a big ..... of people at the stadium to watch the final match. || crowd | trend | section | goal
-Expert || Dr. Saleh is an ..... in computers. He knows everything about them. || expert | tourist | consumer | athlete
-On purpose || He didn't break the glass by accident. He did it ...... || on purpose | a little bit | among | except for
-Promote || The company made a funny video to ..... its new product on social media. || promote | prevent | destroy | escape
-Reach || We left early, so we ..... the airport before 6 a.m. || reached | repaired | escaped | interrupted
-Responsibility || Taking care of a pet is a big ....., you have to feed it and clean its place every day. || responsibility | pollution | population | advertising
-Section || You can find books about history in the second ..... of the library. || section | crowd | rate | score
-Survey || The university did a ..... and asked 500 students about their sleeping habits. || survey | debate | bargain | routine
-Trend || Wearing white sneakers is a popular fashion ..... this year. || trend | rate | score | crowd
-Choice || You can have tea or coffee. It's your ...... || choice | goal | task | rest
-Customer || The shop gives every ..... a free gift when they buy something. || customer | athlete | coach | insect
-In order to || She studies every night ..... pass the exam. || in order to | according to | except for | among
-Opinion || In my ....., this is the best restaurant in the city. || opinion | purpose | product | choice
-Product || This company's most popular ..... is its new phone. || product | consumer | expert | goal
-Purpose || The ..... of this meeting is to plan the school trip. || purpose | product | reaction | trend
-Recommend || This restaurant is great. I ..... the grilled fish! || recommend | interrupt | destroy | pretend
-Relationship || She has a good ..... with her neighbours. They visit each other often. || relationship | population | pollution | requirement
-Respect || You should ..... older people and listen to their advice. || respect | interrupt | destroy | escape
-Simple || The recipe is very ....., it has only three steps. || simple | complex | tough | dangerous
-Treatment || The doctor said the ..... for his illness is two weeks of medicine and rest. || treatment | requirement | advertising | trend
-Trust || Sami always tells the truth. You can ..... him. || trust | interrupt | lie | destroy
-Variety || The restaurant has a ..... of dishes, from seafood to pasta to kabsa. || variety | crowd | rate | weight
+Level || This English class is for students at an advanced ...... It is too difficult for beginners. || level | rate | weight | salary
+Physical || Doctors say that ..... activity, like running or swimming, keeps your body strong and healthy. || physical | ancient | mental | polite
+Similar || The two sisters look very ...... Many people think they are twins, but they are not. || similar | whole | different | hungry
+Training || The football team has ..... three times a week. The players are preparing for the big match. || training | pollution | advertising | gardening
+Weight || He wants to lose ....., so he eats less sugar and goes to the gym every day. || weight | level | rate | luggage
+A little bit || The soup is ..... cold. Can you heat it in the microwave for me, please? || a little bit | some kind of | according to | a lot of
+Average || In July, the ..... daytime temperature in Riyadh is about 43 degrees. Some days are hotter. || average | whole | basic | polite || كلمة Average جات في ملف العمادة مرتين بمعنيين. المعنى الأول (رقم 117): اسم بمعنى (المعدّل / المتوسط)، مثل: «My average this semester is 4.5.» المعنى الثاني (رقم 141) — وهو المقصود في هذا السؤال: صفة بمعنى (متوسط / عادي)، مثل: «He is of average height.»
+Bargain || This jacket was only 50 riyals instead of 200. What a .....! I bought two of them. || bargain | debate | survey | disaster
+Behavior || The teacher was happy with the students' good ..... in class. They were quiet and polite. || behavior | pollution | population | furniture
+Consumer || Companies often do surveys online. They want to know what ..... want to buy. || consumers | insects | resumes | mountains
+Crowd || There was a huge ..... of people at the stadium. Everyone wanted to watch the final match. || crowd | trend | rate | recipe
+Expert || Dr. Saleh is an ..... in computers. He knows everything about them, so everyone asks him for help. || expert | athlete | insect | amateur
+On purpose || He didn't break the window by accident. He did it ....., and his father was very angry. || on purpose | a little bit | except for | by mistake
+Promote || The company made a funny video to ..... its new phone on Snapchat. Millions watched it. || promote | prevent | destroy | hide
+Reach || We left home at 4 a.m., so we ..... the airport early. Our flight was at 7. || reached | repaired | escaped | borrowed
+Responsibility || Being the oldest son is a big ...... I take care of my brothers when my father travels. || responsibility | pollution | advertising | coincidence
+Section || You can find books about history in the second ..... of the library, next to the computers. || section | crowd | rate | rumour
+Survey || The university did a ..... last month. It asked 500 students questions about the food in the cafeteria. || survey | debate | bargain | festival
+Trend || Wearing white sneakers is a popular fashion ..... this year. Everyone at university is wearing them. || trend | rate | score | puzzle
+Choice || You can have tea, coffee or juice with your breakfast. It's your ...... || choice | goal | task | salary
+Customer || The shop gives every ..... a free gift when they spend more than 100 riyals. || customer | insect | product | holiday
+In order to || She studies every night ..... pass the final exam. She wants to get a high grade. || in order to | according to | except for | instead of
+Opinion || In my ....., this is the best restaurant in Jeddah. The food is delicious and cheap. || opinion | purpose | product | pocket
+Product || This company's most popular ..... is its new phone. It sold a million in one week. || product | consumer | expert | rumour
+Purpose || The ..... of today's meeting is to plan the school trip to the museum. || purpose | product | reaction | ceiling
+Recommend || Have you tried this restaurant? It's amazing. I really ..... the grilled fish; it's delicious! || recommend | interrupt | destroy | ignore
+Relationship || She has a good ..... with her neighbours. They visit each other often and share food. || relationship | population | pollution | headline
+Respect || You should ..... older people. Listen to their advice and speak to them politely. || respect | interrupt | destroy | ignore
+Simple || The recipe is very ....., so even my little brother can make it. It has only three steps. || simple | complex | tough | expensive
+Treatment || The doctor said the ..... for his illness is two weeks of medicine and rest at home. || treatment | advertising | requirement | souvenir
+Trust || Sami always tells the truth and keeps his promises. You can ..... him with your secrets. || trust | interrupt | destroy | blame
+Variety || The restaurant has a wide ..... of dishes, from seafood and pasta to kabsa and burgers. || variety | crowd | rate | shortage
