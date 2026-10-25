@@ -132,6 +132,9 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 .qcard{padding:20px}
 .qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:13.5px;color:var(--muted)}
 .past-q{position:relative}
+.pastp{display:inline-block;direction:rtl;font-family:var(--f-body);background:#fff4d6;color:#8a5a00;border:1px solid #efd18a;border-radius:999px;padding:3px 12px;font-size:13.5px;font-weight:700;margin-bottom:8px}
+summary .pastp{margin:0 6px;font-size:12.5px}
+.pastp.lp{margin:0 6px;padding:0 9px;font-size:12px;vertical-align:middle}
 .past{position:absolute;top:-1px;left:-1px;z-index:1;background:#fff4d6;color:#8a5a00;border:1px solid #efd18a;border-radius:var(--r-card) 0 12px 0;padding:3px 12px;font-size:12.5px;font-weight:700;white-space:nowrap;pointer-events:none}   /* شارة «جاء في اختبار سابق» بالزاوية فوق يسار */
 .qcard.past-q,.ritem.past-q{padding-top:40px}
 .qmeta .k{background:var(--cs,var(--accent-soft));color:var(--c,var(--accent));border-radius:6px;padding:1px 10px;font-weight:700;font-family:var(--f-en);font-size:12.5px}
@@ -461,7 +464,7 @@ const QS = [];
 GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, x: q.x, code: `G${ri + 1}-${k + 1}` })));
 ME.forEach((m, i) => QS.push({ id: 'm-' + hash(m.w), sec: 'm', grp: Math.floor(i / VOCAB_SET), q: m.w, o: m.o, e: m.e, code: `M-${i + 1}` }));
 VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, e: v.e, x: v.x, code: `V-${i + 1}` }));
-RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.k || p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, x: q.x, code: `R${p.n}-${k + 1}` })));
+RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.k || p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
 LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
 const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const ofSec = s => QS.filter(q => q.sec === s);
@@ -603,7 +606,7 @@ function openList(s) {
     if (s === 'g') { title = esc(GR[g].rule); sub = list.length + ' سؤال'; }
     if (s === 'v') { const a = g * VOCAB_SET + 1, b = Math.min(VO.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الأسئلة ${a}–${b}`; }
     if (s === 'm') { const a = g * VOCAB_SET + 1, b = Math.min(ME.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الكلمات ${a}–${b}`; }
-    if (s === 'r') { title = `القطعة ${RE[g].n}`; sub = `المستوى <span class="en">${LEVEL_R(RE[g].n)}</span>${RE[g].x ? ' · ★ جاءت في اختبار سابق' : ''}`; }   // بدون عنوان القطعة: يكشف جواب سؤال «best title»
+    if (s === 'r') { title = `القطعة ${RE[g].n}`; sub = `المستوى <span class="en">${LEVEL_R(RE[g].n)}</span>${RE[g].x ? ' <span class="pastp lp">★ جاءت في اختبار سابق</span>' : ''}`; }   // بدون عنوان القطعة: يكشف جواب سؤال «best title»
     if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · المستوى <span class="en">${LEVEL(c.n)}</span> · ${c.kind === 'dialogue' ? (new Set(c.lines.map(l => l[0])).size > 2 ? 'نقاش بين ' + new Set(c.lines.map(l => l[0])).size + ' أشخاص' : 'حوار بين شخصين') : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
     const st = done === list.length ? `<span class="st done">✓ ${right}/${list.length}</span>` : done ? `<span class="st">${done}/${list.length}</span>` : '';
     return `<button class="card item s-${s}" type="button" data-g="${g}"><span class="no">${s === 'r' || s === 'l' ? (s === 'r' ? RE[g].n : LI[g].n) : g + 1}</span><span class="tx"><b>${title}</b><small>${sub}</small></span>${st}</button>`;
@@ -636,7 +639,7 @@ function startLater() {
   show('quiz'); renderQ();
 }
 function ctxHTML(q, open) {   // للمراجعة و«ارجع لها لاحقًا»: يعرض القطعة أو المقطع مع السؤال
-  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"${open ? ' open' : ''}><summary>📖 اعرض القطعة ${p.n}</summary><div class="card passage en">${p.text.map(paraHTML).join('')}</div></details>`; }
+  if (q.sec === 'r') { const p = RE[q.grp]; return `<details class="ctx"${open ? ' open' : ''}><summary>📖 اعرض القطعة ${p.n}${p.x ? ' <span class="pastp">★ جاءت في اختبار سابق</span>' : ''}</summary><div class="card passage en">${p.text.map(paraHTML).join('')}</div></details>`; }
   if (q.sec === 'l') { const c = LI[q.grp]; return `<div class="ctx"><div class="qmeta"><span>🎧 المقطع ${c.n}: <span class="en">${esc(c.title)}</span></span></div><audio controls preload="none" data-q="${q.id}" src="${c.audio}"></audio></div>`; }
   return '';
 }
@@ -691,7 +694,7 @@ $('qBack').onclick = quizBack;
 let G = null; // {s, g, picked}
 function openGroup(s, g) { G = { s, g, picked: {}, sel: {} }; show('group'); renderGroup(); }
 function headHTML(s, g, exam) {
-  if (s === 'r') { const p = RE[g]; return `<div class="card passage en"><h2>Passage ${p.n}</h2>${p.text.map(paraHTML).join('')}</div>`; }
+  if (s === 'r') { const p = RE[g]; return `<div class="card passage en">${p.x ? '<div class="pastp">★ هذي القطعة جاءت في اختبار سابق</div>' : ''}<h2>Passage ${p.n}</h2>${p.text.map(paraHTML).join('')}</div>`; }
   const c = LI[g];
   const player = exam
     ? `<div class="xplayer" id="xp"><button class="pbtn" type="button" id="xpBtn" aria-label="تشغيل">▶</button><span class="pb"><i id="xpBar"></i></span><span class="pt" id="xpTime">0:00</span><span class="pc" id="xpCount"></span><audio id="xpAudio" preload="auto" src="${c.audio}"></audio></div>`
