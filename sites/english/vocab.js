@@ -2505,5 +2505,41 @@ window.VOCAB = [
 ],
 "e": "short = قصير ← «not tall» يعني قصير.",
 "x": 1
+},
+{
+"w": "Popular",
+"q": "Everyone is buying the new Dubai chocolate. It's very ..... now.",
+"o": [
+"popular",
+"intelligent",
+"noisy",
+"easy"
+],
+"e": "popular = مشهور/عليه طلب ← «Everyone is buying» يعني الكل يبيه.",
+"x": 1
+},
+{
+"w": "Interested in",
+"q": "I am ..... getting a job that involves international travel. I love exploring new countries.",
+"o": [
+"interested in",
+"late for",
+"addicted to",
+"up into"
+],
+"e": "interested in = مهتم بـ ← يحب يستكشف دول جديدة، فهو مهتم بشغل فيه سفر.",
+"x": 1
+},
+{
+"w": "Expert",
+"q": "If you're not sure how to fix it, you should ask a/an ......",
+"o": [
+"expert",
+"fact",
+"theory",
+"plan"
+],
+"e": "expert = خبير ← إذا ما تعرف تصلّحه تسأل شخص خبير (fact/theory/plan مو أشخاص).",
+"x": 1
 }
 ];
