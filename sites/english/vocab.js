@@ -3,1377 +3,1387 @@
 window.VOCAB = [
 {
 "w": "Clothes",
-"q": "I need to buy new ..... for the winter, like a warm jacket and gloves.",
+"q": "The weather in Abha is cold in winter, so I packed warm ..... like jackets and sweaters.",
 "o": [
 "clothes",
-"ideas",
-"fields",
-"hobbies"
+"hobbies",
+"receipts",
+"ingredients"
 ]
 },
 {
 "w": "Describe",
-"q": "Can you ..... the man you saw? Was he tall or short?",
+"q": "The police asked me to ..... the thief. Was he tall or short? What was he wearing?",
 "o": [
 "describe",
-"collect",
 "feed",
-"ride"
+"invite",
+"borrow"
 ]
 },
 {
 "w": "Friendly",
-"q": "Our new neighbour is very ....., she always smiles and says hello.",
+"q": "Our new neighbour is very ...... She always smiles, says hello, and brings us dates.",
 "o": [
 "friendly",
-"messy",
-"lonely",
-"dirty"
+"negative",
+"rude",
+"selfish"
 ]
 },
 {
 "w": "Funny",
-"q": "My uncle tells great jokes. He is so ..... that we laugh all the time.",
+"q": "My uncle tells great jokes at family dinners. He is so ..... that everyone laughs all night.",
 "o": [
 "funny",
-"shy",
 "serious",
-"boring"
+"shy",
+"strict"
 ]
 },
 {
 "w": "Helpful",
-"q": "The shop assistant was very ....., she showed me where everything was.",
+"q": "The shop assistant was very ...... She showed me where everything was and carried my bags.",
 "o": [
 "helpful",
-"noisy",
 "lonely",
-"unsafe"
+"unfriendly",
+"lazy"
 ]
 },
 {
 "w": "Intelligent",
-"q": "Sara is very ....., she can solve difficult math problems quickly.",
+"q": "Sara is very ...... She solved the hardest math problem in the class in two minutes.",
 "o": [
 "intelligent",
 "overweight",
-"crowded",
-"messy"
+"careless",
+"sleepy"
 ]
 },
 {
 "w": "Meet",
-"q": "Let's ..... in front of the library at five o'clock.",
+"q": "Let's ..... in front of the library at five o'clock. Then we can study together for the exam.",
 "o": [
 "meet",
 "wear",
 "grow",
-"feed"
+"melt"
 ]
 },
 {
 "w": "Overweight",
-"q": "The doctor told him that he is ..... and needs to lose ten kilos.",
+"q": "The doctor told my uncle that he is ...... He needs to lose fifteen kilos and exercise more.",
 "o": [
 "overweight",
 "thin",
 "shy",
-"neat"
+"punctual"
 ]
 },
 {
 "w": "Thin",
-"q": "She doesn't eat much, so she is very ......",
+"q": "My sister eats very little, so she is very ...... She weighs only 45 kilos.",
 "o": [
 "thin",
 "overweight",
-"funny",
+"generous",
 "noisy"
 ]
 },
 {
 "w": "Wear",
-"q": "At our school, all students have to ..... a uniform.",
+"q": "At my school, all students have to ..... a uniform. They can't come in their own clothes.",
 "o": [
 "wear",
 "watch",
-"meet",
-"grow"
+"feed",
+"sell"
 ]
 },
 {
 "w": "Messy",
-"q": "His room is very ....., there are clothes and books all over the floor.",
+"q": "My brother's room is always ...... There are clothes, books, and empty cups all over the floor.",
 "o": [
 "messy",
 "neat",
 "clean",
-"safe"
+"elegant"
 ]
 },
 {
 "w": "Neat",
-"q": "Her desk is always ....., everything is in the right place.",
+"q": "Her desk is always ...... Every pen, book, and paper is in the right place.",
 "o": [
 "neat",
 "messy",
 "dirty",
-"noisy"
+"broken"
 ]
 },
 {
 "w": "Serious",
-"q": "Our teacher is very ....., he never laughs or tells jokes in class.",
+"q": "Our history professor is very ...... He never smiles or tells jokes during his lectures.",
 "o": [
 "serious",
 "funny",
 "friendly",
-"helpful"
+"cheerful"
 ]
 },
 {
 "w": "Short",
-"q": "My brother is only 150 cm. He is quite ..... for his age.",
+"q": "My little brother is only 120 cm. He is too ..... to ride the big roller coaster.",
 "o": [
 "short",
 "tall",
-"thin",
-"famous"
+"famous",
+"polite"
 ]
 },
 {
 "w": "Shy",
-"q": "Lama is very ....., she doesn't like to talk to people she doesn't know.",
+"q": "Lama is very ...... She doesn't like to talk to people she doesn't know at parties.",
 "o": [
 "shy",
 "funny",
-"friendly",
-"famous"
+"famous",
+"talkative"
 ]
 },
 {
 "w": "Tall",
-"q": "My father is 190 cm. He is very ......",
+"q": "My father is 190 cm. He is so ..... that he has to bend down at doors.",
 "o": [
 "tall",
 "short",
 "shy",
-"cheap"
+"wealthy"
 ]
 },
 {
 "w": "Be good at",
-"q": "Omar ..... math. He always gets the highest marks in the class.",
+"q": "Omar ..... math. He always gets the highest marks and helps his classmates with their homework.",
 "o": [
 "is good at",
 "belongs to",
 "depends on",
-"listens to"
+"is afraid of"
 ]
 },
 {
 "w": "Be interested in",
-"q": "I ..... history, so I read a lot of books about the past.",
+"q": "I ..... history, so I read a lot of books about old kingdoms and visit museums.",
 "o": [
 "am interested in",
 "belong to",
 "depend on",
-"give up"
+"am tired of"
 ]
 },
 {
 "w": "Be on",
-"q": "My favourite TV show ..... at nine o'clock every Friday.",
+"q": "My favourite TV show ..... at nine o'clock every Friday night. I never miss an episode.",
 "o": [
 "is on",
 "belongs to",
-"depends on",
-"gives up"
+"gives up",
+"runs out"
 ]
 },
 {
 "w": "Get together with",
-"q": "Every weekend, I ..... my cousins and we have dinner.",
+"q": "Every weekend, I ..... my cousins at my grandmother's house, and we have dinner together.",
 "o": [
 "get together with",
 "give up",
 "belong to",
-"depend on"
+"run out of"
 ]
 },
 {
 "w": "Go",
-"q": "I usually ..... to school by bus.",
+"q": "I usually ..... to university by bus. It takes about forty minutes from my house.",
 "o": [
 "go",
 "play",
 "read",
-"watch"
+"buy"
 ]
 },
 {
 "w": "Go to",
-"q": "Every summer, we ..... the beach to swim in the sea.",
+"q": "Every summer, my family and I ..... the beach in Jeddah. We swim in the sea every day.",
 "o": [
 "go to",
 "listen to",
-"belong to",
-"live in"
+"agree with",
+"look like"
 ]
 },
 {
 "w": "Listen to",
-"q": "I like to ..... music while I study.",
+"q": "On my way to work, I ..... podcasts in the car. My favourite one is about history.",
 "o": [
 "listen to",
 "go to",
 "belong to",
-"live in"
+"look after"
 ]
 },
 {
 "w": "Live in",
-"q": "My grandparents ..... a small village near the mountains.",
+"q": "My grandparents ..... a small village near the mountains. They grow vegetables and keep sheep there.",
 "o": [
 "live in",
 "listen to",
 "give up",
-"depend on"
+"run out of"
 ]
 },
 {
 "w": "Play",
-"q": "The children ..... football in the park every afternoon.",
+"q": "The children ..... football in the park every afternoon. They are on the same school team.",
 "o": [
 "play",
 "read",
 "ride",
-"wear"
+"build"
 ]
 },
 {
 "w": "Read",
-"q": "I ..... the newspaper every morning with my coffee.",
+"q": "I ..... the news on my phone every morning with my coffee. I like to know what's happening.",
 "o": [
 "read",
 "ride",
-"play",
-"wear"
+"wear",
+"bake"
 ]
 },
 {
 "w": "Ride",
-"q": "My little brother learned to ..... a bike when he was five.",
+"q": "My little brother learned to ..... a bike when he was five. Now he goes everywhere on it.",
 "o": [
 "ride",
 "read",
 "wear",
-"feed"
+"cook"
 ]
 },
 {
 "w": "Take",
-"q": "Don't forget to ..... your umbrella, it's going to rain.",
+"q": "Don't forget to ..... your umbrella with you. The weather app says it's going to rain later.",
 "o": [
 "take",
 "ride",
-"watch",
-"feed"
+"feed",
+"hide"
 ]
 },
 {
 "w": "Watch",
-"q": "We ..... a movie at the cinema last night.",
+"q": "Last night, we ..... a great movie at the new cinema in Riyadh Park. It was very exciting.",
 "o": [
 "watched",
 "wore",
 "rode",
-"grew"
+"cooked"
 ]
 },
 {
 "w": "Belong to",
-"q": "This red bag doesn't ..... me. It's my sister's.",
+"q": "This red bag doesn't ..... me. It's my sister's, so please give it back to her.",
 "o": [
 "belong to",
 "listen to",
 "live in",
-"depend on"
+"wait for"
 ]
 },
 {
 "w": "Club",
-"q": "He joined the chess ..... at school, and they meet every Tuesday.",
+"q": "My brother joined the chess ..... at school. They meet every Tuesday after classes to play.",
 "o": [
 "club",
 "farm",
 "field",
-"flood"
+"kitchen"
 ]
 },
 {
 "w": "Collect",
-"q": "My grandfather likes to ..... old coins. He has more than 500.",
+"q": "My grandfather likes to ..... old coins from different countries. He has more than five hundred now.",
 "o": [
 "collect",
 "invite",
 "feed",
-"describe"
+"forget"
 ]
 },
 {
 "w": "Good at",
-"q": "Noura is ..... drawing. Her pictures are beautiful.",
+"q": "Noura is very ..... drawing. Her pictures won first prize in the university art contest.",
 "o": [
 "good at",
 "instead of",
-"above",
-"below"
+"afraid of",
+"far from"
 ]
 },
 {
 "w": "Hobbies",
-"q": "My ..... are reading and swimming. I do them in my free time.",
+"q": "My ..... are reading and swimming. I usually do them on weekends in my free time.",
 "o": [
 "hobbies",
 "fields",
-"farms",
-"floods"
+"floods",
+"duties"
 ]
 },
 {
 "w": "Interested in",
-"q": "Are you ..... art? There is a new exhibition at the museum.",
+"q": "Are you ..... art? There is a new exhibition at the national museum this week.",
 "o": [
 "interested in",
 "instead of",
-"belong to",
-"above"
+"full of",
+"made of"
 ]
 },
 {
 "w": "Team",
-"q": "Our school football ..... won the match 3–0.",
+"q": "Our university football ..... won the match 3–0 last night. All the players celebrated on the field.",
 "o": [
 "team",
 "farm",
-"flood",
-"memory"
+"memory",
+"crowd"
 ]
 },
 {
 "w": "Famous",
-"q": "Ronaldo is a very ..... football player. Everyone knows his name.",
+"q": "Cristiano Ronaldo is a very ..... football player. People all over the world know his name.",
 "o": [
 "famous",
 "shy",
 "lonely",
-"messy"
+"ordinary"
 ]
 },
 {
 "w": "Farm",
-"q": "My uncle has a ..... with cows, chickens and sheep.",
+"q": "My uncle has a big ..... outside the city. He keeps cows, chickens, and sheep there.",
 "o": [
 "farm",
 "club",
-"team",
-"campus"
+"campus",
+"factory"
 ]
 },
 {
 "w": "Feed",
-"q": "Don't forget to ..... the cat. It hasn't eaten since the morning.",
+"q": "Don't forget to ..... the cat before you leave. She hasn't eaten anything since this morning.",
 "o": [
 "feed",
 "ride",
-"wear",
-"describe"
+"describe",
+"chase"
 ]
 },
 {
 "w": "Field",
-"q": "The farmer grows wheat in a large ..... behind his house.",
+"q": "The farmer grows wheat in a large ..... behind his house. It needs lots of water in summer.",
 "o": [
 "field",
 "club",
-"team",
-"drawer"
+"drawer",
+"ceiling"
 ]
 },
 {
 "w": "Flood",
-"q": "After three days of heavy rain, there was a big ..... and many houses were under water.",
+"q": "After three days of heavy rain, there was a big ...... Many streets and houses were under water.",
 "o": [
 "flood",
 "event",
 "contest",
-"tradition"
+"drought"
 ]
 },
 {
 "w": "Pick up",
-"q": "Please ..... the papers from the floor and put them on the desk.",
+"q": "Please ..... your clothes from the floor and put them in the closet. Your room is very messy.",
 "o": [
 "pick up",
 "turn off",
 "give up",
-"stay up"
+"show off"
 ]
 },
 {
 "w": "Unusual",
-"q": "It is very ..... to see snow in Riyadh. It almost never happens.",
+"q": "It is very ..... to see snow in Riyadh. It almost never happens, so people take many photos.",
 "o": [
 "unusual",
 "popular",
-"famous",
+"common",
 "crowded"
 ]
 },
 {
 "w": "Academic",
-"q": "The university's ..... year starts in September and ends in June.",
+"q": "The university's ..... year starts in September and ends in June. Students have two long holidays.",
 "o": [
 "academic",
 "delicious",
 "organic",
-"lonely"
+"elderly"
 ]
 },
 {
 "w": "Academy",
-"q": "He trains at a football ..... for young players.",
+"q": "My son trains at a football ..... for young players. He hopes to play professionally one day.",
 "o": [
 "academy",
 "flood",
 "drawer",
-"memory"
+"pharmacy"
 ]
 },
 {
 "w": "Attend",
-"q": "All students must ..... the lecture. The teacher will check who is absent.",
+"q": "All students must ..... the lecture on Monday. The professor will check who is absent.",
 "o": [
 "attend",
 "feed",
 "collect",
-"grow"
+"delete"
 ]
 },
 {
 "w": "Difficult",
-"q": "The exam was very ....., most students couldn't finish it.",
+"q": "The final exam was very ...... Most students couldn't finish it, and many failed.",
 "o": [
 "difficult",
 "easy",
-"simple",
-"enjoyable"
+"enjoyable",
+"pleasant"
 ]
 },
 {
 "w": "Difficulty",
-"q": "He has ..... reading small letters, so he needs glasses.",
+"q": "My grandfather has ..... reading small letters. He needs his glasses to read the newspaper.",
 "o": [
 "difficulty",
 "strength",
 "memory",
-"energy"
+"luggage"
 ]
 },
 {
 "w": "Enjoy",
-"q": "I really ..... spending time with my friends at the beach. It's so much fun!",
+"q": "I really ..... spending time with my friends at the beach. We always have so much fun there.",
 "o": [
 "enjoy",
 "avoid",
 "fail",
-"reduce"
+"regret"
 ]
 },
 {
 "w": "Enjoyable",
-"q": "The trip was very ....., we had a great time.",
+"q": "Our trip to AlUla was very ...... We had a great time and took lots of photos.",
 "o": [
 "enjoyable",
 "boring",
 "dangerous",
-"complicated"
+"awful"
 ]
 },
 {
 "w": "Friend",
-"q": "Ahmed is my best ....., we have known each other since we were children.",
+"q": "Ahmed is my best ...... We have known each other since we were children in primary school.",
 "o": [
 "friend",
 "landlord",
 "professor",
-"expert"
+"enemy"
 ]
 },
 {
 "w": "Help",
-"q": "Can you ..... me carry these heavy boxes?",
+"q": "Can you ..... me carry these boxes to the car? They are too heavy for me.",
 "o": [
 "help",
 "fail",
-"grow",
-"avoid"
+"avoid",
+"blame"
 ]
 },
 {
 "w": "Intelligence",
-"q": "Chess is a game that needs a lot of ..... and thinking.",
+"q": "Chess needs a lot of ..... and careful thinking. You must plan many moves ahead.",
 "o": [
 "intelligence",
 "electricity",
-"flood",
-"rent"
+"rent",
+"furniture"
 ]
 },
 {
 "w": "Student",
-"q": "Sara is a ..... at King Saud University. She studies medicine.",
+"q": "Sara is a ..... at King Saud University. She studies medicine and wants to be a doctor.",
 "o": [
 "student",
 "landlord",
-"farm",
-"team"
+"team",
+"stadium"
 ]
 },
 {
 "w": "Studious",
-"q": "Khalid is very ....., he studies for hours every day and always does his homework.",
+"q": "Khalid is very ...... He studies for hours every day and always finishes his homework on time.",
 "o": [
 "studious",
 "lonely",
 "messy",
-"noisy"
+"lazy"
 ]
 },
 {
 "w": "Study",
-"q": "I need to ..... for my English exam tomorrow.",
+"q": "I need to ..... for my English exam tomorrow. I'm going to the library to review my notes.",
 "o": [
 "study",
 "teach",
-"feed",
-"ride"
+"dance",
+"knock"
 ]
 },
 {
 "w": "Teach",
-"q": "My mother is a teacher. She ..... English at a primary school.",
+"q": "My mother works at a primary school. She ..... English to children aged six to ten.",
 "o": [
 "teaches",
 "feeds",
 "rides",
-"grows"
+"builds"
 ]
 },
 {
 "w": "Teachable",
-"q": "He is very ....., he listens to advice and learns new things quickly.",
+"q": "My new employee is very ...... He listens to advice and learns new things quickly.",
 "o": [
 "teachable",
 "dangerous",
 "crowded",
-"unsafe"
+"stubborn"
 ]
 },
 {
 "w": "Teacher",
-"q": "Our English ..... gave us a lot of homework today.",
+"q": "Our English ..... gave us a lot of homework today. We have to write two essays by Sunday.",
 "o": [
 "teacher",
-"student",
 "landlord",
-"roommate"
+"roommate",
+"plumber"
 ]
 },
 {
 "w": "Campus",
-"q": "The university ..... is very big. It has twenty buildings and a large library.",
+"q": "The university ..... is very big. It has twenty buildings, a large library, and a sports center.",
 "o": [
 "campus",
 "drawer",
-"flood",
-"pill"
+"pill",
+"mailbox"
 ]
 },
 {
 "w": "Community",
-"q": "Everyone in our ..... helped to clean the streets after the storm.",
+"q": "Everyone in our ..... helped to clean the streets after the storm. Our neighbours are very kind.",
 "o": [
 "community",
 "drawer",
 "vitamin",
-"diet"
+"engine"
 ]
 },
 {
 "w": "Download",
-"q": "You can ..... the app for free from the internet.",
+"q": "You can ..... the university app for free. It shows your class schedule and your grades.",
 "o": [
 "download",
 "feed",
-"grow",
-"celebrate"
+"celebrate",
+"swallow"
 ]
 },
 {
 "w": "Foreign Language",
-"q": "Learning a ....., like French or Chinese, can help you find a better job.",
+"q": "My cousin is learning a ..... at the university. She can now speak French quite well.",
 "o": [
 "foreign language",
 "public transportation",
-"dairy",
-"tradition"
+"tradition",
+"musical instrument"
 ]
 },
 {
 "w": "Skill",
-"q": "Cooking is a useful ..... that everyone should learn.",
+"q": "Cooking is a useful ..... that everyone should learn. My father taught me when I was twelve.",
 "o": [
 "skill",
 "flood",
 "rent",
-"drawer"
+"disease"
 ]
 },
 {
 "w": "Professor",
-"q": "Dr. Ali is a ..... of history at the university.",
+"q": "Dr. Ali is a history ..... at the university. His lectures are always full of students.",
 "o": [
 "professor",
 "landlord",
 "roommate",
-"vegetarian"
+"pilot"
 ]
 },
 {
 "w": "Special",
-"q": "Today is a ..... day. It's my parents' wedding anniversary.",
+"q": "Today is a ..... day for our family. It's my parents' twentieth wedding anniversary.",
 "o": [
 "special",
 "boring",
 "dirty",
-"cheap"
+"ordinary"
 ]
 },
 {
 "w": "Above",
-"q": "The picture is hanging on the wall ..... the sofa.",
+"q": "The clock is hanging on the wall ..... the TV. You can see the time while watching.",
 "o": [
 "above",
 "instead of",
-"well",
-"unfortunately"
+"during",
+"except"
 ]
 },
 {
 "w": "Below",
-"q": "It was ten degrees ..... zero. It was freezing!",
+"q": "It was five degrees ..... zero in the mountains last night. Everything was frozen in the morning.",
 "o": [
 "below",
 "above",
 "instead of",
-"well"
+"across"
 ]
 },
 {
 "w": "Boring",
-"q": "The movie was so ..... that I fell asleep.",
+"q": "The movie was so ..... that I fell asleep after twenty minutes. Nothing interesting happened in it.",
 "o": [
 "boring",
-"interesting",
+"exciting",
 "delicious",
-"enjoyable"
+"crowded"
 ]
 },
 {
 "w": "Cheap",
-"q": "This phone is very ....., it costs only 100 riyals.",
+"q": "This phone is very ...... It costs only 200 riyals, but it works very well.",
 "o": [
 "cheap",
 "expensive",
 "dangerous",
-"complicated"
+"ancient"
 ]
 },
 {
 "w": "Clean",
-"q": "Wash your hands. They should be ..... before you eat.",
+"q": "Your hands should be ..... before you eat. Wash them with soap and warm water.",
 "o": [
 "clean",
 "dirty",
 "messy",
-"noisy"
+"broken"
 ]
 },
 {
 "w": "Complicated",
-"q": "The instructions were so ..... that nobody understood them.",
+"q": "The printer instructions were so ..... that nobody understood them. We had to call the company.",
 "o": [
 "complicated",
 "simple",
-"easy",
-"safe"
+"comfortable",
+"polite"
 ]
 },
 {
 "w": "Dangerous",
-"q": "Don't swim here. The sea is very ..... today because of the big waves.",
+"q": "Don't swim here today. The sea is very ..... because of the big waves and strong wind.",
 "o": [
 "dangerous",
 "safe",
-"cheap",
-"neat"
+"crowded",
+"peaceful"
 ]
 },
 {
 "w": "Dirty",
-"q": "My shoes are ..... because I walked in the mud.",
+"q": "My shoes are very ..... because I walked in the mud. I need to wash them now.",
 "o": [
 "dirty",
 "clean",
-"neat",
-"cheap"
+"comfortable",
+"stylish"
 ]
 },
 {
 "w": "Easy",
-"q": "The test was very ....., I finished it in ten minutes.",
+"q": "The quiz was very ...... I answered all the questions in ten minutes and got full marks.",
 "o": [
 "easy",
 "difficult",
-"hard",
-"complicated"
+"complicated",
+"long"
 ]
 },
 {
 "w": "Expensive",
-"q": "I can't buy this car. It's too ......",
+"q": "I can't buy this car. It's too ..... for me, and I don't have enough money.",
 "o": [
 "expensive",
 "cheap",
 "affordable",
-"simple"
+"generous"
 ]
 },
 {
 "w": "Fail",
-"q": "If you don't study, you will ..... the exam.",
+"q": "If you don't study at all, you will ..... the exam. Then you'll have to repeat the course.",
 "o": [
 "fail",
 "enjoy",
 "celebrate",
-"grow"
+"pass"
 ]
 },
 {
 "w": "Hard",
-"q": "Climbing the mountain was very ....., we were tired after only one hour.",
+"q": "Climbing the mountain was very ...... We were tired and thirsty after only one hour.",
 "o": [
 "hard",
 "easy",
-"simple",
-"cheap"
+"relaxing",
+"effortless"
 ]
 },
 {
 "w": "Interesting",
-"q": "This book is very ....., I couldn't stop reading it.",
+"q": "This novel is very ...... I couldn't stop reading it, and I finished it in one night.",
 "o": [
 "interesting",
 "boring",
-"dirty",
-"noisy"
+"noisy",
+"disappointing"
 ]
 },
 {
 "w": "Negative",
-"q": "He always thinks that bad things will happen. He is very ......",
+"q": "My friend always expects bad things to happen. He is very ..... about his future.",
 "o": [
 "negative",
 "positive",
 "helpful",
-"neat"
+"punctual"
 ]
 },
 {
 "w": "Off",
-"q": "Please turn ..... the lights when you leave the room.",
+"q": "Please turn ..... the lights when you leave the room. We need to save electricity.",
 "o": [
 "off",
 "on",
 "above",
-"below"
+"across"
 ]
 },
 {
 "w": "On",
-"q": "It's dark in here. Can you turn ..... the light, please?",
+"q": "It's very dark in here. Can you turn ..... the light, please? I can't see anything.",
 "o": [
 "on",
 "off",
-"above",
-"below"
+"below",
+"under"
 ]
 },
 {
 "w": "Online",
-"q": "I bought these shoes ....., and they arrived at my house two days later.",
+"q": "I bought these shoes ..... last week. They arrived at my house two days later.",
 "o": [
 "online",
-"outdoors",
 "below",
-"above"
+"upstairs",
+"backwards"
 ]
 },
 {
 "w": "Safe",
-"q": "Keep your money in a ..... place, like a bank.",
+"q": "Keep your passport in a ..... place during the trip. If you lose it, you can't travel home.",
 "o": [
 "safe",
 "dangerous",
-"unsafe",
-"noisy"
+"noisy",
+"public"
 ]
 },
 {
 "w": "Simple",
-"q": "The recipe is very ....., it has only three steps.",
+"q": "This recipe is very ...... It has only three steps, so even children can make it.",
 "o": [
 "simple",
 "complicated",
 "difficult",
-"hard"
+"confusing"
 ]
 },
 {
 "w": "Strength",
-"q": "His biggest ..... is that he stays calm, but his weakness is that he is always late.",
+"q": "His biggest ..... is that he stays calm under pressure. That's why he is a good manager.",
 "o": [
 "strength",
 "weakness",
 "stress",
-"shortage"
+"mistake"
 ]
 },
 {
 "w": "Succeed",
-"q": "If you work hard, you will ..... in your exams.",
+"q": "Work hard and attend all your classes. Then you will ..... in your studies and graduate.",
 "o": [
 "succeed",
 "fail",
 "avoid",
-"reduce"
+"complain"
 ]
 },
 {
 "w": "Weakness",
-"q": "My biggest ..... is math. I always get low marks in it.",
+"q": "My biggest ..... is math. I always get low marks in it, so I need a tutor.",
 "o": [
 "weakness",
 "strength",
 "skill",
-"goal"
+"talent"
 ]
 },
 {
 "w": "Well",
-"q": "She speaks English very ....., she lived in London for five years.",
+"q": "Maha speaks English very ...... She lived in London for five years with her family.",
 "o": [
 "well",
 "badly",
 "maybe",
-"instead of"
+"lately"
 ]
 },
 {
 "w": "Celebrate",
-"q": "We will ..... my brother's graduation with a big party.",
+"q": "We will ..... my brother's graduation with a big party at home. All our relatives are coming.",
 "o": [
 "celebrate",
 "avoid",
-"fail",
-"reduce"
+"criticize",
+"fail"
 ]
 },
 {
 "w": "Delicious",
-"q": "This cake is .....! Can I have another piece?",
+"q": "This kunafa is .....! Can I have another piece? Did you make it yourself?",
 "o": [
 "delicious",
 "dirty",
 "boring",
-"noisy"
+"disgusting"
 ]
 },
 {
 "w": "Event",
-"q": "The music festival is the biggest ..... in our city this year.",
+"q": "The Riyadh Season festival is the biggest ..... in our city this year. Millions of people visit it.",
 "o": [
 "event",
 "drawer",
 "pill",
-"landlord"
+"rumor"
 ]
 },
 {
 "w": "Fresh",
-"q": "I buy ..... bread from the bakery every morning.",
+"q": "I buy ..... bread from the bakery every morning. It is still warm when I get home.",
 "o": [
 "fresh",
 "dirty",
 "noisy",
-"lonely"
+"stale"
 ]
 },
 {
 "w": "Grow",
-"q": "My grandfather ..... tomatoes and onions in his garden.",
+"q": "My grandfather ..... tomatoes and onions in his garden. He waters them every evening.",
 "o": [
 "grows",
 "invites",
-"avoids",
-"celebrates"
+"celebrates",
+"borrows"
 ]
 },
 {
 "w": "Popular",
-"q": "This restaurant is very ....., there are always a lot of people waiting for a table.",
+"q": "This new restaurant is very ...... There are always a lot of people waiting for a table.",
 "o": [
 "popular",
 "unusual",
 "lonely",
-"private"
+"empty"
 ]
 },
 {
 "w": "Prepare",
-"q": "My mother usually ..... dinner at seven o'clock.",
+"q": "My mother usually ..... dinner at seven o'clock. We all eat together after the evening prayer.",
 "o": [
 "prepares",
 "invites",
 "collects",
-"celebrates"
+"repairs"
 ]
 },
 {
 "w": "Apples",
-"q": "My mother bought a big bag of red ..... from the market. She wants to make an apple pie.",
+"q": "Ahmad picked some ..... from the trees in his garden. He wants to make fresh juice with them.",
 "o": [
 "apples",
 "onions",
 "potatoes",
-"beans"
+"cucumbers"
 ]
 },
 {
 "w": "Bananas",
-"q": "I always eat two ..... before I go to the gym. They give me a lot of energy.",
+"q": "I always eat two ..... before the gym. They are yellow, sweet, and full of energy.",
 "o": [
 "bananas",
 "onions",
 "potatoes",
-"shrimp"
+"lemons"
 ]
 },
 {
 "w": "Beans",
-"q": "For dinner, we had rice with green ..... and grilled chicken.",
+"q": "For dinner, we had rice with green ..... and grilled chicken. My mother cooked them in tomato sauce.",
 "o": [
 "beans",
 "bananas",
 "grapes",
-"apples"
+"candies"
 ]
 },
 {
 "w": "Beef",
-"q": "I don't eat chicken or fish, but I love a big ..... burger from that restaurant.",
+"q": "My brother doesn't like chicken burgers. He always orders a big ..... burger with cheese.",
 "o": [
 "beef",
 "grapes",
-"onions",
-"bananas"
+"bananas",
+"yogurt"
 ]
 },
 {
 "w": "Cheese",
-"q": "Can I have a pizza with extra .....? I love it when it melts.",
+"q": "Can I have a pizza with extra .....? I love it when it melts and stretches.",
 "o": [
 "cheese",
-"beef",
-"onions",
-"bananas"
+"grapes",
+"bananas",
+"lettuce"
 ]
 },
 {
 "w": "Chicken",
-"q": "My grandmother makes the best kabsa with rice and ......",
+"q": "My grandmother makes the best kabsa with rice and ...... She cooks the whole bird with spices.",
 "o": [
 "chicken",
 "grapes",
 "cheese",
-"bananas"
+"lettuce"
 ]
 },
 {
 "w": "Dairy",
-"q": "My brother can't drink milk or eat cheese. He has a problem with ..... products.",
+"q": "My brother can't drink milk or eat cheese. He has a problem with ..... products like yogurt.",
 "o": [
 "dairy",
 "seafood",
-"vegetables",
-"fruit"
+"grain",
+"plastic"
 ]
 },
 {
 "w": "Fruit",
-"q": "For dessert, the restaurant serves fresh ..... like apples, oranges and grapes.",
+"q": "For dessert, the hotel serves a big plate of fresh ...... It has apples, oranges, and grapes.",
 "o": [
 "fruit",
 "vegetables",
 "dairy",
-"seafood"
+"bread"
 ]
 },
 {
 "w": "Grapes",
-"q": "There are green and purple ..... in the fruit bowl. Take some!",
+"q": "There are green and purple ..... in the fruit bowl. They are small, round, and very sweet.",
 "o": [
 "grapes",
 "potatoes",
 "onions",
-"beans"
+"carrots"
 ]
 },
 {
 "w": "Lobster",
-"q": "We went to an expensive seafood restaurant, and my father ordered a big ......",
+"q": "We went to a seafood restaurant, and my father ordered a big ...... It had two large claws.",
 "o": [
 "lobster",
 "chicken",
 "cheese",
-"onion"
+"pancake"
 ]
 },
 {
 "w": "Meat",
-"q": "My sister is a vegetarian, so she never eats ......",
+"q": "My sister is a vegetarian, so she never eats ...... She only eats vegetables, fruit, and beans.",
 "o": [
 "meat",
 "vegetables",
-"fruit",
-"beans"
+"rice",
+"salad"
 ]
 },
 {
 "w": "Milk",
-"q": "My little brother drinks a glass of ..... every night before bed.",
+"q": "My little brother drinks a warm glass of ..... every night before bed. It helps him sleep.",
 "o": [
 "milk",
 "beef",
 "onions",
-"shrimp"
+"rice"
 ]
 },
 {
 "w": "Onions",
-"q": "I can't stop crying! I'm cutting ..... for the salad.",
+"q": "I can't stop crying! I'm cutting ..... for the salad, and they are very strong.",
 "o": [
 "onions",
 "apples",
 "bananas",
-"grapes"
+"cucumbers"
 ]
 },
 {
 "w": "Potatoes",
-"q": "Can you buy some ..... from the supermarket? I want to make French fries.",
+"q": "Can you buy some ..... from the supermarket? I want to make French fries for the kids.",
 "o": [
 "potatoes",
 "grapes",
 "apples",
-"bananas"
+"lemons"
 ]
 },
 {
 "w": "Seafood",
-"q": "We live near the sea, so we eat a lot of ....., like fish and shrimp.",
+"q": "We live near the sea in Jeddah, so we eat a lot of ....., like fish and shrimp.",
 "o": [
 "seafood",
 "dairy",
 "fruit",
-"vegetables"
+"pastry"
 ]
 },
 {
 "w": "Shrimp",
-"q": "My favourite seafood is ...... I love it grilled with lemon.",
+"q": "My favourite seafood is ...... I love it grilled with lemon and garlic.",
 "o": [
 "shrimp",
 "beef",
 "onions",
-"grapes"
+"noodles"
 ]
 },
 {
 "w": "Vegetables",
-"q": "The doctor told me to eat more ....., like carrots, onions and potatoes.",
+"q": "The doctor told me to eat more ....., like carrots, spinach, and cucumbers, to stay healthy.",
 "o": [
 "vegetables",
-"fruit",
 "dairy",
-"seafood"
+"seafood",
+"sweets"
 ]
 },
 {
 "w": "Avoid",
-"q": "You should ..... eating too much sugar if you want to be healthy.",
+"q": "My doctor told me to ..... sugary drinks. They are bad for my teeth and my weight.",
 "o": [
 "avoid",
-"enjoy",
 "celebrate",
-"increase"
+"admire",
+"collect"
 ]
 },
 {
 "w": "Flavor",
-"q": "This ice cream has a strawberry ......",
+"q": "I love the sweet ..... of this mango juice. It tastes like the fruit from my grandfather's farm.",
 "o": [
 "flavor",
-"memory",
-"scene",
-"tradition"
+"shortage",
+"location",
+"furniture"
 ]
 },
 {
 "w": "Ingredient",
-"q": "Flour is the main ..... in bread.",
+"q": "Rice is the main ..... in kabsa. My mother also adds chicken, onions and special spices.",
 "o": [
 "ingredient",
-"memory",
 "event",
-"landlord"
+"landlord",
+"gesture"
 ]
 },
 {
 "w": "Memory",
-"q": "I have a good ....., I never forget people's names.",
+"q": "My grandmother has an amazing ...... She still remembers the names of all her teachers from 1965.",
 "o": [
 "memory",
 "flavor",
-"scene",
-"tradition"
+"contest",
+"appetite"
 ]
 },
 {
 "w": "Nutritious",
-"q": "Fruit and vegetables are very ....., they are full of vitamins.",
+"q": "Lentil soup is cheap and very ...... It gives your body protein, iron and lots of vitamins.",
 "o": [
 "nutritious",
-"unhealthy",
-"dangerous",
-"boring"
+"complicated",
+"crowded",
+"fragile"
 ]
 },
 {
 "w": "Organic",
-"q": "These tomatoes are more expensive because they are ....., the farmer doesn't use any chemicals.",
+"q": "These vegetables cost more because they are ...... The farmer grows them without any chemicals or sprays.",
 "o": [
 "organic",
 "crowded",
 "noisy",
-"modern"
+"elegant"
 ]
 },
 {
 "w": "Vegetarian",
-"q": "My sister is a ....., she doesn't eat meat or fish.",
+"q": "My cousin became a ..... last year. Now she only eats vegetables, beans, rice and fruit.",
 "o": [
 "vegetarian",
 "landlord",
 "roommate",
-"professor"
+"pharmacist"
 ]
 },
 {
 "w": "Nondairy",
-"q": "He can't drink milk, so he buys ..... products.",
+"q": "My brother can't have milk or cheese, so he always looks for ..... products at the supermarket.",
 "o": [
 "nondairy",
-"sugar-free",
 "salt-free",
-"unhealthy"
+"sugar-free",
+"imported"
 ]
 },
 {
 "w": "Nonfat",
-"q": "I'm on a diet, so I drink ..... milk with zero percent fat.",
+"q": "I'm trying to lose weight, so I only drink ..... milk. It has zero percent fat.",
 "o": [
 "nonfat",
-"nondairy",
 "salt-free",
-"unhealthy"
+"unsafe",
+"spicy"
 ]
 },
 {
 "w": "Salt-free",
-"q": "My father must not eat salt, so he buys ..... bread.",
+"q": "My father has high blood pressure. The doctor says he must eat ..... food from now on.",
 "o": [
 "salt-free",
-"sugar-free",
-"nonfat",
-"nondairy"
+"nondairy",
+"unhealthy",
+"spicy"
 ]
 },
 {
 "w": "Sugar-free",
-"q": "People with diabetes can't have sugar, so they drink ..... drinks.",
+"q": "My uncle has diabetes, so he can't have sweets. He always orders ..... drinks at restaurants.",
 "o": [
 "sugar-free",
 "salt-free",
 "nondairy",
-"nonfat"
+"sugary"
 ]
 },
 {
 "w": "Unfriendly",
-"q": "The waiter was very ....., he didn't smile or say hello.",
+"q": "The new receptionist was very ...... She didn't smile or say hello when we walked in.",
 "o": [
 "unfriendly",
-"friendly",
 "helpful",
-"funny"
+"funny",
+"generous"
 ]
 },
 {
 "w": "Unhealthy",
-"q": "Eating fast food every day is ......",
+"q": "Eating burgers and fries every day is ...... It can make you overweight and tired.",
 "o": [
 "unhealthy",
 "nutritious",
-"healthy",
-"safe"
+"relaxing",
+"beneficial"
 ]
 },
 {
 "w": "Unsafe",
-"q": "This old bridge is ....., nobody should walk on it.",
+"q": "Don't swim in this part of the sea today. It is ..... because the waves are very strong.",
 "o": [
 "unsafe",
-"safe",
-"clean",
-"neat"
+"comfortable",
+"neat",
+"shallow"
 ]
 },
 {
 "w": "Cost",
-"q": "How much does this bag .....?",
+"q": "I love this watch, but how much does it .....? I only have 500 riyals with me.",
 "o": [
 "cost",
 "guess",
 "invite",
-"provide"
+"earn"
 ]
 },
 {
 "w": "Guess",
-"q": "I don't know the answer, so I'll just ......",
+"q": "I didn't study for this quiz at all. I'll just ..... the answers and hope for the best.",
 "o": [
 "guess",
 "invite",
-"cost",
-"provide"
+"provide",
+"deliver"
 ]
 },
 {
 "w": "Idea",
-"q": "I have an .....! Let's go to the beach this weekend.",
+"q": "I have a great .....! Let's have a picnic in the desert this weekend with the whole family.",
 "o": [
 "idea",
 "memory",
-"ingredient",
-"event"
+"event",
+"habit"
 ]
 },
 {
 "w": "Invite",
-"q": "I'm going to ..... all my friends to my birthday party.",
+"q": "My sister is getting married next month. She wants to ..... all her university friends to the wedding.",
 "o": [
 "invite",
 "avoid",
 "guess",
-"cost"
+"ignore"
 ]
 },
 {
 "w": "Nature",
-"q": "I love walking in ....., among the trees, rivers and mountains.",
+"q": "We spent the weekend in Abha and enjoyed its beautiful ...... There were green mountains, trees and waterfalls.",
 "o": [
 "nature",
-"tradition",
-"memory",
-"building"
+"electricity",
+"shortage",
+"traffic"
 ]
 },
 {
 "w": "Program",
-"q": "My favourite TV ..... is about animals in Africa.",
+"q": "My favorite TV ..... is on every Thursday night. It shows wild animals living in Africa.",
 "o": [
 "program",
-"tradition",
 "flavor",
-"ingredient"
+"ingredient",
+"receipt"
 ]
 },
 {
 "w": "Positive",
-"q": "Always be .....! Think about the good things in life.",
+"q": "Try to stay ..... during exam week. Think about your strengths, not about your mistakes.",
 "o": [
 "positive",
 "negative",
 "lonely",
-"unsafe"
+"jealous"
 ]
 },
 {
 "w": "Sightseeing",
-"q": "When we visited Paris, we went ..... and saw the Eiffel Tower.",
+"q": "When we visited Paris, we went ..... every day. We saw the Eiffel Tower and many old museums.",
 "o": [
 "sightseeing",
-"swimming",
 "skiing",
-"jogging"
+"swimming",
+"fishing"
 ]
 },
 {
 "w": "Spend",
-"q": "I ..... a lot of money on clothes last month.",
+"q": "I ..... too much money on clothes last month. Now I have nothing left for the trip.",
 "o": [
 "spent",
 "guessed",
 "invited",
-"provided"
+"earned"
 ]
 },
 {
 "w": "Give a ride",
-"q": "My car is broken. Can you ..... me a ride to work?",
+"q": "My car broke down this morning. Can you ..... me a ride to the university, please?",
 "o": [
 "give",
-"have",
+"take",
 "make",
-"tell"
+"lend"
 ]
 },
 {
 "w": "Have a snack",
-"q": "I'm a little hungry. Let's ..... a snack before class.",
+"q": "I'm a little hungry before class. Let's ..... a quick snack at the cafeteria first.",
+"o": [
+"have",
+"tell",
+"play",
+"build"
+]
+},
+{
+"w": "Have an idea",
+"q": "We need a topic for our group project. I ..... an idea! Let's make a short video.",
 "o": [
 "have",
 "make",
@@ -1382,28 +1392,18 @@ window.VOCAB = [
 ]
 },
 {
-"w": "Have an idea",
-"q": "I ..... an idea! Let's make a video for our project.",
-"o": [
-"have",
-"make",
-"tell",
-"give"
-]
-},
-{
 "w": "Have coffee",
-"q": "Let's ..... coffee together at the café after work.",
+"q": "I'm free after my last lecture. Let's ..... coffee together at the new café near campus.",
 "o": [
 "have",
 "tell",
-"give",
+"ride",
 "do"
 ]
 },
 {
 "w": "Have fun",
-"q": "We went to the amusement park and ..... a lot of fun.",
+"q": "We went to Boulevard City last weekend and ..... a lot of fun with our cousins.",
 "o": [
 "had",
 "made",
@@ -1413,7 +1413,17 @@ window.VOCAB = [
 },
 {
 "w": "Make friends",
-"q": "It's easy to ..... friends at university if you join clubs.",
+"q": "Join a student club in your first year. It's the easiest way to ..... new friends.",
+"o": [
+"make",
+"take",
+"tell",
+"do"
+]
+},
+{
+"w": "Make plans",
+"q": "My brother and I want to travel this summer. Let's ..... plans tonight and choose a city.",
 "o": [
 "make",
 "tell",
@@ -1422,38 +1432,28 @@ window.VOCAB = [
 ]
 },
 {
-"w": "Make plans",
-"q": "Let's ..... plans for the weekend. Where should we go?",
-"o": [
-"make",
-"tell",
-"give",
-"do"
-]
-},
-{
 "w": "Take a vacation",
-"q": "I'm very tired from work. I need to ..... a vacation.",
+"q": "I've worked for eleven months without a break. I really need to ..... a vacation soon.",
 "o": [
 "take",
 "tell",
-"make",
-"do"
+"play",
+"build"
 ]
 },
 {
 "w": "Take a walk",
-"q": "After dinner, my grandfather likes to ..... a walk in the park.",
+"q": "After dinner, my grandfather likes to ..... a walk around the neighborhood. He says it helps him sleep.",
 "o": [
 "take",
 "tell",
 "make",
-"do"
+"play"
 ]
 },
 {
 "w": "Tell a joke",
-"q": "My uncle always ..... a joke at dinner, and everyone laughs.",
+"q": "My uncle is so funny. He always ..... a joke at dinner, and everyone laughs.",
 "o": [
 "tells",
 "takes",
@@ -1463,812 +1463,812 @@ window.VOCAB = [
 },
 {
 "w": "Crowded",
-"q": "The mall was very ....., there were thousands of people.",
+"q": "The mall was very ..... on the first day of Eid. We couldn't find a place to park.",
 "o": [
 "crowded",
 "lonely",
 "private",
-"safe"
+"spacious"
 ]
 },
 {
 "w": "Modern",
-"q": "Our new house is very ....., with smart lights and a new kitchen.",
+"q": "My uncle's new villa is very ...... It has smart lights, a new kitchen and fast Wi-Fi.",
 "o": [
 "modern",
 "run-down",
 "dirty",
-"noisy"
+"ancient"
 ]
 },
 {
 "w": "Outdoors",
-"q": "When the weather is nice, the children like to play ......",
+"q": "The weather is lovely today. Let's take the children to the park so they can play ......",
 "o": [
 "outdoors",
 "online",
 "below",
-"above"
+"indoors"
 ]
 },
 {
 "w": "Badly",
-"q": "He sang so ..... that everyone covered their ears.",
+"q": "My brother sang so ..... at the party that everyone covered their ears and laughed.",
 "o": [
 "badly",
 "well",
-"maybe",
-"online"
+"quietly",
+"sweetly"
 ]
 },
 {
 "w": "Provide",
-"q": "The hotel ..... free breakfast for all guests.",
+"q": "Our hotel in Jeddah ..... free breakfast for all guests. You can eat from six to ten.",
 "o": [
 "provides",
 "costs",
-"guesses",
-"invites"
+"invites",
+"refuses"
 ]
 },
 {
 "w": "Relaxing",
-"q": "A warm bath after a long day is very ......",
+"q": "After a long week at work, a quiet evening by the sea is very ...... I feel calm.",
 "o": [
 "relaxing",
 "dangerous",
 "complicated",
-"noisy"
+"exhausting"
 ]
 },
 {
 "w": "Scene",
-"q": "The first ..... of the movie shows a big city at night.",
+"q": "The first ..... of the movie was very exciting. It showed a car chase through the city.",
 "o": [
 "scene",
 "flavor",
-"ingredient",
-"diet"
+"diet",
+"ticket"
 ]
 },
 {
 "w": "Tradition",
-"q": "Drinking Arabic coffee with dates during Eid is a family ......",
+"q": "Drinking Arabic coffee with dates on Eid morning is an old family ...... We do it every year.",
 "o": [
 "tradition",
 "ingredient",
 "vitamin",
-"shortage"
+"argument"
 ]
 },
 {
 "w": "Do aerobic",
-"q": "My mother goes to the gym to ..... aerobics three times a week.",
+"q": "My mother goes to the women's gym three times a week to ..... aerobics with her friends.",
 "o": [
 "do",
 "play",
 "go",
-"make"
+"win"
 ]
 },
 {
 "w": "Do crosswords",
-"q": "My grandfather likes to ..... crosswords in the newspaper.",
+"q": "My grandfather loves word puzzles. Every morning, he ..... the crossword in the newspaper with his tea.",
 "o": [
-"do",
-"go",
-"make",
-"ride"
+"does",
+"goes",
+"rides",
+"builds"
 ]
 },
 {
 "w": "Do gymnastics",
-"q": "She is very flexible because she ..... gymnastics every day.",
+"q": "My little sister is very flexible. She ..... gymnastics at a sports club four days a week.",
 "o": [
 "does",
 "plays",
 "goes",
-"rides"
+"builds"
 ]
 },
 {
 "w": "Do judo",
-"q": "My brother ..... judo. He has a black belt.",
+"q": "My brother ..... judo at the sports club. He has a black belt and won three medals.",
 "o": [
 "does",
 "plays",
-"goes",
-"rides"
+"rides",
+"cooks"
 ]
 },
 {
 "w": "Do nothing",
-"q": "On Fridays, I just stay at home and ..... nothing. I'm too lazy!",
+"q": "On Friday afternoons, I just stay home and ..... nothing. I'm too tired after the week.",
 "o": [
 "do",
 "play",
 "go",
-"make"
+"build"
 ]
 },
 {
 "w": "Go shopping",
-"q": "Let's go ..... at the mall. I need new clothes.",
+"q": "I need new shoes for the wedding. Let's go ..... at Riyadh Park Mall this evening.",
 "o": [
 "shopping",
 "skiing",
 "hiking",
-"swimming"
+"fishing"
 ]
 },
 {
 "w": "Go hiking",
-"q": "We went ..... in the mountains and walked for six hours.",
+"q": "We went ..... in the mountains of Al-Soudah and walked for six hours on rocky paths.",
 "o": [
 "hiking",
 "shopping",
 "swimming",
-"skiing"
+"sailing"
 ]
 },
 {
 "w": "Go skiing",
-"q": "In winter, we go ..... on the snowy mountains.",
+"q": "Last winter we traveled to Switzerland and went ..... down the snowy mountains every day.",
 "o": [
 "skiing",
-"swimming",
 "jogging",
-"shopping"
+"shopping",
+"diving"
 ]
 },
 {
 "w": "Go swimming",
-"q": "It's very hot today. Let's go ..... in the pool.",
+"q": "It's forty-five degrees today. Let's go ..... in the hotel pool to cool down.",
 "o": [
 "swimming",
 "skiing",
 "hiking",
-"shopping"
+"camping"
 ]
 },
 {
 "w": "Go jogging",
-"q": "Every morning, I go ..... in the park for thirty minutes to stay fit.",
+"q": "Every morning before work, I go ..... in the park for thirty minutes to stay fit.",
 "o": [
 "jogging",
 "skiing",
 "shopping",
-"sightseeing"
+"sailing"
 ]
 },
 {
 "w": "Play baseball",
-"q": "In America, my cousin plays ..... with his friends. He hits the ball with a bat.",
+"q": "My cousin lives in America. He plays ..... with his friends and hits the ball with a bat.",
 "o": [
 "baseball",
 "scrabble",
-"soccer",
-"video games"
+"chess",
+"basketball"
 ]
 },
 {
 "w": "Play scrabble",
-"q": "My grandmother is good at words. She always wins when we play ..... on Friday nights.",
+"q": "My grandmother knows so many English words. She always wins when we play ..... on Friday nights.",
 "o": [
 "scrabble",
 "baseball",
 "soccer",
-"tennis"
+"volleyball"
 ]
 },
 {
 "w": "Play soccer",
-"q": "My brother plays ..... for the school team. He is the goalkeeper.",
+"q": "My brother plays ..... for the university team. He is the goalkeeper and stops many shots.",
 "o": [
 "soccer",
 "scrabble",
 "tennis",
-"video games"
+"golf"
 ]
 },
 {
 "w": "Play tennis",
-"q": "She bought a new racket because she plays ..... three times a week.",
+"q": "She bought a new racket because she plays ..... with her coach three times a week.",
 "o": [
 "tennis",
 "soccer",
 "baseball",
-"scrabble"
+"chess"
 ]
 },
 {
 "w": "Play video games",
-"q": "He stays up late every night because he plays ..... on his computer.",
+"q": "My little brother stays up late every night. He plays ..... on his PlayStation until midnight.",
 "o": [
 "video games",
 "tennis",
 "soccer",
-"baseball"
+"chess"
 ]
 },
 {
 "w": "Bright",
-"q": "This room is very ....., it has big windows and lots of sunlight.",
+"q": "My new room is very ...... It has big windows and gets lots of sunlight all day.",
 "o": [
 "bright",
 "noisy",
 "crowded",
-"run-down"
+"gloomy"
 ]
 },
 {
 "w": "Building",
-"q": "The Kingdom Tower is a very tall ..... in Riyadh. It has ninety-nine floors.",
+"q": "Kingdom Centre is a famous ..... in Riyadh. It has ninety-nine floors and a sky bridge.",
 "o": [
 "building",
 "drawer",
 "field",
-"flood"
+"festival"
 ]
 },
 {
 "w": "Comfortable",
-"q": "This sofa is very ....., I could sit on it all day.",
+"q": "This new sofa is so ...... I can sit on it for hours and never feel tired.",
 "o": [
 "comfortable",
-"noisy",
+"complicated",
 "dangerous",
-"complicated"
+"rude"
 ]
 },
 {
 "w": "Contest",
-"q": "She won first prize in the singing ......",
+"q": "My sister won first prize in the school's reading ...... She read fifty books in two months.",
 "o": [
 "contest",
 "drawer",
 "shortage",
-"landlord"
+"journey"
 ]
 },
 {
 "w": "Design",
-"q": "I like the ..... of this house. It looks very modern.",
+"q": "I really like the ..... of this new phone. It is thin, light and looks very elegant.",
 "o": [
 "design",
 "shortage",
 "stress",
-"pill"
+"salary"
 ]
 },
 {
 "w": "Drawer",
-"q": "I keep my socks in the top ..... of my cupboard.",
+"q": "I can't find my car keys. Did you put them in the top ..... of my desk?",
 "o": [
 "drawer",
 "building",
 "field",
-"campus"
+"ceiling"
 ]
 },
 {
 "w": "Electricity",
-"q": "We couldn't use the lights or the TV because there was no ......",
+"q": "There was a big storm last night, so we had no ...... The lights and TV didn't work.",
 "o": [
 "electricity",
 "environment",
 "tradition",
-"memory"
+"courage"
 ]
 },
 {
 "w": "Environment",
-"q": "We should stop throwing plastic in the sea to protect the ......",
+"q": "Please don't throw plastic bags on the beach. We all need to protect the ......",
 "o": [
 "environment",
 "electricity",
 "entertainment",
-"rent"
+"furniture"
 ]
 },
 {
 "w": "Extremely",
-"q": "It was ..... hot yesterday, fifty degrees!",
+"q": "It was ..... hot in Riyadh yesterday. The temperature reached fifty degrees in the afternoon.",
 "o": [
 "extremely",
 "badly",
 "maybe",
-"well"
+"rarely"
 ]
 },
 {
 "w": "Share",
-"q": "My brother and I ..... a bedroom. We each have a bed in it.",
+"q": "My brother and I ..... a bedroom. We each have a bed and a desk in it.",
 "o": [
 "share",
 "spend",
 "cost",
-"provide"
+"invent"
 ]
 },
 {
 "w": "Space",
-"q": "My son wants to be an astronaut. He dreams of travelling to ..... one day.",
+"q": "My son wants to be an astronaut. He dreams of traveling to ..... and visiting the moon.",
 "o": [
 "space",
 "field",
-"farm",
-"campus"
+"campus",
+"traffic"
 ]
 },
 {
 "w": "Spend Time",
-"q": "I like to ..... time with my family on weekends.",
+"q": "I'm busy all week, so on weekends I like to ..... time with my family at the farm.",
 "o": [
 "spend",
 "cost",
 "guess",
-"provide"
+"lend"
 ]
 },
 {
 "w": "View",
-"q": "From our hotel room, we had a beautiful ..... of the sea.",
+"q": "Our hotel room was on the twentieth floor. We had a beautiful ..... of the Red Sea.",
 "o": [
 "view",
 "shortage",
 "rent",
-"diet"
+"recipe"
 ]
 },
 {
 "w": "Own",
-"q": "They bought a house last year, so now they ..... it.",
+"q": "I'm tired of sharing a bedroom with my two brothers. I really want my ..... room.",
 "o": [
 "own",
-"cost",
-"provide",
-"invite"
+"alone",
+"asleep",
+"afraid"
 ]
 },
 {
 "w": "Affordable",
-"q": "I want an ..... apartment. I can't pay more than 2000 riyals a month.",
+"q": "I'm a student with little money. I need an ..... apartment under 2,000 riyals a month.",
 "o": [
 "affordable",
 "expensive",
-"crowded",
-"noisy"
+"unsafe",
+"enormous"
 ]
 },
 {
 "w": "Condition",
-"q": "The car is old, but it is in good ....., it works perfectly.",
+"q": "The car is ten years old, but it's in excellent ...... It has no problems at all.",
 "o": [
 "condition",
 "location",
 "shortage",
-"demand"
+"silence"
 ]
 },
 {
 "w": "Demand",
-"q": "There is a high ..... for nurses, many hospitals need them.",
+"q": "There is a high ..... for nurses these days. Many hospitals need them and can't find enough.",
 "o": [
 "demand",
 "location",
 "condition",
-"view"
+"temperature"
 ]
 },
 {
 "w": "Entertainment",
-"q": "The city has lots of ....., like cinemas, theaters and parks.",
+"q": "Riyadh has lots of ..... these days, like cinemas, theme parks, concerts and theaters.",
 "o": [
 "entertainment",
 "environment",
 "electricity",
-"housing"
+"poverty"
 ]
 },
 {
 "w": "Housing",
-"q": "Students can find cheap ..... near the university, like small apartments.",
+"q": "Many students look for cheap ..... near the university, like small apartments or shared rooms.",
 "o": [
 "housing",
 "entertainment",
 "electricity",
-"environment"
+"clothing"
 ]
 },
 {
 "w": "Increase",
-"q": "The price of petrol will ..... next month, from 2 riyals to 2.5 riyals.",
+"q": "The price of coffee will ..... next month. It will go up from 15 to 18 riyals.",
 "o": [
 "increase",
 "reduce",
-"avoid",
-"fail"
+"fail",
+"shrink"
 ]
 },
 {
 "w": "Landlord",
-"q": "We pay our rent to the ..... at the end of every month.",
+"q": "We pay the rent to our ..... at the start of every month. He owns the whole building.",
 "o": [
 "landlord",
 "roommate",
 "professor",
-"vegetarian"
+"pilot"
 ]
 },
 {
 "w": "Location",
-"q": "The hotel has a great ....., it's in the city centre, near everything.",
+"q": "This hotel has a great ...... It's in the city center, near the shops and the metro.",
 "o": [
 "location",
 "condition",
 "demand",
-"shortage"
+"appetite"
 ]
 },
 {
 "w": "Noisy",
-"q": "I can't sleep because my neighbours are very ....., they play loud music all night.",
+"q": "I couldn't sleep last night. My neighbors were very ..... and played loud music until 3 a.m.",
 "o": [
 "noisy",
 "lonely",
 "neat",
-"shy"
+"polite"
 ]
 },
 {
 "w": "Private",
-"q": "This is a ..... beach. Only hotel guests can use it.",
+"q": "Sorry, you can't swim here. This is a ..... beach, and only hotel guests can use it.",
 "o": [
 "private",
 "crowded",
 "popular",
-"noisy"
+"public"
 ]
 },
 {
 "w": "Problem",
-"q": "My car won't start. There's a ..... with the engine.",
+"q": "My laptop won't turn on this morning. I think there's a ..... with the battery.",
 "o": [
 "problem",
 "goal",
 "idea",
-"view"
+"reward"
 ]
 },
 {
 "w": "Public transportation",
-"q": "I don't have a car, so I use ....., like buses and the metro.",
+"q": "I don't have a car, so I use ..... like the Riyadh Metro and city buses.",
 "o": [
 "public transportation",
 "foreign language",
 "entertainment",
-"housing"
+"social media"
 ]
 },
 {
 "w": "Rent",
-"q": "The ..... for this apartment is 3000 riyals a month.",
+"q": "The ..... for this apartment is 3,000 riyals a month, and we pay it to the landlord.",
 "o": [
 "rent",
-"landlord",
 "location",
-"view"
+"view",
+"traffic"
 ]
 },
 {
 "w": "Roommate",
-"q": "My ..... and I share an apartment near the campus.",
+"q": "At university, I live with my ..... in a small apartment. We share the kitchen and the bills.",
 "o": [
 "roommate",
-"landlord",
 "professor",
-"expert"
+"expert",
+"pilot"
 ]
 },
 {
 "w": "Shortage",
-"q": "There is a ..... of water in the village. People don't have enough to drink.",
+"q": "There is a ..... of water in the village this summer. People don't have enough to drink.",
 "o": [
 "shortage",
 "condition",
 "location",
-"view"
+"surplus"
 ]
 },
 {
 "w": "Be addicted to",
-"q": "He ..... his phone. He can't stop using it, even for one minute.",
+"q": "My cousin ..... his phone. He checks it every five minutes, even during meals.",
 "o": [
 "is addicted to",
 "belongs to",
 "lives in",
-"listens to"
+"is afraid of"
 ]
 },
 {
 "w": "Become",
-"q": "She studied medicine for seven years to ..... a doctor.",
+"q": "My brother studied medicine for seven years to ..... a doctor. Now he works at a big hospital.",
 "o": [
 "become",
 "produce",
 "manage",
-"control"
+"invent"
 ]
 },
 {
 "w": "Behavior",
-"q": "The teacher was happy with the students' good ..... in class.",
+"q": "The teacher praised the students for their good ..... during the school trip. Nobody was rude or noisy.",
 "o": [
 "behavior",
 "stress",
 "shortage",
-"diet"
+"luggage"
 ]
 },
 {
 "w": "Break",
-"q": "Be careful! Don't ..... the glass.",
+"q": "Be careful with that box! There are glass cups inside, and you might ..... them.",
 "o": [
 "break",
 "grow",
 "feed",
-"celebrate"
+"plant"
 ]
 },
 {
 "w": "Expert",
-"q": "Dr. Saleh is an ..... in computers. He knows everything about them.",
+"q": "Dr. Saleh is an ..... in computers. Everyone asks him when they have a problem with their laptop.",
 "o": [
 "expert",
-"landlord",
-"roommate",
-"vegetarian"
+"ingredient",
+"event",
+"athlete"
 ]
 },
 {
 "w": "Give up",
-"q": "Don't .....! Keep trying and you will succeed.",
+"q": "Learning to drive is hard, but don't ...... Keep practicing and you will pass the test.",
 "o": [
 "give up",
 "stay up",
 "turn off",
-"pick up"
+"show off"
 ]
 },
 {
 "w": "Goal",
-"q": "My ..... is to become a pilot one day.",
+"q": "My main ..... this year is to get an A in statistics. I study every night.",
 "o": [
 "goal",
 "stress",
-"problem",
-"weakness"
+"weakness",
+"excuse"
 ]
 },
 {
 "w": "Instead of",
-"q": "I drink water ..... soda because it's healthier.",
+"q": "I drink water ..... soda now. It's healthier, and my doctor says it's better for my teeth.",
 "o": [
 "instead of",
+"depends on",
 "above",
-"below",
-"depends on"
+"because of"
 ]
 },
 {
 "w": "Lose weight",
-"q": "He wants to ..... weight, so he goes jogging every day.",
+"q": "My father wants to ..... weight, so he walks for an hour every evening and avoids sweets.",
 "o": [
 "lose",
 "grow",
 "break",
-"fail"
+"gain"
 ]
 },
 {
 "w": "Maybe",
-"q": "I'm not sure if I can come today. ..... I'll come tomorrow.",
+"q": "I'm not sure I can come to the meeting today. ..... I'll come tomorrow instead.",
 "o": [
 "Maybe",
 "Extremely",
 "Badly",
-"Instead of"
+"Rarely"
 ]
 },
 {
 "w": "Plan",
-"q": "We ..... to travel to Turkey next summer.",
+"q": "We ..... to travel to Turkey next summer. We already booked the flights and the hotel.",
 "o": [
 "plan",
 "own",
 "cost",
-"guess"
+"forget"
 ]
 },
 {
 "w": "Pay Attention",
-"q": "Please ..... to the teacher. This information will be in the exam.",
+"q": "Please ..... to the professor. This part of the lesson will be on the final exam.",
 "o": [
 "pay attention",
 "give up",
 "stay up",
-"turn off"
+"show off"
 ]
 },
 {
 "w": "Stay Up",
-"q": "I had to ..... late last night to finish my homework.",
+"q": "I had to ..... until 2 a.m. last night to finish my statistics homework. I'm so tired now.",
 "o": [
 "stay up",
 "give up",
 "pick up",
-"turn off"
+"calm down"
 ]
 },
 {
 "w": "Stress",
-"q": "Exams cause a lot of ..... for students. They feel worried and nervous.",
+"q": "Final exams cause a lot of ..... for students. Many of them feel worried and can't sleep.",
 "o": [
 "stress",
 "energy",
 "strength",
-"vitamin"
+"comfort"
 ]
 },
 {
 "w": "Unfortunately",
-"q": "I wanted to go to the beach, but ....., it rained all day.",
+"q": "I wanted to go to the beach on Friday, but ....., it rained all day.",
 "o": [
 "unfortunately",
 "maybe",
 "extremely",
-"well"
+"luckily"
 ]
 },
 {
 "w": "Turn Off",
-"q": "Please ..... your phone during the exam.",
+"q": "Please ..... your phone before the exam starts. Any phone that rings will be taken away.",
 "o": [
 "turn off",
 "stay up",
 "give up",
-"pick up"
+"show off"
 ]
 },
 {
 "w": "Control",
-"q": "He couldn't ..... the car on the icy road, and it hit a tree.",
+"q": "The road was wet and slippery. The driver couldn't ..... the car, and it hit a wall.",
 "o": [
 "control",
 "produce",
 "reduce",
-"become"
+"invent"
 ]
 },
 {
 "w": "Depends on",
-"q": "Going to the beach tomorrow ..... the weather.",
+"q": "Our trip to the beach tomorrow ..... the weather. If it rains, we will stay home.",
 "o": [
 "depends on",
 "belongs to",
 "listens to",
-"lives in"
+"looks after"
 ]
 },
 {
 "w": "Diet",
-"q": "She is on a ....., she eats only vegetables and chicken to lose weight.",
+"q": "My aunt is on a strict ...... She eats only vegetables, eggs and grilled chicken to lose weight.",
 "o": [
 "diet",
 "stress",
 "pill",
-"energy"
+"journey"
 ]
 },
 {
 "w": "Energy",
-"q": "I'm tired and I have no ..... today. I need some sleep.",
+"q": "I slept only three hours last night, so I have no ..... today. I just want to rest.",
 "o": [
 "energy",
 "diet",
 "behavior",
-"shortage"
+"furniture"
 ]
 },
 {
 "w": "Exercise",
-"q": "Doctors say that ..... is good for your heart, for example walking or swimming.",
+"q": "Doctors say regular ..... is good for your heart, like walking, cycling or swimming for thirty minutes.",
 "o": [
 "exercise",
 "stress",
 "shortage",
-"behavior"
+"traffic"
 ]
 },
 {
 "w": "Healthy",
-"q": "Eating fruit and vegetables keeps you ......",
+"q": "My grandfather is eighty but still very ...... He eats well, walks daily and never gets sick.",
 "o": [
 "healthy",
-"unhealthy",
 "lonely",
-"noisy"
+"noisy",
+"lazy"
 ]
 },
 {
 "w": "Lonely",
-"q": "He lives alone and has no friends, so he feels very ......",
+"q": "My uncle lives alone in a small village and has no friends nearby. He often feels ......",
 "o": [
 "lonely",
 "crowded",
-"healthy",
-"positive"
+"positive",
+"delighted"
 ]
 },
 {
 "w": "Manage",
-"q": "She ..... a big company with 500 employees.",
+"q": "My aunt ..... a big company in Jeddah with 500 employees. She is the boss of everyone there.",
 "o": [
 "manages",
 "reduces",
 "becomes",
-"avoids"
+"borrows"
 ]
 },
 {
 "w": "Pill",
-"q": "The doctor told me to take one ..... after every meal.",
+"q": "I have a bad headache. The doctor told me to take one ..... after every meal.",
 "o": [
 "pill",
 "diet",
 "stress",
-"energy"
+"blanket"
 ]
 },
 {
 "w": "Produce",
-"q": "This factory ..... 1000 cars every month.",
+"q": "This factory in Dammam ..... about 1,000 cars every month. They are sold all over the Gulf.",
 "o": [
 "produces",
 "reduces",
 "becomes",
-"avoids"
+"admires"
 ]
 },
 {
 "w": "Vitamin",
-"q": "Oranges are full of ..... C.",
+"q": "Eat more oranges and lemons in winter. They are full of ..... C, which helps you fight colds.",
 "o": [
 "vitamin",
 "diet",
 "stress",
-"memory"
+"sugar"
 ]
 },
 {
 "w": "Reduce",
-"q": "Turn off the lights when you leave the room to ..... the electricity bill.",
+"q": "Turn off the lights when you leave the room. It will ..... your electricity bill a lot.",
 "o": [
 "reduce",
 "increase",
 "celebrate",
-"become"
+"double"
 ]
 },
 {
 "w": "Run-down",
-"q": "I've been working too hard and not sleeping enough. I feel tired and ......",
+"q": "I haven't slept well for a week because of exams. I feel weak and ..... all the time.",
 "o": [
 "run-down",
 "healthy",
-"relaxing",
-"comfortable"
+"studious",
+"cheerful"
 ]
 },
 {
