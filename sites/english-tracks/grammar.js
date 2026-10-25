@@ -99,10 +99,11 @@ window.GRAMMAR = [
 "o": [
 "is",
 "are",
-"aren't",
-"am"
+"am",
+"be"
 ],
-"e": "Saleh مفرد (He) ← نستخدم is."
+"e": "Saleh مفرد (He) ← نستخدم is.",
+"x": 1
 },
 {
 "q": "Look at this cake my sister made. ..... the best baker in our family.",
@@ -613,6 +614,50 @@ window.GRAMMAR = [
 "feeding"
 ],
 "e": "Zainab = She ← في الإثبات نضيف s للفعل: feeds.",
+"x": 1
+},
+{
+"q": "I ..... the kids' store at Panorama Mall. It has many toys and books.",
+"o": [
+"love",
+"to love",
+"be loving",
+"loving"
+],
+"e": "I ← في المضارع البسيط الفعل يجي بصيغته الأساسية بدون to وبدون ing: I love.",
+"x": 1
+},
+{
+"q": "This ..... a shoe store. People come here to buy shoes and accessories.",
+"o": [
+"is",
+"be",
+"am",
+"are"
+],
+"e": "This (شي واحد مفرد = It) ← نستخدم is.",
+"x": 1
+},
+{
+"q": "He ..... from home. He goes to the office from Sunday to Thursday every week.",
+"o": [
+"doesn't work",
+"no work",
+"don't work",
+"not work"
+],
+"e": "He ← النفي مع He / She / It يكون doesn't + الفعل الأساسي: doesn't work (لأنه يروح المكتب كل أسبوع).",
+"x": 1
+},
+{
+"q": "Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.",
+"o": [
+"writes",
+"writing",
+"write",
+"writer"
+],
+"e": "Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.",
 "x": 1
 }
 ]
