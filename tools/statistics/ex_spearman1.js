@@ -26,7 +26,7 @@ const step2=`<table class="t"><tr class="hd">${['X','Y','R_{x_i}','R_{y_i}','d_i
 ${X.map((x,i)=>`<tr><td>${x}</td><td>${K(String(Y[i]))}</td><td>${rk(RX[i])}</td><td>${rk(RY[i])}</td><td>${K(fmt(D[i]))}</td><td>${K(fmt(D2[i]))}</td></tr>`).join('')}
 <tr class="s"><td colspan="5"></td><td>${K('\\Sigma='+fmt(SD2))}</td></tr></table>`;
 // 4) القانون والتعويض والناتج
-const tex=String.raw`r_s=1-\dfrac{6\displaystyle\sum_{i=1}^{n}d_i^{2}}{n\left(n^{2}-1\right)}=1-\dfrac{6(${fmt(SD2)})}{${n}(${n*n}-1)}=\fcolorbox{${BOX}}{transparent}{$\;${fmt(rs)}\;$}`;
+const tex=String.raw`r_s=1-\dfrac{6\sum d_i^{2}}{n\left(n^{2}-1\right)}=1-\dfrac{6(${fmt(SD2)})}{${n}(${n*n}-1)}=\fcolorbox{${BOX}}{transparent}{$\;${fmt(rs)}\;$}`;
 const sol=`<div class="eq">${K(tex,1)}</div><div class="ans"><span>ارتباط رتبي طردي قوي جدًا</span></div>`;
 // 5) لوحة انتشار الرتب
 function grid(points){
