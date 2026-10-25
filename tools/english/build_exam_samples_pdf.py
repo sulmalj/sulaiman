@@ -116,6 +116,20 @@ def q_html(n, q, opts, ok, expl, tag=''):
             f'<div class="ops en">{li}</div>'
             f'<div class="ans"><b>الإجابة: {en(LETTERS[ok] + ") " + opts[ok])}</b><p>{rich_ar(expl)}</p></div></div>')
 
+def end_ad():
+    """إعلان كبير في آخر صفحة: المتجر + القناة (رابط يضغط عليه + باركود)."""
+    def card(cls, title, desc, url, label, hint):
+        return (f'<div class="ec {cls}"><div class="et">{title}</div><div class="ed">{desc}</div>'
+                f'<a class="eq" href="{url}">{guide.qr_img(url, 118)}</a>'
+                f'<a class="eb" href="{url}">{en(label)}</a><div class="eh">👆 {hint}</div></div>')
+    return ('<div class="endad"><div class="eh1">تبي تستعد للاختبار صح؟</div>'
+            '<div class="eh2">دورة ملازم عدل للإنجليزي — وعندنا جميع مواد المسار الإنساني</div><div class="eg">'
+            + card('st', 'متجر ملازم عدل', 'الدورات والملازم لكل المواد', 'https://mtgradl.com', 'mtgradl.com',
+                   'للدخول للمتجر اضغط على الرابط أو امسح الباركود')
+            + card('tg', 'قناتنا على التليجرام', 'لمعرفة كل جديد: نماذج وحلول وتنبيهات', 'https://t.me/mlazmadl', 't.me/mlazmadl',
+                   'للدخول للقناة اضغط على الرابط أو امسح الباركود')
+            + '</div></div>')
+
 def build():
     paras, rexp = passage()
     def para(l):
@@ -164,6 +178,17 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
 .ans{{margin-top:2.5mm;background:#fbf7ee;border-inline-start:4px solid #b0698d;border-radius:6px;padding:1.5mm 3mm;font-size:10pt}}
 .ans b{{color:#204b7d}}
 .ans p{{margin:.5mm 0 0;line-height:1.6}}
+.endad{{break-inside:avoid;margin-top:8mm;background:#204b7d;border-radius:14px;padding:6mm 6mm 7mm;text-align:center;color:#fff}}
+.endad .eh1{{font-size:20pt;font-weight:700;line-height:1.3}}
+.endad .eh2{{font-size:12pt;color:#f3d3e3;margin:1mm 0 5mm}}
+.endad .eg{{display:grid;grid-template-columns:1fr 1fr;gap:5mm}}
+.endad .ec{{background:#fff;color:#1f2a37;border-radius:12px;padding:4mm 3mm 4mm}}
+.endad .et{{font-size:15pt;font-weight:700;color:#204b7d}}
+.endad .ed{{font-size:10pt;color:#5b6675;margin-bottom:2.5mm}}
+.endad .eq{{display:block}}
+.endad .eb{{display:inline-block;margin-top:2mm;background:#b0698d;color:#fff;border-radius:9px;padding:1.5mm 6mm;font-size:15pt;font-weight:700;text-decoration:underline;text-underline-offset:3px}}
+.endad .tg .eb{{background:#2a8bd0}}
+.endad .eh{{margin-top:2.5mm;font-size:10.5pt;font-weight:600;color:#8a1c1c}}
 .ans q.en{{display:block;quotes:'“' '”';margin:.5mm 0;line-height:1.5;color:#334155;font-style:italic}}
 """
     body = f"""<div class="cover"><img src="file://{LOGO}"><h1>نماذج أسئلة مع الحل</h1>
@@ -174,7 +199,7 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
 <div class="passage en"><h3>Apples in Washington State</h3>{''.join(para(l) for l in paras)}</div>
 {reading}
 <h2>٢) القواعد <small>{en('Grammar')}</small></h2>{grammar}
-<h2>٣) الكلمات <small>{en('Vocabulary')}</small></h2>{vocab}"""
+<h2>٣) الكلمات <small>{en('Vocabulary')}</small></h2>{vocab}{end_ad()}"""
     doc = f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as f:
         f.write(doc); src = f.name
