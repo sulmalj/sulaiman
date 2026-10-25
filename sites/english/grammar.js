@@ -70,7 +70,7 @@ window.GRAMMAR = [
 "e": "My brother = He ← مع He نستخدم is."
 },
 {
-"q": "Look at those men over there. ..... my uncles from Jeddah.",
+"q": "Look at those men near the door. ..... my uncles from Jeddah, and they visit us every Eid.",
 "o": [
 "They're",
 "They'are",
@@ -110,7 +110,7 @@ window.GRAMMAR = [
 "e": "I ← النفي am not (اللي أكل قبل ساعة مو جوعان)."
 },
 {
-"q": "My sister ..... coffee. She only drinks tea in the morning.",
+"q": "My sister ..... coffee because it gives her a headache. She only drinks tea in the morning.",
 "o": [
 "doesn't drink",
 "don't drink",
@@ -160,17 +160,17 @@ window.GRAMMAR = [
 "e": "My father = He ← نضيف s للفعل: reads."
 },
 {
-"q": "It's a beautiful day! The sun ..... and the sky is blue.",
+"q": "It rarely rains in Riyadh in summer. The sun ..... every day, and the sky is blue.",
 "o": [
 "shines",
 "shine",
 "shining",
 "is shine"
 ],
-"e": "The sun = It ← نضيف s للفعل: shines."
+"e": "The sun = It ← عادة كل يوم، فنضيف s للفعل: shines."
 },
 {
-"q": "These cookies ..... delicious. Can I have another one?",
+"q": "These cookies from the new bakery ..... delicious. Can I have another one, please?",
 "o": [
 "are",
 "is",
@@ -200,14 +200,14 @@ window.GRAMMAR = [
 "e": "We ← النفي don't + الفعل الأساسي watch."
 },
 {
-"q": "A: What time ..... the bank open? B: At 9:30 in the morning.",
+"q": "A: What time ..... the bank open its doors? B: At 9:30 in the morning.",
 "o": [
 "does",
 "do",
 "is",
 "are"
 ],
-"e": "the bank = It ← WH + does + Subject + verb (open هنا فعل)."
+"e": "the bank = It ← WH + does + Subject + الفعل الأساسي (open)."
 },
 {
 "q": "My little brother ..... every time he can't find his toys. Then my mother helps him.",
@@ -220,7 +220,7 @@ window.GRAMMAR = [
 "e": "My little brother = He ← قبل y حرف ساكن (r) فنحذف y ونضيف ies: cries (مو crys ولا cryes)."
 },
 {
-"q": "Sami ..... his car every weekend. It's always clean.",
+"q": "Sami ..... his car every weekend with soap and water, so it's always clean.",
 "o": [
 "washes",
 "washs",
@@ -270,7 +270,7 @@ window.GRAMMAR = [
 "e": "you ← WH + do + Subject + verb: How do you go…?"
 },
 {
-"q": "Khalid ..... fast food. He says it's unhealthy.",
+"q": "Khalid ..... fast food. He says it's unhealthy, so he always eats at home.",
 "o": [
 "doesn't like",
 "don't like",
@@ -310,7 +310,7 @@ window.GRAMMAR = [
 "e": "My mother = She ← عادة كل مساء، ومع She نضيف s للفعل: cooks."
 },
 {
-"q": "I ..... my grandparents every Friday. They live near our house.",
+"q": "I ..... my grandparents every Friday after the prayer. They live near our house.",
 "o": [
 "visit",
 "visits",
@@ -340,7 +340,7 @@ window.GRAMMAR = [
 "e": "Lama = She ← نضيف s للفعل: spends."
 },
 {
-"q": "The shops in the mall ..... at 10 p.m. every night.",
+"q": "The shops in this small mall ..... at 10 p.m. every night, so we always go early.",
 "o": [
 "close",
 "closes",
@@ -546,7 +546,7 @@ window.GRAMMAR = [
 "e": "hotel مفرد ← a + Adverb + Adjective + Noun، وأول كلمة really حرف ساكن ← a really nice."
 },
 {
-"q": "I can't wear these shoes. They are ......",
+"q": "I can't wear these new shoes for long. They are ...... My feet hurt after ten minutes.",
 "o": [
 "extremely uncomfortable",
 "an extremely uncomfortable",
@@ -576,7 +576,7 @@ window.GRAMMAR = [
 "e": "بعد Verb be صفة بدون اسم ← بدون a: really good."
 },
 {
-"q": "Khalid is ...... He always helps his classmates with their homework.",
+"q": "Khalid is ...... He always helps his classmates with their homework and shares his notes.",
 "o": [
 "a very kind boy",
 "very kind boy",
@@ -586,7 +586,7 @@ window.GRAMMAR = [
 "e": "boy اسم مفرد ← a + very + kind + boy."
 },
 {
-"q": "We watched ..... movie last night. I couldn't stop laughing!",
+"q": "We watched ..... movie at my cousin's house last night. I couldn't stop laughing!",
 "o": [
 "an extremely funny",
 "a extremely funny",
@@ -616,7 +616,7 @@ window.GRAMMAR = [
 "e": "buildings جمع ← بدون a، والصفة ما تنجمع: very tall buildings."
 },
 {
-"q": "Sara is ..... student. She always gets full marks.",
+"q": "Sara is ..... student. She always gets full marks, and her teachers are proud of her.",
 "o": [
 "an excellent",
 "a excellent",
@@ -626,7 +626,7 @@ window.GRAMMAR = [
 "e": "excellent تبدأ بحرف علة (e) ← an excellent student."
 },
 {
-"q": "Be careful! The streets are ..... after the rain.",
+"q": "Be careful when you drive home! The streets are ..... after the heavy rain.",
 "o": [
 "really dangerous",
 "a really dangerous",
@@ -646,7 +646,7 @@ window.GRAMMAR = [
 "e": "village اسم مفرد والصفة quiet تبدأ بحرف ساكن (q) ← a quiet village، والصفة ما تنجمع."
 },
 {
-"q": "That was ..... exam! Nobody finished it on time.",
+"q": "That was ..... exam! Nobody in our class finished it on time, not even the best students.",
 "o": [
 "an extremely difficult",
 "a extremely difficult",
@@ -666,7 +666,7 @@ window.GRAMMAR = [
 "e": "بعد Verb be صفة بدون اسم ← بدون a، والصفة ما تنجمع: very sweet."
 },
 {
-"q": "I need ..... umbrella. It's raining outside.",
+"q": "It's raining heavily outside, and I don't want to get wet. I need ..... umbrella.",
 "o": [
 "an",
 "a",
@@ -696,7 +696,7 @@ window.GRAMMAR = [
 "e": "بعد Verb be صفة بدون اسم ← بدون a: very hardworking."
 },
 {
-"q": "Let's go to the beach. It's ..... day!",
+"q": "Let's go to the beach this afternoon. It's ..... day! The sea is calm.",
 "o": [
 "a really beautiful",
 "a beautiful really",
@@ -706,7 +706,7 @@ window.GRAMMAR = [
 "e": "day مفرد ← a + really + beautiful + day."
 },
 {
-"q": "She bought ..... bag. It cost more than 3000 riyals!",
+"q": "My aunt bought ..... bag from a shop in the mall. It cost more than 3000 riyals!",
 "o": [
 "an extremely expensive",
 "a extremely expensive",
@@ -726,7 +726,7 @@ window.GRAMMAR = [
 "e": "بعد Verb be صفة بدون اسم ← بدون a، والصفة ما تنجمع: very friendly."
 },
 {
-"q": "I have ..... question about the homework. Can you help me?",
+"q": "Excuse me, teacher. I have ..... question about the homework. Can you help me, please?",
 "o": [
 "a quick",
 "an quick",
@@ -746,7 +746,7 @@ window.GRAMMAR = [
 "e": "بعد Verb be صفة بدون اسم ← بدون a: quite cool."
 },
 {
-"q": "He drives ..... car. It's more than twenty years old!",
+"q": "My uncle drives ..... car. It's more than twenty years old, but it still works well.",
 "o": [
 "an old",
 "a old",
@@ -756,7 +756,7 @@ window.GRAMMAR = [
 "e": "old تبدأ بحرف علة (o) ← an old car."
 },
 {
-"q": "Those are ..... shoes. Where did you get them?",
+"q": "Those are ..... shoes! Where did you get them? I want to buy the same ones.",
 "o": [
 "really nice",
 "a really nice",
@@ -766,7 +766,7 @@ window.GRAMMAR = [
 "e": "shoes جمع ← بدون a، والصفة ما تنجمع: really nice shoes."
 },
 {
-"q": "Our English class is ..... class. Everyone enjoys it.",
+"q": "Our English class is ..... class. Everyone enjoys it because the teacher tells fun stories.",
 "o": [
 "a very interesting",
 "an very interesting",
@@ -776,7 +776,7 @@ window.GRAMMAR = [
 "e": "class مفرد وأول كلمة very حرف ساكن ← a very interesting class."
 },
 {
-"q": "My father is ..... man. He never tells lies.",
+"q": "My father is ..... man. He never tells lies, and he always keeps his promises.",
 "o": [
 "an honest",
 "a honest",
@@ -786,7 +786,7 @@ window.GRAMMAR = [
 "e": "honest الـ h ما تنطق، فالنطق يبدأ بصوت حرف علة ← an honest man."
 },
 {
-"q": "The library is ..... during exams. There are no empty seats.",
+"q": "The university library is ..... during exams. There are no empty seats after eight in the morning.",
 "o": [
 "extremely crowded",
 "an extremely crowded",
@@ -822,7 +822,7 @@ window.GRAMMAR = [
 "x": 1
 },
 {
-"q": "My sister ..... a new car. It's white and very fast.",
+"q": "My sister ..... a new car. It's white and very fast, and she drives it to work.",
 "o": [
 "has",
 "have",
@@ -832,7 +832,7 @@ window.GRAMMAR = [
 "e": "My sister = She ← has."
 },
 {
-"q": "A: ..... you have any brothers? B: Yes, I have two.",
+"q": "A: ..... you have any brothers or sisters? B: Yes, I have two brothers and one sister.",
 "o": [
 "Do",
 "Does",
@@ -852,7 +852,7 @@ window.GRAMMAR = [
 "e": "My father = He ← النفي doesn't have (في النفي دائماً have)."
 },
 {
-"q": "Our neighbours ..... three cats and a big dog, so their garden is always noisy.",
+"q": "Our neighbours ..... three cats and two parrots, so their garden is always noisy.",
 "o": [
 "have",
 "has",
@@ -872,7 +872,7 @@ window.GRAMMAR = [
 "e": "He ← في الإثبات has."
 },
 {
-"q": "I'm sorry, I ..... a pen. Can I borrow yours?",
+"q": "I'm sorry, I ..... a pen with me today. Can I borrow yours for the exam?",
 "o": [
 "don't have",
 "doesn't have",
@@ -912,7 +912,7 @@ window.GRAMMAR = [
 "e": "My friends and I = We ← have."
 },
 {
-"q": "Fahad can't call you. He ..... a phone right now. It's broken.",
+"q": "Fahad can't call you. He ..... a phone right now because his old one is broken.",
 "o": [
 "doesn't have",
 "don't have",
@@ -937,7 +937,7 @@ window.GRAMMAR = [
 "has",
 "have",
 "having",
-"has had"
+"haves"
 ],
 "e": "The café = It ← has."
 },
@@ -962,7 +962,7 @@ window.GRAMMAR = [
 "e": "Riyadh = It ← has."
 },
 {
-"q": "My little brother ..... long hair. It's very short.",
+"q": "My little brother ..... long hair. It's very short because he goes to the barber every week.",
 "o": [
 "doesn't have",
 "don't have",
@@ -975,7 +975,7 @@ window.GRAMMAR = [
 "q": "A: Does Sara have a laptop? B: Yes, she ...... She uses it for her studies.",
 "o": [
 "does",
-"has",
+"do",
 "have",
 "is"
 ],
@@ -986,7 +986,7 @@ window.GRAMMAR = [
 "o": [
 "have",
 "has",
-"are",
+"having",
 "is"
 ],
 "e": "We ← have."
@@ -1032,7 +1032,7 @@ window.GRAMMAR = [
 "e": "My grandmother = She ← has."
 },
 {
-"q": "I can't go out tonight. I ..... a lot of homework.",
+"q": "I can't go out with you tonight. I ..... a lot of homework for tomorrow.",
 "o": [
 "have",
 "has",
@@ -1042,7 +1042,7 @@ window.GRAMMAR = [
 "e": "I ← have."
 },
 {
-"q": "A: Does your apartment ..... a balcony? B: No, it doesn't.",
+"q": "A: Does your new apartment ..... a balcony? B: No, it doesn't. It's small.",
 "o": [
 "have",
 "has",
@@ -1062,7 +1062,7 @@ window.GRAMMAR = [
 "e": "Noura and Huda = They ← have."
 },
 {
-"q": "That restaurant is not good. It ..... any healthy food.",
+"q": "That restaurant is not good for people on a diet. It ..... any healthy food.",
 "o": [
 "doesn't have",
 "don't have",
@@ -1075,7 +1075,7 @@ window.GRAMMAR = [
 "q": "A: Do you have a car? B: Yes, I ...... It's a small red car.",
 "o": [
 "do",
-"have",
+"has",
 "does",
 "am"
 ],
@@ -1119,7 +1119,7 @@ window.GRAMMAR = [
 "x": 1
 },
 {
-"q": "My brother is very busy. I don't see ..... very often.",
+"q": "My brother is very busy at work these days. I don't see ..... very often.",
 "o": [
 "him",
 "he",
@@ -1149,7 +1149,7 @@ window.GRAMMAR = [
 "e": "الجملة تحتاج فاعل (Subject) قبل الفعل helps ← She."
 },
 {
-"q": "I love this song. Can you play ..... again?",
+"q": "I love this song so much! Can you play ..... again? I want to sing along.",
 "o": [
 "it",
 "them",
@@ -1159,7 +1159,7 @@ window.GRAMMAR = [
 "e": "this song مفرد غير عاقل، وبعد play ← it."
 },
 {
-"q": "Our grandparents live in Taif. We visit ..... every summer.",
+"q": "Our grandparents live in Taif. We visit ..... every summer and stay at their house for a week.",
 "o": [
 "them",
 "they",
@@ -1189,7 +1189,7 @@ window.GRAMMAR = [
 "e": "My friends and I = we، وبعد حرف الجر with ← us."
 },
 {
-"q": "Mr. Ali is our new teacher. ..... is from Egypt.",
+"q": "Mr. Ali is our new English teacher. ..... is from Egypt, and all the students like his lessons.",
 "o": [
 "He",
 "Him",
@@ -1199,17 +1199,17 @@ window.GRAMMAR = [
 "e": "الفاعل قبل is، والمعلم رجل ← He."
 },
 {
-"q": "The baby is crying. Can you give ..... some milk?",
+"q": "My baby sister is crying because she's hungry. Can you give ..... some milk?",
 "o": [
 "her",
 "she",
 "hers",
 "they"
 ],
-"e": "The baby (بنت)، وبعد الفعل give ضمير مفعول ← her."
+"e": "My baby sister = she، وبعد الفعل give ضمير مفعول ← her."
 },
 {
-"q": "I bought a new car last week. ..... is very fast.",
+"q": "I bought a new car last week. ..... is very fast, and the color is dark blue.",
 "o": [
 "It",
 "He",
@@ -1249,7 +1249,7 @@ window.GRAMMAR = [
 "e": "بعد الفعل asked ضمير مفعول، والمتكلم هو اللي جاوب ← me."
 },
 {
-"q": "..... are my cousins, Lama and Reem. They live next door.",
+"q": "..... are my cousins, Lama and Reem. Their house is next to ours, so we play together.",
 "o": [
 "They",
 "Them",
@@ -1259,7 +1259,7 @@ window.GRAMMAR = [
 "e": "الفاعل قبل are، والمقصود Lama and Reem ← They."
 },
 {
-"q": "These cookies are delicious! Did you make ..... yourself?",
+"q": "These cookies are delicious! Did you make ..... yourself at home this morning?",
 "o": [
 "them",
 "it",
@@ -1279,7 +1279,7 @@ window.GRAMMAR = [
 "e": "Fahad = he، وبعد see ← him."
 },
 {
-"q": "Huda and I are sisters. ..... share a bedroom.",
+"q": "Huda and I are sisters. ..... share a big bedroom on the second floor of our house.",
 "o": [
 "We",
 "Us",
@@ -1289,7 +1289,7 @@ window.GRAMMAR = [
 "e": "Huda and I = We، والفاعل قبل share ← We."
 },
 {
-"q": "The keys are not in my bag. Did you take .....?",
+"q": "My car keys are not in my bag. Did you take ..... when you went out this morning?",
 "o": [
 "them",
 "it",
@@ -1319,7 +1319,7 @@ window.GRAMMAR = [
 "e": "the new mall مفرد غير عاقل، وبعد love ← it."
 },
 {
-"q": "The children are noisy. Please tell ..... to be quiet.",
+"q": "The children are very noisy, and Grandpa is sleeping. Please tell ..... to be quiet.",
 "o": [
 "them",
 "they",
@@ -1349,7 +1349,7 @@ window.GRAMMAR = [
 "e": "your bag مفرد غير عاقل، وبعد حرف الجر for ← it."
 },
 {
-"q": "Ahmed is very funny. Everybody likes ......",
+"q": "Ahmed is very funny and always tells great jokes. Everybody in our class likes ......",
 "o": [
 "him",
 "he",
@@ -1359,14 +1359,14 @@ window.GRAMMAR = [
 "e": "Ahmed = he، وبعد likes ← him."
 },
 {
-"q": "..... is a beautiful city. Many tourists visit it every year.",
+"q": "Have you been to AlUla? ..... is a beautiful place, and many tourists go there every year.",
 "o": [
 "It",
 "They",
 "Its",
 "He"
 ],
-"e": "المدينة مفرد غير عاقل، والفاعل قبل is ← It."
+"e": "AlUla مكان واحد (مفرد غير عاقل)، والفاعل قبل is ← It."
 },
 {
 "q": "Please wait for ..... at the bus stop. We'll be there in five minutes.",
@@ -1471,7 +1471,7 @@ window.GRAMMAR = [
 "rule": "Verbs + gerunds or infinitives",
 "qs": [
 {
-"q": "I want ..... my grandmother this weekend. She lives in Abha.",
+"q": "I want ..... my grandmother this weekend. She lives in Abha, and I miss her a lot.",
 "o": [
 "to visit",
 "visit",
@@ -1491,7 +1491,7 @@ window.GRAMMAR = [
 "e": "بعد enjoy الفعل ياخذ ing: enjoys playing."
 },
 {
-"q": "You need ..... more water. It's very hot today.",
+"q": "You need ..... more water. It's very hot today, and you are playing football in the sun.",
 "o": [
 "to drink",
 "drink",
@@ -1521,7 +1521,7 @@ window.GRAMMAR = [
 "e": "بعد hope نحط to + الفعل الأساسي: hope to find."
 },
 {
-"q": "Please stop ..... so loudly. The baby is sleeping.",
+"q": "Please stop ..... so loudly on the phone. The baby is sleeping in the next room.",
 "o": [
 "talking",
 "to talk",
@@ -1541,7 +1541,7 @@ window.GRAMMAR = [
 "e": "بعد try (بمعنى تحاول) نحط to + الفعل الأساسي: tries to eat."
 },
 {
-"q": "I dislike ..... in traffic. It makes me very angry.",
+"q": "I dislike ..... in traffic on my way to work. It makes me very angry and late.",
 "o": [
 "waiting",
 "to wait",
@@ -1561,7 +1561,7 @@ window.GRAMMAR = [
 "e": "بعد love يجي to + الفعل أو ing ← to bake (bake و bakes و to baking كلها غلط)."
 },
 {
-"q": "Khalid can't stand ..... early in the morning. He's always tired.",
+"q": "Khalid can't stand ..... early in the morning. He's always tired in his first class.",
 "o": [
 "waking up",
 "wake up",
@@ -1581,7 +1581,7 @@ window.GRAMMAR = [
 "e": "بعد need نحط to + الفعل الأساسي: need to clean."
 },
 {
-"q": "I enjoy ..... books in the library. It's very quiet there.",
+"q": "I enjoy ..... books in the university library after class. It's very quiet there.",
 "o": [
 "reading",
 "to read",
@@ -1786,14 +1786,14 @@ window.GRAMMAR = [
 "e": "above = فوق بدون ما يلمس: المصباح معلّق من السقف فهو فوق المكتب ← above the desk."
 },
 {
-"q": "The backpack is ..... the table. It's on the floor.",
+"q": "Your backpack isn't on the table. Look down. It's ..... the table, on the floor.",
 "o": [
 "under",
 "above",
 "over",
 "in"
 ],
-"e": "under = تحت: under the table."
+"e": "Look down وعلى الأرض ← under = تحت الطاولة."
 },
 {
 "q": "I put a big poster of my favourite team ..... the wall of my bedroom.",
@@ -1856,11 +1856,11 @@ window.GRAMMAR = [
 "e": "تشوفه أول ما تطلع من الباب الرئيسي ← in front of (قدام)."
 },
 {
-"q": "I'm waiting for you ..... the traffic lights. Hurry up!",
+"q": "I'm standing ..... the traffic lights near the school, waiting for you. Hurry up!",
 "o": [
 "at",
 "in",
-"under",
+"on",
 "over"
 ],
 "e": "at للمكان المحدد اللي الشخص واقف عنده: at the traffic lights."
@@ -1896,7 +1896,7 @@ window.GRAMMAR = [
 "e": "under = تحت السيارة."
 },
 {
-"q": "The children are playing football ..... the street. It's dangerous!",
+"q": "The children are playing football ..... the street. It's dangerous because many cars drive fast here.",
 "o": [
 "in",
 "over",
@@ -1916,7 +1916,7 @@ window.GRAMMAR = [
 "e": "on the right of = على يمين."
 },
 {
-"q": "The bridge is ..... the highway. Cars drive under it.",
+"q": "The new bridge is ..... the highway. Every day, hundreds of cars drive under it.",
 "o": [
 "over",
 "under",
@@ -1930,7 +1930,7 @@ window.GRAMMAR = [
 "o": [
 "at",
 "in",
-"under",
+"above",
 "over"
 ],
 "e": "at للمكان المحدد: at the bus stop."
@@ -1976,7 +1976,7 @@ window.GRAMMAR = [
 "e": "on مع أسماء الشوارع: on Tahlia Street."
 },
 {
-"q": "The streetlights are ..... the road. They light it at night.",
+"q": "The streetlights are ..... the road. They hang high and light it at night for drivers.",
 "o": [
 "over",
 "under",
@@ -2061,7 +2061,7 @@ window.GRAMMAR = [
 "in front of",
 "behind",
 "under",
-"over"
+"on"
 ],
 "e": "يظلل الباب الأمامي، فالشجرة قدام البيت ← in front of."
 },
@@ -2101,7 +2101,7 @@ window.GRAMMAR = [
 "under",
 "over",
 "above",
-"in"
+"at"
 ],
 "e": "Look down (طالع تحت) ← under = تحت الكرسي."
 },

@@ -645,17 +645,17 @@ window.READING = [
 "students drink too much",
 "snacks are unhealthy"
 ],
-"e": "الفقرة 2: «write down everything you buy for two or three weeks, even a cup of coffee» ← حتى الأشياء الصغيرة تنكتب، لأنها تفرق."
+"e": "الفقرة 2: «even a cup of coffee or a snack from the machine. Many students are shocked when they see the list, because small daily purchases can add up to several hundred riyals» ← حتى الأشياء الصغيرة تفرق."
 },
 {
-"q": "The writer says that small daily purchases can add up to ______.",
+"q": "The writer says that you should write down everything you buy for ______.",
 "o": [
-"several hundred riyals",
-"only a few riyals",
-"fifty riyals a month",
-"several thousand riyals"
+"two or three weeks",
+"one or two days",
+"a whole semester",
+"six months"
 ],
-"e": "الفقرة 2: «small daily purchases can add up to several hundred riyals» ← المشتريات الصغيرة توصل لمئات الريالات."
+"e": "الفقرة 2: «To build one, write down everything you buy for two or three weeks» ← تكتب كل اللي تشتريه أسبوعين أو ثلاثة."
 },
 {
 "q": "Which way of reducing costs does the writer NOT mention?",
@@ -665,7 +665,7 @@ window.READING = [
 "borrowing library books",
 "cancelling app subscriptions"
 ],
-"e": "الفقرة 3 ذكرت الغداء من البيت، واستعارة الكتب من المكتبة، وإلغاء اشتراكات التطبيقات. أما المشي للجامعة ما انذكر."
+"e": "الفقرة 3: «bringing lunch from home»، و«borrow them from the library»، و«cancel app subscriptions». أما المشي للجامعة ما انذكر."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -705,7 +705,7 @@ window.READING = [
 "all at once",
 "only once"
 ],
-"e": "gradually = تدريجياً، شوي شوي مع الوقت. يعني الطالب يبني عادة التوفير خطوة خطوة."
+"e": "gradually = تدريجياً، شوي شوي مع الوقت. الفقرة 4: «Students who gradually build this habit are usually better prepared» ← يبنون عادة التوفير خطوة خطوة."
 },
 {
 "q": "What is the best title for the passage?",
@@ -828,7 +828,7 @@ window.READING = [
 "Kaldi and His Goats",
 "Coffee Houses in Istanbul"
 ],
-"e": "القطعة تحكي رحلة القهوة من إثيوبيا لليمن ثم المدن العربية وأوروبا والعالم، لين وصلت للقهوة السعودية اليوم ← The Long Journey of Coffee"
+"e": "الفقرة 1: «Its journey began in the highlands of Ethiopia»، وبعدها اليمن والمدن العربية وأوروبا: «from there it spread across the world» ← القطعة تحكي رحلة القهوة ← The Long Journey of Coffee"
 }
 ]
 },
@@ -844,14 +844,14 @@ window.READING = [
 ],
 "qs": [
 {
-"q": "Instead of a normal engine, an electric car has ______.",
+"q": "The writer says that electric cars are no longer ______.",
 "o": [
-"a large battery",
-"a petrol tank",
-"a solar panel",
-"an exhaust pipe"
+"unusual",
+"popular",
+"quiet",
+"useful"
 ],
-"e": "الفقرة 1: «An electric car does not have a normal engine. Instead, it has a large battery»."
+"e": "الفقرة 1: «Electric cars are no longer a strange sight. In many countries, more and more drivers are choosing them» ← a strange sight = شي غريب، يعني صارت شي عادي مو غريب (unusual)."
 },
 {
 "q": "What does the underlined word \"encourage\" in paragraph 1 mean?",
@@ -881,7 +881,7 @@ window.READING = [
 "being very quiet",
 "needing less repair work"
 ],
-"e": "الفقرة 2 ذكرت: ما فيها دخان، وهادية، والكهرباء أرخص، وتصليحها أقل. أما إنها أأمن في الحوادث ما انذكر."
+"e": "الفقرة 2 ذكرت: «they produce no smoke»، و«They are also very quiet»، و«electric cars need less repair work». أما إنها أأمن في الحوادث ما انذكر."
 },
 {
 "q": "Electric cars need less repair work because they have fewer ______.",
@@ -974,7 +974,7 @@ window.READING = [
 "expensive",
 "hard to use"
 ],
-"e": "convenient = مريح وسهل الاستخدام. لأن جهاز صغير يشيل آلاف الكتب بدل الشنط الثقيلة."
+"e": "convenient = مريح وسهل الاستخدام. الفقرة 2: «A small e-reader can hold thousands of books, which makes it very convenient for students and travellers who do not want to carry heavy bags»."
 },
 {
 "q": "Changing the size of the letters is helpful for ______.",
@@ -994,7 +994,7 @@ window.READING = [
 "fast downloads",
 "built-in dictionaries"
 ],
-"e": "الفقرة 2 ذكرت: أرخص، وتنزّله في ثواني، وبعض الأجهزة فيها قاموس. أما إنها ما تحتاج كهرباء ما انذكر."
+"e": "الفقرة 2: «E-books are often cheaper than printed copies»، و«you can download one in seconds»، و«Some devices even include a dictionary». أما إنها ما تحتاج كهرباء ما انذكر."
 },
 {
 "q": "According to several studies, people who read on paper ______.",
@@ -1107,7 +1107,7 @@ window.READING = [
 "seeing ordinary people's photos",
 "discussing the news"
 ],
-"e": "الفقرة 2 ذكرت متابعة الأحداث وقت حدوثها، وصور وفيديوهات الناس العاديين، والنقاش وتبادل الآراء. أما إيجاد وظائف ما انذكر."
+"e": "الفقرة 2: «People can follow important events as they happen»، و«photos and videos posted by ordinary people»، و«Social media also allows people to discuss the news». أما إيجاد وظائف ما انذكر."
 },
 {
 "q": "Some people create fake stories on purpose because shocking stories ______.",
@@ -1127,7 +1127,7 @@ window.READING = [
 "check the source",
 "keep people safe"
 ],
-"e": "mislead = يضلّل، يخلي الشخص يصدّق شي غلط. والكلام عن الأخبار الكاذبة."
+"e": "mislead = يضلّل، يخلي الشخص يصدّق شي غلط. الفقرة 3: «Fake news can mislead people» ← الكلام عن الأخبار الكاذبة."
 },
 {
 "q": "The writer gives the example of a false message about a popular product to show that fake news can ______.",
@@ -1167,7 +1167,7 @@ window.READING = [
 "Only Journalists Should Post News",
 "Social Media Is Useful Only in Floods"
 ],
-"e": "القطعة تذكر فوائد الأخبار في السوشال ميديا (الفقرة 2)، ومشكلة الأخبار الكاذبة (الفقرة 3)، وكيف نتأكد قبل ما ننشر (الفقرة 4) ← فأفضل عنوان: Social Media News: Check Before You Share"
+"e": "القطعة تذكر فوائد الأخبار في السوشال ميديا (الفقرة 2)، ومشكلة الأخبار الكاذبة (الفقرة 3)، وكيف نتأكد قبل ما ننشر (الفقرة 4): «if you are still not sure, do not share the post» ← فأفضل عنوان: Social Media News: Check Before You Share"
 }
 ]
 },
@@ -1220,7 +1220,7 @@ window.READING = [
 "travel fast",
 "fall asleep"
 ],
-"e": "survive = يعيش ويبقى حي. يعني الجمل يقدر يعيش أيام كثيرة بدون ما يشرب."
+"e": "survive = يعيش ويبقى حي. الفقرة 2: «Camels can also survive for many days without drinking» ← الجمل يقدر يعيش أيام كثيرة بدون ما يشرب."
 },
 {
 "q": "In about ten minutes, a camel can drink as much as ______.",
@@ -1260,7 +1260,7 @@ window.READING = [
 "with loud noise",
 "for a short time"
 ],
-"e": "comfortably = براحة، بدون ألم أو صعوبة. لأن الجلد القاسي على الركب والصدر يحميه من الأرض الحارة."
+"e": "comfortably = براحة، بدون ألم أو صعوبة. الفقرة 3: «Thick pads of hard skin on its knees and chest allow the animal to sit comfortably on hot ground»."
 },
 {
 "q": "Camel milk is popular because it is healthy and ______.",
@@ -1313,7 +1313,7 @@ window.READING = [
 "explain",
 "create"
 ],
-"e": "reduce = يقلّل. يعني إعادة التدوير تخفّف مشكلة النفايات."
+"e": "reduce = يقلّل. الفقرة 1: «Recycling is one of the easiest ways to reduce this problem» ← إعادة التدوير تخفّف مشكلة النفايات."
 },
 {
 "q": "Aluminium cans are especially valuable because they can be recycled ______.",
@@ -1373,7 +1373,7 @@ window.READING = [
 "famous",
 "large"
 ],
-"e": "ordinary = عادي. يعني الأسر العادية لو سوّت تغييرات صغيرة كل يوم يصير لها أثر كبير."
+"e": "ordinary = عادي. الفقرة 4: «When ordinary families make small changes like these every day, the total effect on the environment can be enormous» ← الأسر العادية."
 },
 {
 "q": "The writer says that the best way to protect the environment is to ______.",
@@ -1393,7 +1393,7 @@ window.READING = [
 "The History of Landfills",
 "Why Aluminium Is Valuable"
 ],
-"e": "القطعة عن مشكلة النفايات، وكيف ندوّر في البيت خطوة خطوة، وفي الأخير تقليل النفايات من البداية ← Recycling and Reducing Waste at Home"
+"e": "القطعة عن مشكلة النفايات، وكيف ندوّر في البيت: «Starting at home does not have to be complicated»، وفي الأخير: «produce less waste in the first place» ← Recycling and Reducing Waste at Home"
 }
 ]
 },
@@ -1436,7 +1436,7 @@ window.READING = [
 "comparing prices",
 "reading reviews"
 ],
-"e": "الفقرة 2 ذكرت الطلب نص الليل، ومقارنة الأسعار، وتقييمات المشترين. أما التوصيل المجاني ما انذكر."
+"e": "الفقرة 2: «You can order at midnight from your bed»، و«It is also easy to compare the prices»، و«Customer reviews are another benefit». أما التوصيل المجاني ما انذكر."
 },
 {
 "q": "What does the underlined word \"deal\" in paragraph 2 mean?",
@@ -1476,7 +1476,7 @@ window.READING = [
 "luck",
 "happiness"
 ],
-"e": "effort = جهد وتعب. يعني إرجاع الأغراض ياخذ وقت وجهد."
+"e": "effort = جهد وتعب. الفقرة 3: «Returning these items can take time and effort» ← إرجاع الأغراض ياخذ وقت وجهد."
 },
 {
 "q": "What does the underlined word \"it\" in paragraph 4 refer to?",
@@ -1506,7 +1506,7 @@ window.READING = [
 "Stores Are Always Cheaper",
 "Online Shopping Is Never Safe"
 ],
-"e": "القطعة تقارن بين الطريقتين: مميزات التسوق أونلاين (الفقرة 2) وعيوبه (الفقرة 3) ومميزات المحلات (الفقرة 4) ← فأفضل عنوان: Online Shopping and Stores: Pros and Cons"
+"e": "الفقرة 1: «both ways of shopping have something to offer»، والقطعة تقارن: مميزات التسوق أونلاين (الفقرة 2) وعيوبه (الفقرة 3) ومميزات المحلات (الفقرة 4) ← فأفضل عنوان: Online Shopping and Stores: Pros and Cons"
 }
 ]
 },
@@ -1535,9 +1535,9 @@ window.READING = [
 "q": "The writer says that many restaurant meals contain too much ______.",
 "o": [
 "oil, salt and sugar",
-"protein",
-"water",
-"vitamins"
+"fibre and vitamins",
+"water and protein",
+"fruit and vegetables"
 ],
 "e": "الفقرة 1: «many restaurant meals contain more oil, salt and sugar than our bodies need»."
 },
@@ -1559,7 +1559,7 @@ window.READING = [
 "control of salt",
 "lower cost"
 ],
-"e": "الفقرة 2 ذكرت المكونات الطازجة، وكمية الملح والزيت، وإنه أرخص بكثير. أما إنه أسرع من المطعم ما انذكر."
+"e": "الفقرة 2: «You choose fresh ingredients»، و«you decide how much salt or oil to use»، و«Cooking at home is also much cheaper». أما إنه أسرع ما انذكر."
 },
 {
 "q": "According to the writer, a meal that costs 40 riyals from a delivery app might cost ______ at home.",
@@ -1579,7 +1579,7 @@ window.READING = [
 "proud",
 "bored"
 ],
-"e": "nervous = متوتر وقلقان. المبتدئ يتوتر لأنه يحسب الطبخ يحتاج موهبة خاصة."
+"e": "nervous = متوتر وقلقان. الفقرة 3: «Beginners often feel nervous because they think cooking needs special talent»."
 },
 {
 "q": "The writer says that cooking is a skill that ______.",
@@ -1732,7 +1732,7 @@ window.READING = [
 "The Best Jobs for Computer Students",
 "How to Write a Good CV"
 ],
-"e": "الفقرة 2 فيها الفوائد، والفقرة 3 فيها الصعوبات، والفقرة 4 فيها نصائح ← العنوان الأنسب: Part-Time Jobs: Benefits, Problems and Advice"
+"e": "الفقرة 2: «A part-time job can bring several benefits»، والفقرة 3: «working while studying is not always easy»، والفقرة 4 فيها نصائح: «Before applying for a job, students should think carefully» ← العنوان الأنسب: Part-Time Jobs: Benefits, Problems and Advice"
 }
 ]
 },
@@ -1775,7 +1775,7 @@ window.READING = [
 "eat",
 "relax"
 ],
-"e": "concentrate = يركّز. الطالب اللي يفطر يركّز أحسن في الحصة ← focus."
+"e": "concentrate = يركّز. الفقرة 2: «students who eat breakfast regularly concentrate better in class» ← focus."
 },
 {
 "q": "Which result of eating breakfast does the writer NOT mention?",
@@ -1805,17 +1805,17 @@ window.READING = [
 "snacks between meals",
 "large lunch meals"
 ],
-"e": "الفقرة 3: «People who miss the morning meal often feel very hungry by midday, so they may eat large meals» ← they = الناس اللي ما يفطرون."
+"e": "الفقرة 3: «People who miss the morning meal… so they may eat large meals» ← they = الناس اللي ما يفطرون."
 },
 {
-"q": "Skipping breakfast does not always help people lose weight because they may ______ later in the day.",
+"q": "The writer says that a balanced breakfast helps you control your ______.",
 "o": [
-"eat more",
-"sleep more",
-"exercise more",
-"feel full"
+"hunger",
+"sleep",
+"stress",
+"time"
 ],
-"e": "الفقرة 3: يجوعون الظهر و«may eat large meals at lunch or buy fast food and snacks between meals. Because of this, skipping breakfast does not always help people lose weight» ← ياكلون أكثر بعدين."
+"e": "الفقرة 3: «A balanced breakfast helps you control your hunger until lunchtime» ← يخليك ما تجوع لين الغدا."
 },
 {
 "q": "What does the underlined word \"opposite\" in paragraph 3 mean?",
@@ -1825,7 +1825,7 @@ window.READING = [
 "the same",
 "healthy"
 ],
-"e": "opposite = عكس، مختلف تماماً. يعني بدل ما ينقص وزنه ممكن يزيد."
+"e": "opposite = عكس، مختلف تماماً. الفقرة 3: «skipping breakfast does not always help people lose weight. In fact, it can sometimes have the opposite effect» ← بدل ما ينقص وزنه ممكن يزيد."
 },
 {
 "q": "The writer mentions eggs, beans, cheese, and bread to show that traditional breakfasts ______.",
@@ -1933,12 +1933,12 @@ window.READING = [
 {
 "q": "What does the underlined word \"exhibitions\" in paragraph 4 mean?",
 "o": [
-"public art shows",
-"hotels",
+"public shows",
+"hotel rooms",
 "mountain trips",
 "trade roads"
 ],
-"e": "exhibitions = معارض. «art exhibitions» = معارض فنية يعرضون فيها أعمال فنية للناس."
+"e": "exhibitions = معارض. الفقرة 4: «it hosts music concerts, art exhibitions, and festivals» ← «art exhibitions» = معارض فنية يعرضون فيها أعمال للناس."
 },
 {
 "q": "The writer gives the example of booking a tour to enter Hegra to show that the government wants to ______.",
@@ -1958,7 +1958,7 @@ window.READING = [
 "AlUla: A City of Modern Buildings",
 "Visit AlUla Only at Night"
 ],
-"e": "الفقرة 2 عن التاريخ (Hegra)، والفقرة 3 عن الطبيعة، والفقرة 4 عن الثقافة والفعاليات ← العلا مميزة بتاريخها وطبيعتها وثقافتها ← فأفضل عنوان: AlUla: History, Nature and Culture"
+"e": "الفقرة 2 عن التاريخ: «The most famous site in AlUla is Hegra»، والفقرة 3 عن الطبيعة: «AlUla has amazing natural landscapes»، والفقرة 4 عن الثقافة: «AlUla has also become a centre for culture and events» ← فأفضل عنوان: AlUla: History, Nature and Culture"
 }
 ]
 },
@@ -2026,10 +2026,10 @@ window.READING = [
 {
 "q": "What does the underlined word \"gentle\" in paragraph 3 mean?",
 "o": [
-"careful and not rough",
+"soft and careful",
 "loud and active",
-"lazy",
-"afraid"
+"lazy and slow",
+"afraid and shy"
 ],
 "e": "gentle = لطيف وما يكون عنيف. والدليل نفس الجملة: «because they have to treat a small animal carefully»."
 },
@@ -2051,7 +2051,7 @@ window.READING = [
 "a gift",
 "a holiday"
 ],
-"e": "responsibility = مسؤولية (واجب). والجملة بعدها تذكر وش يحتاج الحيوان: أكل وماي ومكان نظيف وطبيب بيطري."
+"e": "responsibility = مسؤولية (واجب). الفقرة 4: «having a pet is a big responsibility» ← الحيوان يحتاج رعاية واهتمام، يعني واجب عليك."
 },
 {
 "q": "Which need of pets does the writer NOT mention?",
@@ -2174,7 +2174,7 @@ window.READING = [
 "pay and hire",
 "forget and ignore"
 ],
-"e": "encourage = يشجّع. الخبراء يشجّعون الشباب يتعلّمون مهارات التقنية."
+"e": "encourage = يشجّع. الفقرة 4: «many experts encourage young people to learn technology skills now»."
 },
 {
 "q": "What is the best title for the passage?",
@@ -2222,7 +2222,7 @@ window.READING = [
 {
 "q": "What do desalination plants do?",
 "o": [
-"remove salt from seawater",
+"remove the salt",
 "collect rainwater",
 "clean river water",
 "make electricity"
@@ -2242,12 +2242,12 @@ window.READING = [
 {
 "q": "Which way of saving water at home does the writer NOT mention?",
 "o": [
-"using the washing machine less",
+"washing clothes less",
 "turning off the tap",
 "taking short showers",
 "repairing leaking taps"
 ],
-"e": "الفقرة 3 ذكرت: قفل الحنفية وقت تفريش الأسنان، والشاور القصير، وتصليح الحنفية اللي تسرّب. الغسالة ما انذكرت."
+"e": "الفقرة 3: «turn off the tap while you brush your teeth»، و«Taking a short shower»، و«If a tap is leaking, you should repair it quickly». الغسالة ما انذكرت."
 },
 {
 "q": "What does the underlined word \"their\" in paragraph 3 refer to?",
@@ -2267,7 +2267,7 @@ window.READING = [
 "clean",
 "heat"
 ],
-"e": "reduce = يقلّل. الأجهزة تقلّل كمية الماي اللي تطلع من الحنفية."
+"e": "reduce = يقلّل. الفقرة 3: «simple devices on their taps that reduce the amount of water that comes out»."
 },
 {
 "q": "The writer gives the example of washing the car with a bucket to show that water can also be saved ______.",
@@ -2287,7 +2287,7 @@ window.READING = [
 "very dirty",
 "very new"
 ],
-"e": "precious = ثمين وغالي، يعني مورد مهم لازم نحافظ عليه."
+"e": "precious = ثمين وغالي. الفقرة 4: «we can protect this precious resource for future generations» ← مورد مهم لازم نحافظ عليه."
 },
 {
 "q": "What is the best title for the passage?",
@@ -2338,7 +2338,7 @@ window.READING = [
 "use 3D printers",
 "borrow novels",
 "study in silence",
-"hear audiobooks"
+"watch films"
 ],
 "e": "الفقرة 2: «\"maker spaces\", where visitors can use 3D printers and other tools to build their own designs»."
 },
@@ -2370,7 +2370,7 @@ window.READING = [
 "carry",
 "understand"
 ],
-"e": "afford = يقدر يدفع حقه (عنده فلوس كفاية). العوائل اللي ما تقدر تشتري كمبيوتر أو كتب."
+"e": "afford = يقدر يدفع حقه (عنده فلوس كفاية). الفقرة 3: «cannot afford computers or many books» ← ما عندهم فلوس كفاية يشترون كمبيوتر أو كتب."
 },
 {
 "q": "What does the underlined word \"them\" in paragraph 3 refer to?",
@@ -2448,12 +2448,12 @@ window.READING = [
 {
 "q": "What does the underlined word \"patient\" in paragraph 2 mean?",
 "o": [
-"able to wait calmly",
+"calm and not annoyed",
 "quick to get angry",
 "able to work fast",
 "easily tired"
 ],
-"e": "patient = صبور، يقدر ينتظر بهدوء بدون ما يزهق. الفقرة 2: «Many photographers also say that their hobby has made them more patient»."
+"e": "patient = صبور، هادي وما يزهق أو ينرفز بسرعة. الفقرة 2: «Many photographers also say that their hobby has made them more patient»."
 },
 {
 "q": "The writer gives the example of a bird landing on a tree to show that photographers sometimes have to ______.",
@@ -2483,7 +2483,7 @@ window.READING = [
 "strongly and hard",
 "often and regularly"
 ],
-"e": "gently = بلطف وبهدوء، يعني تنظّف العدسة بشويش بدون قوة."
+"e": "gently = بلطف وبهدوء. الفقرة 3: «clean your lens gently before you start» ← تنظّف العدسة بشويش بدون قوة."
 },
 {
 "q": "Which way of bringing people together does the writer NOT mention in paragraph 4?",
@@ -2493,7 +2493,7 @@ window.READING = [
 "joining local clubs",
 "entering competitions"
 ],
-"e": "الفقرة 4 ذكرت: المشاركة أونلاين، والنوادي، والمسابقات. التدريس في المدارس ما انذكر."
+"e": "الفقرة 4: «share their work online»، و«join local photography clubs»، و«enter competitions». التدريس في المدارس ما انذكر."
 },
 {
 "q": "Why should photographers ask permission before taking photos of people?",

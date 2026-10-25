@@ -668,14 +668,14 @@ window.READING = [
 "e": "«Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise."
 },
 {
-"q": "Experts tell shy students to begin with ______.",
+"q": "The writer says that shy students can arrive at class ______.",
 "o": [
-"small steps",
-"a big chance",
-"a long talk",
-"a new club"
+"a few minutes early",
+"right on time",
+"with a friend",
+"after the break"
 ],
-"e": "الفقرة 3: «Experts encourage these students to begin with small steps instead of waiting for a big chance» ← خطوات صغيرة، مو ينتظرون فرصة كبيرة."
+"e": "الفقرة 3: «They can arrive at class a few minutes early and say hello to the person sitting next to them» ← يجون قبل المحاضرة بدقايق ويسلّمون على اللي جنبهم."
 },
 {
 "q": "What does the underlined word \"he\" in paragraph 3 refer to?",
@@ -693,7 +693,7 @@ window.READING = [
 "small steps can work",
 "clubs are not useful",
 "study groups are better",
-"friends come quickly"
+"teachers can help"
 ],
 "e": "الفقرة 3: بعد ما ذكر الخطوات الصغيرة قال «Faisal, a second-year student, says that this worked for him» ← بدأ بسؤال بسيط وصار صاحبه الأقرب."
 },
@@ -1196,9 +1196,9 @@ window.READING = [
 "q": "Why do organic farmers move crops to different fields each year?",
 "o": [
 "to keep the soil healthy",
-"to kill insects",
-"to grow more food",
-"to save money"
+"to dry the soil",
+"to save water",
+"to attract buyers"
 ],
 "e": "الفقرة 1: «moving crops to different fields each year to keep the soil healthy»."
 },
@@ -1389,9 +1389,9 @@ window.READING = [
 "q": "What is the best title for the passage?",
 "o": [
 "How people celebrate Eid in Saudi Arabia",
-"The history of Hajj",
-"Travelling during the holidays",
-"Traditional Saudi dishes"
+"The history of Hajj in Saudi Arabia",
+"Travelling abroad during the holidays",
+"How to cook traditional Saudi dishes"
 ],
 "e": "القطعة كلها عن احتفال العيد في السعودية: الصلاة والزيارات والعيدية والأكل والفعاليات."
 }
@@ -1997,7 +1997,7 @@ window.READING = [
 "q": "Looking at a screen late at night can make it harder to ______.",
 "o": [
 "fall asleep",
-"wake up",
+"find our way",
 "read the news",
 "make calls"
 ],
@@ -2117,14 +2117,14 @@ window.READING = [
 "e": "الجملة نفسها توضّحها: «get angry about small things that would not normally bother them» ← irritable = سريع الانزعاج والعصبية."
 },
 {
-"q": "Which effect of one short night does the writer NOT mention?",
+"q": "Which problem does the writer NOT mention in paragraph 2?",
 "o": [
 "headaches",
-"anger",
 "poor concentration",
-"more mistakes"
+"more mistakes",
+"dangerous driving"
 ],
-"e": "الفقرة 2 ذكرت العصبية «get angry about small things» وضعف التركيز «harder to concentrate» والأخطاء «more mistakes in simple tasks»، والصداع ما انذكر."
+"e": "الفقرة 2 ذكرت ضعف التركيز «harder to concentrate» والأخطاء «more mistakes in simple tasks» وخطر السواقة «Driving when very tired is especially dangerous»، والصداع ما انذكر."
 },
 {
 "q": "Driving when very tired is especially dangerous because a sleepy driver ______.",
@@ -2466,14 +2466,14 @@ window.READING = [
 "e": "«Doctors in some countries report that lonely patients visit them more often» ← المرضى يزورون الدكاترة ← them = doctors."
 },
 {
-"q": "Some lonely patients visit doctors more often because the visit gives them a chance to ______.",
+"q": "Lonely older people are more likely to suffer from heart disease and ______.",
 "o": [
-"talk to someone",
-"get medicine",
-"stop smoking",
-"meet students"
+"poor sleep",
+"poor eyesight",
+"back pain",
+"headaches"
 ],
-"e": "الفقرة 2: «not always because they are ill, but because the visit gives them a chance to talk to someone»."
+"e": "الفقرة 2: «Lonely older people are more likely to suffer from heart disease and poor sleep»."
 },
 {
 "q": "What does the underlined word \"connected\" in paragraph 3 mean?",

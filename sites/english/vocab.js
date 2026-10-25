@@ -183,12 +183,12 @@ window.VOCAB = [
 },
 {
 "w": "Be on",
-"q": "My favourite TV show ..... at nine o'clock every Friday night. I never miss an episode.",
+"q": "My brother ..... the university basketball team. He plays in every match and trains every evening.",
 "o": [
 "is on",
-"belongs to",
-"gives up",
-"runs out"
+"is afraid of",
+"looks like",
+"gives up"
 ]
 },
 {
@@ -473,7 +473,7 @@ window.VOCAB = [
 },
 {
 "w": "Difficulty",
-"q": "My grandfather has ..... reading small letters. He needs his glasses to read the newspaper.",
+"q": "Many new students have ..... understanding the professor. He speaks very fast and uses long words.",
 "o": [
 "difficulty",
 "strength",
@@ -513,12 +513,12 @@ window.VOCAB = [
 },
 {
 "w": "Help",
-"q": "Can you ..... me carry these boxes to the car? They are too heavy for me.",
+"q": "Thank you for your ..... with my homework. I couldn't finish it on time without you.",
 "o": [
 "help",
-"fail",
-"avoid",
-"blame"
+"difficulty",
+"luggage",
+"weather"
 ]
 },
 {
@@ -1293,12 +1293,12 @@ window.VOCAB = [
 },
 {
 "w": "Idea",
-"q": "I have a great .....! Let's have a picnic in the desert this weekend with the whole family.",
+"q": "Let's have a picnic in the desert this weekend with the whole family. What a great .....!",
 "o": [
 "idea",
 "memory",
-"event",
-"habit"
+"habit",
+"receipt"
 ]
 },
 {
@@ -1453,12 +1453,12 @@ window.VOCAB = [
 },
 {
 "w": "Tell a joke",
-"q": "My uncle is so funny. He always ..... a joke at dinner, and everyone laughs.",
+"q": "Every time my cousin Fahad ..... a joke, the whole class laughs. Even the teacher smiles.",
 "o": [
 "tells",
 "takes",
-"has",
-"does"
+"does",
+"builds"
 ]
 },
 {
@@ -1773,7 +1773,7 @@ window.VOCAB = [
 },
 {
 "w": "Extremely",
-"q": "It was ..... hot in Riyadh yesterday. The temperature reached fifty degrees in the afternoon.",
+"q": "It was ..... hot in Riyadh yesterday. The temperature reached forty-eight degrees in the afternoon.",
 "o": [
 "extremely",
 "badly",
@@ -1793,11 +1793,11 @@ window.VOCAB = [
 },
 {
 "w": "Space",
-"q": "My son wants to be an astronaut. He dreams of traveling to ..... and visiting the moon.",
+"q": "Our apartment is too small for our big family. We need more ..... for the children to play.",
 "o": [
 "space",
-"field",
-"campus",
+"rent",
+"stress",
 "traffic"
 ]
 },
@@ -2083,12 +2083,12 @@ window.VOCAB = [
 },
 {
 "w": "Plan",
-"q": "We ..... to travel to Turkey next summer. We already booked the flights and the hotel.",
+"q": "What's your ..... for the weekend? Do you want to go to the beach or stay home?",
 "o": [
 "plan",
-"own",
-"cost",
-"forget"
+"flavor",
+"shortage",
+"luggage"
 ]
 },
 {
@@ -2143,12 +2143,12 @@ window.VOCAB = [
 },
 {
 "w": "Control",
-"q": "The road was wet and slippery. The driver couldn't ..... the car, and it hit a wall.",
+"q": "The road was wet and slippery. The driver lost ..... of the car, and it hit a wall.",
 "o": [
 "control",
-"produce",
-"reduce",
-"invent"
+"stress",
+"shortage",
+"silence"
 ]
 },
 {
@@ -2183,12 +2183,12 @@ window.VOCAB = [
 },
 {
 "w": "Exercise",
-"q": "Doctors say regular ..... is good for your heart, like walking, cycling or swimming for thirty minutes.",
+"q": "My doctor says I should ..... for thirty minutes every day. Walking or swimming is a good start.",
 "o": [
 "exercise",
-"stress",
-"shortage",
-"traffic"
+"celebrate",
+"guess",
+"complain"
 ]
 },
 {
@@ -2233,7 +2233,7 @@ window.VOCAB = [
 },
 {
 "w": "Produce",
-"q": "This factory in Dammam ..... about 1,000 cars every month. They are sold all over the Gulf.",
+"q": "This factory ..... about 1,000 cars every month. They are sold all over the Gulf.",
 "o": [
 "produces",
 "reduces",

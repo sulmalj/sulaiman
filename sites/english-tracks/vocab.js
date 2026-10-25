@@ -185,7 +185,7 @@ window.VOCAB = [
 },
 {
 "w": "Event",
-"q": "The music festival is the biggest ..... in Riyadh this year. Thousands of people are going to attend.",
+"q": "The book fair is the biggest ..... in Riyadh this year. Thousands of people are going to attend.",
 "o": [
 "event",
 "effort",
@@ -366,7 +366,7 @@ window.VOCAB = [
 },
 {
 "w": "Increase",
-"q": "The price of petrol will ..... next month. It will go from 2 riyals to 2.5 riyals.",
+"q": "The price of this phone will ..... next month. It will go from 2,000 riyals to 2,500 riyals.",
 "o": [
 "increase",
 "reduce",
@@ -522,7 +522,7 @@ window.VOCAB = [
 "q": "The test was very hard, and many students failed. ....., I passed it with a good grade.",
 "o": [
 "However",
-"Probably",
+"Therefore",
 "Except for",
 "For example"
 ]
@@ -624,7 +624,7 @@ window.VOCAB = [
 "o": [
 "wrong",
 "certain",
-"similar",
+"natural",
 "polite"
 ]
 },
@@ -896,7 +896,7 @@ window.VOCAB = [
 "attention",
 "effort",
 "weight",
-"rent"
+"kindness"
 ]
 },
 {
@@ -921,12 +921,12 @@ window.VOCAB = [
 },
 {
 "w": "Human",
-"q": "The ..... brain is very complex. Scientists still don't understand everything about how it works.",
+"q": "An adult ..... has 206 bones in the body. Babies are born with about 300 bones.",
 "o": [
 "human",
-"ancient",
-"local",
-"wooden"
+"insect",
+"pebble",
+"vegetable"
 ]
 },
 {
@@ -1245,7 +1245,7 @@ window.VOCAB = [
 },
 {
 "w": "Produce",
-"q": "This factory in Dammam ..... 1,000 cars every month. Most of them are sold in the Gulf.",
+"q": "This factory ..... 5,000 bottles of water every day. Most of them are sold in Riyadh.",
 "o": [
 "produces",
 "reduces",
@@ -1325,12 +1325,12 @@ window.VOCAB = [
 },
 {
 "w": "Form",
-"q": "To open a bank account, fill in this ..... with your name, address and phone number.",
+"q": "Let's ..... a study group for the final exam. We can meet in the library every Monday.",
 "o": [
 "form",
-"trend",
-"crowd",
-"pillow"
+"escape",
+"deserve",
+"swallow"
 ]
 },
 {
@@ -1527,7 +1527,7 @@ window.VOCAB = [
 },
 {
 "w": "Survey",
-"q": "The university did a ..... last month. It asked 500 students questions about their sleeping habits.",
+"q": "The university did a ..... last month. It asked 500 students questions about the food in the cafeteria.",
 "o": [
 "survey",
 "debate",
@@ -1622,7 +1622,7 @@ window.VOCAB = [
 "relationship",
 "population",
 "pollution",
-"argument"
+"headline"
 ]
 },
 {
