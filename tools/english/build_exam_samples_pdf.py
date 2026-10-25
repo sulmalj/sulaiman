@@ -198,7 +198,7 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
 <div class="exam">اختبار الميد · <bdi>1448</bdi> هـ · الفصل الأول · دفعة الساعة <bdi>10</bdi></div>
 <div class="toc"><span>١) قطعة + 10 أسئلة</span><span>٢) قواعد: 10 أسئلة</span><span>٣) كلمات: 10 أسئلة</span></div></div>
 <h2>١) القطعة <small>{en('Reading')}</small></h2>
-<div class="passage en"><h3>Apples in Washington State</h3>{''.join(para(l) for l in paras)}</div>
+<div class="passage en">{''.join(para(l) for l in paras)}</div>
 {reading}
 <h2>٢) القواعد <small>{en('Grammar')}</small></h2>{grammar}
 <h2>٣) الكلمات <small>{en('Vocabulary')}</small></h2>{vocab}{end_ad()}"""
