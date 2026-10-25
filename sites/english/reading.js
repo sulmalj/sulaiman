@@ -1125,7 +1125,7 @@ window.READING = [
 "o": [
 "Organic Food: Benefits and High Prices",
 "Why Organic Food Is Always Much Healthier",
-"How Organic Farming Harms the Environment",
+"Why Organic Farming Is Bad for the Environment",
 "Why Supermarkets Should Stop Selling Ordinary Food"
 ],
 "e": "القطعة ذكرت فوائد الأغذية العضوية (الفقرة 2) وغلاها (الفقرة 3)، ونصائح للي ميزانيته محدودة (الفقرة 4) ← فأفضل عنوان: Organic Food: Benefits and High Prices"
@@ -1688,12 +1688,12 @@ window.READING = [
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Living With a Roommate: Benefits and Rules",
+"Living With a Roommate: Problems and Solutions",
 "Why Students Should Always Live Alone",
 "Why Roommates Never Become Friends",
 "Cleaning: The Only Problem Roommates Have"
 ],
-"e": "القطعة تبدأ بفوائد السكن مع شخص، وبعدها المشاكل، وبعدها الحل: «talk about rules before moving in together» والكلام بهدوء ← فأفضل عنوان: Living With a Roommate: Benefits and Rules"
+"e": "الفقرة 1 تذكر فوائد السكن مع شخص بس تقول «Small problems can quickly grow into big arguments»، والفقرة 2 المشاكل (التنظيف والإزعاج والأكل)، والفقرتين 3 و4 الحلول: «talk about rules before moving in together» والكلام بهدوء ← فأفضل عنوان: Living With a Roommate: Problems and Solutions"
 }
 ]
 },
@@ -2140,12 +2140,12 @@ window.READING = [
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Exercise: An Easy Way to Get More Energy",
+"The Surprising Benefits of Regular Exercise",
 "Why Tired People Should Never Exercise",
 "Exercise: Only Possible in an Expensive Gym",
 "Why Housework Is Better Than Sports"
 ],
-"e": "الفكرة في الفقرة 1: «regular physical activity can actually give people more energy»، وباقي القطعة يوضّح ليش وكيف تبدأ بسهولة ← فأفضل عنوان: Exercise: An Easy Way to Get More Energy"
+"e": "الفقرة 1: «research suggests that the opposite is often true»، والفقرة 2 تشرح فوائد الرياضة المنتظمة (طاقة أكثر ومزاج أحسن)، والفقرتين 3 و4 كيف تبدأ بسهولة ← فأفضل عنوان: The Surprising Benefits of Regular Exercise"
 }
 ]
 },
@@ -2485,7 +2485,7 @@ window.READING = [
 "Why Riyadh Should Spend Its Money on Cars",
 "Driverless Trains: Cheaper Than Buses"
 ],
-"e": "القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour» ← فأفضل عنوان: Can a Metro Change a Car City?"
+"e": "القطعة تناقش المترو: مميزاته (الفقرة 2) وصعوباته (الفقرتين 3 و4)، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour» ← فأفضل عنوان: Can a Metro Change a Car City?"
 }
 ]
 },

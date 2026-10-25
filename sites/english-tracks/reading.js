@@ -897,12 +897,12 @@ window.READING = [
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Fast News on Social Media: Check Before You Share",
+"Social Media News: Check Before You Share",
 "Why Newspapers Are Never Wrong About the News",
 "Only Journalists Should Post News Online",
 "Social Media: Useful Only During Floods and Storms"
 ],
-"e": "القطعة تذكر فوائد سرعة الأخبار (الفقرة 2)، ومشكلة الأخبار الكاذبة (الفقرة 3)، وكيف نتأكد قبل ما ننشر (الفقرة 4) ← فأفضل عنوان: Fast News on Social Media: Check Before You Share"
+"e": "القطعة تذكر فوائد الأخبار في السوشال ميديا (الفقرة 2)، ومشكلة الأخبار الكاذبة (الفقرة 3)، وكيف نتأكد قبل ما ننشر (الفقرة 4) ← فأفضل عنوان: Social Media News: Check Before You Share"
 }
 ]
 },
@@ -1236,12 +1236,12 @@ window.READING = [
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Online or in Stores? Most People Use Both",
+"Online Shopping and Stores: Pros and Cons",
 "Why Online Shopping Will Replace All Malls",
 "Why Stores Are Always Cheaper",
 "Online Shopping Is Never Safe"
 ],
-"e": "القطعة تقارن بين الطريقتين، وآخرها: «they shop online for some things and visit stores for others» ← فأفضل عنوان: Online or in Stores? Most People Use Both"
+"e": "القطعة تقارن بين الطريقتين: مميزات التسوق أونلاين (الفقرة 2) وعيوبه (الفقرة 3) ومميزات المحلات (الفقرة 4) ← فأفضل عنوان: Online Shopping and Stores: Pros and Cons"
 }
 ]
 },
@@ -1576,8 +1576,8 @@ window.READING = [
 "q": "What is the best title for the passage?",
 "o": [
 "Don't Skip Breakfast",
-"The Fastest Way to Lose Weight: Skip Breakfast",
-"Eat a Big Lunch Instead of Breakfast",
+"Breakfast: The Least Important Meal of the Day",
+"Breakfast: Only Important for Young Children",
 "Why a Healthy Breakfast Takes a Long Time"
 ],
 "e": "الفقرة 2 تقول إن الفطور يعطي طاقة، والفقرة 4: «a healthy breakfast does not have to take a long time» ← الفطور مهم والصحي منه سريع وسهل ← فأفضل عنوان: Don't Skip Breakfast"
@@ -2823,12 +2823,12 @@ window.READING = [
 {
 "q": "What is the best title for the passage?",
 "o": [
-"Managing Your Time: Working Smarter, Not Longer",
+"Better Ways to Manage Your Time",
 "Why Students Should Study Longer Hours Every Night",
 "How to Reply to Messages While Doing Homework",
 "A Guide to Popular Video Games for Students"
 ],
-"e": "الفقرة 1: «the amount of time we spend on a task matters less than how we spend it» و«Being busy, in other words, is not the same as being productive» ← الفكرة: تشتغل بذكاء مو ساعات أطول."
+"e": "الفقرة 1: «Being busy, in other words, is not the same as being productive»، وباقي القطعة طرق أفضل لتنظيم الوقت (ترك تعدد المهام، تقسيم المهمة لخطوات، الفترات المركزة، الأولويات والنوم) ← فأفضل عنوان: Better Ways to Manage Your Time"
 }
 ]
 }

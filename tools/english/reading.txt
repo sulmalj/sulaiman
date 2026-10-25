@@ -659,7 +659,7 @@
 ?? What is the best title for the passage?
 * Organic Food: Benefits and High Prices
 - Why Organic Food Is Always Much Healthier
-- How Organic Farming Harms the Environment
+- Why Organic Farming Is Bad for the Environment
 - Why Supermarkets Should Stop Selling Ordinary Food
 !! القطعة ذكرت فوائد الأغذية العضوية (الفقرة 2) وغلاها (الفقرة 3)، ونصائح للي ميزانيته محدودة (الفقرة 4) ← فأفضل عنوان: Organic Food: Benefits and High Prices
 
@@ -987,11 +987,11 @@
 - moving to another apartment as soon as possible
 !! الفقرة 4: «experts suggest speaking to your roommate calmly and directly instead of complaining to other friends».
 ?? What is the best title for the passage?
-* Living With a Roommate: Benefits and Rules
+* Living With a Roommate: Problems and Solutions
 - Why Students Should Always Live Alone
 - Why Roommates Never Become Friends
 - Cleaning: The Only Problem Roommates Have
-!! القطعة تبدأ بفوائد السكن مع شخص، وبعدها المشاكل، وبعدها الحل: «talk about rules before moving in together» والكلام بهدوء ← فأفضل عنوان: Living With a Roommate: Benefits and Rules
+!! الفقرة 1 تذكر فوائد السكن مع شخص بس تقول «Small problems can quickly grow into big arguments»، والفقرة 2 المشاكل (التنظيف والإزعاج والأكل)، والفقرتين 3 و4 الحلول: «talk about rules before moving in together» والكلام بهدوء ← فأفضل عنوان: Living With a Roommate: Problems and Solutions
 
 ## 16 | Breaking Bad Habits | key=15
 1. Almost everyone has at least one bad habit. Some people drink too many sugary drinks, some stay up late scrolling on their phones, and others always leave their work until the last minute. Many of us have tried to stop these habits. However, breaking a habit is often much harder than we expect, because habits happen automatically, without much thinking. The good news is that a few practical steps can make the change easier.
@@ -1251,11 +1251,11 @@
 - You can do it only with a friend.
 !! الفقرة 4: «If you enjoy it, you are much more likely to continue for months instead of giving up after a week».
 ?? What is the best title for the passage?
-* Exercise: An Easy Way to Get More Energy
+* The Surprising Benefits of Regular Exercise
 - Why Tired People Should Never Exercise
 - Exercise: Only Possible in an Expensive Gym
 - Why Housework Is Better Than Sports
-!! الفكرة في الفقرة 1: «regular physical activity can actually give people more energy»، وباقي القطعة يوضّح ليش وكيف تبدأ بسهولة ← فأفضل عنوان: Exercise: An Easy Way to Get More Energy
+!! الفقرة 1: «research suggests that the opposite is often true»، والفقرة 2 تشرح فوائد الرياضة المنتظمة (طاقة أكثر ومزاج أحسن)، والفقرتين 3 و4 كيف تبدأ بسهولة ← فأفضل عنوان: The Surprising Benefits of Regular Exercise
 
 ## 20 | Vitamins: Food or Pills? | key=19
 1. Vitamins are substances that our bodies need in small amounts to work _properly_. They help us grow, keep our bones and skin healthy, and protect us from illness. In recent years, vitamin pills have become very popular, and pharmacies now sell dozens of types. Many people take a pill every morning because they believe it will make them stronger or give them more energy, even if they already feel healthy.
@@ -1454,7 +1454,7 @@
 - How the Metro Solved All of Riyadh's Problems
 - Why Riyadh Should Spend Its Money on Cars
 - Driverless Trains: Cheaper Than Buses
-!! القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour» ← فأفضل عنوان: Can a Metro Change a Car City?
+!! القطعة تناقش المترو: مميزاته (الفقرة 2) وصعوباته (الفقرتين 3 و4)، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour» ← فأفضل عنوان: Can a Metro Change a Car City?
 
 ## 23 | Does Volunteering Always Help? | key=22
 1. Volunteering, giving time and skills without payment, is usually seen as something entirely positive. In recent years it has grown considerably in Saudi Arabia, where national plans aim to reach one million volunteers a year. Universities encourage students to take part, and many employers say that they value volunteer experience when they hire new staff. Yet researchers and charity workers increasingly argue that volunteering is not automatically beneficial; its value depends largely on how it is organised.
