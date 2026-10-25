@@ -131,6 +131,9 @@ footer{color:var(--muted);text-align:center;font-size:13.5px;padding:34px 0 40px
 
 .qcard{padding:20px}
 .qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:13.5px;color:var(--muted)}
+.past-q{position:relative}
+.past{position:absolute;top:-1px;left:-1px;z-index:1;background:#fff4d6;color:#8a5a00;border:1px solid #efd18a;border-radius:var(--r-card) 0 12px 0;padding:3px 12px;font-size:12.5px;font-weight:700;white-space:nowrap;pointer-events:none}   /* شارة «جاء في اختبار سابق» بالزاوية فوق يسار */
+.qcard.past-q,.ritem.past-q{padding-top:40px}
 .qmeta .k{background:var(--cs,var(--accent-soft));color:var(--c,var(--accent));border-radius:6px;padding:1px 10px;font-weight:700;font-family:var(--f-en);font-size:12.5px}
 .qtext{font-size:clamp(17px,4.2vw,19px);font-weight:500;line-height:1.75;margin:0 0 16px}
 .blank{display:inline-block;min-width:4.5em;border-bottom:2px solid var(--muted);margin:0 2px;text-align:center;line-height:1.3}
@@ -420,10 +423,10 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
   </div>
 </div>
 
-<script src="grammar.js?v=b377a82384"></script>
-<script src="vocab.js?v=b137c60d23"></script>
+<script src="grammar.js?v=e204371ceb"></script>
+<script src="vocab.js?v=ed4c9106d1"></script>
 <script src="meanings.js?v=15022bd7fd"></script>
-<script src="reading.js?v=1c22765952"></script>
+<script src="reading.js?v=c0e7485b24"></script>
 <script src="listening.js?v=10e4ebdd42"></script>
 <script>
 /* ════════ الروابط ════════ */
@@ -455,10 +458,10 @@ const secName = s => `${SEC[s].ar} (${SEC[s].en})`;
 /* ── البيانات ── */
 const GR = window.GRAMMAR || [], VO = window.VOCAB || [], RE = window.READING || [], LI = window.LISTENING || [], ME = window.MEANINGS || [];
 const QS = [];
-GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, code: `G${ri + 1}-${k + 1}` })));
+GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, x: q.x, code: `G${ri + 1}-${k + 1}` })));
 ME.forEach((m, i) => QS.push({ id: 'm-' + hash(m.w), sec: 'm', grp: Math.floor(i / VOCAB_SET), q: m.w, o: m.o, e: m.e, code: `M-${i + 1}` }));
-VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, e: v.e, code: `V-${i + 1}` }));
-RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.k || p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
+VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, e: v.e, x: v.x, code: `V-${i + 1}` }));
+RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.k || p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, x: q.x, code: `R${p.n}-${k + 1}` })));
 LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
 const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const ofSec = s => QS.filter(q => q.sec === s);
@@ -486,6 +489,7 @@ function record(q, ok) {
 const weakIds = () => QS.filter(q => LS.wrong[q.id]).map(q => q.id);
 /* «ارجع لها لاحقًا»: m = حفظه الطالب بالزر، s = تخطاه بدون إجابة */
 const laterIds = () => QS.filter(q => LS.later[q.id]).map(q => q.id);
+const pastTag = q => q.x ? '<span class="past" title="هذا السؤال جاء في اختبار سابق">★ جاء في اختبار سابق</span>' : '';   // past_exam.txt
 const markBtn = q => `<button class="mark ${LS.later[q.id] === 'm' ? 'on' : ''}" type="button" data-mark="${q.id}">${LS.later[q.id] === 'm' ? '🔖 محفوظ للرجوع' : '🔖 ارجع له لاحقًا'}</button>`;
 function toggleMark(id) { if (LS.later[id] === 'm') delete LS.later[id]; else LS.later[id] = 'm'; save(); }
 function skipIds(ids) { let n = 0; ids.forEach(id => { if (!(id in LS.ans) && !LS.later[id]) { LS.later[id] = 's'; n++; } }); if (n) save(); }
@@ -599,7 +603,7 @@ function openList(s) {
     if (s === 'g') { title = esc(GR[g].rule); sub = list.length + ' سؤال'; }
     if (s === 'v') { const a = g * VOCAB_SET + 1, b = Math.min(VO.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الأسئلة ${a}–${b}`; }
     if (s === 'm') { const a = g * VOCAB_SET + 1, b = Math.min(ME.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الكلمات ${a}–${b}`; }
-    if (s === 'r') { title = `القطعة ${RE[g].n}`; sub = `المستوى <span class="en">${LEVEL_R(RE[g].n)}</span>`; }   // بدون عنوان القطعة: يكشف جواب سؤال «best title»
+    if (s === 'r') { title = `القطعة ${RE[g].n}`; sub = `المستوى <span class="en">${LEVEL_R(RE[g].n)}</span>${RE[g].x ? ' · ★ جاءت في اختبار سابق' : ''}`; }   // بدون عنوان القطعة: يكشف جواب سؤال «best title»
     if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · المستوى <span class="en">${LEVEL(c.n)}</span> · ${c.kind === 'dialogue' ? (new Set(c.lines.map(l => l[0])).size > 2 ? 'نقاش بين ' + new Set(c.lines.map(l => l[0])).size + ' أشخاص' : 'حوار بين شخصين') : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
     const st = done === list.length ? `<span class="st done">✓ ${right}/${list.length}</span>` : done ? `<span class="st">${done}/${list.length}</span>` : '';
     return `<button class="card item s-${s}" type="button" data-g="${g}"><span class="no">${s === 'r' || s === 'l' ? (s === 'r' ? RE[g].n : LI[g].n) : g + 1}</span><span class="tx"><b>${title}</b><small>${sub}</small></span>${st}</button>`;
@@ -647,8 +651,8 @@ function renderQ() {
   const done = picked !== undefined;
   const right = q.o[0];
   const keepA = $('qCard').querySelector(`.ctx audio[data-q="${q.id}"]`);   // نفس السؤال: لا توقف المقطع اللي شغّال
-  $('qCard').className = 'card qcard s-' + q.sec;
-  $('qCard').innerHTML = (isRev ? ctxHTML(q, P.kind === 'later') : '') +
+  $('qCard').className = 'card qcard s-' + q.sec + (q.x ? ' past-q' : '');
+  $('qCard').innerHTML = pastTag(q) + (isRev ? ctxHTML(q, P.kind === 'later') : '') +
     `<div class="qmeta"><span class="k">${SEC[q.sec].en}</span><span class="qcode">${q.code}</span>${markBtn(q)}${repBtn(q)}</div>
     <p class="qtext en">${qHTML(q, done ? right : null)}</p>${q.sec === 'm' ? MNOTE : ''}
     <div class="opts ${q.sec === 'm' ? 'ar ' : ''}${opts.every(o => o.txt.length < 22) ? 'two' : ''}">` +
@@ -711,7 +715,7 @@ function renderGroupQs() {
   const { s, g } = G, list = ofGrp(s, g);
   $('gList').innerHTML = list.map((q, k) => {
     const opts = options(q), p = G.picked[q.id], done = p !== undefined, sel = G.sel[q.id];
-    return `<div class="card gq s-${s}" data-q="${q.id}">
+    return `<div class="card gq s-${s}${q.x ? ' past-q' : ''}" data-q="${q.id}">${pastTag(q)}
       <div class="qmeta mtop">${markBtn(q)}</div>
       <p class="qtext en"><span class="n">${k + 1}.</span><span>${esc(q.q)}</span></p>
       <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => {
@@ -785,7 +789,7 @@ function renderE() {
   $('eHead').innerHTML = p.s === 'r' || p.s === 'l' ? headHTML(p.s, p.g, true) : '';
   $('eList').innerHTML = p.ids.map((id, k) => {
     const q = BY_ID[id], opts = options(q), pk = E.picked[id];
-    return `<div class="card gq s-${q.sec} ${LS.later[id] === 'm' ? 'flag' : ''}" data-q="${id}">
+    return `<div class="card gq s-${q.sec} ${LS.later[id] === 'm' ? 'flag' : ''}${q.x ? ' past-q' : ''}" data-q="${id}">${pastTag(q)}
       <div class="qmeta mtop">${markBtn(q)}</div>
       <p class="qtext en"><span class="n">${k + 1}.</span><span>${qHTML(q)}</span></p>
       <div class="opts ${opts.every(o => o.txt.length < 22) ? 'two' : ''}">${opts.map((o, i) => `<button class="opt ${pk === i ? 'sel' : ''}" type="button" data-i="${i}"><span class="lt">${LETTERS[i]}</span><span>${esc(o.txt)}</span></button>`).join('')}</div>
@@ -860,7 +864,7 @@ function finishExam(timeUp) {
     <p class="rnote">تذكير: الكلمات والقطعة والاستماع مهارات تعتمد على مستواك في اللغة وتتطور مع الوقت والتدريب.</p>`;
   const wrong = res.filter(r => !r.ok);
   $('rHead').textContent = wrong.length ? `❌ الأسئلة اللي غلطت فيها (${wrong.length})` : '🎉 ما غلطت في ولا سؤال!';
-  $('rList').innerHTML = wrong.map(r => `<div class="card ritem">
+  $('rList').innerHTML = wrong.map(r => `<div class="card ritem${r.q.x ? ' past-q' : ''}">${pastTag(r.q)}
       <div class="qmeta"><span class="k" style="background:var(--sunk)">${secName(r.q.sec)}</span></div>
       <p class="q en">${qHTML(r.q)}</p>
       <div class="row you">إجابتك: <b class="en">${r.you === null ? 'ما جاوبت' : esc(r.you)}</b></div>
