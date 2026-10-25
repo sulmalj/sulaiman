@@ -9,6 +9,7 @@ function ranks(v){const s=v.map((x,i)=>[x,i]).sort((a,b)=>a[0]-b[0]);const r=[];
  while(i<s.length){let j=i;while(j+1<s.length&&s[j+1][0]===s[i][0])j++;const pos=[];for(let k=i;k<=j;k++)pos.push(k+1);
   for(let k=i;k<=j;k++)r[s[k][1]]={v:pos.reduce((a,b)=>a+b,0)/pos.length,pos};i=j+1;}return r;}
 const RX=ranks(X), RY=ranks(Y), rx=RX.map(r=>r.v), ry=RY.map(r=>r.v);
+const ORD=X.map((_,i)=>i).sort((a,b)=>X[a]-X[b]||a-b);
 const S=a=>a.reduce((p,q)=>p+q,0), XY=rx.map((a,i)=>a*ry[i]), X2=rx.map(a=>a*a), Y2=ry.map(a=>a*a);
 const [sx,sy,sxy,sx2,sy2]=[S(rx),S(ry),S(XY),S(X2),S(Y2)];
 const num=n*sxy-sx*sy, dx=n*sx2-sx*sx, dy=n*sy2-sy*sy, r=num/(Math.sqrt(dx)*Math.sqrt(dy));
@@ -27,11 +28,10 @@ const st1=`<h3>الحل:</h3><h4>1) ترتيب المشاهدات تصاعديً
 <tr><th class="h">${K('X')}</th>${sx_.map(v=>`<td>${v}</td>`).join('')}</tr><tr><th class="h">${K('Y')}</th>${sy_.map(v=>`<td>${v}</td>`).join('')}</tr></table>`;
 const st2=`<h4>2) جدول الرتب والحسابات</h4>
 <table class="t m"><tr class="hd">${['X','Y','R_x','R_y','R_xR_y','R_x^{2}','R_y^{2}'].map(h=>`<th>${K(h)}</th>`).join('')}</tr>
-${X.map((x,i)=>`<tr><td>${K(String(x))}</td><td>${K(String(Y[i]))}</td><td>${rk(RX[i])}</td><td>${rk(RY[i])}</td><td>${K(fmt(XY[i]))}</td><td>${K(fmt(X2[i]))}</td><td>${K(fmt(Y2[i]))}</td></tr>`).join('')}
+${ORD.map(i=>[X[i],i]).map(([x,i])=>`<tr><td>${K(String(x))}</td><td>${K(String(Y[i]))}</td><td>${rk(RX[i])}</td><td>${rk(RY[i])}</td><td>${K(fmt(XY[i]))}</td><td>${K(fmt(X2[i]))}</td><td>${K(fmt(Y2[i]))}</td></tr>`).join('')}
 <tr class="s"><td colspan="2"></td>${[sx,sy,sxy,sx2,sy2].map(v=>`<td>${K('\\Sigma='+fmt(v))}</td>`).join('')}</tr></table>`;
-const L1=String.raw`r_s=r(R_x,R_y)=\dfrac{n\sum R_xR_y-\sum R_x\sum R_y}{\sqrt{n\sum R_x^{2}-\left(\sum R_x\right)^{2}}\;\sqrt{n\sum R_y^{2}-\left(\sum R_y\right)^{2}}}`;
-const L2=String.raw`=\dfrac{${n}(${fmt(sxy)})-(${fmt(sx)})(${fmt(sy)})}{\sqrt{${n}(${fmt(sx2)})-(${fmt(sx)})^{2}}\;\sqrt{${n}(${fmt(sy2)})-(${fmt(sy)})^{2}}}=\fcolorbox{${BOX}}{transparent}{$\;${trunc(r,2)}\;$}`;
-const st3=`<h4>3) التعويض في قانون بيرسون على الرتب</h4><div class="eq">${K(L1,1)}</div><div class="eq">${K(L2,1)}</div>
+const L1=String.raw`r_s=r\left(R_x,R_y\right)=\dfrac{${n}(${fmt(sxy)})-(${fmt(sx)})(${fmt(sy)})}{\sqrt{${n}(${fmt(sx2)})-(${fmt(sx)})^{2}}\;\sqrt{${n}(${fmt(sy2)})-(${fmt(sy)})^{2}}}=\fcolorbox{${BOX}}{transparent}{$\;${trunc(r,2)}\;$}`;
+const st3=`<h4>3) التعويض في قانون بيرسون على الرتب</h4><div class="eq">${K(L1,1)}</div>
 <div class="ans"><span>${verdict}</span></div>`;
 const css=`@font-face{font-family:Rx;src:url(file://${FONTS}/Readex-500.ttf)}@font-face{font-family:Rx7;src:url(file://${FONTS}/Readex-700.ttf)}
 html,body{margin:0;background:#fffdf5}#w{width:1180px;padding:30px 40px 40px;color:${BR};direction:rtl;font:28px/1.9 Rx}
