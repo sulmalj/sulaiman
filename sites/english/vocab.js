@@ -2541,5 +2541,17 @@ window.VOCAB = [
 ],
 "e": "expert = خبير ← إذا ما تعرف تصلّحه تسأل شخص خبير (fact/theory/plan مو أشخاص).",
 "x": 1
+},
+{
+"w": "Affordable",
+"q": "These sunglasses are 3,000 riyals! Can you show me something more ......?",
+"o": [
+"affordable",
+"reachable",
+"charismatic",
+"negative"
+],
+"e": "affordable = بسعر مناسب ← 3,000 ريال غالية، فيبي شي أرخص.",
+"x": 1
 }
 ];
