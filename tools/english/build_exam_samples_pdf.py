@@ -15,6 +15,8 @@ OUT = os.path.join(ROOT, 'store/english/exam-samples-2/humanities-exam-samples-w
 FONTS = os.path.join(ROOT, 'tools/arab100/fonts')
 LOGO = os.path.join(ROOT, 'tools/statistics/logo-adl.png')
 LETTERS = 'ABCD'
+# تنويه الحقوق (نفس فكرة تنويه موقع النهج) — يطلع في كل صفحة
+RIGHTS = '© ملازم عدل · لا نُحلّل أخذ محتوى الملف أو أسئلته أو حلوله أو نسخها أو استغلالها بأي شكل، لغرض تجاري أو غير تجاري، بدون إذن منّا.'
 AD_EXTRA = '<div class="extra">وعندنا جميع مواد المسار الإنساني<small>كل المواد متوفرة في المتجر: mtgradl.com</small></div>'
 
 # القطعة: نفس نص القطعة 4 في tools/english/reading.txt (والشروح منه)
@@ -143,22 +145,22 @@ def build():
 @font-face{{font-family:R;src:url('file://{FONTS}/Readex-400.ttf')}}
 @font-face{{font-family:R;font-weight:600;src:url('file://{FONTS}/Readex-600.ttf')}}
 @font-face{{font-family:R;font-weight:700;src:url('file://{FONTS}/Readex-700.ttf')}}
-@page{{size:A4;margin:12mm 14mm 18mm}}
+@page{{size:A4;margin:12mm 14mm 25mm}}
 *{{box-sizing:border-box}}
 html{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 body{{margin:0;font-family:R,sans-serif;color:#1f2a37;font-size:11pt;line-height:1.7;direction:rtl;background:#fff}}
 .en{{direction:ltr;unicode-bidi:isolate;text-align:left}}
 bdi.en{{unicode-bidi:isolate}}
-.cover{{text-align:center;padding:6mm 0 5mm;background:#fffdf5;border:1.5px solid #e7dcc6;border-radius:12px;margin-bottom:6mm}}
-.cover img{{height:20mm}}
-.cover h1{{margin:3mm 0 1mm;color:#204b7d;font-size:21pt;font-weight:700}}
+.cover{{text-align:center;padding:4mm 0 4mm;background:#fffdf5;border:1.5px solid #e7dcc6;border-radius:12px;margin-bottom:6mm}}
+.cover img{{height:15mm}}
+.cover h1{{margin:1.5mm 0 .5mm;color:#204b7d;font-size:21pt;font-weight:700}}
 .cover .sub{{color:#b0698d;font-weight:600;font-size:13pt}}
-.cover .exam{{display:inline-block;margin-top:3mm;background:#204b7d;color:#fff;font-weight:700;font-size:12pt;border-radius:999px;padding:1.2mm 6mm}}
-.cover .toc{{margin-top:4mm;display:flex;justify-content:center;gap:5mm;font-size:10.5pt;color:#475569}}
+.cover .exam{{display:inline-block;margin-top:2mm;background:#204b7d;color:#fff;font-weight:700;font-size:12pt;border-radius:999px;padding:1.2mm 6mm}}
+.cover .toc{{margin-top:3mm;display:flex;justify-content:center;gap:5mm;font-size:10.5pt;color:#475569}}
 .cover .toc span{{background:#eef3f9;border-radius:6px;padding:1mm 3mm}}
 h2{{color:#fff;background:#204b7d;border-radius:8px;padding:2mm 4mm;font-size:14pt;margin:7mm 0 4mm;break-after:avoid}}
 h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
-.passage{{background:#fff;border:1.5px solid #d8cfbd;border-radius:10px;padding:4mm 5mm;margin-bottom:5mm}}
+.passage{{break-inside:avoid;background:#fff;border:1.5px solid #d8cfbd;border-radius:10px;padding:4mm 5mm;margin-bottom:5mm}}
 .passage h3{{margin:0 0 2mm;color:#204b7d;font-size:13pt;text-align:left}}
 .passage p{{margin:0 0 2.5mm;text-align:justify}}
 .passage .pn{{color:#b0698d}}
@@ -204,11 +206,14 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as f:
         f.write(doc); src = f.name
     LK = "<span dir='ltr' style='unicode-bidi:isolate;color:#b0698d;font-weight:700'>"
-    FOOT = ("<div dir='rtl' style='-webkit-print-color-adjust:exact;width:100%;margin:0 14mm 5mm;display:flex;justify-content:space-between;"
-            "font-family:sans-serif;font-size:8.5pt;color:#64748b;border-top:1px solid #e2e8f0;padding-top:1.5mm'>"
+    FOOT = ("<div dir='rtl' style='-webkit-print-color-adjust:exact;width:100%;margin:0 14mm 5mm;font-family:sans-serif'>"
+            "<div style='background:#fdecec;color:#8a1c1c;border:1px solid #f3b8b8;border-radius:5px;padding:1.2mm 2mm;margin-bottom:1.5mm;"
+            f"text-align:center;font-size:8.5pt;font-weight:700'>{RIGHTS}</div>"
+            "<div style='display:flex;justify-content:space-between;"
+            "font-size:8.5pt;color:#64748b;border-top:1px solid #e2e8f0;padding-top:1.5mm'>"
             f"<span style='unicode-bidi:isolate'>قناتنا لمعرفة كل جديد: {LK}t.me/mlazmadl</span></span>"
             f"<span style='unicode-bidi:isolate'>المتجر: {LK}mtgradl.com</span></span>"
-            "<span class='pageNumber' style='color:#204b7d;font-weight:700'></span></div>")
+            "<span class='pageNumber' style='color:#204b7d;font-weight:700'></span></div></div>")
     js = f"""const {{ chromium }} = require('playwright');
 (async () => {{ const b = await chromium.launch(); const p = await b.newPage();
   await p.goto('file://{src}'); await p.waitForTimeout(400);
@@ -238,7 +243,7 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
     # أول صفحة: إعلان الدورة (نفس صفحة دليل الميد) + سطر «جميع مواد المسار الإنساني»
     ad = OUT + '.ad.pdf'
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as f:
-        f.write(guide.ad_page(AD_EXTRA)); adsrc = f.name
+        f.write(guide.ad_page(AD_EXTRA, f'<div style="text-align:center;font-size:15px;font-weight:700;color:#8a1c1c;background:#fdecec;border:1px solid #f3b8b8;border-radius:10px;padding:8px 12px">{RIGHTS}</div>')); adsrc = f.name
     js = f"""const {{ chromium }} = require('playwright');
 (async () => {{ const b = await chromium.launch(); const p = await b.newPage();
   await p.goto('file://{adsrc}', {{ waitUntil: 'networkidle' }}); await p.evaluate(() => document.fonts.ready);
