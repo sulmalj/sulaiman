@@ -5,7 +5,7 @@
 # موقع جميع المسارات (الميد): القطع 1–3 نفس قطع المستخدم (من اختبارات سابقة)، والباقي قطع جديدة لموقع جميع المسارات (غير قطع الميد).
 # المستوى (2026-10-22، طلب المستخدم): القطع 1–20 = B1، والقطع 21–25 = B2.
 
-## 1 | Laughter in Hospitals and Schools
+## 1 | Laughter in Hospitals and Schools | exam
 1. There are many positive effects of laughter. Laughing is fun. Laughing helps us relax in stressful situations. Laughter also helps people forget about their pain and _facilitates_ learning. Indeed, one study found that students who laugh more remember more things and complete their homework more quickly. With these facts in mind, there are two areas where we should try to help people laugh more: hospitals and schools.
 2. Hospitals, of course, have many people who are in pain. For serious pain, doctors _prescribe_ drugs to patients, but laughter could help reduce the need to take too many pills. How? One idea is for hospitals to make sure that each room has a television or a laptop where patients can watch funny videos. Another idea is for hospitals to give patients fun games to play with each other. This is probably better than funny videos because people laugh the most when they're around other people. Finally, hospitals can tell visitors how helpful laughter is. _They_ should try to make the patients they're visiting laugh.
 3. Schools are another great place to use laughter. Professors and teachers usually work hard to create great lessons, but teachers rarely try hard enough to make their students laugh. One accounting professor, for example, knew that his lessons were boring, so he told the students a joke every five or ten minutes. The jokes weren't really funny, but his students still laughed. _They_ also remembered the lessons more. Simple ideas like this can make a big difference.
@@ -70,7 +70,7 @@
 - talk more in class
 !! الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly».
 
-## 2 | Working From Home
+## 2 | Working From Home | exam
 1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, "It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day."
 2. Working from home is becoming more common and even normal in some industries. For employers, it saves money. They don't need to pay for office space. They also don't need to _spring for_ things like office parties, or provide places like game rooms where workers can relax. And then workers save a lot of time. In most countries, workers need 30 to 60 minutes to get to work. Working from home means you get an hour or two of extra time each day.
 3. But, as we can see with Alex, it's not perfect for workers. That's why businesses should still try to reduce workplace stress. One idea is to provide online meditation classes. Workers can do something quiet together that helps _them_ improve their attention. Another idea is to just make a rule that says workers can't send emails after a certain time. Working from home certainly has its advantages, but it's not without problems. Ideas like these, though, can make it much better.
@@ -135,7 +135,7 @@
 - Employers should pay for more office parties.
 !! آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems».
 
-## 3 | Stress at Work
+## 3 | Stress at Work | exam
 1. The stress of modern jobs can make it challenging for employees to focus while they are working. This stress may also lead to employees getting sick more often or even quitting. When this happens, employers must use time and resources to find and train new employees.
 2. Popular solutions for this problem may include buying plants for the office, providing lunches on birthdays, creating game rooms, and hosting meditation classes. These solutions may help some employees, but they don't _give a boost_ to everyone. Some employees, for example, say meditation doesn't support them at all and adds to their stress. They spend the whole time thinking about the problems in their lives, and it's hard to stop thinking about _them_ when they return to work afterwards.
 3. In fact, the best solutions for workplace stress tend to happen _spontaneously_. Carefully planned solutions can feel like more work for employees, while those that happen in the moment tend to be more effective and enjoyable.

@@ -2,10 +2,11 @@
 # الصيغة:  ## رقم | العنوان   ثم الفقرات (كل فقرة سطر، تبدأ برقمها)   ثم  ?? سؤال  * الصحيح  - خطأ ×3
 # _كلمة_ = كلمة تحتها خط في القطعة
 # !! الشرح = يطلع للطالب بعد ما يجاوب (وين الجواب في القطعة وليش)
-# القطع 1–3 من ملفات المستخدم (مصححة ومكمّلة لعشر أسئلة)، والباقي مكتوبة بنفس الطريقة.
-# المستوى (2026-10-22، طلب المستخدم): القطع 1–20 = B1، والقطع 21–25 = B2.
+# القطع 1–3 من ملفات المستخدم (مصححة ومكمّلة لعشر أسئلة)، والقطعة 4 من اختبار سابق أرسله المستخدم (2026-10-25، أسئلته الأصلية العشر)، والباقي مكتوبة بنفس الطريقة.
+# بعد العنوان: exam = قطعة اختبار سابق، key=N = رقم ثابت لأسئلة القطعة (عشان تقدّم الطلاب ما يضيع لو تغيّر الترتيب).
+# المستوى (2026-10-22، طلب المستخدم): كل القطع B1 إلا آخر 5 = B2 (الحين 22–26).
 
-## 1 | Laughter in Hospitals and Schools
+## 1 | Laughter in Hospitals and Schools | exam
 1. There are many positive effects of laughter. Laughing is fun. Laughing helps us relax in stressful situations. Laughter also helps people forget about their pain and _facilitates_ learning. Indeed, one study found that students who laugh more remember more things and complete their homework more quickly. With these facts in mind, there are two areas where we should try to help people laugh more: hospitals and schools.
 2. Hospitals, of course, have many people who are in pain. For serious pain, doctors _prescribe_ drugs to patients, but laughter could help reduce the need to take too many pills. How? One idea is for hospitals to make sure that each room has a television or a laptop where patients can watch funny videos. Another idea is for hospitals to give patients fun games to play with each other. This is probably better than funny videos because people laugh the most when they're around other people. Finally, hospitals can tell visitors how helpful laughter is. _They_ should try to make the patients they're visiting laugh.
 3. Schools are another great place to use laughter. Professors and teachers usually work hard to create great lessons, but teachers rarely try hard enough to make their students laugh. One accounting professor, for example, knew that his lessons were boring, so he told the students a joke every five or ten minutes. The jokes weren't really funny, but his students still laughed. _They_ also remembered the lessons more. Simple ideas like this can make a big difference.
@@ -70,7 +71,7 @@
 - talk more in class
 !! الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly».
 
-## 2 | Working From Home
+## 2 | Working From Home | exam
 1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, "It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day."
 2. Working from home is becoming more common and even normal in some industries. For employers, it saves money. They don't need to pay for office space. They also don't need to _spring for_ things like office parties, or provide places like game rooms where workers can relax. And then workers save a lot of time. In most countries, workers need 30 to 60 minutes to get to work. Working from home means you get an hour or two of extra time each day.
 3. But, as we can see with Alex, it's not perfect for workers. That's why businesses should still try to reduce workplace stress. One idea is to provide online meditation classes. Workers can do something quiet together that helps _them_ improve their attention. Another idea is to just make a rule that says workers can't send emails after a certain time. Working from home certainly has its advantages, but it's not without problems. Ideas like these, though, can make it much better.
@@ -135,7 +136,7 @@
 - Employers should pay for more office parties.
 !! آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems».
 
-## 3 | Stress at Work
+## 3 | Stress at Work | exam
 1. The stress of modern jobs can make it challenging for employees to focus while they are working. This stress may also lead to employees getting sick more often or even quitting. When this happens, employers must use time and resources to find and train new employees.
 2. Popular solutions for this problem may include buying plants for the office, providing lunches on birthdays, creating game rooms, and hosting meditation classes. These solutions may help some employees, but they don't _give a boost_ to everyone. Some employees, for example, say meditation doesn't support them at all and adds to their stress. They spend the whole time thinking about the problems in their lives, and it's hard to stop thinking about _them_ when they return to work afterwards.
 3. In fact, the best solutions for workplace stress tend to happen _spontaneously_. Carefully planned solutions can feel like more work for employees, while those that happen in the moment tend to be more effective and enjoyable.
@@ -201,7 +202,72 @@
 - Building game rooms at work
 !! القطعة كلها عن حلول ضغط العمل، وأحسنها اللي تصير بدون تخطيط (spontaneously).
 
-## 4 | Making Friends at University
+## 4 | Apples in Washington State | key=26 | exam
+1. In most countries, people eat apples all the time. They're sweet, crunchy, and healthy. For this reason, they're a _beloved_ snack for both children and adults. People also love to use apples to make apple juice, apple pie, apple butter, and so on. But while apples are popular everywhere, the people who love apples most might live in Washington State, USA.
+2. Located next to the Pacific Ocean in the northwest of the United States, Washington State is famous for its biggest city, Seattle, and for its technology companies, like Amazon. But _it_ is also a great place to grow apples. The weather is usually sunny, but not too hot, in the summer. This is good because apple trees need at least six hours of sun every day when they're growing in the summer. The weather should be warm, but not too hot outside. However, apple trees also need the temperature to be cold sometimes. Every year, the trees should get between 500 and 1,000 hours between 0 and 5°C. Their flowers don't grow well if the weather isn't cold sometimes. That's fine because in Washington the winter temperatures are a little cold and it can rain 15 to 25 days each month. This would _cripple_ another fruit like an orange, but not apples. In Washington State, farmers grow more than 10 billion (that's 10,000,000,000) of _them_ every year.
+3. The people in Washington love to celebrate their fruit. Starting in the spring, there are Apple Blossom Festivals, where you can listen to music and enjoy the beautiful apple trees. Then, usually in October, there are festivals where you can do things like pick apples, try to win apple-eating contests, and drive around the farms. Many people in Washington think it's the best time of the year.
+?? The writer says that people eat apples in ______.
+* most countries
+- diet classes
+- the kitchen
+- some states
+!! الفقرة 1 أول جملة: «In most countries, people eat apples all the time» ← الجواب most countries.
+?? Which technology company does the author mention?
+* Amazon
+- Starbucks
+- Seattle
+- Northwest
+!! الفقرة 2: «famous for its biggest city, Seattle, and for its technology companies, like Amazon» ← Seattle مدينة مو شركة، وNorthwest مكان (شمال غرب أمريكا).
+?? People in Washington celebrate apples by ______.
+* listening to music
+- cooking food
+- selling flowers
+- performing dances
+!! الفقرة 3: «there are Apple Blossom Festivals, where you can listen to music and enjoy the beautiful apple trees» ← يحتفلون بسماع الموسيقى.
+?? What does the underlined word "it" in paragraph 2 refer to?
+* Washington State
+- The United States
+- the biggest city
+- technology company
+!! الفقرة 2: «Washington State is famous for its biggest city, Seattle, and for its technology companies, like Amazon. But it is also a great place to grow apples» ← الكلام كله عن ولاية Washington، فـ it = Washington State.
+?? What does the underlined word "them" in paragraph 2 refer to?
+* apples
+- farmers
+- trees
+- oranges
+!! الفقرة 2 آخر جملة: «farmers grow more than 10 billion (that's 10,000,000,000) of them every year» ← المزارعين يزرعون أكثر من 10 مليار تفاحة، فـ them = apples.
+?? How is growing apples different from growing oranges?
+* Apples need warm and cold weather.
+- Oranges need extremely rainy weather.
+- Apples need temperatures to always be cold.
+- Oranges need six hours of sun every day.
+!! الفقرة 2: التفاح يحتاج جو دافي في الصيف «The weather should be warm, but not too hot outside» ويحتاج برد أحيانًا «apple trees also need the temperature to be cold sometimes»، أما البرد والمطر فيضرون البرتقال: «This would cripple another fruit like an orange, but not apples».
+?? Which activity does the author NOT mention?
+* learning the history of apples
+- joining apple eating contests
+- making apple juice
+- driving around a farm
+!! الفقرة 1 ذكرت «apple juice»، والفقرة 3 ذكرت «try to win apple-eating contests, and drive around the farms». أما تعلّم تاريخ التفاح ما انذكر أبدًا.
+?? What does the word "beloved" in paragraph 1 mean?
+* really liked
+- a little liked
+- sometimes eaten
+- not eaten
+!! الفقرة 1: «They're sweet, crunchy, and healthy. For this reason, they're a beloved snack for both children and adults» ← حلو ومقرمش وصحي، فالكل يحبه كثير ← beloved = really liked.
+?? What does the word "cripple" in paragraph 2 mean?
+* hurt badly or kill
+- make sweet like sugar
+- make grow large
+- give a lot of water to
+!! الفقرة 2: البرد والمطر الكثير «This would cripple another fruit like an orange, but not apples» ← يضرون البرتقال كثير بس ما يضرون التفاح ← cripple = hurt badly or kill.
+?? What is the best title for the passage?
+* Washington: The Best Place to Grow Apples
+- The Biggest Types of Trees in USA
+- How to Grow Apples in Warm Weather
+- The Advantages of Eating Apples
+!! القطعة كلها عن التفاح في Washington: إنها «a great place to grow apples» (الفقرة 2)، وأهلها يحتفلون فيه (الفقرة 3) ← العنوان Washington: The Best Place to Grow Apples.
+
+## 5 | Making Friends at University | key=4
 1. Starting university is an exciting step, but for many young people it is also a lonely time. Some students move to a new city and leave their families and old friends behind, while others simply find that their school friends have chosen different universities. Although these feelings are normal, they should not be ignored. Research suggests that students who build friendships during their first year usually feel happier, and they are also less likely to leave their studies early.
 2. One of the easiest ways to meet people is to join a student club. Most universities have clubs for sports, volunteering, photography and many other interests. Because members already share a hobby, conversations start naturally and nobody has to search for something to say. Study groups are another good choice. When classmates prepare for an exam together, they help each other with difficult lessons, and they _gradually_ get to know each other as well.
 3. However, for shy students, even a short conversation can feel difficult. Experts _encourage_ these students to begin with small steps instead of waiting for a big chance. They can arrive at class a few minutes early and say hello to the person sitting next to them, or they can ask a classmate a simple question about the homework. Faisal, a second-year student, says that this worked for him. "In my first month, I didn't know anyone," he explains. "Then I started asking the student next to me about our assignments. Now _he_ is my closest friend."
@@ -267,7 +333,7 @@
 - How to study for difficult exams in groups
 !! القطعة كلها عن طرق تكوين صداقات في أول سنة بالجامعة (الأندية، مجموعات المذاكرة، خطوات صغيرة للخجولين، الصبر).
 
-## 5 | Collecting Things
+## 6 | Collecting Things | key=5
 1. Collecting is one of the oldest and most common hobbies in the world. People collect stamps, coins, old cameras, football shirts, and even pens from hotels they have stayed in. What makes this hobby so popular is that almost anyone can start _it_. You do not need special skills or expensive equipment, and you can begin at any age with only a few items.
 2. People collect things for different reasons. For some, the hobby is a way to relax. Searching for a new item and organising a collection can help them forget the pressures of work or study. For others, collecting is a way to learn. A person who collects coins, for example, often reads about the history of the countries that produced them. Collecting can also be social. Collectors meet at clubs, markets and online groups, where they _exchange_ items and share advice with people who have the same interest.
 3. Some collections become surprisingly valuable. A stamp that cost very little when it was printed may be worth a great deal today if only a few copies still exist. However, most experts say that people should not start collecting only to make money. The value of an item can rise or fall, and it is rarely possible to predict which objects will become popular in the future. In their opinion, the real reward of collecting is the enjoyment it brings.
@@ -333,7 +399,7 @@
 - Stamps are the most valuable items, so everyone should collect them.
 !! القطعة تذكر فوائد الجمع (الاسترخاء، التعلم، الناس)، وبعدين تنبّه على المشاكل وتنصح بميزانية وموضوع واضح.
 
-## 6 | Learning a Foreign Language
+## 7 | Learning a Foreign Language | key=6
 1. In today's connected world, more and more people are learning a foreign language. Some learn for work, others for travel or study abroad, and some simply enjoy the challenge. Although learning a language takes time and effort, most people who do it say that the benefits are worth it.
 2. The most obvious advantage is a practical one. Many companies prefer to hire employees who can communicate with customers and partners in other countries, so a second language can open the door to better jobs. A new language also helps people understand other cultures. When travellers can read signs, order food and chat with local people, their trip becomes much richer. In addition, some research suggests that learning a language can improve concentration and problem-solving skills, even for older adults.
 3. So what is the best way to learn? Most teachers agree that regular practice is more _effective_ than long but rare study sessions. Spending twenty minutes a day with the language is usually better than studying for three hours once a week. Learners can watch films with subtitles, listen to podcasts on the way to university, or use apps that turn lessons into games. Another popular method is finding a language partner: someone who speaks the language well and wants to learn yours. _They_ can meet online and correct each other's mistakes.
@@ -399,7 +465,7 @@
 - Learning to swim as an adult
 !! القطعة تذكر فوائد تعلم اللغة (الفقرة 2) وطريقة تعلمها (الفقرة 3 و4).
 
-## 7 | Online Classes or Classrooms?
+## 8 | Online Classes or Classrooms? | key=7
 1. Not long ago, studying at university meant sitting in a lecture hall at a fixed time. Today, a growing number of students take some or all of their courses online. They watch recorded lectures, join live discussions and submit assignments from home. This change has started a debate: some people believe online learning is the future of education, while others think traditional classrooms are still the better choice.
 2. Supporters of online classes point to their flexibility. Students can study at any time and in any place, which is especially _convenient_ for people who have a job or children to look after. Online courses can also be cheaper, because students save money on transport and do not need to rent a room near the campus. Some shy students say they feel more comfortable asking questions in a chat box than raising their hand in front of a large class.
 3. On the other hand, online learning has clear disadvantages. Studying at home requires a lot of self-discipline, and many students find it hard to stay focused when their phones, the television or family members are nearby. Technical problems, such as a weak internet connection, can also interrupt lessons. In addition, students who learn only online miss the chance to meet classmates face to face, and for many young people these friendships are one of the most valuable parts of university life.
@@ -465,7 +531,7 @@
 - Shy students should only take online classes and never go to campus.
 !! الكاتب ذكر مميزات الأونلاين (الفقرة 2) وعيوبه (الفقرة 3)، وقال «it depends on the student».
 
-## 8 | Fast Food and Our Health
+## 9 | Fast Food and Our Health | key=8
 1. Fast food is part of daily life in many countries, including Saudi Arabia. It is quick, cheap and easy to find, and delivery apps now bring burgers, pizza and fried chicken to our doors in minutes. For busy students and workers, this is very attractive. However, doctors warn that eating fast food too often can seriously _affect_ our health.
 2. The main problem is what fast food contains. Most meals are high in salt, sugar and fat, which make the food taste good but can cause problems if we eat them regularly. People who eat fast food several times a week are more likely to become overweight and to develop heart disease or diabetes later in life. In addition, these meals usually contain few vitamins and little fibre, so they fill the stomach without giving the body what it really needs. Large soft drinks, which are often included in meal deals, add even more sugar.
 3. If fast food is so unhealthy, why do people eat so much of it? One reason is time: many people finish work or classes late and feel too tired to cook. Another reason is price, because a fast food meal is sometimes cheaper than a healthy one. Advertising also plays an important role. Fast food companies spend huge amounts of money on adverts, and many of _them_ are designed to attract children and teenagers.
@@ -531,7 +597,7 @@
 - How to cook a healthy meal at home
 !! القطعة عن أضرار الوجبات السريعة، وليش ناكلها كثير، وكيف نقلل منها.
 
-## 9 | Organic Food
+## 10 | Organic Food | key=9
 1. Walk into almost any large supermarket today and you will probably find a section for organic food. Organic fruit, vegetables, meat and dairy products are produced without most artificial chemicals. Organic farmers do not use chemical sprays to kill insects or weeds, and their animals are not given medicines unless they are really ill. Instead, farmers use natural methods, such as moving crops to different fields each year to keep the soil healthy.
 2. Many shoppers choose organic products because they believe these products are healthier. Some studies suggest that organic fruit and vegetables contain slightly more of certain nutrients, although scientists still disagree about how important this difference is. Many people also buy organic food because it is better for the environment. Since fewer chemicals are used, the soil, rivers and wild animals near organic farms are less likely to be _harmed_.
 3. However, organic food has one major disadvantage: its price. Organic products can cost from 20 to 100 percent more than ordinary ones. There are several reasons for this. Organic farming needs more workers, because jobs like removing weeds are often done by hand. Organic farms also usually produce smaller harvests, so the _supply_ is lower, and when something is limited, its price tends to rise.
@@ -597,7 +663,7 @@
 - Supermarkets should stop selling ordinary food.
 !! القطعة ذكرت فوائد الأغذية العضوية (الفقرة 2) وغلاها (الفقرة 3)، ونصائح للي ميزانيته محدودة (الفقرة 4).
 
-## 10 | Celebrating Eid
+## 11 | Celebrating Eid | key=10
 1. Eid is one of the happiest times of the year for Muslims around the world, and in Saudi Arabia it is a special time for families. There are two Eids every year. Eid al-Fitr comes at the end of Ramadan, the month of fasting, while Eid al-Adha comes during the season of Hajj. Although the two celebrations are different in some ways, both bring people together and fill the streets with a joyful atmosphere.
 2. On the morning of Eid, people wake up early, put on new clothes and go to the mosque or to large open areas for the Eid prayer. Afterwards, they greet each other with phrases such as "Eid Mubarak" and begin visiting relatives. In many families, everyone gathers at the house of the grandparents, because showing respect to older members of the family is an important value. Children especially look forward to this day, since adults give _them_ money or small gifts known as "Eidiya".
 3. Food plays a central role in the celebration. Hosts serve Arabic coffee, dates and sweets to every guest, and large meals of traditional dishes such as kabsa are prepared for lunch. During Eid al-Adha, many families also sacrifice a sheep and _distribute_ the meat among relatives, neighbours and people in need. This custom reminds everyone that Eid is not only about personal happiness but also about sharing with others.
@@ -663,7 +729,7 @@
 - Traditional Saudi dishes
 !! القطعة كلها عن احتفال العيد في السعودية: الصلاة والزيارات والعيدية والأكل والفعاليات.
 
-## 11 | Travelling on a Small Budget
+## 12 | Travelling on a Small Budget | key=11
 1. Many people dream of travelling but believe they cannot afford it. They imagine expensive flights, luxury hotels and costly restaurants. In reality, it is possible to visit interesting places without spending a fortune. The secret is careful planning, and travellers who prepare well can often spend much less than others on a similar trip.
 2. The first and most important step is choosing when to travel. Flights and hotels are usually most expensive during school holidays and public holidays, when many families travel at the same time. Travelling in the quieter months of the year can reduce costs a lot. It is also wise to book tickets early, because prices often _increase_ as the travel date gets closer. Many travellers use price-comparison websites and set alerts so that they know when a ticket becomes cheaper.
 3. Accommodation is usually the second biggest cost of a trip. Instead of staying in an expensive hotel, travellers can choose a small guesthouse or rent an apartment with friends and share the cost. Apartments have another advantage: most of them have a kitchen. Preparing breakfast or a simple dinner is much cheaper than eating every meal in a restaurant, and visiting local supermarkets can be an interesting experience in itself.
@@ -729,7 +795,7 @@
 - Taking taxis is the best way to save money when visiting a new city.
 !! الفقرة 1: «it is possible to visit interesting places without spending a fortune. The secret is careful planning»، وباقي القطعة نصائح للتوفير.
 
-## 12 | Spending Time in Nature
+## 13 | Spending Time in Nature | key=12
 1. Modern life keeps most of us indoors. We study in classrooms, work in offices and spend our free time at home in front of screens. Some researchers believe that people in many countries spend around 90 percent of their time inside buildings or cars. Although this lifestyle is comfortable, a growing amount of research suggests that we are missing something important: regular contact with nature.
 2. One of the clearest benefits of nature is its effect on our mood. In several studies, people who walked in a park said they felt calmer and more positive than people who walked the same distance along a busy street. Being outdoors also makes us move more. In a garden or a park, we naturally walk, play or ride a bike instead of sitting still. In addition, sunlight helps the body produce vitamin D, which is important for strong bones.
 3. Nature may even help us think more clearly. Teachers have noticed that students who spend their break outdoors often _concentrate_ better when they return to class. For this reason, some schools in countries such as Denmark and Germany run "forest schools", where children spend part of the school day learning outside, whatever the weather. Supporters say that these children become more confident and more curious about the world around _them_.
@@ -795,7 +861,7 @@
 - Life in big cities
 !! القطعة كلها عن فوائد الطبيعة (المزاج، الحركة، التركيز، الصحة) وإننا لازم نطلع لها أكثر.
 
-## 13 | The Student Housing Problem
+## 14 | The Student Housing Problem | key=13
 1. Every year, thousands of young people leave their hometowns and move to big cities to study at university. For many, finding a place to live is the first real challenge, and it often begins weeks before classes start. In most large cities, there is a _shortage_ of student housing, which means there are not enough rooms for everyone who needs one. As a result, rents near the campus have risen quickly.
 2. Why is student housing so expensive? The main reason is demand. When hundreds of students want to live in the same small area, landlords know that someone will always pay, so they can ask for more money. Another reason is that universities accept more students every year, but new buildings take a long time to build. Because of this, some students have to rent rooms far away from the university. _They_ may spend up to two hours on buses every day, which leaves them tired and with less time to study.
 3. Students have found different ways to deal with the problem. The most common solution is to share an apartment with one or two roommates, so that they can divide the rent and the bills. Others prefer to live with a relative in the city, although this means following the family's rules. Some universities are also building new dormitories, which are usually cheaper than private apartments and much closer to classes. However, places in these dormitories are limited, so students should apply as early as possible.
@@ -861,7 +927,7 @@
 - How landlords choose their tenants
 !! القطعة كلها عن مشكلة سكن الطلاب: أسبابها، وحلولها، ووش يفكر فيه الطالب قبل ما يختار.
 
-## 14 | Living With a Roommate
+## 15 | Living With a Roommate | key=14
 1. For many university students, sharing an apartment or a dormitory room is a normal part of student life. Living with a roommate has clear benefits. It reduces the cost of rent and bills, and it means you are _rarely_ alone when you come home after a long day. However, sharing a small space with another person is not always easy, especially if you have never lived away from your family before. Small problems can quickly grow into big arguments.
 2. The most common problem is cleaning. Some people are very _tidy_, while others leave their clothes and dirty dishes everywhere. If one roommate always cleans the kitchen and the other never does, the first one will soon feel angry. Noise is another common complaint. One roommate may want to sleep early before a morning class, while the other likes to watch films late at night or invite friends over. Sharing food can also cause trouble, for example when one person eats something that the other bought.
 3. The best way to avoid these problems is to talk about rules before moving in together. Roommates can make a cleaning schedule, so that each person is responsible for certain jobs on certain days. They can also agree on quiet hours, such as after 11 p.m. on weekdays, and decide whether guests are allowed during the exam period. Money should be discussed too. Some roommates put a fixed amount of money into a shared box every month and use _it_ to buy things they both need, like soap and rice.
@@ -927,7 +993,7 @@
 - Cleaning is the only problem that roommates have, so they need a cleaner.
 !! القطعة تبدأ بفوائد السكن مع شخص، وبعدها المشاكل، وبعدها الحل: «talk about rules before moving in together» والكلام بهدوء.
 
-## 15 | Breaking Bad Habits
+## 16 | Breaking Bad Habits | key=15
 1. Almost everyone has at least one bad habit. Some people drink too many sugary drinks, some stay up late scrolling on their phones, and others always leave their work until the last minute. Many of us have tried to stop these habits. However, breaking a habit is often much harder than we expect, because habits happen automatically, without much thinking. The good news is that a few practical steps can make the change easier.
 2. The first step is to start small. Many people fail because they try to change everything at once. For example, some people who drink five cans of soft drinks a day decide to stop completely overnight. After two or three days, _they_ usually feel tired and give up. It is more realistic to reduce the number _gradually_, perhaps to four cans a day in the first week and three in the second. Small successes make people feel confident and encourage them to continue.
 3. Another useful idea is to make the bad habit more difficult and the good habit easier. If you waste hours on social media, you can delete the apps from your phone and use them only on your computer. Some people also find it helpful to _replace_ a bad habit with a better one. Instead of checking their phone when they feel bored, for instance, they read a few pages of a book or go for a short walk.
@@ -993,7 +1059,7 @@
 - How to make new friends
 !! القطعة كلها خطوات عملية: «start small» وصعّب العادة السيئة، و«be patient with yourself».
 
-## 16 | Addicted to Our Phones
+## 17 | Addicted to Our Phones | key=16
 1. Today, it is hard to imagine life without a smartphone. We use our phones to talk to our families, read the news, pay for shopping, find our way around the city and even study for exams. Because phones are so useful, many people carry them everywhere and feel nervous when the battery is low. Some experts believe that certain people have become so _dependent_ on their phones that their behaviour is similar to an addiction.
 2. Surveys suggest that many people check their phones dozens of times a day, often without a clear reason. Some people reach for their phone the moment they wake up, and the last thing they see before sleeping is a bright screen. This habit can affect our health in several ways. Looking at a screen late at night can make it harder to fall asleep, and staring at small text for hours can make our eyes tired. Heavy phone use has also been linked to stress, because people feel they must answer every message immediately.
 3. Phones can also affect our relationships. In many homes and cafés, it is common to see a group of friends or family members sitting together while each person looks at their own screen. Although _they_ are in the same place, they are _hardly_ talking to each other. Some people even feel hurt when the person they are speaking to keeps checking messages. Over time, this can make relationships weaker, because real conversations need full attention.
@@ -1059,7 +1125,7 @@
 - Why phones have become much cheaper today
 !! القطعة عن تأثير الجوال على الصحة والعلاقات (الفقرة 2 و3)، وبعدها طرق «to take back control» (الفقرة 4).
 
-## 17 | Why Sleep Matters
+## 18 | Why Sleep Matters | key=17
 1. Many university students believe that sleep is a waste of time. During the exam period, especially, they stay up late to study, and at other times they stay awake chatting with friends or watching TV series. They think that sleeping less gives them more hours to get things done. However, a large amount of research shows the opposite: when we do not sleep enough, almost everything we do during the day becomes slower and more difficult.
 2. Health experts recommend that adults get seven to nine hours of sleep every night, while teenagers need around eight to ten. Many young people, however, sleep much less, particularly on weekdays. After just one short night, people often feel _irritable_ and get angry about small things that would not normally bother them. They also find it harder to concentrate in lectures, and they may make more mistakes in simple tasks. Driving when very tired is especially dangerous, because a sleepy driver reacts more slowly.
 3. Over a longer period, poor sleep can affect the body as well as the mind. People who regularly sleep too little tend to catch colds more often, because their bodies are less able to fight illness. Some studies also suggest that tired people feel hungrier and choose more sugary food, which can lead to weight gain. In other words, sleep is not a break from a healthy life; it is an important part of _it_.
@@ -1125,7 +1191,7 @@
 - Why students like watching TV series
 !! القطعة عن أضرار قلة النوم (الفقرة 2 و3) وطرق تحسين النوم (الفقرة 4).
 
-## 18 | Exercise and Energy
+## 19 | Exercise and Energy | key=18
 1. Many people say they are simply too tired to exercise. After a long day at work or university, the last thing they want to do is go for a run; they would rather sit on the sofa and look at their phones. It seems _logical_ that exercise would make a tired person even more tired. Surprisingly, however, research suggests that the opposite is often true: regular physical activity can actually give people more energy.
 2. How does this happen? When you exercise regularly, your heart and lungs become stronger, so your body can carry oxygen to your muscles more efficiently. As a result, everyday activities such as climbing stairs or carrying shopping bags _require_ less effort. Exercise also has a positive effect on mood. During physical activity, the brain releases chemicals that help people feel happier and more relaxed, which is why many people say they feel fresh after a walk, even if they felt tired before _it_.
 3. You do not need expensive equipment or a gym membership to be active. Walking, running and cycling are free, and you can do them almost anywhere. In hot weather, some people in Saudi Arabia walk inside shopping malls, while others use the walking paths in their neighbourhood after sunset. At home, simple exercises like push-ups, squats and skipping with a rope can be done in a small space. Even household jobs such as cleaning and gardening count as physical activity.
@@ -1191,7 +1257,7 @@
 - Household jobs are better than sports for staying healthy.
 !! الفكرة في الفقرة 1: «regular physical activity can actually give people more energy»، وباقي القطعة يوضّح ليش وكيف تبدأ بسهولة.
 
-## 19 | Vitamins: Food or Pills?
+## 20 | Vitamins: Food or Pills? | key=19
 1. Vitamins are substances that our bodies need in small amounts to work _properly_. They help us grow, keep our bones and skin healthy, and protect us from illness. In recent years, vitamin pills have become very popular, and pharmacies now sell dozens of types. Many people take a pill every morning because they believe it will make them stronger or give them more energy, even if they already feel healthy.
 2. However, many doctors question whether healthy people really need these _supplements_. In their view, a balanced diet that includes fruit, vegetables, grains, milk products, and meat or fish usually provides all the vitamins the body needs. For example, oranges and strawberries are rich in vitamin C, carrots contain a substance that the body turns into vitamin A, and eggs and oily fish provide some vitamin D. Food also contains fibre and other useful things that a pill cannot offer.
 3. On the other hand, some groups of people may benefit from extra vitamins. Pregnant women are often advised to take folic acid, a B vitamin, and older people sometimes need vitamin D, especially if they rarely go outside. Our skin makes vitamin D when it is exposed to sunlight, so people who spend most of the day indoors may not get enough. People who do not eat any animal products may also need vitamin B12, because _it_ is found mainly in meat, fish, eggs and milk. In these cases, a doctor can do a blood test before suggesting the right amount.
@@ -1257,7 +1323,7 @@
 - Fresh food is too expensive for most families, so most people need to take vitamin pills instead.
 !! الفقرة 2: الأكل المتوازن «usually provides all the vitamins the body needs»، والفقرة 3: «some groups of people may benefit from extra vitamins».
 
-## 20 | Loneliness in Older People
+## 21 | Loneliness in Older People | key=20
 1. Loneliness is becoming a serious problem in many parts of the world, and older people are among those most at risk. As people age, their children often move to other cities for work or study, and old friends may become ill or pass away. Retirement can also take away the daily contact that people used to have with their colleagues. As a result, many older people spend long hours alone at home, and some may go several days without a real conversation.
 2. Loneliness is more than a sad feeling. Some researchers have compared its effect on health to that of smoking around fifteen cigarettes a day. Lonely older people are more likely to suffer from heart disease and poor sleep, and they often lose interest in cooking healthy meals or going for walks. Doctors in some countries report that lonely patients visit _them_ more often, not always because they are ill, but because the visit gives them a chance to talk to someone.
 3. Many communities are now looking for ways to keep older people _connected_. Some neighbourhood centres organise weekly activities, such as reading groups, light exercise classes and shared meals. In a few countries, some universities run home-share programmes: a student lives with an older person for a very low rent and, in return, spends time with them and helps with jobs around the house. Both sides benefit, because the student saves money and the older person enjoys company and feels safer.
@@ -1323,7 +1389,7 @@
 - Why older people should keep working
 !! القطعة عن أسباب وحدة كبار السن وأضرارها (الفقرة 1 و2)، وكيف المجتمع وكل واحد فينا يقدر يساعد (الفقرة 3 و4).
 
-## 21 | Can a Metro Change a Car City?
+## 22 | Can a Metro Change a Car City? | key=21
 1. For decades, Riyadh was designed around the car. Wide highways, cheap fuel and long distances between neighbourhoods meant that most families depended on private vehicles, and public transport played only a small role in daily life. As the population grew, this approach began to show its limits: traffic jams became longer, journeys became less predictable, and the city's air quality suffered. The Riyadh Metro, which opened to the public in stages from late 2024, is the city's most ambitious attempt to offer an alternative.
 2. The system is impressive by any standard. It has six lines and dozens of stations, and its trains are driverless, which allows _them_ to run frequently and reliably. Supporters argue that its value goes far beyond saving time. A single train can carry hundreds of passengers who would otherwise each drive a car, so a well-used metro could considerably reduce congestion and emissions. It may also give more independence to people who cannot or do not want to drive, such as many students and older residents.
 3. Nevertheless, building a metro is one thing; persuading people to _abandon_ their cars is another. Experience from other car-dependent cities suggests that habits change slowly. Many residents live far from the nearest station, and walking even a short distance in the summer heat is unpleasant. For these people, the metro only makes sense if the "first and last mile" (the trip from home to the station and from the station to the final destination) is easy. This is why planners have linked the metro to a large network of buses.
@@ -1390,7 +1456,7 @@
 - Driverless trains are more comfortable and cheaper to use than buses.
 !! القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour».
 
-## 22 | Does Volunteering Always Help?
+## 23 | Does Volunteering Always Help? | key=22
 1. Volunteering, giving time and skills without payment, is usually seen as something entirely positive. In recent years it has grown considerably in Saudi Arabia, where national plans aim to reach one million volunteers a year. Universities encourage students to take part, and many employers say that they value volunteer experience when they hire new staff. Yet researchers and charity workers increasingly argue that volunteering is not automatically beneficial; its value depends largely on how it is organised.
 2. The benefits for volunteers themselves are well documented. Studies tend to find that people who volunteer regularly report greater life satisfaction and a stronger sense of purpose. Volunteering can also be a practical way to develop skills that are hard to learn in a classroom, such as managing a team, solving unexpected problems or communicating with people from different backgrounds. For a university student with little work experience, a well-chosen volunteer role can provide evidence of these abilities that a degree alone cannot.
 3. The picture becomes more complicated when we look at the people and organisations that volunteers are meant to help. Charities often explain that untrained volunteers who appear for a single afternoon can create extra work: someone must train _them_, supervise them and correct their mistakes. In the worst cases, short visits to care homes or hospitals may satisfy the volunteers' wish to feel useful more than the real needs of the people there. This is why many organisations prefer a smaller number of _committed_ volunteers to a large crowd who come once and never return.
@@ -1457,7 +1523,7 @@
 - To compare paid jobs with volunteer work
 !! الفقرة 5: «None of this is an argument against volunteering. Rather, it suggests a more thoughtful approach» ← هدف الكاتب: التطوع ينجح أكثر لما يكون مخطط له زين، مو إنه يمنع التطوع.
 
-## 23 | Video Games: Harmful Habit or Useful Tool?
+## 24 | Video Games: Harmful Habit or Useful Tool? | key=23
 1. Few forms of entertainment divide opinion as sharply as video games. For many parents and teachers, _they_ are a waste of time at best and a danger at worst, responsible for poor grades, lack of sleep and aggressive behaviour. For their supporters, games are a modern art form that can develop skills and bring people together. The evidence suggests that the truth lies somewhere between these two positions.
 2. The fear that violent games make young people violent has received a great deal of attention, yet research has not provided a clear answer. Some laboratory studies have found that players feel slightly more aggressive immediately after playing, but these effects tend to be small and _short-lived_. Larger studies that follow young people over several years have generally failed to find a strong link between gaming and serious violence. Many researchers therefore argue that other factors, such as family life and friendships, are far more important.
 3. On the positive side, a number of studies suggest that certain action games may improve visual attention, the ability to notice and follow several things on a screen at once. Puzzle and strategy games require planning and patience, and online team games can require players to communicate and cooperate under pressure. However, researchers are careful to point out that these benefits are often limited to tasks similar to the game itself. Becoming skilled at a fast-moving game does not necessarily make someone better at studying for an exam.
@@ -1524,7 +1590,7 @@
 - not interested
 !! الكاتب يذكر الإيجابيات والسلبيات ويقول «the truth lies somewhere between these two positions»، وفي الأخير يركّز على طريقة الاستخدام: «focus less on whether games are good or bad and more on how they are used» ← رأيه متوازن.
 
-## 24 | Farming Without Fields
+## 25 | Farming Without Fields | key=24
 1. When we imagine a farm, we usually picture open fields, tractors and long rows of crops under the sun. Yet a growing number of companies are trying something very different: growing vegetables indoors, on tall stacks of shelves inside buildings in the middle of cities. This approach, known as vertical farming, uses LED lights instead of sunlight, and the plants often grow with their roots in water rich in nutrients rather than in soil. Supporters describe it as the future of food; critics are less convinced.
 2. The arguments in its favour are attractive, particularly for countries with hot climates and limited water. Because the water in a vertical farm is collected and reused, supporters say that it can use far less water than traditional agriculture. Crops can be grown all year round, _regardless of_ the weather, and since insects can hardly get into a closed building, few or no pesticides are needed. Farms can also be built close to the people who will eat the food, which reduces the distance it has to travel and means that vegetables can reach shops fresher.
 3. The main problem is energy. Sunlight is free, whereas the lights, heating and air-conditioning in an indoor farm must be paid for, and electricity costs can make the food expensive to produce. If that electricity comes from fossil fuels, the environmental benefits may be considerably smaller than they first appear. In recent years, several well-known vertical-farming companies in Europe and North America have closed or faced serious financial difficulties, partly because of rising energy prices.
@@ -1591,7 +1657,7 @@
 - The History of Farming in Saudi Arabia
 !! القطعة تذكر مميزات المزارع العمودية ومشكلة غلاء الطاقة، وتختم: «it is perhaps best seen not as a revolution in agriculture but as a promising experiment» ← فكرة واعدة بس مكلفة.
 
-## 25 | Can Mistakes Help Us Learn?
+## 26 | Can Mistakes Help Us Learn? | key=25
 1. Most students are taught, directly or indirectly, that mistakes are something to avoid. A wrong answer loses marks, and a low grade can feel like a judgement on a person's intelligence. Yet a large body of research in psychology and education suggests that making errors, and more importantly paying attention to them, is one of the most effective ways to learn.
 2. One reason is that mistakes show us exactly where our understanding is weak. A student who gets every question right on a practice test learns relatively little about what to study next, whereas one who gets several questions wrong has a clear map of the gaps in his knowledge. Studies of what is sometimes called the "pretesting effect" have found that trying to answer a question, even unsuccessfully, before being told the answer often helps people remember the correct information better later. In other words, the effort of struggling appears to prepare the brain to learn.
 3. Attitudes towards mistakes also matter. The psychologist Carol Dweck became famous for the idea of a "growth mindset": the belief that abilities can be developed through effort and good strategies, rather than being fixed from birth. According to this view, students who see a poor result as information, rather than as proof that they are "not clever enough", are more likely to keep trying and, eventually, to improve. The idea has been _enormously_ popular in schools around the world.

@@ -2340,5 +2340,105 @@ window.VOCAB = [
 "confidence",
 "combination"
 ]
+},
+{
+"w": "Delicious",
+"q": "I drank a ..... mango smoothie after practice, which helped me cool down.",
+"o": [
+"delicious",
+"deliberate",
+"confusing",
+"spacious"
+]
+},
+{
+"w": "Famous",
+"q": "Have you ever met a/an ..... football player in real life, like Mohamed Salah or Cristiano Ronaldo?",
+"o": [
+"famous",
+"poor",
+"clear",
+"unsafe"
+]
+},
+{
+"w": "Describe",
+"q": "I don't have a picture of my school, but I can ..... it to you. It's a tall yellow building.",
+"o": [
+"describe",
+"leave",
+"stream",
+"believe"
+]
+},
+{
+"w": "Watch",
+"q": "My brother loves to ..... science videos on YouTube. He wants to start his own channel one day.",
+"o": [
+"watch",
+"entice",
+"remove",
+"knock"
+]
+},
+{
+"w": "Fresh",
+"q": "I think food tastes better when I cook with ..... vegetables from my garden.",
+"o": [
+"fresh",
+"heavy",
+"strong",
+"neat"
+]
+},
+{
+"w": "Outdoors",
+"q": "I like this weather because it's perfect for a family get together ..... like a picnic or a barbecue.",
+"o": [
+"outdoors",
+"underneath",
+"overland",
+"online"
+]
+},
+{
+"w": "Clothes",
+"q": "These days, many people buy their ..... and other items from online stores instead of going to the mall.",
+"o": [
+"clothes",
+"sales",
+"goals",
+"bridges"
+]
+},
+{
+"w": "Reduce",
+"q": "I think I need to ..... the time I am on the computer. The screen hurts my eyes, and I am having trouble sleeping.",
+"o": [
+"reduce",
+"stir",
+"expect",
+"slam"
+]
+},
+{
+"w": "Strength",
+"q": "One of his ..... is that he has a good attitude no matter what happens in his life.",
+"o": [
+"strengths",
+"blocks",
+"events",
+"controls"
+]
+},
+{
+"w": "Modern",
+"q": "I need to move soon. I'm looking for a new furnished home with ..... appliances.",
+"o": [
+"modern",
+"polite",
+"crowded",
+"stale"
+]
 }
 ];

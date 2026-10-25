@@ -235,3 +235,14 @@ Feed || That's a lot of food! It can easily ..... twenty people. || feed | inter
 Nature || I enjoy going to the park because it has beautiful flowers and trees. I love being in ...... || nature | tradition | scene | memory
 Collect || My sister ..... shoes. She has 15 pairs of them. || collects | invites | operates | prepares
 Difficulty || He has ..... reading. It takes him a long time to read just a few words. || difficulty | dishonesty | confidence | combination
+# ── نماذج اختبار المستخدم (2026-10-25) ──
+Delicious || I drank a ..... mango smoothie after practice, which helped me cool down. || delicious | deliberate | confusing | spacious
+Famous || Have you ever met a/an ..... football player in real life, like Mohamed Salah or Cristiano Ronaldo? || famous | poor | clear | unsafe
+Describe || I don't have a picture of my school, but I can ..... it to you. It's a tall yellow building. || describe | leave | stream | believe
+Watch || My brother loves to ..... science videos on YouTube. He wants to start his own channel one day. || watch | entice | remove | knock
+Fresh || I think food tastes better when I cook with ..... vegetables from my garden. || fresh | heavy | strong | neat
+Outdoors || I like this weather because it's perfect for a family get together ..... like a picnic or a barbecue. || outdoors | underneath | overland | online
+Clothes || These days, many people buy their ..... and other items from online stores instead of going to the mall. || clothes | sales | goals | bridges
+Reduce || I think I need to ..... the time I am on the computer. The screen hurts my eyes, and I am having trouble sleeping. || reduce | stir | expect | slam
+Strength || One of his ..... is that he has a good attitude no matter what happens in his life. || strengths | blocks | events | controls
+Modern || I need to move soon. I'm looking for a new furnished home with ..... appliances. || modern | polite | crowded | stale

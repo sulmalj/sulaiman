@@ -420,10 +420,10 @@ details.tr summary{cursor:pointer;font-weight:700;color:var(--accent)}
   </div>
 </div>
 
-<script src="grammar.js?v=7b9fbc0802"></script>
-<script src="vocab.js?v=4cf3ed2061"></script>
+<script src="grammar.js?v=b377a82384"></script>
+<script src="vocab.js?v=b137c60d23"></script>
 <script src="meanings.js?v=15022bd7fd"></script>
-<script src="reading.js?v=00c4478718"></script>
+<script src="reading.js?v=5ffdb2ee13"></script>
 <script src="listening.js?v=10e4ebdd42"></script>
 <script>
 /* ════════ الروابط ════════ */
@@ -458,14 +458,17 @@ const QS = [];
 GR.forEach((r, ri) => r.qs.forEach((q, k) => QS.push({ id: 'g-' + hash(r.rule + '|' + q.q), sec: 'g', grp: ri, q: q.q, o: q.o, e: q.e, code: `G${ri + 1}-${k + 1}` })));
 ME.forEach((m, i) => QS.push({ id: 'm-' + hash(m.w), sec: 'm', grp: Math.floor(i / VOCAB_SET), q: m.w, o: m.o, e: m.e, code: `M-${i + 1}` }));
 VO.forEach((v, i) => QS.push({ id: 'v-' + hash(v.w + '|' + v.q), sec: 'v', grp: Math.floor(i / VOCAB_SET), q: v.q, o: v.o, e: v.e, code: `V-${i + 1}` }));
-RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
+RE.forEach((p, pi) => p.qs.forEach((q, k) => QS.push({ id: `r${p.k || p.n}-` + hash(q.q), sec: 'r', grp: pi, q: q.q, o: q.o, e: q.e, code: `R${p.n}-${k + 1}` })));
 LI.forEach((c, ci) => c.qs.forEach((q, k) => QS.push({ id: `l${c.n}-` + hash(q.q), sec: 'l', grp: ci, q: q.q, o: q.o, code: `L${c.n}-${k + 1}` })));
 const BY_ID = Object.fromEntries(QS.map(q => [q.id, q]));
 const ofSec = s => QS.filter(q => q.sec === s);
 const ofGrp = (s, g) => QS.filter(q => q.sec === s && q.grp === g);
 const vocabSets = Math.ceil(VO.length / VOCAB_SET);
 const grpCount = s => ({ g: GR.length, v: vocabSets, m: Math.ceil(ME.length / VOCAB_SET), r: RE.length, l: LI.length }[s]);
-const LEVEL = n => n > 20 ? 'B2' : 'B1';   // القطع والمقاطع 1–20 = B1، و21–25 = B2
+const LEVEL = n => n > LI.length - 5 ? 'B2' : 'B1';     // الاستماع: آخر 5 مقاطع = B2
+const LEVEL_R = n => n > RE.length - 5 ? 'B2' : 'B1';   // القطع: آخر 5 قطع = B2
+const PAST_R = RE.filter(p => p.x).length;               // القطع اللي جت في اختبارات سابقة (أول القائمة)
+const B1_R = RE.length - 5;
 const repBtn = q => '';   // زر «بلّغ عن خطأ» محذوف (طلب المستخدم: الموقع للمشتركين)
 
 /* ── الحفظ في المتصفح ── */
@@ -579,9 +582,9 @@ const LEVEL_NOTE = {
     <li>المقاطع <span class="num">21–25</span> مستواها <span class="en">B2</span>: <b>أصعب شوي من الاختبار</b> — للتدريب الزيادة ورفع المستوى، خلّها آخر شي.</li>
     <li>إذا صرت تجاوب أغلب أسئلة مقاطع <span class="en">B1</span> صح، فأنت ماشي صح بإذن الله.</li></ul>`,
   r: `<b>📖 مستوى القطع في الموقع — قريب من الاختبار</b><ul>
-    <li>القطع <span class="num">1–3</span> <b>جت في اختبارات سابقة</b> — ابدأ فيها.</li>
-    <li>القطع <span class="num">4–20</span> مستواها <span class="en">B1</span>: <b>قريبة من قطعة الاختبار</b> في المستوى والطول وطريقة الأسئلة (إكمال، معنى كلمة تحتها خط، الضمير يرجع على إيش، ليش، العنوان…).</li>
-    <li>القطع <span class="num">21–25</span> مستواها <span class="en">B2</span>: <b>أطول وأصعب شوي من الاختبار</b> — للي يبي يرفع مستواه.</li></ul>`,
+    <li>القطع <span class="num">1–${PAST_R}</span> <b>جت في اختبارات سابقة</b> — ابدأ فيها.</li>
+    <li>القطع <span class="num">${PAST_R + 1}–${B1_R}</span> مستواها <span class="en">B1</span>: <b>قريبة من قطعة الاختبار</b> في المستوى والطول وطريقة الأسئلة (إكمال، معنى كلمة تحتها خط، الضمير يرجع على إيش، ليش، العنوان…).</li>
+    <li>القطع <span class="num">${B1_R + 1}–${RE.length}</span> مستواها <span class="en">B2</span>: <b>أطول وأصعب شوي من الاختبار</b> — للي يبي يرفع مستواه.</li></ul>`,
 };
 function openList(s) {
   curList = s;
@@ -596,7 +599,7 @@ function openList(s) {
     if (s === 'g') { title = esc(GR[g].rule); sub = list.length + ' سؤال'; }
     if (s === 'v') { const a = g * VOCAB_SET + 1, b = Math.min(VO.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الأسئلة ${a}–${b}`; }
     if (s === 'm') { const a = g * VOCAB_SET + 1, b = Math.min(ME.length, (g + 1) * VOCAB_SET); title = `المجموعة ${g + 1}`; sub = `الكلمات ${a}–${b}`; }
-    if (s === 'r') { title = `<span class="en">${esc(RE[g].title)}</span>`; sub = `القطعة ${RE[g].n} · المستوى <span class="en">${LEVEL(RE[g].n)}</span>`; }
+    if (s === 'r') { title = `<span class="en">${esc(RE[g].title)}</span>`; sub = `القطعة ${RE[g].n} · المستوى <span class="en">${LEVEL_R(RE[g].n)}</span>`; }
     if (s === 'l') { const c = LI[g]; title = `<span class="en">${esc(c.title)}</span>`; sub = `المقطع ${c.n} · المستوى <span class="en">${LEVEL(c.n)}</span> · ${c.kind === 'dialogue' ? (new Set(c.lines.map(l => l[0])).size > 2 ? 'نقاش بين ' + new Set(c.lines.map(l => l[0])).size + ' أشخاص' : 'حوار بين شخصين') : 'متحدث واحد'} · ${Math.floor(c.dur / 60)}:${String(c.dur % 60).padStart(2, '0')} دقيقة`; }
     const st = done === list.length ? `<span class="st done">✓ ${right}/${list.length}</span>` : done ? `<span class="st">${done}/${list.length}</span>` : '';
     return `<button class="card item s-${s}" type="button" data-g="${g}"><span class="no">${s === 'r' || s === 'l' ? (s === 'r' ? RE[g].n : LI[g].n) : g + 1}</span><span class="tx"><b>${title}</b><small>${sub}</small></span>${st}</button>`;
@@ -1000,10 +1003,10 @@ const TIPS = {
         <li>العنوان الصح يغطي <b>القطعة كلها</b>، مو فقرة وحدة بس.</li>
         <li>يساعدك: اقرأ أول جملة من كل فقرة، وآخر جملة في الفقرة الأولى وفي آخر فقرة، لأن الكاتب غالباً يقول فكرته هناك.</li></ol>
         <p class="ex"><b>مثال من القطعة 1:</b> الخيارات: ${en('Two places that need more laughter / Patients and laughter / Students and laughter / The main reasons of laughter')}<br>القطعة تتكلم عن مكانين: المستشفيات (الفقرة 2) والمدارس (الفقرة 3) ← الجواب ${en('Two places that need more laughter')} (مكانين يحتاجون ضحك أكثر). أما ${en('Patients and laughter')} (المرضى والضحك) فيغطي الفقرة 2 بس، و ${en('Students and laughter')} (الطلاب والضحك) يغطي الفقرة 3 بس.</p>`) +
-      st(12, 'كيف تتدرّب في الموقع', `<ul><li>ابدأ بالقطع <b><span class="num">1–3</span></b>، لأنها جات في اختبارات سابقة، وبعدها كمّل الباقي.</li>
+      st(12, 'كيف تتدرّب في الموقع', `<ul><li>ابدأ بالقطع <b><span class="num">1–${PAST_R}</span></b>، لأنها جات في اختبارات سابقة، وبعدها كمّل الباقي.</li>
         <li>اختر جوابك وتقدر تغيّره، والتصحيح يطلع لما تضغط «تأكيد الإجابة».</li>
         <li>بعد كل سؤال يطلع «التوضيح»: الجملة اللي فيها الجواب بالضبط. اقرأه حتى لو جاوبت صح، عشان تتعوّد وين يختبي الجواب.</li>
-        <li>القطع <span class="num">1–20</span> مستواها ${en('B1')} (قريب من مستوى الاختبار)، و<span class="num">21–25</span> ${en('B2')} أصعب، للي يبي يرفع مستواه.</li></ul>`)
+        <li>القطع <span class="num">1–${B1_R}</span> مستواها ${en('B1')} (قريب من مستوى الاختبار)، و<span class="num">${B1_R + 1}–${RE.length}</span> ${en('B2')} أصعب، للي يبي يرفع مستواه.</li></ul>`)
   }
 };
 function openTips(k) {

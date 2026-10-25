@@ -3,6 +3,7 @@
 window.READING = [
 {
 "n": 1,
+"k": 1,
 "title": "Laughter in Hospitals and Schools",
 "text": [
 "1. There are many positive effects of laughter. Laughing is fun. Laughing helps us relax in stressful situations. Laughter also helps people forget about their pain and _facilitates_ learning. Indeed, one study found that students who laugh more remember more things and complete their homework more quickly. With these facts in mind, there are two areas where we should try to help people laugh more: hospitals and schools.",
@@ -110,10 +111,12 @@ window.READING = [
 ],
 "e": "الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly»."
 }
-]
+],
+"x": 1
 },
 {
 "n": 2,
+"k": 2,
 "title": "Working From Home",
 "text": [
 "1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, \"It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day.\"",
@@ -221,10 +224,12 @@ window.READING = [
 ],
 "e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems»."
 }
-]
+],
+"x": 1
 },
 {
 "n": 3,
+"k": 3,
 "title": "Stress at Work",
 "text": [
 "1. The stress of modern jobs can make it challenging for employees to focus while they are working. This stress may also lead to employees getting sick more often or even quitting. When this happens, employers must use time and resources to find and train new employees.",
@@ -333,10 +338,12 @@ window.READING = [
 ],
 "e": "القطعة كلها عن حلول ضغط العمل، وأحسنها اللي تصير بدون تخطيط (spontaneously)."
 }
-]
+],
+"x": 1
 },
 {
 "n": 4,
+"k": 4,
 "title": "Saving Money as a Student",
 "text": [
 "1. For many university students, money is a common worry. Most of them have a small monthly income, such as a university allowance or some help from their families, but they still have to pay for books, transport, food and their phones. As a result, a lot of students reach the end of the month with an empty wallet and no idea where their money went. The good news is that saving money does not need a big income. It mainly needs a plan and a few good habits.",
@@ -449,6 +456,7 @@ window.READING = [
 },
 {
 "n": 5,
+"k": 5,
 "title": "The Story of Coffee",
 "text": [
 "1. Today, coffee is one of the most popular drinks on the planet, and millions of people cannot imagine starting their day without it. However, few of them know that this ordinary drink has a long and interesting history. Its journey began in the highlands of Ethiopia, in East Africa, and it later passed through the Arabian Peninsula before it reached the rest of the world.",
@@ -561,6 +569,7 @@ window.READING = [
 },
 {
 "n": 6,
+"k": 6,
 "title": "Electric Cars",
 "text": [
 "1. Electric cars are no longer a strange sight. In many countries, more and more drivers are choosing them instead of cars that run on petrol. An electric car does not have a normal engine. Instead, it has a large battery that drivers charge with electricity, either at home or at a public charging station. Many governments _encourage_ people to buy these cars, and some offer lower taxes or other benefits to those who do.",
@@ -673,6 +682,7 @@ window.READING = [
 },
 {
 "n": 7,
+"k": 7,
 "title": "Paper Books or E-books?",
 "text": [
 "1. Not long ago, reading a book meant holding paper in your hands. Today, however, many people read on phones, tablets or special devices called e-readers. These digital books, or e-books, have become very popular, especially among young people. As a result, a common question is whether e-books will one day replace paper books completely, or whether both will continue to exist side by side.",
@@ -785,6 +795,7 @@ window.READING = [
 },
 {
 "n": 8,
+"k": 8,
 "title": "Social Media and the News",
 "text": [
 "1. In the past, people waited for the evening news on TV or bought a newspaper in the morning to find out what was happening in the world. Today, the situation is very different. A large number of young people now get most of their news from social media apps on their phones. On these apps, a story can be shared by thousands of users within minutes, so news travels faster than ever before.",
@@ -897,6 +908,7 @@ window.READING = [
 },
 {
 "n": 9,
+"k": 9,
 "title": "Camels: Ships of the Desert",
 "text": [
 "1. For thousands of years, camels have played a central role in the life of the Arabian Peninsula. Before cars and planes existed, they carried people and goods across huge deserts, and caravans of camels connected towns and markets that were hundreds of kilometres apart. Families also depended on them for milk, meat, wool and leather. Because camels can cross the sand for long distances, people have long called them \"ships of the desert.\"",
@@ -1009,6 +1021,7 @@ window.READING = [
 },
 {
 "n": 10,
+"k": 10,
 "title": "Recycling at Home",
 "text": [
 "1. Every household produces rubbish: empty bottles, food packaging, old newspapers and leftover food. In many cities, most of this waste is taken to landfills, which are huge areas of land where rubbish is buried. Landfills take up a lot of space, and some materials stay there for a very long time. A plastic bottle, for example, can take hundreds of years to break down. Recycling is one of the easiest ways to _reduce_ this problem, and it can begin in your own kitchen.",
@@ -1121,6 +1134,7 @@ window.READING = [
 },
 {
 "n": 11,
+"k": 11,
 "title": "Shopping Online or in Stores?",
 "text": [
 "1. Twenty years ago, buying a new phone or a pair of shoes usually meant a trip to a shop or a shopping centre. Today, millions of people in Saudi Arabia and around the world buy these things with a few taps on their phones. Online shopping has grown very quickly, especially since delivery services became faster and more common. However, shops and malls are still full of customers, which shows that both ways of shopping have something to offer.",
@@ -1233,6 +1247,7 @@ window.READING = [
 },
 {
 "n": 12,
+"k": 12,
 "title": "Learning to Cook",
 "text": [
 "1. Many young people today leave home for university without knowing how to cook even a simple meal. Instead, they depend on restaurants, fast food and delivery apps. This is quick and easy, but it has two clear disadvantages. First, eating out every day is expensive, and second, many restaurant meals contain more oil, salt and sugar than our bodies need. Learning to cook is a practical solution to both problems.",
@@ -1345,6 +1360,7 @@ window.READING = [
 },
 {
 "n": 13,
+"k": 13,
 "title": "Working Part-Time While Studying",
 "text": [
 "1. More and more university students today have part-time jobs. They work a few hours a week in cafés, shops, offices, or even at their own university while they continue their studies. Some students work because they need money for transport, books, or personal needs, while others simply want to gain experience before they graduate. Although this was less common in the past, it is now a normal part of student life for many young people.",
@@ -1457,6 +1473,7 @@ window.READING = [
 },
 {
 "n": 14,
+"k": 14,
 "title": "Don't Skip Breakfast",
 "text": [
 "1. Many people say that breakfast is the most important meal of the day, but a large number of students and workers leave home without eating anything. Some of them wake up late and do not have time, while others simply do not feel hungry in the morning. A few people even believe that skipping breakfast is a good way to lose weight. So, is it really a problem to start the day with an empty stomach?",
@@ -1569,6 +1586,7 @@ window.READING = [
 },
 {
 "n": 15,
+"k": 15,
 "title": "AlUla: A Window to the Past",
 "text": [
 "1. AlUla is a region in the northwest of Saudi Arabia, in the Madinah area. It is famous for its beautiful sandstone mountains, its green oasis full of palm trees, and its long history. People have lived in this valley for thousands of years, because it had water and was on an important trade road. Today, AlUla is one of the most popular places for visitors in the Kingdom, and many tourists from inside and outside Saudi Arabia travel there every year.",
@@ -1681,6 +1699,7 @@ window.READING = [
 },
 {
 "n": 16,
+"k": 16,
 "title": "Pets and Our Health",
 "text": [
 "1. Many families around the world keep pets at home, such as cats, birds, rabbits, or fish. Most people get a pet simply because they love animals and enjoy their company. However, scientists have become more and more interested in another question: can pets actually be good for our health? Recent research suggests that the answer is often yes, although pets are not a cure for every problem.",
@@ -1793,6 +1812,7 @@ window.READING = [
 },
 {
 "n": 17,
+"k": 17,
 "title": "Robots in Our Daily Lives",
 "text": [
 "1. When people hear the word \"robot\", they often think of the metal machines in science fiction films. In reality, robots are already part of everyday life, even if we do not always notice them. Some clean our homes, some help doctors in hospitals, and others build cars in large factories. As technology improves and becomes cheaper, robots are expected to become even more common in the next few years.",
@@ -1905,6 +1925,7 @@ window.READING = [
 },
 {
 "n": 18,
+"k": 18,
 "title": "Saving Water",
 "text": [
 "1. Water is one of the most important resources on Earth. We need it for drinking, cooking, cleaning, and growing food, and factories use huge amounts of it as well. However, clean fresh water is limited, and the world's population is still growing. In dry regions such as the Arabian Peninsula, where rain is rare and summers are long and hot, saving water is not just a good idea; it is a necessity.",
@@ -2017,6 +2038,7 @@ window.READING = [
 },
 {
 "n": 19,
+"k": 19,
 "title": "Libraries Are Changing",
 "text": [
 "1. In the past, libraries were quiet buildings full of shelves of books, where people went to borrow novels or study in silence. Today, some people believe that libraries are no longer needed, because almost any information can be found online in seconds. However, libraries have not disappeared. Instead, many of them are changing in order to meet the needs of modern visitors.",
@@ -2129,6 +2151,7 @@ window.READING = [
 },
 {
 "n": 20,
+"k": 20,
 "title": "Photography as a Hobby",
 "text": [
 "1. Photography has become one of the most popular hobbies in the world. In the past, people needed expensive cameras and special skills to take good photos, and they often had to wait several days to see the results. Today, almost everyone carries a smartphone with a high-quality camera, so anyone can become a photographer. Every day, millions of photos are taken and shared, from family events to beautiful views of nature.",
@@ -2241,6 +2264,7 @@ window.READING = [
 },
 {
 "n": 21,
+"k": 21,
 "title": "Talent or Teamwork?",
 "text": [
 "1. In almost every sport, fans and club owners tend to assume that the team with the best individual players will win. It seems logical: if you buy the fastest striker and the strongest defender, success should follow. As a result, clubs often spend enormous sums of money on a few famous names. Nevertheless, history is full of expensive teams that failed and modest teams that won, which suggests that talent alone is not the whole story.",
@@ -2354,6 +2378,7 @@ window.READING = [
 },
 {
 "n": 22,
+"k": 22,
 "title": "Choosing a Major: Passion or Practicality?",
 "text": [
 "1. When students choose a university major, they often receive two very different pieces of advice. The first is \"follow your passion\": study what you love, and success will come. The second is more practical: choose a subject that leads to a well-paid, secure job. Both approaches seem reasonable, yet _they_ can push a student in opposite directions, and many young people feel caught between their own interests and the expectations of their families.",
@@ -2467,6 +2492,7 @@ window.READING = [
 },
 {
 "n": 23,
+"k": 23,
 "title": "Smart Cities: Promise and Problems",
 "text": [
 "1. Around the world, city governments are investing heavily in what are often called \"smart city\" projects. The basic idea is to use sensors, cameras, and the internet to collect information about how a city works, and then use that information to make better decisions. Supporters believe this approach could make cities more efficient, safer, and easier to live in, especially as urban populations continue to grow.",
@@ -2580,6 +2606,7 @@ window.READING = [
 },
 {
 "n": 24,
+"k": 24,
 "title": "Why We Need Bees",
 "text": [
 "1. When people think of bees, they usually think of honey. Yet honey is only a small part of the value bees provide. As they move from flower to flower collecting food, bees carry pollen, which allows many plants to produce fruit and seeds. This process, known as pollination, is _essential_ for a large number of the crops that humans eat, including apples, almonds, and many vegetables. Without pollinators, our diet would be far less varied.",
@@ -2693,6 +2720,7 @@ window.READING = [
 },
 {
 "n": 25,
+"k": 25,
 "title": "Managing Your Time: Working Smarter, Not Longer",
 "text": [
 "1. Many students believe that the key to managing time is simply to work longer hours. They stay up late, study while checking messages, and feel proud of how busy they are. However, research on attention and productivity suggests that the amount of time we spend on a task matters less than how we spend it. Being busy, in other words, is not the same as being productive.",

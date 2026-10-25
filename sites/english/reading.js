@@ -3,6 +3,7 @@
 window.READING = [
 {
 "n": 1,
+"k": 1,
 "title": "Laughter in Hospitals and Schools",
 "text": [
 "1. There are many positive effects of laughter. Laughing is fun. Laughing helps us relax in stressful situations. Laughter also helps people forget about their pain and _facilitates_ learning. Indeed, one study found that students who laugh more remember more things and complete their homework more quickly. With these facts in mind, there are two areas where we should try to help people laugh more: hospitals and schools.",
@@ -110,10 +111,12 @@ window.READING = [
 ],
 "e": "الفقرة 1: «one study found that students who laugh more remember more things and complete their homework more quickly»."
 }
-]
+],
+"x": 1
 },
 {
 "n": 2,
+"k": 2,
 "title": "Working From Home",
 "text": [
 "1. Alex begins his day with some coffee. Then he takes a short walk in a nearby park before _heading to_ work. But he doesn't need to go far. He just walks back home, opens up his laptop, and gets started. Alex works from home every day. You might think this sounds great. After all, many people don't like their offices. At home, they can make things exactly how they like. But many workers actually find working from home to be more stressful. Alex says this is true for him. He explains, \"It's like the workday never ends. When I used to go to an office, I'd leave work and not think about _it_ until the next day. Now, I answer emails and texts at all hours of the day.\"",
@@ -221,10 +224,12 @@ window.READING = [
 ],
 "e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems»."
 }
-]
+],
+"x": 1
 },
 {
 "n": 3,
+"k": 3,
 "title": "Stress at Work",
 "text": [
 "1. The stress of modern jobs can make it challenging for employees to focus while they are working. This stress may also lead to employees getting sick more often or even quitting. When this happens, employers must use time and resources to find and train new employees.",
@@ -333,10 +338,125 @@ window.READING = [
 ],
 "e": "القطعة كلها عن حلول ضغط العمل، وأحسنها اللي تصير بدون تخطيط (spontaneously)."
 }
-]
+],
+"x": 1
 },
 {
 "n": 4,
+"k": 26,
+"title": "Apples in Washington State",
+"text": [
+"1. In most countries, people eat apples all the time. They're sweet, crunchy, and healthy. For this reason, they're a _beloved_ snack for both children and adults. People also love to use apples to make apple juice, apple pie, apple butter, and so on. But while apples are popular everywhere, the people who love apples most might live in Washington State, USA.",
+"2. Located next to the Pacific Ocean in the northwest of the United States, Washington State is famous for its biggest city, Seattle, and for its technology companies, like Amazon. But _it_ is also a great place to grow apples. The weather is usually sunny, but not too hot, in the summer. This is good because apple trees need at least six hours of sun every day when they're growing in the summer. The weather should be warm, but not too hot outside. However, apple trees also need the temperature to be cold sometimes. Every year, the trees should get between 500 and 1,000 hours between 0 and 5°C. Their flowers don't grow well if the weather isn't cold sometimes. That's fine because in Washington the winter temperatures are a little cold and it can rain 15 to 25 days each month. This would _cripple_ another fruit like an orange, but not apples. In Washington State, farmers grow more than 10 billion (that's 10,000,000,000) of _them_ every year.",
+"3. The people in Washington love to celebrate their fruit. Starting in the spring, there are Apple Blossom Festivals, where you can listen to music and enjoy the beautiful apple trees. Then, usually in October, there are festivals where you can do things like pick apples, try to win apple-eating contests, and drive around the farms. Many people in Washington think it's the best time of the year."
+],
+"qs": [
+{
+"q": "The writer says that people eat apples in ______.",
+"o": [
+"most countries",
+"diet classes",
+"the kitchen",
+"some states"
+],
+"e": "الفقرة 1 أول جملة: «In most countries, people eat apples all the time» ← الجواب most countries."
+},
+{
+"q": "Which technology company does the author mention?",
+"o": [
+"Amazon",
+"Starbucks",
+"Seattle",
+"Northwest"
+],
+"e": "الفقرة 2: «famous for its biggest city, Seattle, and for its technology companies, like Amazon» ← Seattle مدينة مو شركة، وNorthwest مكان (شمال غرب أمريكا)."
+},
+{
+"q": "People in Washington celebrate apples by ______.",
+"o": [
+"listening to music",
+"cooking food",
+"selling flowers",
+"performing dances"
+],
+"e": "الفقرة 3: «there are Apple Blossom Festivals, where you can listen to music and enjoy the beautiful apple trees» ← يحتفلون بسماع الموسيقى."
+},
+{
+"q": "What does the underlined word \"it\" in paragraph 2 refer to?",
+"o": [
+"Washington State",
+"The United States",
+"the biggest city",
+"technology company"
+],
+"e": "الفقرة 2: «Washington State is famous for its biggest city, Seattle, and for its technology companies, like Amazon. But it is also a great place to grow apples» ← الكلام كله عن ولاية Washington، فـ it = Washington State."
+},
+{
+"q": "What does the underlined word \"them\" in paragraph 2 refer to?",
+"o": [
+"apples",
+"farmers",
+"trees",
+"oranges"
+],
+"e": "الفقرة 2 آخر جملة: «farmers grow more than 10 billion (that's 10,000,000,000) of them every year» ← المزارعين يزرعون أكثر من 10 مليار تفاحة، فـ them = apples."
+},
+{
+"q": "How is growing apples different from growing oranges?",
+"o": [
+"Apples need warm and cold weather.",
+"Oranges need extremely rainy weather.",
+"Apples need temperatures to always be cold.",
+"Oranges need six hours of sun every day."
+],
+"e": "الفقرة 2: التفاح يحتاج جو دافي في الصيف «The weather should be warm, but not too hot outside» ويحتاج برد أحيانًا «apple trees also need the temperature to be cold sometimes»، أما البرد والمطر فيضرون البرتقال: «This would cripple another fruit like an orange, but not apples»."
+},
+{
+"q": "Which activity does the author NOT mention?",
+"o": [
+"learning the history of apples",
+"joining apple eating contests",
+"making apple juice",
+"driving around a farm"
+],
+"e": "الفقرة 1 ذكرت «apple juice»، والفقرة 3 ذكرت «try to win apple-eating contests, and drive around the farms». أما تعلّم تاريخ التفاح ما انذكر أبدًا."
+},
+{
+"q": "What does the word \"beloved\" in paragraph 1 mean?",
+"o": [
+"really liked",
+"a little liked",
+"sometimes eaten",
+"not eaten"
+],
+"e": "الفقرة 1: «They're sweet, crunchy, and healthy. For this reason, they're a beloved snack for both children and adults» ← حلو ومقرمش وصحي، فالكل يحبه كثير ← beloved = really liked."
+},
+{
+"q": "What does the word \"cripple\" in paragraph 2 mean?",
+"o": [
+"hurt badly or kill",
+"make sweet like sugar",
+"make grow large",
+"give a lot of water to"
+],
+"e": "الفقرة 2: البرد والمطر الكثير «This would cripple another fruit like an orange, but not apples» ← يضرون البرتقال كثير بس ما يضرون التفاح ← cripple = hurt badly or kill."
+},
+{
+"q": "What is the best title for the passage?",
+"o": [
+"Washington: The Best Place to Grow Apples",
+"The Biggest Types of Trees in USA",
+"How to Grow Apples in Warm Weather",
+"The Advantages of Eating Apples"
+],
+"e": "القطعة كلها عن التفاح في Washington: إنها «a great place to grow apples» (الفقرة 2)، وأهلها يحتفلون فيه (الفقرة 3) ← العنوان Washington: The Best Place to Grow Apples."
+}
+],
+"x": 1
+},
+{
+"n": 5,
+"k": 4,
 "title": "Making Friends at University",
 "text": [
 "1. Starting university is an exciting step, but for many young people it is also a lonely time. Some students move to a new city and leave their families and old friends behind, while others simply find that their school friends have chosen different universities. Although these feelings are normal, they should not be ignored. Research suggests that students who build friendships during their first year usually feel happier, and they are also less likely to leave their studies early.",
@@ -448,7 +568,8 @@ window.READING = [
 ]
 },
 {
-"n": 5,
+"n": 6,
+"k": 5,
 "title": "Collecting Things",
 "text": [
 "1. Collecting is one of the oldest and most common hobbies in the world. People collect stamps, coins, old cameras, football shirts, and even pens from hotels they have stayed in. What makes this hobby so popular is that almost anyone can start _it_. You do not need special skills or expensive equipment, and you can begin at any age with only a few items.",
@@ -560,7 +681,8 @@ window.READING = [
 ]
 },
 {
-"n": 6,
+"n": 7,
+"k": 6,
 "title": "Learning a Foreign Language",
 "text": [
 "1. In today's connected world, more and more people are learning a foreign language. Some learn for work, others for travel or study abroad, and some simply enjoy the challenge. Although learning a language takes time and effort, most people who do it say that the benefits are worth it.",
@@ -672,7 +794,8 @@ window.READING = [
 ]
 },
 {
-"n": 7,
+"n": 8,
+"k": 7,
 "title": "Online Classes or Classrooms?",
 "text": [
 "1. Not long ago, studying at university meant sitting in a lecture hall at a fixed time. Today, a growing number of students take some or all of their courses online. They watch recorded lectures, join live discussions and submit assignments from home. This change has started a debate: some people believe online learning is the future of education, while others think traditional classrooms are still the better choice.",
@@ -784,7 +907,8 @@ window.READING = [
 ]
 },
 {
-"n": 8,
+"n": 9,
+"k": 8,
 "title": "Fast Food and Our Health",
 "text": [
 "1. Fast food is part of daily life in many countries, including Saudi Arabia. It is quick, cheap and easy to find, and delivery apps now bring burgers, pizza and fried chicken to our doors in minutes. For busy students and workers, this is very attractive. However, doctors warn that eating fast food too often can seriously _affect_ our health.",
@@ -896,7 +1020,8 @@ window.READING = [
 ]
 },
 {
-"n": 9,
+"n": 10,
+"k": 9,
 "title": "Organic Food",
 "text": [
 "1. Walk into almost any large supermarket today and you will probably find a section for organic food. Organic fruit, vegetables, meat and dairy products are produced without most artificial chemicals. Organic farmers do not use chemical sprays to kill insects or weeds, and their animals are not given medicines unless they are really ill. Instead, farmers use natural methods, such as moving crops to different fields each year to keep the soil healthy.",
@@ -1008,7 +1133,8 @@ window.READING = [
 ]
 },
 {
-"n": 10,
+"n": 11,
+"k": 10,
 "title": "Celebrating Eid",
 "text": [
 "1. Eid is one of the happiest times of the year for Muslims around the world, and in Saudi Arabia it is a special time for families. There are two Eids every year. Eid al-Fitr comes at the end of Ramadan, the month of fasting, while Eid al-Adha comes during the season of Hajj. Although the two celebrations are different in some ways, both bring people together and fill the streets with a joyful atmosphere.",
@@ -1120,7 +1246,8 @@ window.READING = [
 ]
 },
 {
-"n": 11,
+"n": 12,
+"k": 11,
 "title": "Travelling on a Small Budget",
 "text": [
 "1. Many people dream of travelling but believe they cannot afford it. They imagine expensive flights, luxury hotels and costly restaurants. In reality, it is possible to visit interesting places without spending a fortune. The secret is careful planning, and travellers who prepare well can often spend much less than others on a similar trip.",
@@ -1232,7 +1359,8 @@ window.READING = [
 ]
 },
 {
-"n": 12,
+"n": 13,
+"k": 12,
 "title": "Spending Time in Nature",
 "text": [
 "1. Modern life keeps most of us indoors. We study in classrooms, work in offices and spend our free time at home in front of screens. Some researchers believe that people in many countries spend around 90 percent of their time inside buildings or cars. Although this lifestyle is comfortable, a growing amount of research suggests that we are missing something important: regular contact with nature.",
@@ -1344,7 +1472,8 @@ window.READING = [
 ]
 },
 {
-"n": 13,
+"n": 14,
+"k": 13,
 "title": "The Student Housing Problem",
 "text": [
 "1. Every year, thousands of young people leave their hometowns and move to big cities to study at university. For many, finding a place to live is the first real challenge, and it often begins weeks before classes start. In most large cities, there is a _shortage_ of student housing, which means there are not enough rooms for everyone who needs one. As a result, rents near the campus have risen quickly.",
@@ -1456,7 +1585,8 @@ window.READING = [
 ]
 },
 {
-"n": 14,
+"n": 15,
+"k": 14,
 "title": "Living With a Roommate",
 "text": [
 "1. For many university students, sharing an apartment or a dormitory room is a normal part of student life. Living with a roommate has clear benefits. It reduces the cost of rent and bills, and it means you are _rarely_ alone when you come home after a long day. However, sharing a small space with another person is not always easy, especially if you have never lived away from your family before. Small problems can quickly grow into big arguments.",
@@ -1568,7 +1698,8 @@ window.READING = [
 ]
 },
 {
-"n": 15,
+"n": 16,
+"k": 15,
 "title": "Breaking Bad Habits",
 "text": [
 "1. Almost everyone has at least one bad habit. Some people drink too many sugary drinks, some stay up late scrolling on their phones, and others always leave their work until the last minute. Many of us have tried to stop these habits. However, breaking a habit is often much harder than we expect, because habits happen automatically, without much thinking. The good news is that a few practical steps can make the change easier.",
@@ -1680,7 +1811,8 @@ window.READING = [
 ]
 },
 {
-"n": 16,
+"n": 17,
+"k": 16,
 "title": "Addicted to Our Phones",
 "text": [
 "1. Today, it is hard to imagine life without a smartphone. We use our phones to talk to our families, read the news, pay for shopping, find our way around the city and even study for exams. Because phones are so useful, many people carry them everywhere and feel nervous when the battery is low. Some experts believe that certain people have become so _dependent_ on their phones that their behaviour is similar to an addiction.",
@@ -1792,7 +1924,8 @@ window.READING = [
 ]
 },
 {
-"n": 17,
+"n": 18,
+"k": 17,
 "title": "Why Sleep Matters",
 "text": [
 "1. Many university students believe that sleep is a waste of time. During the exam period, especially, they stay up late to study, and at other times they stay awake chatting with friends or watching TV series. They think that sleeping less gives them more hours to get things done. However, a large amount of research shows the opposite: when we do not sleep enough, almost everything we do during the day becomes slower and more difficult.",
@@ -1904,7 +2037,8 @@ window.READING = [
 ]
 },
 {
-"n": 18,
+"n": 19,
+"k": 18,
 "title": "Exercise and Energy",
 "text": [
 "1. Many people say they are simply too tired to exercise. After a long day at work or university, the last thing they want to do is go for a run; they would rather sit on the sofa and look at their phones. It seems _logical_ that exercise would make a tired person even more tired. Surprisingly, however, research suggests that the opposite is often true: regular physical activity can actually give people more energy.",
@@ -2016,7 +2150,8 @@ window.READING = [
 ]
 },
 {
-"n": 19,
+"n": 20,
+"k": 19,
 "title": "Vitamins: Food or Pills?",
 "text": [
 "1. Vitamins are substances that our bodies need in small amounts to work _properly_. They help us grow, keep our bones and skin healthy, and protect us from illness. In recent years, vitamin pills have become very popular, and pharmacies now sell dozens of types. Many people take a pill every morning because they believe it will make them stronger or give them more energy, even if they already feel healthy.",
@@ -2128,7 +2263,8 @@ window.READING = [
 ]
 },
 {
-"n": 20,
+"n": 21,
+"k": 20,
 "title": "Loneliness in Older People",
 "text": [
 "1. Loneliness is becoming a serious problem in many parts of the world, and older people are among those most at risk. As people age, their children often move to other cities for work or study, and old friends may become ill or pass away. Retirement can also take away the daily contact that people used to have with their colleagues. As a result, many older people spend long hours alone at home, and some may go several days without a real conversation.",
@@ -2240,7 +2376,8 @@ window.READING = [
 ]
 },
 {
-"n": 21,
+"n": 22,
+"k": 21,
 "title": "Can a Metro Change a Car City?",
 "text": [
 "1. For decades, Riyadh was designed around the car. Wide highways, cheap fuel and long distances between neighbourhoods meant that most families depended on private vehicles, and public transport played only a small role in daily life. As the population grew, this approach began to show its limits: traffic jams became longer, journeys became less predictable, and the city's air quality suffered. The Riyadh Metro, which opened to the public in stages from late 2024, is the city's most ambitious attempt to offer an alternative.",
@@ -2353,7 +2490,8 @@ window.READING = [
 ]
 },
 {
-"n": 22,
+"n": 23,
+"k": 22,
 "title": "Does Volunteering Always Help?",
 "text": [
 "1. Volunteering, giving time and skills without payment, is usually seen as something entirely positive. In recent years it has grown considerably in Saudi Arabia, where national plans aim to reach one million volunteers a year. Universities encourage students to take part, and many employers say that they value volunteer experience when they hire new staff. Yet researchers and charity workers increasingly argue that volunteering is not automatically beneficial; its value depends largely on how it is organised.",
@@ -2466,7 +2604,8 @@ window.READING = [
 ]
 },
 {
-"n": 23,
+"n": 24,
+"k": 23,
 "title": "Video Games: Harmful Habit or Useful Tool?",
 "text": [
 "1. Few forms of entertainment divide opinion as sharply as video games. For many parents and teachers, _they_ are a waste of time at best and a danger at worst, responsible for poor grades, lack of sleep and aggressive behaviour. For their supporters, games are a modern art form that can develop skills and bring people together. The evidence suggests that the truth lies somewhere between these two positions.",
@@ -2579,7 +2718,8 @@ window.READING = [
 ]
 },
 {
-"n": 24,
+"n": 25,
+"k": 24,
 "title": "Farming Without Fields",
 "text": [
 "1. When we imagine a farm, we usually picture open fields, tractors and long rows of crops under the sun. Yet a growing number of companies are trying something very different: growing vegetables indoors, on tall stacks of shelves inside buildings in the middle of cities. This approach, known as vertical farming, uses LED lights instead of sunlight, and the plants often grow with their roots in water rich in nutrients rather than in soil. Supporters describe it as the future of food; critics are less convinced.",
@@ -2692,7 +2832,8 @@ window.READING = [
 ]
 },
 {
-"n": 25,
+"n": 26,
+"k": 25,
 "title": "Can Mistakes Help Us Learn?",
 "text": [
 "1. Most students are taught, directly or indirectly, that mistakes are something to avoid. A wrong answer loses marks, and a low grade can feel like a judgement on a person's intelligence. Yet a large body of research in psychology and education suggests that making errors, and more importantly paying attention to them, is one of the most effective ways to learn.",
