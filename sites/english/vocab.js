@@ -2469,5 +2469,41 @@ window.VOCAB = [
 ],
 "e": "scene هنا = مكان وقوع الحادث: «at the scene of the accident» = في موقع الحادث (ومعناها في القائمة: منظر/مشهد).",
 "x": 1
+},
+{
+"w": "Share",
+"q": "Khalid and Dawood are twin brothers. They ..... everything with each other.",
+"o": [
+"share",
+"botch",
+"press",
+"serve"
+],
+"e": "share = يشارك ← التوأم يتشاركون كل شي مع بعض.",
+"x": 1
+},
+{
+"w": "Special",
+"q": "I need to find a ..... present for my cousin. She is getting married next month.",
+"o": [
+"special",
+"run-down",
+"short-lived",
+"nervous"
+],
+"e": "special = مميّز/خاص ← هدية لزواج بنت عمّه لازم تكون مميّزة.",
+"x": 1
+},
+{
+"w": "Short",
+"q": "Hasan is not tall like his brothers Naser and Jamal. He is very ......",
+"o": [
+"short",
+"clean",
+"scared",
+"smart"
+],
+"e": "short = قصير ← «not tall» يعني قصير.",
+"x": 1
 }
 ];
