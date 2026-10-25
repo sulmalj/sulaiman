@@ -652,6 +652,61 @@ window.GRAMMAR = [
 ],
 "e": "Sameera = She ← في المضارع البسيط مع He / She / It نضيف s للفعل: writes.",
 "x": 1
+},
+{
+"q": "I ..... my room every weekend because I am very busy during the week.",
+"o": [
+"clean",
+"cleans",
+"cleaning",
+"cleaner"
+],
+"e": "I ← في المضارع البسيط الفعل بدون s: I clean. (cleaner اسم = منظّف، وcleaning ما تجي بعد I لحالها.)",
+"x": 1
+},
+{
+"q": "I ..... to buy shoes from Granada Mall. It has many shoe stores.",
+"o": [
+"want",
+"wanting",
+"to want",
+"be wanting"
+],
+"e": "I ← في المضارع البسيط الفعل بصيغته الأساسية: I want (to buy). wanting وto want وbe wanting ما تجي بعد I كفعل.",
+"x": 1
+},
+{
+"q": "Osama ..... every evening at 5:30 to relax, stay fit, and clear his mind.",
+"o": [
+"swims",
+"swim",
+"swimming",
+"swimmer"
+],
+"e": "Osama = He ← في المضارع البسيط مع He / She / It نضيف s للفعل: swims. (swimmer اسم = سبّاح.)",
+"x": 1
+},
+{
+"q": "He ..... very well, but he can write a lot of poems and songs.",
+"o": [
+"doesn't sing",
+"don't sing",
+"not sing",
+"no sing"
+],
+"e": "He ← النفي في المضارع البسيط مع He / She / It يكون doesn't + الفعل الأساسي: doesn't sing. (don't مع I/You/We/They، وnot/no لحالها ما تنفي الفعل.)",
+"x": 1
+},
+{
+"q": "I ..... a photojournalist. I take photos for magazines like National Geographic.",
+"o": [
+"am",
+"are",
+"is",
+"be"
+],
+"e": "I ← مع I نستخدم am: I am a photojournalist.",
+"x": 1
 }
 ]
 },
@@ -1736,14 +1791,14 @@ window.GRAMMAR = [
 "x": 1
 },
 {
-"q": "My brother plays football. ..... the best player on our school team.",
+"q": "My brother loves playing football. ..... the best player on the team.",
 "o": [
 "He's",
 "Him",
 "His",
 "He'd"
 ],
-"e": "My brother = He، ونحتاج فاعل + is ← He's = He is.",
+"e": "My brother = He، ونحتاج فاعل + is ← He's = He is. (Him/His مو فاعل، وHe'd = He would/had.)",
 "x": 1
 },
 {
@@ -1766,6 +1821,28 @@ window.GRAMMAR = [
 "they"
 ],
 "e": "some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them.",
+"x": 1
+},
+{
+"q": "Have you tasted Auntie Majda's kabsa? ..... the best cook in our family.",
+"o": [
+"She's",
+"Her",
+"Hers",
+"She'd"
+],
+"e": "Auntie Majda = She، ونحتاج فاعل + is قبل the best cook ← She's = She is. (Her/Hers مو فاعل، وShe'd = She would/had.)",
+"x": 1
+},
+{
+"q": "Where did you put the extra towels? I looked everywhere, but I can't find ......",
+"o": [
+"them",
+"they",
+"she",
+"her"
+],
+"e": "the extra towels جمع، وبعد الفعل find نحط ضمير مفعول ← them. (they فاعل، وshe/her للمفرد المؤنث.)",
 "x": 1
 }
 ]

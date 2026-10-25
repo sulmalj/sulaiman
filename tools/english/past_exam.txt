@@ -22,7 +22,7 @@ G I ..... the kids' store at Panorama Mall. It has many toys and books.
 G This ..... a shoe store. People come here to buy shoes and accessories.
 G He ..... from home. He goes to the office from Sunday to Thursday every week.
 G I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood.
-G My brother plays football. ..... the best player on our school team.
+G My brother loves playing football. ..... the best player on the team.
 G Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.
 G This ice cream store has new flavors on sale. You can try ..... all before you decide what you want.
 G My mother made some cookies this afternoon. She put ..... on the kitchen table.
@@ -44,3 +44,21 @@ V These days, many people buy their ..... and other items from online stores ins
 V I think I need to ..... the time I am on the computer. The screen hurts my eyes, and I am having trouble sleeping.
 V One of his ..... is that he has a good attitude no matter what happens in his life.
 V I need to move soon. I'm looking for a new furnished home with ..... appliances.
+# تسريبات (2026-10-25، دفعة رسائل)
+G Have you tasted Auntie Majda's kabsa? ..... the best cook in our family.
+V Many police cars and ambulances were at the ..... of the accident. It made a terrible traffic jam.
+G I ..... my room every weekend because I am very busy during the week.
+G I ..... to buy shoes from Granada Mall. It has many shoe stores.
+G Osama ..... every evening at 5:30 to relax, stay fit, and clear his mind.
+G Where did you put the extra towels? I looked everywhere, but I can't find ......
+G He ..... very well, but he can write a lot of poems and songs.
+G I ..... a photojournalist. I take photos for magazines like National Geographic.
+V Khalid and Dawood are twin brothers. They ..... everything with each other.
+V I need to find a ..... present for my cousin. She is getting married next month.
+V Hasan is not tall like his brothers Naser and Jamal. He is very ......
+V Everyone is buying the new Dubai chocolate. It's very ..... now.
+V I am ..... getting a job that involves international travel. I love exploring new countries.
+V If you're not sure how to fix it, you should ask a/an ......
+V These sunglasses are 3,000 riyals! Can you show me something more ......?
+# قطعة My Family (تسريب 2026-10-25)
+R 27 1-10

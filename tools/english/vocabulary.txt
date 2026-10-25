@@ -246,3 +246,11 @@ Clothes || These days, many people buy their ..... and other items from online s
 Reduce || I think I need to ..... the time I am on the computer. The screen hurts my eyes, and I am having trouble sleeping. || reduce | stir | expect | slam
 Strength || One of his ..... is that he has a good attitude no matter what happens in his life. || strengths | blocks | events | controls
 Modern || I need to move soon. I'm looking for a new furnished home with ..... appliances. || modern | polite | crowded | stale
+Scene || Many police cars and ambulances were at the ..... of the accident. It made a terrible traffic jam. || scene | board | menu | habit || scene هنا = مكان وقوع الحادث: «at the scene of the accident» = في موقع الحادث (ومعناها في القائمة: منظر/مشهد).
+Share || Khalid and Dawood are twin brothers. They ..... everything with each other. || share | botch | press | serve || share = يشارك ← التوأم يتشاركون كل شي مع بعض.
+Special || I need to find a ..... present for my cousin. She is getting married next month. || special | run-down | short-lived | nervous || special = مميّز/خاص ← هدية لزواج بنت عمّه لازم تكون مميّزة.
+Short || Hasan is not tall like his brothers Naser and Jamal. He is very ...... || short | clean | scared | smart || short = قصير ← «not tall» يعني قصير.
+Popular || Everyone is buying the new Dubai chocolate. It's very ..... now. || popular | intelligent | noisy | easy || popular = مشهور/عليه طلب ← «Everyone is buying» يعني الكل يبيه.
+Interested in || I am ..... getting a job that involves international travel. I love exploring new countries. || interested in | late for | addicted to | up into || interested in = مهتم بـ ← يحب يستكشف دول جديدة، فهو مهتم بشغل فيه سفر.
+Expert || If you're not sure how to fix it, you should ask a/an ...... || expert | fact | theory | plan || expert = خبير ← إذا ما تعرف تصلّحه تسأل شخص خبير (fact/theory/plan مو أشخاص).
+Affordable || These sunglasses are 3,000 riyals! Can you show me something more ......? || affordable | reachable | charismatic | negative || affordable = بسعر مناسب ← 3,000 ريال غالية، فيبي شي أرخص.

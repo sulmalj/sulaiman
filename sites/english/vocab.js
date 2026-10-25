@@ -2457,5 +2457,101 @@ window.VOCAB = [
 "stale"
 ],
 "x": 1
+},
+{
+"w": "Scene",
+"q": "Many police cars and ambulances were at the ..... of the accident. It made a terrible traffic jam.",
+"o": [
+"scene",
+"board",
+"menu",
+"habit"
+],
+"e": "scene هنا = مكان وقوع الحادث: «at the scene of the accident» = في موقع الحادث (ومعناها في القائمة: منظر/مشهد).",
+"x": 1
+},
+{
+"w": "Share",
+"q": "Khalid and Dawood are twin brothers. They ..... everything with each other.",
+"o": [
+"share",
+"botch",
+"press",
+"serve"
+],
+"e": "share = يشارك ← التوأم يتشاركون كل شي مع بعض.",
+"x": 1
+},
+{
+"w": "Special",
+"q": "I need to find a ..... present for my cousin. She is getting married next month.",
+"o": [
+"special",
+"run-down",
+"short-lived",
+"nervous"
+],
+"e": "special = مميّز/خاص ← هدية لزواج بنت عمّه لازم تكون مميّزة.",
+"x": 1
+},
+{
+"w": "Short",
+"q": "Hasan is not tall like his brothers Naser and Jamal. He is very ......",
+"o": [
+"short",
+"clean",
+"scared",
+"smart"
+],
+"e": "short = قصير ← «not tall» يعني قصير.",
+"x": 1
+},
+{
+"w": "Popular",
+"q": "Everyone is buying the new Dubai chocolate. It's very ..... now.",
+"o": [
+"popular",
+"intelligent",
+"noisy",
+"easy"
+],
+"e": "popular = مشهور/عليه طلب ← «Everyone is buying» يعني الكل يبيه.",
+"x": 1
+},
+{
+"w": "Interested in",
+"q": "I am ..... getting a job that involves international travel. I love exploring new countries.",
+"o": [
+"interested in",
+"late for",
+"addicted to",
+"up into"
+],
+"e": "interested in = مهتم بـ ← يحب يستكشف دول جديدة، فهو مهتم بشغل فيه سفر.",
+"x": 1
+},
+{
+"w": "Expert",
+"q": "If you're not sure how to fix it, you should ask a/an ......",
+"o": [
+"expert",
+"fact",
+"theory",
+"plan"
+],
+"e": "expert = خبير ← إذا ما تعرف تصلّحه تسأل شخص خبير (fact/theory/plan مو أشخاص).",
+"x": 1
+},
+{
+"w": "Affordable",
+"q": "These sunglasses are 3,000 riyals! Can you show me something more ......?",
+"o": [
+"affordable",
+"reachable",
+"charismatic",
+"negative"
+],
+"e": "affordable = بسعر مناسب ← 3,000 ريال غالية، فيبي شي أرخص.",
+"x": 1
 }
 ];
