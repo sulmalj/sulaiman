@@ -10,6 +10,7 @@ function ranks(v){const s=v.map((x,i)=>[x,i]).sort((a,b)=>a[0]-b[0]);const r=[];
  while(i<s.length){let j=i;while(j+1<s.length&&s[j+1][0]===s[i][0])j++;const pos=[];for(let k=i;k<=j;k++)pos.push(k+1);
   for(let k=i;k<=j;k++)r[s[k][1]]={v:pos.reduce((a,b)=>a+b,0)/pos.length,pos};i=j+1;}return r;}
 const RX=ranks(X.map(x=>LV[x])), RY=ranks(Y), D=RX.map((r,i)=>r.v-RY[i].v), D2=D.map(d=>d*d), SD2=D2.reduce((a,b)=>a+b,0);
+const ORD=X.map((_,i)=>i).sort((a,b)=>LV[X[a]]-LV[X[b]]||a-b);
 const rs=1-6*SD2/(n*(n*n-1)); console.log({RX:RX.map(r=>r.v),RY:RY.map(r=>r.v),D,SD2,rs});
 const fmt=v=>String(+v.toFixed(4));
 const rk=r=>r.pos.length>1?K(`\\frac{${r.pos.join('+')}}{${r.pos.length}}=${fmt(r.v)}`):K(fmt(r.v));
@@ -23,7 +24,7 @@ const step1=`<table class="t"><tr class="hd"><th class="h">الرتبة الأو
 <tr><th class="h">الدرجة الفعلية ${K('Y')}</th>${sy.map(y=>`<td>${y}</td>`).join('')}</tr></table>`;
 // 3) جدول الرتب
 const step2=`<table class="t"><tr class="hd">${['X','Y','R_{x_i}','R_{y_i}','d_i=R_{x_i}-R_{y_i}','d_i^{2}'].map(h=>`<th>${K(h)}</th>`).join('')}</tr>
-${X.map((x,i)=>`<tr><td>${x}</td><td>${K(String(Y[i]))}</td><td>${rk(RX[i])}</td><td>${rk(RY[i])}</td><td>${K(fmt(D[i]))}</td><td>${K(fmt(D2[i]))}</td></tr>`).join('')}
+${ORD.map(i=>[X[i],i]).map(([x,i])=>`<tr><td>${x}</td><td>${K(String(Y[i]))}</td><td>${rk(RX[i])}</td><td>${rk(RY[i])}</td><td>${K(fmt(D[i]))}</td><td>${K(fmt(D2[i]))}</td></tr>`).join('')}
 <tr class="s"><td colspan="5"></td><td>${K('\\Sigma='+fmt(SD2))}</td></tr></table>`;
 // 4) القانون والتعويض والناتج
 const tex=String.raw`r_s=1-\dfrac{6\sum d_i^{2}}{n\left(n^{2}-1\right)}=1-\dfrac{6(${fmt(SD2)})}{${n}(${n*n}-1)}=\fcolorbox{${BOX}}{transparent}{$\;${fmt(rs)}\;$}`;
