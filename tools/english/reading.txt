@@ -367,12 +367,12 @@
 - force
 - blame
 !! «Experts encourage these students to begin with small steps» = الخبراء ينصحونهم ويشجعونهم يبدون بخطوات صغيرة ← advise.
-?? Experts tell shy students to begin with ______.
-* small steps
-- a big chance
-- a long talk
-- a new club
-!! الفقرة 3: «Experts encourage these students to begin with small steps instead of waiting for a big chance» ← خطوات صغيرة، مو ينتظرون فرصة كبيرة.
+?? The writer says that shy students can arrive at class ______.
+* a few minutes early
+- right on time
+- with a friend
+- after the break
+!! الفقرة 3: «They can arrive at class a few minutes early and say hello to the person sitting next to them» ← يجون قبل المحاضرة بدقايق ويسلّمون على اللي جنبهم.
 ?? What does the underlined word "he" in paragraph 3 refer to?
 * Faisal's classmate
 - Faisal himself
@@ -383,7 +383,7 @@
 * small steps can work
 - clubs are not useful
 - study groups are better
-- friends come quickly
+- teachers can help
 !! الفقرة 3: بعد ما ذكر الخطوات الصغيرة قال «Faisal, a second-year student, says that this worked for him» ← بدأ بسؤال بسيط وصار صاحبه الأقرب.
 ?? The writer says that when a friendship does not grow quickly, students should ______.
 * be patient
@@ -675,9 +675,9 @@
 !! الفقرة 1: «Instead, farmers use natural methods, such as moving crops to different fields each year».
 ?? Why do organic farmers move crops to different fields each year?
 * to keep the soil healthy
-- to kill insects
-- to grow more food
-- to save money
+- to dry the soil
+- to save water
+- to attract buyers
 !! الفقرة 1: «moving crops to different fields each year to keep the soil healthy».
 ?? Scientists still disagree about how important the difference in ______ is.
 * nutrients
@@ -789,9 +789,9 @@
 !! الفقرة 4: «the heart of Eid has not changed: it is still about spending time with the people they love».
 ?? What is the best title for the passage?
 * How people celebrate Eid in Saudi Arabia
-- The history of Hajj
-- Travelling during the holidays
-- Traditional Saudi dishes
+- The history of Hajj in Saudi Arabia
+- Travelling abroad during the holidays
+- How to cook traditional Saudi dishes
 !! القطعة كلها عن احتفال العيد في السعودية: الصلاة والزيارات والعيدية والأكل والفعاليات.
 
 ## 13 | Travelling on a Small Budget | key=11
@@ -1143,7 +1143,7 @@
 !! «so dependent on their phones that their behaviour is similar to an addiction» ← dependent on = معتمد عليه لدرجة ما يقدر يستغني عنه (relying on).
 ?? Looking at a screen late at night can make it harder to ______.
 * fall asleep
-- wake up
+- find our way
 - read the news
 - make calls
 !! الفقرة 2: «Looking at a screen late at night can make it harder to fall asleep».
@@ -1213,12 +1213,12 @@
 - calm
 - quiet
 !! الجملة نفسها توضّحها: «get angry about small things that would not normally bother them» ← irritable = سريع الانزعاج والعصبية.
-?? Which effect of one short night does the writer NOT mention?
+?? Which problem does the writer NOT mention in paragraph 2?
 * headaches
-- anger
 - poor concentration
 - more mistakes
-!! الفقرة 2 ذكرت العصبية «get angry about small things» وضعف التركيز «harder to concentrate» والأخطاء «more mistakes in simple tasks»، والصداع ما انذكر.
+- dangerous driving
+!! الفقرة 2 ذكرت ضعف التركيز «harder to concentrate» والأخطاء «more mistakes in simple tasks» وخطر السواقة «Driving when very tired is especially dangerous»، والصداع ما انذكر.
 ?? Driving when very tired is especially dangerous because a sleepy driver ______.
 * reacts more slowly
 - drives too fast
@@ -1417,12 +1417,12 @@
 - healthy meals
 - cigarettes
 !! «Doctors in some countries report that lonely patients visit them more often» ← المرضى يزورون الدكاترة ← them = doctors.
-?? Some lonely patients visit doctors more often because the visit gives them a chance to ______.
-* talk to someone
-- get medicine
-- stop smoking
-- meet students
-!! الفقرة 2: «not always because they are ill, but because the visit gives them a chance to talk to someone».
+?? Lonely older people are more likely to suffer from heart disease and ______.
+* poor sleep
+- poor eyesight
+- back pain
+- headaches
+!! الفقرة 2: «Lonely older people are more likely to suffer from heart disease and poor sleep».
 ?? What does the underlined word "connected" in paragraph 3 mean?
 * in contact with others
 - far from others

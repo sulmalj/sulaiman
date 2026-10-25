@@ -18,7 +18,7 @@ Shy || Lama is very ...... She doesn't like to talk to people she doesn't know a
 Tall || My father is 190 cm. He is so ..... that he has to bend down at doors. || tall | short | shy | wealthy
 Be good at || Omar ..... math. He always gets the highest marks and helps his classmates with their homework. || is good at | belongs to | depends on | is afraid of
 Be interested in || I ..... history, so I read a lot of books about old kingdoms and visit museums. || am interested in | belong to | depend on | am tired of
-Be on || My favourite TV show ..... at nine o'clock every Friday night. I never miss an episode. || is on | belongs to | gives up | runs out
+Be on || My brother ..... the university basketball team. He plays in every match and trains every evening. || is on | is afraid of | looks like | gives up
 Get together with || Every weekend, I ..... my cousins at my grandmother's house, and we have dinner together. || get together with | give up | belong to | run out of
 Go || I usually ..... to university by bus. It takes about forty minutes from my house. || go | play | read | buy
 Go to || Every summer, my family and I ..... the beach in Jeddah. We swim in the sea every day. || go to | listen to | agree with | look like
@@ -47,11 +47,11 @@ Academic || The university's ..... year starts in September and ends in June. St
 Academy || My son trains at a football ..... for young players. He hopes to play professionally one day. || academy | flood | drawer | pharmacy
 Attend || All students must ..... the lecture on Monday. The professor will check who is absent. || attend | feed | collect | delete
 Difficult || The final exam was very ...... Most students couldn't finish it, and many failed. || difficult | easy | enjoyable | pleasant
-Difficulty || My grandfather has ..... reading small letters. He needs his glasses to read the newspaper. || difficulty | strength | memory | luggage
+Difficulty || Many new students have ..... understanding the professor. He speaks very fast and uses long words. || difficulty | strength | memory | luggage
 Enjoy || I really ..... spending time with my friends at the beach. We always have so much fun there. || enjoy | avoid | fail | regret
 Enjoyable || Our trip to AlUla was very ...... We had a great time and took lots of photos. || enjoyable | boring | dangerous | awful
 Friend || Ahmed is my best ...... We have known each other since we were children in primary school. || friend | landlord | professor | enemy
-Help || Can you ..... me carry these boxes to the car? They are too heavy for me. || help | fail | avoid | blame
+Help || Thank you for your ..... with my homework. I couldn't finish it on time without you. || help | difficulty | luggage | weather
 Intelligence || Chess needs a lot of ..... and careful thinking. You must plan many moves ahead. || intelligence | electricity | rent | furniture
 Student || Sara is a ..... at King Saud University. She studies medicine and wants to be a doctor. || student | landlord | team | stadium
 Studious || Khalid is very ...... He studies for hours every day and always finishes his homework on time. || studious | lonely | messy | lazy
@@ -129,7 +129,7 @@ Unhealthy || Eating burgers and fries every day is ...... It can make you overwe
 Unsafe || Don't swim in this part of the sea today. It is ..... because the waves are very strong. || unsafe | comfortable | neat | shallow
 Cost || I love this watch, but how much does it .....? I only have 500 riyals with me. || cost | guess | invite | earn
 Guess || I didn't study for this quiz at all. I'll just ..... the answers and hope for the best. || guess | invite | provide | deliver
-Idea || I have a great .....! Let's have a picnic in the desert this weekend with the whole family. || idea | memory | event | habit
+Idea || Let's have a picnic in the desert this weekend with the whole family. What a great .....! || idea | memory | habit | receipt
 Invite || My sister is getting married next month. She wants to ..... all her university friends to the wedding. || invite | avoid | guess | ignore
 Nature || We spent the weekend in Abha and enjoyed its beautiful ...... There were green mountains, trees and waterfalls. || nature | electricity | shortage | traffic
 Program || My favorite TV ..... is on every Thursday night. It shows wild animals living in Africa. || program | flavor | ingredient | receipt
@@ -145,7 +145,7 @@ Make friends || Join a student club in your first year. It's the easiest way to 
 Make plans || My brother and I want to travel this summer. Let's ..... plans tonight and choose a city. || make | tell | do | take
 Take a vacation || I've worked for eleven months without a break. I really need to ..... a vacation soon. || take | tell | play | build
 Take a walk || After dinner, my grandfather likes to ..... a walk around the neighborhood. He says it helps him sleep. || take | tell | make | play
-Tell a joke || My uncle is so funny. He always ..... a joke at dinner, and everyone laughs. || tells | takes | has | does
+Tell a joke || Every time my cousin Fahad ..... a joke, the whole class laughs. Even the teacher smiles. || tells | takes | does | builds
 Crowded || The mall was very ..... on the first day of Eid. We couldn't find a place to park. || crowded | lonely | private | spacious
 Modern || My uncle's new villa is very ...... It has smart lights, a new kitchen and fast Wi-Fi. || modern | run-down | dirty | ancient
 Outdoors || The weather is lovely today. Let's take the children to the park so they can play ...... || outdoors | online | below | indoors
@@ -177,9 +177,9 @@ Design || I really like the ..... of this new phone. It is thin, light and looks
 Drawer || I can't find my car keys. Did you put them in the top ..... of my desk? || drawer | building | field | ceiling
 Electricity || There was a big storm last night, so we had no ...... The lights and TV didn't work. || electricity | environment | tradition | courage
 Environment || Please don't throw plastic bags on the beach. We all need to protect the ...... || environment | electricity | entertainment | furniture
-Extremely || It was ..... hot in Riyadh yesterday. The temperature reached fifty degrees in the afternoon. || extremely | badly | maybe | rarely
+Extremely || It was ..... hot in Riyadh yesterday. The temperature reached forty-eight degrees in the afternoon. || extremely | badly | maybe | rarely
 Share || My brother and I ..... a bedroom. We each have a bed and a desk in it. || share | spend | cost | invent
-Space || My son wants to be an astronaut. He dreams of traveling to ..... and visiting the moon. || space | field | campus | traffic
+Space || Our apartment is too small for our big family. We need more ..... for the children to play. || space | rent | stress | traffic
 Spend Time || I'm busy all week, so on weekends I like to ..... time with my family at the farm. || spend | cost | guess | lend
 View || Our hotel room was on the twentieth floor. We had a beautiful ..... of the Red Sea. || view | shortage | rent | recipe
 Own || I'm tired of sharing a bedroom with my two brothers. I really want my ..... room. || own | alone | asleep | afraid
@@ -208,22 +208,22 @@ Goal || My main ..... this year is to get an A in statistics. I study every nigh
 Instead of || I drink water ..... soda now. It's healthier, and my doctor says it's better for my teeth. || instead of | depends on | above | because of
 Lose weight || My father wants to ..... weight, so he walks for an hour every evening and avoids sweets. || lose | grow | break | gain
 Maybe || I'm not sure I can come to the meeting today. ..... I'll come tomorrow instead. || Maybe | Extremely | Badly | Rarely
-Plan || We ..... to travel to Turkey next summer. We already booked the flights and the hotel. || plan | own | cost | forget
+Plan || What's your ..... for the weekend? Do you want to go to the beach or stay home? || plan | flavor | shortage | luggage
 Pay Attention || Please ..... to the professor. This part of the lesson will be on the final exam. || pay attention | give up | stay up | show off
 Stay Up || I had to ..... until 2 a.m. last night to finish my statistics homework. I'm so tired now. || stay up | give up | pick up | calm down
 Stress || Final exams cause a lot of ..... for students. Many of them feel worried and can't sleep. || stress | energy | strength | comfort
 Unfortunately || I wanted to go to the beach on Friday, but ....., it rained all day. || unfortunately | maybe | extremely | luckily
 Turn Off || Please ..... your phone before the exam starts. Any phone that rings will be taken away. || turn off | stay up | give up | show off
-Control || The road was wet and slippery. The driver couldn't ..... the car, and it hit a wall. || control | produce | reduce | invent
+Control || The road was wet and slippery. The driver lost ..... of the car, and it hit a wall. || control | stress | shortage | silence
 Depends on || Our trip to the beach tomorrow ..... the weather. If it rains, we will stay home. || depends on | belongs to | listens to | looks after
 Diet || My aunt is on a strict ...... She eats only vegetables, eggs and grilled chicken to lose weight. || diet | stress | pill | journey
 Energy || I slept only three hours last night, so I have no ..... today. I just want to rest. || energy | diet | behavior | furniture
-Exercise || Doctors say regular ..... is good for your heart, like walking, cycling or swimming for thirty minutes. || exercise | stress | shortage | traffic
+Exercise || My doctor says I should ..... for thirty minutes every day. Walking or swimming is a good start. || exercise | celebrate | guess | complain
 Healthy || My grandfather is eighty but still very ...... He eats well, walks daily and never gets sick. || healthy | lonely | noisy | lazy
 Lonely || My uncle lives alone in a small village and has no friends nearby. He often feels ...... || lonely | crowded | positive | delighted
 Manage || My aunt ..... a big company in Jeddah with 500 employees. She is the boss of everyone there. || manages | reduces | becomes | borrows
 Pill || I have a bad headache. The doctor told me to take one ..... after every meal. || pill | diet | stress | blanket
-Produce || This factory in Dammam ..... about 1,000 cars every month. They are sold all over the Gulf. || produces | reduces | becomes | admires
+Produce || This factory ..... about 1,000 cars every month. They are sold all over the Gulf. || produces | reduces | becomes | admires
 Vitamin || Eat more oranges and lemons in winter. They are full of ..... C, which helps you fight colds. || vitamin | diet | stress | sugar
 Reduce || Turn off the lights when you leave the room. It will ..... your electricity bill a lot. || reduce | increase | celebrate | double
 Run-down || I haven't slept well for a week because of exams. I feel weak and ..... all the time. || run-down | healthy | studious | cheerful
