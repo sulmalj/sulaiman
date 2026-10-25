@@ -696,6 +696,17 @@ window.GRAMMAR = [
 ],
 "e": "He ← النفي في المضارع البسيط مع He / She / It يكون doesn't + الفعل الأساسي: doesn't sing. (don't مع I/You/We/They، وnot/no لحالها ما تنفي الفعل.)",
 "x": 1
+},
+{
+"q": "I ..... a photojournalist. I take photos for magazines like National Geographic.",
+"o": [
+"am",
+"are",
+"is",
+"be"
+],
+"e": "I ← مع I نستخدم am: I am a photojournalist.",
+"x": 1
 }
 ]
 },
