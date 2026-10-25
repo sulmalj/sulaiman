@@ -54,7 +54,7 @@ html,body{margin:0;background:transparent}#w{display:inline-block;padding:14px 2
 .ans{text-align:center;margin-top:26px}.ans span{display:inline-block;direction:rtl;font:42px Rx;color:${BR};border:3.5px solid ${BOX};border-radius:12px;padding:8px 30px 14px}`;
 (async()=>{const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({deviceScaleFactor:3});
 const f=`${OUT}/_es.html`;
-for(const [name,body] of [['السؤال - الجدول مع اللوحة الفاضية',`<div class="q">${data}<div class="g">${grid(false)}</div></div>`],['جدول البيانات',data],['الخطوة 1 - الرتب الأولية',step1],['الخطوة 2 - جدول الرتب',step2],
+for(const [name,body] of [['السؤال - الجدول مع اللوحة الفاضية',`<div class="q">${data}<div class="g">${grid(false)}</div></div>`],['الحل كامل',`<div class="q">${step1}<div class="g">${step2}</div><div class="g">${grid(true)}</div><div class="g">${sol}</div></div>`],['جدول البيانات',data],['الخطوة 1 - الرتب الأولية',step1],['الخطوة 2 - جدول الرتب',step2],
   ['لوحة انتشار الرتب - فاضية',grid(false)],['لوحة انتشار الرتب - محلولة',grid(true)],['حساب معامل سبيرمان',sol]]){
  fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${body}</div></body></html>`);
  await p.goto('file://'+f); await p.evaluate(()=>document.fonts.ready);
