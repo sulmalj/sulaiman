@@ -254,3 +254,4 @@ Popular || Everyone is buying the new Dubai chocolate. It's very ..... now. || p
 Interested in || I am ..... getting a job that involves international travel. I love exploring new countries. || interested in | late for | addicted to | up into || interested in = مهتم بـ ← يحب يستكشف دول جديدة، فهو مهتم بشغل فيه سفر.
 Expert || If you're not sure how to fix it, you should ask a/an ...... || expert | fact | theory | plan || expert = خبير ← إذا ما تعرف تصلّحه تسأل شخص خبير (fact/theory/plan مو أشخاص).
 Affordable || These sunglasses are 3,000 riyals! Can you show me something more ......? || affordable | reachable | charismatic | negative || affordable = بسعر مناسب ← 3,000 ريال غالية، فيبي شي أرخص.
+Strong || Ahmed is very ...... He goes to the gym five times a week. || strong | lazy | shy | weak || strong = قوي ← يروح النادي خمس مرات في الأسبوع، فهو قوي.
