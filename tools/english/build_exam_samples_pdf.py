@@ -121,13 +121,13 @@ def end_ad():
     def card(cls, title, desc, url, label, hint):
         return (f'<div class="ec {cls}"><div class="et">{title}</div><div class="ed">{desc}</div>'
                 f'<a class="eq" href="{url}">{guide.qr_img(url, 118)}</a>'
-                f'<a class="eb" href="{url}">{en(label)}</a><div class="eh">👆 {hint}</div></div>')
+                f'<div class="eh">{hint}</div><a class="eb" href="{url}">{en(label)}</a></div>')
     return ('<div class="endad"><div class="eh1">تبي تستعد للاختبار صح؟</div>'
             '<div class="eh2">دورة ملازم عدل للإنجليزي — وعندنا جميع مواد المسار الإنساني</div><div class="eg">'
             + card('st', 'متجر ملازم عدل', 'الدورات والملازم لكل المواد', 'https://mtgradl.com', 'mtgradl.com',
-                   'للدخول للمتجر اضغط على الرابط أو امسح الباركود')
-            + card('tg', 'قناتنا على التليجرام', 'لمعرفة كل جديد: نماذج وحلول وتنبيهات', 'https://t.me/mlazmadl', 't.me/mlazmadl',
-                   'للدخول للقناة اضغط على الرابط أو امسح الباركود')
+                   'للدخول للمتجر اضغط على الرابط')
+            + card('tg', 'قناتنا على التليجرام', 'لمعرفة كل جديد: نماذج وحلول وتسريبات', 'https://t.me/mlazmadl', 't.me/mlazmadl',
+                   'للدخول للقناة اضغط على الرابط')
             + '</div></div>')
 
 def build():
@@ -186,9 +186,9 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
 .endad .et{{font-size:15pt;font-weight:700;color:#204b7d}}
 .endad .ed{{font-size:10pt;color:#5b6675;margin-bottom:2.5mm}}
 .endad .eq{{display:block}}
-.endad .eb{{display:inline-block;margin-top:2mm;background:#b0698d;color:#fff;border-radius:9px;padding:1.5mm 6mm;font-size:15pt;font-weight:700;text-decoration:underline;text-underline-offset:3px}}
+.endad .eb{{display:inline-block;margin-top:1.5mm;background:#b0698d;color:#fff;border-radius:9px;padding:1.5mm 6mm;font-size:15pt;font-weight:700;text-decoration:underline;text-underline-offset:3px}}
 .endad .tg .eb{{background:#2a8bd0}}
-.endad .eh{{margin-top:2.5mm;font-size:10.5pt;font-weight:600;color:#8a1c1c}}
+.endad .eh{{margin-top:2.5mm;font-size:10.5pt;font-weight:700;color:#204b7d;border-top:1px dashed #cbd5e1;padding-top:2mm}}
 .ans q.en{{display:block;quotes:'“' '”';margin:.5mm 0;line-height:1.5;color:#334155;font-style:italic}}
 """
     body = f"""<div class="cover"><img src="file://{LOGO}"><h1>نماذج أسئلة مع الحل</h1>
