@@ -5,7 +5,9 @@
 الناتج: store/english/exam-samples-2/humanities-exam-samples-with-answers.pdf
 """
 import html, os, re, subprocess, tempfile
-import pypdf, pypdfium2
+import pypdf, pypdfium2, pymupdf, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_guide_pdf as guide   # صفحة الإعلان نفسها حق دليل الميد
 from pypdf.annotations import Link
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -13,6 +15,7 @@ OUT = os.path.join(ROOT, 'store/english/exam-samples-2/humanities-exam-samples-w
 FONTS = os.path.join(ROOT, 'tools/arab100/fonts')
 LOGO = os.path.join(ROOT, 'tools/statistics/logo-adl.png')
 LETTERS = 'ABCD'
+AD_EXTRA = '<div class="extra">وعندنا جميع مواد المسار الإنساني<small>كل المواد متوفرة في المتجر: mtgradl.com</small></div>'
 
 # القطعة: نفس نص القطعة 4 في tools/english/reading.txt (والشروح منه)
 def passage():
@@ -136,6 +139,7 @@ bdi.en{{unicode-bidi:isolate}}
 .cover img{{height:20mm}}
 .cover h1{{margin:3mm 0 1mm;color:#204b7d;font-size:21pt;font-weight:700}}
 .cover .sub{{color:#b0698d;font-weight:600;font-size:13pt}}
+.cover .exam{{display:inline-block;margin-top:3mm;background:#204b7d;color:#fff;font-weight:700;font-size:12pt;border-radius:999px;padding:1.2mm 6mm}}
 .cover .toc{{margin-top:4mm;display:flex;justify-content:center;gap:5mm;font-size:10.5pt;color:#475569}}
 .cover .toc span{{background:#eef3f9;border-radius:6px;padding:1mm 3mm}}
 h2{{color:#fff;background:#204b7d;border-radius:8px;padding:2mm 4mm;font-size:14pt;margin:7mm 0 4mm;break-after:avoid}}
@@ -164,6 +168,7 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
 """
     body = f"""<div class="cover"><img src="file://{LOGO}"><h1>نماذج أسئلة مع الحل</h1>
 <div class="sub">إنجليزي · المسار الإنساني · جزئية الميد</div>
+<div class="exam">اختبار الميد · <bdi>1448</bdi> هـ · الفصل الأول · دفعة الساعة <bdi>10</bdi></div>
 <div class="toc"><span>١) قطعة + 10 أسئلة</span><span>٢) قواعد: 10 أسئلة</span><span>٣) كلمات: 10 أسئلة</span></div></div>
 <h2>١) القطعة <small>{en('Reading')}</small></h2>
 <div class="passage en"><h3>Apples in Washington State</h3>{''.join(para(l) for l in paras)}</div>
@@ -205,6 +210,21 @@ h2 small{{font-weight:400;font-size:10.5pt;opacity:.9;margin-inline-start:2mm}}
     for pi, r, url in boxes:
         w.add_annotation(pi, Link(rect=(r[0] - 1, r[1] - 2, r[2] + 1, r[3] + 2), url=url))
     w.write(OUT)
+    # أول صفحة: إعلان الدورة (نفس صفحة دليل الميد) + سطر «جميع مواد المسار الإنساني»
+    ad = OUT + '.ad.pdf'
+    with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as f:
+        f.write(guide.ad_page(AD_EXTRA)); adsrc = f.name
+    js = f"""const {{ chromium }} = require('playwright');
+(async () => {{ const b = await chromium.launch(); const p = await b.newPage();
+  await p.goto('file://{adsrc}', {{ waitUntil: 'networkidle' }}); await p.evaluate(() => document.fonts.ready);
+  await p.pdf({{ path: '{ad}', format: 'A4', printBackground: true, preferCSSPageSize: true }}); await b.close(); }})();"""
+    with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False) as f:
+        f.write(js); jsf = f.name
+    subprocess.run(['node', jsf], check=True, env=env)
+    os.unlink(adsrc); os.unlink(jsf)
+    d = pymupdf.open(ad); assert len(d) == 1, 'صفحة الإعلان طلعت أكثر من صفحة'
+    d.insert_pdf(pymupdf.open(OUT)); d.set_metadata({'title': 'نماذج أسئلة مع الحل — إنجليزي المسار الإنساني (الميد 1448)', 'author': 'ملازم عدل'})
+    d.save(OUT + '.tmp', garbage=3, deflate=True); os.replace(OUT + '.tmp', OUT); os.unlink(ad)
     print('PDF:', OUT)
 
 if __name__ == '__main__':
