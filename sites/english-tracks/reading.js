@@ -215,14 +215,14 @@ window.READING = [
 "e": "الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Working from home has advantages, but it also has problems.",
-"Working from home is perfect for all workers.",
-"Offices are always better than working from home.",
-"Employers should pay for more office parties."
+"The Good and Bad Sides of Working From Home",
+"Why Working From Home Is Perfect for Everyone",
+"Why Offices Are Always Better Than Home",
+"Office Parties: What Employers Should Pay For"
 ],
-"e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems»."
+"e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems» ← فأفضل عنوان: The Good and Bad Sides of Working From Home"
 }
 ],
 "x": 1
@@ -443,14 +443,14 @@ window.READING = [
 "e": "gradually = تدريجياً، شوي شوي مع الوقت. يعني الطالب يبني عادة التوفير خطوة خطوة."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Students can save money with a plan and a few good habits.",
-"Students need a bigger monthly income before they can save money.",
-"University textbooks are too expensive for most students to buy.",
-"Students should never buy coffee or snacks at university."
+"How Students Can Save Money",
+"Why Students Need a Bigger Income to Save",
+"Why Students Should Never Buy Coffee",
+"The History of Saudi Money"
 ],
-"e": "الفقرة 1: «It mainly needs a plan and a few good habits»، وباقي القطعة تشرح هذي العادات (الميزانية، تقليل المصاريف، التوفير أول ما يجي المال)."
+"e": "الفقرة 1: «It mainly needs a plan and a few good habits»، وباقي القطعة تشرح هذي العادات (الميزانية، تقليل المصاريف، التوفير أول ما يجي المال) ← فأفضل عنوان: How Students Can Save Money"
 }
 ]
 },
@@ -669,14 +669,14 @@ window.READING = [
 "e": "expect = يتوقّع. الخبراء يتوقعون إن المشاكل بتصغر «in the coming years»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Electric cars have benefits and problems, but they will probably become more common.",
-"Electric cars are too expensive, so most people will never buy them.",
-"Petrol cars will disappear from the roads in the next few years.",
-"There are not enough charging stations, so electric cars have no future."
+"Electric Cars: Benefits, Problems and the Future",
+"Why Nobody Will Ever Buy an Electric Car",
+"The End of Petrol Cars in the Next Few Years",
+"Why Electric Cars Have No Future Without Chargers"
 ],
-"e": "الفقرة 2 المميزات، والفقرة 3 العيوب، والفقرة 4: «electric cars will soon become the normal choice for new drivers». (وقالت إن سيارات البنزين بتبقى وقت طويل، فما بتختفي قريب.)"
+"e": "الفقرة 2 المميزات، والفقرة 3 العيوب، والفقرة 4: «electric cars will soon become the normal choice for new drivers». (وقالت إن سيارات البنزين بتبقى وقت طويل، فما بتختفي قريب.) ← فأفضل عنوان: Electric Cars: Benefits, Problems and the Future"
 }
 ]
 },
@@ -782,14 +782,14 @@ window.READING = [
 "e": "الفقرة 4: «The answer probably depends on the reader and the situation. A student might use an e-book to search quickly for information, but choose a printed book for serious study» ← يختار حسب الموقف."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Paper books and e-books both have benefits, and reading regularly matters most.",
-"E-books will soon replace paper books completely, even for serious study.",
-"Paper books are always better than e-books, so nobody should use screens.",
-"Students should only read e-books because they are cheaper and lighter."
+"Paper or Screen: What Matters Is Reading",
+"Why E-books Will Soon Replace Paper Books",
+"Why Nobody Should Read on a Screen",
+"E-books: The Only Choice for Students"
 ],
-"e": "القطعة تذكر مميزات الكتب الإلكترونية (الفقرة 2) والورقية (الفقرة 3)، وآخرها: «the format matters less than the habit itself»."
+"e": "القطعة تذكر مميزات الكتب الإلكترونية (الفقرة 2) والورقية (الفقرة 3)، وآخرها: «the format matters less than the habit itself» ← فأفضل عنوان: Paper or Screen: What Matters Is Reading"
 }
 ]
 },
@@ -895,14 +895,14 @@ window.READING = [
 "e": "الفقرة 4: «look carefully at the date, because old stories are sometimes shared again as if they were new»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Social media spreads news quickly, so readers need to check stories carefully.",
-"Newspapers are more useful than social media because they are never wrong.",
-"Only professional journalists should be allowed to post news online.",
-"Social media is only useful during emergencies such as floods and storms."
+"Social Media News: Check Before You Share",
+"Why Newspapers Are Never Wrong About the News",
+"Only Journalists Should Post News Online",
+"Social Media: Useful Only During Floods and Storms"
 ],
-"e": "القطعة تذكر فوائد سرعة الأخبار (الفقرة 2)، ومشكلة الأخبار الكاذبة (الفقرة 3)، وكيف نتأكد قبل ما ننشر (الفقرة 4)."
+"e": "القطعة تذكر فوائد الأخبار في السوشال ميديا (الفقرة 2)، ومشكلة الأخبار الكاذبة (الفقرة 3)، وكيف نتأكد قبل ما ننشر (الفقرة 4) ← فأفضل عنوان: Social Media News: Check Before You Share"
 }
 ]
 },
@@ -1008,14 +1008,14 @@ window.READING = [
 "e": "الفقرة 4: «Camel milk is popular because it is healthy and contains a lot of vitamin C»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Camels are well suited to the desert and are still important in Saudi culture.",
-"Camels are no longer useful or important in modern Saudi Arabia.",
-"Camels store water in their humps, so they can live in the desert.",
-"Camel racing is the most popular sport in Saudi Arabia today."
+"Camels: Ships of the Desert",
+"Camels: No Longer Important in Saudi Arabia",
+"How Camels Store Water in Their Humps",
+"Camel Racing: Saudi Arabia's Most Popular Sport"
 ],
-"e": "الفقرة 2 و3 تشرح كيف جسم الجمل مناسب للصحراء، والفقرة 4: «camels remain an important part of the culture»."
+"e": "الفقرة 2 و3 تشرح كيف جسم الجمل مناسب للصحراء، والفقرة 4: «camels remain an important part of the culture» ← فأفضل عنوان: Camels: Ships of the Desert"
 }
 ]
 },
@@ -1234,14 +1234,14 @@ window.READING = [
 "e": "الفقرة 4: «For many Saudi families, a visit to the mall is also a social activity»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Online shopping and store shopping both have advantages, so most people use both.",
-"Online shopping will soon replace all shops and malls in Saudi Arabia.",
-"Shopping in stores is always cheaper because you can compare prices.",
-"Shopping online is not safe, so people should only visit stores."
+"Online Shopping and Stores: Pros and Cons",
+"Why Online Shopping Will Replace All Malls",
+"Why Stores Are Always Cheaper",
+"Online Shopping Is Never Safe"
 ],
-"e": "القطعة تقارن بين الطريقتين، وآخرها: «they shop online for some things and visit stores for others»."
+"e": "القطعة تقارن بين الطريقتين: مميزات التسوق أونلاين (الفقرة 2) وعيوبه (الفقرة 3) ومميزات المحلات (الفقرة 4) ← فأفضل عنوان: Online Shopping and Stores: Pros and Cons"
 }
 ]
 },
@@ -1347,14 +1347,14 @@ window.READING = [
 "e": "الفقرة 4: «Many people find it relaxing, because it gives them a break from screens and studying»."
 },
 {
-"q": "What is the writer's purpose in the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"To encourage young people to learn to cook",
-"To tell people to order food more often",
-"To explain how restaurants make their meals",
-"To teach readers a recipe for kabsa"
+"Learning to Cook",
+"Why Restaurant Food Is Healthier",
+"The History of Kabsa",
+"How Delivery Apps Work"
 ],
-"e": "القطعة تذكر فوائد الطبخ وكيف تبدأ، وآخر جملة تشجّع: «why not open the fridge and create something yourself?»."
+"e": "القطعة كلها تشجّع على تعلّم الطبخ: الفقرة 1 «Learning to cook is a practical solution to both problems»، وبعدها فوايده وكيف تبدأ ← Learning to Cook."
 }
 ]
 },
@@ -1573,14 +1573,14 @@ window.READING = [
 "e": "الفقرة 4: «traditional choices such as eggs, beans, cheese, and bread, which give the body protein and keep you full for longer» ← الفطور التقليدي يشبّعك لوقت أطول."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Breakfast gives us energy, and a healthy one can be quick and easy.",
-"Skipping breakfast is the best and fastest way to lose weight.",
-"Students should eat a big lunch instead of eating breakfast.",
-"A healthy breakfast always takes a long time to prepare at home."
+"Don't Skip Breakfast",
+"Breakfast: The Least Important Meal of the Day",
+"Breakfast: Only Important for Young Children",
+"Why a Healthy Breakfast Takes a Long Time"
 ],
-"e": "الفقرة 2 تقول إن الفطور يعطي طاقة، والفقرة 4: «a healthy breakfast does not have to take a long time» ← الفطور مهم والصحي منه سريع وسهل."
+"e": "الفقرة 2 تقول إن الفطور يعطي طاقة، والفقرة 4: «a healthy breakfast does not have to take a long time» ← الفطور مهم والصحي منه سريع وسهل ← فأفضل عنوان: Don't Skip Breakfast"
 }
 ]
 },
@@ -1686,14 +1686,14 @@ window.READING = [
 "e": "الفقرة 4: «the government is working hard to protect the old sites… For example, visitors must book a tour to enter Hegra» ← المثال يوضّح إن الحكومة تحمي المواقع القديمة."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"AlUla is a special place because of its history, nature, and culture.",
-"AlUla is famous only for Hegra and its old tombs.",
-"AlUla is a new city with modern buildings and concert halls.",
-"Tourists should visit AlUla only at night to watch the stars."
+"AlUla: History, Nature and Culture",
+"AlUla: Famous Only for Its Old Tombs",
+"AlUla: A New City of Modern Buildings",
+"Why Tourists Should Visit AlUla Only at Night"
 ],
-"e": "الفقرة 2 عن التاريخ (Hegra)، والفقرة 3 عن الطبيعة، والفقرة 4 عن الثقافة والفعاليات ← العلا مميزة بتاريخها وطبيعتها وثقافتها."
+"e": "الفقرة 2 عن التاريخ (Hegra)، والفقرة 3 عن الطبيعة، والفقرة 4 عن الثقافة والفعاليات ← العلا مميزة بتاريخها وطبيعتها وثقافتها ← فأفضل عنوان: AlUla: History, Nature and Culture"
 }
 ]
 },
@@ -1799,14 +1799,14 @@ window.READING = [
 "e": "الفقرة 4 ذكرت: «food, fresh water, a clean place to live, and regular visits to the vet» و«attention every day». الألعاب ما انذكرت (الكاتب قال إن الحيوان «not a toy» بس)."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Pets can be good for our health, but they need a lot of care.",
-"Pets are the best cure for every illness that people have.",
-"Only older people who live alone should keep pets at home.",
-"Families should not keep pets because they cost too much money."
+"Pets and Health: Benefits and Responsibilities",
+"Pets: The Cure for Every Illness",
+"Why Only Older People Should Keep Pets",
+"Why Families Should Not Keep Pets"
 ],
-"e": "الفقرة 2 و3 عن فوائد الحيوانات الأليفة للصحة، والفقرة 4: «having a pet is a big responsibility» ← مفيدة بس تحتاج اهتمام."
+"e": "الفقرة 2 و3 عن فوائد الحيوانات الأليفة للصحة، والفقرة 4: «having a pet is a big responsibility» ← مفيدة بس تحتاج اهتمام ← فأفضل عنوان: Pets and Health: Benefits and Responsibilities"
 }
 ]
 },
@@ -1912,14 +1912,14 @@ window.READING = [
 "e": "encourage = يشجّع. الخبراء يشجّعون الشباب يتعلّمون مهارات التقنية."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Robots are already part of our lives, and people need new skills for the future.",
-"Robots will soon take all of our jobs, so learning new skills is useless.",
-"Robots are only used in factories, where they work all day and night.",
-"People should stop using robots at home because they make mistakes."
+"Robots Today and the Skills We Need Tomorrow",
+"Robots Will Take All Our Jobs, So Why Learn?",
+"Robots: Only Used in Factories",
+"Why People Should Stop Using Robots at Home"
 ],
-"e": "الفقرة 1: «robots are already part of everyday life»، والفقرة 4 تنصح بتعلّم مهارات التقنية للمستقبل."
+"e": "الفقرة 1: «robots are already part of everyday life»، والفقرة 4 تنصح بتعلّم مهارات التقنية للمستقبل ← فأفضل عنوان: Robots Today and the Skills We Need Tomorrow"
 }
 ]
 },
@@ -2025,14 +2025,14 @@ window.READING = [
 "e": "precious = ثمين وغالي، يعني مورد مهم لازم نحافظ عليه."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Water is precious, and everyone can help save it with small changes.",
-"Saudi Arabia has plenty of fresh water from its rivers and lakes.",
-"Desalination is cheap and easy, so saving water is not necessary.",
-"People should stop watering their plants during the summer."
+"Small Changes to Save Precious Water",
+"Saudi Arabia's Many Rivers and Lakes",
+"Why Saving Water Is Not Necessary",
+"Stop Watering Your Plants in Summer"
 ],
-"e": "القطعة تشرح أهمية الماي وندرته (الفقرة 1 و2)، وطرق بسيطة لتوفيره (الفقرة 3 و4): «If everyone makes small changes like these, we can protect this precious resource»."
+"e": "القطعة تشرح أهمية الماي وندرته (الفقرة 1 و2)، وطرق بسيطة لتوفيره (الفقرة 3 و4): «If everyone makes small changes like these, we can protect this precious resource» ← فأفضل عنوان: Small Changes to Save Precious Water"
 }
 ]
 },
@@ -2251,14 +2251,14 @@ window.READING = [
 "e": "الفقرة 4: «before taking photos of people, because not everyone wants their picture to be taken» ← their = الناس اللي ينصوّرون."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Photography is a popular hobby with many benefits, and anyone can do it.",
-"Photography is too expensive a hobby for most people today.",
-"Only professionals with special cameras can take good photos.",
-"Smartphones are bad for photography and should not be used."
+"Photography: A Hobby Anyone Can Enjoy",
+"Why Photography Is Too Expensive Today",
+"Good Photos Need Special Cameras",
+"Why Smartphones Are Bad for Photography"
 ],
-"e": "الفقرة 1: «anyone can become a photographer»، والقطعة تذكر فوائد التصوير (الفقرة 2 و4) ونصائح له (الفقرة 3)."
+"e": "الفقرة 1: «anyone can become a photographer»، والقطعة تذكر فوائد التصوير (الفقرة 2 و4) ونصائح له (الفقرة 3) ← فأفضل عنوان: Photography: A Hobby Anyone Can Enjoy"
 }
 ]
 },
@@ -2479,14 +2479,14 @@ window.READING = [
 "e": "الكاتب عرض فايدة الشغف في الفقرة 2: «a strong interest is not a luxury but an important practical advantage»، وانتقاده في الفقرة 3: «passion can be unreliable»، وبعدين اقترح «treat the decision as a combination of three questions» ← الشغف له قيمة حقيقية بس مو العامل الوحيد."
 },
 {
-"q": "What is the writer's main purpose in the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"to compare two kinds of advice and suggest a balanced way to choose a major",
-"to persuade students to choose well-paid majors only and ignore their interests",
-"to explain why so many students change their major after the first year",
-"to describe the courses that students take in different university majors"
+"Choosing a Major: Passion or Practicality?",
+"How to Get a Job Without a Degree",
+"Why Students Should Always Follow Their Passion",
+"The Best Universities in Saudi Arabia"
 ],
-"e": "القطعة تقارن بين «follow your passion» والاختيار العملي، وبعدين تقترح الطريقة المتوازنة: «A more balanced approach may be…»."
+"e": "القطعة تقارن بين نصيحتين: «follow your passion» والاختيار العملي «choose a subject that leads to a well-paid, secure job»، وبعدها تقترح «A more balanced approach» ← العنوان يجمع الاثنين."
 }
 ]
 },
@@ -2593,14 +2593,14 @@ window.READING = [
 "e": "substitute = بديل. يعني التقنية لازم تساعد التخطيط الجيد، مو تصير بديل عنه."
 },
 {
-"q": "What is the writer's opinion about smart cities?",
+"q": "What is the best title for the passage?",
 "o": [
-"They have real benefits, but their problems must be taken seriously.",
-"They are too expensive and risky, so all projects should be stopped.",
-"Technology in smart cities will solve every problem that people face.",
-"Their benefits are so great that privacy is not an important issue."
+"Smart Cities: Promise and Problems",
+"How to Build Your Own Smartphone App",
+"Why Cities Should Stop Using Technology",
+"The History of Public Transport"
 ],
-"e": "الكاتب ذكر الفوايد («the benefits are easiest to see») وبعدها المخاوف (الخصوصية، التكلفة، العدالة) ← يشوف فيها فايدة بس لازم ننتبه لمشاكلها."
+"e": "القطعة تذكر فوايد المدن الذكية «Transport is the area where the benefits are easiest to see»، وبعدها مشاكلها «critics warn that smart technology raises serious questions» ← العنوان Smart Cities: Promise and Problems."
 }
 ]
 },
@@ -2821,14 +2821,14 @@ window.READING = [
 "e": "exhausted = تعبان مرة ومستنزف. اللي يقبل كل دعوة ويبي يخلص كل شي بكمال يتعب."
 },
 {
-"q": "Which statement would the writer most likely agree with?",
+"q": "What is the best title for the passage?",
 "o": [
-"Getting enough sleep is part of good time management.",
-"Sleep is a luxury that busy students can skip.",
-"Students should accept every invitation they receive.",
-"Working longer hours is the key to success."
+"Better Ways to Manage Your Time",
+"Why Students Should Study Longer Hours Every Night",
+"How to Reply to Messages While Doing Homework",
+"A Guide to Popular Video Games for Students"
 ],
-"e": "الفقرة 5: «Sleep, too, should be treated as a priority rather than a luxury»."
+"e": "الفقرة 1: «Being busy, in other words, is not the same as being productive»، وباقي القطعة طرق أفضل لتنظيم الوقت (ترك تعدد المهام، تقسيم المهمة لخطوات، الفترات المركزة، الأولويات والنوم) ← فأفضل عنوان: Better Ways to Manage Your Time"
 }
 ]
 }

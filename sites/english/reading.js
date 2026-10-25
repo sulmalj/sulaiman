@@ -215,14 +215,14 @@ window.READING = [
 "e": "الفقرة 1: «Alex begins his day with some coffee. Then he takes a short walk in a nearby park»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Working from home has advantages, but it also has problems.",
-"Working from home is perfect for all workers.",
-"Offices are always better than working from home.",
-"Employers should pay for more office parties."
+"The Good and Bad Sides of Working From Home",
+"Why Working From Home Is Perfect for Everyone",
+"Why Offices Are Always Better Than Home",
+"Office Parties: What Employers Should Pay For"
 ],
-"e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems»."
+"e": "آخر الفقرة 3: «Working from home certainly has its advantages, but it's not without problems» ← فأفضل عنوان: The Good and Bad Sides of Working From Home"
 }
 ],
 "x": 1
@@ -669,14 +669,14 @@ window.READING = [
 "e": "الميزانية والموضوع الواضح يخلون المجموعة «manageable» = سهل التحكم فيها وما تكبر زيادة ← easy to control."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Collecting is an enjoyable hobby with many benefits, but collectors should plan carefully.",
-"Collecting is the best way to make a lot of money quickly.",
-"Only people with special skills and a lot of money can collect things.",
-"Stamps are the most valuable items, so everyone should collect them."
+"Collecting: An Enjoyable Hobby That Needs a Plan",
+"Collecting: The Fastest Way to Make Money",
+"Why Only Rich People Can Collect Things",
+"Stamps: The Only Items Worth Collecting"
 ],
-"e": "القطعة تذكر فوائد الجمع (الاسترخاء، التعلم، الناس)، وبعدين تنبّه على المشاكل وتنصح بميزانية وموضوع واضح."
+"e": "القطعة تذكر فوائد الجمع (الاسترخاء، التعلم، الناس)، وبعدين تنبّه على المشاكل وتنصح بميزانية وموضوع واضح ← فأفضل عنوان: Collecting: An Enjoyable Hobby That Needs a Plan"
 }
 ]
 },
@@ -895,14 +895,14 @@ window.READING = [
 "e": "«This allows students to enjoy the advantages of both methods and choose what suits them best» ← them = الطلاب."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Online classes and classrooms both have advantages and disadvantages.",
-"Online classes will soon replace all traditional classrooms at university.",
-"Traditional classrooms are always better than online classes for every student.",
-"Shy students should only take online classes and never go to campus."
+"Online Classes and Classrooms: Pros and Cons",
+"Why Online Classes Will Replace Universities",
+"Why Classrooms Are Always Better for Everyone",
+"Online Classes: The Only Choice for Shy Students"
 ],
-"e": "الكاتب ذكر مميزات الأونلاين (الفقرة 2) وعيوبه (الفقرة 3)، وقال «it depends on the student»."
+"e": "الكاتب ذكر مميزات الأونلاين (الفقرة 2) وعيوبه (الفقرة 3)، وقال «it depends on the student» ← فأفضل عنوان: Online Classes and Classrooms: Pros and Cons"
 }
 ]
 },
@@ -1121,14 +1121,14 @@ window.READING = [
 "e": "الفقرة 4: «buy organic versions only of the foods you eat most often, and choose ordinary products for everything else»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Organic food has benefits, but it is expensive.",
-"Organic food is always much healthier than ordinary food.",
-"Organic farming is bad for the environment.",
-"Supermarkets should stop selling ordinary food."
+"Organic Food: Benefits and High Prices",
+"Why Organic Food Is Always Much Healthier",
+"Why Organic Farming Is Bad for the Environment",
+"Why Supermarkets Should Stop Selling Ordinary Food"
 ],
-"e": "القطعة ذكرت فوائد الأغذية العضوية (الفقرة 2) وغلاها (الفقرة 3)، ونصائح للي ميزانيته محدودة (الفقرة 4)."
+"e": "القطعة ذكرت فوائد الأغذية العضوية (الفقرة 2) وغلاها (الفقرة 3)، ونصائح للي ميزانيته محدودة (الفقرة 4) ← فأفضل عنوان: Organic Food: Benefits and High Prices"
 }
 ]
 },
@@ -1347,14 +1347,14 @@ window.READING = [
 "e": "«Buses and trains are usually cheap and reliable, and they allow visitors to see how local people really live» ← they = الباصات والقطارات."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"With good planning, people can travel without spending a lot of money.",
-"Travelling is always too expensive for students, even with good planning.",
-"Hotels are always better and cheaper than apartments for people on a budget.",
-"Taking taxis is the best way to save money when visiting a new city."
+"How to Travel Without Spending a Fortune",
+"Why Travelling Is Too Expensive for Students",
+"Why Hotels Are Cheaper Than Apartments",
+"Taxis: The Best Way to Save Money on Holiday"
 ],
-"e": "الفقرة 1: «it is possible to visit interesting places without spending a fortune. The secret is careful planning»، وباقي القطعة نصائح للتوفير."
+"e": "الفقرة 1: «it is possible to visit interesting places without spending a fortune. The secret is careful planning»، وباقي القطعة نصائح للتوفير ← فأفضل عنوان: How to Travel Without Spending a Fortune"
 }
 ]
 },
@@ -1686,14 +1686,14 @@ window.READING = [
 "e": "الفقرة 4: «experts suggest speaking to your roommate calmly and directly instead of complaining to other friends»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Living with a roommate has benefits, but it needs clear rules and good communication.",
-"Students should always live alone, because roommates cause problems.",
-"Roommates never become close friends, even after living together for years.",
-"Cleaning is the only problem that roommates have, so they need a cleaner."
+"Living With a Roommate: Problems and Solutions",
+"Why Students Should Always Live Alone",
+"Why Roommates Never Become Friends",
+"Cleaning: The Only Problem Roommates Have"
 ],
-"e": "القطعة تبدأ بفوائد السكن مع شخص، وبعدها المشاكل، وبعدها الحل: «talk about rules before moving in together» والكلام بهدوء."
+"e": "الفقرة 1 تذكر فوائد السكن مع شخص بس تقول «Small problems can quickly grow into big arguments»، والفقرة 2 المشاكل (التنظيف والإزعاج والأكل)، والفقرتين 3 و4 الحلول: «talk about rules before moving in together» والكلام بهدوء ← فأفضل عنوان: Living With a Roommate: Problems and Solutions"
 }
 ]
 },
@@ -2138,14 +2138,14 @@ window.READING = [
 "e": "الفقرة 4: «If you enjoy it, you are much more likely to continue for months instead of giving up after a week»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Regular exercise can give you more energy, and it is easy to start.",
-"Tired people should never exercise, because it makes them more tired.",
-"Exercise is only possible in a gym with expensive equipment.",
-"Household jobs are better than sports for staying healthy."
+"The Surprising Benefits of Regular Exercise",
+"Why Tired People Should Never Exercise",
+"Exercise: Only Possible in an Expensive Gym",
+"Why Housework Is Better Than Sports"
 ],
-"e": "الفكرة في الفقرة 1: «regular physical activity can actually give people more energy»، وباقي القطعة يوضّح ليش وكيف تبدأ بسهولة."
+"e": "الفقرة 1: «research suggests that the opposite is often true»، والفقرة 2 تشرح فوائد الرياضة المنتظمة (طاقة أكثر ومزاج أحسن)، والفقرتين 3 و4 كيف تبدأ بسهولة ← فأفضل عنوان: The Surprising Benefits of Regular Exercise"
 }
 ]
 },
@@ -2251,14 +2251,14 @@ window.READING = [
 "e": "الفقرة 4: «Some vitamins, such as A and D, are stored in the body, so taking large amounts over a long time can be harmful»."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"Most healthy people can get their vitamins from food, and pills are needed only in some cases.",
-"Everyone should take vitamin pills every day, even healthy people who already eat a balanced diet.",
-"Vitamin pills are always dangerous, so nobody should ever take them, even when a doctor suggests them.",
-"Fresh food is too expensive for most families, so most people need to take vitamin pills instead."
+"Vitamins: Food or Pills?",
+"Why Everyone Needs Vitamin Pills Every Day",
+"Vitamin Pills: Always Dangerous",
+"Fresh Food: Too Expensive for Most Families"
 ],
-"e": "الفقرة 2: الأكل المتوازن «usually provides all the vitamins the body needs»، والفقرة 3: «some groups of people may benefit from extra vitamins»."
+"e": "الفقرة 2: الأكل المتوازن «usually provides all the vitamins the body needs»، والفقرة 3: «some groups of people may benefit from extra vitamins» ← فأفضل عنوان: Vitamins: Food or Pills?"
 }
 ]
 },
@@ -2478,14 +2478,14 @@ window.READING = [
 "e": "الكاتب يمدحه: «The system is impressive by any standard» ويقول «it could gradually reshape how the city grows»، بس يذكر الصعوبات: «If not, it may remain an impressive system that many residents admire but rarely use» ← متفائل بس واقعي، ومو متأكد إنه بيفشل."
 },
 {
-"q": "What is the main idea of the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"The metro is impressive, but its success depends on whether people change their habits.",
-"The metro has already solved all of Riyadh's traffic and air problems.",
-"Riyadh should stop spending money on public transport and focus on cars.",
-"Driverless trains are more comfortable and cheaper to use than buses."
+"Can a Metro Change a Car City?",
+"How the Metro Solved All of Riyadh's Problems",
+"Why Riyadh Should Spend Its Money on Cars",
+"Driverless Trains: Cheaper Than Buses"
 ],
-"e": "القطعة كلها تمدح المترو بس تقول إن نجاحه يعتمد على سلوك الناس، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour»."
+"e": "القطعة تناقش المترو: مميزاته (الفقرة 2) وصعوباته (الفقرتين 3 و4)، والفقرة 5 تلخصها: «the metro's real test will not be its technology but people's behaviour» ← فأفضل عنوان: Can a Metro Change a Car City?"
 }
 ]
 },
@@ -2592,14 +2592,14 @@ window.READING = [
 "e": "الفقرة 5: «Organisations, for their part, can make roles clearer and offer proper training». والخيارات الباقية عكس كلام الكاتب: قال إن التطوع «not automatically beneficial»، وإن الأنشطة اللي «look impressive» ممكن ما تناسب احتياج المجتمع، وإن فوائده للمتطوع «well documented»."
 },
 {
-"q": "What is the writer's main purpose in the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"To argue that volunteering works best when it is planned carefully",
-"To persuade readers to stop volunteering",
-"To describe the history of volunteering in Saudi Arabia",
-"To compare paid jobs with volunteer work"
+"Does Volunteering Always Help?",
+"Why Students Should Stop Volunteering",
+"How to Find a Well-Paid Job",
+"Life in Care Homes and Hospitals"
 ],
-"e": "الفقرة 5: «None of this is an argument against volunteering. Rather, it suggests a more thoughtful approach» ← هدف الكاتب: التطوع ينجح أكثر لما يكون مخطط له زين، مو إنه يمنع التطوع."
+"e": "القطعة كلها تناقش هل التطوع مفيد دائمًا: الفقرة 1 «volunteering is not automatically beneficial; its value depends largely on how it is organised»، والفقرة 5 «None of this is an argument against volunteering» ← العنوان Does Volunteering Always Help? والكاتب ما قال وقّفوا التطوع."
 }
 ]
 },
@@ -2706,14 +2706,14 @@ window.READING = [
 "e": "الفقرة 5: اللي يلعب ساعة مع أصحابه بعد واجبه «is in a very different situation from one who plays alone until three in the morning. Treating both cases in the same way helps no one»."
 },
 {
-"q": "How would you describe the writer's attitude toward video games?",
+"q": "What is the best title for the passage?",
 "o": [
-"balanced",
-"strongly negative",
-"strongly positive",
-"not interested"
+"Video Games: Harmful Habit or Useful Tool?",
+"Why Video Games Make Young People Violent",
+"How to Become a Professional Gamer",
+"The History of the World Health Organization"
 ],
-"e": "الكاتب يذكر الإيجابيات والسلبيات ويقول «the truth lies somewhere between these two positions»، وفي الأخير يركّز على طريقة الاستخدام: «focus less on whether games are good or bad and more on how they are used» ← رأيه متوازن."
+"e": "القطعة تعرض الرأيين: الضرر، ورأي المؤيدين إن «games are a modern art form that can develop skills»، وتقول «the truth lies somewhere between these two positions» ← العنوان يجمع الضرر والفايدة. وما قالت إن الألعاب تخلي الشباب عنيفين: «failed to find a strong link between gaming and serious violence»."
 }
 ]
 },
@@ -2934,14 +2934,14 @@ window.READING = [
 "e": "الفقرة 5: «Simply noticing that an answer was wrong is less useful than asking why it was wrong and what should be done differently next time»."
 },
 {
-"q": "What is the writer's main purpose in the passage?",
+"q": "What is the best title for the passage?",
 "o": [
-"To explain how students can learn from their mistakes",
-"To persuade teachers to stop giving grades",
-"To describe Carol Dweck's life",
-"To prove that the growth mindset does not work"
+"Can Mistakes Help Us Learn?",
+"How to Get Full Marks in Every Test",
+"The Life Story of Carol Dweck",
+"Why Teachers Should Stop Giving Grades"
 ],
-"e": "القطعة توضح ليش الأخطاء مفيدة، والفقرة 5 تعطي الخلاصة للطالب: «mistakes are valuable only when they are examined». وما قالت إن الـgrowth mindset ما يشتغل، قالت تأثيره أقل من المتوقع."
+"e": "القطعة كلها عن فايدة الأخطاء في التعلّم: الفقرة 1 «making errors, and more importantly paying attention to them, is one of the most effective ways to learn»، والفقرة 5 «mistakes are valuable only when they are examined» ← Can Mistakes Help Us Learn? (وCarol Dweck انذكرت فكرتها بس، مو قصة حياتها)."
 }
 ]
 }
