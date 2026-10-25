@@ -692,6 +692,17 @@ window.GRAMMAR = [
 ],
 "e": "Osama = He ← في المضارع البسيط مع He / She / It نضيف s للفعل: swims. (swimmer اسم = سبّاح.)",
 "x": 1
+},
+{
+"q": "He ..... very well, but he can write a lot of poems and songs.",
+"o": [
+"doesn't sing",
+"don't sing",
+"not sing",
+"no sing"
+],
+"e": "He ← النفي في المضارع البسيط مع He / She / It يكون doesn't + الفعل الأساسي: doesn't sing. (don't مع I/You/We/They، وnot/no لحالها ما تنفي الفعل.)",
+"x": 1
 }
 ]
 },
