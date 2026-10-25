@@ -19,7 +19,7 @@ Company || I work for a large media ...... We have offices in Riyadh, Jeddah, an
 Creative || My little sister is very ...... She always comes up with new ideas for drawings and stories. || creative | calm | lazy | strict
 Data || The scientists collected ..... from 1,000 students. Then they studied it to learn about their sleeping habits. || data | weight | traffic | furniture
 Decision || Choosing a university is a big ...... Take your time and think carefully before you choose. || decision | crowd | reaction | rumour
-Event || The music festival is the biggest ..... in Riyadh this year. Thousands of people are going to attend. || event | effort | treatment | accident
+Event || The book fair is the biggest ..... in Riyadh this year. Thousands of people are going to attend. || event | effort | treatment | accident
 Flexible || My working hours are very ...... I can start at eight or ten; it's my choice. || flexible | ancient | narrow | delicious
 Match || These shoes don't ..... my dress. The colours are completely different, so I need another pair. || match | repair | swallow | whisper
 Plan || We ..... to visit our grandparents in Abha next weekend. We've already booked the flight tickets. || plan | pretend | refuse | hesitate
@@ -37,7 +37,7 @@ Complex || The instructions for this new machine are very ...... Nobody in the o
 Confused || I was ..... by the last question in the exam, so I asked the teacher to explain it. || confused | talented | delighted | generous
 Die || Don't forget to water the plants while I'm away. If they don't get water, they will ...... || die | compete | repeat | giggle
 Difficulty || My grandfather has ..... reading small letters, so he always wears his glasses when he reads. || difficulty | benefit | luggage | humour
-Increase || The price of petrol will ..... next month. It will go from 2 riyals to 2.5 riyals. || increase | reduce | collapse | vanish
+Increase || The price of this phone will ..... next month. It will go from 2,000 riyals to 2,500 riyals. || increase | reduce | collapse | vanish
 Mistake || Don't feel bad about your English. Everyone makes ..... when they learn a new language. || mistakes | treatments | blankets | castles
 Optimistic || Ali is always ...... Even when things go wrong, he believes that tomorrow will be better. || optimistic | upset | nervous | stubborn
 Positive || Try to stay ..... during hard times. Think about the good things in your life, not the bad. || positive | nervous | embarrassed | jealous
@@ -52,7 +52,7 @@ Debate || Our class had a ..... about social media. Half of us said it was good,
 Describe || Can you ..... the man who took your bag? Was he tall or short, young or old? || describe | destroy | repair | borrow
 Emotion || Fear is a very strong ...... It can make your heart beat faster and your hands shake. || emotion | insect | product | vitamin
 Facial expression || I knew he was happy from his ...... He was smiling from ear to ear. || facial expression | shopping list | population | technology
-However || The test was very hard, and many students failed. ....., I passed it with a good grade. || However | Probably | Except for | For example
+However || The test was very hard, and many students failed. ....., I passed it with a good grade. || However | Therefore | Except for | For example
 Imagine || Close your eyes and ..... that you are on a beautiful beach. Can you hear the sea? || imagine | interrupt | borrow | refuse
 Investigate a crime || Someone stole money from the bank last night. Today, two detectives are coming to ..... the crime. || investigate | repair | prepare | decorate
 Lie || Always tell your parents the truth. Never ..... to them, even when you make a mistake. || lie | lead | rest | belong
@@ -62,7 +62,7 @@ Probably || Look at those dark clouds. It will ..... rain this afternoon, so tak
 Professional || Faisal plays for a big club and gets paid well. He is a ..... football player. || professional | traditional | wooden | similar
 Talented || Rawda is very ...... She designed and decorated her sister's wedding cake all by herself! || talented | optimistic | hopeless | confused
 Understand || I don't ..... this word in the text. Can you explain its meaning to me, please? || understand | interrupt | repair | lend
-Wrong || Sorry, your answer is ...... The correct answer is 25, not 52. Please try again. || wrong | certain | similar | polite
+Wrong || Sorry, your answer is ...... The correct answer is 25, not 52. Please try again. || wrong | certain | natural | polite
 Ability || Some birds have the ..... to fly very long distances without stopping. They can fly for days. || ability | difficulty | attitude | luggage
 Effect || Too much screen time can have a bad ..... on your eyes. Try to take short breaks. || effect | effort | goal | souvenir
 Embarrassed || I felt so ..... when I fell down in front of the whole class. Everyone laughed at me. || embarrassed | optimistic | proud | relaxed
@@ -89,10 +89,10 @@ Some kind of || I found a strange creature in the garden. It was ..... insect wi
 Traditional || Kabsa is a ..... Saudi dish. Our grandparents cooked it, and their grandparents cooked it too. || traditional | professional | modern | flexible
 According to || ..... the weather forecast, it will rain tomorrow. So don't forget your umbrella. || According to | However | Except for | Instead of
 Activity || Swimming is my favourite summer ...... I go to the pool with my friends every weekend. || activity | attitude | purpose | vegetable
-Attention || Please pay ..... to the teacher now. This information is going to be in the final exam. || attention | effort | weight | rent
+Attention || Please pay ..... to the teacher now. This information is going to be in the final exam. || attention | effort | weight | kindness
 Connect || You can ..... your phone to the TV with this cable and watch videos on a big screen. || connect | interrupt | escape | lend
 Focus || Turn off your phone while you study. Then you can ..... on your homework better. || focus | rest | lie | insist
-Human || The ..... brain is very complex. Scientists still don't understand everything about how it works. || human | ancient | local | wooden
+Human || An adult ..... has 206 bones in the body. Babies are born with about 300 bones. || human | insect | pebble | vegetable
 Interrupt || Please don't ..... me while I'm talking. Wait until I finish, and then you can speak. || interrupt | protect | observe | borrow
 Practice || A great way to study vocabulary for your English exams is to ..... with flashcards. || practice | forget | repair | destroy
 Repeat || Sorry, I didn't hear you because of the noise. Can you ..... the question, please? || repeat | destroy | escape | swallow
@@ -124,7 +124,7 @@ Control || He was driving too fast in the rain. He couldn't ..... the car and hi
 Discover || Scientists hope to ..... a cure for this disease soon. They have been working on it for years. || discover | destroy | pretend | ignore
 Improve || If you want to ..... your English, practice speaking it every day with your friends. || improve | reduce | destroy | abandon
 Is/are likely to || Traffic is very heavy at this time. If you leave now, you ..... be late for work. || are likely to | according to | in order to | are proud of
-Produce || This factory in Dammam ..... 1,000 cars every month. Most of them are sold in the Gulf. || produces | reduces | prevents | borrows
+Produce || This factory ..... 5,000 bottles of water every day. Most of them are sold in Riyadh. || produces | reduces | prevents | borrows
 Provide || The hotel ..... free breakfast for all its guests. You don't have to pay for it. || provides | reduces | prevents | refuses
 Reduce || Turn off the lights when you leave the room. It will help you ..... your electricity bill. || reduce | increase | produce | decorate
 Rest || You look very tired. You should ..... for a while before you continue working on your project. || rest | lead | compete | argue
@@ -132,7 +132,7 @@ Solution || There is too much noise near the library. Does anyone have a ..... t
 Among || Ahmed was ..... the best students in our class this year. He got high marks in every subject. || among | except for | according to | despite
 Athlete || My cousin is a professional ...... She runs every morning and competes in races around the world. || athlete | consumer | tourist | landlord
 Effort || She put a lot of ..... into her final project, so she got full marks. || effort | effect | pollution | gossip
-Form || To open a bank account, fill in this ..... with your name, address and phone number. || form | trend | crowd | pillow
+Form || Let's ..... a study group for the final exam. We can meet in the library every Monday. || form | escape | deserve | swallow
 Goal || My ..... is to become a pilot one day. I'm studying hard to make my dream come true. || goal | trend | crowd | habit
 History || World War I was the worst war in human ..... up to that time. || history | weight | level | mistake
 Level || This English class is for students at an advanced ...... It is too difficult for beginners. || level | rate | weight | salary
@@ -152,7 +152,7 @@ Promote || The company made a funny video to ..... its new phone on Snapchat. Mi
 Reach || We left home at 4 a.m., so we ..... the airport early. Our flight was at 7. || reached | repaired | escaped | borrowed
 Responsibility || Being the oldest son is a big ...... I take care of my brothers when my father travels. || responsibility | pollution | advertising | coincidence
 Section || You can find books about history in the second ..... of the library, next to the computers. || section | crowd | rate | rumour
-Survey || The university did a ..... last month. It asked 500 students questions about their sleeping habits. || survey | debate | bargain | festival
+Survey || The university did a ..... last month. It asked 500 students questions about the food in the cafeteria. || survey | debate | bargain | festival
 Trend || Wearing white sneakers is a popular fashion ..... this year. Everyone at university is wearing them. || trend | rate | score | puzzle
 Choice || You can have tea, coffee or juice with your breakfast. It's your ...... || choice | goal | task | salary
 Customer || The shop gives every ..... a free gift when they spend more than 100 riyals. || customer | insect | product | holiday
@@ -161,7 +161,7 @@ Opinion || In my ....., this is the best restaurant in Jeddah. The food is delic
 Product || This company's most popular ..... is its new phone. It sold a million in one week. || product | consumer | expert | rumour
 Purpose || The ..... of today's meeting is to plan the school trip to the museum. || purpose | product | reaction | ceiling
 Recommend || Have you tried this restaurant? It's amazing. I really ..... the grilled fish; it's delicious! || recommend | interrupt | destroy | ignore
-Relationship || She has a good ..... with her neighbours. They visit each other often and share food. || relationship | population | pollution | argument
+Relationship || She has a good ..... with her neighbours. They visit each other often and share food. || relationship | population | pollution | headline
 Respect || You should ..... older people. Listen to their advice and speak to them politely. || respect | interrupt | destroy | ignore
 Simple || The recipe is very ....., so even my little brother can make it. It has only three steps. || simple | complex | tough | expensive
 Treatment || The doctor said the ..... for his illness is two weeks of medicine and rest at home. || treatment | advertising | requirement | souvenir
