@@ -485,6 +485,129 @@ window.READING = [
 },
 {
 "n": 5,
+"k": 27,
+"title": "My Family",
+"text": [
+"1. What kind of people are your family? What do they look like? As for me, everyone in my family is a bit different. My dad and his brothers, for example, are all quite large. My mom and my sisters are rather thin, though. Actually, everyone on my mom's side of the family is _slender_. And it's not just how we look. Some people in my family are always shy around new people. They're cool people, but they don't know what to say. Others are very outgoing and love telling stories. It's not a problem though. Often the more outgoing family members introduce shy family members to new friends.",
+"2. It's interesting to think how we are different from each other. There are, however, two things that are true for everyone in my family. First, everyone is very neat. Even busy family members still find time to keep things clean. My cousin, for example, goes to school and has a part-time job at a bookstore. Her life is _hectic_ but her kitchen is always clean because _she_ washes all the dishes and wipes down the tables and counters after each meal.",
+"3. The second thing that is true for everyone in my family is that we're all so nice. We all love to help out our friends and family members. Especially when someone has a big problem, we all focus on helping to solve the problem. For example, recently my uncle lost his job. He is my dad's younger brother. Right away, everyone started texting him to ask how they could help. We also told him about new job opportunities. It wasn't long before _he_ got a new job."
+],
+"qs": [
+{
+"q": "The writer says that everyone in her family is ______.",
+"o": [
+"nice",
+"busy",
+"honest",
+"similar"
+],
+"e": "الفقرة 3: «we're all so nice» ← nice. وما يصير similar لأن الفقرة 1 تقول «everyone in my family is a bit different».",
+"x": 1
+},
+{
+"q": "Who does the writer say is thin?",
+"o": [
+"her mom",
+"her dad",
+"her cousin",
+"her brother"
+],
+"e": "الفقرة 1: «My mom and my sisters are rather thin» ← her mom.",
+"x": 1
+},
+{
+"q": "The writer believes that some people in her family are ______.",
+"o": [
+"outgoing",
+"creative",
+"talkative",
+"dangerous"
+],
+"e": "الفقرة 1: «Others are very outgoing and love telling stories» ← الكلمة في القطعة outgoing (انتبه لفخ talkative).",
+"x": 1
+},
+{
+"q": "What does the underlined word \"she\" in paragraph 2 refer to?",
+"o": [
+"the writer's cousin",
+"the writer's sister",
+"the writer's mother",
+"the writer's aunt"
+],
+"e": "الفقرة 2: الكلام عن «My cousin… her kitchen is always clean because she washes all the dishes» ← she = the writer's cousin.",
+"x": 1
+},
+{
+"q": "What does the underlined word \"he\" in paragraph 3 refer to?",
+"o": [
+"the writer's uncle",
+"the writer's friend",
+"the writer's dad",
+"the writer's brother"
+],
+"e": "الفقرة 3: «recently my uncle lost his job» و«It wasn't long before he got a new job» ← he = the writer's uncle.",
+"x": 1
+},
+{
+"q": "The writer's cousin cleans her kitchen ______.",
+"o": [
+"after meals",
+"once a day",
+"before school",
+"on weekends"
+],
+"e": "الفقرة 2: «wipes down the tables and counters after each meal» ← after meals.",
+"x": 1
+},
+{
+"q": "Where does the writer's cousin work?",
+"o": [
+"a bookstore",
+"a bank",
+"a phone store",
+"a restaurant"
+],
+"e": "الفقرة 2: «has a part-time job at a bookstore» ← a bookstore.",
+"x": 1
+},
+{
+"q": "What does the underlined word \"slender\" in paragraph 1 mean?",
+"o": [
+"thin",
+"large",
+"cool",
+"quiet"
+],
+"e": "الفقرة 1: «My mom and my sisters are rather thin… everyone on my mom's side of the family is slender» ← slender = thin.",
+"x": 1
+},
+{
+"q": "What does the underlined word \"hectic\" in paragraph 2 mean?",
+"o": [
+"busy",
+"boring",
+"impossible",
+"neat"
+],
+"e": "الفقرة 2: «Even busy family members still find time to keep things clean»، وبنت عمها تدرس وتشتغل ← hectic = busy.",
+"x": 1
+},
+{
+"q": "What is the best title for the passage?",
+"o": [
+"Ways My Family Is the Same and Different",
+"How My Mom and Dad Are Different",
+"The Most Interesting Family in the World",
+"My Cousin's Life, Work and Characteristics"
+],
+"e": "الفقرة 1 عن الاختلافات، والفقرة 2: «There are, however, two things that are true for everyone in my family» ← العنوان Ways My Family Is the Same and Different.",
+"x": 1
+}
+],
+"x": 1
+},
+{
+"n": 6,
 "k": 4,
 "title": "Making Friends at University",
 "text": [
@@ -597,7 +720,7 @@ window.READING = [
 ]
 },
 {
-"n": 6,
+"n": 7,
 "k": 5,
 "title": "Collecting Things",
 "text": [
@@ -710,7 +833,7 @@ window.READING = [
 ]
 },
 {
-"n": 7,
+"n": 8,
 "k": 6,
 "title": "Learning a Foreign Language",
 "text": [
@@ -823,7 +946,7 @@ window.READING = [
 ]
 },
 {
-"n": 8,
+"n": 9,
 "k": 7,
 "title": "Online Classes or Classrooms?",
 "text": [
@@ -936,7 +1059,7 @@ window.READING = [
 ]
 },
 {
-"n": 9,
+"n": 10,
 "k": 8,
 "title": "Fast Food and Our Health",
 "text": [
@@ -1049,7 +1172,7 @@ window.READING = [
 ]
 },
 {
-"n": 10,
+"n": 11,
 "k": 9,
 "title": "Organic Food",
 "text": [
@@ -1162,7 +1285,7 @@ window.READING = [
 ]
 },
 {
-"n": 11,
+"n": 12,
 "k": 10,
 "title": "Celebrating Eid",
 "text": [
@@ -1275,7 +1398,7 @@ window.READING = [
 ]
 },
 {
-"n": 12,
+"n": 13,
 "k": 11,
 "title": "Travelling on a Small Budget",
 "text": [
@@ -1388,7 +1511,7 @@ window.READING = [
 ]
 },
 {
-"n": 13,
+"n": 14,
 "k": 12,
 "title": "Spending Time in Nature",
 "text": [
@@ -1501,7 +1624,7 @@ window.READING = [
 ]
 },
 {
-"n": 14,
+"n": 15,
 "k": 13,
 "title": "The Student Housing Problem",
 "text": [
@@ -1614,7 +1737,7 @@ window.READING = [
 ]
 },
 {
-"n": 15,
+"n": 16,
 "k": 14,
 "title": "Living With a Roommate",
 "text": [
@@ -1727,7 +1850,7 @@ window.READING = [
 ]
 },
 {
-"n": 16,
+"n": 17,
 "k": 15,
 "title": "Breaking Bad Habits",
 "text": [
@@ -1840,7 +1963,7 @@ window.READING = [
 ]
 },
 {
-"n": 17,
+"n": 18,
 "k": 16,
 "title": "Addicted to Our Phones",
 "text": [
@@ -1953,7 +2076,7 @@ window.READING = [
 ]
 },
 {
-"n": 18,
+"n": 19,
 "k": 17,
 "title": "Why Sleep Matters",
 "text": [
@@ -2066,7 +2189,7 @@ window.READING = [
 ]
 },
 {
-"n": 19,
+"n": 20,
 "k": 18,
 "title": "Exercise and Energy",
 "text": [
@@ -2179,7 +2302,7 @@ window.READING = [
 ]
 },
 {
-"n": 20,
+"n": 21,
 "k": 19,
 "title": "Vitamins: Food or Pills?",
 "text": [
@@ -2292,7 +2415,7 @@ window.READING = [
 ]
 },
 {
-"n": 21,
+"n": 22,
 "k": 20,
 "title": "Loneliness in Older People",
 "text": [
@@ -2405,7 +2528,7 @@ window.READING = [
 ]
 },
 {
-"n": 22,
+"n": 23,
 "k": 21,
 "title": "Can a Metro Change a Car City?",
 "text": [
@@ -2519,7 +2642,7 @@ window.READING = [
 ]
 },
 {
-"n": 23,
+"n": 24,
 "k": 22,
 "title": "Does Volunteering Always Help?",
 "text": [
@@ -2633,7 +2756,7 @@ window.READING = [
 ]
 },
 {
-"n": 24,
+"n": 25,
 "k": 23,
 "title": "Video Games: Harmful Habit or Useful Tool?",
 "text": [
@@ -2747,7 +2870,7 @@ window.READING = [
 ]
 },
 {
-"n": 25,
+"n": 26,
 "k": 24,
 "title": "Farming Without Fields",
 "text": [
@@ -2861,7 +2984,7 @@ window.READING = [
 ]
 },
 {
-"n": 26,
+"n": 27,
 "k": 25,
 "title": "Can Mistakes Help Us Learn?",
 "text": [

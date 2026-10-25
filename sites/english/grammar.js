@@ -1791,14 +1791,14 @@ window.GRAMMAR = [
 "x": 1
 },
 {
-"q": "My brother plays football. ..... the best player on our school team.",
+"q": "My brother loves playing football. ..... the best player on the team.",
 "o": [
 "He's",
 "Him",
 "His",
 "He'd"
 ],
-"e": "My brother = He، ونحتاج فاعل + is ← He's = He is.",
+"e": "My brother = He، ونحتاج فاعل + is ← He's = He is. (Him/His مو فاعل، وHe'd = He would/had.)",
 "x": 1
 },
 {

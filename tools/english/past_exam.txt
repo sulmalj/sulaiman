@@ -22,7 +22,7 @@ G I ..... the kids' store at Panorama Mall. It has many toys and books.
 G This ..... a shoe store. People come here to buy shoes and accessories.
 G He ..... from home. He goes to the office from Sunday to Thursday every week.
 G I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood.
-G My brother plays football. ..... the best player on our school team.
+G My brother loves playing football. ..... the best player on the team.
 G Sameera ..... articles for the local newspaper, and she has a website about life in Riyadh.
 G This ice cream store has new flavors on sale. You can try ..... all before you decide what you want.
 G My mother made some cookies this afternoon. She put ..... on the kitchen table.
@@ -60,3 +60,5 @@ V Everyone is buying the new Dubai chocolate. It's very ..... now.
 V I am ..... getting a job that involves international travel. I love exploring new countries.
 V If you're not sure how to fix it, you should ask a/an ......
 V These sunglasses are 3,000 riyals! Can you show me something more ......?
+# قطعة My Family (تسريب 2026-10-25)
+R 27 1-10

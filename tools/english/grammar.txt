@@ -186,7 +186,7 @@ My parents are coming tonight. I want to cook dinner for ...... || them | they |
 # ── نماذج اختبار المستخدم (2026-10-25) ──
 My brother doesn't like running in the morning. ..... makes him tired during the day. || It | She | These | They || running in the morning شي واحد (مو شخص)، ونحتاج فاعل مفرد قبل makes ← It.
 I asked Hussain and Tariq to join me at the gym. ..... my friends from the neighborhood. || They're | There | There's | Their || Hussain and Tariq = They، ونحتاج فاعل + فعل be ← They're = They are. (There = هناك، Their = حقهم.)
-My brother plays football. ..... the best player on our school team. || He's | Him | His | He'd || My brother = He، ونحتاج فاعل + is ← He's = He is.
+My brother loves playing football. ..... the best player on the team. || He's | Him | His | He'd || My brother = He، ونحتاج فاعل + is ← He's = He is. (Him/His مو فاعل، وHe'd = He would/had.)
 This ice cream store has new flavors on sale. You can try ..... all before you decide what you want. || them | her | they | him || new flavors جمع، وبعد الفعل try نحط ضمير مفعول ← them.
 My mother made some cookies this afternoon. She put ..... on the kitchen table. || them | him | her | they || some cookies جمع، وبعد الفعل put نحط ضمير مفعول ← them.
 Have you tasted Auntie Majda's kabsa? ..... the best cook in our family. || She's | Her | Hers | She'd || Auntie Majda = She، ونحتاج فاعل + is قبل the best cook ← She's = She is. (Her/Hers مو فاعل، وShe'd = She would/had.)
