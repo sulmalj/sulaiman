@@ -37,7 +37,7 @@ def qr_img(url, px):
             f'style="width:{px}px;height:{px}px;display:block;margin:0 auto 4px;image-rendering:pixelated">')
 
 
-def ad_page(extra=""):
+def ad_page(extra="", foot=""):
     """extra: سطر إضافي (اختياري) يطلع فوق صندوق المتجر — مثل «عندنا جميع مواد المسار الإنساني»."""
     qr = qr_img(STORE, 140)
     items = ["موقع للتدريب شامل كل الأقسام", "تدريب على القطع", "تدريب على الاستماع",
@@ -83,7 +83,7 @@ li {{ font-size:21px; font-weight:700; color:var(--navy); display:flex; align-it
   <a class="btn" href="{STORE}">mtgradl.com</a></div>
  <a class="qr" href="{STORE}">{qr}امسح الباركود لزيارة المتجر</a>
 </div>
-</div></body></html>"""
+{foot}</div></body></html>"""
 
 
 def ad2():
