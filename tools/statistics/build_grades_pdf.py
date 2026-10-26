@@ -41,7 +41,7 @@ OVERVIEW = None  # رابط «نبذة عن الملزمة»
 # ملفات المواد الثانية: نفس التصميم، والفرق في هذي القيم (نص المستخدم حرفياً)
 PROFILES = {
     "tech102": dict(
-        COURSE="تقن 102", PART="جزئية الميد", DEMO="https://t.me/mlazmadl/3474", BADGE=False, HIGH=30,
+        COURSE="تقن 102", PART="جزئية الميد", DEMO="https://t.me/mlazmadl/3474", BADGE=True, HIGH=30,
         OVERVIEW="https://drive.google.com/file/d/14HmUxajAcgC337Mu2YMju3RsLaMpGmlJ/view?usp=drivesdk",
         INTRO="يوجد اشتراك عملي ونظري",
         SECTIONS=[
