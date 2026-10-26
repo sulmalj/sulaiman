@@ -1,4 +1,4 @@
-"""يبني ملف «درجات طلابنا» لدورة احص 102 (المسار الإنساني) بهوية ملازم عدل:
+"""يبني ملف «درجات طلابنا» لدورة احص 102 أو تقن 102 (المسار الإنساني) بهوية ملازم عدل:
 صفحة غلاف إعلانية + صفحات صور الدرجات (ترتيب عشوائي، الدرجات المتساوية متفرقة)
 مع علامة مائية بحقوق ملازم عدل، وتنويه إن التقييمات جزء بسيط، ورابط القناة والمتجر أسفل كل صفحة.
 
@@ -10,6 +10,9 @@
     --grades store/statistics/grades/grades.txt
   --grades: سطر لكل صورة «اسم_الملف<TAB>الدرجة» عشان الدرجات المتساوية ما تجي جنب بعض.
   --seed: رقم ثابت للخلط (نفس الرقم = نفس الترتيب).
+  --course tech102: ملف تقن 102 ميد (القسمين النظري والعملي + رابط «نبذة عن الملزمة»):
+  python3 tools/statistics/build_grades_pdf.py store/tech102/grades/images store/tech102/grades/tech102-humanities-grades.pdf \
+    --grades store/tech102/grades/grades.txt --course tech102
 """
 import argparse, base64, io, pathlib, random, sys, tempfile
 import pymupdf, segno
@@ -28,6 +31,31 @@ NOTE = ("التقييمات في هذا الملف جزء بسيط جداً من
         "وجميع التقييمات متواجدة في المتجر وفي قناتنا العامة")
 NOTE_HTML = NOTE.replace("ولا تشكّل حتى 5% منها", "<em>ولا تشكّل حتى 5% منها</em>")
 IMG_EXT = {".jpg", ".jpeg", ".png", ".webp"}
+BADGE = True     # شارة «الأقدم في شروحات …» (احص بس)
+PART = ""        # مثل «جزئية الميد»
+HIGH = 24        # الدرجات العالية اللي ما تتجمع في مكان واحد
+SECTIONS = None  # [(عنوان, [بنود])] بدل FEATURES
+INTRO = ""
+OVERVIEW = None  # رابط «نبذة عن الملزمة»
+
+# ملفات المواد الثانية: نفس التصميم، والفرق في هذي القيم (نص المستخدم حرفياً)
+PROFILES = {
+    "tech102": dict(
+        COURSE="تقن 102", PART="جزئية الميد", DEMO="https://t.me/mlazmadl/3474", BADGE=False, HIGH=30,
+        OVERVIEW="https://drive.google.com/file/d/14HmUxajAcgC337Mu2YMju3RsLaMpGmlJ/view?usp=drivesdk",
+        INTRO="يوجد اشتراك عملي ونظري",
+        SECTIONS=[
+            ("القسم النظري (ملزمة)", [
+                "تلخيص للكتاب بشكل مرتب.", "تدريبات في الملزمة.", "كويزات اضافية للمشتركين.",
+                "قروب للاسئلة والاستفسارات.", "تسريبات السنوات الماضية.", "بنك اسئلة للمراجعة الشاملة.",
+                "تغني عن الكتاب واي مصدر آخر."]),
+            ("القسم العملي (شروحات)", [
+                "شرح كامل للعملي الداخل بالاختبار.", "شرح واجبات الجلسات.",
+                "يشمل موقع للتدرب على الجزء العملي يغني عن الكتاب و واجبات الجلسات، موقع متكامل وشرح الخطوات بطريقة الكتاب.",
+                "شرح الاختبار التجريبي.", "تسريبات السنوات الماضية.", "قروب للاسئلة والاستفسارات.",
+                "يغني عن الكتاب واي مصدر آخر."]),
+        ]),
+}
 
 CREAM = (1, 253 / 255, 245 / 255)
 NAVY, BLUE, ROSE = "#204b7d", "#6c89ac", "#b0698d"
@@ -82,10 +110,32 @@ ICONS = [  # أيقونات بسيطة لكل ميزة
 ]
 
 
+def track_label():
+    return f"{TRACK} · {PART}" if PART else TRACK
+
+
+def short(url):
+    return url.split("://", 1)[1]
+
+
 def cover_html():
-    feats = "".join(
-        f'<div class="f"><span class="ic {"b" if i % 2 == 0 else "r"}"><svg viewBox="0 0 24 24">{ICONS[i]}</svg></span>{t}</div>'
-        for i, t in enumerate(FEATURES))
+    QR = 74 if SECTIONS else 88
+    if SECTIONS:  # قسمين (نظري/عملي) كل واحد ببنوده
+        cards = "".join(
+            f'<div class="sc {"b" if k == 0 else "r"}"><h3><span class="ic {"b" if k == 0 else "r"}"><svg viewBox="0 0 24 24">'
+            f'{ICONS[0] if k == 0 else ICONS[1]}</svg></span>{t}</h3><ul>{"".join(f"<li>{x}</li>" for x in items)}</ul></div>'
+            for k, (t, items) in enumerate(SECTIONS))
+        body = (f'<div class="sec"><h2>الدورة تشمل</h2>' + (f'<div class="intro">{INTRO}</div>' if INTRO else "")
+                + f'<div class="two">{cards}</div></div>')
+    else:
+        feats = "".join(
+            f'<div class="f"><span class="ic {"b" if i % 2 == 0 else "r"}"><svg viewBox="0 0 24 24">{ICONS[i]}</svg></span>{t}</div>'
+            for i, t in enumerate(FEATURES))
+        body = f'<div class="sec"><h2>الدورة تشمل</h2><div class="grid">{feats}</div></div>'
+    badge = (f'<div class="badge"><b>الأقدم في شروحات {COURSE}</b><span>منذ عام 1444 هـ</span></div>' if BADGE else "")
+    ov = (f'<a class="c ov" href="{OVERVIEW}"><div class="t"><b>نبذة عن الملزمة</b><small>اضغط على الرابط أو امسح الباركود</small>'
+          f'<span class="u">اضغط هنا لفتح النبذة</span></div><div class="q">{qr_img(OVERVIEW, QR)}</div></a>' if OVERVIEW else "")
+    compact = "compact" if SECTIONS else ""
     return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8">{FONTS}<style>{BASE_CSS}
 @page {{ size:A4; margin:0; }}
 body {{ background:var(--cream); }}
@@ -123,16 +173,41 @@ h1 {{ margin:-2mm 0 0; font:800 74px/1.12 'Baloo Bhaijaan 2'; color:var(--navy);
 .proof p em {{ font-style:normal; color:var(--rose); font-weight:800; }}
 .tg {{ margin-top:auto; position:relative; display:flex; align-items:center; gap:9px; background:#fff; border-radius:999px; padding:6px 18px; font-size:16px; font-weight:800; color:var(--navy); box-shadow:0 3px 10px rgba(32,75,125,.12); }}
 .tg .u {{ font:600 15px 'Lexend'; direction:ltr; color:var(--rose); }}
-</style></head><body><div class="page">{DECO_TOP}{DECO_BOT}<div class="in">
-<div class="badge"><b>الأقدم في شروحات {COURSE}</b><span>منذ عام 1444 هـ</span></div>
+.intro {{ margin:-1mm 0 3mm; text-align:center; font:800 21px 'Baloo Bhaijaan 2'; color:var(--rose); }}
+.two {{ display:grid; grid-template-columns:1fr 1fr; gap:4mm; }}
+.sc {{ background:#fff; border:1.5px solid #e6e1d3; border-radius:18px; padding:10px 14px 8px; }}
+.sc h3 {{ display:flex; align-items:center; gap:9px; margin:0 0 6px; font:800 20px 'Baloo Bhaijaan 2'; color:var(--navy); }}
+.sc.r h3 {{ color:var(--rose); }}
+.sc ul {{ margin:0; padding:0; list-style:none; }}
+.sc li {{ position:relative; padding:4px 16px 4px 0; font-size:15.5px; font-weight:800; line-height:1.5; color:var(--ink); border-top:1px dashed #ebe5d6; }}
+.sc li:first-child {{ border-top:0; }}
+.sc li::before {{ content:""; position:absolute; right:2px; top:13px; width:7px; height:7px; border-radius:50%; background:var(--blue); }}
+.sc.r li::before {{ background:var(--rose); }}
+.c.ov {{ background:var(--blue); color:#fff; }} .c.ov .u {{ background:#fff; color:var(--navy); font-family:'Tajawal'; font-weight:800; }}
+.compact .logo {{ height:27mm; margin-top:1mm; }}
+.compact .kick {{ margin-top:1mm; }}
+.compact h1 {{ font-size:62px; }}
+.compact .sec, .compact .cta, .compact .proof {{ margin-top:4mm; }}
+.compact .cta {{ grid-template-columns:1fr 1fr; gap:3mm; }}
+.compact .cta .store {{ grid-column:1 / -1; }}
+.compact .c {{ padding:8px 10px 8px 16px; gap:10px; }}
+.compact .c b {{ font-size:22px; }}
+.compact .c small {{ font-size:13px; margin:1px 0 6px; }}
+.compact .c .u {{ font-size:14px; }}
+.compact .proof {{ padding:8px 14px; }}
+.compact .proof b {{ font-size:22px; }}
+.compact .proof p {{ font-size:14px; }}
+</style></head><body><div class="page {compact}">{DECO_TOP}{DECO_BOT}<div class="in">
+{badge}
 <img class="logo" src="{data_uri(LOGO)}" alt="عدل">
 <div class="kick">دورة ملازم عدل</div>
 <h1>{COURSE}</h1>
-<div class="track">{TRACK}</div>
-<div class="sec"><h2>الدورة تشمل</h2><div class="grid">{feats}</div></div>
+<div class="track">{track_label()}</div>
+{body}
 <div class="cta">
-  <a class="c demo" href="{DEMO}"><div class="t"><b>شاهد الشرح التجريبي</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">t.me/mlazmadl/3465</span></div><div class="q">{qr_img(DEMO, 88)}</div></a>
-  <a class="c store" href="{STORE}"><div class="t"><b>اشترك الآن من متجرنا</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">mtgradl.com</span></div><div class="q">{qr_img(STORE, 88)}</div></a>
+  <a class="c demo" href="{DEMO}"><div class="t"><b>شاهد الشرح التجريبي</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">{short(DEMO)}</span></div><div class="q">{qr_img(DEMO, QR)}</div></a>
+  {ov}
+  <a class="c store" href="{STORE}"><div class="t"><b>اشترك الآن من متجرنا</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">mtgradl.com</span></div><div class="q">{qr_img(STORE, QR)}</div></a>
 </div>
 <div class="proof"><b>درجات طلابنا في الصفحات التالية</b><p>{NOTE_HTML}</p></div>
 <a class="tg" href="{TELEGRAM}">قناتنا لمعرفة كل جديد: <span class="u">t.me/mlazmadl</span></a>
@@ -158,7 +233,7 @@ body {{ background:var(--cream); }}
 .foot .st {{ background:var(--rose); color:#fff; }} .foot .st .u {{ color:#fff3f8; }}
 .pn {{ position:absolute; bottom:18.5mm; left:0; right:0; text-align:center; font:600 10px 'Lexend'; color:var(--muted); }}
 </style></head><body><div class="page">
-<div class="head"><div class="ttl"><b>درجات طلاب دورة ملازم عدل</b><span>{COURSE} · {TRACK}</span></div><img src="{data_uri(LOGO)}" alt="عدل"></div>
+<div class="head"><div class="ttl"><b>درجات طلاب دورة ملازم عدل</b><span>{COURSE} · {track_label()}</span></div><img src="{data_uri(LOGO)}" alt="عدل"></div>
 <div class="note">{NOTE_HTML}</div>
 <div class="pn"><span class="en">{page_no} / {total}</span></div>
 <div class="foot">
@@ -201,12 +276,12 @@ html,body {{ background:transparent; }}
 
 def spread_order(items, grade_of, seed):
     """خلط عشوائي، والصور اللي درجتها متساوية تكون متباعدة قدر الإمكان (الـ25 مثلاً موزعة على الصفحات)،
-    والدرجات العالية (24 وفوق) بعد ما تتجمع في مكان واحد."""
+    والدرجات العالية (HIGH وفوق) بعد ما تتجمع في مكان واحد."""
     rng = random.Random(seed)
     pool = items[:]
     rng.shuffle(pool)
     n = len(items)
-    keys = [lambda it: grade_of(it), lambda it: grade_of(it) is not None and grade_of(it) >= 24]
+    keys = [lambda it: grade_of(it), lambda it: grade_of(it) is not None and grade_of(it) >= HIGH]
     totals = [{} for _ in keys]
     for it in items:
         for t, key in zip(totals, keys):
@@ -304,7 +379,10 @@ def main():
     ap.add_argument("out")
     ap.add_argument("--grades", help="ملف: اسم_الملف<TAB>الدرجة")
     ap.add_argument("--seed", type=int, default=1448)
+    ap.add_argument("--course", choices=sorted(PROFILES), help="مادة غير احص 102")
     a = ap.parse_args()
+    if a.course:
+        globals().update(PROFILES[a.course])
 
     files = sorted(p for p in pathlib.Path(a.images).iterdir() if p.suffix.lower() in IMG_EXT)
     if not files:
@@ -360,7 +438,7 @@ def main():
     out.insert_pdf(pymupdf.open(tmp / "cover.pdf"))
     if out.page_count != 1:
         raise SystemExit(f"الغلاف طلع {out.page_count} صفحات")
-    check_links(out[0], [DEMO, STORE, TELEGRAM])
+    check_links(out[0], [DEMO, STORE, TELEGRAM] + ([OVERVIEW] if OVERVIEW else []))
     wm = pymupdf.open(tmp / "wm.pdf")
     shadow = hexrgb("#e9dfd0")
     for k, cells in enumerate(pages):
@@ -389,7 +467,7 @@ def main():
         r = pymupdf.Rect(X0, Y1 - box_h, X1, Y1)
         page.show_pdf_page(r, pymupdf.open(tmp / "close.pdf"), 0)
         page.insert_link({"kind": pymupdf.LINK_URI, "from": r, "uri": STORE})
-    out.set_metadata({"title": f"درجات طلاب دورة ملازم عدل — {COURSE} ({TRACK})", "author": "ملازم عدل"})
+    out.set_metadata({"title": f"درجات طلاب دورة ملازم عدل — {COURSE} ({track_label()})", "author": "ملازم عدل"})
     out.save(a.out, garbage=3, deflate=True)
     print(f"{a.out}: {out.page_count} صفحة، {len(files)} صورة")
     print("الترتيب:", " ".join(f"{f.stem}({grades.get(f.name, '?')})" for f in files))
