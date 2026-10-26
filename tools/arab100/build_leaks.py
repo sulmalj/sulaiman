@@ -58,12 +58,14 @@ def main():
             cur = max((k for k, pg in mp.items() if pg <= pno), default=None)
             foot.append((lessons[cur][1] if cur is not None else "تسريبات الميد", pno + 1))
         rows = [f'<tr><td class="r">{bs.inline(toc)}</td><td>{mp.get(li, 0) + 1}</td></tr>' for li, (toc, _) in enumerate(lessons)]
-        cov = [("النموذج الأول", "اختبار الطلاب", ["ظلّل دائرة الإجابة الصحيحة (10)", "أجب حسب المطلوب (9)", "كتابة فقرة"]),
-               ("النموذج الثاني", "اختبار الطالبات", ["ظلّلي دائرة الإجابة الصحيحة (10)", "أجيبي حسب المطلوب (10)"])]
-        bm.render(bs.fm.cover_html(bm.font_faces(), cov, kicker="مهارات الكتابة · أسئلة اختبارات سابقة محلولة",
+        # (طلب المستخدم، هذا الملف بس) الغلاف بدون بطاقات النموذجين — نموذج الطالبات ما فيه فقرة وكانت توهم
+        cov = [("", "", [])]
+        cover = bs.fm.cover_html(bm.font_faces(), cov, kicker="مهارات الكتابة · أسئلة اختبارات سابقة محلولة",
                                    title="تسريبات الميد", badge="ملف خاص بالمشتركين", part="جزئية الميد",
-                                   foot="خاص بالمشتركين · لا أحلل نشر الملف أو إرساله أو إعطاءه لأي شخص أو نقل أسئلته"),
-                  tmp / "cover.pdf", br)
+                                   foot="خاص بالمشتركين · لا أحلل نشر الملف أو إرساله أو إعطاءه لأي شخص أو نقل أسئلته")
+        # بدون البطاقات: العنوان ينزل لنص الصفحة
+        cover = cover.replace("</style>", ".hero{top:290pt!important} .nib{top:318pt!important}</style>", 1)
+        bm.render(cover, tmp / "cover.pdf", br)
         bm.render(bm.doc(intro_html(rows)), tmp / "intro.pdf", br)
         n_intro = pymupdf.open(tmp / "intro.pdf").page_count
         bm.render(bs.footers_html([("قبل أن تبدأ", None)] * n_intro + foot, FOOT), tmp / "f.pdf", br)
