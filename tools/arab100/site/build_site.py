@@ -16,13 +16,14 @@ EXACT = ROOT / 'store/arab100/book/exact'
 PARTS = {
     'mid': dict(out='sites/arab100-mid', title='جزئية الميد', hero='استعد لاختبار الميد في عرب 100',
                 site=dict(key='arab100-mid-v1', lessons=list(range(1, 9)), examLessons=[1, 2, 3, 4, 5, 6, 8],
-                          examN=30, examMin=50, examName='محاكاة الميد', examScope='دروس جزئية الميد',
+                          examN=30, examMin=50, examName='محاكاة الميد', examScope='دروس جزئية الميد', pastLabel='جاء في ميد سابق',
                           # (طلب المستخدم 2026-10-27) المحاكاة بنفس طريقة اختبار الميد: س1 جمل بأربع صور كتابية + س2 أجب حسب المطلوب
                           examPlan=[dict(k='e', n=15, title='السؤال الأول: ظلّل دائرة الإجابة الصحيحة'),
                                     dict(k='wr', n=15, title='السؤال الثاني: أجب حسب المطلوب')])),
     'final': dict(out='sites/arab100-final', title='جزئية الفاينل', hero='استعد لاختبار الفاينل في عرب 100',
                   site=dict(key='arab100-final-v1', lessons=list(range(1, 13)), examLessons=[1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12],
-                            examN=40, examMin=50, examName='محاكاة الفاينل', examScope='كل دروس الكتاب')),
+                            examN=40, examMin=50, examName='محاكاة الفاينل', examScope='كل دروس الكتاب',
+                            pastLabel='جاء في اختبار سابق')),
 }
 
 LOADER = r"""
