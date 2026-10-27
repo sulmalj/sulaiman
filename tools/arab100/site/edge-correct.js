@@ -39,8 +39,8 @@ ${BOOK}
 5) corrected: الفقرة كاملة بعد تصحيح الأخطاء فقط، مع المحافظة على كلام الطالب وأفكاره قدر الإمكان.
 6) score من 10: البناء الداخلي (4)، شروط الفقرة الجيدة (3)، السلامة اللغوية والإملائية والترقيم (3). كن عادلًا ودقيقًا مثل أستاذ المادة.
 7) tips: نصائح قصيرة عملية لتحسين الفقرة (2–4)، وابدأ بمدح شيء أحسن فيه إذا وُجد.
-8) summary: سطرين يلخصون مستوى الفقرة، واذكر فيها هل عدد الجمل مطابق للعدد اللي طلبه الدكتور.
-9) sentence_count: عدد الجمل في فقرة الطالب (الجملة تنتهي بنقطة أو علامة استفهام أو تعجب). إذا اختلف عن العدد المطلوب انقص من الدرجة ونبّه عليه في tips.
+8) summary: سطرين يلخصون مستوى الفقرة، واذكر فيها هل طول الفقرة مناسب لعدد الأسطر اللي طلبه الدكتور (سطر ورقة الاختبار تقريبًا 11 كلمة).
+9) sentence_count: عدد الجمل في فقرة الطالب (الجملة تنتهي بنقطة أو علامة استفهام أو تعجب). وإذا كان طول الفقرة بعيدًا بوضوح عن عدد الأسطر المطلوب (أكثر من سطرين زيادة أو نقصًا) انقص من الدرجة نصف درجة ونبّه عليه في tips.
 
 اكتب كل النصوص بالعربي. إذا كان النص المرسل ليس فقرة عربية (فاضي أو كلام عشوائي أو بلغة أخرى) فأعطه score صفر ووضّح ذلك في summary.`;
 
@@ -80,7 +80,7 @@ export default async (request) => {
   try { body = await request.json(); } catch { return json(400, { error: 'body' }); }
   const text = String(body.text || '').trim();
   const topic = String(body.topic || '').trim().slice(0, MAX_TOPIC);
-  const need = Math.max(0, Math.min(20, parseInt(body.sentences, 10) || 0));
+  const need = Math.max(0, Math.min(30, parseInt(body.lines, 10) || 0));
   if (text.length < 20) return json(400, { error: 'short' });
   if (text.length > MAX_CHARS) return json(400, { error: 'long' });
 
@@ -91,7 +91,7 @@ export default async (request) => {
     stream: true,
     output_config: { effort: 'medium', format: { type: 'json_schema', schema: SCHEMA } },
     system: [{ type: 'text', text: SYSTEM, cache_control: { type: 'ephemeral' } }],
-    messages: [{ role: 'user', content: `عنوان الموضوع: ${topic || '(بدون عنوان)'}\nعدد الجمل اللي طلبه الدكتور: ${need || 'غير محدد'}\n\nفقرة الطالب:\n<paragraph>\n${text}\n</paragraph>` }]
+    messages: [{ role: 'user', content: `عنوان الموضوع: ${topic || '(بدون عنوان)'}\nعدد الأسطر اللي طلبه الدكتور: ${need || 'غير محدد'} (سطر ورقة الاختبار تقريبًا 11 كلمة)\n\nفقرة الطالب:\n<paragraph>\n${text}\n</paragraph>` }]
   };
   const headers = { 'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' };
   // إذا رفض النموذج الطلب، يعيده الخادم تلقائيًا على نموذج بديل (للنماذج اللي تدعم هذا)
