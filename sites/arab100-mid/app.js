@@ -203,7 +203,7 @@ const pastTag = q => q.p ? `<span class="past">${ICON('star')}جاء في ميد
 /* أجب حسب المطلوب: الجملة (__كلمة__ تحتها خط) والتصحيح الآلي */
 const sentHtml = q => `<p class="wsent">${esc(q.sent).replace(/__(.+?)__/g, '<u>$1</u>')}</p>`;
 const WNORM = s => String(s).replace(/[\u064B-\u0652\u0670\u0640\u200c-\u200f]/g, '').replace(/,/g, '،').replace(/;/g, '؛').replace(/\?/g, '؟')
-  .replace(/[«»"“”]/g, '').replace(/\s+/g, ' ').trim();
+  .replace(/[«»"“”]/g, '').replace(/\s*\+\s*/g, ' + ').replace(/\s+/g, ' ').trim();
 const PUNCT_ONLY = /^[\s().،؛:؟!\-–]+$/;
 function wrForms(s) {
   const a = WNORM(s);
@@ -469,7 +469,7 @@ function renderE() {
   $('eCount').textContent = `سؤال ${E.i + 1} من ${E.ids.length} · جاوبت ${E.ids.filter(eAnswered).length}`;
   $('eDots').innerHTML = E.ids.map((id, k) => `<button type="button" data-k="${k}" class="${eAnswered(id) ? 'ans' : ''} ${k === E.i ? 'cur' : ''}" aria-label="سؤال ${k + 1}">${k + 1}</button>`).join('');
   const sec = SITE.examPlan ? (() => { let a = 0; for (const p of SITE.examPlan) { a += p.n; if (E.i < a) return p.title; } return ''; })() : '';
-  const head = `${sec ? `<p class="esec">${esc(sec)}</p>` : ''}<div class="qmeta"><span class="tag">${kindLabel(q)}</span>${pastTag(q)}<span>${esc(LESSONS[q.s].t)}</span></div>
+  const head = `${sec ? `<p class="esec">${esc(sec)}</p>` : ''}<div class="qmeta">${sec ? '' : `<span class="tag">${kindLabel(q)}</span>`}${pastTag(q)}<span>${esc(LESSONS[q.s].t)}</span></div>
     <p class="qtext">${esc(q.q)}</p>`;
   if (q.t === 'wr') {
     $('eCard').innerHTML = head + sentHtml(q) + `<div class="wans"><input id="eIn" type="text" dir="rtl" autocomplete="off" placeholder="اكتب إجابتك هنا" value="${esc(picked || '')}"></div>`;
