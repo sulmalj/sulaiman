@@ -1,5 +1,5 @@
 // تدريب 4.3.1 (ملف القسم ص11): السؤال بدون حل + مع الحل + أجزاؤه — صور شفافة بلون الملزمة
-// الفقرة 6 في ملف القسم (رسم المستقيم) انضمت للفقرة 4 (طلب المستخدم)
+// الفقرة 6 في ملف القسم (رسم المستقيم) انضمت للفقرة 4، وفقرة معامل التحديد انشالت (بتنحط في الدرس اللي بعده) — طلب المستخدم
 const { chromium } = require('playwright'); const fs=require('fs'); const path=require('path');
 const KX=process.env.KATEX_DIR; const katex=require(KX+'/dist/katex.js'); const OUT=process.argv[2]||__dirname;
 const FONTS=path.resolve(__dirname,'../arab100/fonts');
@@ -61,17 +61,17 @@ const Q=[
  ['حدد نوع الارتباط وقيّم قوته.', '', solType],
  [`أوجد معادلة مستقيم انحدار ${K('Y')} على ${K('X')}، ثم ارسمه على لوحة الانتشار في الفقرة (1).`, '', solB],
  [`استخدم معادلة الانحدار لتقدير القيمة ${K('\\hat{y}')} الموافقة للقيمة ${K('x=1.5')}`, '', solY],
- ['احسب معامل التحديد.', '', solR2],
 ];
 const head=`<div class="ti">من أجل البيانات الإحصائية المعطاة في الجدول الآتي، أجب عما يلي:</div><div class="g">${data}</div>`;
-const page=sol=>`<div class="all">${head}${Q.map(([q,blank,s],i)=>`<div class="qi"><div class="qt"><b>${i+1})</b> ${q}</div>${sol?`<div class="sv">${s}</div>`:blank}</div>`).join('')}</div>`;
+// بدون حل: الأسئلة تحت بعض بدون مسافات ولا لوحة فاضية (طلب المستخدم)
+const page=sol=>`<div class="all${sol?'':' tight'}">${head}${Q.map(([q,blank,s],i)=>`<div class="qi"><div class="qt"><b>${i+1})</b> ${q}</div>${sol?`<div class="sv">${s}</div>`:''}</div>`).join('')}</div>`;
 const css=`@font-face{font-family:Rx;src:url(file://${FONTS}/Readex-600.ttf)}@font-face{font-family:Rx7;src:url(file://${FONTS}/Readex-700.ttf)}
 html,body{margin:0;background:transparent}#w{display:inline-block;padding:16px 22px;color:${BR}}
 .katex{color:${BR};-webkit-text-stroke:0.6px ${BR};direction:ltr;unicode-bidi:isolate}.katex-display{margin:0}
 .katex [style*="transparent"],.katex [style*="transparent"] *{-webkit-text-stroke:0!important}
 .all{direction:rtl;width:1500px}
 .ti{font:38px Rx7;color:${BR};margin-bottom:6px}
-.qi{margin-top:44px}.qt{font:36px Rx;color:${BR};line-height:1.6}.qt b{color:${STEP};font:38px Rx7}.qt .katex{font-size:1.05em}
+.qi{margin-top:44px}.tight .qi{margin-top:6px}.tight .g{margin-bottom:22px}.qt{font:36px Rx;color:${BR};line-height:1.6}.qt b{color:${STEP};font:38px Rx7}.qt .katex{font-size:1.05em}
 .sv{margin-top:22px}.g{margin-top:24px;text-align:center}
 .t{direction:rtl;border-collapse:separate;border-spacing:0;font:30px Rx;color:${BR};border:3px solid ${BR};border-radius:16px;overflow:hidden;background:#fff;margin:0 auto}
 .t td,.t th{height:68px;min-width:90px;padding:0 22px;text-align:center;border-left:2px solid ${LINE};border-bottom:2px solid ${LINE};font-weight:normal;white-space:nowrap}
@@ -89,7 +89,7 @@ const p2=await br.newPage({deviceScaleFactor:2.2,viewport:{width:2400,height:120
 const f=`${OUT}/_t431.html`;
 for(const [name,body] of [['السؤال بدون حل',page(false)],['السؤال مع الحل',page(true)],['جدول البيانات',data],['جدول الحسابات',calc],
   ['لوحة الانتشار - فاضية',grid(false,false)],['لوحة الانتشار - النقاط',grid(true,false)],['لوحة الانتشار - مع مستقيم الانحدار',grid(true,true)],
-  ['حل 2 - معامل بيرسون',solR],['حل 3 - نوع الارتباط',solType],['حل 4 - معادلة الانحدار',`<div style="width:1500px;direction:rtl">${solB}</div>`],['حل 5 - التقدير',solY],['حل 6 - معامل التحديد',solR2]]){
+  ['حل 2 - معامل بيرسون',solR],['حل 3 - نوع الارتباط',solType],['حل 4 - معادلة الانحدار',`<div style="width:1500px;direction:rtl">${solB}</div>`],['حل 5 - التقدير',solY]]){
  fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${body}</div></body></html>`);
  const pg=name==='السؤال مع الحل'?p2:p;
  await pg.goto('file://'+f); await pg.evaluate(()=>document.fonts.ready);
