@@ -16,7 +16,10 @@ EXACT = ROOT / 'store/arab100/book/exact'
 PARTS = {
     'mid': dict(out='sites/arab100-mid', title='جزئية الميد', hero='استعد لاختبار الميد في عرب 100',
                 site=dict(key='arab100-mid-v1', lessons=list(range(1, 9)), examLessons=[1, 2, 3, 4, 5, 6, 8],
-                          examN=30, examMin=50, examName='محاكاة الميد', examScope='دروس جزئية الميد')),
+                          examN=30, examMin=50, examName='محاكاة الميد', examScope='دروس جزئية الميد',
+                          # (طلب المستخدم 2026-10-27) المحاكاة بنفس طريقة اختبار الميد: س1 جمل بأربع صور كتابية + س2 أجب حسب المطلوب
+                          examPlan=[dict(k='e', n=15, title='السؤال الأول: ظلّل دائرة الإجابة الصحيحة'),
+                                    dict(k='wr', n=15, title='السؤال الثاني: أجب حسب المطلوب')])),
     'final': dict(out='sites/arab100-final', title='جزئية الفاينل', hero='استعد لاختبار الفاينل في عرب 100',
                   site=dict(key='arab100-final-v1', lessons=list(range(1, 13)), examLessons=[1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12],
                             examN=40, examMin=50, examName='محاكاة الفاينل', examScope='كل دروس الكتاب')),
@@ -26,9 +29,13 @@ LOADER = r"""
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const out = { questions: [], cards: [], proof: [], examples: [], fix: [] };
 const ctx = {
-  M: (s, q, o, x) => out.questions.push({ s, t: 'mc', q, o, x: x || '' }),
-  T: (s, q, x) => out.questions.push({ s, t: 'tf', q, a: true, x: x || '' }),
-  F: (s, q, c, x) => out.questions.push({ s, t: 'tf', q, a: false, c, x: x || '' }),
+  // الحقل الأخير الاختياري f: PAST (جاء في ميد سابق) / EXAM (بطريقة س1 في الاختبار: جملة بأربع صور كتابية) / PAST_EXAM
+  PAST: { p: 1 }, EXAM: { e: 1 }, PAST_EXAM: { p: 1, e: 1 },
+  M: (s, q, o, x, f) => out.questions.push(Object.assign({ s, t: 'mc', q, o, x: x || '' }, f || {})),
+  T: (s, q, x, f) => out.questions.push(Object.assign({ s, t: 'tf', q, a: true, x: x || '' }, f || {})),
+  F: (s, q, c, x, f) => out.questions.push(Object.assign({ s, t: 'tf', q, a: false, c, x: x || '' }, f || {})),
+  // أجب حسب المطلوب (س2 في الاختبار): المطلوب، الجملة (__كلمة__ = تحتها خط)، الإجابات المقبولة (الأولى تنعرض)، الشرح
+  W: (s, q, sent, ans, x, f) => out.questions.push(Object.assign({ s, t: 'wr', q, sent, ans, x: x || '' }, f || {})),
   C: (s, t, l, e, x) => out.cards.push({ s, t, l, e: e || [], x: x || '' }),
   PR: (title, text) => out.proof.push({ title, text }),
   EX: (s, q, chk, ex, x) => out.examples.push({ s, q, chk, ex: ex || [], x: x || '' }),
@@ -68,8 +75,13 @@ def validate(d):
             if not (3 <= len(o) <= 5): errs.append('عدد الخيارات: ' + tag)
             if len(set(o)) != len(o): errs.append('خيارات مكررة: ' + tag)
         if q['t'] == 'tf' and not q['a'] and not q.get('c'): errs.append('خطأ بدون تصحيح: ' + tag)
+        if q['t'] == 'wr':
+            a = q.get('ans')
+            if not isinstance(q.get('sent'), str) or not q['sent'].strip(): errs.append('أجب حسب المطلوب بدون جملة: ' + tag)
+            if not isinstance(a, list) or not a or not all(isinstance(v, str) and v.strip() for v in a): errs.append('أجب حسب المطلوب بدون إجابات: ' + tag)
+        if q.get('e') and q['t'] != 'mc': errs.append('EXAM لأسئلة الاختيار بس: ' + tag)
         if not q.get('x', '').strip(): errs.append('سؤال بدون شرح: ' + tag)
-        key = (q['s'], q['q'], tuple(q.get('o') or []))
+        key = (q['s'], q['q'], q.get('sent', ''), tuple(q.get('o') or []))
         if key in seen: errs.append('سؤال مكرر: ' + tag)
         seen.add(key)
     for c in d['cards']:
