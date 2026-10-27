@@ -51,20 +51,19 @@ const solB=eq(String.raw`b=\dfrac{n\sum x_iy_i-\sum x_i\sum y_i}{n\sum x_i^{2}-\
  +eq(String.raw`\bar{x}=\dfrac{\sum x_i}{n}=\dfrac{${S[0]}}{${n}}=${xb}\qquad\quad \bar{y}=\dfrac{\sum y_i}{n}=\dfrac{${S[1]}}{${n}}=${yb}`)
  +eq(String.raw`a=\bar{y}-b\,\bar{x}=${yb}-${b}(${xb})=${a}`)
  +eq(String.raw`${box(`\\hat{Y}=${a}+X`)}`)
- +`<p class="note">لرسم المستقيم نعيّن نقطتين عليه، مثل ${K('(0,\\,-2)')} و ${K('(\\bar{x},\\,\\bar{y})=(3,\\,1)')}، ثم نصل بينهما:</p>`
+ +`<p class="note">نمثّل النقاط، ثم نرسم المستقيم بنقطتين عليه مثل ${K('(0,\\,-2)')} و ${K('(\\bar{x},\\,\\bar{y})=(3,\\,1)')} ونصل بينهما:</p>`
  +`<div class="g">${grid(true,true)}</div>`;
 const solY=eq(String.raw`\hat{y}=${a}+1.5=${box(String(y15))}`);
 const solR2=eq(String.raw`r^{2}=(${r4})^{2}=${box(tr(r2v,2))}`);
+// 3 أسئلة بدل 5 عشان المساحة (طلب المستخدم): بيرسون + نوعه، ثم لوحة الانتشار + المعادلة + رسمها، ثم التقدير
 const Q=[
- ['مثّل البيانات على لوحة الانتشار.', `<div class="g">${grid(false,false)}</div>`, `<div class="g">${grid(true,false)}</div>`],
- [`احسب معامل ارتباط بيرسون ${K('r')}.`, '', `<div class="g">${calc}</div>${solR}`],
- ['حدد نوع الارتباط وقيّم قوته.', '', solType],
- [`أوجد معادلة مستقيم انحدار ${K('Y')} على ${K('X')}، ثم ارسمه على لوحة الانتشار في الفقرة (1).`, '', solB],
- [`استخدم معادلة الانحدار لتقدير القيمة ${K('\\hat{y}')} الموافقة للقيمة ${K('x=1.5')}`, '', solY],
+ [`احسب معامل ارتباط بيرسون ${K('r')}، ثم حدد نوع الارتباط وقيّم قوته.`, `<div class="g">${calc}</div>${solR}<div class="g">${solType}</div>`],
+ [`مثّل البيانات على لوحة الانتشار، ثم أوجد معادلة مستقيم انحدار ${K('Y')} على ${K('X')} وارسمه عليها.`, solB],
+ [`استخدم معادلة الانحدار لتقدير القيمة ${K('\\hat{y}')} الموافقة للقيمة ${K('x=1.5')}`, solY],
 ];
 const head=`<div class="ti">من أجل البيانات الإحصائية المعطاة في الجدول الآتي، أجب عما يلي:</div><div class="g">${data}</div>`;
 // بدون حل: الأسئلة تحت بعض بدون مسافات ولا لوحة فاضية (طلب المستخدم)
-const page=sol=>`<div class="all${sol?'':' tight'}">${head}${Q.map(([q,blank,s],i)=>`<div class="qi"><div class="qt"><b>${i+1})</b> ${q}</div>${sol?`<div class="sv">${s}</div>`:''}</div>`).join('')}</div>`;
+const page=sol=>`<div class="all${sol?'':' tight'}">${head}${Q.map(([q,s],i)=>`<div class="qi"><div class="qt"><b>${i+1})</b> ${q}</div>${sol?`<div class="sv">${s}</div>`:''}</div>`).join('')}</div>`;
 const css=`@font-face{font-family:Rx;src:url(file://${FONTS}/Readex-600.ttf)}@font-face{font-family:Rx7;src:url(file://${FONTS}/Readex-700.ttf)}
 html,body{margin:0;background:transparent}#w{display:inline-block;padding:16px 22px;color:${BR}}
 .katex{color:${BR};-webkit-text-stroke:0.6px ${BR};direction:ltr;unicode-bidi:isolate}.katex-display{margin:0}
@@ -79,7 +78,7 @@ html,body{margin:0;background:transparent}#w{display:inline-block;padding:16px 2
 .t th.h,.t tr.hd th{background:${HEAD}}.t .katex{font-size:1.15em}.t.c td,.t.c th{min-width:150px}.t tr.s td{background:${HEAD}}
 .eq{font-size:40px;text-align:center;margin-top:22px}.eq .katex{-webkit-text-stroke:0.9px ${BR}}.eq.sm{font-size:31px}
 .katex .fcolorbox{border-width:3.5px!important;border-radius:8px;padding:2px 6px!important}
-.note{font:34px Rx;color:${BR};margin:30px 0 0;text-align:center}.note .katex{font-size:1.05em}
+.note{font:34px Rx;color:${BR};margin:30px 0 0;text-align:center}.note .katex{font-size:1.05em;white-space:nowrap}
 svg{direction:ltr}
 .n{font:600 26px 'DejaVu Sans';fill:${BR}}.ax{font:italic 700 32px 'DejaVu Serif';fill:${BR}}
 .lb{font:600 24px 'DejaVu Sans';fill:${LN}}.lq{font:italic 700 30px 'DejaVu Serif';fill:${LN}}
@@ -89,7 +88,7 @@ const p2=await br.newPage({deviceScaleFactor:2.2,viewport:{width:2400,height:120
 const f=`${OUT}/_t431.html`;
 for(const [name,body] of [['السؤال بدون حل',page(false)],['السؤال مع الحل',page(true)],['جدول البيانات',data],['جدول الحسابات',calc],
   ['لوحة الانتشار - فاضية',grid(false,false)],['لوحة الانتشار - النقاط',grid(true,false)],['لوحة الانتشار - مع مستقيم الانحدار',grid(true,true)],
-  ['حل 2 - معامل بيرسون',solR],['حل 3 - نوع الارتباط',solType],['حل 4 - معادلة الانحدار',`<div style="width:1500px;direction:rtl">${solB}</div>`],['حل 5 - التقدير',solY]]){
+  ['حل 1 - معامل بيرسون',solR],['حل 1 - نوع الارتباط',solType],['حل 2 - معادلة الانحدار ورسمها',`<div style="width:1500px;direction:rtl">${solB}</div>`],['حل 3 - التقدير',solY]]){
  fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${body}</div></body></html>`);
  const pg=name==='السؤال مع الحل'?p2:p;
  await pg.goto('file://'+f); await pg.evaluate(()=>document.fonts.ready);
