@@ -415,3 +415,5 @@ footer p{margin:0}
 .wans input:focus{outline:2px solid color-mix(in srgb,var(--navy) 40%,transparent);border-color:var(--navy)}
 .wans input:disabled{background:#F7F8FA;color:var(--ink-2)}
 .esec{margin:0 0 10px;font-weight:700;color:var(--navy)}
+.fb.chk{background:#FFF8E6;border-color:#F1D48A}
+.fb.chk .h{color:#8A5A00}

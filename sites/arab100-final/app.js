@@ -210,6 +210,8 @@ function wrForms(s) {
   if (PUNCT_ONLY.test(a)) return [a.replace(/[()\s]/g, '')];
   return [a, a.replace(/^[(]\s*|\s*[)]$/g, ''), a.replace(/[.،؛:!؟]+$/, '').trim()];
 }
+/* الأخطاء الشائعة (درس 8): التصويب ممكن يُكتب بأكثر من صيغة صحيحة — إذا ما طابق قائمتنا نقول «قارن» بدل «خطأ» */
+const softWr = q => q.t === 'wr' && q.s === 8;
 const okWr = (q, typed) => { const got = wrForms(typed || ''); if (!got[0]) return false; const want = new Set(q.ans.flatMap(wrForms)); return got.some(g => g && want.has(g)); };
 
 function renderQ() {
@@ -225,7 +227,9 @@ function renderQ() {
       <button class="btn btn-pri" type="button" id="wrGo" ${done ? 'disabled' : ''}>تحقق</button></div>`;
     if (done) {
       const ok = okWr(q, typed);
-      html += `<div class="fb ${ok ? 'ok' : 'no'}"><div class="h">${ok ? ICON('check') + 'إجابة صحيحة' : ICON('x') + 'إجابة خاطئة، والصحيحة: ' + esc(rightText(q))}</div>${explain(q)}</div>`;
+      html += ok || !softWr(q)
+        ? `<div class="fb ${ok ? 'ok' : 'no'}"><div class="h">${ok ? ICON('check') + 'إجابة صحيحة' : ICON('x') + 'إجابة خاطئة، والصحيحة: ' + esc(rightText(q))}</div>${explain(q)}</div>`
+        : `<div class="fb chk"><div class="h">${ICON('alert')}قارن إجابتك بالتصويب الصحيح: ${esc(rightText(q))}</div><span class="corr">إذا كتبت نفس التصويب بصيغة ثانية صحيحة فإجابتك صحيحة.</span>${explain(q)}</div>`;
     }
   } else {
     const opts = options(q), picked = P.picked[q.id];
@@ -247,7 +251,8 @@ function checkWrQ() {
   const q = BY_ID[P.ids[P.i]], v = ($('wrIn') || {}).value || '';
   if (!v.trim()) { $('wrIn').focus(); return; }
   P.typed[q.id] = v; P.shown[q.id] = 1;
-  record(q, okWr(q, v));
+  const ok = okWr(q, v);
+  if (ok || !softWr(q)) record(q, ok);
   renderQ();
 }
 $('qCard').addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'wrIn') { e.preventDefault(); checkWrQ(); } });
@@ -447,8 +452,8 @@ function startExam() {
   const pool = QS.filter(q => SITE.examLessons.includes(q.s));
   // (الميد) نفس طريقة الاختبار: س1 جمل بأربع صور كتابية ثم س2 أجب حسب المطلوب، والأسئلة المتبقية تكمّل العدد
   const ids = SITE.examPlan
-    ? SITE.examPlan.flatMap(p => shuffle(pool.filter(q => p.k === 'wr' ? q.t === 'wr' : q.e).map(q => q.id)).slice(0, p.n))
-    : shuffle(pool.map(q => q.id)).slice(0, SITE.examN);
+    ? SITE.examPlan.flatMap(p => shuffle(pool.filter(q => p.k === 'wr' ? q.t === 'wr' && !softWr(q) : q.e).map(q => q.id)).slice(0, p.n))
+    : shuffle(pool.filter(q => !softWr(q)).map(q => q.id)).slice(0, SITE.examN);
   E = { ids, i: 0, picked: {}, end: Date.now() + SITE.examMin * 60000 };
   ids.forEach(id => delete ORDER[id]);
   show('examrun', 'exam'); renderE(); tick();
