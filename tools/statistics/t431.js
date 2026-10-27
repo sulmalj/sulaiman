@@ -35,7 +35,6 @@ function grid(pts,line){
  g+=`<text x="${xs(0)-14}" y="${ys(0)+32}" text-anchor="end" class="n">0</text>`;
  g+=`<text x="${xs(X1)+40}" y="${ys(0)+10}" class="ax">X</text><text x="${xs(0)-10}" y="${ys(Y1)-38}" class="ax">Y</text>`;
  if(line){g+=`<line x1="${xs(0)}" y1="${ys(a)}" x2="${xs(6)}" y2="${ys(a+6*b)}" stroke="${LN}" stroke-width="4.5"/>`;
-  g+=`<circle cx="${xs(xb)}" cy="${ys(yb)}" r="10" fill="#fff" stroke="${LN}" stroke-width="4"/><circle cx="${xs(0)}" cy="${ys(a)}" r="10" fill="#fff" stroke="${LN}" stroke-width="4"/>`;
   }
  if(pts) X.forEach((x,i)=>{g+=`<circle cx="${xs(x)}" cy="${ys(Y[i])}" r="10" fill="${PT}" stroke="#fff" stroke-width="2"/>`;});
  return `<svg width="${W+40}" height="${H}" viewBox="0 0 ${W+40} ${H}">${g}</svg>`;}
