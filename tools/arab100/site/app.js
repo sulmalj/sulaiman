@@ -43,7 +43,7 @@ window.ICON = ICON;
 const inPart = s => SITE.lessons.includes(s);
 
 /* ── البيانات ── */
-const QS = (D.questions || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'q' + q.s + '-' + hash(q.q + '|' + (q.o ? q.o[0] : q.c || '')) }, q));
+const QS = (D.questions || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'q' + q.s + '-' + hash(q.q + '|' + (q.o ? q.o[0] : q.t === 'wr' ? q.sent : q.c || '')) }, q));
 const CARDS = (D.cards || []).filter(c => inPart(c.s));
 const EXS = (D.examples || []).filter(q => inPart(q.s)).map(q => Object.assign({ id: 'x' + q.s + '-' + hash(q.q) }, q));
 const exOf = s => EXS.filter(q => q.s === s);
@@ -195,18 +195,39 @@ function options(q) {
   if (!ORDER[q.id]) ORDER[q.id] = shuffle(q.o.map((txt, i) => ({ txt, ok: i === 0 })));
   return ORDER[q.id];
 }
-const rightText = q => q.t === 'tf' ? (q.a ? 'صح' : 'خطأ') : q.o[0];
+const rightText = q => q.t === 'tf' ? (q.a ? 'صح' : 'خطأ') : q.t === 'wr' ? q.ans[0] : q.o[0];
 const explain = q => (q.t === 'tf' && !q.a ? `<span class="corr"><b>التصحيح:</b> ${esc(q.c)}</span>` : '') + (q.x ? `<span class="corr"><b>التوضيح:</b> ${esc(q.x)}</span>` : '');
-const kindLabel = q => q.t === 'tf' ? 'صح أو خطأ' : 'اختيار من متعدد';
+const kindLabel = q => q.t === 'tf' ? 'صح أو خطأ' : q.t === 'wr' ? 'أجب حسب المطلوب' : q.e ? 'ظلّل الإجابة الصحيحة' : 'اختيار من متعدد';
+/* شارة «جاء في ميد سابق» (أسئلة التسريبات) */
+const pastTag = q => q.p ? `<span class="past">${ICON('star')}جاء في ميد سابق</span>` : '';
+/* أجب حسب المطلوب: الجملة (__كلمة__ تحتها خط) والتصحيح الآلي */
+const sentHtml = q => `<p class="wsent">${esc(q.sent).replace(/__(.+?)__/g, '<u>$1</u>')}</p>`;
+const WNORM = s => String(s).replace(/[\u064B-\u0652\u0670\u0640\u200c-\u200f]/g, '').replace(/,/g, '،').replace(/;/g, '؛').replace(/\?/g, '؟')
+  .replace(/[«»"“”]/g, '').replace(/\s*\+\s*/g, ' + ').replace(/\s+/g, ' ').trim();
+const PUNCT_ONLY = /^[\s().،؛:؟!\-–]+$/;
+function wrForms(s) {
+  const a = WNORM(s);
+  if (PUNCT_ONLY.test(a)) return [a.replace(/[()\s]/g, '')];
+  return [a, a.replace(/^[(]\s*|\s*[)]$/g, ''), a.replace(/[.،؛:!؟]+$/, '').trim()];
+}
+const okWr = (q, typed) => { const got = wrForms(typed || ''); if (!got[0]) return false; const want = new Set(q.ans.flatMap(wrForms)); return got.some(g => g && want.has(g)); };
 
 function renderQ() {
   const q = BY_ID[P.ids[P.i]];
   const head = P.kind === 'review' ? 'مراجعة أخطائي' : 'تدرّب بالدرس';
   $('qTitle').innerHTML = `${head}<small>${esc(lessonName(q.s))} · سؤال ${P.i + 1} من ${P.ids.length}</small>`;
   $('qBar').style.width = ((P.i + 1) / P.ids.length * 100) + '%';
-  let html = `<div class="qmeta"><span class="tag">${esc(kindLabel(q))}</span><span class="qcode">سؤال ${q.code}</span></div>
+  let html = `<div class="qmeta"><span class="tag">${esc(kindLabel(q))}</span>${pastTag(q)}<span class="qcode">سؤال ${q.code}</span></div>
     <p class="qtext">${esc(q.q)}</p>`;
-  {
+  if (q.t === 'wr') {
+    const done = P.shown[q.id], typed = P.typed[q.id] || '';
+    html += sentHtml(q) + `<div class="wans"><input id="wrIn" type="text" dir="rtl" autocomplete="off" placeholder="اكتب إجابتك هنا" value="${esc(typed)}" ${done ? 'disabled' : ''}>
+      <button class="btn btn-pri" type="button" id="wrGo" ${done ? 'disabled' : ''}>تحقق</button></div>`;
+    if (done) {
+      const ok = okWr(q, typed);
+      html += `<div class="fb ${ok ? 'ok' : 'no'}"><div class="h">${ok ? ICON('check') + 'إجابة صحيحة' : ICON('x') + 'إجابة خاطئة، والصحيحة: ' + esc(rightText(q))}</div>${explain(q)}</div>`;
+    }
+  } else {
     const opts = options(q), picked = P.picked[q.id];
     html += `<div class="opts ${q.t === 'tf' ? 'tf' : ''}">` + opts.map((o, i) => {
       let cls = '';
@@ -222,8 +243,17 @@ function renderQ() {
   $('qPrev').disabled = P.i === 0;
   $('qNext').innerHTML = P.i === P.ids.length - 1 ? 'إنهاء' : 'التالي' + ICON('next');
 }
+function checkWrQ() {
+  const q = BY_ID[P.ids[P.i]], v = ($('wrIn') || {}).value || '';
+  if (!v.trim()) { $('wrIn').focus(); return; }
+  P.typed[q.id] = v; P.shown[q.id] = 1;
+  record(q, okWr(q, v));
+  renderQ();
+}
+$('qCard').addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.id === 'wrIn') { e.preventDefault(); checkWrQ(); } });
 $('qCard').addEventListener('click', e => {
   const q = BY_ID[P.ids[P.i]];
+  if (e.target.closest('#wrGo')) { checkWrQ(); return; }
   const b = e.target.closest('.opt'); if (!b || b.disabled) return;
   const i = +b.dataset.i;
   P.picked[q.id] = i;
@@ -410,11 +440,15 @@ function renderReviewIntro() {
 /* ── الاختبار التجريبي ── */
 let E = null, timer = null;
 function renderExamIntro() {
-  $('exFacts').innerHTML = `<div><dt>عدد الأسئلة</dt><dd>${cnt(SITE.examN, W_Q)}</dd></div><div><dt>الوقت</dt><dd>${SITE.examMin} دقيقة</dd></div><div><dt>الأسئلة من</dt><dd>${SITE.examScope}</dd></div>`;
+  const plan = SITE.examPlan ? `<div><dt>طريقة الأسئلة</dt><dd>${SITE.examPlan.map(p => esc(p.title.split(': ')[1] || p.title) + ' (' + p.n + ')').join('، ')}</dd></div>` : '';
+  $('exFacts').innerHTML = `<div><dt>عدد الأسئلة</dt><dd>${cnt(SITE.examN, W_Q)}</dd></div><div><dt>الوقت</dt><dd>${SITE.examMin} دقيقة</dd></div>${plan}<div><dt>الأسئلة من</dt><dd>${SITE.examScope}</dd></div>`;
 }
 function startExam() {
   const pool = QS.filter(q => SITE.examLessons.includes(q.s));
-  const ids = shuffle(pool.map(q => q.id)).slice(0, SITE.examN);
+  // (الميد) نفس طريقة الاختبار: س1 جمل بأربع صور كتابية ثم س2 أجب حسب المطلوب، والأسئلة المتبقية تكمّل العدد
+  const ids = SITE.examPlan
+    ? SITE.examPlan.flatMap(p => shuffle(pool.filter(q => p.k === 'wr' ? q.t === 'wr' : q.e).map(q => q.id)).slice(0, p.n))
+    : shuffle(pool.map(q => q.id)).slice(0, SITE.examN);
   E = { ids, i: 0, picked: {}, end: Date.now() + SITE.examMin * 60000 };
   ids.forEach(id => delete ORDER[id]);
   show('examrun', 'exam'); renderE(); tick();
@@ -429,32 +463,50 @@ function tick() {
   $('eTimer').classList.toggle('low', rem < 120000);
   if (rem <= 0) finishExam(true);
 }
+const eAnswered = id => id in E.picked && (typeof E.picked[id] !== 'string' || E.picked[id].trim() !== '');
 function renderE() {
-  const q = BY_ID[E.ids[E.i]], opts = options(q), picked = E.picked[q.id];
-  $('eCount').textContent = `سؤال ${E.i + 1} من ${E.ids.length} · جاوبت ${Object.keys(E.picked).length}`;
-  $('eDots').innerHTML = E.ids.map((id, k) => `<button type="button" data-k="${k}" class="${id in E.picked ? 'ans' : ''} ${k === E.i ? 'cur' : ''}" aria-label="سؤال ${k + 1}">${k + 1}</button>`).join('');
-  $('eCard').innerHTML = `<div class="qmeta"><span class="tag">${kindLabel(q)}</span><span>${esc(LESSONS[q.s].t)}</span></div>
-    <p class="qtext">${esc(q.q)}</p>
-    <div class="opts ${q.t === 'tf' ? 'tf' : ''}">` +
-    opts.map((o, i) => `<button class="opt ${picked === i ? 'sel' : ''}" type="button" data-i="${i}">${q.t === 'tf' ? '' : `<span class="lt">${LETTERS[i]}</span>`}<span>${esc(o.txt)}</span></button>`).join('') + `</div>`;
+  const q = BY_ID[E.ids[E.i]], picked = E.picked[q.id];
+  $('eCount').textContent = `سؤال ${E.i + 1} من ${E.ids.length} · جاوبت ${E.ids.filter(eAnswered).length}`;
+  $('eDots').innerHTML = E.ids.map((id, k) => `<button type="button" data-k="${k}" class="${eAnswered(id) ? 'ans' : ''} ${k === E.i ? 'cur' : ''}" aria-label="سؤال ${k + 1}">${k + 1}</button>`).join('');
+  const sec = SITE.examPlan ? (() => { let a = 0; for (const p of SITE.examPlan) { a += p.n; if (E.i < a) return p.title; } return ''; })() : '';
+  const head = `${sec ? `<p class="esec">${esc(sec)}</p>` : ''}<div class="qmeta">${sec ? '' : `<span class="tag">${kindLabel(q)}</span>`}${pastTag(q)}<span>${esc(LESSONS[q.s].t)}</span></div>
+    <p class="qtext">${esc(q.q)}</p>`;
+  if (q.t === 'wr') {
+    $('eCard').innerHTML = head + sentHtml(q) + `<div class="wans"><input id="eIn" type="text" dir="rtl" autocomplete="off" placeholder="اكتب إجابتك هنا" value="${esc(picked || '')}"></div>`;
+  } else {
+    const opts = options(q);
+    $('eCard').innerHTML = head + `<div class="opts ${q.t === 'tf' ? 'tf' : ''}">` +
+      opts.map((o, i) => `<button class="opt ${picked === i ? 'sel' : ''}" type="button" data-i="${i}">${q.t === 'tf' ? '' : `<span class="lt">${LETTERS[i]}</span>`}<span>${esc(o.txt)}</span></button>`).join('') + `</div>`;
+  }
   $('ePrev').disabled = E.i === 0;
   $('eNext').innerHTML = E.i === E.ids.length - 1 ? 'إنهاء وتصحيح' : 'التالي' + ICON('next');
 }
 $('startExam').onclick = startExam;
 $('eCard').addEventListener('click', e => { const b = e.target.closest('.opt'); if (!b) return; E.picked[E.ids[E.i]] = +b.dataset.i; renderE(); });
+$('eCard').addEventListener('input', e => {
+  if (e.target.id !== 'eIn') return;
+  E.picked[E.ids[E.i]] = e.target.value;
+  const k = E.i, dot = $('eDots').children[k]; if (dot) dot.classList.toggle('ans', eAnswered(E.ids[k]));
+  $('eCount').textContent = `سؤال ${E.i + 1} من ${E.ids.length} · جاوبت ${E.ids.filter(eAnswered).length}`;
+});
 $('eDots').addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (b) { E.i = +b.dataset.k; renderE(); } });
 $('ePrev').onclick = () => { if (E.i > 0) { E.i--; renderE(); } };
 $('eNext').onclick = () => { if (E.i < E.ids.length - 1) { E.i++; renderE(); window.scrollTo(0, 0); } else askFinish(); };
 $('eEnd').onclick = askFinish;
 function askFinish() {
-  const left = E.ids.length - Object.keys(E.picked).length;
+  const left = E.ids.filter(id => !eAnswered(id)).length;
   confirmBox('تنهي الاختبار؟', left ? `باقي ${cnt(left, W_Q)} ما جاوبت عنه، وبينحسب خطأ.` : 'جاوبت عن كل الأسئلة. يطلع لك التصحيح الحين.', 'إيه، أنهِ الاختبار', () => finishExam(false));
 }
 function finishExam(timeUp) {
   if (!E) return;
   const res = E.ids.map(id => {
-    const q = BY_ID[id], opts = options(q), p = E.picked[id];
-    const ok = p !== undefined && opts[p].ok;
+    const q = BY_ID[id], p = E.picked[id];
+    if (q.t === 'wr') {
+      const has = typeof p === 'string' && p.trim() !== '', ok = has && okWr(q, p);
+      record(q, ok);
+      return { q, ok, you: has ? p.trim() : null };
+    }
+    const opts = options(q), ok = p !== undefined && opts[p].ok;
     record(q, ok);
     return { q, ok, you: p === undefined ? null : opts[p].txt };
   });
@@ -465,7 +517,7 @@ function finishExam(timeUp) {
   const wrong = res.filter(r => !r.ok);
   $('rHead').textContent = wrong.length ? `الأسئلة اللي غلطت فيها (${wrong.length})` : 'ما غلطت في ولا سؤال';
   $('rList').innerHTML = wrong.map(r => `<div class="ritem">
-      <p class="q">${esc(r.q.q)}</p>
+      <p class="q">${esc(r.q.q)}${pastTag(r.q)}</p>${r.q.t === 'wr' ? sentHtml(r.q) : ''}
       <div class="rw you">إجابتك: <b>${r.you === null ? 'ما جاوبت' : esc(r.you)}</b></div>
       <div class="rw right">الإجابة الصحيحة: <b>${esc(rightText(r.q))}</b></div>
       ${r.q.t === 'tf' && !r.q.a ? `<div class="cr"><b>التصحيح:</b> ${esc(r.q.c)}</div>` : ''}

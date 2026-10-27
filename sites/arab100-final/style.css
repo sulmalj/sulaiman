@@ -404,3 +404,14 @@ footer p{margin:0}
 .fx-topics{margin-bottom:14px}
 .fx-rnd{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 0 12px;font-size:14px;color:var(--muted)}
 .fx-tag{display:inline-block;font-size:12.5px;font-weight:600;color:var(--navy);background:var(--navy-tint);border-radius:999px;padding:2px 10px;margin-inline-start:6px}
+
+/* (2026-10-27) أسئلة بطريقة الاختبار: شارة «جاء في ميد سابق» + «أجب حسب المطلوب» */
+.past{display:inline-flex;align-items:center;gap:4px;background:#FFF4D6;color:#8A5A00;border:1px solid #F1D48A;border-radius:6px;padding:1px 8px;font-weight:700;font-size:12.5px}
+.past .i{width:14px;height:14px}
+.wsent{font-size:clamp(17px,4vw,19px);line-height:2;margin:-6px 0 16px;padding:10px 14px;background:var(--navy-tint);border-radius:var(--r);font-weight:600}
+.wsent u{text-decoration-thickness:1.5px;text-underline-offset:.5em;text-decoration-skip-ink:none}
+.wans{display:flex;gap:8px;flex-wrap:wrap}
+.wans input{flex:1 1 220px;min-width:0;font:inherit;font-size:17px;padding:10px 12px;border:1px solid var(--line);border-radius:var(--r);background:#fff;color:var(--ink)}
+.wans input:focus{outline:2px solid color-mix(in srgb,var(--navy) 40%,transparent);border-color:var(--navy)}
+.wans input:disabled{background:#F7F8FA;color:var(--ink-2)}
+.esec{margin:0 0 10px;font-weight:700;color:var(--navy)}
