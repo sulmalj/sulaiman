@@ -36,8 +36,7 @@ function grid(pts,line){
  g+=`<text x="${xs(X1)+40}" y="${ys(0)+10}" class="ax">X</text><text x="${xs(0)-10}" y="${ys(Y1)-38}" class="ax">Y</text>`;
  if(line){g+=`<line x1="${xs(0)}" y1="${ys(a)}" x2="${xs(6)}" y2="${ys(a+6*b)}" stroke="${LN}" stroke-width="4.5"/>`;
   g+=`<circle cx="${xs(xb)}" cy="${ys(yb)}" r="10" fill="#fff" stroke="${LN}" stroke-width="4"/><circle cx="${xs(0)}" cy="${ys(a)}" r="10" fill="#fff" stroke="${LN}" stroke-width="4"/>`;
-  g+=`<text x="${xs(xb)+16}" y="${ys(yb)+34}" class="lb">(x̄, ȳ) = (3, 1)</text><text x="${xs(0)+18}" y="${ys(a)+32}" class="lb">(0, −2)</text>`;
-  g+=`<text x="${xs(0.3)}" y="${ys(3.45)}" class="lq">Ŷ = −2 + X</text>`;}
+  }
  if(pts) X.forEach((x,i)=>{g+=`<circle cx="${xs(x)}" cy="${ys(Y[i])}" r="10" fill="${PT}" stroke="#fff" stroke-width="2"/>`;});
  return `<svg width="${W+40}" height="${H}" viewBox="0 0 ${W+40} ${H}">${g}</svg>`;}
 const box=v=>`\\fcolorbox{${BOX}}{transparent}{$\\;${v}\\;$}`;
