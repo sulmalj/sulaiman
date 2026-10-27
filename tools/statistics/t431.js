@@ -46,8 +46,6 @@ const eqs=t=>`<div class="eq sm">${K(t,1)}</div>`;
 // الحلول
 const solR=eqs(String.raw`r=\dfrac{n\sum x_iy_i-\sum x_i\sum y_i}{\sqrt{n\sum x_i^{2}-\left(\sum x_i\right)^{2}}\;\sqrt{n\sum y_i^{2}-\left(\sum y_i\right)^{2}}}
 =\dfrac{${n}(${S[2]})-(${S[0]})(${S[1]})}{\sqrt{${n}(${S[3]})-(${S[0]})^{2}}\;\sqrt{${n}(${S[4]})-(${S[1]})^{2}}}=${box(tr(r,2))}`);
-// حل السؤال 1 في الصورة الكاملة: الناتج + نوع الارتباط + ملحوظة (طلب المستخدم — الحساب مشروح في الدرس الأول)
-const solR1=()=>`${eq(`r=${box(tr(r,2))}`)}<div class="g">${solType}</div><div class="nb"><b>ملحوظة:</b> تم شرح معامل ارتباط بيرسون بشكل مفصّل في الدرس الأول من الفصل الرابع.</div>`;
 const solType=`<div class="ans"><span>ارتباط خطي طردي قوي</span></div>`;
 const solB=eq(String.raw`b=\dfrac{n\sum x_iy_i-\sum x_i\sum y_i}{n\sum x_i^{2}-\left(\sum x_i\right)^{2}}=\dfrac{${n}(${S[2]})-(${S[0]})(${S[1]})}{${n}(${S[3]})-(${S[0]})^{2}}=${b}`)
  +eq(String.raw`\bar{x}=\dfrac{\sum x_i}{n}=\dfrac{${S[0]}}{${n}}=${xb}\qquad\quad \bar{y}=\dfrac{\sum y_i}{n}=\dfrac{${S[1]}}{${n}}=${yb}`)
@@ -59,7 +57,7 @@ const solY=eq(String.raw`\hat{y}=${a}+1.5=${box(String(y15))}`);
 const solR2=eq(String.raw`r^{2}=(${r4})^{2}=${box(tr(r2v,2))}`);
 // 3 أسئلة بدل 5 عشان المساحة (طلب المستخدم): بيرسون + نوعه، ثم لوحة الانتشار + المعادلة + رسمها، ثم التقدير
 const Q=[
- [`احسب معامل ارتباط بيرسون ${K('r')}، ثم حدد نوع الارتباط وقيّم قوته.`, solR1()],
+ [`احسب معامل ارتباط بيرسون ${K('r')}، ثم حدد نوع الارتباط وقيّم قوته.`, `<div class="g">${calc}</div>${solR}<div class="g">${solType}</div>`], // الحل كامل بالجدول (طلب المستخدم)
  [`مثّل البيانات على لوحة الانتشار، ثم أوجد معادلة مستقيم انحدار ${K('Y')} على ${K('X')} وارسمه عليها.`, solB],
  [`استخدم معادلة الانحدار لتقدير القيمة ${K('\\hat{y}')} الموافقة للقيمة ${K('x=1.5')}`, solY],
 ];
