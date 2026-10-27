@@ -48,7 +48,7 @@ const words = text => (text.trim().match(/[^\s]+/g) || []).filter(w => /[ء-ي]/
 
 /* ── الواجهة ── */
 function open() {
-  $('wTopics').innerHTML = TOPICS.map(t => `<button type="button" class="topic ${t.id === T ? 'on' : ''}" data-t="${t.id}">${esc(t.title)}<small>${t.own ? 'اكتب عنوان موضوعك' : t.past ? 'جاء في ميد سابق' : 'موضوع مقترح'}</small></button>`).join('');
+  $('wTopics').innerHTML = TOPICS.map(t => `<button type="button" class="topic ${t.id === T ? 'on' : ''}" data-t="${t.id}">${esc(t.title)}<small>${t.own ? 'اكتب عنوان موضوعك' : t.past ? ((typeof SITE !== 'undefined' && SITE.pastLabel) || 'جاء في اختبار سابق') : 'موضوع مقترح'}</small></button>`).join('');
   $('wTopic').hidden = T !== 'own';
   const d = st().drafts || {};
   $('wText').value = d[draftKey()] || '';

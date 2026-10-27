@@ -199,7 +199,7 @@ const rightText = q => q.t === 'tf' ? (q.a ? 'صح' : 'خطأ') : q.t === 'wr' ?
 const explain = q => (q.t === 'tf' && !q.a ? `<span class="corr"><b>التصحيح:</b> ${esc(q.c)}</span>` : '') + (q.x ? `<span class="corr"><b>التوضيح:</b> ${esc(q.x)}</span>` : '');
 const kindLabel = q => q.t === 'tf' ? 'صح أو خطأ' : q.t === 'wr' ? 'أجب حسب المطلوب' : q.e ? 'ظلّل الإجابة الصحيحة' : 'اختيار من متعدد';
 /* شارة «جاء في ميد سابق» (أسئلة التسريبات) */
-const pastTag = q => q.p ? `<span class="past">${ICON('star')}جاء في ميد سابق</span>` : '';
+const pastTag = q => q.p ? `<span class="past">${ICON('star')}${esc(SITE.pastLabel || 'جاء في اختبار سابق')}</span>` : '';
 /* أجب حسب المطلوب: الجملة (__كلمة__ تحتها خط) والتصحيح الآلي */
 const sentHtml = q => `<p class="wsent">${esc(q.sent).replace(/__(.+?)__/g, '<u>$1</u>')}</p>`;
 const WNORM = s => String(s).replace(/[\u064B-\u0652\u0670\u0640\u200c-\u200f]/g, '').replace(/,/g, '،').replace(/;/g, '؛').replace(/\?/g, '؟')
