@@ -85,11 +85,13 @@ svg{direction:ltr}
 .lb{font:600 24px 'DejaVu Sans';fill:${LN}}.lq{font:italic 700 30px 'DejaVu Serif';fill:${LN}}
 .ans{text-align:center}.ans span{display:inline-block;direction:rtl;font:42px Rx;color:${BR};border:3.5px solid ${BOX};border-radius:12px;padding:8px 30px 14px}`;
 (async()=>{const br=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await br.newPage({deviceScaleFactor:3,viewport:{width:2400,height:1200}});
+const p2=await br.newPage({deviceScaleFactor:2.2,viewport:{width:2400,height:1200}}); // الصورة الطويلة: أقل من 8000px عشان تنرسل
 const f=`${OUT}/_t431.html`;
 for(const [name,body] of [['السؤال بدون حل',page(false)],['السؤال مع الحل',page(true)],['جدول البيانات',data],['جدول الحسابات',calc],
   ['لوحة الانتشار - فاضية',grid(false,false)],['لوحة الانتشار - النقاط',grid(true,false)],['لوحة الانتشار - مع مستقيم الانحدار',grid(true,true)],
   ['حل 2 - معامل بيرسون',solR],['حل 3 - نوع الارتباط',solType],['حل 4 - معادلة الانحدار',`<div style="width:1500px;direction:rtl">${solB}</div>`],['حل 5 - التقدير',solY],['حل 6 - معامل التحديد',solR2]]){
  fs.writeFileSync(f,`<html><head><meta charset="utf-8"><link rel="stylesheet" href="file://${KX}/dist/katex.min.css"><style>${css}</style></head><body><div id="w">${body}</div></body></html>`);
- await p.goto('file://'+f); await p.evaluate(()=>document.fonts.ready);
- await (await p.$('#w')).screenshot({path:`${OUT}/تدريب 4.3.1 - ${name}.png`,omitBackground:true});}
+ const pg=name==='السؤال مع الحل'?p2:p;
+ await pg.goto('file://'+f); await pg.evaluate(()=>document.fonts.ready);
+ await (await pg.$('#w')).screenshot({path:`${OUT}/تدريب 4.3.1 - ${name}.png`,omitBackground:true});}
 fs.unlinkSync(f); await br.close();})();
