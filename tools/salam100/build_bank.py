@@ -59,7 +59,7 @@ def parse(path):
         else:
             sys.exit(f'{path.name}: مفتاح غير معروف {k}')
     for q in taj + extra:
-        if sorted(q['o']) != sorted(LET) or q['a'] not in LET:
+        if not set(LET[:3]) <= set(q['o']) or not set(q['o']) <= set(LET) or q['a'] not in q['o']:
             sys.exit(f'{path.name}: سؤال ناقص: {q["q"]}')
     return taj, extra
 
@@ -130,9 +130,9 @@ def esc(s):
 
 
 def q_html(n, q, extra=False):
-    ops = ''.join(f'<div class="op"><i>{L} / </i>{esc(q["o"][L])}</div>' for L in ('أ', 'ب', 'ج', 'د'))
+    ops = ''.join(f'<div class="op"><i>{L} / </i>{esc(q["o"][L])}</div>' for L in LET if L in q['o'])
     notes = ''.join(f'<div class="note">{esc(t)}</div>' for t in q['n'])
-    return (f'<div class="q"><div class="qb"><div class="qt"><b>{str(n).translate(AR)}-</b> {esc(q["q"])}</div>'
+    return (f'<div class="q"><div class="qb"><div class="qt"><b>{str(n)}-</b> {esc(q["q"])}</div>'
             f'<div class="ops">{ops}</div>{notes}</div><div class="ans{" x" if extra else ""}">{q["a"]}</div></div>')
 
 
@@ -154,10 +154,10 @@ def build(out, site):
   <h1>تجميعات</h1>
   <h2>بنك أسئلة الوحدات الاثنتي عشرة</h2>
   <div class="rule"></div>
-  <div class="pill">{str(total_t).translate(AR)} سؤال تجميعات + {str(total_x).translate(AR)} سؤال إضافي • 12 وحدة • اختيار من متعدد مع الحل</div>
+  <div class="pill">{str(total_t)} سؤال تجميعات + {str(total_x)} سؤال إضافي • 12 وحدة • اختيار من متعدد مع الحل</div>
   <div class="cbox">
     <div class="big">هذه الأسئلة <em>تجميعات</em>: أسئلة جاءت في <em>اختبارات سابقة</em></div>
-    <p>مأخوذة من تجميعات الملزمة في نهاية كل وحدة، ومعها في آخر كل وحدة <em>أسئلة إضافية</em> من ملازم عدل.</p>
+    <p>مأخوذة من تجميعات الملزمة في نهاية كل وحدة،<br>وفي آخر كل وحدة <em>أسئلة إضافية</em> من ملازم عدل.</p>
   </div>
   <div class="cbox">
     <div class="big">وفي <em>موقعنا</em> يوجد <em>تدريبات</em> على جميع الوحدات</div>
@@ -174,11 +174,11 @@ def build(out, site):
         name, title = UNITS[u]
         n = len(taj) + len(extra)
         parts = [f'<section class="unit"><div class="uhead"><span class="t">{name}</span><span class="line"></span>'
-                 f'<span class="c">{str(n).translate(AR)} سؤال</span></div><div class="usub">{esc(title)}</div>']
-        parts.append(f'<div class="sechead">تجميعات {name} <small>أسئلة جاءت في اختبارات سابقة ({str(len(taj)).translate(AR)} سؤال)</small></div>')
+                 f'<span class="c">{str(n)} سؤال</span></div><div class="usub">{esc(title)}</div>']
+        parts.append(f'<div class="sechead">تجميعات {name} <small>أسئلة جاءت في اختبارات سابقة ({str(len(taj))} سؤال)</small></div>')
         parts += [q_html(i + 1, q) for i, q in enumerate(taj)]
         if extra:
-            parts.append(f'<div class="sechead">أسئلة إضافية من ملازم عدل <small>ليست من التجميعات — من الكتاب لتثبيت معلومات الوحدة ({str(len(extra)).translate(AR)} أسئلة)</small></div>')
+            parts.append(f'<div class="sechead">أسئلة إضافية من ملازم عدل <small>ليست من التجميعات — من الكتاب لتثبيت معلومات الوحدة ({str(len(extra))} أسئلة)</small></div>')
             parts += [q_html(len(taj) + i + 1, q, True) for i, q in enumerate(extra)]
         parts.append('</section>')
         body.append(''.join(parts))
@@ -218,7 +218,7 @@ def build(out, site):
         np_.draw_rect(r, color=None, fill=CREAM)
         np_.show_pdf_page(r, src_doc, i)
         if i == 0:
-            np_.draw_rect(pymupdf.Rect(0, r.height - 20 * 72 / 25.4, r.width, r.height), color=None, fill=CREAM)
+            np_.draw_rect(pymupdf.Rect(0, r.height - 26 * 72 / 25.4, r.width, r.height), color=None, fill=CREAM)
         for ln in sp.get_links():
             if ln.get('uri'):
                 np_.insert_link({'kind': pymupdf.LINK_URI, 'from': ln['from'], 'uri': ln['uri']})
