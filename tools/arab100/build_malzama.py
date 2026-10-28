@@ -138,6 +138,8 @@ table.t tr {{ break-inside:avoid; }}
 /* الجدول الطويل اللي ينقسم: ما يبقى صف أو صفين لحالهم أول الجدول أو آخره */
 table.t tbody tr:nth-child(-n+3), table.t tbody tr:nth-last-child(-n+2) {{ break-before:avoid; }}
 table.t td.r {{ text-align:right; }}
+/* (المراجعة الرابعة) أسطر الخلية متوازنة: ما تنزل كلمة وحدة لسطر لحالها في الأعمدة الضيقة (مثل «الغير / صحيح.») */
+table.t td {{ text-wrap:balance; }}
 /* جدول عناوينه في العمود الأول (مثل جدول حالات التاء والهاء في الكتاب) */
 table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
 table.t.side tr:first-child th {{ border-top:0; }}
