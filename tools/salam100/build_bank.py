@@ -77,10 +77,10 @@ CSS = """
 *{box-sizing:border-box}
 html,body{margin:0}
 body{font-family:'AmiriS','Taj',sans-serif;color:var(--ink);background:var(--bg);-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:10.6pt;font-weight:700}
-:root{--bg:#FBF7F0;--ink:#3A2617;--br:#6B4226;--br2:#8C5E3B;--sand:#E6D5BD;--soft:#F3E8D8;--line:#D9C4A6;--red:#8E2B20;--redsoft:#F8E4DF}
+:root{--bg:#FBF7F0;--ink:#3A2617;--br:#6B4226;--br2:#8C5E3B;--sand:#E6D5BD;--soft:#F3E8D8;--line:#D9C4A6;--red:#8E2B20;--qred:#A3221B;--redsoft:#F8E4DF}
 .wm{position:fixed;top:50%;left:50%;width:120mm;transform:translate(-50%,-50%);opacity:.07;z-index:0}
 .wm img{width:100%}
-main{position:relative;z-index:1}
+main{position:relative;z-index:1;padding:0 1.5mm}
 
 /* الغلاف */
 .cover{height:257mm;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:26mm;break-after:page;position:relative}
@@ -110,16 +110,15 @@ main{position:relative;z-index:1}
 .usub{margin:-1.5mm 0 3.5mm;color:var(--br2);font-size:11pt;font-weight:800}
 .sechead{margin:4mm 0 3mm;padding:2mm 4mm;border-radius:3mm;background:var(--soft);border-inline-start:3mm solid var(--br);font-size:12pt;font-weight:900;color:var(--br);break-after:avoid}
 .sechead small{display:block;font-size:9.5pt;color:var(--br2);font-weight:800}
-.q{display:flex;align-items:center;gap:3mm;margin-bottom:3mm;break-inside:avoid}
-.qb{flex:1;border:1.2px solid var(--br2);border-radius:3.5mm;overflow:hidden;background:#fff}
-.qt{background:var(--soft);padding:2mm 3.5mm;font-weight:900;font-size:10.8pt;line-height:1.6;color:var(--ink)}
-.qt b{color:var(--br)}
-.ops{display:grid;grid-template-columns:1fr 1fr}
-.op{padding:1.5mm 3.5mm;border-top:1px solid var(--line);font-weight:700;line-height:1.5}
-.op:nth-child(odd){border-inline-end:1px solid var(--line)}
-.op i{font-style:normal;color:var(--br2);font-weight:900}
-.note{padding:1.4mm 3.5mm;border-top:1px dashed var(--line);color:var(--red);font-size:9.6pt;font-weight:800;line-height:1.55;background:#FFFCF8}
-.note b{color:var(--red)}
+.q{display:flex;align-items:center;gap:3.5mm;margin-bottom:3.2mm;break-inside:avoid}
+.qb{flex:1;min-width:0;border:1.4px solid var(--br2);border-radius:4mm;background:#fff;padding:2.6mm 3.5mm 3mm}
+.qt{font-weight:900;font-size:11pt;line-height:1.65;color:var(--qred);margin-bottom:2.2mm}
+.qt b{color:var(--qred)}
+.ops{display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 2.4mm}
+.op{padding:1.3mm 3mm;border:1px solid var(--line);border-radius:2.6mm;background:var(--soft);font-weight:700;line-height:1.5;color:var(--ink)}
+.op.c{grid-column:1/-1;justify-self:center;width:calc(50% - 1.2mm)}
+.op i{font-style:normal;color:var(--br);font-weight:900}
+.note{margin-top:2mm;padding-top:1.6mm;border-top:1px dashed var(--line);color:var(--br);font-size:9.6pt;font-weight:800;line-height:1.55}
 .ans{flex:none;width:10mm;height:10mm;border-radius:50%;background:var(--br2);color:#fff;display:grid;place-items:center;font-size:13pt;font-weight:900;line-height:1}
 .ans.x{background:#A2753F}
 """
@@ -130,7 +129,7 @@ def esc(s):
 
 
 def q_html(n, q, extra=False):
-    ops = ''.join(f'<div class="op"><i>{L} / </i>{esc(q["o"][L])}</div>' for L in LET if L in q['o'])
+    ops = ''.join(f'<div class="op{" c" if L == "ج" and "د" not in q["o"] else ""}"><i>{L} / </i>{esc(q["o"][L])}</div>' for L in LET if L in q['o'])
     notes = ''.join(f'<div class="note">{esc(t)}</div>' for t in q['n'])
     return (f'<div class="q"><div class="qb"><div class="qt"><b>{str(n)}-</b> {esc(q["q"])}</div>'
             f'<div class="ops">{ops}</div>{notes}</div><div class="ans{" x" if extra else ""}">{q["a"]}</div></div>')
@@ -154,7 +153,7 @@ def build(out, site):
   <h1>تجميعات</h1>
   <h2>بنك أسئلة الوحدات الاثنتي عشرة</h2>
   <div class="rule"></div>
-  <div class="pill">{str(total_t)} سؤال تجميعات + {str(total_x)} سؤال إضافي • 12 وحدة • اختيار من متعدد مع الحل</div>
+  <div class="pill">{str(total_t)} سؤال تجميعات + {str(total_x)} سؤال إضافي • 12 وحدة • 3 خيارات مع الحل</div>
   <div class="cbox">
     <div class="big">هذه الأسئلة <em>تجميعات</em>: أسئلة جاءت في <em>اختبارات سابقة</em></div>
     <p>مأخوذة من تجميعات الملزمة في نهاية كل وحدة،<br>وفي آخر كل وحدة <em>أسئلة إضافية</em> من ملازم عدل.</p>
