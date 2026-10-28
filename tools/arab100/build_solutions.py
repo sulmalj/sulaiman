@@ -311,6 +311,7 @@ def keep_groups(out):
 
 
 SOL_CSS = """
+table.t.tailbal tr:nth-last-child(-n+8){break-before:avoid}
 table.t tr > td.cont:first-child{border-right:0!important;border-bottom-right-radius:0!important}
 table.t td.rlast{border-bottom-right-radius:9pt}
 .soltitle{text-align:center;font-weight:700;font-size:22pt;color:#89543d;margin:0 0 6pt;line-height:1.45}
@@ -571,6 +572,11 @@ def main():
     units = load_units()
     which = [0, 1] if a.promo or a.units12 else [0, 1, 2, 3]
     body, lessons = content_html(units, which, a.promo)
+    if a.units12:
+        # آخر الملف جدول طويل ينقسم: آخر صفحة كانت فيها 3 صفوف بس ← آخر 8 صفوف ما ينفصلون (تنزل معهم صفوف أكثر)
+        k = body.rfind('<table class="t brk"')
+        if k >= 0:
+            body = body[:k] + '<table class="t brk tailbal"' + body[k + len('<table class="t brk"'):]
     tmp = pathlib.Path(tempfile.mkdtemp())
     if a.promo:
         left = f'قناتنا لمعرفة كل جديد: <a href="{CHANNEL}">t.me/mlazmadl</a>'
