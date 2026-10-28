@@ -488,6 +488,8 @@ def render(html_str, out_pdf, browser, spread=None, markers=False, brks=(), pad=
     html_str = re.sub(r'class="u">([^<\s]{1,2})</span>', r'class="u u1">\1</span>', html_str)
     # الشرطة «–» ما تبدأ سطر جديد (تبقى آخر السطر مع الكلمة اللي قبلها)
     html_str = html_str.replace(' – ', '\u00a0– ')
+    # مدى أرقام «(٣–١٠)» ما ينقسم بين سطرين (المراجعة الخامسة)
+    html_str = re.sub(r'([٠-٩])([–-])([٠-٩])', '\\1\u2060\\2\u2060\\3', html_str)
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name
