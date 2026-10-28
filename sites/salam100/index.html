@@ -357,7 +357,7 @@ const ORDER = {};
 function options(q) {
   if (!ORDER[q.id]) {
     const all = q.o.map((txt, i) => ({ txt, ok: i === 0 }));
-    const tail = all.filter(o => LAST_RE.test(o.txt));
+    const tail = all.filter(o => LAST_RE.test(o.txt)).sort((a, b) => /^ليس/.test(a.txt) - /^ليس/.test(b.txt));
     ORDER[q.id] = shuffle(all.filter(o => !LAST_RE.test(o.txt))).concat(tail);
   }
   return ORDER[q.id];
