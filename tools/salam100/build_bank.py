@@ -102,7 +102,7 @@ main{position:relative;z-index:1;padding:0 1.5mm}
 
 /* الوحدات */
 .unit{break-before:page}
-.uhead{display:flex;align-items:center;gap:4mm;margin:0 0 1.5mm}
+.uhead{display:flex;align-items:center;gap:4mm;margin:0 0 2.5mm}
 .uhead .t{background:var(--br);color:#fff;border-radius:2.8mm;padding:1.3mm 6mm;font-size:14pt;font-weight:900;white-space:nowrap}
 .uhead .line{flex:1;height:2px;border-radius:2px;background:linear-gradient(to left,#DEA390,rgba(222,163,144,0))}
 .uhead .c{color:var(--mauve);font-size:10.5pt;font-weight:900;white-space:nowrap}
@@ -173,7 +173,7 @@ def build(out, site):
         name, title = UNITS[u]
         n = len(taj) + len(extra)
         parts = [f'<section class="unit"><div class="uhead"><span class="t">{name}</span><span class="line"></span>'
-                 f'<span class="c">{str(n)} سؤال</span></div><div class="usub">{esc(title)}</div>']
+                 f'<span class="c">{str(n)} سؤال</span></div>']
         parts.append(f'<div class="sechead">تجميعات {name} <small>أسئلة جاءت في اختبارات سابقة</small></div>')
         parts += [q_html(i + 1, q) for i, q in enumerate(taj)]
         if extra:
