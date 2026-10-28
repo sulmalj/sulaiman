@@ -207,12 +207,21 @@ def build(out, site):
     subprocess.run(['node', jsf], check=True, env=env)
     os.unlink(src)
     os.unlink(jsf)
-    # الغلاف بدون تذييل
+    # خلفية كريمية للصفحة كاملة (Chrome ما يلوّن الهوامش) + الغلاف بدون تذييل
     import pymupdf
-    d = pymupdf.open(out)
-    pg = d[0]
-    r = pg.rect
-    pg.draw_rect(pymupdf.Rect(0, r.height - 20 * 72 / 25.4, r.width, r.height), color=None, fill=(251 / 255, 247 / 255, 240 / 255))
+    CREAM = (251 / 255, 247 / 255, 240 / 255)
+    src_doc = pymupdf.open(out)
+    d = pymupdf.open()
+    for i, sp in enumerate(src_doc):
+        r = sp.rect
+        np_ = d.new_page(width=r.width, height=r.height)
+        np_.draw_rect(r, color=None, fill=CREAM)
+        np_.show_pdf_page(r, src_doc, i)
+        if i == 0:
+            np_.draw_rect(pymupdf.Rect(0, r.height - 20 * 72 / 25.4, r.width, r.height), color=None, fill=CREAM)
+        for ln in sp.get_links():
+            if ln.get('uri'):
+                np_.insert_link({'kind': pymupdf.LINK_URI, 'from': ln['from'], 'uri': ln['uri']})
     d.set_metadata({'title': 'تجميعات سلم 100 — دراسات في السيرة النبوية', 'author': 'ملازم عدل'})
     d.save(out + '.tmp', garbage=3, deflate=True)
     os.replace(out + '.tmp', out)
