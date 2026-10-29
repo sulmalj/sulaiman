@@ -222,12 +222,13 @@ def build(out, site):
     doc = (f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>تجميعات سلم 100</title>'
            f'<style>{font_face()}{CSS}</style></head><body><div class="wm"><img src="data:image/png;base64,{logo}"></div>'
            f'<main>{cover}{"".join(body)}</main></body></html>')
-    foot = ("<div dir='rtl' style='-webkit-print-color-adjust:exact;width:100%;margin:0 12mm 5mm;font-family:Tajawal;font-weight:800'>"
-            "<div style='text-align:center;font-size:7pt;color:#CC6E53;margin-bottom:1.6mm'>لا نحلل ولا نبيح نشرها</div>"
-            "<div style='display:flex;justify-content:space-between;align-items:center;color:#3A2317'>"
-            "<span style='font-size:11pt;font-weight:900'>تجميعات سلم 100</span>"
-            "<span style='font-size:9pt'>~<span class='pageNumber'></span>~</span>"
-            "<span style='font-size:11pt;font-weight:900;letter-spacing:.6mm'>خاص لمشتركين ملازم عدل</span></div></div>")
+    foot = ("<div dir='rtl' style='-webkit-print-color-adjust:exact;width:100%;margin:0 12mm 5mm;font-family:Tajawal;font-weight:800;"
+            "display:grid;grid-template-columns:1fr auto 1fr;align-items:end;color:#3A2317'>"
+            "<span style='font-size:11pt;font-weight:900;text-align:right'>تجميعات سلم 100</span>"
+            "<span style='display:flex;flex-direction:column;align-items:center;gap:1mm'>"
+            "<span style='font-size:8pt;color:#CC6E53;white-space:nowrap'>لا نحلل ولا نبيح نشرها</span>"
+            "<span style='font-size:9pt'>~<span class='pageNumber'></span>~</span></span>"
+            "<span style='font-size:11pt;font-weight:900;letter-spacing:.6mm;text-align:left'>خاص لمشتركين ملازم عدل</span></div>")
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as fh:
         fh.write(doc)
         src = fh.name
