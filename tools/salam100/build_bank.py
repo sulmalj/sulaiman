@@ -152,7 +152,6 @@ def build(out, site):
     cover = f"""<section class="cover">
   <div class="subj">سلم 100 • دراسات في السيرة النبوية</div>
   <h1>تجميعات</h1>
-  <h2>بنك أسئلة مستقل</h2>
   <div class="rule"></div>
   <div class="pill">{total} سؤال • 12 وحدة • 3 خيارات مع الحل</div>
   <div class="cbox">
