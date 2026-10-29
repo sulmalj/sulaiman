@@ -123,6 +123,9 @@ main{position:relative;z-index:1;padding:0 1.5mm}
 .op i{font-style:normal;color:var(--terra);font-weight:900}
 .note{padding:1.2mm 3mm;border-top:1px dashed var(--br);color:var(--mauve);font-size:9pt;font-weight:800;line-height:1.55}
 .ans{flex:none;width:9.5mm;height:9.5mm;border-radius:50%;background:var(--circ);color:#fff;display:grid;place-items:center;font-size:12.5pt;font-weight:900;line-height:1}
+/* حرف الجواب في نص الدائرة بالضبط (الألف بهمزتها يطلع فوق) — مقاسة على خط Tajawal */
+.ans .L0{transform:translateY(1.38mm)}
+.ans .L2{transform:translateY(-.28mm)}
 """
 
 
@@ -134,7 +137,7 @@ def q_html(n, q, extra=False):
     ops = ''.join(f'<div class="op{" c" if L == "ج" and "د" not in q["o"] else ""}"><i>{L} / </i>{esc(q["o"][L])}</div>' for L in LET if L in q['o'])
     notes = ''.join(f'<div class="note">{esc(t)}</div>' for t in q['n'])
     return (f'<div class="q"><div class="qb"><div class="qt"><b>{str(n)}-</b> {esc(q["q"])}</div>'
-            f'<div class="ops">{ops}</div>{notes}</div><div class="ans">{q["a"]}</div></div>')
+            f'<div class="ops">{ops}</div>{notes}</div><div class="ans"><span class="L{LET.index(q["a"])}">{q["a"]}</span></div></div>')
 
 
 def unit_html(u, taj, extra):
