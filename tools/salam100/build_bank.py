@@ -73,54 +73,55 @@ def font_face():
 
 
 CSS = """
-@page{size:A4;margin:14mm 12mm 20mm}
+@page{size:A4;margin:12mm 11mm 19mm}
 *{box-sizing:border-box}
 html,body{margin:0}
-body{font-family:'AmiriS','Taj',sans-serif;color:var(--ink);background:var(--bg);-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:10.6pt;font-weight:700}
-:root{--bg:#FBF7F0;--ink:#3A2617;--br:#6B4226;--br2:#8C5E3B;--sand:#E6D5BD;--soft:#F3E8D8;--line:#D9C4A6;--red:#8E2B20;--qred:#A3221B;--redsoft:#F8E4DF}
-.wm{position:fixed;top:50%;left:50%;width:120mm;transform:translate(-50%,-50%);opacity:.07;z-index:0}
+body{font-family:'AmiriS','Taj',sans-serif;color:var(--ink);background:var(--bg);-webkit-print-color-adjust:exact;print-color-adjust:exact;font-size:10pt;font-weight:700}
+:root{--bg:#F8EFE8;--box:#FBF7F4;--ink:#3A2317;--br:#5C3825;--terra:#CC6E53;--mauve:#844F6A;--circ:#A8917F;--pink:#C9466A;--soft:#F3E7DF}
+.wm{position:fixed;top:50%;left:50%;width:125mm;transform:translate(-50%,-50%);opacity:.06;z-index:0}
 .wm img{width:100%}
 main{position:relative;z-index:1;padding:0 1.5mm}
 
-/* الغلاف */
-.cover{height:257mm;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:26mm;break-after:page;position:relative}
-.cover .subj{color:var(--br2);font-weight:800;font-size:14pt}
-.cover h1{margin:2mm 0 0;font-weight:900;font-size:50pt;line-height:1.15;color:var(--br)}
-.cover h2{margin:0;font-weight:900;font-size:24pt;color:var(--br2)}
-.cover .rule{width:44mm;height:2px;background:var(--br2);margin:6mm 0 5mm;border-radius:2px}
-.pill{background:var(--br);color:#fff;border-radius:999px;padding:1.6mm 6mm;font-size:10pt;font-weight:800}
-.cbox{width:100%;border:1.4px solid var(--br2);border-radius:5mm;padding:5mm 6mm;margin-top:6mm;background:rgba(255,255,255,.75)}
-.cbox .big{font-size:17pt;font-weight:900;line-height:1.6;color:var(--ink)}
-.cbox .big em{font-style:normal;color:var(--br2)}
-.cbox p{margin:1.5mm 0 0;font-size:11.5pt;font-weight:800;color:var(--ink);line-height:1.7}
-.cbox p em{font-style:normal;color:var(--br2)}
-.site{display:inline-block;margin-top:3.5mm;background:var(--br);color:#fff;text-decoration:none;border-radius:4mm;padding:3mm 7mm;font-size:13pt;font-weight:900}
-.site .u{display:block;direction:ltr;font-size:11.5pt;font-weight:800;color:#F6E7CF;margin-top:.6mm}
-.tap{display:block;margin-top:2mm;font-size:10pt;color:var(--br2);font-weight:800}
-.subs{margin-top:6mm;color:var(--red);background:var(--redsoft);border:1.4px solid var(--red);border-radius:4mm;padding:2.5mm 6mm;font-size:12pt;font-weight:900}
-.spaced{margin-top:5mm;color:var(--br);font-size:12pt;font-weight:800;letter-spacing:.6mm}
-.nopub{position:absolute;bottom:10mm;left:50%;transform:translateX(-50%);color:var(--red);font-size:14pt;font-weight:900;border-top:1.2px solid var(--red);border-bottom:1.2px solid var(--red);padding:1.5mm 10mm;white-space:nowrap}
+/* الغلاف — نفس غلاف بنك النهج */
+.cover{height:262mm;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:42mm;break-after:page;position:relative}
+.cover .subj{color:var(--terra);font-weight:800;font-size:13pt}
+.cover h1{margin:3mm 0 0;font-weight:900;font-size:46pt;line-height:1.2;color:var(--br)}
+.cover h2{margin:1mm 0 0;font-weight:900;font-size:36pt;line-height:1.25;color:var(--terra)}
+.cover .rule{width:38mm;height:2.4px;background:var(--br);margin:7mm 0 5mm;border-radius:2px}
+.pill{background:var(--br);color:#fff;border-radius:999px;padding:1.8mm 7mm;font-size:10.5pt;font-weight:800}
+.cbox{width:100%;border:1.3px solid var(--terra);border-radius:4.5mm;padding:4.5mm 6mm;margin-top:6mm;background:rgba(251,247,244,.85)}
+.cbox .big{font-size:16.5pt;font-weight:900;line-height:1.65;color:var(--ink)}
+.cbox .big em{font-style:normal;color:var(--terra)}
+.cbox p{margin:1mm 0 0;font-size:11.5pt;font-weight:800;color:var(--ink);line-height:1.7}
+.cbox p em{font-style:normal;color:var(--terra)}
+.site{display:inline-block;margin-top:3mm;background:var(--br);color:#fff;text-decoration:none;border-radius:3.5mm;padding:2.6mm 7mm;font-size:12.5pt;font-weight:900}
+.site .u{display:block;direction:ltr;font-size:11pt;font-weight:800;color:#F3D9CC;margin-top:.5mm}
+.tap{display:block;margin-top:1.8mm;font-size:10pt;color:var(--terra);font-weight:800}
+.spaced{margin-top:7mm;color:var(--br);font-size:12.5pt;font-weight:800;letter-spacing:.7mm}
+.nopub{position:absolute;bottom:14mm;left:50%;transform:translateX(-50%);color:var(--pink);font-size:14pt;font-weight:900;border-top:1.3px solid var(--pink);border-bottom:1.3px solid var(--pink);padding:1.6mm 9mm;white-space:nowrap}
 
 /* الوحدات */
 .unit{break-before:page}
-.uhead{display:flex;align-items:center;justify-content:space-between;gap:4mm;margin-bottom:3.5mm}
-.uhead .t{background:var(--br);color:#fff;border-radius:3mm;padding:1.6mm 5mm;font-size:15pt;font-weight:900;white-space:nowrap}
-.uhead .line{flex:1;height:2px;background:var(--br2);border-radius:2px}
-.uhead .c{color:var(--br2);font-size:11pt;font-weight:900;white-space:nowrap}
-.usub{margin:-1.5mm 0 3.5mm;color:var(--br2);font-size:11pt;font-weight:800}
-.sechead{margin:4mm 0 3mm;padding:2mm 4mm;border-radius:3mm;background:var(--soft);border-inline-start:3mm solid var(--br);font-size:12pt;font-weight:900;color:var(--br);break-after:avoid}
-.sechead small{display:block;font-size:9.5pt;color:var(--br2);font-weight:800}
-.q{display:flex;align-items:center;gap:3.5mm;margin-bottom:3.2mm;break-inside:avoid}
-.qb{flex:1;min-width:0;border:1.4px solid var(--br2);border-radius:4mm;background:#fff;padding:2.6mm 3.5mm 3mm}
-.qt{font-weight:900;font-size:11pt;line-height:1.65;color:var(--qred);margin-bottom:2.2mm}
-.qt b{color:var(--qred)}
-.ops{display:grid;grid-template-columns:1fr 1fr;gap:1.8mm 2.4mm}
-.op{padding:1.3mm 3mm;border:1px solid var(--line);border-radius:2.6mm;background:var(--soft);font-weight:700;line-height:1.5;color:var(--ink)}
-.op.c{grid-column:1/-1;justify-self:center;width:calc(50% - 1.2mm)}
-.op i{font-style:normal;color:var(--br);font-weight:900}
-.note{margin-top:2mm;padding-top:1.6mm;border-top:1px dashed var(--line);color:var(--br);font-size:9.6pt;font-weight:800;line-height:1.55}
-.ans{flex:none;width:10mm;height:10mm;border-radius:50%;background:var(--br2);color:#fff;display:grid;place-items:center;font-size:13pt;font-weight:900;line-height:1}
-.ans.x{background:#A2753F}
+.uhead{display:flex;align-items:center;gap:4mm;margin:0 0 2.5mm}
+.uhead .t{background:var(--br);color:#fff;border-radius:2.8mm;padding:1.3mm 6mm;font-size:14pt;font-weight:900;white-space:nowrap}
+.uhead .line{flex:1;height:2px;border-radius:2px;background:linear-gradient(to left,#DEA390,rgba(222,163,144,0))}
+.uhead .c{color:var(--mauve);font-size:10.5pt;font-weight:900;white-space:nowrap}
+.usub{margin:0 0 3mm;color:var(--mauve);font-size:10pt;font-weight:800}
+.sechead{display:flex;align-items:center;gap:3mm;margin:3.5mm 0 2.6mm;color:var(--terra);font-size:11pt;font-weight:900;break-after:avoid;white-space:nowrap}
+.sechead small{color:var(--mauve);font-size:9pt;font-weight:800}
+.sechead::after{content:"";flex:1;height:1.2px;background:linear-gradient(to left,#DEA390,rgba(222,163,144,0))}
+.q{display:flex;align-items:center;gap:3mm;margin-bottom:2.4mm;break-inside:avoid}
+.qb{flex:1;min-width:0;border:1px solid var(--br);border-radius:3mm;background:var(--box);overflow:hidden}
+.qt{padding:1.5mm 3mm;font-weight:900;font-size:10pt;line-height:1.6;color:var(--ink);border-bottom:1px solid var(--br)}
+.qt b{color:var(--mauve);font-weight:900}
+.ops{display:grid;grid-template-columns:1fr 1fr}
+.op{padding:1.2mm 3mm;font-weight:800;font-size:9.6pt;line-height:1.5;color:var(--ink)}
+.op:nth-child(odd){border-inline-end:1px solid var(--br)}
+.op:nth-child(n+3){border-top:1px solid var(--br)}
+.op.c{grid-column:1/-1;text-align:center;border-inline-end:0}
+.op i{font-style:normal;color:var(--terra);font-weight:900}
+.note{padding:1.2mm 3mm;border-top:1px dashed var(--br);color:var(--mauve);font-size:9pt;font-weight:800;line-height:1.55}
+.ans{flex:none;width:9.5mm;height:9.5mm;border-radius:50%;background:var(--circ);color:#fff;display:grid;place-items:center;font-size:12.5pt;font-weight:900;line-height:1}
 """
 
 
@@ -132,7 +133,7 @@ def q_html(n, q, extra=False):
     ops = ''.join(f'<div class="op{" c" if L == "ج" and "د" not in q["o"] else ""}"><i>{L} / </i>{esc(q["o"][L])}</div>' for L in LET if L in q['o'])
     notes = ''.join(f'<div class="note">{esc(t)}</div>' for t in q['n'])
     return (f'<div class="q"><div class="qb"><div class="qt"><b>{str(n)}-</b> {esc(q["q"])}</div>'
-            f'<div class="ops">{ops}</div>{notes}</div><div class="ans{" x" if extra else ""}">{q["a"]}</div></div>')
+            f'<div class="ops">{ops}</div>{notes}</div><div class="ans">{q["a"]}</div></div>')
 
 
 def build(out, site):
@@ -149,22 +150,21 @@ def build(out, site):
     total = total_t + total_x
     logo = base64.b64encode(LOGO.read_bytes()).decode()
     cover = f"""<section class="cover">
-  <div class="subj">سلم 100 · دراسات في السيرة النبوية</div>
+  <div class="subj">سلم 100 • دراسات في السيرة النبوية</div>
   <h1>تجميعات</h1>
-  <h2>بنك أسئلة مستقل · 12 وحدة</h2>
+  <h2>بنك أسئلة مستقل</h2>
   <div class="rule"></div>
-  <div class="pill">{str(total_t)} سؤال تجميعات + {str(total_x)} سؤال إضافي • 12 وحدة • 3 خيارات مع الحل</div>
+  <div class="pill">{total} سؤال • 12 وحدة • 3 خيارات مع الحل</div>
   <div class="cbox">
     <div class="big">هذه الأسئلة <em>تجميعات</em>: أسئلة جاءت في <em>اختبارات سابقة</em></div>
-    <p>مقسّمة حسب الوحدات، وفي آخر كل وحدة <em>أسئلة إضافية</em> من ملازم عدل.</p>
+    <p>مقسّمة حسب الوحدات، وفي آخر كل وحدة <em>أسئلة إضافية</em> من ملازم عدل</p>
   </div>
   <div class="cbox">
-    <div class="big">وفي <em>موقعنا</em> يوجد <em>تدريبات</em> على جميع الوحدات</div>
-    <p>التدريبات: أسئلة كتبناها لك لتتدرّب عليها (وليست أسئلة اختبارات سابقة)، مع تصحيح فوري.</p>
+    <div class="big">يوجد <em>تدريبات</em> على جميع الوحدات في <em>موقعنا</em></div>
+    <p>أسئلة كتبناها لك لتتدرّب عليها، مع تصحيح فوري</p>
     <a class="site" href="{site}">ادخل موقع التدريبات<span class="u">{esc(site.replace('https://', ''))}</span></a>
-    <span class="tap">اضغط على الزر ويدخلك الموقع مباشرة</span>
+    <span class="tap">اضغط على الزر ويدخلك الموقع مباشرة · الموقع خاص بالمشتركين</span>
   </div>
-  <div class="subs">الملف والموقع خاصّان بمشتركي ملازم عدل فقط</div>
   <div class="spaced">خــاص لــمــشــتــركــيــن مــلازم عـــدل</div>
   <div class="nopub">لا نحلل ولا نبيح نشرها</div>
 </section>"""
@@ -173,23 +173,23 @@ def build(out, site):
         name, title = UNITS[u]
         n = len(taj) + len(extra)
         parts = [f'<section class="unit"><div class="uhead"><span class="t">{name}</span><span class="line"></span>'
-                 f'<span class="c">{str(n)} سؤال</span></div><div class="usub">{esc(title)}</div>']
-        parts.append(f'<div class="sechead">تجميعات {name} <small>أسئلة جاءت في اختبارات سابقة ({str(len(taj))} سؤال)</small></div>')
+                 f'<span class="c">{str(n)} سؤال</span></div>']
+        parts.append(f'<div class="sechead">تجميعات {name}</div>')
         parts += [q_html(i + 1, q) for i, q in enumerate(taj)]
         if extra:
-            parts.append(f'<div class="sechead">أسئلة إضافية من ملازم عدل <small>ليست من التجميعات — من الكتاب لتثبيت معلومات الوحدة ({str(len(extra))} أسئلة)</small></div>')
+            parts.append(f'<div class="sechead">أسئلة إضافية من ملازم عدل <small>ليست من التجميعات</small></div>')
             parts += [q_html(len(taj) + i + 1, q, True) for i, q in enumerate(extra)]
         parts.append('</section>')
         body.append(''.join(parts))
     doc = (f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>تجميعات سلم 100</title>'
            f'<style>{font_face()}{CSS}</style></head><body><div class="wm"><img src="data:image/png;base64,{logo}"></div>'
            f'<main>{cover}{"".join(body)}</main></body></html>')
-    foot = ("<div dir='rtl' style='-webkit-print-color-adjust:exact;width:100%;margin:0 12mm 6mm;font-family:Tajawal;font-weight:800'>"
-            "<div style='text-align:center;font-size:7.5pt;color:#8E2B20;margin-bottom:1mm'>لا نحلل ولا نبيح نشرها</div>"
-            "<div style='display:flex;justify-content:space-between;align-items:center;font-size:9.5pt;color:#6B4226;border-top:1px solid #D9C4A6;padding-top:1.2mm'>"
-            "<span>تجميعات سلم 100 · دراسات في السيرة النبوية</span>"
+    foot = ("<div dir='rtl' style='-webkit-print-color-adjust:exact;width:100%;margin:0 12mm 5mm;font-family:Tajawal;font-weight:800'>"
+            "<div style='text-align:center;font-size:7pt;color:#CC6E53;margin-bottom:1.6mm'>لا نحلل ولا نبيح نشرها</div>"
+            "<div style='display:flex;justify-content:space-between;align-items:center;color:#3A2317'>"
+            "<span style='font-size:11pt;font-weight:900'>تجميعات سلم 100</span>"
             "<span style='font-size:9pt'>~<span class='pageNumber'></span>~</span>"
-            "<span style='letter-spacing:.4mm'>خاص لمشتركين ملازم عدل</span></div></div>")
+            "<span style='font-size:11pt;font-weight:900;letter-spacing:.6mm'>خاص لمشتركين ملازم عدل</span></div></div>")
     with tempfile.NamedTemporaryFile('w', suffix='.html', delete=False, encoding='utf-8') as fh:
         fh.write(doc)
         src = fh.name
@@ -208,7 +208,7 @@ def build(out, site):
     os.unlink(jsf)
     # خلفية كريمية للصفحة كاملة (Chrome ما يلوّن الهوامش) + الغلاف بدون تذييل
     import pymupdf
-    CREAM = (251 / 255, 247 / 255, 240 / 255)
+    CREAM = (248 / 255, 239 / 255, 232 / 255)
     src_doc = pymupdf.open(out)
     d = pymupdf.open()
     for i, sp in enumerate(src_doc):
@@ -217,7 +217,7 @@ def build(out, site):
         np_.draw_rect(r, color=None, fill=CREAM)
         np_.show_pdf_page(r, src_doc, i)
         if i == 0:
-            np_.draw_rect(pymupdf.Rect(0, r.height - 26 * 72 / 25.4, r.width, r.height), color=None, fill=CREAM)
+            np_.draw_rect(pymupdf.Rect(0, r.height - 22 * 72 / 25.4, r.width, r.height), color=None, fill=CREAM)
         for ln in sp.get_links():
             if ln.get('uri'):
                 np_.insert_link({'kind': pymupdf.LINK_URI, 'from': ln['from'], 'uri': ln['uri']})
