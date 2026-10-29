@@ -174,7 +174,7 @@ def build(out, site):
         n = len(taj) + len(extra)
         parts = [f'<section class="unit"><div class="uhead"><span class="t">{name}</span><span class="line"></span>'
                  f'<span class="c">{str(n)} سؤال</span></div>']
-        parts.append(f'<div class="sechead">تجميعات {name} <small>أسئلة جاءت في اختبارات سابقة</small></div>')
+        parts.append(f'<div class="sechead">تجميعات {name}</div>')
         parts += [q_html(i + 1, q) for i, q in enumerate(taj)]
         if extra:
             parts.append(f'<div class="sechead">أسئلة إضافية من ملازم عدل <small>ليست من التجميعات</small></div>')
