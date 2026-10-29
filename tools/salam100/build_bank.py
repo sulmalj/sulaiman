@@ -124,7 +124,8 @@ main{position:relative;z-index:1;padding:0 1.5mm}
 .note{padding:1.2mm 3mm;border-top:1px dashed var(--br);color:var(--mauve);font-size:9pt;font-weight:800;line-height:1.55}
 .ans{flex:none;width:9.5mm;height:9.5mm;border-radius:50%;background:var(--circ);color:#fff;display:grid;place-items:center;font-size:12.5pt;font-weight:900;line-height:1}
 /* حرف الجواب في نص الدائرة بالضبط (الألف بهمزتها يطلع فوق) — مقاسة على خط Tajawal */
-.ans .L0{transform:translateY(1.38mm)}
+.ans span{display:inline-block}
+.ans .L0{transform:translateY(1.85mm) scaleY(1.3)}
 .ans .L2{transform:translateY(-.28mm)}
 """
 
