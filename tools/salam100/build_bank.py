@@ -31,15 +31,16 @@ AR = str.maketrans('0123456789', '٠١٢٣٤٥٦٧٨٩')
 
 
 def parse(path):
-    """يرجّع (تجميعات, إضافية) — كل سؤال dict(q, o[4], a, n, p)"""
-    taj, extra, cur = [], [], None
-    target = taj
+    """يرجّع (تجميعات, إضافية, احتياط) — كل سؤال dict(q, o, a, n, p).
+    «## إضافية» = أسئلة من عندنا تنطبع دائماً، «## احتياط» = تتعبّى منها آخر صفحة في الوحدة على قد الفراغ."""
+    secs = {'': [], 'إضافية': [], 'احتياط': []}
+    target, cur = secs[''], None
     for raw in path.read_text(encoding='utf-8').splitlines():
         line = raw.strip()
         if not line:
             continue
         if line.startswith('## '):
-            target = extra
+            target = secs[line[3:].strip()]
             continue
         if '|' not in line:
             sys.exit(f'{path.name}: سطر غير مفهوم: {line}')
@@ -58,10 +59,10 @@ def parse(path):
             cur['p'] = v
         else:
             sys.exit(f'{path.name}: مفتاح غير معروف {k}')
-    for q in taj + extra:
+    for q in secs[''] + secs['إضافية'] + secs['احتياط']:
         if not set(LET[:3]) <= set(q['o']) or not set(q['o']) <= set(LET) or q['a'] not in q['o']:
             sys.exit(f'{path.name}: سؤال ناقص: {q["q"]}')
-    return taj, extra
+    return secs[''], secs['إضافية'], secs['احتياط']
 
 
 def font_face():
@@ -136,17 +137,67 @@ def q_html(n, q, extra=False):
             f'<div class="ops">{ops}</div>{notes}</div><div class="ans">{q["a"]}</div></div>')
 
 
+def unit_html(u, taj, extra):
+    name = UNITS[u][0]
+    parts = [f'<section class="unit"><div class="uhead"><span class="t">{name}</span><span class="line"></span>'
+             f'<span class="c">{len(taj) + len(extra)} سؤال</span></div>',
+             f'<div class="sechead">تجميعات {name}</div>']
+    parts += [q_html(i + 1, q) for i, q in enumerate(taj + extra)]
+    parts.append('</section>')
+    return ''.join(parts)
+
+
+def render_pdfs(htmls):
+    """يطبع كل HTML لـPDF (بنفس إعدادات الصفحة) ويرجّع عدد صفحات كل واحد."""
+    import pymupdf
+    tmp = tempfile.mkdtemp()
+    for i, h in enumerate(htmls):
+        Path(tmp, f'{i}.html').write_text(h, encoding='utf-8')
+    js = f"""const {{ chromium }} = require('playwright');
+(async () => {{ const b = await chromium.launch(); const p = await b.newPage();
+  for (let i = 0; i < {len(htmls)}; i++) {{
+    await p.goto('file://{tmp}/' + i + '.html'); await p.evaluate(() => document.fonts.ready);
+    await p.pdf({{ path: '{tmp}/' + i + '.pdf', format: 'A4', printBackground: true, preferCSSPageSize: true }});
+  }} await b.close(); }})();"""
+    Path(tmp, 'r.js').write_text(js)
+    env = dict(os.environ, NODE_PATH=subprocess.run(['npm', 'root', '-g'], capture_output=True, text=True).stdout.strip())
+    subprocess.run(['node', f'{tmp}/r.js'], check=True, env=env)
+    return [len(pymupdf.open(f'{tmp}/{i}.pdf')) for i in range(len(htmls))]
+
+
+def fill_counts(loaded):
+    """لكل وحدة: أكبر عدد من أسئلة الاحتياط يعبّي آخر صفحة بدون ما يفتح صفحة جديدة."""
+    head = f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><style>{font_face()}{CSS}</style></head><body><main>'
+    jobs, keys = [], []
+    for u, taj, extra, res in loaded:
+        for k in range(len(res) + 1):
+            jobs.append(head + unit_html(u, taj, extra + res[:k]) + '</main></body></html>')
+            keys.append((u, k))
+    pages = render_pdfs(jobs) if jobs else []
+    base = {u: p for (u, k), p in zip(keys, pages) if k == 0}
+    best = {u: 0 for u, *_ in loaded}
+    for (u, k), p in zip(keys, pages):
+        if p == base[u]:
+            best[u] = max(best[u], k)
+    return best
+
+
 def build(out, site):
     units, total_t, total_x = [], 0, 0
+    loaded = []
     for u in UNITS:
         f = SRC / f'u{u:02d}.txt'
         if not f.exists():
             print('تنبيه: ما فيه ملف', f.name)
             continue
-        taj, extra = parse(f)
+        loaded.append((u, *parse(f)))
+    fill = fill_counts(loaded)
+    for u, taj, extra, res in loaded:
+        extra = extra + res[:fill[u]]
         units.append((u, taj, extra))
         total_t += len(taj)
         total_x += len(extra)
+    print('أسئلة الاحتياط المستخدمة:', {u: f'{fill[u]}/{len(r)}' for u, _, _, r in loaded})
     total = total_t + total_x
     logo = base64.b64encode(LOGO.read_bytes()).decode()
     cover = f"""<section class="cover">
@@ -167,19 +218,7 @@ def build(out, site):
   <div class="spaced">خــاص لــمــشــتــركــيــن مــلازم عـــدل</div>
   <div class="nopub">لا نحلل ولا نبيح نشرها</div>
 </section>"""
-    body = []
-    for u, taj, extra in units:
-        name, title = UNITS[u]
-        n = len(taj) + len(extra)
-        parts = [f'<section class="unit"><div class="uhead"><span class="t">{name}</span><span class="line"></span>'
-                 f'<span class="c">{str(n)} سؤال</span></div>']
-        parts.append(f'<div class="sechead">تجميعات {name}</div>')
-        parts += [q_html(i + 1, q) for i, q in enumerate(taj)]
-        if extra:
-            parts.append(f'<div class="sechead">أسئلة إضافية من ملازم عدل <small>ليست من التجميعات</small></div>')
-            parts += [q_html(len(taj) + i + 1, q, True) for i, q in enumerate(extra)]
-        parts.append('</section>')
-        body.append(''.join(parts))
+    body = [unit_html(u, taj, extra) for u, taj, extra in units]
     doc = (f'<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>تجميعات سلم 100</title>'
            f'<style>{font_face()}{CSS}</style></head><body><div class="wm"><img src="data:image/png;base64,{logo}"></div>'
            f'<main>{cover}{"".join(body)}</main></body></html>')
