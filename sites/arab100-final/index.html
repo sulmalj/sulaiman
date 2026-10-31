@@ -27,6 +27,7 @@
     <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></symbol>
     <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
     <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></symbol>
     <symbol id="i-next" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 18-6-6 6-6"/></symbol>
@@ -146,11 +147,11 @@
       <div class="step"><span class="sn">1</span>اختر الموضوع</div>
       <div class="topics" id="wTopics"></div>
       <input class="field" id="wTopic" type="text" maxlength="100" placeholder="اكتب عنوان موضوعك هنا" hidden>
-      <div class="step"><span class="sn">2</span>عدد الجمل اللي طلبها الدكتور</div>
-      <div class="stepper"><button type="button" class="sbtn" id="wMinus" aria-label="أقل">−</button><b id="wN">5</b><button type="button" class="sbtn" id="wPlus" aria-label="أكثر">+</button><span>الجملة تنتهي بنقطة أو علامة استفهام أو تعجب</span></div>
+      <div class="step"><span class="sn">2</span>عدد الأسطر اللي طلبها الدكتور</div>
+      <div class="stepper"><button type="button" class="sbtn" id="wMinus" aria-label="أقل">−</button><b id="wN">10</b><button type="button" class="sbtn" id="wPlus" aria-label="أكثر">+</button><span>سطر ورقة الاختبار تقريبًا 11 كلمة، والموقع يحسب أسطرك تقريبيًّا من عدد كلماتك</span></div>
       <div class="step"><span class="sn">3</span>اكتب فقرتك</div>
       <textarea class="para" id="wText" placeholder="اكتب فقرتك هنا…"></textarea>
-      <div class="counts"><span id="wWords">الكلمات: 0</span><span id="wSents">الجمل: 0 من 5</span></div>
+      <div class="counts"><span id="wWords">الكلمات: 0</span><span id="wSents">الأسطر تقريبًا: 0 من 10</span></div>
       <div class="wacts">
         <button class="btn btn-pri" id="wCheck" type="button">صحّح فقرتي</button>
         <button class="btn btn-quiet" id="wModel" type="button">نموذج فقرة</button>
@@ -263,7 +264,7 @@
   </div>
 </div>
 
-<script>const SITE = {"key": "arab100-final-v1", "lessons": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "examLessons": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12], "examN": 40, "examMin": 50, "examName": "محاكاة الفاينل", "examScope": "كل دروس الكتاب"};</script>
+<script>const SITE = {"key": "arab100-final-v1", "lessons": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], "examLessons": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12], "examN": 40, "examMin": 50, "examName": "محاكاة الفاينل", "examScope": "كل دروس الكتاب", "pastLabel": "جاء في اختبار سابق"};</script>
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="paragraph.js"></script>

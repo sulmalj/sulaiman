@@ -2499,5 +2499,410 @@ window.GRAMMAR = [
 "e": "بعد need يجي اسم: a new laptop."
 }
 ]
+},
+{
+"rule": "Prepositions of location",
+"qs": [
+{
+"q": "The student is sitting ..... his desk, writing in his notebook before the exam starts.",
+"o": [
+"at",
+"over",
+"above",
+"under"
+],
+"e": "at للمكان المحدد اللي يكون الشخص عنده: sitting at his desk (قاعد عند مكتبه يكتب)."
+},
+{
+"q": "The ruler isn't on the desk. Open the drawer; it's ..... the drawer, next to my pens.",
+"o": [
+"in",
+"over",
+"above",
+"at"
+],
+"e": "in = داخل: تفتح الدرج والمسطرة داخله ← in the drawer."
+},
+{
+"q": "The lamp hangs from the ceiling. It is ..... the desk, so I can read at night.",
+"o": [
+"above",
+"under",
+"in",
+"at"
+],
+"e": "above = فوق بدون ما يلمس: المصباح معلّق من السقف فهو فوق المكتب ← above the desk."
+},
+{
+"q": "Your backpack isn't on the table. Look down. It's ..... the table, on the floor.",
+"o": [
+"under",
+"above",
+"over",
+"in"
+],
+"e": "Look down وعلى الأرض ← under = تحت الطاولة."
+},
+{
+"q": "I put a big poster of my favourite team ..... the wall of my bedroom.",
+"o": [
+"on",
+"in",
+"under",
+"behind"
+],
+"e": "on = على سطح الشيء (يلمسه): on the wall."
+},
+{
+"q": "The trash can is ..... the desk, so I can throw papers in it without standing up.",
+"o": [
+"next to",
+"in",
+"over",
+"above"
+],
+"e": "next to / beside = جنب: السلة جنب المكتب فترمي فيها وأنت قاعد ← next to the desk."
+},
+{
+"q": "The bookshelf is ..... the sofa, so I have to walk around the sofa to get a book.",
+"o": [
+"behind",
+"on",
+"in",
+"over"
+],
+"e": "behind = ورا: لازم تلف حول الكنبة عشان توصل للرف، يعني الرف وراها."
+},
+{
+"q": "I put the fan ..... the bookshelf, so now I can't see the books behind it.",
+"o": [
+"in front of",
+"under",
+"over",
+"at"
+],
+"e": "in front of = قدام: المروحة قدام الرف وتغطي الكتب اللي وراها."
+},
+{
+"q": "A: Excuse me, where is the pharmacy? B: It's ..... the bank. They are side by side.",
+"o": [
+"next to",
+"under",
+"in",
+"over"
+],
+"e": "side by side = جنب بعض ← next to."
+},
+{
+"q": "A: Where is the bus stop? B: It's ..... the hospital. You can see it when you come out of the main door.",
+"o": [
+"in front of",
+"behind",
+"under",
+"over"
+],
+"e": "تشوفه أول ما تطلع من الباب الرئيسي ← in front of (قدام)."
+},
+{
+"q": "I'm standing ..... the traffic lights near the school, waiting for you. Hurry up!",
+"o": [
+"at",
+"in",
+"on",
+"over"
+],
+"e": "at للمكان المحدد اللي الشخص واقف عنده: at the traffic lights."
+},
+{
+"q": "There's a small café ..... the corner of our street. I buy my coffee there every morning.",
+"o": [
+"on",
+"under",
+"above",
+"behind"
+],
+"e": "on the corner = على زاوية الشارع."
+},
+{
+"q": "The car park is ..... the mall. Walk to the back of the building to find it.",
+"o": [
+"behind",
+"in front of",
+"over",
+"in"
+],
+"e": "الخلف (the back of the building) ← behind."
+},
+{
+"q": "Be careful! There's a cat ..... your car. Look down before you drive.",
+"o": [
+"under",
+"over",
+"above",
+"in"
+],
+"e": "under = تحت السيارة."
+},
+{
+"q": "The children are playing football ..... the street. It's dangerous because many cars drive fast here.",
+"o": [
+"in",
+"over",
+"under",
+"above"
+],
+"e": "in للمكان اللي الشخص داخله: in the street."
+},
+{
+"q": "A: Where is the bakery? B: It's ..... the right of the supermarket.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+],
+"e": "on the right of = على يمين."
+},
+{
+"q": "The new bridge is ..... the highway. Every day, hundreds of cars drive under it.",
+"o": [
+"over",
+"under",
+"in",
+"behind"
+],
+"e": "السيارات تمشي تحته، فالجسر فوق ← over."
+},
+{
+"q": "The man is standing ..... the bus stop. He is waiting for the bus.",
+"o": [
+"at",
+"in",
+"above",
+"over"
+],
+"e": "at للمكان المحدد: at the bus stop."
+},
+{
+"q": "Look up! The big green sign that says \"Pharmacy\" is ..... the door of the shop.",
+"o": [
+"above",
+"under",
+"in",
+"behind"
+],
+"e": "Look up (طالع فوق) ← above = فوق الباب بدون ما يلمسه."
+},
+{
+"q": "A: Where did you park? B: I parked ..... the hotel entrance.",
+"o": [
+"in front of",
+"under",
+"above",
+"in"
+],
+"e": "in front of = قدام مدخل الفندق."
+},
+{
+"q": "Look at the street map: the school is on the left, the mosque is in the middle, and the park is on the ..... of the mosque.",
+"o": [
+"right",
+"front",
+"back",
+"next"
+],
+"e": "المدرسة يسار والمسجد في الوسط، فالحديقة على اليمين ← on the right of."
+},
+{
+"q": "There are many restaurants and cafés ..... Tahlia Street, so it's always busy at night.",
+"o": [
+"on",
+"under",
+"above",
+"over"
+],
+"e": "on مع أسماء الشوارع: on Tahlia Street."
+},
+{
+"q": "The streetlights are ..... the road. They hang high and light it at night for drivers.",
+"o": [
+"over",
+"under",
+"in",
+"at"
+],
+"e": "over = فوق الطريق بدون ما تلمسه."
+},
+{
+"q": "A: Where is the gas station? B: It's ..... the left of the mall.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+],
+"e": "on the left of = على يسار."
+},
+{
+"q": "The taxi is ..... the bus. The bus can't see the road ahead.",
+"o": [
+"in front of",
+"behind",
+"under",
+"on"
+],
+"e": "التاكسي قدام الباص، فالباص ما يشوف الطريق ← in front of."
+},
+{
+"q": "My office is ..... the third floor of that building, so I take the elevator every morning.",
+"o": [
+"on",
+"in",
+"under",
+"over"
+],
+"e": "on مع الأدوار: on the third floor."
+},
+{
+"q": "Turn left at the traffic lights. The bank is ..... your right.",
+"o": [
+"on",
+"in",
+"at",
+"under"
+],
+"e": "on your right = على يمينك."
+},
+{
+"q": "The boy is hiding ..... the car. His friends can't find him.",
+"o": [
+"behind",
+"in front of",
+"on",
+"over"
+],
+"e": "behind = ورا السيارة عشان ما يشوفونه."
+},
+{
+"q": "A: Where is the hospital? B: It's ..... the end of this street.",
+"o": [
+"at",
+"on",
+"under",
+"over"
+],
+"e": "at the end of the street = في نهاية الشارع."
+},
+{
+"q": "The bank is on the left of the café, so the café is on the ..... of the bank.",
+"o": [
+"right",
+"left",
+"front",
+"behind"
+],
+"e": "إذا البنك يسار المقهى، فالمقهى يمين البنك ← right."
+},
+{
+"q": "There is a big tree ..... our house. It gives shade to the front door.",
+"o": [
+"in front of",
+"behind",
+"under",
+"on"
+],
+"e": "يظلل الباب الأمامي، فالشجرة قدام البيت ← in front of."
+},
+{
+"q": "It's raining hard, so I parked my car ..... the garage to keep it dry.",
+"o": [
+"in",
+"over",
+"above",
+"under"
+],
+"e": "in = داخل: داخل الكراج عشان ما يجيها المطر ← in the garage."
+},
+{
+"q": "A: Where is your bike? B: It's ..... the wall, beside the door.",
+"o": [
+"next to",
+"over",
+"in",
+"above"
+],
+"e": "beside = next to ← جنب الجدار."
+},
+{
+"q": "The police officer is standing ..... the middle of the road and stopping the cars.",
+"o": [
+"in",
+"on",
+"at",
+"under"
+],
+"e": "in the middle of = في وسط."
+},
+{
+"q": "A: I can't find my phone! B: Look down. It's ..... the car seat.",
+"o": [
+"under",
+"over",
+"above",
+"at"
+],
+"e": "Look down (طالع تحت) ← under = تحت الكرسي."
+},
+{
+"q": "School is over. The children are waiting ..... the school gate for their parents to arrive.",
+"o": [
+"at",
+"in",
+"under",
+"over"
+],
+"e": "at للمكان المحدد: at the school gate."
+},
+{
+"q": "The shop's name is written ..... the glass of the window in big red letters.",
+"o": [
+"on",
+"at",
+"in",
+"next to"
+],
+"e": "on = على سطح الشيء: الاسم مكتوب على الزجاج نفسه."
+},
+{
+"q": "A: Where are the shopping bags? B: They're ..... the car, on the back seat.",
+"o": [
+"in",
+"on",
+"under",
+"over"
+],
+"e": "in = داخل السيارة."
+},
+{
+"q": "Turn right when you see the traffic lights. They are ..... the corner, next to the bank.",
+"o": [
+"on",
+"under",
+"above",
+"over"
+],
+"e": "on the corner = على الزاوية."
+},
+{
+"q": "The new restaurant is ..... the mall. It's on the second floor.",
+"o": [
+"in",
+"under",
+"over",
+"behind"
+],
+"e": "in = داخل المول."
+}
+]
 }
 ];

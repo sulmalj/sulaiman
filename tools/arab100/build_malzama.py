@@ -138,6 +138,8 @@ table.t tr {{ break-inside:avoid; }}
 /* الجدول الطويل اللي ينقسم: ما يبقى صف أو صفين لحالهم أول الجدول أو آخره */
 table.t tbody tr:nth-child(-n+3), table.t tbody tr:nth-last-child(-n+2) {{ break-before:avoid; }}
 table.t td.r {{ text-align:right; }}
+/* (المراجعة الرابعة) أسطر الخلية متوازنة: ما تنزل كلمة وحدة لسطر لحالها في الأعمدة الضيقة (مثل «الغير / صحيح.») */
+table.t td {{ text-wrap:balance; }}
 /* جدول عناوينه في العمود الأول (مثل جدول حالات التاء والهاء في الكتاب) */
 table.t.side th {{ width:27%; border-top:1pt solid #4a73a3; }}
 table.t.side tr:first-child th {{ border-top:0; }}
@@ -486,6 +488,8 @@ def render(html_str, out_pdf, browser, spread=None, markers=False, brks=(), pad=
     html_str = re.sub(r'class="u">([^<\s]{1,2})</span>', r'class="u u1">\1</span>', html_str)
     # الشرطة «–» ما تبدأ سطر جديد (تبقى آخر السطر مع الكلمة اللي قبلها)
     html_str = html_str.replace(' – ', '\u00a0– ')
+    # مدى أرقام «(٣–١٠)» ما ينقسم بين سطرين (المراجعة الخامسة)
+    html_str = re.sub(r'([٠-٩])([–-])([٠-٩])', '\\1\u2060\\2\u2060\\3', html_str)
     with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
         f.write(html_str)
         path = f.name

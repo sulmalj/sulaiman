@@ -9,6 +9,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const TOPICS = [
   { id: 't1', title: 'أهمية دور الفرد في المجتمع', keys: ['فرد', 'افراد', 'مجتمع', 'مواطن'] },
   { id: 't2', title: 'دور القائد في مهنته ومؤسسته', keys: ['قائد', 'قاد', 'قياد', 'مؤسس', 'مهن'] },
+  { id: 't3', title: 'حب الوطن والدفاع عنه جزء من الدين والعقيدة', keys: ['وطن', 'دفاع', 'دين', 'عقيد'], past: true },
   { id: 'own', title: 'اختر موضوعك بنفسك', own: true }
 ];
 /* نماذج فقرات (5 جمل): جملة مفتاحية + 3 داعمة + ختامية */
@@ -22,10 +23,20 @@ const MODELS = {
        ['s', 'فهو الذي يحدد الأهداف بوضوح، ويضع الخطط المناسبة لتحقيقها.'],
        ['s', 'كما أنّه يحفّز العاملين معه، ويوزّع المهام بينهم بحسب قدراتهم وخبراتهم.'],
        ['s', 'بالإضافة إلى ذلك، يكون القائد قدوة لفريقه في الالتزام والأمانة وإتقان العمل.'],
-       ['c', 'ولذلك تحقق المؤسسة التي يقودها قائد واعٍ أهدافها بكفاءة، وتستمر في التقدم والازدهار.']]
+       ['c', 'ولذلك تحقق المؤسسة التي يقودها قائد واعٍ أهدافها بكفاءة، وتستمر في التقدم والازدهار.']],
+  t3: [['k', 'حبُّ الوطن والدفاع عنه جزء من الدين والعقيدة، وليس شعورًا عابرًا يظهر في المناسبات فقط.'],
+       ['s', 'فالإسلام أمر بطاعة ولاة الأمر، وحثّ على حفظ الأمن والحرص على مصلحة الجماعة.'],
+       ['s', 'ويظهر هذا الحب في سلوك المواطن اليومي؛ فهو يحافظ على الممتلكات العامة، ويحترم الأنظمة، ويؤدي عمله بإتقان.'],
+       ['s', 'ثم إنّ الدفاع عن الوطن لا يقتصر على حمل السلاح، بل يشمل الكلمة الصادقة التي تردّ الشائعات، والعلم النافع الذي يسهم في نهضته.'],
+       ['c', 'لذلك ينبغي أن نغرس حب الوطن في نفوس أبنائنا منذ الصغر؛ ليكون الولاء له جزءًا من عقيدتهم وسلوكهم.']]
 };
 
-let T = 't1', N = 5;
+/* (طلب المستخدم 2026-10-27) الطول بالأسطر مثل الاختبار («في حدود عشرة أسطر»): الموقع ما يقدر يعدّ أسطر ورقة الاختبار،
+   فيقدّرها من عدد الكلمات (سطر الورقة تقريبًا WPL كلمة)، والمقبول ± سطر عن المطلوب */
+const WPL = 11;
+let T = 't1', N = 10;
+const estLines = text => { const w = words(text).length; return w ? Math.max(1, Math.round(w / WPL)) : 0; };
+const linesOk = text => Math.abs(estLines(text) - N) <= 1;
 const st = () => window.APP ? APP.LS : { drafts: {} };
 const draftKey = () => T === 'own' ? 'own' : T;
 
@@ -42,12 +53,12 @@ const words = text => (text.trim().match(/[^\s]+/g) || []).filter(w => /[ء-ي]/
 
 /* ── الواجهة ── */
 function open() {
-  $('wTopics').innerHTML = TOPICS.map(t => `<button type="button" class="topic ${t.id === T ? 'on' : ''}" data-t="${t.id}">${esc(t.title)}<small>${t.own ? 'اكتب عنوان موضوعك' : 'موضوع مقترح'}</small></button>`).join('');
+  $('wTopics').innerHTML = TOPICS.map(t => `<button type="button" class="topic ${t.id === T ? 'on' : ''}" data-t="${t.id}">${esc(t.title)}<small>${t.own ? 'اكتب عنوان موضوعك' : t.past ? ((typeof SITE !== 'undefined' && SITE.pastLabel) || 'جاء في اختبار سابق') : 'موضوع مقترح'}</small></button>`).join('');
   $('wTopic').hidden = T !== 'own';
   const d = st().drafts || {};
   $('wText').value = d[draftKey()] || '';
   $('wTopic').value = d.ownTitle || '';
-  if (d.n) N = d.n;
+  if (d.lines) N = d.lines;
   $('wN').textContent = N;
   $('wModel').hidden = T === 'own';
   counts();
@@ -55,11 +66,11 @@ function open() {
 function counts() {
   const t = $('wText').value, n = countDone(t);
   $('wWords').textContent = 'الكلمات: ' + words(t).length;
-  $('wSents').innerHTML = `الجمل: <span class="${n === N ? 'ok' : ''}">${n} من ${N}</span>`;
+  $('wSents').innerHTML = `الأسطر تقريبًا: <span class="${t.trim() && linesOk(t) ? 'ok' : ''}">${estLines(t)} من ${N}</span> · الجمل: ${n}`;
 }
 function saveDraft() {
   const L = st(); L.drafts = L.drafts || {};
-  L.drafts[draftKey()] = $('wText').value; L.drafts.ownTitle = $('wTopic').value; L.drafts.n = N;
+  L.drafts[draftKey()] = $('wText').value; L.drafts.ownTitle = $('wTopic').value; L.drafts.lines = N;
   window.APP && APP.save();
 }
 $('wTopics').addEventListener('click', e => {
@@ -69,7 +80,7 @@ $('wTopics').addEventListener('click', e => {
 $('wText').addEventListener('input', () => { counts(); saveDraft(); });
 $('wTopic').addEventListener('input', saveDraft);
 $('wMinus').onclick = () => { N = Math.max(3, N - 1); $('wN').textContent = N; counts(); saveDraft(); };
-$('wPlus').onclick = () => { N = Math.min(15, N + 1); $('wN').textContent = N; counts(); saveDraft(); };
+$('wPlus').onclick = () => { N = Math.min(30, N + 1); $('wN').textContent = N; counts(); saveDraft(); };
 $('wClear').onclick = () => { $('wText').value = ''; $('wRes').innerHTML = ''; counts(); saveDraft(); };
 $('wModel').onclick = () => {
   const m = MODELS[T]; if (!m) return;
@@ -104,7 +115,7 @@ function alertRes(msg) { $('wRes').innerHTML = `<p class="note warn">${window.IC
 async function aiCorrect(text) {
   const ctl = new AbortController();
   const to = setTimeout(() => ctl.abort(), 150000);
-  const res = await fetch('/api/correct', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text, topic: topicTitle(), sentences: N }), signal: ctl.signal });
+  const res = await fetch('/api/correct', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ text, topic: topicTitle(), lines: N }), signal: ctl.signal });
   if (!res.ok || !res.body || !(res.headers.get('content-type') || '').includes('event-stream')) { clearTimeout(to); return null; }
   const reader = res.body.getReader(), dec = new TextDecoder();
   let buf = '', out = '', refused = false, n = 0;
@@ -323,11 +334,12 @@ function localCheck(text) {
   let sc = (keyOk ? 1.5 : 0) + Math.min(1.5, supp.length * 0.5) + (closeOk ? 1 : closing ? 0.5 : 0);
   sc += (R.conditions.cohesion.ok ? 0.75 : linked ? 0.4 : 0) + (R.conditions.relevance.ok ? 0.75 : 0.25) + (unityOk ? 0.75 : 0) + (seqOk ? 0.75 : 0.25);
   sc += Math.max(0, 3 - errs.length * 0.5 - (endsDot ? 0 : 0.5));
-  if (n !== N) sc -= 0.5;
+  const est = estLines(text), lenOk = Math.abs(est - N) <= 1;
+  if (Math.abs(est - N) > 2) sc -= 0.5;
   R.score = Math.max(0, Math.min(10, Math.round(sc)));
-  R.summary = (n === N ? `عدد الجمل مطابق للمطلوب (${N}). ` : `عدد الجمل ${n} والمطلوب ${N}. `) + (errs.length ? `لقينا ${errs.length === 1 ? 'ملاحظة واحدة' : errs.length === 2 ? 'ملاحظتين' : errs.length + (errs.length <= 10 ? ' ملاحظات' : ' ملاحظة')} لغوية أو ترقيمية، شوفها تحت.` : 'ما لقينا أخطاء من الأخطاء المعروفة في الفحص الآلي.');
+  R.summary = (lenOk ? `طول فقرتك مناسب (تقريبًا ${est} أسطر والمطلوب ${N}). ` : `طول فقرتك تقريبًا ${est} أسطر والمطلوب ${N}. `) + (errs.length ? `لقينا ${errs.length === 1 ? 'ملاحظة واحدة' : errs.length === 2 ? 'ملاحظتين' : errs.length + (errs.length <= 10 ? ' ملاحظات' : ' ملاحظة')} لغوية أو ترقيمية، شوفها تحت.` : 'ما لقينا أخطاء من الأخطاء المعروفة في الفحص الآلي.');
   if (keyOk) R.tips.push('أحسنت في البدء بجملة مفتاحية واضحة.');
-  if (n !== N) R.tips.push(`الدكتور طالب ${N} جمل، وفقرتك فيها ${n}. عدّل عدد الجمل (الجملة تنتهي بنقطة).`);
+  if (!lenOk) R.tips.push(est < N ? `فقرتك أقصر من المطلوب (تقريبًا ${est} أسطر من ${N}): زد جملة داعمة أو مثالًا.` : `فقرتك أطول من المطلوب (تقريبًا ${est} أسطر من ${N}): اختصر وخلّك في حدود المطلوب.`);
   if (!R.conditions.cohesion.ok) R.tips.push('اربط كل جملة بالتي قبلها بأداة ربط مناسبة.');
   if (!unityOk) R.tips.push('خلّ كل الجمل تخدم فكرة الموضوع نفسها، واحذف أي جملة تفتح فكرة ثانية.');
   if (supp.length < 2) R.tips.push('ادعم الفكرة بمثال أو معلومة في جملة داعمة.');
@@ -361,7 +373,7 @@ function render(r, text, src) {
   $('wRes').innerHTML = `<div class="card res-card">
     <div class="res-head">
       <div class="sc-box"><b>${r.score}/10</b><small>درجتك</small></div>
-      <div><h3>${esc(topicTitle())}</h3><div class="sc">عدد الجمل: <span class="${n === N ? 'ok' : 'no'}">${n} من ${N}</span></div><p>${esc(r.summary || '')}</p></div>
+      <div><h3>${esc(topicTitle())}</h3><div class="sc">الأسطر تقريبًا: <span class="${linesOk(text) ? 'ok' : 'no'}">${estLines(text)} من ${N}</span> · الجمل: ${n}</div><p>${esc(r.summary || '')}</p></div>
     </div>
     <div class="src">${src === 'ai' ? 'صُحّحت فقرتك بالذكاء الاصطناعي حسب شروط الكتاب وطريقته.' : 'تصحيح آلي حسب شروط الكتاب وجداول الأخطاء فيه.'}</div>
     <div class="lbl-h">بناء الفقرة</div>
