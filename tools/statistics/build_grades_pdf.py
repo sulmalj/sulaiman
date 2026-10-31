@@ -55,6 +55,13 @@ PROFILES = {
                 "شرح الاختبار التجريبي.", "تسريبات السنوات الماضية.", "قروب للاسئلة والاستفسارات.",
                 "يغني عن الكتاب واي مصدر آخر."]),
         ]),
+    # الإنجليزي (انجل 102/103): مزايا الدورة من نص إعلان المستخدم في دليل الميد،
+    # وبدون شرح تجريبي (ما فيه رابط) وبدون شارة «الأقدم…» لين يأكدها المستخدم
+    "english": dict(
+        COURSE="الإنجليزي", TRACK="", PART="جزئية الميد", DEMO=None, BADGE=False, HIGH=30,  # بدون «المسار الإنساني» (طلب المستخدم)
+        FEATURES=["موقع للتدريب شامل كل الأقسام", "تدريب على القطع والاستماع والفوكاب والقواعد",
+                  "شرح كامل القواعد", "تصحيح تلقائي من الموقع",
+                  "أكثر من 900 سؤال", "مستوى الأسئلة مشابه للاختبار"]),
 }
 
 CREAM = (1, 253 / 255, 245 / 255)
@@ -111,7 +118,7 @@ ICONS = [  # أيقونات بسيطة لكل ميزة
 
 
 def track_label():
-    return f"{TRACK} · {PART}" if PART else TRACK
+    return " · ".join(x for x in (TRACK, PART) if x)
 
 
 def short(url):
@@ -136,6 +143,9 @@ def cover_html():
     ov = (f'<a class="c ov" href="{OVERVIEW}"><div class="t"><b>نبذة عن الملزمة</b><small>اضغط على الرابط أو امسح الباركود</small>'
           f'<span class="u">اضغط هنا لفتح النبذة</span></div><div class="q">{qr_img(OVERVIEW, QR)}</div></a>' if OVERVIEW else "")
     compact = "compact" if SECTIONS else ""
+    if not SECTIONS and not DEMO:  # بدون بطاقة شرح تجريبي: نكبّر العناصر عشان ما يبقى فراغ تحت الغلاف
+        compact = "nodemo"
+    demo = (f'<a class="c demo" href="{DEMO}"><div class="t"><b>شاهد الشرح التجريبي</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">{short(DEMO)}</span></div><div class="q">{qr_img(DEMO, QR)}</div></a>' if DEMO else "")
     return f"""<!doctype html><html dir="rtl" lang="ar"><head><meta charset="utf-8">{FONTS}<style>{BASE_CSS}
 @page {{ size:A4; margin:0; }}
 body {{ background:var(--cream); }}
@@ -184,6 +194,14 @@ h1 {{ margin:-2mm 0 0; font:800 74px/1.12 'Baloo Bhaijaan 2'; color:var(--navy);
 .sc li::before {{ content:""; position:absolute; right:2px; top:13px; width:7px; height:7px; border-radius:50%; background:var(--blue); }}
 .sc.r li::before {{ background:var(--rose); }}
 .c.ov {{ background:var(--blue); color:#fff; }} .c.ov .u {{ background:#fff; color:var(--navy); font-family:'Tajawal'; font-weight:800; }}
+.nodemo .logo {{ height:40mm; margin-top:6mm; }}
+.nodemo h1 {{ font-size:80px; }}
+.nodemo .sec {{ margin-top:8mm; }}
+.nodemo .sec h2 {{ margin-bottom:5mm; }}
+.nodemo .grid {{ gap:5mm 5mm; }}
+.nodemo .f {{ padding:16px 14px; font-size:20px; }}
+.nodemo .cta, .nodemo .proof {{ margin-top:7mm; }}
+.nodemo .c {{ padding:14px 14px 14px 24px; }}
 .compact .logo {{ height:27mm; margin-top:1mm; }}
 .compact .kick {{ margin-top:1mm; }}
 .compact h1 {{ font-size:62px; }}
@@ -205,7 +223,7 @@ h1 {{ margin:-2mm 0 0; font:800 74px/1.12 'Baloo Bhaijaan 2'; color:var(--navy);
 <div class="track">{track_label()}</div>
 {body}
 <div class="cta">
-  <a class="c demo" href="{DEMO}"><div class="t"><b>شاهد الشرح التجريبي</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">{short(DEMO)}</span></div><div class="q">{qr_img(DEMO, QR)}</div></a>
+  {demo}
   {ov}
   <a class="c store" href="{STORE}"><div class="t"><b>اشترك الآن من متجرنا</b><small>اضغط على الرابط أو امسح الباركود</small><span class="u">mtgradl.com</span></div><div class="q">{qr_img(STORE, QR)}</div></a>
 </div>
@@ -270,7 +288,7 @@ html,body {{ background:transparent; }}
 .t p {{ margin:4px 0 10px; font-size:16px; font-weight:700; opacity:.92; }}
 .u {{ display:inline-block; font:600 17px 'Lexend'; direction:ltr; background:#fff; color:var(--navy); border-radius:10px; padding:4px 14px; }}
 .q {{ position:relative; z-index:1; background:#fff; border-radius:14px; padding:6px; }}
-</style></head><body><div class="box"><div class="t"><b>تبي تكون منهم؟</b><p>اشترك الآن في دورة {COURSE} ({TRACK})</p><span class="u" id="st">mtgradl.com</span></div>
+</style></head><body><div class="box"><div class="t"><b>تبي تكون منهم؟</b><p>اشترك الآن في دورة {COURSE}{f" ({TRACK})" if TRACK else ""}</p><span class="u" id="st">mtgradl.com</span></div>
 <div class="q" id="qr">{qr_img(STORE, 120)}</div></div></body></html>"""
 
 
@@ -438,7 +456,7 @@ def main():
     out.insert_pdf(pymupdf.open(tmp / "cover.pdf"))
     if out.page_count != 1:
         raise SystemExit(f"الغلاف طلع {out.page_count} صفحات")
-    check_links(out[0], [DEMO, STORE, TELEGRAM] + ([OVERVIEW] if OVERVIEW else []))
+    check_links(out[0], [u for u in (DEMO, STORE, TELEGRAM, OVERVIEW) if u])
     wm = pymupdf.open(tmp / "wm.pdf")
     shadow = hexrgb("#e9dfd0")
     for k, cells in enumerate(pages):
